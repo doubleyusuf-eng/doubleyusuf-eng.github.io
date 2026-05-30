@@ -241,11 +241,11 @@ function changeLanguage(lang) {
         const demoImg = document.getElementById('interactive-demo-img');
         
         if (lang === 'tr') {
-            mainPhoneScreen.src = 'assets/screenshots/Kişiselleştirilmiş Karşılama.jpg';
-            secondaryPhoneScreen.src = 'assets/screenshots/Personalized welcome.jpg';
+            mainPhoneScreen.src = 'assets/screenshots/welcome_tr.jpg';
+            secondaryPhoneScreen.src = 'assets/screenshots/welcome_en.jpg';
         } else {
-            mainPhoneScreen.src = 'assets/screenshots/Personalized welcome.jpg';
-            secondaryPhoneScreen.src = 'assets/screenshots/Kişiselleştirilmiş Karşılama.jpg';
+            mainPhoneScreen.src = 'assets/screenshots/welcome_en.jpg';
+            secondaryPhoneScreen.src = 'assets/screenshots/welcome_tr.jpg';
         }
         
         // Trigger showcase update to sync with language
@@ -298,19 +298,19 @@ function updateDemoScreenshot(screenKey) {
     
     setTimeout(() => {
         if (screenKey === 'screen-home') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Kişiselleştirilmiş Karşılama.jpg' : 'assets/screenshots/Personalized welcome.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/welcome_tr.jpg' : 'assets/screenshots/welcome_en.jpg';
         } else if (screenKey === 'screen-algorithms') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Algoritmalar.jpg' : 'assets/screenshots/Algorithms.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/algorithms_tr.jpg' : 'assets/screenshots/algorithms_en.jpg';
         } else if (screenKey === 'screen-calc') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Hesaplayıcı.jpg' : 'assets/screenshots/Calculator.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/calc_tr.jpg' : 'assets/screenshots/calc_en.jpg';
         } else if (screenKey === 'screen-drugs') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/İlaçlar.jpg' : 'assets/screenshots/Drugs.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/drugs_tr.jpg' : 'assets/screenshots/drugs_en.jpg';
         } else if (screenKey === 'screen-board') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Board hazirlik.jpg' : 'assets/screenshots/Board prep.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/board_tr.jpg' : 'assets/screenshots/board_en.jpg';
         } else if (screenKey === 'screen-spot') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Spot bilgiler.jpg' : 'assets/screenshots/Spot notes.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/spot_tr.jpg' : 'assets/screenshots/spot_en.jpg';
         } else if (screenKey === 'screen-ai') {
-            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/Yapay zeka.jpg' : 'assets/screenshots/Artificial intelligence.jpg';
+            imgEl.src = currentLang === 'tr' ? 'assets/screenshots/ai_tr.jpg' : 'assets/screenshots/ai_en.jpg';
         }
         imgEl.style.opacity = '1';
     }, 150);
