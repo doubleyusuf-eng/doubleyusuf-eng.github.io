@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.anesthesiaclinic.anesthesiabriefs.app-mergeDebugResources-2:/values-en/values-en.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufyilmaz/.gemini/antigravity/scratch/anesthesia-briefs/app/src/main/res/values-en/strings.xml",
+                    "from": {
+                        "startLines": "12,2,11,10,9,15,6,5,7,4,8,13,3,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "662,55,612,501,431,847,279,223,333,181,377,731,110,788",
+                        "endColumns": "68,54,49,110,69,44,53,55,43,41,53,56,70,58",
+                        "endOffsets": "726,105,657,607,496,887,328,274,372,218,426,783,176,842"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,179,229,340,410,455,509,565,609,651,705,762,833",
+                        "endColumns": "68,54,49,110,69,44,53,55,43,41,53,56,70,58",
+                        "endOffsets": "119,174,224,335,405,450,504,560,604,646,700,757,828,887"
+                    }
+                }
+            ]
+        }
+    ]
+}

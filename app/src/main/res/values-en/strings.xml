@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anesthesia Briefs</string>
+    <string name="tagline">Clinical Reference &amp; Education</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_calculators">Calculators</string>
+    <string name="nav_algorithms">Algorithms</string>
+    <string name="nav_drugs">Drugs</string>
+    <string name="nav_literature">Literature</string>
+    <string name="disclaimer_title">IMPORTANT MEDICAL NOTICE</string>
+    <string name="disclaimer_accept">I am a licensed healthcare professional and I accept these terms</string>
+    <string name="btn_continue">Continue</string>
+    <string name="ai_assistant_title">AI Clinical Assistant</string>
+    <string name="search_placeholder">Search...</string>
+    <string name="welcome_doctor">Hello, Dr. %1$s</string>
+    <string name="guest_user">Guest</string>
+</resources>

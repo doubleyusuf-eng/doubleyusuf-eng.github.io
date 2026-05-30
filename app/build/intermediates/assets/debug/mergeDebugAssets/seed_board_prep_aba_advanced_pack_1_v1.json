@@ -1,0 +1,2443 @@
+{
+  "packId": "aba_advanced_pack_1",
+  "version": 1,
+  "boardType": "ABA_ADVANCED",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "edaicMtfQuestions": [],
+  "sbaQuestions": [
+    {
+      "id": "aba_adv_card_as_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Cardiac Disease",
+      "topic": "Severe aortic stenosis urgent surgery",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A 78-year-old patient with symptomatic severe aortic stenosis requires urgent laparotomy. Which anesthetic goal is most appropriate?",
+        "tr": "Semptomatik ciddi aort stenozu olan 78 yaşındaki hasta acil laparotomi gerektiriyor. En uygun anestezik hedef hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Maintain sinus rhythm, preload, and systemic vascular resistance",
+          "tr": "Sinüs ritmini, preload’u ve sistemik vasküler direnci korumak"
+        },
+        {
+          "en": "Use deep vasodilatory anesthesia to reduce afterload",
+          "tr": "Afterload’u azaltmak için derin vazodilatatör anestezi kullanmak"
+        },
+        {
+          "en": "Allow marked tachycardia to maintain cardiac output",
+          "tr": "Kardiyak outputu sürdürmek için belirgin taşikardiye izin vermek"
+        },
+        {
+          "en": "Avoid arterial pressure monitoring because stenosis is fixed",
+          "tr": "Stenoz sabit olduğu için arter basıncı monitörizasyonundan kaçınmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Severe AS patients depend on preload, sinus rhythm, and adequate diastolic pressure for coronary perfusion.",
+          "tr": "Doğru. Ciddi AS hastaları preload, sinüs ritmi ve koroner perfüzyon için yeterli diyastolik basınca bağımlıdır."
+        },
+        {
+          "en": "Incorrect. Sudden vasodilation can produce severe hypotension and ischemia.",
+          "tr": "Yanlış. Ani vazodilatasyon ciddi hipotansiyon ve iskemi oluşturabilir."
+        },
+        {
+          "en": "Incorrect. Tachycardia shortens diastole and worsens coronary perfusion.",
+          "tr": "Yanlış. Taşikardi diyastolü kısaltır ve koroner perfüzyonu bozar."
+        },
+        {
+          "en": "Incorrect. Beat-to-beat pressure monitoring is often valuable in severe disease.",
+          "tr": "Yanlış. Ciddi hastalıkta atımdan-atıma basınç monitörizasyonu sıklıkla değerlidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Severe aortic stenosis is fixed outflow obstruction; avoid hypotension, tachycardia, hypovolemia, and loss of sinus rhythm.",
+        "tr": "Ciddi aort stenozu sabit çıkış obstrüksiyonudur; hipotansiyon, taşikardi, hipovolemi ve sinüs ritmi kaybından kaçının."
+      },
+      "keyLearningPoint": {
+        "en": "Preserve coronary perfusion pressure in severe AS.",
+        "tr": "Ciddi AS’de koroner perfüzyon basıncını koruyun."
+      },
+      "commonTrap": {
+        "en": "Do not treat severe AS like ordinary hypertension requiring vasodilation.",
+        "tr": "Ciddi AS’yi vazodilatasyon gerektiren sıradan hipertansiyon gibi yönetmeyin."
+      },
+      "tags": [
+        "cardiac",
+        "aortic_stenosis",
+        "urgent_surgery",
+        "hemodynamics",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_card_ph_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Cardiac Disease",
+      "topic": "Pulmonary hypertension crisis",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A patient with severe pulmonary hypertension develops sudden hypotension, hypoxemia, and rising CVP after induction. Which immediate strategy is most appropriate?",
+        "tr": "Ciddi pulmoner hipertansiyonu olan hastada indüksiyon sonrası ani hipotansiyon, hipoksemi ve CVP artışı gelişiyor. En uygun acil strateji hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Reduce hypoxia, hypercapnia, acidosis, and support RV perfusion",
+          "tr": "Hipoksi, hiperkapni ve asidozu düzeltmek; sağ ventrikül perfüzyonunu desteklemek"
+        },
+        {
+          "en": "Deliberately lower systemic pressure to unload the right ventricle",
+          "tr": "Sağ ventrikülü boşaltmak için sistemik basıncı bilinçli düşürmek"
+        },
+        {
+          "en": "Give large doses of pure alpha blocker",
+          "tr": "Yüksek doz saf alfa bloker vermek"
+        },
+        {
+          "en": "Stop ventilation to reduce intrathoracic pressure",
+          "tr": "İntratorasik basıncı azaltmak için ventilasyonu durdurmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. PH crisis worsens with hypoxia, hypercapnia, acidosis, pain, and low coronary perfusion.",
+          "tr": "Doğru. PH krizi hipoksi, hiperkapni, asidoz, ağrı ve düşük koroner perfüzyonla kötüleşir."
+        },
+        {
+          "en": "Incorrect. Systemic hypotension worsens RV ischemia and collapse.",
+          "tr": "Yanlış. Sistemik hipotansiyon sağ ventrikül iskemisini ve kollapsı artırır."
+        },
+        {
+          "en": "Incorrect. Alpha blockade may worsen systemic hypotension.",
+          "tr": "Yanlış. Alfa blokaj sistemik hipotansiyonu kötüleştirebilir."
+        },
+        {
+          "en": "Incorrect. Apnea worsens hypoxia/hypercapnia and increases pulmonary vascular resistance.",
+          "tr": "Yanlış. Apne hipoksi/hiperkapniyi kötüleştirir ve pulmoner vasküler direnci artırır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pulmonary hypertension crisis is managed by reducing pulmonary vascular resistance and maintaining right ventricular perfusion.",
+        "tr": "Pulmoner hipertansiyon krizi pulmoner vasküler direnci azaltarak ve sağ ventrikül perfüzyonunu koruyarak yönetilir."
+      },
+      "keyLearningPoint": {
+        "en": "Protect the right ventricle: oxygenation, ventilation, perfusion pressure.",
+        "tr": "Sağ ventrikülü koruyun: oksijenasyon, ventilasyon, perfüzyon basıncı."
+      },
+      "commonTrap": {
+        "en": "Do not allow systemic hypotension in severe pulmonary hypertension.",
+        "tr": "Ciddi pulmoner hipertansiyonda sistemik hipotansiyona izin vermeyin."
+      },
+      "tags": [
+        "cardiac",
+        "pulmonary_hypertension",
+        "right_ventricle",
+        "crisis",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_thoracic_olv_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Thoracic Anaesthesia",
+      "topic": "One-lung ventilation hypoxemia",
+      "difficulty": "hard",
+      "stem": {
+        "en": "During one-lung ventilation, SpO2 falls to 84%. Breath sounds are poor over the dependent lung. What is the best immediate step?",
+        "tr": "Tek akciğer ventilasyonu sırasında SpO2 %84’e düşüyor. Bağımlı akciğerde solunum sesleri zayıf. En iyi ilk adım nedir?"
+      },
+      "options": [
+        {
+          "en": "Confirm double-lumen tube position with bronchoscopy",
+          "tr": "Çift lümenli tüp pozisyonunu bronkoskopi ile doğrulamak"
+        },
+        {
+          "en": "Immediately clamp the pulmonary artery",
+          "tr": "Pulmoner arteri hemen klemplemek"
+        },
+        {
+          "en": "Decrease FiO2 to avoid absorption atelectasis",
+          "tr": "Absorbsiyon atelektazisini önlemek için FiO2’yi azaltmak"
+        },
+        {
+          "en": "Increase volatile anesthetic to 2 MAC",
+          "tr": "Volatil anesteziği 2 MAC’e çıkarmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Malposition is common and should be checked early when oxygenation deteriorates.",
+          "tr": "Doğru. Malpozisyon sıktır ve oksijenasyon bozulduğunda erken kontrol edilmelidir."
+        },
+        {
+          "en": "Incorrect. This is not an immediate anesthetic maneuver for routine OLV hypoxemia.",
+          "tr": "Yanlış. Rutin OLV hipoksemisinde bu acil anestezik manevra değildir."
+        },
+        {
+          "en": "Incorrect. Hypoxemia requires oxygenation support, not lowering FiO2.",
+          "tr": "Yanlış. Hipoksemi FiO2 azaltmayı değil oksijenasyon desteğini gerektirir."
+        },
+        {
+          "en": "Incorrect. Deep volatile anesthesia may worsen hemodynamics and does not solve tube malposition.",
+          "tr": "Yanlış. Derin volatil anestezi hemodinamiyi bozabilir ve tüp malpozisyonunu çözmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "OLV hypoxemia requires rapid correction: FiO2 1.0, confirm tube position, optimize ventilation, consider CPAP/PEEP and surgical communication.",
+        "tr": "OLV hipoksemisi hızlı düzeltme gerektirir: FiO2 1.0, tüp pozisyonunu doğrulama, ventilasyonu optimize etme, CPAP/PEEP ve cerrahi iletişim."
+      },
+      "keyLearningPoint": {
+        "en": "Tube malposition is a common reversible cause of OLV hypoxemia.",
+        "tr": "Tüp malpozisyonu OLV hipoksemisinin sık ve geri döndürülebilir nedenidir."
+      },
+      "commonTrap": {
+        "en": "Do not assume every OLV desaturation is unavoidable shunt.",
+        "tr": "Her OLV desatürasyonunu kaçınılmaz şant olarak varsaymayın."
+      },
+      "tags": [
+        "thoracic",
+        "one_lung_ventilation",
+        "hypoxemia",
+        "double_lumen_tube",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_ob_hemorrhage_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Obstetric Anaesthesia",
+      "topic": "Postpartum hemorrhage",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A parturient after cesarean delivery has uterine atony, ongoing hemorrhage, hypotension, and tachycardia. Which action is most appropriate?",
+        "tr": "Sezaryen sonrası uterin atoni, devam eden kanama, hipotansiyon ve taşikardisi olan gebede en uygun yaklaşım hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Activate obstetric hemorrhage protocol and coordinate uterotonics, blood products, warming, calcium, and source control",
+          "tr": "Obstetrik kanama protokolünü aktive edip uterotonikler, kan ürünleri, ısıtma, kalsiyum ve kaynak kontrolünü koordine etmek"
+        },
+        {
+          "en": "Treat only with crystalloid until hemoglobin result returns",
+          "tr": "Hemoglobin sonucu gelene kadar yalnızca kristalloidle tedavi etmek"
+        },
+        {
+          "en": "Avoid all uterotonics because they cause hemodynamic effects",
+          "tr": "Hemodinamik etkileri olduğu için tüm uterotoniklerden kaçınmak"
+        },
+        {
+          "en": "Delay blood bank notification until estimated blood loss exceeds 5 liters",
+          "tr": "Tahmini kan kaybı 5 litreyi aşana kadar kan bankasını bilgilendirmeyi geciktirmek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Major obstetric hemorrhage requires early team activation and hemostatic resuscitation.",
+          "tr": "Doğru. Majör obstetrik kanama erken ekip aktivasyonu ve hemostatik resüsitasyon gerektirir."
+        },
+        {
+          "en": "Incorrect. Crystalloid alone worsens dilutional coagulopathy and delays definitive treatment.",
+          "tr": "Yanlış. Yalnız kristalloid dilüsyonel koagülopatiyi kötüleştirir ve kesin tedaviyi geciktirir."
+        },
+        {
+          "en": "Incorrect. Uterotonics are central to uterine atony treatment, with drug-specific caution.",
+          "tr": "Yanlış. Uterotonikler uterin atoni tedavisinin merkezindedir; ilaca özgü dikkat gerekir."
+        },
+        {
+          "en": "Incorrect. Blood bank communication should occur early.",
+          "tr": "Yanlış. Kan bankasıyla iletişim erken kurulmalıdır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Postpartum hemorrhage is a multidisciplinary emergency requiring uterine tone treatment, blood product strategy, temperature/calcium control, and surgical source control.",
+        "tr": "Postpartum kanama uterin tonus tedavisi, kan ürünü stratejisi, ısı/kalsiyum kontrolü ve cerrahi kaynak kontrolü gerektiren multidisipliner acildir."
+      },
+      "keyLearningPoint": {
+        "en": "Activate hemorrhage systems early.",
+        "tr": "Kanama sistemlerini erken aktive edin."
+      },
+      "commonTrap": {
+        "en": "Do not wait for laboratory confirmation before responding to obvious hemorrhagic shock.",
+        "tr": "Belirgin hemorajik şokta laboratuvar doğrulamasını beklemeyin."
+      },
+      "tags": [
+        "obstetric",
+        "hemorrhage",
+        "uterine_atony",
+        "massive_transfusion",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_ob_failed_spinal_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Obstetric Anaesthesia",
+      "topic": "Failed spinal for cesarean",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A patient has inadequate sensory level after spinal anesthesia for cesarean delivery before incision. What is the best management?",
+        "tr": "Sezaryen için spinal anestezi sonrası insizyon öncesi duyu seviyesi yetersiz. En uygun yönetim nedir?"
+      },
+      "options": [
+        {
+          "en": "Proceed and give reassurance because pain is unlikely",
+          "tr": "Ağrı olası değildir diye güven verip devam etmek"
+        },
+        {
+          "en": "Assess block carefully and convert to an adequate anesthetic technique before incision",
+          "tr": "Bloğu dikkatle değerlendirip insizyon öncesi yeterli anestezik tekniğe geçmek"
+        },
+        {
+          "en": "Give only small IV midazolam and start surgery",
+          "tr": "Yalnızca düşük doz IV midazolam verip cerrahiye başlamak"
+        },
+        {
+          "en": "Ignore because motor block predicts surgical anesthesia",
+          "tr": "Motor blok cerrahi anesteziyi öngörür diye görmezden gelmek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Inadequate block can cause pain, distress, and loss of trust.",
+          "tr": "Yanlış. Yetersiz blok ağrı, stres ve güven kaybına neden olabilir."
+        },
+        {
+          "en": "Correct. Surgical anesthesia must be confirmed before incision; supplementation or conversion may be required.",
+          "tr": "Doğru. İnsizyon öncesi cerrahi anestezi doğrulanmalı; destek veya dönüşüm gerekebilir."
+        },
+        {
+          "en": "Incorrect. Sedation alone does not provide surgical anesthesia and may endanger airway.",
+          "tr": "Yanlış. Sedasyon tek başına cerrahi anestezi sağlamaz ve hava yolunu riske atabilir."
+        },
+        {
+          "en": "Incorrect. Motor block does not guarantee adequate sensory level for cesarean delivery.",
+          "tr": "Yanlış. Motor blok sezaryen için yeterli duyu seviyesini garanti etmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Failed or inadequate neuraxial block for cesarean must be recognized before incision and managed honestly.",
+        "tr": "Sezaryende başarısız veya yetersiz nöroaksiyel blok insizyon öncesi tanınmalı ve doğru yönetilmelidir."
+      },
+      "keyLearningPoint": {
+        "en": "Do not use sedation as a substitute for surgical anesthesia.",
+        "tr": "Sedasyonu cerrahi anestezinin yerine kullanmayın."
+      },
+      "commonTrap": {
+        "en": "Never dismiss patient-reported pain during cesarean under neuraxial anesthesia.",
+        "tr": "Nöroaksiyel anestezi altında sezaryende hastanın ağrı ifadesini asla küçümsemeyin."
+      },
+      "tags": [
+        "obstetric",
+        "failed_spinal",
+        "cesarean",
+        "neuraxial",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_airway_obesity_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Airway",
+      "topic": "Morbid obesity and induction",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A morbidly obese patient is scheduled for laparoscopic surgery. Which induction strategy most improves preoxygenation and airway safety?",
+        "tr": "Morbid obez hasta laparoskopik cerrahiye alınacak. Hangi indüksiyon stratejisi preoksijenasyon ve hava yolu güvenliğini en çok iyileştirir?"
+      },
+      "options": [
+        {
+          "en": "Ramped/head-elevated position with optimized preoxygenation",
+          "tr": "Ramped/baş elevasyonlu pozisyon ve optimize preoksijenasyon"
+        },
+        {
+          "en": "Supine flat position to shorten intubation distance",
+          "tr": "Entübasyon mesafesini kısaltmak için düz supin pozisyon"
+        },
+        {
+          "en": "Avoid preoxygenation to prevent absorption atelectasis",
+          "tr": "Absorbsiyon atelektazisini önlemek için preoksijenasyondan kaçınmak"
+        },
+        {
+          "en": "Delay airway equipment preparation until after induction",
+          "tr": "Hava yolu ekipman hazırlığını indüksiyon sonrasına bırakmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Ramped position improves airway alignment and FRC, prolonging safe apnea time.",
+          "tr": "Doğru. Ramped pozisyon hava yolu hizalanmasını ve FRC’yi iyileştirir, güvenli apne süresini uzatır."
+        },
+        {
+          "en": "Incorrect. Flat supine position worsens FRC and airway mechanics.",
+          "tr": "Yanlış. Düz supin pozisyon FRC’yi ve hava yolu mekaniğini bozar."
+        },
+        {
+          "en": "Incorrect. Preoxygenation is critical in obese patients with reduced oxygen reserve.",
+          "tr": "Yanlış. Obez hastalarda azalmış oksijen rezervi nedeniyle preoksijenasyon kritiktir."
+        },
+        {
+          "en": "Incorrect. Equipment and backup plans should be ready before induction.",
+          "tr": "Yanlış. Ekipman ve yedek planlar indüksiyon öncesi hazır olmalıdır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Obesity reduces FRC and safe apnea time; positioning and preoxygenation are major safety interventions.",
+        "tr": "Obezite FRC’yi ve güvenli apne süresini azaltır; pozisyon ve preoksijenasyon temel güvenlik müdahaleleridir."
+      },
+      "keyLearningPoint": {
+        "en": "Ramped positioning is an oxygenation strategy, not just comfort.",
+        "tr": "Ramped pozisyon yalnızca konfor değil, oksijenasyon stratejisidir."
+      },
+      "commonTrap": {
+        "en": "Do not induce an obese patient flat unless there is a compelling reason.",
+        "tr": "Zorunlu neden yoksa obez hastayı düz pozisyonda indüklemeyin."
+      },
+      "tags": [
+        "airway",
+        "obesity",
+        "preoxygenation",
+        "ramped_position",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_ambulatory_osa_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Perioperative Medicine",
+      "topic": "OSA ambulatory surgery",
+      "difficulty": "medium",
+      "stem": {
+        "en": "An untreated severe OSA patient is planned for ambulatory surgery requiring postoperative opioids. What is the most appropriate concern?",
+        "tr": "Tedavi edilmemiş ağır OSA hastası postoperatif opioid gerektiren günübirlik cerrahiye planlanıyor. En uygun endişe hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Increased risk of postoperative airway obstruction and opioid-related respiratory depression",
+          "tr": "Postoperatif hava yolu obstrüksiyonu ve opioid ilişkili solunum depresyonu riskinde artış"
+        },
+        {
+          "en": "Guaranteed safe discharge if awake in PACU",
+          "tr": "PACU’da uyanıksa kesin güvenli taburculuk"
+        },
+        {
+          "en": "No need for opioid-sparing techniques",
+          "tr": "Opioid azaltıcı tekniklere gerek olmaması"
+        },
+        {
+          "en": "OSA protects against hypoxemia",
+          "tr": "OSA’nın hipoksemiye karşı koruması"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. OSA and opioids synergistically increase respiratory risk.",
+          "tr": "Doğru. OSA ve opioidler solunumsal riski sinerjistik artırır."
+        },
+        {
+          "en": "Incorrect. Awake status alone does not guarantee safety after opioid exposure.",
+          "tr": "Yanlış. Uyanık olmak opioid maruziyeti sonrası güvenliği tek başına garanti etmez."
+        },
+        {
+          "en": "Incorrect. Opioid-sparing analgesia is especially important.",
+          "tr": "Yanlış. Opioid azaltıcı analjezi özellikle önemlidir."
+        },
+        {
+          "en": "Incorrect. OSA increases vulnerability to obstruction and desaturation.",
+          "tr": "Yanlış. OSA obstrüksiyon ve desatürasyona yatkınlığı artırır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "OSA selection for ambulatory surgery depends on severity, comorbidities, postoperative analgesic needs, and monitoring/discharge safety.",
+        "tr": "OSA’da günübirlik cerrahi seçimi şiddet, komorbiditeler, postoperatif analjezi ihtiyacı ve monitörizasyon/taburculuk güvenliğine bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Plan opioid-sparing analgesia and postoperative monitoring in OSA.",
+        "tr": "OSA’da opioid azaltıcı analjezi ve postoperatif monitörizasyon planlayın."
+      },
+      "commonTrap": {
+        "en": "Do not equate PACU wakefulness with overnight safety.",
+        "tr": "PACU’da uyanıklığı gece güvenliğiyle eşitlemeyin."
+      },
+      "tags": [
+        "osa",
+        "ambulatory",
+        "opioids",
+        "postoperative",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_icu_sepsis_induction_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Critical Care",
+      "topic": "Septic shock induction",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A septic shock patient on norepinephrine requires emergency laparotomy. Which induction approach is most appropriate?",
+        "tr": "Norepinefrin alan septik şok hastası acil laparotomi gerektiriyor. En uygun indüksiyon yaklaşımı hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Hemodynamically cautious induction with vasopressors ready and reduced drug doses",
+          "tr": "Vazopressörler hazır, azaltılmış dozlarla hemodinamik açıdan dikkatli indüksiyon"
+        },
+        {
+          "en": "Full-dose propofol bolus because shock prevents hypotension",
+          "tr": "Şok hipotansiyonu önlediği için tam doz propofol bolusu"
+        },
+        {
+          "en": "Avoid arterial pressure monitoring because surgery is urgent",
+          "tr": "Cerrahi acil olduğu için arter basıncı monitörizasyonundan kaçınmak"
+        },
+        {
+          "en": "Stop norepinephrine before induction",
+          "tr": "İndüksiyon öncesi norepinefrini durdurmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Septic shock patients are vasodilated and drug-sensitive; induction can cause collapse.",
+          "tr": "Doğru. Septik şok hastaları vazodile ve ilaca duyarlıdır; indüksiyon kollapsa neden olabilir."
+        },
+        {
+          "en": "Incorrect. Full-dose propofol may cause profound vasodilation and hypotension.",
+          "tr": "Yanlış. Tam doz propofol derin vazodilatasyon ve hipotansiyon yapabilir."
+        },
+        {
+          "en": "Incorrect. Urgency increases need for reliable hemodynamic management when feasible.",
+          "tr": "Yanlış. Aciliyet mümkünse güvenilir hemodinamik yönetim ihtiyacını artırır."
+        },
+        {
+          "en": "Incorrect. Stopping vasopressor may precipitate severe hypotension.",
+          "tr": "Yanlış. Vazopressörü durdurmak ciddi hipotansiyona yol açabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Induction in shock should be titrated, resuscitation-aware, and supported with vasopressors and invasive monitoring when appropriate.",
+        "tr": "Şokta indüksiyon titre edilmeli, resüsitasyonla entegre olmalı ve uygun durumda vazopressör/invaziv monitörizasyonla desteklenmelidir."
+      },
+      "keyLearningPoint": {
+        "en": "Shock patients can be profoundly sensitive to induction agents.",
+        "tr": "Şok hastaları indüksiyon ajanlarına aşırı duyarlı olabilir."
+      },
+      "commonTrap": {
+        "en": "Do not use routine elective induction doses in septic shock.",
+        "tr": "Septik şokta rutin elektif indüksiyon dozlarını kullanmayın."
+      },
+      "tags": [
+        "sepsis",
+        "shock",
+        "induction",
+        "norepinephrine",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_trauma_rsi_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Trauma",
+      "topic": "Trauma RSI",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A trauma patient with suspected cervical spine injury and full stomach needs emergency intubation. Which approach is most appropriate?",
+        "tr": "Servikal omurga yaralanması şüphesi ve dolu mide olan travma hastası acil entübasyon gerektiriyor. En uygun yaklaşım hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Prepare RSI with manual in-line stabilization, preoxygenation, suction, and backup airway plan",
+          "tr": "Manuel inline stabilizasyon, preoksijenasyon, aspirasyon ve yedek hava yolu planıyla RSI hazırlamak"
+        },
+        {
+          "en": "Hyperextend the neck to improve view",
+          "tr": "Görüşü artırmak için boynu hiperekstansiyona getirmek"
+        },
+        {
+          "en": "Avoid suction until after intubation",
+          "tr": "Aspirasyonu entübasyon sonrasına ertelemek"
+        },
+        {
+          "en": "Use repeated blind attempts if first pass fails",
+          "tr": "İlk deneme başarısızsa tekrarlayan kör denemeler yapmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Trauma airway management balances aspiration risk, cervical protection, oxygenation, and failed airway planning.",
+          "tr": "Doğru. Travma hava yolu yönetimi aspirasyon riski, servikal koruma, oksijenasyon ve başarısız hava yolu planını dengeler."
+        },
+        {
+          "en": "Incorrect. Neck hyperextension may worsen cervical injury.",
+          "tr": "Yanlış. Boyun hiperekstansiyonu servikal yaralanmayı kötüleştirebilir."
+        },
+        {
+          "en": "Incorrect. Suction should be ready before airway manipulation.",
+          "tr": "Yanlış. Aspirasyon hava yolu manipülasyonu öncesi hazır olmalıdır."
+        },
+        {
+          "en": "Incorrect. Repeated blind attempts increase trauma and delay oxygenation.",
+          "tr": "Yanlış. Tekrarlayan kör denemeler travmayı artırır ve oksijenasyonu geciktirir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Trauma RSI requires preparation for blood/vomitus, cervical precautions, hypoxia, shock, and failure.",
+        "tr": "Travma RSI kan/kusma, servikal önlemler, hipoksi, şok ve başarısızlık için hazırlık gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "First-pass success matters, but oxygenation rescue matters more.",
+        "tr": "İlk geçiş başarısı önemlidir, ancak oksijenasyon kurtarma daha önemlidir."
+      },
+      "commonTrap": {
+        "en": "Do not sacrifice cervical safety or oxygenation for a better laryngoscopy view.",
+        "tr": "Daha iyi laringoskopi görüşü için servikal güvenlik veya oksijenasyondan vazgeçmeyin."
+      },
+      "tags": [
+        "trauma",
+        "rsi",
+        "cervical_spine",
+        "aspiration",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_bleeding_mtp_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Trauma",
+      "topic": "Massive transfusion",
+      "difficulty": "hard",
+      "stem": {
+        "en": "During major hemorrhage, the patient becomes hypotensive, cold, acidotic, and coagulopathic. What is the best approach?",
+        "tr": "Majör kanama sırasında hasta hipotansif, soğuk, asidotik ve koagülopatik hale geliyor. En iyi yaklaşım hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Activate massive transfusion and correct physiology including temperature, calcium, fibrinogen, and source control",
+          "tr": "Masif transfüzyonu aktive edip sıcaklık, kalsiyum, fibrinojen ve kaynak kontrolü dahil fizyolojiyi düzeltmek"
+        },
+        {
+          "en": "Continue large-volume saline alone",
+          "tr": "Yalnızca yüksek hacimli serum fizyolojik vermeye devam etmek"
+        },
+        {
+          "en": "Delay transfusion until hemoglobin is below 7 g/dL",
+          "tr": "Hemoglobin 7 g/dL altına düşene kadar transfüzyonu geciktirmek"
+        },
+        {
+          "en": "Avoid communication with surgery to prevent distraction",
+          "tr": "Dikkat dağılmasını önlemek için cerrahiyle iletişimden kaçınmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Hemostatic resuscitation treats physiology and logistics simultaneously.",
+          "tr": "Doğru. Hemostatik resüsitasyon fizyoloji ve lojistiği eş zamanlı yönetir."
+        },
+        {
+          "en": "Incorrect. Saline alone worsens dilution, acidosis, and coagulopathy.",
+          "tr": "Yanlış. Yalnız serum fizyolojik dilüsyon, asidoz ve koagülopatiyi kötüleştirir."
+        },
+        {
+          "en": "Incorrect. Massive hemorrhage requires proactive resuscitation, not waiting for delayed lab thresholds.",
+          "tr": "Yanlış. Masif kanama gecikmiş laboratuvar eşiklerini beklemeyi değil proaktif resüsitasyonu gerektirir."
+        },
+        {
+          "en": "Incorrect. Team communication is essential.",
+          "tr": "Yanlış. Ekip iletişimi esastır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Massive hemorrhage is managed by early activation, balanced blood products, warming, calcium, coagulation support, and definitive source control.",
+        "tr": "Masif kanama erken aktivasyon, dengeli kan ürünleri, ısıtma, kalsiyum, koagülasyon desteği ve kesin kaynak kontrolüyle yönetilir."
+      },
+      "keyLearningPoint": {
+        "en": "Treat lethal physiology early.",
+        "tr": "Ölümcül fizyolojiyi erken tedavi edin."
+      },
+      "commonTrap": {
+        "en": "Do not resuscitate major hemorrhage with crystalloid alone.",
+        "tr": "Majör kanamayı yalnız kristalloidle resüsite etmeyin."
+      },
+      "tags": [
+        "bleeding",
+        "massive_transfusion",
+        "trauma",
+        "coagulopathy",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_emerg_anaphylaxis_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Clinical Emergencies",
+      "topic": "Anaphylaxis during anesthesia",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Shortly after rocuronium, a patient develops severe hypotension, bronchospasm, and flushing. What is the best immediate pharmacologic treatment?",
+        "tr": "Roküronyumdan kısa süre sonra hastada ciddi hipotansiyon, bronkospazm ve flushing gelişiyor. En iyi acil farmakolojik tedavi hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Epinephrine",
+          "tr": "Epinefrin"
+        },
+        {
+          "en": "Diphenhydramine only",
+          "tr": "Yalnız difenhidramin"
+        },
+        {
+          "en": "Hydrocortisone only",
+          "tr": "Yalnız hidrokortizon"
+        },
+        {
+          "en": "Furosemide",
+          "tr": "Furosemid"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Epinephrine is first-line for life-threatening anaphylaxis.",
+          "tr": "Doğru. Yaşamı tehdit eden anafilakside epinefrin ilk basamaktır."
+        },
+        {
+          "en": "Incorrect. Antihistamines are adjuncts and too slow for shock.",
+          "tr": "Yanlış. Antihistaminikler yardımcıdır ve şok için çok yavaştır."
+        },
+        {
+          "en": "Incorrect. Steroids are adjuncts, not immediate lifesaving therapy.",
+          "tr": "Yanlış. Steroidler yardımcıdır; acil hayat kurtarıcı tedavi değildir."
+        },
+        {
+          "en": "Incorrect. Furosemide can worsen hypovolemia and hypotension.",
+          "tr": "Yanlış. Furosemid hipovolemi ve hipotansiyonu kötüleştirebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Perioperative anaphylaxis requires epinephrine, oxygen, fluids, stopping triggers, and later allergy workup.",
+        "tr": "Perioperatif anafilaksi epinefrin, oksijen, sıvı, tetikleyicilerin kesilmesi ve sonra alerji değerlendirmesi gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Epinephrine treats both vasoplegia and bronchospasm.",
+        "tr": "Epinefrin hem vazoplejiyi hem bronkospazmı tedavi eder."
+      },
+      "commonTrap": {
+        "en": "Do not delay epinephrine while giving adjuncts.",
+        "tr": "Yardımcı ilaçları verirken epinefrini geciktirmeyin."
+      },
+      "tags": [
+        "anaphylaxis",
+        "rocuronium",
+        "epinephrine",
+        "emergency",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_emerg_mh_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Clinical Emergencies",
+      "topic": "Malignant hyperthermia crisis",
+      "difficulty": "hard",
+      "stem": {
+        "en": "During sevoflurane anesthesia after succinylcholine, ETCO2 rises rapidly despite increased ventilation and generalized rigidity appears. What is the best treatment?",
+        "tr": "Süksinilkolin sonrası sevofluran anestezisinde ventilasyon artırılmasına rağmen ETCO2 hızla yükseliyor ve yaygın rijidite gelişiyor. En iyi tedavi nedir?"
+      },
+      "options": [
+        {
+          "en": "Stop triggers, give dantrolene, hyperventilate with 100% oxygen, cool, and treat complications",
+          "tr": "Tetikleyicileri kesmek, dantrolen vermek, %100 oksijenle hiperventile etmek, soğutmak ve komplikasyonları tedavi etmek"
+        },
+        {
+          "en": "Wait for core temperature above 41°C before acting",
+          "tr": "Müdahale için çekirdek sıcaklığın 41°C üstüne çıkmasını beklemek"
+        },
+        {
+          "en": "Give more succinylcholine to relieve rigidity",
+          "tr": "Rijiditeyi çözmek için daha fazla süksinilkolin vermek"
+        },
+        {
+          "en": "Switch from sevoflurane to desflurane",
+          "tr": "Sevoflurandan desflurana geçmek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. This is suspected malignant hyperthermia requiring immediate crisis treatment.",
+          "tr": "Doğru. Bu şüpheli malign hipertermidir ve acil kriz tedavisi gerektirir."
+        },
+        {
+          "en": "Incorrect. Hyperthermia may be late; treatment must not wait.",
+          "tr": "Yanlış. Hipertermi geç olabilir; tedavi beklememelidir."
+        },
+        {
+          "en": "Incorrect. Succinylcholine is a trigger and would worsen the crisis.",
+          "tr": "Yanlış. Süksinilkolin tetikleyicidir ve krizi kötüleştirir."
+        },
+        {
+          "en": "Incorrect. Desflurane is also a volatile trigger.",
+          "tr": "Yanlış. Desfluran da volatil tetikleyicidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "MH is a hypermetabolic crisis caused by triggering agents in susceptible patients; dantrolene is specific therapy.",
+        "tr": "MH duyarlı hastalarda tetikleyici ajanlarla gelişen hipermetabolik krizdir; dantrolen özgül tedavidir."
+      },
+      "keyLearningPoint": {
+        "en": "Rising ETCO2 despite ventilation is an early red flag.",
+        "tr": "Ventilasyona rağmen ETCO2 yükselmesi erken kırmızı bayraktır."
+      },
+      "commonTrap": {
+        "en": "Do not wait for fever to treat MH.",
+        "tr": "MH tedavisi için ateşi beklemeyin."
+      },
+      "tags": [
+        "malignant_hyperthermia",
+        "dantrolene",
+        "sevoflurane",
+        "succinylcholine",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_regional_last_collapse_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Regional Anaesthesia",
+      "topic": "LAST with cardiovascular collapse",
+      "difficulty": "hard",
+      "stem": {
+        "en": "After a peripheral nerve block, a patient develops seizure followed by ventricular arrhythmia and hypotension. Which action is most appropriate?",
+        "tr": "Periferik sinir bloğu sonrası hastada nöbeti takiben ventriküler aritmi ve hipotansiyon gelişiyor. En uygun yaklaşım hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Start lipid emulsion therapy and modify resuscitation for LAST",
+          "tr": "Lipid emülsiyon tedavisi başlatmak ve resüsitasyonu LAST’e göre modifiye etmek"
+        },
+        {
+          "en": "Treat arrhythmia with intravenous lidocaine",
+          "tr": "Aritmiyi intravenöz lidokainle tedavi etmek"
+        },
+        {
+          "en": "Give vasopressin as first-line vasopressor",
+          "tr": "Vazopressini ilk basamak vazopressör olarak vermek"
+        },
+        {
+          "en": "Delay treatment until serum local anesthetic level returns",
+          "tr": "Serum lokal anestezik düzeyi gelene kadar tedaviyi geciktirmek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Seizure followed by cardiovascular collapse after block suggests LAST; lipid rescue is central.",
+          "tr": "Doğru. Blok sonrası nöbet ve kardiyovasküler kollaps LAST düşündürür; lipid tedavisi merkezidir."
+        },
+        {
+          "en": "Incorrect. Lidocaine is a local anesthetic and should be avoided in LAST arrhythmia management.",
+          "tr": "Yanlış. Lidokain lokal anesteziktir ve LAST aritmi yönetiminde kaçınılmalıdır."
+        },
+        {
+          "en": "Incorrect. Vasopressin is generally avoided in LAST resuscitation algorithms.",
+          "tr": "Yanlış. Vazopressin LAST resüsitasyon algoritmalarında genellikle kaçınılır."
+        },
+        {
+          "en": "Incorrect. LAST is a clinical emergency; treatment must not wait for levels.",
+          "tr": "Yanlış. LAST klinik acildir; tedavi düzey sonucunu beklememelidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "LAST requires airway control, seizure treatment, lipid emulsion, and avoidance of drugs that worsen local anesthetic toxicity.",
+        "tr": "LAST hava yolu kontrolü, nöbet tedavisi, lipid emülsiyon ve lokal anestezik toksisitesini kötüleştiren ilaçlardan kaçınmayı gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Lipid early for significant LAST.",
+        "tr": "Belirgin LAST’te lipid erken başlanır."
+      },
+      "commonTrap": {
+        "en": "Do not use lidocaine to treat bupivacaine-related LAST arrhythmias.",
+        "tr": "Bupivakain ilişkili LAST aritmilerini lidokainle tedavi etmeyin."
+      },
+      "tags": [
+        "regional",
+        "last",
+        "lipid_emulsion",
+        "cardiac_arrest",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_airway_extubation_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Airway",
+      "topic": "Difficult extubation",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A patient with a difficult airway and airway edema after prolonged surgery is ready for emergence. What is the safest extubation approach?",
+        "tr": "Zor hava yolu olan ve uzun cerrahi sonrası hava yolu ödemi bulunan hasta uyanma aşamasında. En güvenli ekstübasyon yaklaşımı nedir?"
+      },
+      "options": [
+        {
+          "en": "Plan a staged extubation with skilled help, equipment, and reintubation strategy",
+          "tr": "Deneyimli yardım, ekipman ve reentübasyon stratejisiyle aşamalı ekstübasyon planlamak"
+        },
+        {
+          "en": "Extubate quickly in an unmonitored hallway",
+          "tr": "Monitörsüz koridorda hızlı ekstübasyon yapmak"
+        },
+        {
+          "en": "Remove the tube before reversal to avoid coughing",
+          "tr": "Öksürüğü önlemek için reversiyon öncesi tüpü çıkarmak"
+        },
+        {
+          "en": "Ignore edema if oxygen saturation is normal",
+          "tr": "Satürasyon normalse ödemi önemsememek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Difficult extubation requires planning, oxygenation, and immediate rescue capability.",
+          "tr": "Doğru. Zor ekstübasyon planlama, oksijenasyon ve acil kurtarma kapasitesi gerektirir."
+        },
+        {
+          "en": "Incorrect. Extubation should occur in a controlled monitored setting.",
+          "tr": "Yanlış. Ekstübasyon kontrollü ve monitörize ortamda yapılmalıdır."
+        },
+        {
+          "en": "Incorrect. Residual weakness increases airway failure risk.",
+          "tr": "Yanlış. Rezidüel güçsüzlük hava yolu başarısızlığı riskini artırır."
+        },
+        {
+          "en": "Incorrect. Edema may cause obstruction after tube removal even if current saturation is normal.",
+          "tr": "Yanlış. Ödem mevcut satürasyon normal olsa bile tüp çıktıktan sonra obstrüksiyon yapabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Extubation of the difficult airway is an elective airway procedure requiring a plan.",
+        "tr": "Zor hava yolunun ekstübasyonu plan gerektiren elektif hava yolu işlemidir."
+      },
+      "keyLearningPoint": {
+        "en": "Plan extubation as carefully as intubation.",
+        "tr": "Ekstübasyonu entübasyon kadar dikkatli planlayın."
+      },
+      "commonTrap": {
+        "en": "Do not let normal SpO2 before extubation create false reassurance.",
+        "tr": "Ekstübasyon öncesi normal SpO2’nin yanlış güven oluşturmasına izin vermeyin."
+      },
+      "tags": [
+        "airway",
+        "extubation",
+        "difficult_airway",
+        "edema",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_postop_resp_failure_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Postoperative Care",
+      "topic": "Postoperative respiratory failure",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A PACU patient after abdominal surgery is somnolent with RR 6/min, SpO2 97% on oxygen, and ETCO2 65 mmHg. What is the main problem?",
+        "tr": "Abdominal cerrahi sonrası PACU’da hasta somnolan, solunum sayısı 6/dk, oksijen altında SpO2 %97, ETCO2 65 mmHg. Ana problem nedir?"
+      },
+      "options": [
+        {
+          "en": "Opioid-related hypoventilation despite preserved SpO2 on oxygen",
+          "tr": "Oksijen altında SpO2 korunmasına rağmen opioid ilişkili hipoventilasyon"
+        },
+        {
+          "en": "Excellent ventilation because SpO2 is normal",
+          "tr": "SpO2 normal olduğu için mükemmel ventilasyon"
+        },
+        {
+          "en": "Carbon monoxide poisoning",
+          "tr": "Karbonmonoksit zehirlenmesi"
+        },
+        {
+          "en": "Malignant hyperthermia",
+          "tr": "Malign hipertermi"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Supplemental oxygen can mask hypoventilation on pulse oximetry; capnography reveals CO2 retention.",
+          "tr": "Doğru. Ek oksijen pulse oksimetrede hipoventilasyonu maskeleyebilir; kapnografi CO2 retansiyonunu gösterir."
+        },
+        {
+          "en": "Incorrect. Normal SpO2 does not prove adequate ventilation.",
+          "tr": "Yanlış. Normal SpO2 yeterli ventilasyonu kanıtlamaz."
+        },
+        {
+          "en": "Incorrect. CO poisoning is not the best explanation for high ETCO2 and bradypnea.",
+          "tr": "Yanlış. Yüksek ETCO2 ve bradipne için en iyi açıklama CO zehirlenmesi değildir."
+        },
+        {
+          "en": "Incorrect. MH usually includes hypermetabolism, rising CO2 during anesthesia, rigidity, acidosis, and hyperthermia.",
+          "tr": "Yanlış. MH genellikle anestezi sırasında hipermetabolizma, CO2 artışı, rijidite, asidoz ve hipertermi içerir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pulse oximetry may look normal during hypoventilation if oxygen is administered.",
+        "tr": "Oksijen veriliyorsa hipoventilasyonda pulse oksimetre normal görünebilir."
+      },
+      "keyLearningPoint": {
+        "en": "Capnography detects ventilation failure earlier than SpO2 in oxygen-treated patients.",
+        "tr": "Oksijen alan hastalarda kapnografi ventilasyon yetersizliğini SpO2’den erken saptar."
+      },
+      "commonTrap": {
+        "en": "Do not use oxygen saturation alone to assess opioid safety.",
+        "tr": "Opioid güvenliğini değerlendirmede yalnız satürasyonu kullanmayın."
+      },
+      "tags": [
+        "postoperative",
+        "respiratory_failure",
+        "opioids",
+        "capnography",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_renal_aki_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Perioperative Medicine",
+      "topic": "Acute kidney injury risk",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which intraoperative strategy is most appropriate to reduce AKI risk in a high-risk surgical patient?",
+        "tr": "Yüksek riskli cerrahi hastada AKI riskini azaltmak için en uygun intraoperatif strateji hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Maintain perfusion pressure and euvolemia while avoiding nephrotoxins when possible",
+          "tr": "Perfüzyon basıncı ve euvolemiyi korumak, mümkünse nefrotoksinlerden kaçınmak"
+        },
+        {
+          "en": "Use prolonged severe hypotension to reduce bleeding",
+          "tr": "Kanamayı azaltmak için uzun süreli ciddi hipotansiyon kullanmak"
+        },
+        {
+          "en": "Give diuretics to all patients regardless of volume status",
+          "tr": "Volüm durumundan bağımsız tüm hastalara diüretik vermek"
+        },
+        {
+          "en": "Ignore urine output because it is never useful",
+          "tr": "İdrar çıkışı asla yararlı değildir diye önemsememek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Kidney protection centers on perfusion, volume status, and avoiding additional insults.",
+          "tr": "Doğru. Böbrek koruması perfüzyon, volüm durumu ve ek hasarlardan kaçınmaya dayanır."
+        },
+        {
+          "en": "Incorrect. Severe hypotension increases renal ischemia risk.",
+          "tr": "Yanlış. Ciddi hipotansiyon renal iskemi riskini artırır."
+        },
+        {
+          "en": "Incorrect. Diuretics are not universal kidney-protective agents and can worsen hypovolemia.",
+          "tr": "Yanlış. Diüretikler evrensel böbrek koruyucu değildir ve hipovolemiyi kötüleştirebilir."
+        },
+        {
+          "en": "Incorrect. Urine output is imperfect but clinically useful in context.",
+          "tr": "Yanlış. İdrar çıkışı kusurludur ancak bağlam içinde klinik olarak yararlıdır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Perioperative AKI prevention requires maintaining renal perfusion and avoiding nephrotoxic or ischemic insults.",
+        "tr": "Perioperatif AKI önleme renal perfüzyonun korunması ve nefrotoksik/iskemik hasarlardan kaçınmayı gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Perfusion pressure matters for kidneys.",
+        "tr": "Böbrekler için perfüzyon basıncı önemlidir."
+      },
+      "commonTrap": {
+        "en": "Do not treat oliguria reflexively with diuretics before assessing volume and perfusion.",
+        "tr": "Volüm ve perfüzyonu değerlendirmeden oligüriyi refleks olarak diüretikle tedavi etmeyin."
+      },
+      "tags": [
+        "renal",
+        "aki",
+        "perfusion",
+        "oliguria",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_liver_coag_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Perioperative Medicine",
+      "topic": "Cirrhosis and coagulation",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A cirrhotic patient has INR 1.8 but no active bleeding before a minor procedure. Which statement is most accurate?",
+        "tr": "Sirotik hastada küçük işlem öncesi INR 1.8 var ancak aktif kanama yok. En doğru ifade hangisidir?"
+      },
+      "options": [
+        {
+          "en": "INR alone fully predicts bleeding risk in cirrhosis",
+          "tr": "Sirozda INR tek başına kanama riskini tam öngörür"
+        },
+        {
+          "en": "Hemostasis in cirrhosis is rebalanced and complex; INR alone is insufficient",
+          "tr": "Sirozda hemostaz yeniden dengelenmiş ve karmaşıktır; INR tek başına yetersizdir"
+        },
+        {
+          "en": "All cirrhotic patients are auto-anticoagulated and cannot thrombose",
+          "tr": "Tüm sirotik hastalar otomatik antikoagüledir ve tromboz gelişmez"
+        },
+        {
+          "en": "Platelet count and fibrinogen are irrelevant",
+          "tr": "Trombosit sayısı ve fibrinojen önemsizdir"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. INR reflects selected procoagulant factors and not the full hemostatic balance.",
+          "tr": "Yanlış. INR seçilmiş prokoagülan faktörleri yansıtır; tüm hemostatik dengeyi göstermez."
+        },
+        {
+          "en": "Correct. Cirrhosis changes procoagulant and anticoagulant systems; bleeding and thrombosis are both possible.",
+          "tr": "Doğru. Siroz prokoagülan ve antikoagülan sistemleri değiştirir; hem kanama hem tromboz olabilir."
+        },
+        {
+          "en": "Incorrect. Cirrhotic patients can thrombose despite elevated INR.",
+          "tr": "Yanlış. Sirotik hastalarda INR yüksek olsa bile tromboz gelişebilir."
+        },
+        {
+          "en": "Incorrect. Platelets and fibrinogen can be clinically important.",
+          "tr": "Yanlış. Trombositler ve fibrinojen klinik olarak önemli olabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Coagulation in cirrhosis is not captured by INR alone; decisions should be procedure- and patient-specific.",
+        "tr": "Sirozda koagülasyon yalnız INR ile açıklanamaz; kararlar işlem ve hastaya özgü olmalıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Elevated INR does not equal complete anticoagulation.",
+        "tr": "Yüksek INR tam antikoagülasyon anlamına gelmez."
+      },
+      "commonTrap": {
+        "en": "Do not transfuse plasma reflexively for INR alone without considering context.",
+        "tr": "Bağlamı düşünmeden yalnız INR için refleks plazma vermeyin."
+      },
+      "tags": [
+        "liver",
+        "cirrhosis",
+        "coagulation",
+        "inr",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_regional_anticoag_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Regional Anaesthesia",
+      "topic": "Anticoagulation and epidural catheter",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A patient with an epidural catheter develops new severe back pain and progressive leg weakness after postoperative anticoagulation is started. What is the best action?",
+        "tr": "Epidural kateteri olan hastada postoperatif antikoagülasyon başlandıktan sonra yeni şiddetli bel ağrısı ve ilerleyici bacak güçsüzlüğü gelişiyor. En iyi yaklaşım nedir?"
+      },
+      "options": [
+        {
+          "en": "Urgent evaluation for epidural hematoma and neurosurgical decompression pathway",
+          "tr": "Epidural hematom için acil değerlendirme ve nöroşirürjik dekompresyon yolunu başlatmak"
+        },
+        {
+          "en": "Reassure and reassess next day",
+          "tr": "Güvence verip ertesi gün tekrar değerlendirmek"
+        },
+        {
+          "en": "Increase epidural infusion rate",
+          "tr": "Epidural infüzyon hızını artırmak"
+        },
+        {
+          "en": "Remove monitoring because symptoms are expected",
+          "tr": "Belirtiler beklenen olduğu için monitörizasyonu sonlandırmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. New neurologic deficit after neuraxial technique is time-critical until compressive hematoma is excluded.",
+          "tr": "Doğru. Nöroaksiyel teknik sonrası yeni nörolojik defisit kompresif hematom dışlanana kadar zamana duyarlı acildir."
+        },
+        {
+          "en": "Incorrect. Delay risks permanent neurologic injury.",
+          "tr": "Yanlış. Gecikme kalıcı nörolojik hasar riski taşır."
+        },
+        {
+          "en": "Incorrect. Increasing infusion could worsen masking and delay diagnosis.",
+          "tr": "Yanlış. İnfüzyonu artırmak bulguları maskeleyip tanıyı geciktirebilir."
+        },
+        {
+          "en": "Incorrect. Symptoms are not expected and require urgent action.",
+          "tr": "Yanlış. Bu belirtiler beklenen değildir ve acil müdahale gerektirir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Epidural hematoma is rare but devastating; prompt recognition and decompression are crucial.",
+        "tr": "Epidural hematom nadir ancak yıkıcıdır; hızlı tanı ve dekompresyon kritiktir."
+      },
+      "keyLearningPoint": {
+        "en": "Progressive motor deficit after neuraxial block is an emergency.",
+        "tr": "Nöroaksiyel blok sonrası ilerleyici motor defisit acildir."
+      },
+      "commonTrap": {
+        "en": "Do not attribute new weakness to local anesthetic until hematoma is considered.",
+        "tr": "Yeni güçsüzlüğü hematom düşünmeden lokal anesteziğe bağlamayın."
+      },
+      "tags": [
+        "regional",
+        "epidural",
+        "anticoagulation",
+        "epidural_hematoma",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_peds_uri_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Paediatric Anaesthesia",
+      "topic": "URI and elective surgery",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A 3-year-old for elective tonsillectomy has fever, productive cough, wheeze, and lethargy. What is the most appropriate decision?",
+        "tr": "Elektif tonsillektomi planlanan 3 yaşındaki çocukta ateş, prodüktif öksürük, wheezing ve letarji var. En uygun karar nedir?"
+      },
+      "options": [
+        {
+          "en": "Proceed because children commonly have colds",
+          "tr": "Çocuklarda soğuk algınlığı sık olduğu için devam etmek"
+        },
+        {
+          "en": "Postpone elective surgery and optimize respiratory status",
+          "tr": "Elektif cerrahiyi erteleyip solunumsal durumu optimize etmek"
+        },
+        {
+          "en": "Proceed only if no IV is placed",
+          "tr": "Yalnız IV takılmazsa devam etmek"
+        },
+        {
+          "en": "Give opioid premedication to suppress cough and proceed",
+          "tr": "Öksürüğü baskılamak için opioid premedikasyon verip devam etmek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Severe active symptoms increase perioperative respiratory risk.",
+          "tr": "Yanlış. Ciddi aktif belirtiler perioperatif solunumsal riski artırır."
+        },
+        {
+          "en": "Correct. Fever, productive cough, wheeze, and lethargy are concerning features for postponement.",
+          "tr": "Doğru. Ateş, prodüktif öksürük, wheezing ve letarji erteleme açısından endişe verici bulgulardır."
+        },
+        {
+          "en": "Incorrect. IV placement does not solve airway hyperreactivity.",
+          "tr": "Yanlış. IV takılması hava yolu hiperreaktivitesini çözmez."
+        },
+        {
+          "en": "Incorrect. Opioid premedication may worsen ventilation and does not remove risk.",
+          "tr": "Yanlış. Opioid premedikasyon ventilasyonu kötüleştirebilir ve riski ortadan kaldırmaz."
+        }
+      ],
+      "overallExplanation": {
+        "en": "URI decision-making depends on symptom severity, surgery urgency, airway surgery, age, and comorbidities.",
+        "tr": "ÜSYE kararında semptom şiddeti, cerrahi aciliyeti, hava yolu cerrahisi, yaş ve komorbiditeler önemlidir."
+      },
+      "keyLearningPoint": {
+        "en": "Fever, wheeze, productive cough, and lethargy are red flags.",
+        "tr": "Ateş, wheezing, prodüktif öksürük ve letarji kırmızı bayraktır."
+      },
+      "commonTrap": {
+        "en": "Do not treat all URIs as equivalent.",
+        "tr": "Tüm ÜSYE’leri aynı kabul etmeyin."
+      },
+      "tags": [
+        "paediatric",
+        "uri",
+        "tonsillectomy",
+        "respiratory_risk",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_peds_pyloric_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Pyloric stenosis",
+      "difficulty": "medium",
+      "stem": {
+        "en": "An infant with pyloric stenosis is scheduled for pyloromyotomy. What should occur before anesthesia?",
+        "tr": "Pilor stenozu olan infant piloromiyotomiye alınacak. Anestezi öncesi ne yapılmalıdır?"
+      },
+      "options": [
+        {
+          "en": "Correct dehydration, hypochloremic metabolic alkalosis, and electrolyte abnormalities before surgery",
+          "tr": "Cerrahi öncesi dehidratasyon, hipokloremik metabolik alkaloz ve elektrolit bozukluklarını düzeltmek"
+        },
+        {
+          "en": "Proceed immediately because pyloric stenosis is always a surgical emergency",
+          "tr": "Pilor stenozu her zaman cerrahi acil olduğu için hemen başlamak"
+        },
+        {
+          "en": "Give succinylcholine before preoxygenation",
+          "tr": "Preoksijenasyon öncesi süksinilkolin vermek"
+        },
+        {
+          "en": "Avoid gastric decompression because it increases aspiration risk",
+          "tr": "Aspirasyon riskini artırdığı için mide dekompresyonundan kaçınmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Pyloric stenosis is a medical resuscitation emergency before it is an operative urgency.",
+          "tr": "Doğru. Pilor stenozu ameliyat aciliyeti olmadan önce tıbbi resüsitasyon acilidir."
+        },
+        {
+          "en": "Incorrect. Surgery should wait until metabolic derangements are corrected.",
+          "tr": "Yanlış. Cerrahi metabolik bozukluklar düzelene kadar beklemelidir."
+        },
+        {
+          "en": "Incorrect. Preoxygenation and airway planning precede paralytic administration.",
+          "tr": "Yanlış. Preoksijenasyon ve hava yolu planlaması paralitikten önce gelir."
+        },
+        {
+          "en": "Incorrect. Gastric decompression reduces gastric volume and aspiration risk.",
+          "tr": "Yanlış. Mide dekompresyonu mide hacmini ve aspirasyon riskini azaltır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pyloric stenosis requires correction of dehydration and hypochloremic metabolic alkalosis before anesthesia.",
+        "tr": "Pilor stenozunda anestezi öncesi dehidratasyon ve hipokloremik metabolik alkaloz düzeltilmelidir."
+      },
+      "keyLearningPoint": {
+        "en": "Optimize first, operate second.",
+        "tr": "Önce optimize et, sonra ameliyat et."
+      },
+      "commonTrap": {
+        "en": "Do not rush to the OR with uncorrected alkalosis and dehydration.",
+        "tr": "Düzeltilmemiş alkaloz ve dehidratasyonla ameliyathaneye acele etmeyin."
+      },
+      "tags": [
+        "paediatric",
+        "pyloric_stenosis",
+        "metabolic_alkalosis",
+        "aspiration",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_peds_emergence_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Emergence delirium",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which feature is most typical of pediatric emergence delirium after sevoflurane anesthesia?",
+        "tr": "Sevofluran anestezisi sonrası pediatrik emergence delirium için en tipik özellik hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Agitation, inconsolability, and disorientation despite adequate oxygenation",
+          "tr": "Yeterli oksijenasyona rağmen ajitasyon, teselli edilememe ve dezoryantasyon"
+        },
+        {
+          "en": "Persistent paralysis with no respiratory effort",
+          "tr": "Solunum çabası olmadan kalıcı paralizi"
+        },
+        {
+          "en": "Severe hypoglycemia by definition",
+          "tr": "Tanım gereği ciddi hipoglisemi"
+        },
+        {
+          "en": "Always caused by surgical bleeding",
+          "tr": "Her zaman cerrahi kanamaya bağlı olması"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Emergence delirium presents with agitation and disorientation, especially in preschool children.",
+          "tr": "Doğru. Emergence delirium özellikle okul öncesi çocuklarda ajitasyon ve dezoryantasyonla görülür."
+        },
+        {
+          "en": "Incorrect. Paralysis suggests residual neuromuscular blockade, not delirium.",
+          "tr": "Yanlış. Paralizi emergence delirium değil rezidüel nöromüsküler blokaj düşündürür."
+        },
+        {
+          "en": "Incorrect. Hypoglycemia is a differential diagnosis but not the definition.",
+          "tr": "Yanlış. Hipoglisemi ayırıcı tanıdır ancak tanım değildir."
+        },
+        {
+          "en": "Incorrect. Pain, hypoxia, full bladder, and bleeding must be excluded, but ED is not always bleeding.",
+          "tr": "Yanlış. Ağrı, hipoksi, dolu mesane ve kanama dışlanmalıdır; ED her zaman kanama değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Emergence delirium is a diagnosis after excluding pain, hypoxia, hypoglycemia, full bladder, and other causes of agitation.",
+        "tr": "Emergence delirium ağrı, hipoksi, hipoglisemi, dolu mesane ve diğer ajitasyon nedenleri dışlandıktan sonra düşünülür."
+      },
+      "keyLearningPoint": {
+        "en": "Assess safety and exclude treatable causes of agitation.",
+        "tr": "Güvenliği değerlendir ve tedavi edilebilir ajitasyon nedenlerini dışla."
+      },
+      "commonTrap": {
+        "en": "Do not label agitation as delirium before checking oxygenation and pain.",
+        "tr": "Oksijenasyon ve ağrıyı kontrol etmeden ajitasyonu delirium olarak etiketlemeyin."
+      },
+      "tags": [
+        "paediatric",
+        "emergence_delirium",
+        "sevoflurane",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_pain_chronic_opioid_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Pain Medicine",
+      "topic": "Chronic opioid patient",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A chronic opioid-tolerant patient presents for major surgery. Which perioperative plan is most appropriate?",
+        "tr": "Kronik opioid toleransı olan hasta majör cerrahiye geliyor. En uygun perioperatif plan hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Continue baseline opioid strategy when appropriate and add multimodal analgesia with higher rescue requirements anticipated",
+          "tr": "Uygunsa bazal opioid stratejisini sürdürmek ve daha yüksek rescue gereksinimi bekleyerek multimodal analjezi eklemek"
+        },
+        {
+          "en": "Stop all opioids abruptly preoperatively",
+          "tr": "Preoperatif tüm opioidleri aniden kesmek"
+        },
+        {
+          "en": "Use standard opioid-naive doses only",
+          "tr": "Yalnız opioid-naif standart dozları kullanmak"
+        },
+        {
+          "en": "Avoid all regional techniques because tolerance makes them ineffective",
+          "tr": "Tolerans nedeniyle etkisiz oldukları için tüm rejyonal tekniklerden kaçınmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Opioid-tolerant patients need baseline coverage plus multimodal and often higher analgesic requirements.",
+          "tr": "Doğru. Opioid toleranslı hastalar bazal kapsama, multimodal analjezi ve sıklıkla daha yüksek analjezik gereksinim duyar."
+        },
+        {
+          "en": "Incorrect. Abrupt cessation risks withdrawal and poor pain control.",
+          "tr": "Yanlış. Ani kesme yoksunluk ve kötü ağrı kontrolü riski taşır."
+        },
+        {
+          "en": "Incorrect. Opioid-naive dosing may be inadequate.",
+          "tr": "Yanlış. Opioid-naif dozlar yetersiz kalabilir."
+        },
+        {
+          "en": "Incorrect. Regional techniques can be very useful opioid-sparing tools.",
+          "tr": "Yanlış. Rejyonal teknikler çok yararlı opioid azaltıcı araçlar olabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Chronic opioid therapy changes perioperative analgesic requirements and withdrawal risk.",
+        "tr": "Kronik opioid tedavisi perioperatif analjezik gereksinimleri ve yoksunluk riskini değiştirir."
+      },
+      "keyLearningPoint": {
+        "en": "Prevent withdrawal while using multimodal analgesia.",
+        "tr": "Multimodal analjezi kullanırken yoksunluğu önleyin."
+      },
+      "commonTrap": {
+        "en": "Do not undertreat pain because the patient is opioid tolerant.",
+        "tr": "Hasta opioid toleranslı diye ağrıyı yetersiz tedavi etmeyin."
+      },
+      "tags": [
+        "pain",
+        "chronic_opioid",
+        "multimodal_analgesia",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_cied_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Cardiac Disease",
+      "topic": "Pacemaker and cautery",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A pacemaker-dependent patient requires surgery using monopolar cautery above the umbilicus. Which strategy is most appropriate?",
+        "tr": "Pacemaker bağımlı hasta umblikus üstü cerrahide monopolar koter kullanılacak. En uygun strateji hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Plan for device management, minimize EMI, place return pad to avoid current path through device, and have backup pacing/defibrillation available",
+          "tr": "Cihaz yönetimini planlamak, EMI’yi azaltmak, dönüş pedini akım cihazdan geçmeyecek şekilde yerleştirmek ve yedek pacing/defibrilasyon bulundurmak"
+        },
+        {
+          "en": "Ignore the device because cautery never affects pacemakers",
+          "tr": "Koter pacemakerları asla etkilemez diye cihazı önemsememek"
+        },
+        {
+          "en": "Place return pad directly over the generator",
+          "tr": "Dönüş pedini doğrudan jeneratör üzerine yerleştirmek"
+        },
+        {
+          "en": "Use long continuous cautery bursts near the device",
+          "tr": "Cihaz yakınında uzun sürekli koter uygulamak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Pacemaker-dependent patients need a plan to prevent or manage EMI-related inhibition.",
+          "tr": "Doğru. Pacemaker bağımlı hastalarda EMI ilişkili inhibisyonu önlemek veya yönetmek için plan gerekir."
+        },
+        {
+          "en": "Incorrect. Monopolar cautery can cause electromagnetic interference.",
+          "tr": "Yanlış. Monopolar koter elektromanyetik interferans yapabilir."
+        },
+        {
+          "en": "Incorrect. Return pad placement should reduce current near the device.",
+          "tr": "Yanlış. Dönüş pedi cihaz yakınındaki akımı azaltacak şekilde yerleştirilmelidir."
+        },
+        {
+          "en": "Incorrect. Short bursts and distance reduce EMI risk.",
+          "tr": "Yanlış. Kısa uygulamalar ve mesafe EMI riskini azaltır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "CIED management depends on device type, pacemaker dependence, surgical site, and EMI risk.",
+        "tr": "CIED yönetimi cihaz tipi, pacemaker bağımlılığı, cerrahi bölge ve EMI riskine bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Have a backup plan for pacing-dependent patients.",
+        "tr": "Pacing bağımlı hastalarda yedek planınız olsun."
+      },
+      "commonTrap": {
+        "en": "Do not let monopolar cautery current cross the generator when avoidable.",
+        "tr": "Mümkünse monopolar koter akımının jeneratör üzerinden geçmesine izin vermeyin."
+      },
+      "tags": [
+        "cied",
+        "pacemaker",
+        "electrocautery",
+        "emi",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_neuro_icp_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Neuroanaesthesia",
+      "topic": "Intracranial hypertension",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A patient with traumatic brain injury develops hypotension during anesthesia. Why is this dangerous?",
+        "tr": "Travmatik beyin hasarlı hastada anestezi sırasında hipotansiyon gelişiyor. Bu neden tehlikelidir?"
+      },
+      "options": [
+        {
+          "en": "It reduces cerebral perfusion pressure and worsens secondary brain injury",
+          "tr": "Serebral perfüzyon basıncını düşürür ve sekonder beyin hasarını kötüleştirir"
+        },
+        {
+          "en": "It always lowers ICP enough to be beneficial",
+          "tr": "Her zaman ICP’yi faydalı olacak kadar düşürür"
+        },
+        {
+          "en": "It prevents cerebral ischemia",
+          "tr": "Serebral iskemiyi önler"
+        },
+        {
+          "en": "It has no effect on brain perfusion",
+          "tr": "Beyin perfüzyonunu etkilemez"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. CPP = MAP − ICP; hypotension reduces CPP and may cause ischemia.",
+          "tr": "Doğru. CPP = MAP − ICP; hipotansiyon CPP’yi azaltır ve iskemiye neden olabilir."
+        },
+        {
+          "en": "Incorrect. Lower MAP may reduce CPP more than any benefit from ICP change.",
+          "tr": "Yanlış. MAP düşüşü, ICP değişiminden beklenen faydadan daha fazla CPP azaltabilir."
+        },
+        {
+          "en": "Incorrect. Hypotension promotes ischemia.",
+          "tr": "Yanlış. Hipotansiyon iskemiyi artırır."
+        },
+        {
+          "en": "Incorrect. Systemic pressure is central to cerebral perfusion.",
+          "tr": "Yanlış. Sistemik basınç serebral perfüzyon için merkezidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "TBI anesthesia aims to avoid secondary injury: hypoxia, hypotension, hypercapnia, and extremes of physiology.",
+        "tr": "TBI anestezisi sekonder hasardan kaçınmayı hedefler: hipoksi, hipotansiyon, hiperkapni ve fizyolojik uçlar."
+      },
+      "keyLearningPoint": {
+        "en": "Maintain cerebral perfusion pressure.",
+        "tr": "Serebral perfüzyon basıncını koruyun."
+      },
+      "commonTrap": {
+        "en": "Do not use hypotension as a benign tool in TBI.",
+        "tr": "TBI’da hipotansiyonu benign bir araç gibi kullanmayın."
+      },
+      "tags": [
+        "neuro",
+        "tbi",
+        "cpp",
+        "hypotension",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_neuro_beachchair_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Neuroanaesthesia",
+      "topic": "Beach-chair position",
+      "difficulty": "medium",
+      "stem": {
+        "en": "In beach-chair position under anesthesia, why can cerebral perfusion be overestimated if blood pressure is measured at the arm?",
+        "tr": "Anestezi altında beach-chair pozisyonunda kan basıncı koldan ölçülürse serebral perfüzyon neden olduğundan yüksek tahmin edilebilir?"
+      },
+      "options": [
+        {
+          "en": "The brain is hydrostatically above the arm/heart level",
+          "tr": "Beyin hidrostatik olarak kol/kalp seviyesinin üzerindedir"
+        },
+        {
+          "en": "The arm pressure is always lower than brain pressure",
+          "tr": "Kol basıncı her zaman beyin basıncından düşüktür"
+        },
+        {
+          "en": "Hydrostatic gradients do not exist under anesthesia",
+          "tr": "Anestezi altında hidrostatik gradyanlar yoktur"
+        },
+        {
+          "en": "Pulse oximetry corrects cerebral pressure automatically",
+          "tr": "Pulse oksimetre serebral basıncı otomatik düzeltir"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Pressure at the brain may be lower than measured arm pressure due to vertical height difference.",
+          "tr": "Doğru. Dikey yükseklik farkı nedeniyle beyindeki basınç koldan ölçülenden düşük olabilir."
+        },
+        {
+          "en": "Incorrect. In beach-chair, brain pressure is often lower than arm/heart-level pressure.",
+          "tr": "Yanlış. Beach-chair pozisyonunda beyin basıncı çoğu zaman kol/kalp seviyesinden düşüktür."
+        },
+        {
+          "en": "Incorrect. Hydrostatic gradients still apply.",
+          "tr": "Yanlış. Hidrostatik gradyanlar geçerlidir."
+        },
+        {
+          "en": "Incorrect. Pulse oximetry does not correct arterial pressure.",
+          "tr": "Yanlış. Pulse oksimetre arter basıncını düzeltmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Transducer level and hydrostatic gradients matter in positions where the brain is elevated.",
+        "tr": "Beynin yükseltildiği pozisyonlarda transdüser seviyesi ve hidrostatik gradyan önemlidir."
+      },
+      "keyLearningPoint": {
+        "en": "Consider blood pressure at brain level in beach-chair position.",
+        "tr": "Beach-chair pozisyonunda beyin seviyesindeki basıncı düşünün."
+      },
+      "commonTrap": {
+        "en": "Do not assume arm MAP equals cerebral MAP when the head is elevated.",
+        "tr": "Baş yüksekken kol OAB’sinin serebral OAB’ye eşit olduğunu varsaymayın."
+      },
+      "tags": [
+        "neuro",
+        "beach_chair",
+        "cerebral_perfusion",
+        "blood_pressure",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_position_prone_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Clinical Anaesthesia",
+      "topic": "Prone positioning complication",
+      "difficulty": "medium",
+      "stem": {
+        "en": "After turning a patient prone, airway pressure rises and ventilation becomes difficult. What is the first priority?",
+        "tr": "Hasta prone çevrildikten sonra hava yolu basıncı yükseliyor ve ventilasyon zorlaşıyor. İlk öncelik nedir?"
+      },
+      "options": [
+        {
+          "en": "Check airway tube position, kinking, circuit, and chest/abdominal positioning",
+          "tr": "Tüp pozisyonu, kıvrılma, devre ve göğüs/abdominal pozisyonu kontrol etmek"
+        },
+        {
+          "en": "Assume malignant hyperthermia and ignore airway",
+          "tr": "Malign hipertermi varsayıp hava yolunu önemsememek"
+        },
+        {
+          "en": "Disconnect monitors to improve access",
+          "tr": "Erişimi artırmak için monitörleri ayırmak"
+        },
+        {
+          "en": "Increase tidal volume without assessment",
+          "tr": "Değerlendirme yapmadan tidal volümü artırmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Position change can cause tube migration/kinking and mechanical restriction.",
+          "tr": "Doğru. Pozisyon değişikliği tüp yer değiştirmesi/kıvrılması ve mekanik kısıtlama yapabilir."
+        },
+        {
+          "en": "Incorrect. Airway/circuit causes must be checked immediately.",
+          "tr": "Yanlış. Hava yolu/devre nedenleri hemen kontrol edilmelidir."
+        },
+        {
+          "en": "Incorrect. Monitoring is essential during instability.",
+          "tr": "Yanlış. İnstabilitede monitörizasyon esastır."
+        },
+        {
+          "en": "Incorrect. Increasing tidal volume may worsen high pressures and barotrauma.",
+          "tr": "Yanlış. Tidal volümü artırmak yüksek basınçları ve barotravmayı kötüleştirebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Prone positioning can compromise airway, ventilation, venous return, pressure points, and ocular perfusion.",
+        "tr": "Prone pozisyon hava yolu, ventilasyon, venöz dönüş, bası noktaları ve oküler perfüzyonu bozabilir."
+      },
+      "keyLearningPoint": {
+        "en": "After position change, reassess airway and ventilation immediately.",
+        "tr": "Pozisyon değişikliği sonrası hava yolu ve ventilasyonu hemen yeniden değerlendir."
+      },
+      "commonTrap": {
+        "en": "Do not ignore mechanical causes after turning prone.",
+        "tr": "Prone çevirdikten sonra mekanik nedenleri göz ardı etmeyin."
+      },
+      "tags": [
+        "positioning",
+        "prone",
+        "airway_pressure",
+        "ventilation",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_urology_turp_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Clinical Anaesthesia",
+      "topic": "TURP syndrome",
+      "difficulty": "medium",
+      "stem": {
+        "en": "During TURP under spinal anesthesia, a patient becomes confused, hypertensive, bradycardic, and nauseated. Sodium is 118 mEq/L. What is the likely diagnosis?",
+        "tr": "Spinal anestezi altında TURP sırasında hasta konfüze, hipertansif, bradikardik ve bulantılı oluyor. Sodyum 118 mEq/L. Olası tanı nedir?"
+      },
+      "options": [
+        {
+          "en": "TURP syndrome from irrigation fluid absorption",
+          "tr": "İrrigasyon sıvısı absorbsiyonuna bağlı TURP sendromu"
+        },
+        {
+          "en": "Local anesthetic systemic toxicity",
+          "tr": "Lokal anestezik sistemik toksisitesi"
+        },
+        {
+          "en": "Simple anxiety",
+          "tr": "Basit anksiyete"
+        },
+        {
+          "en": "Pseudocholinesterase deficiency",
+          "tr": "Psödokolinesteraz eksikliği"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Absorption of hypotonic irrigation fluid can cause hyponatremia and neurologic/cardiovascular signs.",
+          "tr": "Doğru. Hipotonik irrigasyon sıvısının absorbsiyonu hiponatremi ve nörolojik/kardiyovasküler bulgular yapabilir."
+        },
+        {
+          "en": "Incorrect. LAST usually follows local anesthetic overdose/intravascular injection and has different pattern.",
+          "tr": "Yanlış. LAST genellikle lokal anestezik aşırı doz/intravasküler enjeksiyon sonrası olur ve farklı paterne sahiptir."
+        },
+        {
+          "en": "Incorrect. Severe hyponatremia and neurologic signs are not simple anxiety.",
+          "tr": "Yanlış. Ciddi hiponatremi ve nörolojik bulgular basit anksiyete değildir."
+        },
+        {
+          "en": "Incorrect. Pseudocholinesterase deficiency causes prolonged paralysis after succinylcholine/mivacurium.",
+          "tr": "Yanlış. Psödokolinesteraz eksikliği süksinilkolin/mivakuryum sonrası uzamış paralizi yapar."
+        }
+      ],
+      "overallExplanation": {
+        "en": "TURP syndrome is dilutional hyponatremia and fluid overload from irrigation fluid absorption.",
+        "tr": "TURP sendromu irrigasyon sıvısı absorbsiyonuna bağlı dilüsyonel hiponatremi ve sıvı yüklenmesidir."
+      },
+      "keyLearningPoint": {
+        "en": "New confusion during TURP is hyponatremia until proven otherwise.",
+        "tr": "TURP sırasında yeni konfüzyon aksi kanıtlanana kadar hiponatremi olarak düşünülmelidir."
+      },
+      "commonTrap": {
+        "en": "Do not dismiss neurologic symptoms under spinal anesthesia as anxiety.",
+        "tr": "Spinal anestezi altında nörolojik belirtileri anksiyete diye geçiştirmeyin."
+      },
+      "tags": [
+        "urology",
+        "turp",
+        "hyponatremia",
+        "spinal",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_laparoscopy_co2embolism_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Clinical Emergencies",
+      "topic": "CO2 embolism",
+      "difficulty": "hard",
+      "stem": {
+        "en": "During laparoscopy insufflation, the patient suddenly develops hypotension, mill-wheel murmur, and abrupt decrease in ETCO2. What is the likely diagnosis?",
+        "tr": "Laparoskopik insuflasyon sırasında hastada ani hipotansiyon, mill-wheel üfürüm ve ETCO2’de ani düşüş gelişiyor. Olası tanı nedir?"
+      },
+      "options": [
+        {
+          "en": "CO2 gas embolism",
+          "tr": "CO2 gaz embolisi"
+        },
+        {
+          "en": "Exhausted CO2 absorbent",
+          "tr": "Tükenmiş CO2 absorbanı"
+        },
+        {
+          "en": "Malignant hyperthermia",
+          "tr": "Malign hipertermi"
+        },
+        {
+          "en": "Light anesthesia",
+          "tr": "Yüzeyel anestezi"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Gas embolism reduces pulmonary blood flow and ETCO2, causing cardiovascular collapse.",
+          "tr": "Doğru. Gaz embolisi pulmoner kan akımını ve ETCO2’yi azaltarak kardiyovasküler kollaps yapar."
+        },
+        {
+          "en": "Incorrect. Exhausted absorbent causes inspired CO2 and rising baseline, not abrupt ETCO2 drop with collapse.",
+          "tr": "Yanlış. Tükenmiş absorban inspire CO2 ve bazal çizgi yükselmesi yapar; kollapsla ani ETCO2 düşüşü tipik değildir."
+        },
+        {
+          "en": "Incorrect. MH usually raises ETCO2.",
+          "tr": "Yanlış. MH genellikle ETCO2’yi yükseltir."
+        },
+        {
+          "en": "Incorrect. Light anesthesia does not explain abrupt ETCO2 fall and mill-wheel murmur.",
+          "tr": "Yanlış. Yüzeyel anestezi ani ETCO2 düşüşü ve mill-wheel üfürümü açıklamaz."
+        }
+      ],
+      "overallExplanation": {
+        "en": "CO2 embolism during laparoscopy requires stopping insufflation, releasing pneumoperitoneum, Durant positioning when appropriate, aspiration via central line if available, and hemodynamic support.",
+        "tr": "Laparoskopide CO2 embolisi insuflasyonu durdurma, pnömoperitoneumu boşaltma, uygunsa Durant pozisyonu, varsa santral hattan aspirasyon ve hemodinamik destek gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Sudden ETCO2 fall during insufflation is a danger sign.",
+        "tr": "İnsuflasyon sırasında ani ETCO2 düşüşü tehlike işaretidir."
+      },
+      "commonTrap": {
+        "en": "Do not confuse CO2 embolism with hypercarbia from absorption.",
+        "tr": "CO2 embolisini absorbsiyona bağlı hiperkarbiyle karıştırmayın."
+      },
+      "tags": [
+        "laparoscopy",
+        "co2_embolism",
+        "etco2",
+        "hypotension",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_aspiration_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Airway",
+      "topic": "Aspiration event",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Immediately after induction, gastric contents are seen in the oropharynx and oxygen saturation falls. What is the best initial management?",
+        "tr": "İndüksiyondan hemen sonra orofarinkste mide içeriği görülüyor ve satürasyon düşüyor. En iyi ilk yönetim nedir?"
+      },
+      "options": [
+        {
+          "en": "Head-down/lateral if feasible, suction, secure airway, oxygenate, and assess bronchoscopy/ICU needs",
+          "tr": "Uygunsa baş aşağı/lateral pozisyon, aspirasyon, hava yolunu güvenceye alma, oksijenasyon ve bronkoskopi/ICU ihtiyacını değerlendirme"
+        },
+        {
+          "en": "Ignore because aspiration only matters postoperatively",
+          "tr": "Aspirasyon yalnız postoperatif önemli olduğu için görmezden gelmek"
+        },
+        {
+          "en": "Extubate immediately to allow coughing even if oxygenation is poor",
+          "tr": "Oksijenasyon kötüyken bile öksürük için hemen ekstübe etmek"
+        },
+        {
+          "en": "Give prophylactic antibiotics to all patients as the only treatment",
+          "tr": "Tek tedavi olarak tüm hastalara profilaktik antibiyotik vermek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Immediate priorities are preventing further aspiration, suctioning, oxygenation, and airway control.",
+          "tr": "Doğru. İlk öncelikler daha fazla aspirasyonu önlemek, aspirasyon yapmak, oksijenasyon ve hava yolu kontrolüdür."
+        },
+        {
+          "en": "Incorrect. Aspiration can cause immediate hypoxemia and lung injury.",
+          "tr": "Yanlış. Aspirasyon hemen hipoksemi ve akciğer hasarı yapabilir."
+        },
+        {
+          "en": "Incorrect. Extubation during hypoxemia may worsen airway control.",
+          "tr": "Yanlış. Hipoksemide ekstübasyon hava yolu kontrolünü kötüleştirebilir."
+        },
+        {
+          "en": "Incorrect. Antibiotics are not the only immediate treatment and are not automatic for all aspiration events.",
+          "tr": "Yanlış. Antibiyotikler tek acil tedavi değildir ve her aspirasyonda otomatik değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Aspiration management prioritizes suction, oxygenation, airway protection, and supportive care based on severity.",
+        "tr": "Aspirasyon yönetimi aspirasyon, oksijenasyon, hava yolu koruması ve şiddete göre destek tedavisine odaklanır."
+      },
+      "keyLearningPoint": {
+        "en": "Protect the lungs and oxygenate first.",
+        "tr": "Önce akciğerleri koru ve oksijenasyonu sağla."
+      },
+      "commonTrap": {
+        "en": "Do not make antibiotics the first and only response to aspiration.",
+        "tr": "Aspirasyonda antibiyotiği ilk ve tek yanıt haline getirmeyin."
+      },
+      "tags": [
+        "aspiration",
+        "airway",
+        "induction",
+        "hypoxemia",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_neuraxial_highspinal_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Regional Anaesthesia",
+      "topic": "High spinal",
+      "difficulty": "hard",
+      "stem": {
+        "en": "After spinal anesthesia, a patient develops severe hypotension, bradycardia, arm weakness, dyspnea, and difficulty speaking. What is the most appropriate response?",
+        "tr": "Spinal anestezi sonrası hastada ciddi hipotansiyon, bradikardi, kol güçsüzlüğü, dispne ve konuşma güçlüğü gelişiyor. En uygun yanıt nedir?"
+      },
+      "options": [
+        {
+          "en": "Call for help, support airway/ventilation, give vasopressors and treat bradycardia",
+          "tr": "Yardım çağırmak, hava yolu/ventilasyonu desteklemek, vazopressör vermek ve bradikardiyi tedavi etmek"
+        },
+        {
+          "en": "Reassure only because this is normal spinal anesthesia",
+          "tr": "Yalnız güven vermek çünkü bu normal spinal anestezidir"
+        },
+        {
+          "en": "Give more intrathecal local anesthetic",
+          "tr": "Daha fazla intratekal lokal anestezik vermek"
+        },
+        {
+          "en": "Sit the patient upright and leave unattended",
+          "tr": "Hastayı oturtup yalnız bırakmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. This is high/total spinal until proven otherwise and requires immediate resuscitative management.",
+          "tr": "Doğru. Bu aksi kanıtlanana kadar yüksek/total spinaldir ve acil resüsitatif yönetim gerektirir."
+        },
+        {
+          "en": "Incorrect. These are dangerous signs, not normal expected spinal effects.",
+          "tr": "Yanlış. Bunlar beklenen normal spinal etkiler değil, tehlikeli bulgulardır."
+        },
+        {
+          "en": "Incorrect. Additional intrathecal local anesthetic would worsen the problem.",
+          "tr": "Yanlış. Ek intratekal lokal anestezik durumu kötüleştirir."
+        },
+        {
+          "en": "Incorrect. The patient requires close monitoring and resuscitation.",
+          "tr": "Yanlış. Hasta yakın monitörizasyon ve resüsitasyon gerektirir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "High spinal can rapidly compromise ventilation and circulation.",
+        "tr": "Yüksek spinal ventilasyon ve dolaşımı hızla bozabilir."
+      },
+      "keyLearningPoint": {
+        "en": "Arm weakness and dyspnea after spinal are red flags.",
+        "tr": "Spinal sonrası kol güçsüzlüğü ve dispne kırmızı bayraktır."
+      },
+      "commonTrap": {
+        "en": "Do not wait for apnea before treating high spinal.",
+        "tr": "Yüksek spinali tedavi etmek için apneyi beklemeyin."
+      },
+      "tags": [
+        "regional",
+        "high_spinal",
+        "bradycardia",
+        "hypotension",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_endocrine_steroid_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Perioperative Medicine",
+      "topic": "Adrenal insufficiency",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A patient on chronic high-dose steroids becomes hypotensive after induction despite adequate volume and no bleeding. What should be considered?",
+        "tr": "Kronik yüksek doz steroid kullanan hasta indüksiyon sonrası yeterli volüm ve kanama olmamasına rağmen hipotansif oluyor. Ne düşünülmelidir?"
+      },
+      "options": [
+        {
+          "en": "Adrenal insufficiency and need for stress-dose steroid support",
+          "tr": "Adrenal yetmezlik ve stres doz steroid desteği ihtiyacı"
+        },
+        {
+          "en": "Pseudocholinesterase deficiency",
+          "tr": "Psödokolinesteraz eksikliği"
+        },
+        {
+          "en": "Carbon monoxide poisoning",
+          "tr": "Karbonmonoksit zehirlenmesi"
+        },
+        {
+          "en": "Complete immunity to hypotension due to steroid use",
+          "tr": "Steroid kullanımı nedeniyle hipotansiyona tam bağışıklık"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Chronic steroid therapy can suppress the HPA axis and contribute to refractory hypotension.",
+          "tr": "Doğru. Kronik steroid tedavisi HPA aksını baskılayabilir ve dirençli hipotansiyona katkıda bulunabilir."
+        },
+        {
+          "en": "Incorrect. Pseudocholinesterase deficiency causes prolonged paralysis, not refractory hypotension.",
+          "tr": "Yanlış. Psödokolinesteraz eksikliği dirençli hipotansiyon değil uzamış paralizi yapar."
+        },
+        {
+          "en": "Incorrect. CO poisoning is not the most likely explanation here.",
+          "tr": "Yanlış. CO zehirlenmesi burada en olası açıklama değildir."
+        },
+        {
+          "en": "Incorrect. Steroid use does not protect against hypotension.",
+          "tr": "Yanlış. Steroid kullanımı hipotansiyona karşı koruma sağlamaz."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Chronic steroid exposure can cause adrenal suppression; perioperative stress may reveal inadequate cortisol response.",
+        "tr": "Kronik steroid maruziyeti adrenal supresyon yapabilir; perioperatif stres yetersiz kortizol yanıtını ortaya çıkarabilir."
+      },
+      "keyLearningPoint": {
+        "en": "Think adrenal crisis in unexplained refractory hypotension in steroid users.",
+        "tr": "Steroid kullananlarda açıklanamayan dirençli hipotansiyonda adrenal krizi düşünün."
+      },
+      "commonTrap": {
+        "en": "Do not miss steroid history during preoperative assessment.",
+        "tr": "Preoperatif değerlendirmede steroid öyküsünü kaçırmayın."
+      },
+      "tags": [
+        "endocrine",
+        "steroids",
+        "adrenal_insufficiency",
+        "hypotension",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_adv_nora_mri_0001",
+      "boardType": "ABA_ADVANCED",
+      "category": "NORA",
+      "topic": "MRI anesthesia safety",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which statement best describes anesthesia safety in the MRI suite?",
+        "tr": "MRI ünitesinde anestezi güvenliğini en iyi hangi ifade açıklar?"
+      },
+      "options": [
+        {
+          "en": "Only MRI-compatible/conditional equipment should enter the scanner environment according to local policy",
+          "tr": "Tarayıcı ortamına yalnız yerel politikaya uygun MRI uyumlu/koşullu ekipman girmelidir"
+        },
+        {
+          "en": "Standard ferromagnetic oxygen cylinders are safe near the magnet",
+          "tr": "Standart ferromanyetik oksijen tüpleri mıknatıs yakınında güvenlidir"
+        },
+        {
+          "en": "The MRI suite has no airway risk because surgery is not occurring",
+          "tr": "Cerrahi olmadığı için MRI ünitesinde hava yolu riski yoktur"
+        },
+        {
+          "en": "Monitoring can be omitted because the patient is outside the operating room",
+          "tr": "Hasta ameliyathane dışında olduğu için monitörizasyon atlanabilir"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. MRI magnetic field creates projectile and device malfunction hazards; equipment must be appropriate.",
+          "tr": "Doğru. MRI manyetik alanı projektil ve cihaz arızası riski oluşturur; ekipman uygun olmalıdır."
+        },
+        {
+          "en": "Incorrect. Ferromagnetic cylinders are dangerous projectiles.",
+          "tr": "Yanlış. Ferromanyetik tüpler tehlikeli projektil haline gelebilir."
+        },
+        {
+          "en": "Incorrect. Remote location makes airway access more challenging, not safer.",
+          "tr": "Yanlış. Uzak lokasyon hava yolu erişimini daha zor yapar, daha güvenli değil."
+        },
+        {
+          "en": "Incorrect. Anesthesia monitoring standards still apply in NORA settings.",
+          "tr": "Yanlış. NORA ortamlarında da anestezi monitörizasyon standartları geçerlidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "MRI anesthesia requires remote-location planning, MRI-safe equipment, monitoring, airway access strategy, and emergency evacuation plan.",
+        "tr": "MRI anestezisi uzak lokasyon planlaması, MRI güvenli ekipman, monitörizasyon, hava yolu erişim stratejisi ve acil tahliye planı gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Magnet safety is anesthesia safety.",
+        "tr": "Mıknatıs güvenliği anestezi güvenliğidir."
+      },
+      "commonTrap": {
+        "en": "Do not bring unverified equipment into the MRI environment.",
+        "tr": "Doğrulanmamış ekipmanı MRI ortamına sokmayın."
+      },
+      "tags": [
+        "nora",
+        "mri",
+        "equipment_safety",
+        "monitoring",
+        "aba_advanced"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on advanced clinical anesthesia principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    }
+  ],
+  "vivaQuestions": []
+}

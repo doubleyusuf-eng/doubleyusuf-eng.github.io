@@ -1,0 +1,1922 @@
+{
+  "packId": "edaic_viva_pack_1",
+  "version": 1,
+  "boardType": "EDAIC_VIVA",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "edaicMtfQuestions": [],
+  "sbaQuestions": [],
+  "vivaQuestions": [
+    {
+      "id": "viva_airway_failed_intubation_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Airway",
+      "topic": "Failed intubation after induction",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A 56-year-old obese patient is induced for emergency abdominal surgery. Direct laryngoscopy gives a Cormack-Lehane grade 4 view. Mask ventilation is possible but difficult.",
+        "tr": "56 yaşında obez hasta acil abdominal cerrahi için indükleniyor. Direkt laringoskopide Cormack-Lehane grade 4 görüntü var. Maske ventilasyonu mümkün ancak zor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What are your immediate priorities?",
+          "tr": "Acil öncelikleriniz nelerdir?"
+        },
+        {
+          "en": "How many intubation attempts would you allow?",
+          "tr": "Kaç entübasyon denemesine izin verirsiniz?"
+        },
+        {
+          "en": "What is your backup plan if intubation fails again?",
+          "tr": "Entübasyon tekrar başarısız olursa yedek planınız nedir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Call for help and clearly declare failed intubation.",
+          "tr": "Yardım çağırır ve başarısız entübasyonu açıkça ilan eder."
+        },
+        {
+          "en": "Maintain oxygenation with optimized mask ventilation and airway adjuncts.",
+          "tr": "Airway adjunctları ve optimize maske ventilasyonu ile oksijenasyonu sürdürür."
+        },
+        {
+          "en": "Stop repeated unchanged attempts; change device, operator, position, or technique.",
+          "tr": "Değişmeyen tekrarlayan denemeleri durdurur; cihaz, operatör, pozisyon veya tekniği değiştirir."
+        },
+        {
+          "en": "Consider videolaryngoscopy or supraglottic airway depending on oxygenation and surgical urgency.",
+          "tr": "Oksijenasyon ve cerrahi aciliyete göre videolaringoskopi veya supraglottik hava yolu düşünür."
+        },
+        {
+          "en": "Prepare for emergency front-of-neck access if oxygenation deteriorates.",
+          "tr": "Oksijenasyon bozulursa acil ön boyun erişimine hazırlanır."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Persisting with repeated direct laryngoscopy attempts while airway trauma worsens.",
+          "tr": "KRİTİK HATA: Hava yolu travması artarken tekrarlayan direkt laringoskopi denemelerine devam etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Focusing on intubation while oxygenation is failing.",
+          "tr": "KRİTİK HATA: Oksijenasyon bozulurken yalnız entübasyona odaklanmak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "When would you wake the patient up?",
+          "tr": "Hastayı ne zaman uyandırmayı düşünürsünüz?"
+        },
+        {
+          "en": "When would this become a CICO scenario?",
+          "tr": "Bu durum ne zaman CICO senaryosuna dönüşür?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "The priority in failed intubation is oxygenation, not repeated laryngoscopy.",
+        "tr": "Başarısız entübasyonda öncelik tekrarlayan laringoskopi değil oksijenasyondur."
+      },
+      "commonTrap": {
+        "en": "Do not let normal saturation early in the event justify repeated traumatic attempts.",
+        "tr": "Olayın başında satürasyonun normal olması tekrarlayan travmatik denemeleri haklı çıkarmaz."
+      },
+      "tags": [
+        "failed_intubation",
+        "airway",
+        "oxygenation",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_airway_cico_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Airway",
+      "topic": "Cannot intubate cannot oxygenate",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "After induction for maxillofacial trauma, intubation fails. Mask ventilation and supraglottic airway ventilation are unsuccessful. SpO2 is falling below 80%.",
+        "tr": "Maksillofasiyal travma nedeniyle indüksiyon sonrası entübasyon başarısız oluyor. Maske ventilasyonu ve supraglottik hava yolu ventilasyonu başarısız. SpO2 %80’in altına düşüyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What do you call this situation?",
+          "tr": "Bu durumu nasıl adlandırırsınız?"
+        },
+        {
+          "en": "What is your next action?",
+          "tr": "Sonraki eyleminiz nedir?"
+        },
+        {
+          "en": "What should the team do while front-of-neck access is being prepared?",
+          "tr": "Ön boyun erişimi hazırlanırken ekip ne yapmalıdır?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Declare CICO loudly and call for immediate help.",
+          "tr": "CICO’yu yüksek sesle ilan eder ve acil yardım çağırır."
+        },
+        {
+          "en": "Move promptly to emergency front-of-neck airway access.",
+          "tr": "Hızla acil ön boyun hava yolu erişimine geçer."
+        },
+        {
+          "en": "Continue best-effort oxygenation attempts while preparing eFONA.",
+          "tr": "eFONA hazırlanırken en iyi çabayla oksijenasyon denemelerini sürdürür."
+        },
+        {
+          "en": "Stop repeated ineffective intubation attempts.",
+          "tr": "Etkisiz tekrarlayan entübasyon denemelerini durdurur."
+        },
+        {
+          "en": "Assign clear roles and ask for scalpel/bougie/tube or institutional CICO kit.",
+          "tr": "Rolleri netleştirir ve bistüri/buji/tüp veya kurumsal CICO kitini ister."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Delaying front-of-neck access until cardiac arrest occurs.",
+          "tr": "KRİTİK HATA: Ön boyun erişimini kardiyak arrest gelişene kadar geciktirmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Continuing repeated laryngoscopy attempts despite failure to oxygenate.",
+          "tr": "KRİTİK HATA: Oksijenasyon sağlanamazken tekrarlayan laringoskopi denemelerine devam etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What equipment do you want immediately available?",
+          "tr": "Hangi ekipmanın hemen hazır olmasını istersiniz?"
+        },
+        {
+          "en": "How would you confirm oxygenation after front-of-neck access?",
+          "tr": "Ön boyun erişimi sonrası oksijenasyonu nasıl doğrularsınız?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "CICO is a time-critical oxygenation emergency requiring decisive front-of-neck access.",
+        "tr": "CICO, kararlı ön boyun erişimi gerektiren zamana duyarlı oksijenasyon acilidir."
+      },
+      "commonTrap": {
+        "en": "The common fatal error is waiting too long.",
+        "tr": "En sık ölümcül hata çok uzun beklemektir."
+      },
+      "tags": [
+        "cico",
+        "front_of_neck_access",
+        "airway",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_ob_hemorrhage_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Obstetric Anaesthesia",
+      "topic": "Obstetric massive hemorrhage",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A patient after cesarean delivery has uterine atony with rapid blood loss, hypotension, tachycardia, and oozing from the wound.",
+        "tr": "Sezaryen sonrası hastada uterin atoniye bağlı hızlı kan kaybı, hipotansiyon, taşikardi ve yara yerinden sızıntı tarzı kanama var."
+      },
+      "examinerQuestions": [
+        {
+          "en": "How do you organize the initial management?",
+          "tr": "İlk yönetimi nasıl organize edersiniz?"
+        },
+        {
+          "en": "Which physiological problems must be prevented?",
+          "tr": "Hangi fizyolojik problemler önlenmelidir?"
+        },
+        {
+          "en": "How do you communicate with the team?",
+          "tr": "Ekiple nasıl iletişim kurarsınız?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Activate obstetric hemorrhage or massive transfusion protocol.",
+          "tr": "Obstetrik kanama veya masif transfüzyon protokolünü aktive eder."
+        },
+        {
+          "en": "Call obstetric, anesthesia, blood bank, nursing, and senior help early.",
+          "tr": "Obstetri, anestezi, kan bankası, hemşirelik ve kıdemli yardımı erken çağırır."
+        },
+        {
+          "en": "Treat uterine atony with uterotonics and surgical measures as appropriate.",
+          "tr": "Uterin atoniyi uygun uterotonikler ve cerrahi önlemlerle tedavi eder."
+        },
+        {
+          "en": "Use balanced blood product resuscitation guided by labs/viscoelastic testing if available.",
+          "tr": "Varsa laboratuvar/viskoelastik test rehberliğinde dengeli kan ürünü resüsitasyonu yapar."
+        },
+        {
+          "en": "Prevent hypothermia, acidosis, hypocalcemia, and dilutional coagulopathy.",
+          "tr": "Hipotermi, asidoz, hipokalsemi ve dilüsyonel koagülopatiyi önler."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Treating ongoing major hemorrhage with crystalloid alone.",
+          "tr": "KRİTİK HATA: Devam eden majör kanamayı yalnız kristalloidle tedavi etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Delaying blood bank notification until profound shock is established.",
+          "tr": "KRİTİK HATA: Kan bankası bildirimini derin şok gelişene kadar geciktirmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Which uterotonics would you consider and what are their cautions?",
+          "tr": "Hangi uterotonikleri düşünürsünüz ve dikkat noktaları nelerdir?"
+        },
+        {
+          "en": "How would you monitor fibrinogen and calcium?",
+          "tr": "Fibrinojen ve kalsiyumu nasıl izlersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Obstetric hemorrhage management is simultaneous uterine treatment, hemostatic resuscitation, warming, calcium support, and source control.",
+        "tr": "Obstetrik kanama yönetimi uterin tedavi, hemostatik resüsitasyon, ısıtma, kalsiyum desteği ve kaynak kontrolünün eş zamanlı yürütülmesidir."
+      },
+      "commonTrap": {
+        "en": "Do not let crystalloid resuscitation delay blood products and source control.",
+        "tr": "Kristalloid resüsitasyonun kan ürünlerini ve kaynak kontrolünü geciktirmesine izin vermeyin."
+      },
+      "tags": [
+        "obstetric",
+        "hemorrhage",
+        "massive_transfusion",
+        "uterine_atony",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_ob_high_spinal_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Obstetric Anaesthesia",
+      "topic": "High spinal after cesarean spinal",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "Five minutes after spinal anesthesia for cesarean delivery, the patient complains of difficulty breathing and arm weakness. Blood pressure is 65/35 mmHg and heart rate is 42/min.",
+        "tr": "Sezaryen için spinal anesteziden beş dakika sonra hasta nefes almada güçlük ve kollarda güçsüzlük tarif ediyor. Kan basıncı 65/35 mmHg, kalp hızı 42/dk."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is your diagnosis?",
+          "tr": "Tanınız nedir?"
+        },
+        {
+          "en": "How do you manage the airway and circulation?",
+          "tr": "Hava yolu ve dolaşımı nasıl yönetirsiniz?"
+        },
+        {
+          "en": "What obstetric-specific measures are required?",
+          "tr": "Obstetriye özgü hangi önlemler gerekir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize high or total spinal anesthesia.",
+          "tr": "Yüksek veya total spinal anesteziyi tanır."
+        },
+        {
+          "en": "Call for help and give 100% oxygen.",
+          "tr": "Yardım çağırır ve %100 oksijen verir."
+        },
+        {
+          "en": "Support ventilation and intubate if ventilation or consciousness deteriorates.",
+          "tr": "Ventilasyonu destekler; ventilasyon veya bilinç bozulursa entübe eder."
+        },
+        {
+          "en": "Treat hypotension with vasopressors and fluids.",
+          "tr": "Hipotansiyonu vazopressörler ve sıvıyla tedavi eder."
+        },
+        {
+          "en": "Treat severe bradycardia promptly and apply left uterine displacement.",
+          "tr": "Ciddi bradikardiyi hızla tedavi eder ve sol uterin deplasman uygular."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Reassuring the patient without treating hypotension and bradycardia.",
+          "tr": "KRİTİK HATA: Hipotansiyon ve bradikardiyi tedavi etmeden hastaya güven vermek."
+        },
+        {
+          "en": "CRITICAL ERROR: Waiting for apnea before preparing airway support.",
+          "tr": "KRİTİK HATA: Hava yolu desteğine hazırlık için apneyi beklemek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "How would you distinguish dyspnea from high block versus anxiety?",
+          "tr": "Yüksek bloğa bağlı dispneyi anksiyeteden nasıl ayırırsınız?"
+        },
+        {
+          "en": "Which vasopressors would you use in your institution?",
+          "tr": "Kurumunuzda hangi vazopressörleri kullanırsınız?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "High spinal is a rapidly evolving airway and circulatory emergency.",
+        "tr": "Yüksek spinal hızla gelişen hava yolu ve dolaşım acilidir."
+      },
+      "commonTrap": {
+        "en": "Arm weakness after spinal anesthesia is a red flag.",
+        "tr": "Spinal anestezi sonrası kol güçsüzlüğü kırmızı bayraktır."
+      },
+      "tags": [
+        "obstetric",
+        "high_spinal",
+        "bradycardia",
+        "hypotension",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_regional_last_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Regional Anaesthesia",
+      "topic": "LAST after interscalene block",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "Ten minutes after interscalene block with bupivacaine, the patient reports metallic taste and perioral numbness, then has a generalized seizure.",
+        "tr": "Bupivakain ile interskalen bloktan on dakika sonra hasta metalik tat ve perioral uyuşma tarif ediyor, ardından jeneralize nöbet geçiriyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is the diagnosis?",
+          "tr": "Tanı nedir?"
+        },
+        {
+          "en": "What is your immediate management?",
+          "tr": "Acil yönetiminiz nedir?"
+        },
+        {
+          "en": "How does cardiac arrest management differ in LAST?",
+          "tr": "LAST’te kardiyak arrest yönetimi nasıl farklıdır?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize local anesthetic systemic toxicity.",
+          "tr": "Lokal anestezik sistemik toksisitesini tanır."
+        },
+        {
+          "en": "Stop local anesthetic injection and call for help/lipid rescue kit.",
+          "tr": "Lokal anestezik enjeksiyonunu durdurur ve yardım/lipid kurtarma kitini çağırır."
+        },
+        {
+          "en": "Secure airway, give 100% oxygen, avoid hypoxia, hypercapnia, and acidosis.",
+          "tr": "Hava yolunu güvenceye alır, %100 oksijen verir, hipoksi/hiperkapni/asidozdan kaçınır."
+        },
+        {
+          "en": "Treat seizures with benzodiazepines; avoid large propofol doses in cardiovascular instability.",
+          "tr": "Nöbetleri benzodiyazepinlerle tedavi eder; kardiyovasküler instabilitede yüksek doz propofolden kaçınır."
+        },
+        {
+          "en": "Start 20% lipid emulsion according to local LAST protocol.",
+          "tr": "Yerel LAST protokolüne göre %20 lipid emülsiyon başlatır."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Treating ventricular arrhythmia with lidocaine.",
+          "tr": "KRİTİK HATA: Ventriküler aritmiyi lidokainle tedavi etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Delaying lipid therapy until serum drug levels return.",
+          "tr": "KRİTİK HATA: Lipid tedavisini serum ilaç düzeyi gelene kadar geciktirmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Which drugs should be avoided in LAST resuscitation?",
+          "tr": "LAST resüsitasyonunda hangi ilaçlardan kaçınılmalıdır?"
+        },
+        {
+          "en": "How long would you monitor the patient after stabilization?",
+          "tr": "Stabilizasyon sonrası hastayı ne kadar izlersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "LAST is a clinical diagnosis; early lipid therapy and high-quality modified resuscitation are central.",
+        "tr": "LAST klinik tanıdır; erken lipid tedavisi ve kaliteli modifiye resüsitasyon merkezidir."
+      },
+      "commonTrap": {
+        "en": "Do not give additional local anesthetic antiarrhythmics for LAST.",
+        "tr": "LAST’te ek lokal anestezik antiaritmik vermeyin."
+      },
+      "tags": [
+        "regional",
+        "last",
+        "lipid_emulsion",
+        "seizure",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_emerg_mh_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Clinical Emergencies",
+      "topic": "Malignant hyperthermia",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "During sevoflurane anesthesia after succinylcholine, ETCO2 rises rapidly despite increased minute ventilation. The patient is tachycardic, rigid, and acidotic.",
+        "tr": "Süksinilkolin sonrası sevofluran anestezisinde dakika ventilasyonu artırılmasına rağmen ETCO2 hızla yükseliyor. Hasta taşikardik, rijit ve asidotik."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is the likely diagnosis?",
+          "tr": "Olası tanı nedir?"
+        },
+        {
+          "en": "What are the first five actions?",
+          "tr": "İlk beş eyleminiz nedir?"
+        },
+        {
+          "en": "How do you treat complications?",
+          "tr": "Komplikasyonları nasıl tedavi edersiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize malignant hyperthermia.",
+          "tr": "Malign hipertermiyi tanır."
+        },
+        {
+          "en": "Stop volatile agents and succinylcholine; switch to non-triggering anesthesia.",
+          "tr": "Volatil ajanları ve süksinilkolini keser; tetikleyici olmayan anesteziye geçer."
+        },
+        {
+          "en": "Call for MH cart/dantrolene and senior help.",
+          "tr": "MH arabası/dantrolen ve kıdemli yardım çağırır."
+        },
+        {
+          "en": "Hyperventilate with 100% oxygen and increase fresh gas flow.",
+          "tr": "%100 oksijenle hiperventile eder ve taze gaz akımını artırır."
+        },
+        {
+          "en": "Give dantrolene, cool actively, and treat hyperkalemia/acidosis/arrhythmias.",
+          "tr": "Dantrolen verir, aktif soğutur ve hiperkalemi/asidoz/aritmileri tedavi eder."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Waiting for fever before treating suspected MH.",
+          "tr": "KRİTİK HATA: Şüpheli MH tedavisi için ateşi beklemek."
+        },
+        {
+          "en": "CRITICAL ERROR: Continuing volatile anesthesia.",
+          "tr": "KRİTİK HATA: Volatil anesteziye devam etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What monitoring and postoperative disposition are needed?",
+          "tr": "Hangi monitörizasyon ve postoperatif takip gerekir?"
+        },
+        {
+          "en": "How would you counsel the patient and family afterward?",
+          "tr": "Sonrasında hasta ve aileyi nasıl bilgilendirirsiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Rising ETCO2 despite ventilation is often the earliest MH clue; treatment must start before hyperthermia.",
+        "tr": "Ventilasyona rağmen ETCO2 yükselmesi çoğu zaman en erken MH ipucudur; tedavi hipertermiden önce başlamalıdır."
+      },
+      "commonTrap": {
+        "en": "Do not wait for temperature rise.",
+        "tr": "Isı yükselmesini beklemeyin."
+      },
+      "tags": [
+        "malignant_hyperthermia",
+        "dantrolene",
+        "volatile",
+        "succinylcholine",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_emerg_anaphylaxis_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Clinical Emergencies",
+      "topic": "Perioperative anaphylaxis",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "Immediately after antibiotic administration, a patient under general anesthesia develops severe hypotension, bronchospasm, and generalized erythema.",
+        "tr": "Antibiyotik uygulamasından hemen sonra genel anestezi altındaki hastada ciddi hipotansiyon, bronkospazm ve yaygın eritem gelişiyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is your immediate diagnosis and treatment?",
+          "tr": "Acil tanınız ve tedaviniz nedir?"
+        },
+        {
+          "en": "What drugs and fluids will you give?",
+          "tr": "Hangi ilaçları ve sıvıları verirsiniz?"
+        },
+        {
+          "en": "What samples or documentation are needed afterward?",
+          "tr": "Sonrasında hangi örnekler veya dokümantasyon gerekir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize life-threatening perioperative anaphylaxis.",
+          "tr": "Yaşamı tehdit eden perioperatif anafilaksiyi tanır."
+        },
+        {
+          "en": "Stop likely trigger and call for help.",
+          "tr": "Olası tetikleyiciyi keser ve yardım çağırır."
+        },
+        {
+          "en": "Give epinephrine promptly and repeat/titrate as required.",
+          "tr": "Epinefrini hızla verir ve gerektiğinde tekrarlar/titre eder."
+        },
+        {
+          "en": "Give 100% oxygen, support airway/ventilation, and administer large-volume IV fluids.",
+          "tr": "%100 oksijen verir, hava yolu/ventilasyonu destekler ve yüksek hacimli IV sıvı verir."
+        },
+        {
+          "en": "Send timed tryptase samples and arrange allergy referral/documentation.",
+          "tr": "Zamanlı triptaz örnekleri gönderir ve alerji yönlendirmesi/dokümantasyon planlar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Treating severe anaphylaxis with antihistamine or steroid alone.",
+          "tr": "KRİTİK HATA: Şiddetli anafilaksiyi yalnız antihistaminik veya steroidle tedavi etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Delaying epinephrine until laboratory confirmation.",
+          "tr": "KRİTİK HATA: Laboratuvar doğrulamasına kadar epinefrini geciktirmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What are common perioperative triggers?",
+          "tr": "Sık perioperatif tetikleyiciler nelerdir?"
+        },
+        {
+          "en": "How would you continue anesthesia if surgery is life-saving?",
+          "tr": "Cerrahi hayat kurtarıcıysa anesteziye nasıl devam edersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Epinephrine is first-line for severe perioperative anaphylaxis.",
+        "tr": "Şiddetli perioperatif anafilakside epinefrin ilk basamaktır."
+      },
+      "commonTrap": {
+        "en": "Antihistamines and steroids are adjuncts, not substitutes for epinephrine.",
+        "tr": "Antihistaminikler ve steroidler yardımcıdır; epinefrinin yerine geçmez."
+      },
+      "tags": [
+        "anaphylaxis",
+        "epinephrine",
+        "allergy",
+        "emergency",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_icu_sepsis_laparotomy_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Critical Care",
+      "topic": "Septic shock emergency laparotomy",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A patient with perforated bowel and septic shock arrives for emergency laparotomy on norepinephrine with lactate 6 mmol/L.",
+        "tr": "Perfore barsak ve septik şok tanılı hasta norepinefrin altında, laktat 6 mmol/L ile acil laparotomiye geliyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "How do you prepare for induction?",
+          "tr": "İndüksiyon için nasıl hazırlanırsınız?"
+        },
+        {
+          "en": "Which hemodynamic goals matter?",
+          "tr": "Hangi hemodinamik hedefler önemlidir?"
+        },
+        {
+          "en": "How do you choose induction drugs?",
+          "tr": "İndüksiyon ilaçlarını nasıl seçersiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize very high risk of cardiovascular collapse at induction.",
+          "tr": "İndüksiyonda kardiyovasküler kollaps riskinin çok yüksek olduğunu tanır."
+        },
+        {
+          "en": "Continue/resume vasopressors and have push-dose vasopressor ready if used locally.",
+          "tr": "Vazopressörleri sürdürür/yeniden başlatır ve kurumda kullanılıyorsa push-dose vazopressör hazır bulundurur."
+        },
+        {
+          "en": "Use reduced/titrated induction doses and avoid large vasodilatory boluses.",
+          "tr": "Azaltılmış/titre edilmiş indüksiyon dozları kullanır; büyük vazodilatatör boluslardan kaçınır."
+        },
+        {
+          "en": "Optimize oxygenation, volume status, arterial access if feasible, and antibiotics/source control.",
+          "tr": "Oksijenasyon, volüm durumu, mümkünse arter erişimi ve antibiyotik/kaynak kontrolünü optimize eder."
+        },
+        {
+          "en": "Plan postoperative ICU care and ongoing resuscitation.",
+          "tr": "Postoperatif yoğun bakım ve devam eden resüsitasyonu planlar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Giving routine full-dose propofol bolus to an unstable septic shock patient.",
+          "tr": "KRİTİK HATA: İnstabil septik şok hastasına rutin tam doz propofol bolusu vermek."
+        },
+        {
+          "en": "CRITICAL ERROR: Stopping norepinephrine before induction.",
+          "tr": "KRİTİK HATA: İndüksiyon öncesi norepinefrini durdurmak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Would you delay surgery for further resuscitation?",
+          "tr": "Daha fazla resüsitasyon için cerrahiyi geciktirir misiniz?"
+        },
+        {
+          "en": "How would you manage refractory hypotension?",
+          "tr": "Dirençli hipotansiyonu nasıl yönetirsiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Emergency anesthesia in septic shock is source-control anesthesia plus ongoing resuscitation.",
+        "tr": "Septik şokta acil anestezi, kaynak kontrolü anestezisi ve devam eden resüsitasyondur."
+      },
+      "commonTrap": {
+        "en": "Routine elective induction doses can be dangerous in shock.",
+        "tr": "Şokta rutin elektif indüksiyon dozları tehlikeli olabilir."
+      },
+      "tags": [
+        "sepsis",
+        "shock",
+        "emergency_laparotomy",
+        "induction",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_card_as_urgent_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Cardiac Disease",
+      "topic": "Severe aortic stenosis urgent surgery",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A 82-year-old with symptomatic severe aortic stenosis requires urgent hip fracture fixation. He has angina on minimal exertion.",
+        "tr": "Semptomatik ciddi aort stenozu olan 82 yaşındaki hasta acil kalça kırığı fiksasyonu gerektiriyor. Minimal eforla anginası var."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What are your hemodynamic goals?",
+          "tr": "Hemodinamik hedefleriniz nelerdir?"
+        },
+        {
+          "en": "What monitoring would you consider?",
+          "tr": "Hangi monitörizasyonu düşünürsünüz?"
+        },
+        {
+          "en": "How would you choose anesthetic technique?",
+          "tr": "Anestezi tekniğini nasıl seçersiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Maintain sinus rhythm and avoid tachycardia/bradycardia extremes.",
+          "tr": "Sinüs ritmini korur ve taşikardi/bradikardi uçlarından kaçınır."
+        },
+        {
+          "en": "Maintain preload and avoid sudden reductions in systemic vascular resistance.",
+          "tr": "Preload’u korur ve sistemik vasküler dirençte ani düşüşlerden kaçınır."
+        },
+        {
+          "en": "Maintain coronary perfusion pressure and treat hypotension promptly.",
+          "tr": "Koroner perfüzyon basıncını korur ve hipotansiyonu hızla tedavi eder."
+        },
+        {
+          "en": "Consider invasive arterial pressure monitoring.",
+          "tr": "İnvaziv arter basıncı monitörizasyonunu düşünür."
+        },
+        {
+          "en": "Avoid abrupt sympathectomy from single-shot neuraxial technique in severe symptomatic disease unless carefully justified.",
+          "tr": "Ciddi semptomatik hastalıkta dikkatle gerekçelendirilmedikçe single-shot nöroaksiyel tekniğin ani sempatektomisinden kaçınır."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Causing profound vasodilation and hypotension.",
+          "tr": "KRİTİK HATA: Derin vazodilatasyon ve hipotansiyona neden olmak."
+        },
+        {
+          "en": "CRITICAL ERROR: Ignoring new ischemic symptoms.",
+          "tr": "KRİTİK HATA: Yeni iskemik semptomları göz ardı etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Which vasopressor would you choose for hypotension?",
+          "tr": "Hipotansiyon için hangi vazopressörü seçersiniz?"
+        },
+        {
+          "en": "How would your plan change if surgery were elective?",
+          "tr": "Cerrahi elektif olsaydı planınız nasıl değişirdi?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Severe aortic stenosis is intolerant of hypotension, tachycardia, and loss of sinus rhythm.",
+        "tr": "Ciddi aort stenozu hipotansiyon, taşikardi ve sinüs ritmi kaybını tolere etmez."
+      },
+      "commonTrap": {
+        "en": "Do not use a routine spinal approach without considering fixed outflow physiology.",
+        "tr": "Sabit çıkış fizyolojisini düşünmeden rutin spinal yaklaşım kullanmayın."
+      },
+      "tags": [
+        "aortic_stenosis",
+        "cardiac",
+        "hip_fracture",
+        "hemodynamics",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_card_ph_crisis_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Cardiac Disease",
+      "topic": "Pulmonary hypertension crisis",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A patient with severe pulmonary hypertension undergoing laparotomy develops abrupt hypoxemia, systemic hypotension, high CVP, and a dilated right ventricle on echo.",
+        "tr": "Laparotomi sırasında ciddi pulmoner hipertansiyonu olan hastada ani hipoksemi, sistemik hipotansiyon, yüksek CVP ve ekoda dilate sağ ventrikül gelişiyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is happening physiologically?",
+          "tr": "Fizyolojik olarak ne oluyor?"
+        },
+        {
+          "en": "What are your immediate treatments?",
+          "tr": "Acil tedavileriniz nelerdir?"
+        },
+        {
+          "en": "What must be avoided?",
+          "tr": "Nelerden kaçınılmalıdır?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize pulmonary hypertensive crisis with acute RV failure.",
+          "tr": "Akut sağ ventrikül yetmezliğiyle pulmoner hipertansif krizi tanır."
+        },
+        {
+          "en": "Correct hypoxia, hypercapnia, acidosis, pain, and high airway pressures where possible.",
+          "tr": "Hipoksi, hiperkapni, asidoz, ağrı ve mümkünse yüksek hava yolu basınçlarını düzeltir."
+        },
+        {
+          "en": "Maintain systemic pressure to support RV coronary perfusion.",
+          "tr": "Sağ ventrikül koroner perfüzyonunu desteklemek için sistemik basıncı korur."
+        },
+        {
+          "en": "Consider pulmonary vasodilators and inotropes according to availability and expertise.",
+          "tr": "Uygunluk ve deneyime göre pulmoner vazodilatörler ve inotropları düşünür."
+        },
+        {
+          "en": "Use echo/hemodynamic monitoring to guide therapy.",
+          "tr": "Tedaviyi yönlendirmek için eko/hemodinamik monitörizasyon kullanır."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Allowing systemic hypotension to persist.",
+          "tr": "KRİTİK HATA: Sistemik hipotansiyonun devam etmesine izin vermek."
+        },
+        {
+          "en": "CRITICAL ERROR: Worsening hypercapnia with inadequate ventilation.",
+          "tr": "KRİTİK HATA: Yetersiz ventilasyonla hiperkapniyi kötüleştirmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Which induction agents are risky in severe pulmonary hypertension?",
+          "tr": "Ciddi pulmoner hipertansiyonda hangi indüksiyon ajanları risklidir?"
+        },
+        {
+          "en": "How does PEEP affect the RV?",
+          "tr": "PEEP sağ ventrikülü nasıl etkiler?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Pulmonary hypertensive crisis is a right-ventricular perfusion and afterload emergency.",
+        "tr": "Pulmoner hipertansif kriz sağ ventrikül perfüzyonu ve afterload acilidir."
+      },
+      "commonTrap": {
+        "en": "Never let hypoxia, hypercapnia, and hypotension coexist in severe PH.",
+        "tr": "Ciddi PH’de hipoksi, hiperkapni ve hipotansiyonun birlikte sürmesine izin vermeyin."
+      },
+      "tags": [
+        "pulmonary_hypertension",
+        "right_ventricle",
+        "crisis",
+        "echo",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_thoracic_olv_hypoxemia_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Thoracic Anaesthesia",
+      "topic": "One-lung ventilation hypoxemia",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "During thoracotomy with one-lung ventilation, SpO2 falls from 98% to 86%. The surgeon reports good lung collapse.",
+        "tr": "Torakotomi sırasında tek akciğer ventilasyonunda SpO2 %98’den %86’ya düşüyor. Cerrah iyi akciğer kollapsı olduğunu söylüyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What are your immediate steps?",
+          "tr": "Acil adımlarınız nelerdir?"
+        },
+        {
+          "en": "How do you differentiate tube malposition from shunt?",
+          "tr": "Tüp malpozisyonunu şanttan nasıl ayırırsınız?"
+        },
+        {
+          "en": "What options can improve oxygenation?",
+          "tr": "Oksijenasyonu hangi seçenekler iyileştirebilir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Increase FiO2 to 1.0 and check hemodynamics.",
+          "tr": "FiO2’yi 1.0’a çıkarır ve hemodinamiyi kontrol eder."
+        },
+        {
+          "en": "Confirm double-lumen tube or bronchial blocker position with bronchoscopy.",
+          "tr": "Çift lümenli tüp veya bronşiyal bloker pozisyonunu bronkoskopiyle doğrular."
+        },
+        {
+          "en": "Optimize dependent lung ventilation and recruitment cautiously.",
+          "tr": "Bağımlı akciğer ventilasyonunu ve dikkatli recruitment’ı optimize eder."
+        },
+        {
+          "en": "Consider CPAP to nondependent lung if surgical field allows.",
+          "tr": "Cerrahi alan izin verirse nondependent akciğere CPAP düşünür."
+        },
+        {
+          "en": "Communicate with surgeon about intermittent two-lung ventilation if needed.",
+          "tr": "Gerekirse aralıklı iki akciğer ventilasyonu için cerrahla iletişim kurar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Ignoring tube position after patient positioning.",
+          "tr": "KRİTİK HATA: Hasta pozisyonundan sonra tüp pozisyonunu göz ardı etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Persisting with severe hypoxemia to preserve surgical view.",
+          "tr": "KRİTİK HATA: Cerrahi görüşü korumak için ciddi hipoksemiye devam etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "How does HPV affect oxygenation?",
+          "tr": "HPV oksijenasyonu nasıl etkiler?"
+        },
+        {
+          "en": "What are causes of high airway pressure during OLV?",
+          "tr": "OLV sırasında yüksek hava yolu basıncı nedenleri nelerdir?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "OLV hypoxemia management is stepwise: oxygen, tube position, dependent lung optimization, CPAP/PEEP, and communication.",
+        "tr": "OLV hipoksemisi basamaklı yönetilir: oksijen, tüp pozisyonu, bağımlı akciğer optimizasyonu, CPAP/PEEP ve iletişim."
+      },
+      "commonTrap": {
+        "en": "Always check the tube before assuming unavoidable shunt.",
+        "tr": "Kaçınılmaz şant varsaymadan önce her zaman tüpü kontrol edin."
+      },
+      "tags": [
+        "one_lung_ventilation",
+        "thoracic",
+        "hypoxemia",
+        "bronchoscopy",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_peds_laryngospasm_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Pediatric laryngospasm",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "A 4-year-old after adenotonsillectomy develops inspiratory effort with no air movement, desaturation, and bradycardia during emergence.",
+        "tr": "Adenotonsillektomi sonrası 4 yaşındaki çocukta uyanma sırasında inspiratuvar çaba var ancak hava hareketi yok, desatürasyon ve bradikardi gelişiyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is the likely diagnosis?",
+          "tr": "Olası tanı nedir?"
+        },
+        {
+          "en": "How do you manage it stepwise?",
+          "tr": "Basamaklı olarak nasıl yönetirsiniz?"
+        },
+        {
+          "en": "When do you give muscle relaxant?",
+          "tr": "Kas gevşeticiyi ne zaman verirsiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize complete laryngospasm with hypoxemia.",
+          "tr": "Hipoksemiyle tam laringospazmı tanır."
+        },
+        {
+          "en": "Call for help, remove stimulus/secretions/blood, and apply jaw thrust/CPAP with 100% oxygen.",
+          "tr": "Yardım çağırır, uyaran/sekresyon/kanı uzaklaştırır ve %100 oksijenle jaw thrust/CPAP uygular."
+        },
+        {
+          "en": "Deepen anesthesia if appropriate.",
+          "tr": "Uygunsa anesteziyi derinleştirir."
+        },
+        {
+          "en": "If persistent with desaturation/bradycardia, give succinylcholine or appropriate muscle relaxant and ventilate/intubate as needed.",
+          "tr": "Desatürasyon/bradikardi ile sürerse süksinilkolin veya uygun kas gevşetici verir ve gerekirse ventile/entübe eder."
+        },
+        {
+          "en": "Treat bradycardia and hypoxemia urgently.",
+          "tr": "Bradikardi ve hipoksemiyi acilen tedavi eder."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Continuing stimulation of the airway during laryngospasm.",
+          "tr": "KRİTİK HATA: Laringospazm sırasında hava yolunu uyarmaya devam etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Waiting too long while the child becomes bradycardic.",
+          "tr": "KRİTİK HATA: Çocuk bradikardik olurken çok uzun beklemek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What are risk factors for laryngospasm?",
+          "tr": "Laringospazm risk faktörleri nelerdir?"
+        },
+        {
+          "en": "How would you prevent recurrence?",
+          "tr": "Tekrarını nasıl önlersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "In children, laryngospasm can rapidly progress from obstruction to hypoxemia and bradycardia.",
+        "tr": "Çocuklarda laringospazm hızla obstrüksiyondan hipoksemi ve bradikardiye ilerleyebilir."
+      },
+      "commonTrap": {
+        "en": "Bradycardia in a hypoxic child is a late danger sign.",
+        "tr": "Hipoksik çocukta bradikardi geç ve tehlikeli bir bulgudur."
+      },
+      "tags": [
+        "paediatric",
+        "laryngospasm",
+        "tonsillectomy",
+        "bradycardia",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_peds_pyloric_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Neonatal pyloric stenosis",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "A 5-week-old infant with projectile vomiting is scheduled for pyloromyotomy. Blood gas shows metabolic alkalosis and hypochloremia.",
+        "tr": "Projektil kusması olan 5 haftalık infant piloromiyotomiye alınacak. Kan gazında metabolik alkaloz ve hipokloremi var."
+      },
+      "examinerQuestions": [
+        {
+          "en": "Is this an immediate surgical emergency?",
+          "tr": "Bu hemen cerrahi acil midir?"
+        },
+        {
+          "en": "What must be corrected before anesthesia?",
+          "tr": "Anestezi öncesi neler düzeltilmelidir?"
+        },
+        {
+          "en": "How do you manage aspiration risk?",
+          "tr": "Aspirasyon riskini nasıl yönetirsiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "State that pyloric stenosis is a medical resuscitation priority before surgery.",
+          "tr": "Pilor stenozunun cerrahiden önce tıbbi resüsitasyon önceliği olduğunu belirtir."
+        },
+        {
+          "en": "Correct dehydration, hypochloremia, hypokalemia, and metabolic alkalosis.",
+          "tr": "Dehidratasyon, hipokloremi, hipokalemi ve metabolik alkalozu düzeltir."
+        },
+        {
+          "en": "Confirm adequate urine output and improved electrolytes before proceeding.",
+          "tr": "Devam etmeden önce yeterli idrar çıkışı ve düzelmiş elektrolitleri doğrular."
+        },
+        {
+          "en": "Empty the stomach with orogastric/nasogastric suction before induction.",
+          "tr": "İndüksiyon öncesi orogastrik/nazogastrik aspirasyonla mideyi boşaltır."
+        },
+        {
+          "en": "Plan careful induction with aspiration precautions.",
+          "tr": "Aspirasyon önlemleriyle dikkatli indüksiyon planlar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Taking an unresuscitated alkalotic infant directly to anesthesia.",
+          "tr": "KRİTİK HATA: Resüsite edilmemiş alkalozlu infantı doğrudan anesteziye almak."
+        },
+        {
+          "en": "CRITICAL ERROR: Ignoring gastric decompression.",
+          "tr": "KRİTİK HATA: Mide dekompresyonunu göz ardı etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Why does alkalosis increase postoperative apnea risk?",
+          "tr": "Alkaloz postoperatif apne riskini neden artırır?"
+        },
+        {
+          "en": "Which induction technique would you choose?",
+          "tr": "Hangi indüksiyon tekniğini seçersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Pyloric stenosis is corrected medically before operative anesthesia.",
+        "tr": "Pilor stenozu operatif anesteziden önce tıbbi olarak düzeltilir."
+      },
+      "commonTrap": {
+        "en": "Do not rush to the operating room before correcting alkalosis and dehydration.",
+        "tr": "Alkaloz ve dehidratasyonu düzeltmeden ameliyathaneye acele etmeyin."
+      },
+      "tags": [
+        "paediatric",
+        "pyloric_stenosis",
+        "metabolic_alkalosis",
+        "aspiration",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_trauma_rsi_cspine_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Trauma",
+      "topic": "Trauma RSI with cervical spine injury",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A combative trauma patient with facial bleeding, full stomach, and suspected cervical spine injury requires emergency airway control.",
+        "tr": "Yüz kanaması, dolu mide ve servikal omurga yaralanması şüphesi olan ajite travma hastası acil hava yolu kontrolü gerektiriyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "How do you prepare the airway?",
+          "tr": "Hava yolunu nasıl hazırlarsınız?"
+        },
+        {
+          "en": "How do you protect the cervical spine?",
+          "tr": "Servikal omurgayı nasıl korursunuz?"
+        },
+        {
+          "en": "What are your backup plans?",
+          "tr": "Yedek planlarınız nelerdir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Call for trauma airway help and assign roles.",
+          "tr": "Travma hava yolu yardımı çağırır ve rolleri belirler."
+        },
+        {
+          "en": "Preoxygenate as well as possible and prepare suction for blood/vomit.",
+          "tr": "Mümkün olduğunca preoksijenasyon yapar ve kan/kusma için aspirasyon hazırlar."
+        },
+        {
+          "en": "Use manual in-line stabilization while avoiding excessive neck movement.",
+          "tr": "Aşırı boyun hareketinden kaçınarak manuel inline stabilizasyon kullanır."
+        },
+        {
+          "en": "Plan RSI with hemodynamic awareness and appropriate drugs.",
+          "tr": "Hemodinamik farkındalık ve uygun ilaçlarla RSI planlar."
+        },
+        {
+          "en": "Prepare supraglottic airway, videolaryngoscope, surgical airway/eFONA rescue.",
+          "tr": "Supraglottik hava yolu, videolaringoskop ve cerrahi hava yolu/eFONA kurtarmayı hazırlar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Hyperextending the neck for a better view.",
+          "tr": "KRİTİK HATA: Daha iyi görüntü için boynu hiperekstansiyona getirmek."
+        },
+        {
+          "en": "CRITICAL ERROR: No suction ready in a bloody airway.",
+          "tr": "KRİTİK HATA: Kanlı hava yolunda aspirasyonun hazır olmaması."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "How would shock change your induction drug dosing?",
+          "tr": "Şok indüksiyon ilaç dozlarınızı nasıl değiştirir?"
+        },
+        {
+          "en": "When would you proceed to surgical airway?",
+          "tr": "Ne zaman cerrahi hava yoluna geçersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Trauma airway management balances oxygenation, aspiration risk, cervical protection, bleeding, and shock.",
+        "tr": "Travma hava yolu yönetimi oksijenasyon, aspirasyon riski, servikal koruma, kanama ve şoku dengeler."
+      },
+      "commonTrap": {
+        "en": "Blood in the airway makes suction a primary airway device.",
+        "tr": "Hava yolundaki kan aspiratörü temel hava yolu cihazı haline getirir."
+      },
+      "tags": [
+        "trauma",
+        "rsi",
+        "cervical_spine",
+        "airway",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_neuro_raised_icp_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Neuroanaesthesia",
+      "topic": "Raised intracranial pressure",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A patient with traumatic brain injury and suspected raised ICP requires emergency craniotomy. During induction, blood pressure falls to 70/40 mmHg.",
+        "tr": "Travmatik beyin hasarı ve artmış ICP şüphesi olan hasta acil kraniyotomi gerektiriyor. İndüksiyon sırasında kan basıncı 70/40 mmHg’ye düşüyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "Why is this dangerous?",
+          "tr": "Bu neden tehlikelidir?"
+        },
+        {
+          "en": "What are your physiologic goals?",
+          "tr": "Fizyolojik hedefleriniz nelerdir?"
+        },
+        {
+          "en": "How do you manage ventilation?",
+          "tr": "Ventilasyonu nasıl yönetirsiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize reduced cerebral perfusion pressure and risk of secondary brain injury.",
+          "tr": "Azalmış serebral perfüzyon basıncı ve sekonder beyin hasarı riskini tanır."
+        },
+        {
+          "en": "Treat hypotension promptly with vasopressors and appropriate fluids.",
+          "tr": "Hipotansiyonu vazopressörler ve uygun sıvılarla hızla tedavi eder."
+        },
+        {
+          "en": "Avoid hypoxia, hypercapnia, severe hypocapnia, hyperthermia, and hypoglycemia/hyperglycemia extremes.",
+          "tr": "Hipoksi, hiperkapni, ciddi hipokapni, hipertermi ve glukoz uçlarından kaçınır."
+        },
+        {
+          "en": "Maintain head elevation/neutral venous drainage when feasible.",
+          "tr": "Mümkünse baş elevasyonu/nötral venöz drenajı korur."
+        },
+        {
+          "en": "Coordinate with neurosurgery regarding osmotherapy and surgical decompression.",
+          "tr": "Osmoterapi ve cerrahi dekompresyon için nöroşirürjiyle koordinasyon kurar."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Allowing sustained hypotension in traumatic brain injury.",
+          "tr": "KRİTİK HATA: Travmatik beyin hasarında sürdürülen hipotansiyona izin vermek."
+        },
+        {
+          "en": "CRITICAL ERROR: Hyperventilating aggressively without indication causing cerebral ischemia.",
+          "tr": "KRİTİK HATA: Endikasyon olmadan agresif hiperventilasyonla serebral iskemiye neden olmak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "When is hyperventilation appropriate?",
+          "tr": "Hiperventilasyon ne zaman uygundur?"
+        },
+        {
+          "en": "How does PEEP affect ICP and oxygenation?",
+          "tr": "PEEP ICP ve oksijenasyonu nasıl etkiler?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "TBI anesthesia is prevention of secondary injury.",
+        "tr": "TBI anestezisi sekonder hasarın önlenmesidir."
+      },
+      "commonTrap": {
+        "en": "CPP falls when MAP falls or ICP rises.",
+        "tr": "MAP düştüğünde veya ICP yükseldiğinde CPP düşer."
+      },
+      "tags": [
+        "neuro",
+        "traumatic_brain_injury",
+        "icp",
+        "cpp",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_postop_opioid_resp_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Postoperative Care",
+      "topic": "Postoperative respiratory depression",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "In PACU, a patient receiving opioids is somnolent, respiratory rate is 6/min, SpO2 is 98% on oxygen, and capnography shows ETCO2 65 mmHg.",
+        "tr": "PACU’da opioid alan hasta somnolan, solunum sayısı 6/dk, oksijen altında SpO2 %98 ve kapnografide ETCO2 65 mmHg."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is the problem?",
+          "tr": "Sorun nedir?"
+        },
+        {
+          "en": "How do you treat it?",
+          "tr": "Nasıl tedavi edersiniz?"
+        },
+        {
+          "en": "Why can SpO2 be misleading?",
+          "tr": "SpO2 neden yanıltıcı olabilir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize opioid-related hypoventilation with hypercapnia.",
+          "tr": "Hiperkapniyle opioid ilişkili hipoventilasyonu tanır."
+        },
+        {
+          "en": "Stimulate, open airway, support ventilation, and reduce/stop opioids.",
+          "tr": "Uyarır, hava yolunu açar, ventilasyonu destekler ve opioidleri azaltır/keser."
+        },
+        {
+          "en": "Titrate naloxone if needed to restore ventilation while avoiding abrupt severe pain.",
+          "tr": "Gerekirse ventilasyonu düzeltmek için naloksonu titre eder; ani şiddetli ağrıdan kaçınır."
+        },
+        {
+          "en": "Continue monitoring including ventilation, not only oxygen saturation.",
+          "tr": "Yalnız oksijen satürasyonu değil ventilasyon dahil monitörizasyonu sürdürür."
+        },
+        {
+          "en": "Assess for co-administered sedatives and residual neuromuscular blockade.",
+          "tr": "Eşlik eden sedatifleri ve rezidüel nöromüsküler blokajı değerlendirir."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Discharging because SpO2 is normal on oxygen.",
+          "tr": "KRİTİK HATA: Oksijen altında SpO2 normal diye taburcu etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Giving more opioid to a somnolent hypoventilating patient.",
+          "tr": "KRİTİK HATA: Somnolan hipoventile hastaya daha fazla opioid vermek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "How would you monitor high-risk OSA patients?",
+          "tr": "Yüksek riskli OSA hastalarını nasıl izlersiniz?"
+        },
+        {
+          "en": "How do you balance analgesia and reversal?",
+          "tr": "Analjezi ve reversiyonu nasıl dengelersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Supplemental oxygen can mask hypoventilation on pulse oximetry; ventilation monitoring matters.",
+        "tr": "Ek oksijen pulse oksimetrede hipoventilasyonu maskeleyebilir; ventilasyon monitörizasyonu önemlidir."
+      },
+      "commonTrap": {
+        "en": "Treat ventilation, not just saturation.",
+        "tr": "Yalnız satürasyonu değil ventilasyonu tedavi edin."
+      },
+      "tags": [
+        "postoperative",
+        "opioids",
+        "respiratory_depression",
+        "capnography",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_regional_epidural_hematoma_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Regional Anaesthesia",
+      "topic": "Epidural hematoma suspicion",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A patient with an epidural catheter started on anticoagulation develops severe back pain and progressive leg weakness.",
+        "tr": "Antikoagülasyon başlanan epidural kateterli hastada şiddetli bel ağrısı ve ilerleyici bacak güçsüzlüğü gelişiyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What diagnosis must be excluded urgently?",
+          "tr": "Hangi tanı acilen dışlanmalıdır?"
+        },
+        {
+          "en": "What are the immediate steps?",
+          "tr": "Acil adımlar nelerdir?"
+        },
+        {
+          "en": "What information must be communicated?",
+          "tr": "Hangi bilgiler iletilmelidir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Suspect neuraxial/epidural hematoma causing neural compression.",
+          "tr": "Nöral kompresyona neden olan nöroaksiyel/epidural hematomdan şüphelenir."
+        },
+        {
+          "en": "Stop epidural infusion and urgently assess neurologic status.",
+          "tr": "Epidural infüzyonu durdurur ve nörolojik durumu acilen değerlendirir."
+        },
+        {
+          "en": "Call anesthesia senior, surgery/neurosurgery, and obtain urgent MRI or institutional imaging pathway.",
+          "tr": "Kıdemli anestezi, cerrahi/nöroşirürji çağırır ve acil MRI veya kurumsal görüntüleme yolunu başlatır."
+        },
+        {
+          "en": "Review anticoagulant timing, coagulation tests, platelet count, and catheter details.",
+          "tr": "Antikoagülan zamanlaması, koagülasyon testleri, trombosit sayısı ve kateter ayrıntılarını gözden geçirir."
+        },
+        {
+          "en": "Prepare for urgent decompression if confirmed.",
+          "tr": "Doğrulanırsa acil dekompresyona hazırlanır."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Reassessing the next morning despite progressive motor deficit.",
+          "tr": "KRİTİK HATA: İlerleyici motor defisite rağmen ertesi sabah tekrar değerlendirmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Increasing epidural local anesthetic to treat new weakness/pain.",
+          "tr": "KRİTİK HATA: Yeni güçsüzlük/ağrıyı tedavi etmek için epidural lokal anesteziği artırmak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What symptoms suggest epidural abscess instead?",
+          "tr": "Hangi belirtiler epidural apseyi düşündürür?"
+        },
+        {
+          "en": "How do you prevent this complication?",
+          "tr": "Bu komplikasyonu nasıl önlersiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "New neurologic deficit after neuraxial anesthesia is time-critical until compression is excluded.",
+        "tr": "Nöroaksiyel anestezi sonrası yeni nörolojik defisit kompresyon dışlanana kadar zamana duyarlıdır."
+      },
+      "commonTrap": {
+        "en": "Do not attribute progressive weakness to routine epidural effect.",
+        "tr": "İlerleyici güçsüzlüğü rutin epidural etki olarak yorumlamayın."
+      },
+      "tags": [
+        "epidural",
+        "hematoma",
+        "anticoagulation",
+        "neurologic_deficit",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_urology_turp_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Clinical Anaesthesia",
+      "topic": "TURP syndrome",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "During TURP under spinal anesthesia, the patient becomes confused and nauseated with hypertension and bradycardia. Serum sodium returns as 116 mmol/L.",
+        "tr": "Spinal anestezi altında TURP sırasında hasta konfüze ve bulantılı oluyor; hipertansiyon ve bradikardi var. Serum sodyum 116 mmol/L geliyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is the diagnosis?",
+          "tr": "Tanı nedir?"
+        },
+        {
+          "en": "How do you manage it?",
+          "tr": "Nasıl yönetirsiniz?"
+        },
+        {
+          "en": "Why did spinal anesthesia help detection?",
+          "tr": "Spinal anestezi tanımaya nasıl yardımcı oldu?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Diagnose TURP syndrome from irrigation fluid absorption causing hyponatremia/fluid overload.",
+          "tr": "İrrigasyon sıvısı absorbsiyonuna bağlı hiponatremi/sıvı yüklenmesi olarak TURP sendromunu tanır."
+        },
+        {
+          "en": "Inform surgeon and stop or finish surgery urgently depending on severity.",
+          "tr": "Cerrahı bilgilendirir ve şiddete göre cerrahiyi durdurur veya hızla bitirir."
+        },
+        {
+          "en": "Support airway, oxygenation, circulation, and treat seizures if present.",
+          "tr": "Hava yolu, oksijenasyon, dolaşımı destekler ve varsa nöbetleri tedavi eder."
+        },
+        {
+          "en": "Check electrolytes/osmolality and manage severe symptomatic hyponatremia according to protocol.",
+          "tr": "Elektrolit/osmolaliteyi kontrol eder ve ciddi semptomatik hiponatremiyi protokole göre yönetir."
+        },
+        {
+          "en": "Consider ICU monitoring for severe cases.",
+          "tr": "Ciddi vakalarda yoğun bakım izlemini düşünür."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Dismissing confusion as anxiety.",
+          "tr": "KRİTİK HATA: Konfüzyonu anksiyete olarak geçiştirmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Ignoring severe symptomatic hyponatremia.",
+          "tr": "KRİTİK HATA: Ciddi semptomatik hiponatremiyi göz ardı etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "How can TURP syndrome be prevented?",
+          "tr": "TURP sendromu nasıl önlenebilir?"
+        },
+        {
+          "en": "What other causes of confusion under spinal would you consider?",
+          "tr": "Spinal altında konfüzyonun başka hangi nedenlerini düşünürsünüz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "TURP syndrome is dilutional hyponatremia and fluid overload from irrigation fluid absorption.",
+        "tr": "TURP sendromu irrigasyon sıvısı absorbsiyonuna bağlı dilüsyonel hiponatremi ve sıvı yüklenmesidir."
+      },
+      "commonTrap": {
+        "en": "New neurologic symptoms during TURP are hyponatremia until proven otherwise.",
+        "tr": "TURP sırasında yeni nörolojik belirtiler aksi kanıtlanana kadar hiponatremi düşündürür."
+      },
+      "tags": [
+        "turp",
+        "hyponatremia",
+        "spinal",
+        "urology",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_lap_co2_embolism_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Clinical Emergencies",
+      "topic": "CO2 embolism during laparoscopy",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "Immediately after insufflation during laparoscopy, the patient develops sudden hypotension, hypoxemia, and abrupt fall in ETCO2.",
+        "tr": "Laparoskopide insuflasyondan hemen sonra hastada ani hipotansiyon, hipoksemi ve ETCO2’de ani düşüş gelişiyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What diagnosis do you suspect?",
+          "tr": "Hangi tanıdan şüphelenirsiniz?"
+        },
+        {
+          "en": "What immediate steps do you take?",
+          "tr": "Acil adımlarınız nelerdir?"
+        },
+        {
+          "en": "How do you support circulation?",
+          "tr": "Dolaşımı nasıl desteklersiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Suspect CO2 gas embolism.",
+          "tr": "CO2 gaz embolisinden şüphelenir."
+        },
+        {
+          "en": "Stop insufflation and release pneumoperitoneum.",
+          "tr": "İnsuflasyonu durdurur ve pnömoperitoneumu boşaltır."
+        },
+        {
+          "en": "Give 100% oxygen and support ventilation.",
+          "tr": "%100 oksijen verir ve ventilasyonu destekler."
+        },
+        {
+          "en": "Position left lateral/head down if appropriate and feasible.",
+          "tr": "Uygun ve mümkünse sol lateral/baş aşağı pozisyon verir."
+        },
+        {
+          "en": "Support circulation with fluids/vasopressors and aspirate via central line if available and appropriate.",
+          "tr": "Sıvı/vazopressörlerle dolaşımı destekler; varsa ve uygunsa santral hattan aspire eder."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Increasing insufflation pressure during suspected embolism.",
+          "tr": "KRİTİK HATA: Şüpheli embolide insuflasyon basıncını artırmak."
+        },
+        {
+          "en": "CRITICAL ERROR: Confusing abrupt ETCO2 fall with routine CO2 absorption hypercarbia.",
+          "tr": "KRİTİK HATA: Ani ETCO2 düşüşünü rutin CO2 absorbsiyon hiperkardisiyle karıştırmak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "Why does ETCO2 fall in gas embolism?",
+          "tr": "Gaz embolisinde ETCO2 neden düşer?"
+        },
+        {
+          "en": "How would TEE or precordial Doppler help?",
+          "tr": "TEE veya prekordiyal Doppler nasıl yardımcı olur?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Gas embolism reduces pulmonary blood flow and causes sudden ETCO2 fall with hemodynamic collapse.",
+        "tr": "Gaz embolisi pulmoner kan akımını azaltır ve hemodinamik kollapsla ani ETCO2 düşüşü yapar."
+      },
+      "commonTrap": {
+        "en": "During insufflation, sudden ETCO2 fall is a major danger sign.",
+        "tr": "İnsuflasyon sırasında ani ETCO2 düşüşü önemli tehlike işaretidir."
+      },
+      "tags": [
+        "laparoscopy",
+        "co2_embolism",
+        "etco2",
+        "hypotension",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_airway_aspiration_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Airway",
+      "topic": "Aspiration event during induction",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "During induction of a full-stomach patient, gastric contents appear in the oropharynx and oxygen saturation begins to fall.",
+        "tr": "Dolu mide hastasında indüksiyon sırasında orofarinkste mide içeriği görülüyor ve oksijen satürasyonu düşmeye başlıyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What are your immediate priorities?",
+          "tr": "Acil öncelikleriniz nelerdir?"
+        },
+        {
+          "en": "Do you extubate or secure the airway?",
+          "tr": "Ekstübe mi edersiniz, hava yolunu mu güvenceye alırsınız?"
+        },
+        {
+          "en": "How do you manage after stabilization?",
+          "tr": "Stabilizasyon sonrası nasıl yönetirsiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Suction oropharynx immediately and prevent further aspiration if possible.",
+          "tr": "Orofarinksi hemen aspire eder ve mümkünse daha fazla aspirasyonu önler."
+        },
+        {
+          "en": "Head-down/lateral positioning if feasible and safe.",
+          "tr": "Mümkün ve güvenliyse baş aşağı/lateral pozisyon uygular."
+        },
+        {
+          "en": "Secure airway and oxygenate/ventilate; intubate if not already intubated and indicated.",
+          "tr": "Hava yolunu güvenceye alır ve oksijenize/ventile eder; entübe değilse ve endike ise entübe eder."
+        },
+        {
+          "en": "Consider bronchoscopy for particulate aspiration or persistent obstruction.",
+          "tr": "Partikül aspirasyonu veya kalıcı obstrüksiyonda bronkoskopi düşünür."
+        },
+        {
+          "en": "Assess severity with oxygenation, CXR/clinical course, and decide postoperative monitoring/ICU.",
+          "tr": "Oksijenasyon, akciğer grafisi/klinik seyirle şiddeti değerlendirir ve postoperatif izlem/ICU kararı verir."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Extubating an unstable hypoxemic patient immediately.",
+          "tr": "KRİTİK HATA: İnstabil hipoksemik hastayı hemen ekstübe etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Assuming antibiotics are the only required intervention.",
+          "tr": "KRİTİK HATA: Tek gerekli müdahalenin antibiyotik olduğunu varsaymak."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "When are antibiotics indicated?",
+          "tr": "Antibiyotik ne zaman endikedir?"
+        },
+        {
+          "en": "How do you distinguish aspiration pneumonitis from pneumonia?",
+          "tr": "Aspirasyon pnömonitini pnömoniden nasıl ayırırsınız?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Aspiration management prioritizes suction, oxygenation, airway protection, and supportive follow-up.",
+        "tr": "Aspirasyon yönetimi aspirasyon, oksijenasyon, hava yolu koruması ve destekleyici takibe öncelik verir."
+      },
+      "commonTrap": {
+        "en": "Airway control comes before antibiotic decisions.",
+        "tr": "Antibiyotik kararlarından önce hava yolu kontrolü gelir."
+      },
+      "tags": [
+        "aspiration",
+        "induction",
+        "airway",
+        "hypoxemia",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "viva_airway_difficult_extubation_0001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Airway",
+      "topic": "Difficult extubation after airway edema",
+      "difficulty": "medium",
+      "scenario": {
+        "en": "After prolonged prone surgery, a patient with a difficult intubation has facial and airway edema. The team asks whether to extubate.",
+        "tr": "Uzun prone cerrahi sonrası zor entübe edilen hastada yüz ve hava yolu ödemi var. Ekip ekstübe edilip edilmeyeceğini soruyor."
+      },
+      "examinerQuestions": [
+        {
+          "en": "How do you assess extubation readiness?",
+          "tr": "Ekstübasyon hazır oluşunu nasıl değerlendirirsiniz?"
+        },
+        {
+          "en": "What is your extubation plan?",
+          "tr": "Ekstübasyon planınız nedir?"
+        },
+        {
+          "en": "When would you delay extubation?",
+          "tr": "Ekstübasyonu ne zaman ertelersiniz?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Recognize extubation as a planned airway procedure in a difficult airway.",
+          "tr": "Zor hava yolunda ekstübasyonu planlı hava yolu işlemi olarak görür."
+        },
+        {
+          "en": "Assess oxygenation, ventilation, consciousness, neuromuscular recovery, edema, bleeding, and reintubation difficulty.",
+          "tr": "Oksijenasyon, ventilasyon, bilinç, nöromüsküler derlenme, ödem, kanama ve reentübasyon zorluğunu değerlendirir."
+        },
+        {
+          "en": "Ensure skilled help, airway equipment, and reintubation/front-of-neck rescue plan are ready.",
+          "tr": "Deneyimli yardım, hava yolu ekipmanı ve reentübasyon/ön boyun kurtarma planını hazırlar."
+        },
+        {
+          "en": "Consider staged extubation with an airway exchange catheter when appropriate.",
+          "tr": "Uygunsa airway exchange catheter ile aşamalı ekstübasyon düşünür."
+        },
+        {
+          "en": "Delay extubation and transfer intubated if airway swelling or reintubation risk is unacceptable.",
+          "tr": "Hava yolu şişliği veya reentübasyon riski kabul edilemezse ekstübasyonu erteler ve entübe transfer eder."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "CRITICAL ERROR: Extubating because the operation is finished without airway reassessment.",
+          "tr": "KRİTİK HATA: Hava yolunu yeniden değerlendirmeden operasyon bitti diye ekstübe etmek."
+        },
+        {
+          "en": "CRITICAL ERROR: Extubating in an unprepared environment without rescue plan.",
+          "tr": "KRİTİK HATA: Kurtarma planı olmadan hazırlıksız ortamda ekstübe etmek."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What is the role of cuff leak test?",
+          "tr": "Cuff leak testin rolü nedir?"
+        },
+        {
+          "en": "How would you manage post-extubation stridor?",
+          "tr": "Ekstübasyon sonrası stridoru nasıl yönetirsiniz?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Difficult extubation should be planned as carefully as difficult intubation.",
+        "tr": "Zor ekstübasyon zor entübasyon kadar dikkatli planlanmalıdır."
+      },
+      "commonTrap": {
+        "en": "Normal oxygenation before extubation does not guarantee a patent airway afterward.",
+        "tr": "Ekstübasyon öncesi normal oksijenasyon sonrası açık hava yolunu garanti etmez."
+      },
+      "tags": [
+        "extubation",
+        "difficult_airway",
+        "airway_edema",
+        "prone",
+        "edaic_viva"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational viva content based on standard anesthesia crisis-management principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    }
+  ]
+}

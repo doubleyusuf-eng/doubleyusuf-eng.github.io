@@ -1,0 +1,118 @@
+{
+  "packId": "viva_scenarios",
+  "version": 1,
+  "boardType": "EDAIC_VIVA",
+  "languages": ["en", "tr"],
+  "vivaQuestions": [
+    {
+      "id": "viva_scenario_001",
+      "boardType": "EDAIC_VIVA",
+      "category": "Anesthetic Emergencies",
+      "topic": "Malignant Hyperthermia",
+      "difficulty": "hard",
+      "scenario": {
+        "en": "A 12-year-old boy is undergoing an elective open reduction of a femur fracture. Anesthesia was induced with propofol, fentanyl, and succinylcholine, and maintained with sevoflurane. 30 minutes into the surgery, the capnography alarm triggers, showing a rapid rise in EtCO2 from 38 mmHg to 72 mmHg despite increasing minute ventilation. The patient is tachycardic at 145 bpm, and his masseter muscles and limbs feel extremely rigid. His core temperature is currently 38.8°C and rising.",
+        "tr": "12 yaşında erkek hasta, femur kırığı nedeniyle elektif açık redüksiyon operasyonuna alınıyor. Anestezi indüksiyonu propofol, fentanil ve süksinilkolin ile yapılmış, idamesi ise sevoran ile sağlanmaktadır. Cerrahinin 30. dakikasında kapnografi alarmı çalıyor ve dakika ventilasyonu artırılmasına rağmen EtCO2'nin 38 mmHg'den 72 mmHg'ye hızla yükseldiği görülüyor. Hastada 145/dk taşikardi mevcut olup, masseter kasları ve ekstremiteleri son derece rijit hissediliyor. Vücut sıcaklığı şu anda 38.8°C'dir ve yükselmektedir."
+      },
+      "examinerQuestions": [
+        {
+          "en": "What is your immediate primary diagnosis and differential diagnosis for this clinical presentation?",
+          "tr": "Bu klinik tablo için acil birincil teşhisiniz ve ayırıcı tanılarınız nelerdir?"
+        },
+        {
+          "en": "What is the underlying pathophysiology and genetic mechanism of this condition?",
+          "tr": "Bu durumun altında yatan patofizyoloji ve genetik mekanizma nedir?"
+        },
+        {
+          "en": "Detail your immediate, stepwise management plan to stabilize this patient.",
+          "tr": "Bu hastayı stabilize etmek için acil, adım adım yönetim planınızı detaylandırın."
+        },
+        {
+          "en": "What are the core safety precautions and anesthesia machine preparations required for a future anesthetic in this patient?",
+          "tr": "Gelecekte bu hastaya uygulanacak bir anestezide alınması gereken temel güvenlik önlemleri ve anestezi cihazı hazırlıkları nelerdir?"
+        }
+      ],
+      "expectedAnswerPoints": [
+        {
+          "en": "Identify Malignant Hyperthermia (MH) as the primary clinical diagnosis.",
+          "tr": "Birincil klinik tanı olarak Malign Hipertermi'yi (MH) tanımlamak."
+        },
+        {
+          "en": "Call for help immediately, state the emergency clearly, and request the MH Emergency Cart/Kit.",
+          "tr": "Derhal yardım çağırmak, acil durumu net bir şekilde belirtmek ve MH Acil Durum Arabasını/Kitini istemek."
+        },
+        {
+          "en": "Immediately discontinue all triggering agents (sevoflurane) and switch to non-triggering intravenous anesthetics (TIVA with propofol).",
+          "tr": "Tüm tetikleyici ajanları (sevoran) derhal sonlandırmak ve tetikleyici olmayan intravenöz anesteziklere (propofol ile TİVA) geçmek."
+        },
+        {
+          "en": "Hyperventilate the patient with 100% oxygen at high flows (>10 L/min) and insert activated charcoal filters (Vapor-Clean) into the breathing circuit if available.",
+          "tr": "Hastayı yüksek akımda (>10 L/dk) %%100 oksijen ile hiperventile etmek ve varsa solunum devresine aktif kömür filtreleri (Vapor-Clean) takmak."
+        },
+        {
+          "en": "Reconstitute and administer intravenous Dantrolene at a dose of 2.5 mg/kg, repeating as needed (up to 10 mg/kg or more) until symptoms subside.",
+          "tr": "İntravenöz Dantrolen'i sulandırarak 2.5 mg/kg dozunda uygulamak ve semptomlar hafifleyene kadar gerektiğinde tekrarlamak (10 mg/kg veya daha fazlasına kadar)."
+        },
+        {
+          "en": "Initiate cooling measures (cold IV saline, surface ice, gastric lavage) only if temperature is >38.5°C, and stop cooling when temperature reaches 38°C to prevent hypothermia hypereffects.",
+          "tr": "Soğutma önlemlerini (soğuk IV salin, yüzeyel buz, gastrik lavaj) yalnızca sıcaklık >38.5°C ise başlatmak ve hipotermiyi önlemek için sıcaklık 38°C'ye ulaştığında soğutmayı durdurmak."
+        },
+        {
+          "en": "Check arterial blood gases, electrolytes (specifically potassium), and creatine kinase (CK) levels to monitor for hyperkalemia and metabolic acidosis.",
+          "tr": "Hiperkalemi ve metabolik asidozu izlemek için arter kan gazı, elektrolitler (özellikle potasyum) ve kreatin kinaz (CK) düzeylerini kontrol etmek."
+        },
+        {
+          "en": "Treat severe hyperkalemia with calcium chloride/gluconate, insulin with dextrose, and sodium bicarbonate.",
+          "tr": "Şiddetli hiperkalemiyi kalsiyum klorür/glukonat, dekstrozlu insülin ve sodyum bikarbonat ile tedavi etmek."
+        },
+        {
+          "en": "Avoid calcium channel blockers (e.g., verapamil, diltiazem) due to high risk of fatal hyperkalemia and cardiovascular collapse when co-administered with dantrolene.",
+          "tr": "Dantrolen ile birlikte uygulandığında ölümcül hiperkalemi ve kardiyovasküler kollaps riski yüksek olduğundan kalsiyum kanal blokerlerinden (örn. verapamil, diltiazem) kaçınmak."
+        },
+        {
+          "en": "Explain genetic inheritance: Autosomal dominant mutation of the RYR1 (ryanodine receptor) gene on chromosome 19, or less commonly the CACNA1S gene.",
+          "tr": "Genetik kalıtımı açıklamak: Kromozom 19 üzerindeki RYR1 (ryanodin reseptörü) geninin veya daha nadiren CACNA1S geninin otozomal dominant mutasyonu."
+        }
+      ],
+      "redFlags": [
+        {
+          "en": "Failing to immediately discontinue the volatile anesthetic and purge the circuit.",
+          "tr": "Uçucu anestezik ajanı derhal kesmemek ve devreyi temizlememek."
+        },
+        {
+          "en": "Co-administering calcium channel blockers (e.g., verapamil) with dantrolene.",
+          "tr": "Dantrolen ile birlikte kalsiyum kanal blokerleri (örn. verapamil) uygulamak."
+        },
+        {
+          "en": "Delaying dantrolene administration while waiting for a high temperature reading (hyperthermia is a late sign of MH).",
+          "tr": "Sıcaklık artışını beklerken dantrolen uygulamasını geciktirmek (hipertermi MH'nin geç bir belirtisidir)."
+        }
+      ],
+      "followUpQuestions": [
+        {
+          "en": "What is the molecular mechanism of action of dantrolene?",
+          "tr": "Dantrolenin moleküler etki mekanizması nedir?"
+        },
+        {
+          "en": "How do you definitively confirm susceptibility to malignant hyperthermia postoperatively?",
+          "tr": "Postoperatif dönemde malign hipertermiye duyarlılığı kesin olarak nasıl doğrularsınız?"
+        }
+      ],
+      "keyLearningPoint": {
+        "en": "Malignant hyperthermia is a hypermetabolic crisis triggered by volatile anesthetics and succinylcholine, characterized by uncontrolled calcium release from the sarcoplasmic reticulum. Immediate administration of dantrolene (2.5 mg/kg) is lifesaving.",
+        "tr": "Malign hipertermi; uçucu anestezikler ve süksinilkolin tarafından tetiklenen, sarkoplazmik retikulumdan kontrolsüz kalsiyum salınımı ile karakterize hipermetabolik bir krizdir. Dantrolenin (2.5 mg/kg) derhal uygulanması hayat kurtarıcıdır."
+      },
+      "commonTrap": {
+        "en": "Assuming masseter muscle rigidity (MMR) after succinylcholine is always benign. While it can occur, profound generalized rigidity is highly indicative of impending MH and requires immediate conversion to a non-triggering anesthetic and close monitoring.",
+        "tr": "Süksinilkolin sonrası masseter kas rijitesinin (MMR) her zaman selim olduğunu varsaymak. MMR gelişebilse de, belirgin jeneralize rijite yaklaşan MH'nin güçlü bir göstergesidir; derhal tetikleyici olmayan anesteziye geçişi ve yakın takibi gerektirir."
+      },
+      "tags": ["Emergency", "Malignant Hyperthermia", "Crisis Management", "Pediatrics"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["MHAUS (Malignant Hyperthermia Association of the United States) Emergency Guidelines 2024", "Miller's Anesthesia, Inherited Muscle Disorders Chapter"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    }
+  ]
+}

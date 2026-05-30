@@ -1,0 +1,2052 @@
+{
+  "packId": "edaic_paper_b_pack_1",
+  "version": 1,
+  "boardType": "EDAIC_PART_I",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "edaicMtfQuestions": [
+    {
+      "id": "edaic_b_airway_difficult_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Anaesthesia",
+      "topic": "Anticipated difficult airway",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning the anticipated difficult airway, which of the following statements are true?",
+        "tr": "Beklenen zor hava yolu ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Awake tracheal intubation should be considered when both difficult intubation and difficult mask or supraglottic airway ventilation are predicted.",
+            "tr": "Zor entübasyon ile birlikte zor maske veya supraglottik hava yolu ventilasyonu bekleniyorsa uyanık trakeal entübasyon düşünülmelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. If loss of spontaneous ventilation may create a cannot-intubate/cannot-oxygenate situation, awake airway management is safer.",
+            "tr": "Doğrudur. Spontan solunumun kaybı entübe edememe/oksijenize edememe durumuna yol açabilecekse uyanık hava yolu yönetimi daha güvenlidir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "A normal Mallampati score reliably excludes difficult laryngoscopy.",
+            "tr": "Normal Mallampati skoru zor laringoskopiyi güvenilir şekilde dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Mallampati is only one imperfect screening test and should be combined with other airway predictors.",
+            "tr": "Yanlıştır. Mallampati yalnızca kusurlu bir tarama testidir ve diğer hava yolu belirteçleriyle birlikte değerlendirilmelidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Preparation for difficult airway includes equipment, skilled help, oxygenation strategy, and a failed airway plan.",
+            "tr": "Zor hava yolu hazırlığı ekipman, deneyimli yardım, oksijenasyon stratejisi ve başarısız hava yolu planını içerir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Planning must include primary, backup, rescue, and emergency front-of-neck access options.",
+            "tr": "Doğrudur. Plan primer, yedek, kurtarma ve acil ön boyun erişimi seçeneklerini içermelidir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Repeated attempts at direct laryngoscopy without changing strategy are appropriate if oxygen saturation remains normal.",
+            "tr": "Oksijen satürasyonu normal kalıyorsa strateji değiştirmeden tekrarlayan direkt laringoskopi denemeleri uygundur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Repeated attempts cause trauma, edema, bleeding, and rapidly convert a difficult airway into a failed airway.",
+            "tr": "Yanlıştır. Tekrarlayan denemeler travma, ödem ve kanamaya yol açar; zor hava yolunu hızla başarısız hava yoluna dönüştürebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Patient positioning and preoxygenation are part of the airway strategy.",
+            "tr": "Hasta pozisyonlandırması ve preoksijenasyon hava yolu stratejisinin bir parçasıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Optimized positioning and denitrogenation increase the margin of safety before airway manipulation.",
+            "tr": "Doğrudur. Uygun pozisyon ve denitrojenasyon hava yolu girişimi öncesi güvenlik marjını artırır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Anticipated difficult airway management is primarily a planning and oxygenation problem, not only an intubation problem.",
+        "tr": "Beklenen zor hava yolu yönetimi yalnızca entübasyon sorunu değil; öncelikle planlama ve oksijenasyon sorunudur."
+      },
+      "keyLearningPoint": {
+        "en": "Plan awake intubation when failure after induction may make oxygenation impossible.",
+        "tr": "İndüksiyon sonrası başarısızlık oksijenasyonu imkânsız hale getirebilecekse uyanık entübasyon planlayın."
+      },
+      "commonTrap": {
+        "en": "Do not use normal oxygen saturation at the start as reassurance for repeated traumatic attempts.",
+        "tr": "Başlangıçta satürasyonun normal olmasını tekrarlayan travmatik denemeler için güvence olarak görmeyin."
+      },
+      "tags": [
+        "airway",
+        "difficult_airway",
+        "awake_intubation",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_airway_rsi_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Anaesthesia",
+      "topic": "Rapid sequence induction and aspiration",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning rapid sequence induction (RSI) and aspiration risk, which of the following statements are true?",
+        "tr": "Hızlı seri indüksiyon (RSI) ve aspirasyon riski ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "RSI is intended to reduce the time between loss of consciousness and securing the airway in patients at risk of aspiration.",
+            "tr": "RSI, aspirasyon riski olan hastalarda bilinç kaybı ile hava yolunun güvenceye alınması arasındaki süreyi azaltmayı amaçlar."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. RSI prioritizes preoxygenation, rapid onset drugs, and prompt tracheal intubation.",
+            "tr": "Doğrudur. RSI preoksijenasyon, hızlı etkili ilaçlar ve hızlı trakeal entübasyonu önceliklendirir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Cricoid pressure must be maintained at all costs even if it prevents ventilation or intubation.",
+            "tr": "Krikoid bası ventilasyonu veya entübasyonu engellese bile ne pahasına olursa olsun sürdürülmelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. If cricoid pressure impairs ventilation, laryngoscopy, or tube passage, it should be adjusted or released.",
+            "tr": "Yanlıştır. Krikoid bası ventilasyonu, laringoskopiyi veya tüp geçişini bozuyorsa azaltılmalı veya bırakılmalıdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Preoxygenation increases safe apnea time.",
+            "tr": "Preoksijenasyon güvenli apne süresini artırır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Denitrogenation replaces alveolar nitrogen with oxygen, increasing the oxygen reservoir.",
+            "tr": "Doğrudur. Denitrojenasyon alveoler azotu oksijenle değiştirerek oksijen rezervini artırır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "A failed RSI plan should include an oxygenation rescue strategy rather than repeated intubation attempts.",
+            "tr": "Başarısız RSI planı tekrarlayan entübasyon denemeleri yerine oksijenasyon kurtarma stratejisi içermelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. The priority is oxygenation by mask, supraglottic airway, or emergency front-of-neck access if required.",
+            "tr": "Doğrudur. Öncelik maske, supraglottik hava yolu veya gerekirse acil ön boyun erişimiyle oksijenasyondur."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "RSI eliminates the risk of aspiration completely.",
+            "tr": "RSI aspirasyon riskini tamamen ortadan kaldırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. RSI reduces but does not abolish aspiration risk.",
+            "tr": "Yanlıştır. RSI aspirasyon riskini azaltır ancak tamamen ortadan kaldırmaz."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "RSI is a risk-reduction strategy and requires a failed airway rescue plan.",
+        "tr": "RSI bir risk azaltma stratejisidir ve başarısız hava yolu kurtarma planı gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "RSI success depends on preoxygenation, drug choice, intubation skill, and rescue oxygenation.",
+        "tr": "RSI başarısı preoksijenasyon, ilaç seçimi, entübasyon becerisi ve kurtarma oksijenasyonuna bağlıdır."
+      },
+      "commonTrap": {
+        "en": "Do not treat cricoid pressure as more important than oxygenation.",
+        "tr": "Krikoid basıyı oksijenasyondan daha önemli görmeyin."
+      },
+      "tags": [
+        "airway",
+        "rsi",
+        "aspiration",
+        "cricoid_pressure",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_obstetric_spinal_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Obstetric Anaesthesia",
+      "topic": "Spinal anaesthesia for caesarean section",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning spinal anaesthesia for caesarean section, which of the following statements are true?",
+        "tr": "Sezaryen için spinal anestezi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Hypotension after spinal anaesthesia is common and should be actively prevented and treated.",
+            "tr": "Spinal anestezi sonrası hipotansiyon sıktır ve aktif olarak önlenip tedavi edilmelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Sympathetic blockade may rapidly reduce systemic vascular resistance and venous return.",
+            "tr": "Doğrudur. Sempatik blok sistemik vasküler direnci ve venöz dönüşü hızla azaltabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Left uterine displacement reduces aortocaval compression.",
+            "tr": "Sol uterin deplasman aortokaval kompresyonu azaltır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. It improves venous return and maternal hemodynamics in late pregnancy.",
+            "tr": "Doğrudur. Gebeliğin ileri döneminde venöz dönüşü ve maternal hemodinamiyi iyileştirir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "A high spinal block may present with dyspnea, arm weakness, hypotension, and bradycardia.",
+            "tr": "Yüksek spinal blok dispne, kol güçsüzlüğü, hipotansiyon ve bradikardi ile ortaya çıkabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Rapidly ascending neuraxial block may threaten ventilation and circulation.",
+            "tr": "Doğrudur. Hızla yükselen nöroaksiyel blok ventilasyon ve dolaşımı tehdit edebilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Nausea during spinal anaesthesia is always psychogenic and does not require hemodynamic assessment.",
+            "tr": "Spinal anestezi sırasında bulantı her zaman psikojeniktir ve hemodinamik değerlendirme gerektirmez."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Nausea is often an early symptom of hypotension and reduced cerebral/visceral perfusion.",
+            "tr": "Yanlıştır. Bulantı sıklıkla hipotansiyon ve azalmış serebral/visseral perfüzyonun erken bulgusudur."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Phenylephrine or norepinephrine infusions may be used according to local obstetric anaesthesia practice.",
+            "tr": "Fenilefrin veya norepinefrin infüzyonları yerel obstetrik anestezi uygulamasına göre kullanılabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Vasopressor protocols are commonly used to prevent and treat spinal hypotension.",
+            "tr": "Doğrudur. Vazopressör protokolleri spinal hipotansiyonu önlemek ve tedavi etmek için yaygın kullanılır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Spinal anaesthesia for caesarean delivery requires anticipation of hypotension and readiness to manage high neuraxial block.",
+        "tr": "Sezaryen için spinal anestezi hipotansiyonun öngörülmesini ve yüksek nöroaksiyel blok yönetimine hazır olunmasını gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Treat maternal hypotension promptly; fetal well-being depends on maternal perfusion.",
+        "tr": "Maternal hipotansiyonu hızla tedavi edin; fetal iyilik maternal perfüzyona bağlıdır."
+      },
+      "commonTrap": {
+        "en": "Do not dismiss nausea as anxiety until hypotension and high block are excluded.",
+        "tr": "Hipotansiyon ve yüksek blok dışlanmadan bulantıyı anksiyete olarak görmeyin."
+      },
+      "tags": [
+        "obstetric",
+        "spinal",
+        "caesarean",
+        "hypotension",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_paediatric_laryngospasm_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Laryngospasm",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning perioperative laryngospasm in children, which of the following statements are true?",
+        "tr": "Çocuklarda perioperatif laringospazm ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Laryngospasm is more common in children than adults.",
+            "tr": "Laringospazm çocuklarda erişkinlere göre daha sık görülür."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Children have reactive airways and smaller functional reserve, increasing clinical risk.",
+            "tr": "Doğrudur. Çocuklarda hava yolları daha reaktiftir ve fonksiyonel rezerv daha düşüktür."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Airway stimulation during a light plane of anaesthesia can precipitate laryngospasm.",
+            "tr": "Yüzeyel anestezi düzeyinde hava yolu uyarısı laringospazmı tetikleyebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Secretions, blood, suction, or airway manipulation during light anaesthesia are common triggers.",
+            "tr": "Doğrudur. Sekresyon, kan, aspirasyon veya yüzeyel anestezide hava yolu manipülasyonu sık tetikleyicilerdir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Initial treatment includes removal of stimulus, airway manoeuvres, CPAP with 100% oxygen, and deepening anaesthesia.",
+            "tr": "İlk tedavi uyaranın kaldırılması, hava yolu manevraları, %100 oksijenle CPAP ve anestezinin derinleştirilmesini içerir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Early maneuvers aim to break the spasm and restore oxygenation.",
+            "tr": "Doğrudur. Erken manevralar spazmı çözmeyi ve oksijenasyonu düzeltmeyi hedefler."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Persistent complete laryngospasm with desaturation may require succinylcholine.",
+            "tr": "Desatürasyonla seyreden kalıcı tam laringospazm süksinilkolin gerektirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. If conservative measures fail and oxygenation is threatened, muscle relaxation is appropriate.",
+            "tr": "Doğrudur. Konservatif önlemler başarısızsa ve oksijenasyon tehdit altındaysa kas gevşetici uygundur."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Bradycardia during laryngospasm should be ignored because it is usually benign.",
+            "tr": "Laringospazm sırasında bradikardi genellikle benign olduğu için göz ardı edilmelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. In children, bradycardia may be a sign of severe hypoxemia and requires urgent treatment.",
+            "tr": "Yanlıştır. Çocuklarda bradikardi ciddi hipokseminin belirtisi olabilir ve acil tedavi gerektirir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Paediatric laryngospasm can rapidly progress to hypoxemia and bradycardia; management prioritizes oxygenation.",
+        "tr": "Pediatrik laringospazm hızla hipoksemi ve bradikardiye ilerleyebilir; yönetimde öncelik oksijenasyondur."
+      },
+      "keyLearningPoint": {
+        "en": "Persistent laryngospasm with falling saturation is an emergency.",
+        "tr": "Düşen satürasyonla devam eden laringospazm acildir."
+      },
+      "commonTrap": {
+        "en": "Do not continue airway stimulation during a light plane; it worsens the spasm.",
+        "tr": "Yüzeyel anestezide hava yolu uyarısına devam etmeyin; spazmı kötüleştirir."
+      },
+      "tags": [
+        "paediatric",
+        "laryngospasm",
+        "airway",
+        "hypoxemia",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_regional_last_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Regional Anaesthesia",
+      "topic": "Local anaesthetic systemic toxicity",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning local anaesthetic systemic toxicity (LAST), which of the following statements are true?",
+        "tr": "Lokal anestezik sistemik toksisitesi (LAST) ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Early symptoms may include circumoral numbness, metallic taste, tinnitus, agitation, or confusion.",
+            "tr": "Erken belirtiler perioral uyuşma, metalik tat, tinnitus, ajitasyon veya konfüzyon olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CNS symptoms often precede seizures or cardiovascular collapse.",
+            "tr": "Doğrudur. SSS belirtileri sıklıkla nöbet veya kardiyovasküler kollapstan önce gelir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Seizure management and airway oxygenation are important early steps.",
+            "tr": "Nöbet yönetimi ve hava yolu oksijenasyonu erken dönemde önemlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hypoxia, hypercapnia, and acidosis worsen local anesthetic cardiotoxicity.",
+            "tr": "Doğrudur. Hipoksi, hiperkapni ve asidoz lokal anestezik kardiyotoksisitesini kötüleştirir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Intravenous lipid emulsion is a key rescue therapy for significant LAST.",
+            "tr": "İntravenöz lipid emülsiyonu belirgin LAST için temel kurtarma tedavisidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Lipid therapy should be available wherever potentially toxic doses of local anesthetic are used.",
+            "tr": "Doğrudur. Toksik doza yaklaşabilecek lokal anesteziklerin kullanıldığı her yerde lipid tedavisi erişilebilir olmalıdır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Lidocaine should be used as the preferred antiarrhythmic in LAST-related ventricular arrhythmias.",
+            "tr": "LAST ilişkili ventriküler aritmilerde tercih edilen antiaritmik lidokain olmalıdır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Additional local anesthetic antiarrhythmics should be avoided; LAST resuscitation differs from routine ACLS.",
+            "tr": "Yanlıştır. Ek lokal anestezik antiaritmiklerden kaçınılmalıdır; LAST resüsitasyonu rutin ACLS’den farklıdır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Large doses of epinephrine may worsen outcomes in LAST resuscitation.",
+            "tr": "LAST resüsitasyonunda yüksek doz epinefrin sonuçları kötüleştirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Small, titrated epinephrine doses are preferred when needed.",
+            "tr": "Doğrudur. Gerektiğinde küçük ve titre edilmiş epinefrin dozları tercih edilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "LAST is a time-critical neurologic and cardiovascular emergency requiring airway control, seizure suppression, lipid rescue, and modified resuscitation.",
+        "tr": "LAST hava yolu kontrolü, nöbet baskılanması, lipid tedavisi ve modifiye resüsitasyon gerektiren zamana duyarlı nörolojik ve kardiyovasküler bir acildir."
+      },
+      "keyLearningPoint": {
+        "en": "Recognize early CNS symptoms before cardiovascular collapse develops.",
+        "tr": "Kardiyovasküler kollaps gelişmeden önce erken SSS belirtilerini tanıyın."
+      },
+      "commonTrap": {
+        "en": "Do not treat LAST arrhythmias by giving more local anesthetic.",
+        "tr": "LAST aritmilerini daha fazla lokal anestezik vererek tedavi etmeyin."
+      },
+      "tags": [
+        "regional",
+        "last",
+        "local_anesthetic",
+        "lipid_emulsion",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_neuro_icp_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Neuroanaesthesia",
+      "topic": "Raised intracranial pressure",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning anaesthetic management of raised intracranial pressure, which of the following statements are true?",
+        "tr": "Artmış intrakraniyal basınç yönetiminde anestezi yaklaşımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Hypoxia and hypercapnia can increase intracranial pressure and should be avoided.",
+            "tr": "Hipoksi ve hiperkapni intrakraniyal basıncı artırabilir ve kaçınılmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Both increase cerebral blood flow and may worsen intracranial hypertension.",
+            "tr": "Doğrudur. Her ikisi de serebral kan akımını artırarak intrakraniyal hipertansiyonu kötüleştirebilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Maintaining adequate cerebral perfusion pressure is important.",
+            "tr": "Yeterli serebral perfüzyon basıncının korunması önemlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CPP depends on mean arterial pressure and intracranial pressure.",
+            "tr": "Doğrudur. Serebral perfüzyon basıncı ortalama arter basıncı ve intrakraniyal basınca bağlıdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Severe hypotension is acceptable if it reduces bleeding.",
+            "tr": "Kanamayı azalttığı için ciddi hipotansiyon kabul edilebilir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Hypotension may critically reduce cerebral perfusion and worsen secondary brain injury.",
+            "tr": "Yanlıştır. Hipotansiyon serebral perfüzyonu kritik şekilde azaltabilir ve sekonder beyin hasarını kötüleştirebilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Head elevation and neutral neck position can improve venous drainage.",
+            "tr": "Baş elevasyonu ve nötral boyun pozisyonu venöz drenajı iyileştirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Obstruction of jugular venous drainage can increase intracranial pressure.",
+            "tr": "Doğrudur. Juguler venöz drenajın engellenmesi intrakraniyal basıncı artırabilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Excessive PEEP may reduce venous return and potentially affect intracranial dynamics.",
+            "tr": "Aşırı PEEP venöz dönüşü azaltabilir ve intrakraniyal dinamikleri etkileyebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. PEEP should be titrated to oxygenation and hemodynamic effects.",
+            "tr": "Doğrudur. PEEP oksijenasyon ve hemodinamik etkiler dikkate alınarak titre edilmelidir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Raised intracranial pressure management focuses on oxygenation, normocapnia, cerebral perfusion, venous drainage, and avoidance of secondary injury.",
+        "tr": "Artmış intrakraniyal basınç yönetimi oksijenasyon, normokapni, serebral perfüzyon, venöz drenaj ve sekonder hasardan kaçınmaya odaklanır."
+      },
+      "keyLearningPoint": {
+        "en": "Prevent secondary brain injury: avoid hypoxia, hypercapnia, hypotension, and impaired venous drainage.",
+        "tr": "Sekonder beyin hasarını önleyin: hipoksi, hiperkapni, hipotansiyon ve bozulmuş venöz drenajdan kaçının."
+      },
+      "commonTrap": {
+        "en": "Do not treat the brain as isolated from systemic hemodynamics.",
+        "tr": "Beyni sistemik hemodinamiden bağımsız gibi değerlendirmeyin."
+      },
+      "tags": [
+        "neuroanaesthesia",
+        "icp",
+        "cpp",
+        "brain",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_cardiac_as_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Cardiac Disease",
+      "topic": "Aortic stenosis in non-cardiac surgery",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning severe aortic stenosis during non-cardiac surgery, which of the following statements are true?",
+        "tr": "Non-kardiyak cerrahide ciddi aort stenozu ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Maintaining sinus rhythm is important.",
+            "tr": "Sinüs ritminin korunması önemlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Atrial contraction contributes significantly to ventricular filling in a stiff hypertrophied ventricle.",
+            "tr": "Doğrudur. Atriyal kontraksiyon hipertrofik ve sert ventrikülün doluşuna önemli katkı sağlar."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Profound vasodilation and hypotension may be poorly tolerated.",
+            "tr": "Derin vazodilatasyon ve hipotansiyon kötü tolere edilebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Coronary perfusion may fall, leading to ischemia and cardiovascular collapse.",
+            "tr": "Doğrudur. Koroner perfüzyon azalabilir, iskemi ve kardiyovasküler kollaps gelişebilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Tachycardia is desirable because it always improves cardiac output.",
+            "tr": "Taşikardi her zaman kardiyak outputu artırdığı için istenir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Tachycardia reduces diastolic filling time and coronary perfusion.",
+            "tr": "Yanlıştır. Taşikardi diyastolik doluş süresini ve koroner perfüzyonu azaltır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Adequate preload should be maintained.",
+            "tr": "Yeterli preload korunmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Severe aortic stenosis patients are sensitive to underfilling.",
+            "tr": "Doğrudur. Ciddi aort stenozu olan hastalar yetersiz doluşa duyarlıdır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Spinal anaesthesia causing sudden sympathectomy may be hazardous in severe symptomatic disease.",
+            "tr": "Ani sempatektomi yapan spinal anestezi ciddi semptomatik hastalıkta tehlikeli olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Abrupt falls in systemic vascular resistance can be poorly tolerated.",
+            "tr": "Doğrudur. Sistemik vasküler dirençte ani düşüş kötü tolere edilebilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Severe aortic stenosis requires preservation of preload, afterload, sinus rhythm, and avoidance of tachycardia and hypotension.",
+        "tr": "Ciddi aort stenozunda preload, afterload ve sinüs ritmi korunmalı; taşikardi ve hipotansiyondan kaçınılmalıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Think fixed outflow obstruction: avoid sudden vasodilation and loss of coronary perfusion.",
+        "tr": "Sabit çıkış obstrüksiyonunu düşünün: ani vazodilatasyon ve koroner perfüzyon kaybından kaçının."
+      },
+      "commonTrap": {
+        "en": "Do not apply routine vasodilatory anaesthesia assumptions to severe aortic stenosis.",
+        "tr": "Ciddi aort stenozunda rutin vazodilatatör anestezi varsayımlarını uygulamayın."
+      },
+      "tags": [
+        "cardiac",
+        "aortic_stenosis",
+        "noncardiac_surgery",
+        "hemodynamics",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_icu_sepsis_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Intensive Care",
+      "topic": "Sepsis and septic shock",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning sepsis and septic shock, which of the following statements are true?",
+        "tr": "Sepsis ve septik şok ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Sepsis involves life-threatening organ dysfunction caused by a dysregulated host response to infection.",
+            "tr": "Sepsis, enfeksiyona düzensiz konak yanıtının neden olduğu yaşamı tehdit eden organ disfonksiyonudur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Organ dysfunction is central to the definition.",
+            "tr": "Doğrudur. Organ disfonksiyonu tanımın merkezindedir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Early source control and appropriate antimicrobial therapy are important.",
+            "tr": "Erken kaynak kontrolü ve uygun antimikrobiyal tedavi önemlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Treating the infection source is essential in sepsis management.",
+            "tr": "Doğrudur. Enfeksiyon kaynağının tedavisi sepsis yönetiminin temelidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Hypotension in septic shock is caused only by hypovolemia.",
+            "tr": "Septik şokta hipotansiyon yalnızca hipovolemiden kaynaklanır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Vasodilation, capillary leak, myocardial dysfunction, and relative hypovolemia may all contribute.",
+            "tr": "Yanlıştır. Vazodilatasyon, kapiller kaçak, miyokard disfonksiyonu ve relatif hipovolemi katkıda bulunabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Norepinephrine is commonly used as a first-line vasopressor in septic shock.",
+            "tr": "Norepinefrin septik şokta sıklıkla ilk basamak vazopressör olarak kullanılır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. It increases vascular tone with relatively favorable hemodynamic profile.",
+            "tr": "Doğrudur. Vasküler tonu artırır ve görece uygun hemodinamik profile sahiptir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "A normal lactate always excludes tissue hypoperfusion.",
+            "tr": "Normal laktat doku hipoperfüzyonunu her zaman dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Lactate is useful but not perfect; clinical context and perfusion markers remain important.",
+            "tr": "Yanlıştır. Laktat yararlıdır ancak kusursuz değildir; klinik bağlam ve perfüzyon belirteçleri önemlidir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Sepsis care requires simultaneous infection treatment, perfusion restoration, and organ support.",
+        "tr": "Sepsis bakımı enfeksiyon tedavisi, perfüzyonun düzeltilmesi ve organ desteğinin eş zamanlı yürütülmesini gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Shock physiology in sepsis is distributive but often mixed.",
+        "tr": "Sepsiste şok fizyolojisi distributiftir ancak sıklıkla miksttir."
+      },
+      "commonTrap": {
+        "en": "Do not interpret lactate in isolation from the patient.",
+        "tr": "Laktatı hastadan bağımsız yorumlamayın."
+      },
+      "tags": [
+        "icu",
+        "sepsis",
+        "shock",
+        "norepinephrine",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_bleeding_mtp_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Anaesthesia",
+      "topic": "Major haemorrhage and massive transfusion",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning major haemorrhage and massive transfusion, which of the following statements are true?",
+        "tr": "Majör kanama ve masif transfüzyon ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Hypothermia, acidosis, and coagulopathy can worsen bleeding.",
+            "tr": "Hipotermi, asidoz ve koagülopati kanamayı kötüleştirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. These form part of the lethal triad/diamond of hemorrhage physiology.",
+            "tr": "Doğrudur. Bunlar kanama fizyolojisindeki ölümcül triad/diamond yapısının parçasıdır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Early communication with the blood bank and surgical team is essential.",
+            "tr": "Kan bankası ve cerrahi ekiple erken iletişim esastır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Massive hemorrhage management is a team and logistics problem as well as a physiologic problem.",
+            "tr": "Doğrudur. Masif kanama yönetimi fizyolojik olduğu kadar ekip ve lojistik problemidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Calcium should never be monitored during massive transfusion.",
+            "tr": "Masif transfüzyon sırasında kalsiyum asla izlenmemelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Citrate in blood products can cause hypocalcemia, impairing coagulation and contractility.",
+            "tr": "Yanlıştır. Kan ürünlerindeki sitrat hipokalsemiye neden olabilir; koagülasyon ve kontraktilite bozulabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Fibrinogen may become critically low early in major bleeding.",
+            "tr": "Fibrinojen majör kanamada erken dönemde kritik düzeyde düşebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Fibrinogen depletion is an important target in bleeding management.",
+            "tr": "Doğrudur. Fibrinojen tükenmesi kanama yönetiminde önemli bir hedeftir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Permissive hypotension is always appropriate in traumatic brain injury with hemorrhage.",
+            "tr": "Kanamalı travmatik beyin hasarında permissive hipotansiyon her zaman uygundur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Traumatic brain injury requires maintenance of cerebral perfusion; hypotension worsens outcome.",
+            "tr": "Yanlıştır. Travmatik beyin hasarında serebral perfüzyon korunmalıdır; hipotansiyon sonucu kötüleştirir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Major hemorrhage management requires hemostatic resuscitation, temperature control, calcium monitoring, and surgical source control.",
+        "tr": "Majör kanama yönetimi hemostatik resüsitasyon, ısı kontrolü, kalsiyum takibi ve cerrahi kaynak kontrolü gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Bleeding patients die from physiology and delay: activate systems early.",
+        "tr": "Kanayan hastalar fizyoloji ve gecikme nedeniyle kaybedilir: sistemleri erken aktive edin."
+      },
+      "commonTrap": {
+        "en": "Do not apply permissive hypotension blindly to head-injured patients.",
+        "tr": "Kafa travmalı hastalarda permissive hipotansiyonu körlemesine uygulamayın."
+      },
+      "tags": [
+        "bleeding",
+        "massive_transfusion",
+        "fibrinogen",
+        "calcium",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_allergy_anaphylaxis_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Emergencies",
+      "topic": "Perioperative anaphylaxis",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning perioperative anaphylaxis, which of the following statements are true?",
+        "tr": "Perioperatif anafilaksi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Hypotension, bronchospasm, difficulty ventilating, urticaria, or angioedema may occur.",
+            "tr": "Hipotansiyon, bronkospazm, ventilasyon güçlüğü, ürtiker veya anjiyoödem görülebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Cutaneous signs may be hidden under drapes, and cardiovascular collapse may dominate.",
+            "tr": "Doğrudur. Cilt bulguları örtüler altında gizli kalabilir ve kardiyovasküler kollaps baskın olabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Epinephrine is the key first-line drug for severe anaphylaxis.",
+            "tr": "Şiddetli anafilakside epinefrin temel ilk basamak ilaçtır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Epinephrine treats vasodilation, capillary leak, and bronchospasm.",
+            "tr": "Doğrudur. Epinefrin vazodilatasyon, kapiller kaçak ve bronkospazmı tedavi eder."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Large-volume intravenous fluids may be required.",
+            "tr": "Yüksek hacimli intravenöz sıvı gerekebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Capillary leak and vasodilation can cause profound relative hypovolemia.",
+            "tr": "Doğrudur. Kapiller kaçak ve vazodilatasyon ciddi relatif hipovolemi oluşturabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Antihistamines and steroids should replace epinephrine in cardiovascular collapse.",
+            "tr": "Kardiyovasküler kollapsta antihistaminikler ve steroidler epinefrinin yerini almalıdır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. They are adjuncts and do not replace epinephrine for life-threatening anaphylaxis.",
+            "tr": "Yanlıştır. Bunlar yardımcı tedavilerdir ve yaşamı tehdit eden anafilakside epinefrinin yerini almaz."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Serum tryptase sampling after the event can help later allergy investigation.",
+            "tr": "Olay sonrası serum triptaz örneklemesi sonraki alerji değerlendirmesine yardımcı olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Tryptase supports mast-cell activation and helps guide follow-up investigation.",
+            "tr": "Doğrudur. Triptaz mast hücre aktivasyonunu destekler ve takip değerlendirmesine yol gösterir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Perioperative anaphylaxis is a clinical diagnosis requiring immediate epinephrine, fluids, oxygenation, and discontinuation of suspected triggers.",
+        "tr": "Perioperatif anafilaksi acil epinefrin, sıvı, oksijenasyon ve şüpheli tetikleyicilerin kesilmesini gerektiren klinik tanıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Epinephrine is the lifesaving treatment in severe anaphylaxis.",
+        "tr": "Şiddetli anafilakside hayat kurtaran tedavi epinefrindir."
+      },
+      "commonTrap": {
+        "en": "Do not delay epinephrine while waiting for skin signs or laboratory confirmation.",
+        "tr": "Cilt bulguları veya laboratuvar doğrulaması beklerken epinefrini geciktirmeyin."
+      },
+      "tags": [
+        "anaphylaxis",
+        "allergy",
+        "epinephrine",
+        "emergency",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_mh_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Emergencies",
+      "topic": "Malignant hyperthermia",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning malignant hyperthermia, which of the following statements are true?",
+        "tr": "Malign hipertermi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Volatile anesthetics and succinylcholine are common triggering agents.",
+            "tr": "Volatil anestezikler ve süksinilkolin sık tetikleyici ajanlardır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. These agents should be avoided in susceptible patients.",
+            "tr": "Doğrudur. Duyarlı hastalarda bu ajanlardan kaçınılmalıdır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "An early sign may be an unexplained rise in end-tidal CO2.",
+            "tr": "Erken bulgu açıklanamayan end-tidal CO2 yükselmesi olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hypermetabolism increases CO2 production before marked temperature rise.",
+            "tr": "Doğrudur. Hipermetabolizma belirgin ısı artışından önce CO2 üretimini artırır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Treatment includes stopping triggers and administering dantrolene.",
+            "tr": "Tedavi tetikleyicilerin kesilmesini ve dantrolen uygulanmasını içerir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Dantrolene reduces calcium release from skeletal muscle sarcoplasmic reticulum.",
+            "tr": "Doğrudur. Dantrolen iskelet kası sarkoplazmik retikulumundan kalsiyum salınımını azaltır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "The first and most reliable sign is always hyperthermia.",
+            "tr": "İlk ve en güvenilir bulgu her zaman hipertermidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Temperature rise may be late; hypercarbia, tachycardia, rigidity, and acidosis may appear earlier.",
+            "tr": "Yanlıştır. Isı artışı geç olabilir; hiperkarbi, taşikardi, rijidite ve asidoz daha erken görülebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Hyperkalemia and rhabdomyolysis may occur.",
+            "tr": "Hiperkalemi ve rabdomiyoliz görülebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Muscle breakdown and calcium dysregulation can cause severe metabolic complications.",
+            "tr": "Doğrudur. Kas yıkımı ve kalsiyum düzensizliği ciddi metabolik komplikasyonlara yol açabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Malignant hyperthermia is a pharmacogenetic hypermetabolic crisis requiring immediate trigger cessation, dantrolene, cooling, and treatment of complications.",
+        "tr": "Malign hipertermi tetikleyicilerin hemen kesilmesi, dantrolen, soğutma ve komplikasyon tedavisi gerektiren farmakogenetik hipermetabolik krizdir."
+      },
+      "keyLearningPoint": {
+        "en": "Rising ETCO2 despite increased ventilation is an early warning.",
+        "tr": "Ventilasyon artırılmasına rağmen ETCO2 yükselmesi erken uyarıdır."
+      },
+      "commonTrap": {
+        "en": "Do not wait for fever before treating suspected malignant hyperthermia.",
+        "tr": "Şüpheli malign hipertermide tedavi için ateş gelişmesini beklemeyin."
+      },
+      "tags": [
+        "malignant_hyperthermia",
+        "dantrolene",
+        "volatile",
+        "succinylcholine",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_respiratory_olvent_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Thoracic Anaesthesia",
+      "topic": "One-lung ventilation hypoxaemia",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning hypoxaemia during one-lung ventilation, which of the following statements are true?",
+        "tr": "Tek akciğer ventilasyonu sırasında hipoksemi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Malposition of a double-lumen tube can cause hypoxaemia.",
+            "tr": "Çift lümenli tüp malpozisyonu hipoksemiye neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Incorrect tube position can obstruct ventilation or fail to isolate the lungs.",
+            "tr": "Doğrudur. Hatalı tüp pozisyonu ventilasyonu engelleyebilir veya akciğer izolasyonunu bozabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Increasing FiO2 is an initial corrective step.",
+            "tr": "FiO2’nin artırılması ilk düzeltici adımlardan biridir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Immediate correction begins with oxygenation while the cause is sought.",
+            "tr": "Doğrudur. Nedeni araştırılırken oksijenasyonun düzeltilmesi ilk adımdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "CPAP to the non-ventilated lung may improve oxygenation if the surgical field allows.",
+            "tr": "Cerrahi alan izin verirse ventile edilmeyen akciğere CPAP oksijenasyonu iyileştirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CPAP can reduce shunt through the operative lung.",
+            "tr": "Doğrudur. CPAP opere edilen akciğerden geçen şantı azaltabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "PEEP to the dependent ventilated lung always improves oxygenation.",
+            "tr": "Bağımlı ventile edilen akciğere PEEP verilmesi oksijenasyonu her zaman iyileştirir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Excessive PEEP may divert blood flow to the non-ventilated lung and worsen shunt.",
+            "tr": "Yanlıştır. Aşırı PEEP kan akımını ventile edilmeyen akciğere yönlendirerek şantı kötüleştirebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Fiberoptic confirmation of tube position is useful when hypoxaemia occurs.",
+            "tr": "Hipoksemi geliştiğinde tüp pozisyonunun fiberoptik doğrulanması yararlıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Tube displacement is common after positioning and during surgery.",
+            "tr": "Doğrudur. Pozisyon verme ve cerrahi sırasında tüp yer değiştirmesi sık olabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Hypoxaemia during one-lung ventilation is often due to shunt, tube malposition, or inadequate ventilation of the dependent lung.",
+        "tr": "Tek akciğer ventilasyonunda hipoksemi sıklıkla şant, tüp malpozisyonu veya bağımlı akciğerin yetersiz ventilasyonuna bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Check the tube position early when oxygenation deteriorates during one-lung ventilation.",
+        "tr": "Tek akciğer ventilasyonunda oksijenasyon bozulduğunda tüp pozisyonunu erken kontrol edin."
+      },
+      "commonTrap": {
+        "en": "Do not assume all PEEP improves oxygenation in thoracic anaesthesia.",
+        "tr": "Toraks anestezisinde her PEEP’in oksijenasyonu iyileştireceğini varsaymayın."
+      },
+      "tags": [
+        "thoracic",
+        "one_lung_ventilation",
+        "hypoxemia",
+        "double_lumen_tube",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_renal_failure_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Perioperative Medicine",
+      "topic": "Renal failure",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning anaesthesia in patients with renal failure, which of the following statements are true?",
+        "tr": "Böbrek yetmezliği olan hastalarda anestezi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Hyperkalemia should be considered before anaesthesia in advanced renal failure.",
+            "tr": "İleri böbrek yetmezliğinde anestezi öncesi hiperkalemi düşünülmelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hyperkalemia can cause life-threatening arrhythmias.",
+            "tr": "Doğrudur. Hiperkalemi yaşamı tehdit eden aritmilere neden olabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Fluid management should account for reduced renal excretion and volume status.",
+            "tr": "Sıvı yönetimi azalmış renal atılım ve volüm durumu dikkate alınarak yapılmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Both overload and hypovolemia can be harmful.",
+            "tr": "Doğrudur. Hem aşırı yüklenme hem hipovolemi zararlı olabilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "All opioids are unaffected by renal failure.",
+            "tr": "Tüm opioidler böbrek yetmezliğinden etkilenmez."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Some opioids have active metabolites that accumulate in renal impairment.",
+            "tr": "Yanlıştır. Bazı opioidlerin renal yetmezlikte biriken aktif metabolitleri vardır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Anaemia and platelet dysfunction may coexist in chronic kidney disease.",
+            "tr": "Kronik böbrek hastalığında anemi ve trombosit disfonksiyonu birlikte bulunabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Uremia can impair platelet function and chronic disease reduces erythropoiesis.",
+            "tr": "Doğrudur. Üremi trombosit fonksiyonunu bozabilir ve kronik hastalık eritropoezi azaltır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Succinylcholine is absolutely contraindicated in all renal failure patients regardless of potassium level.",
+            "tr": "Süksinilkolin potasyum düzeyinden bağımsız olarak tüm böbrek yetmezliği hastalarında kesin kontrendikedir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. The risk relates mainly to hyperkalemia and other contraindications; context matters.",
+            "tr": "Yanlıştır. Risk esas olarak hiperkalemi ve diğer kontrendikasyonlarla ilişkilidir; bağlam önemlidir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Renal failure affects electrolytes, fluid balance, drug handling, anemia, and coagulation.",
+        "tr": "Böbrek yetmezliği elektrolitleri, sıvı dengesini, ilaç eliminasyonunu, anemiyi ve koagülasyonu etkiler."
+      },
+      "keyLearningPoint": {
+        "en": "Check potassium, volume status, and drug accumulation risk.",
+        "tr": "Potasyum, volüm durumu ve ilaç birikimi riskini kontrol edin."
+      },
+      "commonTrap": {
+        "en": "Do not assume normal dosing and normal hemostasis in renal failure.",
+        "tr": "Böbrek yetmezliğinde normal dozlama ve normal hemostaz varsaymayın."
+      },
+      "tags": [
+        "renal_failure",
+        "hyperkalemia",
+        "drug_dosing",
+        "perioperative",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_liver_disease_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Perioperative Medicine",
+      "topic": "Liver disease",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning anaesthesia in patients with advanced liver disease, which of the following statements are true?",
+        "tr": "İleri karaciğer hastalığı olan hastalarda anestezi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Coagulopathy, thrombocytopenia, and anemia may be present.",
+            "tr": "Koagülopati, trombositopeni ve anemi bulunabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Liver disease affects coagulation factor synthesis, platelet count/function, and bleeding risk.",
+            "tr": "Doğrudur. Karaciğer hastalığı koagülasyon faktör sentezini, trombosit sayısı/fonksiyonunu ve kanama riskini etkiler."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Ascites can increase aspiration risk and impair ventilation.",
+            "tr": "Asit aspirasyon riskini artırabilir ve ventilasyonu bozabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Increased intra-abdominal pressure reduces lung volumes and may promote reflux.",
+            "tr": "Doğrudur. Artmış intraabdominal basınç akciğer hacimlerini azaltır ve reflüyü kolaylaştırabilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Hepatic encephalopathy risk is unrelated to sedative drug use.",
+            "tr": "Hepatik ensefalopati riski sedatif ilaç kullanımıyla ilişkili değildir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Sedatives may precipitate or worsen encephalopathy in susceptible patients.",
+            "tr": "Yanlıştır. Sedatifler duyarlı hastalarda ensefalopatiyi tetikleyebilir veya kötüleştirebilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Renal dysfunction may coexist in advanced liver disease.",
+            "tr": "İleri karaciğer hastalığında böbrek disfonksiyonu eşlik edebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hepatorenal physiology and perioperative hypoperfusion are important concerns.",
+            "tr": "Doğrudur. Hepatorenal fizyoloji ve perioperatif hipoperfüzyon önemli endişelerdir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Normal INR always guarantees normal perioperative hemostasis in cirrhosis.",
+            "tr": "Sirozda normal INR perioperatif hemostazın normal olduğunu her zaman garanti eder."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Hemostasis in liver disease is complex and INR alone does not fully predict bleeding or thrombosis risk.",
+            "tr": "Yanlıştır. Karaciğer hastalığında hemostaz karmaşıktır ve INR tek başına kanama veya tromboz riskini tam öngörmez."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Advanced liver disease affects coagulation, drug metabolism, aspiration risk, ventilation, renal function, and encephalopathy.",
+        "tr": "İleri karaciğer hastalığı koagülasyon, ilaç metabolizması, aspirasyon riski, ventilasyon, böbrek fonksiyonu ve ensefalopatiyi etkiler."
+      },
+      "keyLearningPoint": {
+        "en": "Assess liver disease as a multisystem disorder, not only abnormal liver enzymes.",
+        "tr": "Karaciğer hastalığını yalnızca bozuk karaciğer enzimleri değil, multisistem bozukluk olarak değerlendirin."
+      },
+      "commonTrap": {
+        "en": "Do not rely on INR alone to understand hemostasis in cirrhosis.",
+        "tr": "Sirozda hemostazı anlamak için yalnızca INR’ye güvenmeyin."
+      },
+      "tags": [
+        "liver_disease",
+        "cirrhosis",
+        "coagulation",
+        "ascites",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_neuraxial_anticoag_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Regional Anaesthesia",
+      "topic": "Anticoagulation and neuraxial anaesthesia",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning anticoagulation and neuraxial anaesthesia, which of the following statements are true?",
+        "tr": "Antikoagülasyon ve nöroaksiyel anestezi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Neuraxial hematoma is rare but may cause permanent neurological injury.",
+            "tr": "Nöroaksiyel hematom nadirdir ancak kalıcı nörolojik hasara neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Delayed recognition can lead to spinal cord or cauda equina compression.",
+            "tr": "Doğrudur. Gecikmiş tanı spinal kord veya kauda ekuina kompresyonuna yol açabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Timing of neuraxial block and catheter removal should consider the specific anticoagulant used.",
+            "tr": "Nöroaksiyel blok ve kateter çekme zamanlaması kullanılan spesifik antikoagülan dikkate alınarak yapılmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Different drugs have different onset, half-life, renal clearance, and reversal options.",
+            "tr": "Doğrudur. Farklı ilaçların başlangıç süresi, yarı ömrü, renal klirensi ve reversiyon seçenekleri farklıdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "New severe back pain with motor weakness after epidural analgesia should be treated as benign until the next morning.",
+            "tr": "Epidural analjezi sonrası yeni şiddetli sırt ağrısı ve motor güçsüzlük sabaha kadar benign kabul edilmelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. New neurological deficit after neuraxial technique requires urgent evaluation for compressive hematoma.",
+            "tr": "Yanlıştır. Nöroaksiyel teknik sonrası yeni nörolojik defisit kompresif hematom açısından acil değerlendirme gerektirir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Traumatic or bloody neuraxial puncture may influence postoperative anticoagulation decisions.",
+            "tr": "Travmatik veya kanlı nöroaksiyel ponksiyon postoperatif antikoagülasyon kararlarını etkileyebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. It may increase bleeding risk and should be communicated clearly.",
+            "tr": "Doğrudur. Kanama riskini artırabilir ve açıkça iletişim kurulmalıdır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Deep plexus blocks may require similar caution to neuraxial techniques in anticoagulated patients.",
+            "tr": "Antikoagülan hastalarda derin pleksus blokları nöroaksiyel tekniklere benzer dikkat gerektirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Bleeding in non-compressible deep sites can have serious consequences.",
+            "tr": "Doğrudur. Komprese edilemeyen derin bölgelerde kanama ciddi sonuçlara yol açabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Anticoagulated patients require drug-specific timing, neurological vigilance, and careful catheter management.",
+        "tr": "Antikoagüle hastalarda ilaca özgü zamanlama, nörolojik dikkat ve dikkatli kateter yönetimi gerekir."
+      },
+      "keyLearningPoint": {
+        "en": "New neurological deficit after neuraxial block is time-critical.",
+        "tr": "Nöroaksiyel blok sonrası yeni nörolojik defisit zamana duyarlıdır."
+      },
+      "commonTrap": {
+        "en": "Do not treat epidural-related motor weakness as routine until hematoma is excluded.",
+        "tr": "Epidural ilişkili motor güçsüzlüğü hematom dışlanana kadar rutin kabul etmeyin."
+      },
+      "tags": [
+        "regional",
+        "neuraxial",
+        "anticoagulation",
+        "epidural_hematoma",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_endocrine_diabetes_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Perioperative Medicine",
+      "topic": "Diabetes and perioperative medication",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning diabetes and perioperative medication management, which of the following statements are true?",
+        "tr": "Diyabet ve perioperatif ilaç yönetimi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Perioperative hyperglycemia is associated with infection and impaired wound healing.",
+            "tr": "Perioperatif hiperglisemi enfeksiyon ve bozulmuş yara iyileşmesi ile ilişkilidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Severe hyperglycemia is undesirable and should be managed according to local protocols.",
+            "tr": "Doğrudur. Ciddi hiperglisemi istenmeyen bir durumdur ve yerel protokollere göre yönetilmelidir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Hypoglycemia under general anaesthesia may be clinically difficult to detect.",
+            "tr": "Genel anestezi altında hipoglisemi klinik olarak fark edilmesi zor olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Autonomic symptoms are masked, so glucose monitoring is important.",
+            "tr": "Doğrudur. Otonom belirtiler maskelenir; bu nedenle glukoz takibi önemlidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "SGLT2 inhibitors may be associated with perioperative euglycemic ketoacidosis.",
+            "tr": "SGLT2 inhibitörleri perioperatif öglisemik ketoasidoz ile ilişkili olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Ketoacidosis can occur with only modest glucose elevation.",
+            "tr": "Doğrudur. Ketoasidoz yalnızca hafif glukoz yüksekliğiyle ortaya çıkabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "All diabetic medications should always be continued unchanged on the morning of surgery.",
+            "tr": "Tüm diyabet ilaçları ameliyat sabahı her zaman değişmeden devam edilmelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Management depends on drug class, fasting status, surgery type, and institutional protocol.",
+            "tr": "Yanlıştır. Yönetim ilaç sınıfına, açlık durumuna, cerrahi tipine ve kurum protokolüne bağlıdır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Delayed gastric emptying may be relevant in some diabetic patients.",
+            "tr": "Bazı diyabetik hastalarda gecikmiş mide boşalması önemli olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Autonomic neuropathy or gastroparesis can increase aspiration risk.",
+            "tr": "Doğrudur. Otonom nöropati veya gastroparezi aspirasyon riskini artırabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Diabetes management balances hyperglycemia, hypoglycemia, medication effects, ketosis risk, and aspiration risk.",
+        "tr": "Diyabet yönetimi hiperglisemi, hipoglisemi, ilaç etkileri, ketozis riski ve aspirasyon riskini dengeler."
+      },
+      "keyLearningPoint": {
+        "en": "Do not rely on glucose alone to exclude ketoacidosis in SGLT2 inhibitor users.",
+        "tr": "SGLT2 inhibitörü kullananlarda ketoasidozu dışlamak için yalnızca glukoza güvenmeyin."
+      },
+      "commonTrap": {
+        "en": "Do not apply one rule to every diabetes drug.",
+        "tr": "Tüm diyabet ilaçlarına tek kural uygulamayın."
+      },
+      "tags": [
+        "diabetes",
+        "sglt2",
+        "hypoglycemia",
+        "gastroparesis",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_postop_pain_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Postoperative Care",
+      "topic": "Postoperative pain and opioid safety",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning postoperative pain management, which of the following statements are true?",
+        "tr": "Postoperatif ağrı yönetimi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Multimodal analgesia can reduce opioid requirements.",
+            "tr": "Multimodal analjezi opioid gereksinimini azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Combining different mechanisms improves analgesia and reduces opioid exposure.",
+            "tr": "Doğrudur. Farklı mekanizmaların kombinasyonu analjeziyi artırır ve opioid maruziyetini azaltır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Respiratory depression is an important opioid-related complication.",
+            "tr": "Solunum depresyonu opioid ilişkili önemli bir komplikasyondur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Sedation may precede respiratory depression and should be monitored.",
+            "tr": "Doğrudur. Sedasyon solunum depresyonundan önce gelebilir ve izlenmelidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "NSAIDs are completely risk-free in all postoperative patients.",
+            "tr": "NSAİİ’ler tüm postoperatif hastalarda tamamen risksizdir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Renal dysfunction, bleeding risk, gastric injury, and some surgical concerns may limit NSAID use.",
+            "tr": "Yanlıştır. Böbrek disfonksiyonu, kanama riski, gastrik hasar ve bazı cerrahi kaygılar NSAİİ kullanımını sınırlayabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Regional analgesia may reduce systemic opioid consumption.",
+            "tr": "Rejyonal analjezi sistemik opioid tüketimini azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Nerve blocks and neuraxial techniques are important opioid-sparing strategies.",
+            "tr": "Doğrudur. Sinir blokları ve nöroaksiyel teknikler önemli opioid azaltıcı stratejilerdir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Severe pain out of proportion after limb surgery may suggest compartment syndrome.",
+            "tr": "Ekstremite cerrahisi sonrası orantısız şiddetli ağrı kompartman sendromunu düşündürebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Progressive pain, tense compartments, and neurologic symptoms require urgent assessment.",
+            "tr": "Doğrudur. İlerleyici ağrı, gergin kompartmanlar ve nörolojik semptomlar acil değerlendirme gerektirir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Postoperative pain care should balance analgesia with opioid safety and recognition of surgical complications.",
+        "tr": "Postoperatif ağrı bakımı analjeziyi opioid güvenliği ve cerrahi komplikasyonların tanınmasıyla dengelemelidir."
+      },
+      "keyLearningPoint": {
+        "en": "Unexpected severe pain is not always undertreatment; it may be a complication.",
+        "tr": "Beklenmedik şiddetli ağrı her zaman yetersiz tedavi değildir; komplikasyon olabilir."
+      },
+      "commonTrap": {
+        "en": "Do not escalate opioids repeatedly without reassessing the cause of pain and sedation level.",
+        "tr": "Ağrının nedeni ve sedasyon düzeyi yeniden değerlendirilmeden opioidi sürekli artırmayın."
+      },
+      "tags": [
+        "postoperative",
+        "pain",
+        "opioids",
+        "compartment_syndrome",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_ponv_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Postoperative Care",
+      "topic": "Postoperative nausea and vomiting",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Concerning postoperative nausea and vomiting (PONV), which of the following statements are true?",
+        "tr": "Postoperatif bulantı ve kusma (PONV) ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Female sex, non-smoking status, history of PONV or motion sickness, and postoperative opioids are classic adult risk factors.",
+            "tr": "Kadın cinsiyet, sigara içmeme, PONV veya taşıt tutması öyküsü ve postoperatif opioidler klasik erişkin risk faktörleridir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. These are components of commonly used PONV risk assessment.",
+            "tr": "Doğrudur. Bunlar sık kullanılan PONV risk değerlendirmesinin bileşenleridir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Volatile anaesthetics and nitrous oxide can contribute to PONV risk.",
+            "tr": "Volatil anestezikler ve nitröz oksit PONV riskine katkıda bulunabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Reducing baseline risk may include minimizing emetogenic anesthetic exposure.",
+            "tr": "Doğrudur. Bazal riski azaltmak emetojenik anestezik maruziyetin azaltılmasını içerebilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Prophylaxis is more appropriate in high-risk patients than waiting for established vomiting.",
+            "tr": "Yüksek riskli hastalarda profilaksi, kusma yerleştikten sonra beklemekten daha uygundur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Risk-based multimodal prophylaxis is a common strategy.",
+            "tr": "Doğrudur. Risk temelli multimodal profilaksi yaygın bir stratejidir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "If prophylaxis fails, rescue treatment should preferably repeat only the same drug class immediately.",
+            "tr": "Profilaksi başarısız olursa rescue tedavi tercihen hemen aynı ilaç sınıfını tekrar etmelidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Rescue therapy generally uses a different class when possible.",
+            "tr": "Yanlıştır. Rescue tedavi mümkünse farklı bir ilaç sınıfından seçilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "PONV can delay discharge after ambulatory surgery.",
+            "tr": "PONV günübirlik cerrahi sonrası taburculuğu geciktirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. It affects patient satisfaction, hydration, pain control, and discharge readiness.",
+            "tr": "Doğrudur. Hasta memnuniyetini, hidrasyonu, ağrı kontrolünü ve taburculuğa hazır oluşu etkiler."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "PONV management is risk-based and multimodal, combining baseline risk reduction, prophylaxis, and rescue therapy.",
+        "tr": "PONV yönetimi risk temelli ve multimodaldir; bazal risk azaltma, profilaksi ve rescue tedaviyi birleştirir."
+      },
+      "keyLearningPoint": {
+        "en": "Use a different antiemetic class for rescue when prophylaxis has failed.",
+        "tr": "Profilaksi başarısız olduğunda rescue için farklı antiemetik sınıf kullanın."
+      },
+      "commonTrap": {
+        "en": "Do not wait for repeated vomiting in a clearly high-risk patient.",
+        "tr": "Belirgin yüksek riskli hastada tekrarlayan kusmayı beklemeyin."
+      },
+      "tags": [
+        "ponv",
+        "postoperative",
+        "antiemetic",
+        "ambulatory",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_respiratory_bronchospasm_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Clinical Emergencies",
+      "topic": "Intraoperative bronchospasm",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning intraoperative bronchospasm, which of the following statements are true?",
+        "tr": "İntraoperatif bronkospazm ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Bronchospasm may present with wheeze, increased peak airway pressure, prolonged expiration, and upsloping capnogram.",
+            "tr": "Bronkospazm wheezing, artmış peak hava yolu basıncı, uzamış ekspirasyon ve eğimli kapnogram ile ortaya çıkabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Increased airway resistance produces these ventilatory signs.",
+            "tr": "Doğrudur. Artmış hava yolu direnci bu ventilatuvar bulguları oluşturur."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Endobronchial intubation and circuit obstruction should be excluded.",
+            "tr": "Endobronşiyal entübasyon ve devre obstrüksiyonu dışlanmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Not every high airway pressure is bronchospasm.",
+            "tr": "Doğrudur. Her yüksek hava yolu basıncı bronkospazm değildir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Initial management includes 100% oxygen, deepening anaesthesia, and inhaled beta-2 agonist therapy.",
+            "tr": "İlk yönetim %100 oksijen, anestezinin derinleştirilmesi ve inhale beta-2 agonist tedaviyi içerir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Treatment should also address the underlying trigger.",
+            "tr": "Doğrudur. Tedavi altta yatan tetikleyiciyi de hedeflemelidir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Severe bronchospasm may be part of anaphylaxis.",
+            "tr": "Şiddetli bronkospazm anafilaksinin parçası olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hypotension, rash, or cardiovascular collapse should prompt consideration of anaphylaxis.",
+            "tr": "Doğrudur. Hipotansiyon, döküntü veya kardiyovasküler kollaps anafilaksi düşünülmesini gerektirir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Increasing respiratory rate is always the best strategy because it prevents air trapping.",
+            "tr": "Solunum hızını artırmak hava hapsini önlediği için her zaman en iyi stratejidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Short expiratory time can worsen dynamic hyperinflation and auto-PEEP.",
+            "tr": "Yanlıştır. Kısa ekspirasyon süresi dinamik hiperinflasyon ve auto-PEEP’i kötüleştirebilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Bronchospasm is a diagnosis to manage while simultaneously excluding tube, circuit, and anaphylaxis causes.",
+        "tr": "Bronkospazm yönetilirken aynı anda tüp, devre ve anafilaksi nedenleri dışlanmalıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Allow time for expiration in severe bronchospasm.",
+        "tr": "Şiddetli bronkospazmda ekspirasyon için zaman tanıyın."
+      },
+      "commonTrap": {
+        "en": "Do not reflexively increase respiratory rate when expiration is already obstructed.",
+        "tr": "Ekspirasyon zaten obstrükte iken refleks olarak solunum hızını artırmayın."
+      },
+      "tags": [
+        "bronchospasm",
+        "airway_pressure",
+        "anaphylaxis",
+        "ventilation",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_b_postop_delayed_emergence_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Postoperative Care",
+      "topic": "Delayed emergence",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning delayed emergence after general anaesthesia, which of the following statements are true?",
+        "tr": "Genel anestezi sonrası gecikmiş uyanma ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Residual anesthetic and sedative drugs are common causes.",
+            "tr": "Rezidüel anestezik ve sedatif ilaçlar sık nedenlerdir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Volatiles, benzodiazepines, opioids, propofol, and adjuvants may contribute.",
+            "tr": "Doğrudur. Volatiller, benzodiyazepinler, opioidler, propofol ve adjuvanlar katkıda bulunabilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Hypoglycemia should be considered.",
+            "tr": "Hipoglisemi düşünülmelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. It is a reversible cause of altered consciousness.",
+            "tr": "Doğrudur. Bilinç değişikliğinin geri döndürülebilir bir nedenidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Hypercapnia can contribute to delayed awakening.",
+            "tr": "Hiperkapni gecikmiş uyanmaya katkıda bulunabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hypoventilation and CO2 retention may depress consciousness.",
+            "tr": "Doğrudur. Hipoventilasyon ve CO2 retansiyonu bilinci baskılayabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Delayed emergence never has a neurological cause.",
+            "tr": "Gecikmiş uyanmanın hiçbir zaman nörolojik nedeni yoktur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Stroke, seizure, intracranial events, or hypoxic injury must be considered when appropriate.",
+            "tr": "Yanlıştır. İnme, nöbet, intrakraniyal olaylar veya hipoksik hasar uygun durumda düşünülmelidir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Residual neuromuscular blockade can mimic unconsciousness or inability to respond.",
+            "tr": "Rezidüel nöromüsküler blokaj bilinçsizlik veya yanıt verememe gibi görünebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. The patient may be awake but unable to move or breathe adequately.",
+            "tr": "Doğrudur. Hasta uyanık olabilir ancak hareket edemeyebilir veya yeterli soluyamayabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Delayed emergence requires a structured approach: oxygenation, ventilation, circulation, temperature, glucose, drugs, neuromuscular block, and neurologic causes.",
+        "tr": "Gecikmiş uyanma oksijenasyon, ventilasyon, dolaşım, sıcaklık, glukoz, ilaçlar, nöromüsküler blok ve nörolojik nedenleri içeren sistematik yaklaşım gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Check ventilation and glucose early.",
+        "tr": "Ventilasyonu ve glukozu erken kontrol edin."
+      },
+      "commonTrap": {
+        "en": "Do not assume the patient is asleep when they may be paralyzed.",
+        "tr": "Hasta paralize olabilirken yalnızca uyuduğunu varsaymayın."
+      },
+      "tags": [
+        "delayed_emergence",
+        "postoperative",
+        "hypercapnia",
+        "neuromuscular_block",
+        "paper_b"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia clinical principles."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    }
+  ],
+  "sbaQuestions": [],
+  "vivaQuestions": []
+}

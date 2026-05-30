@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <string name="ai_assistant_title">AI Klinik Asistanı</string>
+    <string name="app_name">Anesthesia Briefs</string>
+    <string name="btn_continue">Devam Et</string>
+    <string name="disclaimer_accept">Sağlık profesyoneliyim ve yukarıdaki şartları kabul ediyorum</string>
+    <string name="disclaimer_title">ÖNEMLİ TIBBİ UYARI</string>
+    <string name="guest_user">Misafir</string>
+    <string name="nav_algorithms">Algoritmalar</string>
+    <string name="nav_calculators">Hesaplayıcılar</string>
+    <string name="nav_drugs">İlaçlar</string>
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_literature">Literatür</string>
+    <string name="search_placeholder">Ara...</string>
+    <string name="tagline">Klinik Referans &amp; Eğitim</string>
+    <string name="welcome_doctor">Merhaba, Dr. %1$s</string>
+    <style name="Theme.AnesthesiaBriefs" parent="android:Theme.Material.Light.NoActionBar">
+        
+        <item name="android:statusBarColor">#2C4A6E</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

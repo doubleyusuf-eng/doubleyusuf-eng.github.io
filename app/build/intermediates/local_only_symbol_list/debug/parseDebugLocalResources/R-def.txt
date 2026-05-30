@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+drawable ic_launcher_foreground
+drawable logo_in_app
+drawable logo_in_app_navy
+drawable logo_light
+mipmap ic_launcher
+mipmap ic_launcher_round
+string ai_assistant_title
+string app_name
+string btn_continue
+string disclaimer_accept
+string disclaimer_title
+string guest_user
+string nav_algorithms
+string nav_calculators
+string nav_drugs
+string nav_home
+string nav_literature
+string search_placeholder
+string tagline
+string welcome_doctor
+style Theme.AnesthesiaBriefs

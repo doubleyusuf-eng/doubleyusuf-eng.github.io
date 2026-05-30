@@ -1,0 +1,142 @@
+{
+  "packId": "aba_basic",
+  "version": 1,
+  "boardType": "ABA_BASIC",
+  "languages": ["en", "tr"],
+  "sbaQuestions": [
+    {
+      "id": "aba_basic_sba_001",
+      "boardType": "ABA_BASIC",
+      "category": "Anesthetic Physics",
+      "topic": "Vaporizers",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A standard variable-bypass vaporizer is calibrated for sevoflurane. If the vaporizer is inadvertently filled with isoflurane and set to deliver a concentration of 2.0% at 20°C, the actual concentration delivered to the patient will be:",
+        "tr": "Standart bir değişken baypaslı evaporatör sevoran için kalibre edilmiştir. Evaporatör yanlışlıkla izofluran ile doldurulur ve 20°C'de %2.0 konsantrasyona ayarlanırsa, hastaya verilecek gerçek konsantrasyon aşağıdakilerden hangisi olur?"
+      },
+      "options": [
+        {
+          "en": "Higher than 2.0%, because the vapor pressure of isoflurane is higher than that of sevoflurane.",
+          "tr": "%%2.0'den yüksek, çünkü izofluranın buhar basıncı sevoranunkinden daha yüksektir."
+        },
+        {
+          "en": "Lower than 2.0%, because isoflurane has a higher MAC value than sevoflurane.",
+          "tr": "%%2.0'den düşük, çünkü izofluranın MAC değeri sevoranunkinden daha yüksektir."
+        },
+        {
+          "en": "Exactly 2.0%, because variable-bypass vaporizers automatically compensate for agent vapor pressure.",
+          "tr": "Tam olarak %%2.0, çünkü değişken baypaslı evaporatörler ajan buhar basıncını otomatik olarak kompanse eder."
+        },
+        {
+          "en": "Lower than 2.0%, because isoflurane has a lower latent heat of vaporization.",
+          "tr": "%%2.0'den düşük, çünkü izofluranın latent buharlaşma ısısı daha düşüktür."
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. The vapor pressure of isoflurane (~240 mmHg at 20°C) is significantly higher than that of sevoflurane (~160 mmHg). Filling a lower vapor pressure vaporizer (sevoflurane) with a higher vapor pressure agent (isoflurane) will result in a larger proportion of the agent entering the bypass channel, causing over-delivery of anesthetic vapor.",
+          "tr": "Doğru. İzofluranın buhar basıncı (20°C'de ~240 mmHg), sevoranunkinden (~160 mmHg) önemli ölçüde yüksektir. Daha düşük buhar basınçlı bir evaporatöre (sevoran), daha yüksek buhar basınçlı bir ajan (izofluran) doldurulduğunda baypas kanalına giren ajan miktarı artacak ve hastaya aşırı dozda anestezik buhar verilecektir."
+        },
+        {
+          "en": "Incorrect. Potency (MAC) governs the clinical effect of an agent but does not affect the physical concentration output of the vaporizer.",
+          "tr": "Yanlış. Potens (MAC), ajanın klinik etkisini yönetir ancak evaporatörün fiziksel konsantrasyon çıktısını etkilemez."
+        },
+        {
+          "en": "Incorrect. Variable-bypass vaporizers rely on splitting flow ratio, which depends strictly on the vapor pressure of the specific agent for which it is calibrated. It does not measure or adjust automatically for different agents.",
+          "tr": "Yanlış. Değişken baypaslı evaporatörler, akım bölme oranına dayanır ve bu oran kesinlikle kalibre edildiği ajanın buhar basıncına bağlıdır. Farklı ajanlar için ölçüm yapmaz veya otomatik ayarlama sağlamaz."
+        },
+        {
+          "en": "Incorrect. Although latent heat is slightly different, the overwhelming physical factor driving the excess output concentration is the vapor pressure difference.",
+          "tr": "Yanlış. Latent ısı hafifçe farklı olsa da, aşırı konsantrasyon çıktısına yol açan baskın fiziksel faktör buhar basıncı farkıdır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "The physics of variable-bypass vaporizers is a fundamental topic for the ABA BASIC exam. A key rule of thumb for cross-filling is: 'High into Low = High' (filling an agent with higher vapor pressure into a vaporizer designed for lower vapor pressure yields a higher concentration) and 'Low into High = Low' (filling an agent with lower vapor pressure into a vaporizer designed for higher vapor pressure yields a lower concentration). Isoflurane (Vapor Pressure = 240 mmHg) is higher than Sevoflurane (Vapor Pressure = 160 mmHg), resulting in higher output.",
+        "tr": "Değişken baypaslı evaporatörlerin fiziği, ABA BASIC sınavının temel konularından biridir. Ajanların yanlış doldurulmasıyla ilgili temel kural şudur: 'Yüksek - Alçağa = Yüksek' (daha yüksek buhar basınçlı bir ajanın, daha düşük buhar basınçlı bir evaporatöre konması yüksek konsantrasyon verir) ve 'Alçak - Yükseğe = Alçak' (daha düşük buhar basınçlı bir ajanın, daha yüksek buhar basınçlı bir evaporatöre konması düşük konsantrasyon verir). İzofluran (Buhar Basıncı = 240 mmHg), sevorandan (Buhar Basıncı = 160 mmHg) yüksektir, bu nedenle çıktı yüksek olur."
+      },
+      "keyLearningPoint": {
+        "en": "Inadvertently placing an agent with a higher vapor pressure (e.g., isoflurane or halothane) into a vaporizer calibrated for a lower vapor pressure (e.g., sevoflurane) will deliver a concentration higher than set.",
+        "tr": "Daha yüksek buhar basıncına sahip bir ajanın (örneğin izofluran veya halotan), daha düşük buhar basıncına göre kalibre edilmiş bir evaporatöre (örneğin sevoran) yanlışlıkla doldurulması ayarlanan değerden daha yüksek konsantrasyon sunulmasına yol açar."
+      },
+      "commonTrap": {
+        "en": "Do not mix up the vapor pressures of volatile anesthetics: Desflurane (669 mmHg) > Halothane (243 mmHg) ≈ Isoflurane (240 mmHg) > Sevoflurane (160 mmHg) at 20°C.",
+        "tr": "Uçucu anesteziklerin buhar basınçlarını karıştırmayın: 20°C'de Desfluran (669 mmHg) > Halotan (243 mmHg) ≈ İzofluran (240 mmHg) > Sevoran (160 mmHg)."
+      },
+      "tags": ["Physics", "Vaporizers", "Basic Anesthesia Science"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Dorsch and Dorsch, Understanding Anesthesia Equipment, Vaporizers Chapter"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    },
+    {
+      "id": "aba_basic_sba_002",
+      "boardType": "ABA_BASIC",
+      "category": "Regional Anesthesia",
+      "topic": "Spinal Blocks",
+      "difficulty": "medium",
+      "stem": {
+        "en": "During the onset of spinal anesthesia, which of the following nerve fibers is blocked earliest by local anesthetics?",
+        "tr": "Spinal anestezi başlangıcı sırasında, lokal anestezikler tarafından en erken bloke edilen sinir lifi aşağıdakilerden hangisidir?"
+      },
+      "options": [
+        {
+          "en": "A-alpha fibers (motor proprioception)",
+          "tr": "A-alfa lifleri (motor propriyosepsiyon)"
+        },
+        {
+          "en": "B fibers (myelinated preganglionic autonomic)",
+          "tr": "B lifleri (miyelinli pregangliyonik otonomik)"
+        },
+        {
+          "en": "C fibers (unmyelinated pain and temperature)",
+          "tr": "C lifleri (miyelinsiz ağrı ve sıcaklık)"
+        },
+        {
+          "en": "A-beta fibers (sensory touch and pressure)",
+          "tr": "A-beta lifleri (duyusal dokunma ve basınç)"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. A-alpha fibers are large, heavily myelinated motor fibers. They are the most resistant to local anesthetic blockade and are blocked last.",
+          "tr": "Yanlış. A-alfa lifleri büyük ve kalın miyelinli motor lifleridir. Lokal anestezik blokajına en dirençli liflerdir ve en son bloke edilirler."
+        },
+        {
+          "en": "Correct. B fibers are small, myelinated preganglionic autonomic fibers. Despite their myelin sheath, their small size and specific anatomy make them highly susceptible to local anesthetics, so they are blocked earliest. This explains why sympathetic blockade occurs before sensory or motor blockade in spinal anesthesia.",
+          "tr": "Doğru. B lifleri küçük, miyelinli pregangliyonik otonom lifleridir. Miyelin kılıflarına rağmen, küçük çapları ve spesifik anatomileri onları lokal anesteziklere karşı son derece hassas kılar, bu yüzden en erken bloke edilirler. Bu durum, spinal anestezide sempatik blokajın neden duyusal veya motor blokajdan önce geliştiğini açıklar."
+        },
+        {
+          "en": "Incorrect. C fibers are very small and unmyelinated. Although small, their lack of myelin makes them slightly more resistant to diffusion patterns in the spinal space than the thin myelinated B fibers.",
+          "tr": "Yanlış. C lifleri çok küçük ve miyelinsizdir. Küçük olmalarına rağmen, miyelinsiz olmaları onları spinal mesafedeki difüzyon patenlerine karşı ince miyelinli B liflerine kıyasla hafifçe daha dirençli kılar."
+        },
+        {
+          "en": "Incorrect. A-beta fibers are large, myelinated sensory fibers that convey touch and pressure. They are blocked after B and C/A-delta fibers, but before A-alpha motor fibers.",
+          "tr": "Yanlış. A-beta lifleri dokunma ve basınç duyusunu ileten büyük, miyelinli duyusal liflerdir. B ve C/A-delta liflerinden sonra, ancak A-alfa motor liflerinden önce bloke edilirler."
+        }
+      ],
+      "overallExplanation": {
+        "en": "The susceptibility of nerve fibers to local anesthetics depends on size, myelination, and spatial location. The standard order of block from earliest to latest is: B fibers (sympathetic preganglionic) -> C and A-delta fibers (pain, temperature, postganglionic autonomic) -> A-gamma and A-beta fibers (proprioception, touch, pressure) -> A-alpha fibers (motor, joint position). B fibers are blocked first because they are small and myelinated (myelination actually increases sensitivity by allowing sodium channel blocking to interrupt saltatory conduction over short distances).",
+        "tr": "Sinir liflerinin lokal anesteziklere duyarlılığı; çapa, miyelinasyon durumuna ve uzaysal konumlarına bağlıdır. Blokajın en erken dönemden en geç döneme doğru standart sırası şöyledir: B lifleri (sempatik pregangliyonik) -> C ve A-delta lifleri (ağrı, sıcaklık, postgangliyonik otonom) -> A-gama ve A-beta lifleri (propriyosepsiyon, dokunma, basınç) -> A-alfa lifleri (motor, eklem pozisyonu). B lifleri küçük ve miyelinli oldukları için ilk önce bloke olurlar (miyelinasyon, sodyum kanalı blokajının kısa mesafeli sıçrayıcı iletimi kesmesine olanak tanıyarak duyarlılığı artırır)."
+      },
+      "keyLearningPoint": {
+        "en": "B fibers are the most sensitive to local anesthetic blockade, leading to sympathetic blockade occurring 2-6 dermatomes higher than sensory blockade during spinal anesthesia.",
+        "tr": "B lifleri lokal anestezik blokajına karşı en hassas liflerdir, bu durum spinal anestezi sırasında sempatik blokajın duyusal blokajdan 2-6 dermatom daha yukarıda gerçekleşmesine neden olur."
+      },
+      "commonTrap": {
+        "en": "Do not assume that unmyelinated fibers (C fibers) are always blocked before myelinated ones. Thin myelinated autonomic fibers (B fibers) are blocked first.",
+        "tr": "Miyelinsiz liflerin (C lifleri) her zaman miyelinlilerden önce bloke edileceğini varsaymayın. İnce miyelinli otonom lifler (B lifleri) ilk önce bloke edilir."
+      },
+      "tags": ["Regional Anesthesia", "Local Anesthetics", "Spinal Physiology"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Barash Clinical Anesthesia, Chapter on Regional Anesthesia", "Miller's Anesthesia, Local Anesthetics Pharmacology"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    }
+  ]
+}

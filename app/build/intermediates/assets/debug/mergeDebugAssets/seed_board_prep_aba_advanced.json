@@ -1,0 +1,142 @@
+{
+  "packId": "aba_advanced",
+  "version": 1,
+  "boardType": "ABA_ADVANCED",
+  "languages": ["en", "tr"],
+  "sbaQuestions": [
+    {
+      "id": "aba_adv_sba_001",
+      "boardType": "ABA_ADVANCED",
+      "category": "Thoracic Anesthesia",
+      "topic": "One-Lung Ventilation",
+      "difficulty": "hard",
+      "stem": {
+        "en": "During one-lung ventilation (OLV) for thoracic surgery, a patient's arterial oxygen saturation drops to 87%. Mechanical ventilation is active on the dependent lung with 100% FiO2. The dependent lung has normal airway pressures and no bronchospasm. Which of the following is the most appropriate first-line intervention to improve oxygenation?",
+        "tr": "Torasik cerrahi için tek akciğer ventilasyonu (TAV) uygulanan bir hastada arteriyel oksijen satürasyonu %%87'ye düşüyor. Bağımlı (alttaki) akciğer %%100 FiO2 ile ventile edilmektedir. Bağımlı akciğerde havayolu basınçları normaldir ve bronkospazm yoktur. Oksijenasyonu düzeltmek için en uygun ilk basamak müdahale aşağıdakilerden hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Apply continuous positive airway pressure (CPAP) of 5 cm H2O to the non-dependent (non-ventilated) lung.",
+          "tr": "Bağımsız (ventile edilmeyen, üstteki) akciğere 5 cm H2O düzeyinde sürekli pozitif havayolu basıncı (CPAP) uygulamak."
+        },
+        {
+          "en": "Increase the tidal volume of the dependent lung to 10-12 mL/kg to maximize alveolar recruitment.",
+          "tr": "Alveoler recruitment'ı maksimize etmek için bağımlı akciğerin tidal hacmini 10-12 mL/kg'a çıkarmak."
+        },
+        {
+          "en": "Apply positive end-expiratory pressure (PEEP) of 15 cm H2O to the dependent lung.",
+          "tr": "Bağımlı akciğere 15 cm H2O düzeyinde pozitif diyastol sonu basınç (PEEP) uygulamak."
+        },
+        {
+          "en": "Invert the inspiration-to-expiration (I:E) ratio on the ventilator to 2:1.",
+          "tr": "Ventilatördeki inspirasyon-ekspirasyon (I:E) oranını 2:1 olacak şekilde tersine çevirmek."
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Applying a low level of CPAP (5 cm H2O) with oxygen to the non-dependent (non-ventilated) lung is the most effective first-line intervention for hypoxemia during OLV. It allows oxygen to diffuse into the blood passing through the non-ventilated lung, thereby oxygenating a significant portion of the shunted blood without expanding the lung enough to interfere with the surgical field.",
+          "tr": "Doğru. Bağımsız (ventile edilmeyen) akciğere oksijen ile birlikte düşük düzeyde CPAP (5 cm H2O) uygulanması, TAV sırasındaki hipoksemi için en etkili ilk basamak müdahaledir. Bu işlem, ventile edilmeyen akciğerden geçen kanın oksijenlenmesini sağlayarak şant miktarını cerrahi alanı bozmadan önemli ölçüde azaltır."
+        },
+        {
+          "en": "Incorrect. Increasing tidal volume to 10-12 mL/kg is detrimental. High tidal volumes hyperinflate the dependent lung, increasing its pulmonary vascular resistance. This diverts more blood flow to the non-dependent lung, worsening the right-to-left shunt and hypoxemia, while increasing the risk of ventilator-induced lung injury (VILI).",
+          "tr": "Yanlış. Tidal hacmi 10-12 mL/kg'a çıkarmak zararlıdır. Yüksek tidal hacimler bağımlı akciğeri aşırı şişirerek pulmoner vasküler direnci artırır. Bu durum kan akımını bağımsız akciğere yönlendirerek sağdan sola şantı ve hipoksemiyi kötüleştirir, ayrıca ventilatör kaynaklı akciğer hasarı (VILI) riskini artırır."
+        },
+        {
+          "en": "Incorrect. While a low level of PEEP (5-8 cm H2O) is often beneficial to prevent atelectasis in the dependent lung, excessive PEEP (15 cm H2O) will compress alveolar capillaries in the dependent lung, shifting pulmonary blood flow to the non-ventilated lung, thus worsening shunt and hypoxia.",
+          "tr": "Yanlış. Bağımlı akciğerde atelektaziyi önlemek için düşük düzeyde PEEP (5-8 cm H2O) genellikle faydalı olsa da, aşırı PEEP (15 cm H2O) bağımlı akciğerdeki alveoler kapilleri sıkıştırarak kan akımını ventile edilmeyen akciğere kaydırır ve şant ile hipoksiyi kötüleştirir."
+        },
+        {
+          "en": "Incorrect. Inverse ratio ventilation is a rescue ventilation strategy for severe acute respiratory distress syndrome (ARDS) and is not indicated as a first-line therapy for shunt-induced hypoxia during OLV. It can lead to auto-PEEP, dynamic hyperinflation, and hemodynamic instability.",
+          "tr": "Yanlış. İnvers oranlı ventilasyon, ağır akut solunum sıkıntısı sendromu (ARDS) için bir kurtarma ventilasyon stratejisidir ve TAV sırasındaki şanta bağlı hipoksi için ilk basamak tedavi olarak endike değildir. Oto-PEEP, dinamik hiperenflasyon ve hemodinamik instabiliteye yol açabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Hypoxemia during one-lung ventilation is caused by a massive right-to-left transpulmonary shunt, as blood flow continues to perfuse the non-ventilated lung. Hypoxic pulmonary vasoconstriction (HPV) normally reduces this shunt by vasoconstricting vessels in the hypoxic lung, but a significant shunt remains. The first step when saturation falls during OLV is checking the position of the double-lumen tube or bronchial blocker. If positioned correctly, low-pressure CPAP (5 cm H2O) to the non-dependent lung is highly effective because it oxygenates the shunt blood. If that fails, low PEEP to the dependent lung or intermittent two-lung ventilation can be used.",
+        "tr": "Tek akciğer ventilasyonu sırasındaki hipoksemi, kan akımının ventile edilmeyen akciğeri perfüze etmeye devam etmesi nedeniyle oluşan masif bir sağdan sola transpulmoner şanttan kaynaklanır. Hipoksik pulmoner vazokonstriksiyon (HPV) normalde hipoksik akciğerdeki damarları büzerek bu şantı azaltır ancak yine de belirgin bir şant kalır. TAV sırasında satürasyon düştüğünde ilk adım çift lümenli tüpün veya bronşiyal blokerin pozisyonunu kontrol etmektir. Doğru yerleşimde ise bağımsız akciğere düşük basınçlı CPAP (5 cm H2O) uygulanması şant kanını oksijenlendirdiği için son derece etkilidir. Bu başarısız olursa bağımlı akciğere düşük PEEP veya aralıklı çift akciğer ventilasyonu uygulanabilir."
+      },
+      "keyLearningPoint": {
+        "en": "Non-dependent lung CPAP (5 cm H2O) is the most effective first-line maneuver for refractory hypoxemia during one-lung ventilation, because it directly oxygenates the shunted blood flow.",
+        "tr": "Bağımsız akciğer CPAP'ı (5 cm H2O), tek akciğer ventilasyonu sırasındaki dirençli hipoksemi için en etkili ilk basamak manevradır, çünkü şant kan akımını doğrudan oksijenlendirir."
+      },
+      "commonTrap": {
+        "en": "Avoid high tidal volumes or excessive PEEP in the dependent lung, as both increase pulmonary vascular resistance in the ventilated lung and paradoxically divert blood flow to the collapsed lung, worsening hypoxemia.",
+        "tr": "Bağımlı akciğerde yüksek tidal hacimlerden veya aşırı PEEP uygulamasından kaçının; çünkü her ikisi de ventile edilen akciğerdeki pulmoner vasküler direnci artırarak kanı paradoksal olarak kollabe akciğere yönlendirir ve hipoksemiyi derinleştirir."
+      },
+      "tags": ["Thoracic Anesthesia", "One-Lung Ventilation", "Physiology", "Hypoxia"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Yao & Artusio's Anesthesiology, Thoracic Surgery Chapter", "Miller's Anesthesia, One-Lung Ventilation Section"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    },
+    {
+      "id": "aba_adv_sba_002",
+      "boardType": "ABA_ADVANCED",
+      "category": "Pediatric/Congenital Anesthesia",
+      "topic": "Fontan Physiology",
+      "difficulty": "hard",
+      "stem": {
+        "en": "A 22-year-old female with a history of a completed Fontan palliation for tricuspid atresia presents for an urgent laparoscopic appendectomy. Which of the following ventilation strategies is most critical to maintain cardiac output in this patient?",
+        "tr": "Triküspid atrezisi nedeniyle tamamlanmış Fontan palyasyonu öyküsü olan 22 yaşında kadın hasta, acil laparoskopik apendektomi için başvuruyor. Bu hastada kardiyak debiyi korumak için en kritik ventilasyon stratejisi aşağıdakilerden hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Maintain spontaneous ventilation or utilize low-pressure mechanical ventilation with short inspiratory times and low PEEP.",
+          "tr": "Spontan solunumu sürdürmek veya kısa inspirasyon süreli ve düşük PEEPlı düşük basınçlı mekanik ventilasyon uygulamak."
+        },
+        {
+          "en": "Utilize aggressive hyperventilation with a high respiratory rate to cause pulmonary vasodilation.",
+          "tr": "Pulmoner vazodilatasyon sağlamak amacıyla yüksek solunum hızlı agresif hiperventilasyon uygulamak."
+        },
+        {
+          "en": "Use high PEEP (10-12 cm H2O) to prevent alveolar collapse and reduce right-to-left shunting.",
+          "tr": "Alveoler kollapsı önlemek ve sağdan sola şantı azaltmak için yüksek PEEP (10-12 cm H2O) kullanmak."
+        },
+        {
+          "en": "Maintain a prolonged inspiratory time (I:E ratio of 1.5:1) to maximize mean airway pressure and oxygenation.",
+          "tr": "Ortalama havayolu basıncını ve oksijenasyonu maksimize etmek için uzun inspirasyon süresi (I:E oranı 1.5:1) uygulamak."
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. In a completed Fontan circulation, there is no subpulmonic ventricle. Pulmonary blood flow is completely passive and depends on the pressure gradient between the systemic venous circulation (mean systemic venous pressure) and the left atrium. Positive-pressure ventilation increases intrathoracic pressure, which decreases this gradient, reducing pulmonary blood flow, venous return, and cardiac output. The key is to maintain spontaneous ventilation if possible, or use low peak airway pressures, short inspiratory times, and minimal PEEP.",
+          "tr": "Doğru. Tamamlanmış bir Fontan dolaşımında subpulmonik ventrikül yoktur. Pulmoner kan akımı tamamen pasiftir ve sistemik venöz dolaşım (ortalama sistemik venöz basınç) ile sol atriyum arasındaki basınç gradyanına bağlıdır. Pozitif basınçlı ventilasyon intratorasik basıncı artırarak bu gradyanı düşürür, pulmoner kan akımını, venöz dönüşü ve kardiyak debiyi azaltır. Anahtar strateji, mümkünse spontan solunumu korumak veya düşük tepe havayolu basınçları, kısa inspirasyon süreleri ve minimal PEEP kullanmaktır."
+        },
+        {
+          "en": "Incorrect. Although respiratory alkalosis decreases pulmonary vascular resistance (PVR) and is technically beneficial, the high respiratory rate and high airway pressures associated with aggressive positive pressure ventilation will increase mean intrathoracic pressure, severely reducing passive venous return.",
+          "tr": "Yanlış. Respiratuar alkaloz pulmoner vasküler direnci (PVR) düşürse ve teorik olarak faydalı olsa da, agresif pozitif basınçlı ventilasyonla ilişkili yüksek solunum hızı ve yüksek havayolu basınçları ortalama intratorasik basıncı artırarak pasif venöz dönüşü ciddi şekilde azaltacaktır."
+        },
+        {
+          "en": "Incorrect. High PEEP (10-12 cm H2O) is contraindicated in Fontan physiology. It severely elevates intrathoracic pressure and compresses pulmonary vasculature, which blocks the passive flow of blood from the vena cava into the lungs, leading to acute circulatory collapse.",
+          "tr": "Yanlış. Yüksek PEEP (10-12 cm H2O) Fontan fizyolojisinde kontrendikedir. İntratorasik basıncı ciddi şekilde yükseltir ve pulmoner damarları sıkıştırarak vena kavadan akciğerlere pasif kan akışını bloke eder ve akut dolaşım kollapsına yol açar."
+        },
+        {
+          "en": "Incorrect. Prolonging the inspiratory time increases the mean airway pressure. In Fontan patients, this directly increases the resistance to systemic venous return during a larger portion of the respiratory cycle, drastically decreasing cardiac output.",
+          "tr": "Yanlış. İnspirasyon süresinin uzatılması ortalama havayolu basıncını artırır. Fontan hastalarında bu durum solunum siklusunun daha büyük bir kısmında sistemik venöz dönüş direncini doğrudan artırarak kardiyak debiyi ciddi oranda düşürür."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Fontan physiology represents a single-ventricle system where the single ventricle pumps blood exclusively into the systemic circulation, while the systemic veins are connected directly to the pulmonary arteries without an intervening pump. The driving pressure for pulmonary perfusion is only 5-10 mmHg. Any increase in intrathoracic pressure (e.g., positive pressure ventilation, PEEP, pneumoperitoneum during laparoscopy) or pulmonary vascular resistance (hypoxia, hypercapnia, acidosis) will reduce passive pulmonary blood flow, causing sudden hypotension. Spontaneous ventilation is highly preferred because the negative intrathoracic pressure during inspiration acts as a thoracic pump to pull venous blood into the lungs.",
+        "tr": "Fontan fizyolojisi, tek ventrikülün sadece sistemik dolaşıma kan pompaladığı, sistemik venlerin ise arada bir pompa olmadan doğrudan pulmoner arterlere bağlandığı tek ventrikül sistemini temsil eder. Pulmoner perfüzyon için itici güç sadece 5-10 mmHg'dir. İntratorasik basınçtaki herhangi bir artış (örneğin pozitif basınçlı ventilasyon, PEEP, laparoskopi sırasındaki pnömoperitoneum) veya pulmoner vasküler dirençteki artış (hipoksi, hiperkapni, asidoz) pasif pulmoner kan akımını azaltarak ani hipotansiyona neden olur. Spontan solunum son derece tercih edilir çünkü inspirasyon sırasındaki negatif intratorasik basınç otonom venöz kanı akciğerlere çekmek için bir göğüs pompası görevi görür."
+      },
+      "keyLearningPoint": {
+        "en": "Spontaneous ventilation or low-pressure mechanical ventilation with minimal PEEP and short inspiratory times is critical in Fontan patients to maintain passive pulmonary blood flow and cardiac output.",
+        "tr": "Pasif pulmoner kan akımını ve kardiyak debiyi korumak için Fontan hastalarında spontan solunum veya minimal PEEP ve kısa inspirasyon süreli düşük basınçlı mekanik ventilasyon kritiktir."
+      },
+      "commonTrap": {
+        "en": "Laparoscopy presents a dual challenge: the carbon dioxide pneumoperitoneum increases intra-abdominal pressure (reducing venous return) and causes mild hypercapnia (raising pulmonary vascular resistance). Keep insufflation pressures as low as possible (<10 mmHg) and maintain optimal ventilation settings.",
+        "tr": "Laparoskopi ikili bir zorluk sunar: karbondioksit pnömoperitoneumu intraabdominal basıncı artırır (venöz dönüşü azaltır) ve hafif hiperkapniye yol açar (pulmoner vasküler direnci yükseltir). İnsüflasyon basınçlarını mümkün olduğunca düşük tutun (<10 mmHg) ve ventilasyon parametrelerini optimize edin."
+      },
+      "tags": ["Congenital Heart Disease", "Pediatric Anesthesia", "Fontan Physiology", "Hemodynamics"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Yao & Artusio's Anesthesiology, Congenital Heart Disease Chapter", "Barash Clinical Anesthesia, Pediatric Cardiac Section"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    }
+  ]
+}

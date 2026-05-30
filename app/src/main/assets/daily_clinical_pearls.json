@@ -1,0 +1,5144 @@
+[
+  {
+    "id": "daily_pearl_001",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Preoxygenation",
+    "tr": "Preoksijenasyon yalnızca FiO₂ vermek değil, apne sırasında oksijen rezervini artırma işlemidir.",
+    "en": "Preoxygenation is not just giving FiO₂; it increases oxygen reserve during apnea.",
+    "clinicalUse": "Preoxygenation efficacy",
+    "importance": "high",
+    "tags": [
+      "preoxygenation",
+      "airway",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_002",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Preoxygenation",
+    "tr": "İyi preoksijenasyon için maske kaçağı önlenmeli, hasta kooperasyonu sağlanmalı ve yeterli süre verilmelidir.",
+    "en": "Effective preoxygenation requires preventing mask leak, ensuring patient cooperation, and allowing enough time.",
+    "clinicalUse": "Preoxygenation efficacy",
+    "importance": "high",
+    "tags": [
+      "preoxygenation",
+      "airway",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_003",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Preoxygenation",
+    "tr": "Obez hastada ramped pozisyon hem preoksijenasyonu hem de laringoskopik görüşü iyileştirebilir.",
+    "en": "In obese patients, the ramped position may improve both preoxygenation and laryngoscopic view.",
+    "clinicalUse": "Preoxygenation efficacy",
+    "importance": "high",
+    "tags": [
+      "preoxygenation",
+      "airway",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_004",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Preoxygenation",
+    "tr": "Gebede ve obez hastada güvenli apne süresi kısa olduğu için ilk deneme en iyi deneme olmalıdır.",
+    "en": "In pregnant and obese patients, safe apnea time is short, so the first attempt should be the best attempt.",
+    "clinicalUse": "Preoxygenation efficacy",
+    "importance": "high",
+    "tags": [
+      "preoxygenation",
+      "airway",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_005",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Pediatric Airway",
+    "tr": "Pediatrik hastada hipoksemi hızlı gelişir; havayolu girişimi öncesi ekipman ve ilaçlar hazır olmalıdır.",
+    "en": "In pediatric patients, hypoxemia develops rapidly; airway equipment and drugs should be ready before intervention.",
+    "clinicalUse": "Pediatric preparation",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "airway",
+      "preparation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_006",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "Zor havayolunda amaç “tüp geçirmek” değil, oksijenasyonu sürdürmektir.",
+    "en": "In difficult airway, the goal is not “passing the tube” but maintaining oxygenation.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "high",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_007",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "Başarısız entübasyonda aynı yöntemi tekrarlamak yerine erken strateji değiştirmek daha güvenlidir.",
+    "en": "After failed intubation, changing strategy early is safer than repeating the same approach.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "high",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_008",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "Yardım çağırmak zor havayolu yönetiminde gecikmiş değil, erken bir basamak olmalıdır.",
+    "en": "Calling for help should be an early, not delayed, step in difficult airway management.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "high",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_009",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "Videolaringoskop iyi görüntü sağlayabilir ama tüp ilerletme hâlâ zor olabilir.",
+    "en": "Videolaryngoscopy may provide a good view, but tube delivery can still be difficult.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "medium",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_010",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "Supraglottik havayolu başarısız entübasyonda oksijenasyonu kurtarmak için güçlü bir seçenektir.",
+    "en": "A supraglottic airway is a strong option to rescue oxygenation after failed intubation.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "medium",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_011",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Airway Rescue",
+    "tr": "CICO durumunda zaman kaybetmeden acil ön boyun erişimi düşünülmelidir.",
+    "en": "In CICO, emergency front-of-neck access should be considered without delay.",
+    "clinicalUse": "Difficult airway rescue",
+    "importance": "high",
+    "tags": [
+      "rescue",
+      "difficult_airway",
+      "cico",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_012",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography",
+    "tr": "Endotrakeal tüp yerleşimini doğrulamada sürekli dalga formlu kapnografi en güvenilir yöntemdir.",
+    "en": "Continuous waveform capnography is the most reliable method to confirm endotracheal tube placement.",
+    "clinicalUse": "Airway confirmation",
+    "importance": "high",
+    "tags": [
+      "capnography",
+      "monitoring",
+      "etco2"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_013",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography",
+    "tr": "Özofageal entübasyonda kalıcı ve düzenli ETCO₂ dalga formu beklenmez.",
+    "en": "Persistent and regular ETCO₂ waveform is not expected with esophageal intubation.",
+    "clinicalUse": "Airway confirmation",
+    "importance": "medium",
+    "tags": [
+      "capnography",
+      "monitoring",
+      "etco2"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_014",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography",
+    "tr": "Ani ETCO₂ kaybı tüp çıkması, devre ayrılması, kardiyak arrest veya masif emboli belirtisi olabilir.",
+    "en": "Sudden loss of ETCO₂ may indicate tube dislodgement, circuit disconnection, cardiac arrest, or massive embolism.",
+    "clinicalUse": "Airway confirmation",
+    "importance": "high",
+    "tags": [
+      "capnography",
+      "monitoring",
+      "etco2"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_015",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Hypoxemia",
+    "tr": "Hipoksemi geliştiğinde ilk adım FiO₂’yi 1.0 yapmak ve oksijenasyonu hızla kurtarmaktır.",
+    "en": "When hypoxemia develops, the first step is to set FiO₂ to 1.0 and rapidly rescue oxygenation.",
+    "clinicalUse": "Hypoxemia rescue",
+    "importance": "high",
+    "tags": [
+      "hypoxemia",
+      "oxygenation",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_016",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Hypoxemia",
+    "tr": "İntraoperatif hipoksemide tüp pozisyonu, devre, ventilasyon, bronkospazm, aspirasyon ve pnömotoraks sistematik kontrol edilmelidir.",
+    "en": "In intraoperative hypoxemia, tube position, circuit, ventilation, bronchospasm, aspiration, and pneumothorax should be checked systematically.",
+    "clinicalUse": "Hypoxemia rescue",
+    "importance": "high",
+    "tags": [
+      "hypoxemia",
+      "oxygenation",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_017",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Hypoxemia",
+    "tr": "Tek taraflı solunum sesi ana bronş entübasyonu veya pnömotoraks açısından uyarıcıdır.",
+    "en": "Unilateral breath sounds should raise concern for mainstem intubation or pneumothorax.",
+    "clinicalUse": "Hypoxemia rescue",
+    "importance": "medium",
+    "tags": [
+      "hypoxemia",
+      "oxygenation",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_018",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Pressures",
+    "tr": "Yüksek peak basınçta manuel ventilasyona geçmek sorunun direnç mi kompliyans mı olduğunu anlamayı kolaylaştırır.",
+    "en": "In high peak pressure, switching to manual ventilation helps determine whether the problem is resistance or compliance.",
+    "clinicalUse": "Ventilation optimization",
+    "importance": "medium",
+    "tags": [
+      "compliance",
+      "resistance",
+      "pressures"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_019",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Pressures",
+    "tr": "Peak basınç yüksek, plateau normalse havayolu direnci artışı düşünülmelidir.",
+    "en": "High peak pressure with normal plateau pressure suggests increased airway resistance.",
+    "clinicalUse": "Ventilation optimization",
+    "importance": "medium",
+    "tags": [
+      "compliance",
+      "resistance",
+      "pressures"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_020",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Pressures",
+    "tr": "Peak ve plateau basınç birlikte yüksekse akciğer veya toraks kompliyansı azalmış olabilir.",
+    "en": "High peak and plateau pressures together may indicate reduced lung or chest wall compliance.",
+    "clinicalUse": "Ventilation optimization",
+    "importance": "medium",
+    "tags": [
+      "compliance",
+      "resistance",
+      "pressures"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_021",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Bronchospasm",
+    "tr": "Bronkospazmda shark-fin kapnografi, uzamış ekspirasyon ve yüksek peak basınç beklenir.",
+    "en": "Bronchospasm is associated with shark-fin capnography, prolonged expiration, and high peak pressure.",
+    "clinicalUse": "Bronchospasm rescue",
+    "importance": "high",
+    "tags": [
+      "bronchospasm",
+      "wheezing",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_022",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Bronchospasm",
+    "tr": "Şiddetli bronkospazmda wheezing kaybolabilir; sessiz akciğer kritik obstrüksiyon göstergesidir.",
+    "en": "In severe bronchospasm, wheezing may disappear; a silent chest indicates critical obstruction.",
+    "clinicalUse": "Bronchospasm rescue",
+    "importance": "high",
+    "tags": [
+      "bronchospasm",
+      "wheezing",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_023",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Bronchospasm",
+    "tr": "Bronkospazm yönetiminde derin anestezi, inhale beta-agonist ve tetikleyicinin kaldırılması temel yaklaşımdır.",
+    "en": "Bronchospasm management is based on deepening anesthesia, inhaled beta-agonist, and removing the trigger.",
+    "clinicalUse": "Bronchospasm rescue",
+    "importance": "medium",
+    "tags": [
+      "bronchospasm",
+      "wheezing",
+      "emergency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_024",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Laryngospasm",
+    "tr": "Laringospazmda ilk yaklaşım uyarıyı kesmek, %100 oksijen, CPAP ve jaw thrust uygulamaktır.",
+    "en": "Initial laryngospasm management includes stopping stimulation, 100% oxygen, CPAP, and jaw thrust.",
+    "clinicalUse": "Laryngospasm rescue",
+    "importance": "high",
+    "tags": [
+      "laryngospasm",
+      "pediatric",
+      "larson",
+      "pulmonary_edema"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_025",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Laryngospasm",
+    "tr": "Tam laringospazmda ventilasyon sağlanamıyorsa süksinilkolin geciktirilmemelidir.",
+    "en": "If ventilation is impossible in complete laryngospasm, succinylcholine should not be delayed.",
+    "clinicalUse": "Laryngospasm rescue",
+    "importance": "high",
+    "tags": [
+      "laryngospasm",
+      "pediatric",
+      "larson",
+      "pulmonary_edema"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_026",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Laryngospasm",
+    "tr": "Laringospazm sonrası negatif basınçlı pulmoner ödem gelişebileceği unutulmamalıdır.",
+    "en": "Negative-pressure pulmonary edema may occur after laryngospasm.",
+    "clinicalUse": "Laryngospasm rescue",
+    "importance": "medium",
+    "tags": [
+      "laryngospasm",
+      "pediatric",
+      "larson",
+      "pulmonary_edema"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_027",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Aspiration",
+    "tr": "Aspirasyon şüphesinde öncelik oksijenasyon, havayolunun temizlenmesi ve bronkospazm tedavisidir.",
+    "en": "In suspected aspiration, priorities are oxygenation, airway clearance, and bronchospasm treatment.",
+    "clinicalUse": "Aspiration management",
+    "importance": "high",
+    "tags": [
+      "aspiration",
+      "pneumonitis",
+      "infection"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_028",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Aspiration",
+    "tr": "Aspirasyondan sonra antibiyotik her zaman rutin değildir; klinik enfeksiyon bulgularına göre karar verilir.",
+    "en": "Antibiotics after aspiration are not always routine; the decision depends on clinical signs of infection.",
+    "clinicalUse": "Aspiration management",
+    "importance": "medium",
+    "tags": [
+      "aspiration",
+      "pneumonitis",
+      "infection"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_029",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Atelectasis",
+    "tr": "Atelektazi genel anestezi sonrası hipokseminin sık ve erken nedenlerinden biridir.",
+    "en": "Atelectasis is a common early cause of hypoxemia after general anesthesia.",
+    "clinicalUse": "Atelectasis recruitment",
+    "importance": "medium",
+    "tags": [
+      "atelectasis",
+      "peep",
+      "recruitment"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_030",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Atelectasis",
+    "tr": "PEEP atelektaziyi azaltabilir ancak venöz dönüşü ve kardiyak debiyi azaltabileceği için dikkatle filtre edilmelidir.",
+    "en": "PEEP may reduce atelectasis, but it should be titrated carefully because it can reduce venous return and cardiac output.",
+    "clinicalUse": "Atelectasis recruitment",
+    "importance": "high",
+    "tags": [
+      "atelectasis",
+      "peep",
+      "recruitment"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_031",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Resistance",
+    "tr": "Auto-PEEP’te solunum frekansını azaltmak ve ekspirasyon süresini uzatmak çoğu zaman faydalıdır.",
+    "en": "In auto-PEEP, reducing respiratory rate and prolonging expiratory time are often helpful.",
+    "clinicalUse": "Ventilation planning",
+    "importance": "medium",
+    "tags": [
+      "copd",
+      "astma",
+      "auto_peep",
+      "dynamic_hyperinflation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_032",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Resistance",
+    "tr": "KOAH hastasında yüksek solunum frekansı dinamik hiperinflasyonu kötüleştirebilir.",
+    "en": "In COPD, high respiratory rate may worsen dynamic hyperinflation.",
+    "clinicalUse": "Ventilation planning",
+    "importance": "medium",
+    "tags": [
+      "copd",
+      "astma",
+      "auto_peep",
+      "dynamic_hyperinflation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_033",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Ventilation Resistance",
+    "tr": "Astımlı hastada entübasyon öncesi yeterli anestezi derinliği bronkospazm riskini azaltır.",
+    "en": "In asthmatic patients, adequate anesthetic depth before intubation reduces bronchospasm risk.",
+    "clinicalUse": "Ventilation planning",
+    "importance": "medium",
+    "tags": [
+      "copd",
+      "astma",
+      "auto_peep",
+      "dynamic_hyperinflation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_034",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography Monitoring",
+    "tr": "Devrede inspirasyon fazında CO₂ görülmesi rebreathing veya CO₂ absorbent problemi düşündürür.",
+    "en": "CO₂ during the inspiratory phase suggests rebreathing or a CO₂ absorbent problem.",
+    "clinicalUse": "Monitoring accuracy",
+    "importance": "medium",
+    "tags": [
+      "capnography",
+      "etco2",
+      "dead_space"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_035",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography Monitoring",
+    "tr": "ETCO₂ ile PaCO₂ farkının artması ölü boşluk artışı veya perfüzyon bozukluğunu gösterebilir.",
+    "en": "An increased ETCO₂–PaCO₂ gradient may indicate increased dead space or impaired perfusion.",
+    "clinicalUse": "Monitoring accuracy",
+    "importance": "medium",
+    "tags": [
+      "capnography",
+      "etco2",
+      "dead_space"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_036",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Capnography Monitoring",
+    "tr": "Pulse oksimetre normal görünse bile ventilasyon bozukluğu kapnografiden anlaşılabilir.",
+    "en": "Even when pulse oximetry appears normal, capnography may reveal ventilatory failure.",
+    "clinicalUse": "Monitoring accuracy",
+    "importance": "medium",
+    "tags": [
+      "capnography",
+      "etco2",
+      "dead_space"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_037",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Pulse Oximetry",
+    "tr": "Karbonmonoksit zehirlenmesinde pulse oksimetre yanıltıcı şekilde normal veya yüksek gösterebilir.",
+    "en": "In carbon monoxide poisoning, pulse oximetry may be misleadingly normal or high.",
+    "clinicalUse": "Monitoring limits",
+    "importance": "medium",
+    "tags": [
+      "pulse_oximetry",
+      "co_poisoning",
+      "methemoglobinemia",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_038",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Pulse Oximetry",
+    "tr": "Methemoglobinemide pulse oksimetre değeri yaklaşık %85 civarında takılabilir.",
+    "en": "In methemoglobinemia, pulse oximetry may remain around approximately 85%.",
+    "clinicalUse": "Monitoring limits",
+    "importance": "medium",
+    "tags": [
+      "pulse_oximetry",
+      "co_poisoning",
+      "methemoglobinemia",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_039",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Pulse Oximetry",
+    "tr": "Düşük perfüzyon, hareket ve oje pulse oksimetre güvenilirliğini azaltabilir.",
+    "en": "Low perfusion, motion, and nail polish may reduce pulse oximeter reliability.",
+    "clinicalUse": "Monitoring limits",
+    "importance": "medium",
+    "tags": [
+      "pulse_oximetry",
+      "co_poisoning",
+      "methemoglobinemia",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_040",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Extubation",
+    "tr": "Ekstübasyon da entübasyon kadar planlanmalıdır; özellikle zor havayolu hastasında geri dönüş planı hazır olmalıdır.",
+    "en": "Extubation should be planned as carefully as intubation, especially in difficult airway patients.",
+    "clinicalUse": "Extubation planning",
+    "importance": "high",
+    "tags": [
+      "extubation",
+      "difficult_airway",
+      "osa",
+      "obesity",
+      "cuff_leak"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_041",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Extubation",
+    "tr": "Zor entübasyon öyküsü olan hastada ekstübasyon öncesi re-entübasyon stratejisi belirlenmelidir.",
+    "en": "In patients with previous difficult intubation, a re-intubation strategy should be defined before extubation.",
+    "clinicalUse": "Extubation planning",
+    "importance": "high",
+    "tags": [
+      "extubation",
+      "difficult_airway",
+      "osa",
+      "obesity",
+      "cuff_leak"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_042",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Extubation",
+    "tr": "Havayolu ödemi şüphesinde cuff leak değerlendirmesi ve gecikmiş ekstübasyon düşünülebilir.",
+    "en": "When airway edema is suspected, cuff leak assessment and delayed extubation may be considered.",
+    "clinicalUse": "Extubation planning",
+    "importance": "high",
+    "tags": [
+      "extubation",
+      "difficult_airway",
+      "osa",
+      "obesity",
+      "cuff_leak"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_043",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Extubation",
+    "tr": "OSA hastasında opioid ve sedatifler postoperatif havayolu obstrüksiyonu riskini artırır.",
+    "en": "In OSA patients, opioids and sedatives increase the risk of postoperative airway obstruction.",
+    "clinicalUse": "Extubation planning",
+    "importance": "medium",
+    "tags": [
+      "extubation",
+      "difficult_airway",
+      "osa",
+      "obesity",
+      "cuff_leak"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_044",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Extubation",
+    "tr": "Obez hastada ekstübasyon tam uyanıklıkta ve baş yükseltilmiş pozisyonda daha güvenli olabilir.",
+    "en": "In obese patients, extubation may be safer when fully awake and head-up.",
+    "clinicalUse": "Extubation planning",
+    "importance": "medium",
+    "tags": [
+      "extubation",
+      "difficult_airway",
+      "osa",
+      "obesity",
+      "cuff_leak"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_045",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Postoperative Recovery",
+    "tr": "Rezidüel nöromüsküler blok postoperatif hipoksemi ve havayolu obstrüksiyonunun önlenebilir nedenidir.",
+    "en": "Residual neuromuscular blockade is a preventable cause of postoperative hypoxemia and airway obstruction.",
+    "clinicalUse": "Postop recovery",
+    "importance": "high",
+    "tags": [
+      "postoperative",
+      "residual_block",
+      "tof",
+      "hypoxemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_046",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Postoperative Recovery",
+    "tr": "TOF oranı 0.9’un altında ise güvenli derlenme için rezidüel blok hâlâ klinik olarak önemlidir.",
+    "en": "If the TOF ratio is below 0.9, residual block remains clinically important for safe recovery.",
+    "clinicalUse": "Postop recovery",
+    "importance": "high",
+    "tags": [
+      "postoperative",
+      "residual_block",
+      "tof",
+      "hypoxemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_047",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Postoperative Recovery",
+    "tr": "Postoperatif hipoksemide atelektazi, opioid etkisi, rezidüel blok, aspirasyon ve pulmoner emboli düşünelmelidir.",
+    "en": "In postoperative hypoxemia, consider atelectasis, opioid effect, residual block, aspiration, and pulmonary embolism.",
+    "clinicalUse": "Postop recovery",
+    "importance": "medium",
+    "tags": [
+      "postoperative",
+      "residual_block",
+      "tof",
+      "hypoxemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_048",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Transport",
+    "tr": "Transport sırasında oksijen kaynağı, monitörizasyon, ambu ve acil havayolu ekipmanı hazır olmalıdır.",
+    "en": "During transport, oxygen supply, monitoring, bag-mask device, and emergency airway equipment should be ready.",
+    "clinicalUse": "Patient transport",
+    "importance": "medium",
+    "tags": [
+      "transport",
+      "safety",
+      "monitoring"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_049",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Crisis Management",
+    "tr": "Havayolu krizi sırasında kapalı döngü iletişim görevlerin doğru anlaşılmasını sağlar.",
+    "en": "During an airway crisis, closed-loop communication ensures tasks are correctly understood.",
+    "clinicalUse": "Crisis communication",
+    "importance": "high",
+    "tags": [
+      "crisis",
+      "safety",
+      "communication"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_050",
+    "category": "AIRWAY_RESPIRATORY",
+    "subcategory": "Crisis Management",
+    "tr": "Havayolu yönetiminde en güvenli plan, başarısızlık ihtimalini baştan kabul eden plandır.",
+    "en": "The safest airway plan is one that accepts the possibility of failure from the beginning.",
+    "clinicalUse": "Crisis communication",
+    "importance": "high",
+    "tags": [
+      "crisis",
+      "safety",
+      "communication"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_051",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hypotension Assessment",
+    "tr": "Hipotansiyonda ilk adım ölçümü doğrulamak, perfüzyonu değerlendirmek ve cerrahi alanı kontrol etmektir.",
+    "en": "In hypotension, the first step is to confirm the measurement, assess perfusion, and check the surgical field.",
+    "clinicalUse": "Hypotension diagnosis",
+    "importance": "high",
+    "tags": [
+      "hypotension",
+      "perfusion",
+      "hypovolemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_052",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hypotension Assessment",
+    "tr": "Hipotansiyon tedavisinde hedef yalnızca MAP’i yükseltmek değil, organ perfüzyonunu düzeltmektir.",
+    "en": "The goal of treating hypotension is not only to raise MAP but to restore organ perfusion.",
+    "clinicalUse": "Hypotension diagnosis",
+    "importance": "high",
+    "tags": [
+      "hypotension",
+      "perfusion",
+      "hypovolemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_053",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hypotension Assessment",
+    "tr": "Hipovolemide vazopressör geçici destek sağlayabilir ama esas tedavi volüm ve kanama kontrolüdür.",
+    "en": "In hypovolemia, vasopressors may provide temporary support, but definitive treatment is volume replacement and bleeding control.",
+    "clinicalUse": "Hypotension diagnosis",
+    "importance": "high",
+    "tags": [
+      "hypotension",
+      "perfusion",
+      "hypovolemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_054",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Vazodilatasyona bağlı hipotansiyonda fenilefrin, efedrin veya noradrenalin kalp hızı ve kontraktiliteye göre seçilmelidir.",
+    "en": "In vasodilatory hypotension, phenylephrine, ephedrine, or norepinephrine should be selected according to heart rate and contractility.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "high",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_055",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Taşikardik ve vazodilate hastada yalnızca efedrin vermek kalp hızını daha da artırabilir.",
+    "en": "In a tachycardic vasodilated patient, ephedrine alone may further increase heart rate.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_056",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Bradikardik hipotansiyonda efedrin veya atropin fenilefrinden daha uygun olabilir.",
+    "en": "In bradycardic hypotension, ephedrine or atropine may be more appropriate than phenylephrine.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_057",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Fenilefrin SVR’yi artırır ancak bazı hastalarda refleks bradikardi ve kardiyak debi azalması yapabilir.",
+    "en": "Phenylephrine increases SVR but may cause reflex bradycardia and reduced cardiac output in some patients.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_058",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Noradrenalin vazoplejik hipotansiyonda güçlü ve titre edilebilir bir seçenektir.",
+    "en": "Norepinephrine is a strong and titratable option for vasoplegic hypotension.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "high",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_059",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Dobutamin düşük kardiyak debi ve bozulmuş kontraktilitede düşünülür.",
+    "en": "Dobutamine should be considered in low cardiac output and impaired contractility.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_060",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Vasopressors & Inotropes",
+    "tr": "Kardiyojenik şokta sadece afterload artırmak kardiyak debiyi daha da bozabilir.",
+    "en": "In cardiogenic shock, simply increasing afterload may further impair cardiac output.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "high",
+    "tags": [
+      "norepinephrine",
+      "ephedrine",
+      "phenylephrine",
+      "dobutamine",
+      "shock"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_061",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hemodynamic Crisis",
+    "tr": "Ani hipotansiyonda aritmi, kanama, anafilaksi, emboli, ilaç etkisi ve cerrahi olaylar hızlıca dışlanmalıdır.",
+    "en": "In sudden hypotension, arrhythmia, bleeding, anaphylaxis, embolism, drug effect, and surgical events should be rapidly excluded.",
+    "clinicalUse": "Emergency rescue",
+    "importance": "high",
+    "tags": [
+      "bradycardia",
+      "tachycardia",
+      "hypoxia",
+      "atropine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_062",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hemodynamic Crisis",
+    "tr": "Ani hipertansiyonda ağrı, yetersiz anestezi, hiperkapni, mesane distansiyonu ve cerrahi stimülasyon düşünülmelidir.",
+    "en": "In sudden hypertension, consider pain, inadequate anesthesia, hypercapnia, bladder distension, and surgical stimulation.",
+    "clinicalUse": "Emergency rescue",
+    "importance": "medium",
+    "tags": [
+      "bradycardia",
+      "tachycardia",
+      "hypoxia",
+      "atropine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_063",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hemodynamic Crisis",
+    "tr": "Taşikardi her zaman ağrı değildir; hipovolemi, hipoksi, hiperkapni, ateş ve ilaç etkileri de aranmalıdır.",
+    "en": "Tachycardia is not always pain; hypovolemia, hypoxia, hypercapnia, fever, and drug effects should also be sought.",
+    "clinicalUse": "Emergency rescue",
+    "importance": "medium",
+    "tags": [
+      "bradycardia",
+      "tachycardia",
+      "hypoxia",
+      "atropine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_064",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Hemodynamic Crisis",
+    "tr": "Bradikardi hipoksiyle ilişkiliyse yalnızca atropin değil, oksijenasyon ve ventilasyon da düzeltilmelidir.",
+    "en": "If bradycardia is related to hypoxia, oxygenation and ventilation must be corrected, not only atropine given.",
+    "clinicalUse": "Emergency rescue",
+    "importance": "medium",
+    "tags": [
+      "bradycardia",
+      "tachycardia",
+      "hypoxia",
+      "atropine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_065",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Coronary Perfusion",
+    "tr": "Koroner hastada taşikardi, miyokard oksijen tüketimini artırır ve diyastolik perfüzyon süresini azaltır.",
+    "en": "In coronary disease, tachycardia increases myocardial oxygen demand and reduces diastolic perfusion time.",
+    "clinicalUse": "Coronary ischemia prevention",
+    "importance": "high",
+    "tags": [
+      "coronary",
+      "diastolic",
+      "ischemia",
+      "anemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_066",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Coronary Perfusion",
+    "tr": "Koroner perfüzyon için diyastolik basınç ve yeterli hemoglobin önemlidir.",
+    "en": "Diastolic pressure and adequate hemoglobin are important for coronary perfusion.",
+    "clinicalUse": "Coronary ischemia prevention",
+    "importance": "medium",
+    "tags": [
+      "coronary",
+      "diastolic",
+      "ischemia",
+      "anemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_067",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Coronary Perfusion",
+    "tr": "ST değişikliği görüldüğünde önce elektrot, lead seçimi, hemodinami ve oksijen sunumu kontrol edilmelidir.",
+    "en": "When ST changes occur, first check electrodes, lead selection, hemodynamics, and oxygen delivery.",
+    "clinicalUse": "Coronary ischemia prevention",
+    "importance": "medium",
+    "tags": [
+      "coronary",
+      "diastolic",
+      "ischemia",
+      "anemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_068",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Coronary Perfusion",
+    "tr": "Perioperatif miyokard iskemisinde taşikardi, hipotansiyon, hipertansiyon, hipoksemi ve anemi düzeltilmelidir.",
+    "en": "In perioperative myocardial ischemia, tachycardia, hypotension, hypertension, hypoxemia, and anemia should be corrected.",
+    "clinicalUse": "Coronary ischemia prevention",
+    "importance": "medium",
+    "tags": [
+      "coronary",
+      "diastolic",
+      "ischemia",
+      "anemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_069",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Valvular Heart Disease",
+    "tr": "Ciddi aort stenozunda hipotansiyon ve taşikardi iyi tolere edilmez.",
+    "en": "In severe aortic stenosis, hypotension and tachycardia are poorly tolerated.",
+    "clinicalUse": "Valvular management",
+    "importance": "high",
+    "tags": [
+      "aortic_stenosis",
+      "mitral_stenosis",
+      "aortic_regurgitation",
+      "mitral_regurgitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_070",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Valvular Heart Disease",
+    "tr": "Aort stenozunda sinüs ritmi, preload ve sistemik vasküler direnç korunmalıdır.",
+    "en": "In aortic stenosis, sinus rhythm, preload, and systemic vascular resistance should be maintained.",
+    "clinicalUse": "Valvular management",
+    "importance": "high",
+    "tags": [
+      "aortic_stenosis",
+      "mitral_stenosis",
+      "aortic_regurgitation",
+      "mitral_regurgitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_071",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Valvular Heart Disease",
+    "tr": "Mitral stenozda taşikardi pulmoner konjesyonu kötüleştirebilir.",
+    "en": "In mitral stenosis, tachycardia may worsen pulmonary congestion.",
+    "clinicalUse": "Valvular management",
+    "importance": "medium",
+    "tags": [
+      "aortic_stenosis",
+      "mitral_stenosis",
+      "aortic_regurgitation",
+      "mitral_regurgitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_072",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Valvular Heart Disease",
+    "tr": "Aort yetersizliğinde ağır bradikardi regürjitan volümü artırabilir.",
+    "en": "In aortic regurgitation, severe bradycardia may increase regurgitant volume.",
+    "clinicalUse": "Valvular management",
+    "importance": "medium",
+    "tags": [
+      "aortic_stenosis",
+      "mitral_stenosis",
+      "aortic_regurgitation",
+      "mitral_regurgitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_073",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Valvular Heart Disease",
+    "tr": "Mitral yetersizlikte aşırı afterload artışı regürjitasyonu artırabilir.",
+    "en": "In mitral regurgitation, excessive afterload may increase regurgitation.",
+    "clinicalUse": "Valvular management",
+    "importance": "medium",
+    "tags": [
+      "aortic_stenosis",
+      "mitral_stenosis",
+      "aortic_regurgitation",
+      "mitral_regurgitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_074",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Pulmonary Hypertension",
+    "tr": "Pulmoner hipertansiyonda hipoksi, hiperkapni, asidoz, ağrı ve hipotermi PVR’yi artırır.",
+    "en": "In pulmonary hypertension, hypoxia, hypercapnia, acidosis, pain, and hypothermia increase PVR.",
+    "clinicalUse": "PVR management",
+    "importance": "high",
+    "tags": [
+      "pulmonary_hypertension",
+      "pvr",
+      "right_ventricle",
+      "peep"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_075",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Pulmonary Hypertension",
+    "tr": "Pulmoner hipertansiyonda sağ ventrikül yetmezliği hızla kardiyovasküler kollapsa ilerleyebilir.",
+    "en": "In pulmonary hypertension, right ventricular failure may rapidly progress to cardiovascular collapse.",
+    "clinicalUse": "PVR management",
+    "importance": "high",
+    "tags": [
+      "pulmonary_hypertension",
+      "pvr",
+      "right_ventricle",
+      "peep"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_076",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Pulmonary Hypertension",
+    "tr": "Sağ ventrikül krizinde sistemik basınç, oksijenasyon ve pulmoner vasküler direnç aynı anda yönetilmelidir.",
+    "en": "In right ventricular crisis, systemic pressure, oxygenation, and pulmonary vascular resistance must be managed simultaneously.",
+    "clinicalUse": "PVR management",
+    "importance": "medium",
+    "tags": [
+      "pulmonary_hypertension",
+      "pvr",
+      "right_ventricle",
+      "peep"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_077",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Pulmonary Hypertension",
+    "tr": "PEEP oksijenasyonu iyileştirebilir ama aşırı PEEP sağ ventrikül afterloadunu artırabilir.",
+    "en": "PEEP may improve oxygenation, but excessive PEEP can increase right ventricular afterload.",
+    "clinicalUse": "PVR management",
+    "importance": "medium",
+    "tags": [
+      "pulmonary_hypertension",
+      "pvr",
+      "right_ventricle",
+      "peep"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_078",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arrhythmias",
+    "tr": "Aritmide tedavi kararı ritimden çok hemodinamik stabiliteye göre verilmelidir.",
+    "en": "In arrhythmia, treatment decisions should be based more on hemodynamic stability than rhythm name alone.",
+    "clinicalUse": "Rhythm management",
+    "importance": "high",
+    "tags": [
+      "arrhythmia",
+      "cardioversion",
+      "hyperkalemia",
+      "hypokalemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_079",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arrhythmias",
+    "tr": "Hemodinamik olarak instabil taşiaritmide senkronize kardiyoversiyon geciktirilmemelidir.",
+    "en": "In hemodynamically unstable tachyarrhythmia, synchronized cardioversion should not be delayed.",
+    "clinicalUse": "Rhythm management",
+    "importance": "high",
+    "tags": [
+      "arrhythmia",
+      "cardioversion",
+      "hyperkalemia",
+      "hypokalemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_080",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arrhythmias",
+    "tr": "Yeni gelişen atriyal fibrilasyonda elektrolit, hipovolemi, hipoksi ve cerrahi stres araştırılmalıdır.",
+    "en": "In new-onset atrial fibrillation, investigate electrolytes, hypovolemia, hypoxia, and surgical stress.",
+    "clinicalUse": "Rhythm management",
+    "importance": "medium",
+    "tags": [
+      "arrhythmia",
+      "cardioversion",
+      "hyperkalemia",
+      "hypokalemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_081",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arrhythmias",
+    "tr": "Hiperkalemi geniş QRS veya ciddi EKG değişikliği yapıyorsa kalsiyum geciktirilmemelidir.",
+    "en": "If hyperkalemia causes wide QRS or serious ECG changes, calcium should not be delayed.",
+    "clinicalUse": "Rhythm management",
+    "importance": "high",
+    "tags": [
+      "arrhythmia",
+      "cardioversion",
+      "hyperkalemia",
+      "hypokalemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_082",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arrhythmias",
+    "tr": "Hipokalemi aritmi riskini artırabilir ve kas güçsüzlüğüne katkı sağlayabilir.",
+    "en": "Hypokalemia may increase arrhythmia risk and contribute to muscle weakness.",
+    "clinicalUse": "Rhythm management",
+    "importance": "medium",
+    "tags": [
+      "arrhythmia",
+      "cardioversion",
+      "hyperkalemia",
+      "hypokalemia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_083",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arterial Line Monitoring",
+    "tr": "Arteriyel hat basıncı klinikle uyumsuzsa transdüser seviyesi, sıfırlama ve dalga formu kontrol edilmelidir.",
+    "en": "If arterial pressure is inconsistent with the clinical picture, check transducer level, zeroing, and waveform.",
+    "clinicalUse": "Invasive arterial tracking",
+    "importance": "high",
+    "tags": [
+      "arterial_line",
+      "overdamped",
+      "underdamped"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_084",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arterial Line Monitoring",
+    "tr": "Overdamped arteriyel dalga sistolik basıncı düşük, diyastolik basıncı yüksek gösterebilir.",
+    "en": "An overdamped arterial waveform may underestimate systolic pressure and overestimate diastolic pressure.",
+    "clinicalUse": "Invasive arterial tracking",
+    "importance": "high",
+    "tags": [
+      "arterial_line",
+      "overdamped",
+      "underdamped"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_085",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Arterial Line Monitoring",
+    "tr": "Underdamped arteriyel sistem sistolik basıncı olduğundan yüksek gösterebilir.",
+    "en": "An underdamped arterial system may overestimate systolic pressure.",
+    "clinicalUse": "Invasive arterial tracking",
+    "importance": "medium",
+    "tags": [
+      "arterial_line",
+      "overdamped",
+      "underdamped"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_086",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Fluid Responsiveness",
+    "tr": "Santral venöz basınç tek başına sıvı yanıtını güvenilir göstermez.",
+    "en": "Central venous pressure alone does not reliably indicate fluid responsiveness.",
+    "clinicalUse": "Fluid optimization",
+    "importance": "medium",
+    "tags": [
+      "fluid_responsiveness",
+      "cvp",
+      "ppv",
+      "svv"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_087",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Fluid Responsiveness",
+    "tr": "Dinamik sıvı yanıtı göstergeleri kontrollü ventilasyon ve düzenli ritimde daha güvenilirdir.",
+    "en": "Dynamic fluid responsiveness indices are more reliable during controlled ventilation and regular rhythm.",
+    "clinicalUse": "Fluid optimization",
+    "importance": "high",
+    "tags": [
+      "fluid_responsiveness",
+      "cvp",
+      "ppv",
+      "svv"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_088",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Fluid Responsiveness",
+    "tr": "Spontan solunum, aritmi ve düşük tidal volüm PPV/SVV yorumunu zayıflatır.",
+    "en": "Spontaneous breathing, arrhythmia, and low tidal volume weaken PPV/SVV interpretation.",
+    "clinicalUse": "Fluid optimization",
+    "importance": "medium",
+    "tags": [
+      "fluid_responsiveness",
+      "cvp",
+      "ppv",
+      "svv"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_089",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Fluid Responsiveness",
+    "tr": "Sıvı yüklemesi kararı kan basıncı kadar perfüzyon, laktat, idrar çıkışı ve klinik bağlamla verilmelidir.",
+    "en": "Fluid administration should be decided using perfusion, lactate, urine output, and clinical context, not blood pressure alone.",
+    "clinicalUse": "Fluid optimization",
+    "importance": "high",
+    "tags": [
+      "fluid_responsiveness",
+      "cvp",
+      "ppv",
+      "svv"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_090",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Perfusion & Coagulation",
+    "tr": "İdrar çıkışı değerli bir perfüzyon göstergesidir ancak akut değişikliklerde tek başına yeterli değildir.",
+    "en": "Urine output is a useful perfusion marker but is not sufficient alone during acute changes.",
+    "clinicalUse": "Microcirculation safety",
+    "importance": "medium",
+    "tags": [
+      "lactate",
+      "urine_output",
+      "bleeding",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_091",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Perfusion & Coagulation",
+    "tr": "Laktat yüksekliği hipoperfüzyonu gösterebilir ama adrenerjik stres ve ilaçlardan da etkilenebilir.",
+    "en": "Elevated lactate may indicate hypoperfusion, but it can also be influenced by adrenergic stress and drugs.",
+    "clinicalUse": "Microcirculation safety",
+    "importance": "medium",
+    "tags": [
+      "lactate",
+      "urine_output",
+      "bleeding",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_092",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Perfusion & Coagulation",
+    "tr": "Masif kanamada kalsiyum, sıcaklık, pH ve fibrinojen erken izlenmelidir.",
+    "en": "In massive bleeding, calcium, temperature, pH, and fibrinogen should be monitored early.",
+    "clinicalUse": "Microcirculation safety",
+    "importance": "high",
+    "tags": [
+      "lactate",
+      "urine_output",
+      "bleeding",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_093",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Perfusion & Coagulation",
+    "tr": "Hipotermi, koagülasyonu ve miyokard performansını olumsuz etkileyebilir.",
+    "en": "Hypothermia may impair coagulation and myocardial performance.",
+    "clinicalUse": "Microcirculation safety",
+    "importance": "medium",
+    "tags": [
+      "lactate",
+      "urine_output",
+      "bleeding",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_094",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Cardiac Devices (CIED)",
+    "tr": "Pacemaker veya ICD’li hastada cihaz bağımlılığı ve elektromanyetik girişim planı önceden bilinmelidir.",
+    "en": "In patients with pacemaker or ICD, device dependency and the electromagnetic interference plan should be known in advance.",
+    "clinicalUse": "Pacemaker / ICD safety",
+    "importance": "high",
+    "tags": [
+      "pacemaker",
+      "icd",
+      "cautery",
+      "electromagnetic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_095",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Cardiac Devices (CIED)",
+    "tr": "ICD şok fonksiyonu kapatılırsa eksternal defibrilatör hazır olmalıdır.",
+    "en": "If ICD shock therapy is disabled, an external defibrillator should be immediately available.",
+    "clinicalUse": "Pacemaker / ICD safety",
+    "importance": "high",
+    "tags": [
+      "pacemaker",
+      "icd",
+      "cautery",
+      "electromagnetic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_096",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Cardiac Devices (CIED)",
+    "tr": "Monopolar koter mümkünse cihazdan uzak ve kısa aralıklarla kullanılmalıdır.",
+    "en": "Monopolar cautery should be used away from the device and in short bursts when possible.",
+    "clinicalUse": "Pacemaker / ICD safety",
+    "importance": "medium",
+    "tags": [
+      "pacemaker",
+      "icd",
+      "cautery",
+      "electromagnetic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_097",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Monitoring & Communication",
+    "tr": "TEE instabil hastada preload, kontraktilite, kapak fonksiyonu ve sağ ventrikül değerlendirmesinde çok yararlıdır.",
+    "en": "TEE is very useful in unstable patients for assessing preload, contractility, valve function, and the right ventricle.",
+    "clinicalUse": "Clinical communication",
+    "importance": "medium",
+    "tags": [
+      "tee",
+      "embolism",
+      "cooperation",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_098",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Monitoring & Communication",
+    "tr": "Ani ETCO₂ düşüşüyle birlikte hipotansiyon pulmoner emboli veya hava embolisi açısından uyarıcıdır.",
+    "en": "Sudden ETCO₂ decrease with hypotension is a warning sign for pulmonary embolism or air embolism.",
+    "clinicalUse": "Clinical communication",
+    "importance": "high",
+    "tags": [
+      "tee",
+      "embolism",
+      "cooperation",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_099",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Monitoring & Communication",
+    "tr": "Hemodinamik krizlerde cerrahla açık iletişim kanama, manipülasyon veya emboli gibi nedenleri hızla ortaya çıkarabilir.",
+    "en": "Clear communication with the surgeon during hemodynamic crises may rapidly reveal causes such as bleeding, manipulation, or embolism.",
+    "clinicalUse": "Clinical communication",
+    "importance": "medium",
+    "tags": [
+      "tee",
+      "embolism",
+      "cooperation",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_100",
+    "category": "HEMODYNAMIC_CARDIOVASCULAR",
+    "subcategory": "Monitoring & Communication",
+    "tr": "İyi hemodinamik yönetim tek bir sayıyı değil, oksijen sunumu ve organ perfüzyonunu hedefler.",
+    "en": "Good hemodynamic management targets oxygen delivery and organ perfusion, not a single number.",
+    "clinicalUse": "Clinical communication",
+    "importance": "high",
+    "tags": [
+      "tee",
+      "embolism",
+      "cooperation",
+      "perfusion"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_101",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Propofol hipotansiyonu genellikle vazodilatasyon, venöz dönüş azalması ve miyokard depresyonu kombinasyonuyla oluşturur.",
+    "en": "Propofol usually causes hypotension through a combination of vasodilation, reduced venous return, and myocardial depression.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "high",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_102",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Yaşlı, hipovolemik veya kardiyak rezervi düşük hastada propofol dozu yavaş ve filtre edilerek verilmelidir.",
+    "en": "In elderly, hypovolemic, or low-cardiac-reserve patients, propofol should be given slowly and titrated.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "high",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_103",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Etomidat hemodinamik stabilite sağlar ancak adrenal supresyon riski nedeniyle kritik hastada dikkatle değerlendirilmelidir.",
+    "en": "Etomidate provides hemodynamic stability but should be carefully considered in critically ill patients because of adrenal suppression risk.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "high",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_104",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Ketamin tek başına “her zaman tansiyonu artırır” şeklinde düşünülmemelidir; katekolamin depoları tükenmiş hastada hipotansiyon yapabilir.",
+    "en": "Ketamine should not be assumed to “always increase blood pressure”; it may cause hypotension in catecholamine-depleted patients.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "high",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_105",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Ketamin bronkodilatör etkisi nedeniyle astım veya bronkospazm eğilimli hastada avantaj sağlayabilir.",
+    "en": "Ketamine may be advantageous in asthma or bronchospasm-prone patients because of its bronchodilatory effect.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "medium",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_106",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Midazolam yaşlı ve frail hastalarda uzamış sedasyon ve deliryum riskini artırabilir.",
+    "en": "Midazolam may increase the risk of prolonged sedation and delirium in elderly and frail patients.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "medium",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_107",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Induction Agents",
+    "tr": "Benzodiazepinler anksiyoliz ve amnezi sağlar ancak solunum depresyonu opioidlerle belirgin artar.",
+    "en": "Benzodiazepines provide anxiolysis and amnesia, but respiratory depression increases markedly when combined with opioids.",
+    "clinicalUse": "Anesthetic induction",
+    "importance": "medium",
+    "tags": [
+      "propofol",
+      "etomidate",
+      "ketamine",
+      "midazolam",
+      "elderly"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_108",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Opioid verirken hedef yalnızca analjezi değil, solunum depresyonu ve hemodinamik etkileri dengelemektir.",
+    "en": "When giving opioids, the goal is not only analgesia but balancing respiratory depression and hemodynamic effects.",
+    "clinicalUse": "Opioid safety",
+    "importance": "medium",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_109",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Remifentanil hızlı filtre edilebilir ancak infüzyon kesildikten sonra analjezik etkisi hızla kaybolur.",
+    "en": "Remifentanil is rapidly titratable, but its analgesic effect disappears quickly after stopping the infusion.",
+    "clinicalUse": "Opioid safety",
+    "importance": "high",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_110",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Remifentanil sonrası postoperatif analjezi önceden planlanmazsa erken şiddetli ağrı gelişebilir.",
+    "en": "If postoperative analgesia is not planned before stopping remifentanil, early severe pain may occur.",
+    "clinicalUse": "Opioid safety",
+    "importance": "high",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_111",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Fentanil lipofilik olduğu için hızlı başlangıçlıdır ancak tekrarlayan dozlarda birikim görülebilir.",
+    "en": "Fentanyl is lipophilic and fast acting, but accumulation may occur with repeated dosing.",
+    "clinicalUse": "Opioid safety",
+    "importance": "medium",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_112",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Morfin histamin salınımı, kaşıntı, bulantı ve daha uzun etki süresi nedeniyle dikkatli filtre edilmelidir.",
+    "en": "Morphine should be titrated carefully because of histamine release, pruritus, nausea, and longer duration.",
+    "clinicalUse": "Opioid safety",
+    "importance": "medium",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_113",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Nalokson opioid etkisini geri çevirir ama ağrı, sempatik aktivasyon ve tekrar solunum depresyonu riski yaratabilir.",
+    "en": "Naloxone reverses opioid effects but may cause pain, sympathetic activation, and recurrent respiratory depression.",
+    "clinicalUse": "Opioid safety",
+    "importance": "high",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_114",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Opioids",
+    "tr": "Naloksonun etki süresi bazı opioidlerden kısa olduğu için tekrar doz veya infüzyon gerekebilir.",
+    "en": "Naloxone duration may be shorter than that of some opioids, so repeat dosing or infusion may be required.",
+    "clinicalUse": "Opioid safety",
+    "importance": "medium",
+    "tags": [
+      "opioid",
+      "remifentanil",
+      "fentanyl",
+      "morphine",
+      "naloxone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_115",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Blockers",
+    "tr": "Süksinilkolin hızlı entübasyon için etkilidir ancak hiperkalemi, malign hipertermi ve bradikardi riskleri unutulmamalıdır.",
+    "en": "Succinylcholine is effective for rapid intubation, but hyperkalemia, malignant hyperthermia, and bradycardia risks must be remembered.",
+    "clinicalUse": "Relaxant dosing",
+    "importance": "high",
+    "tags": [
+      "succinylcholine",
+      "rocuronium",
+      "hyperkalemia",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_116",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Blockers",
+    "tr": "Yanık, denervasyon, immobilizasyon ve nöromüsküler hastalıkta süksinilkolin hiperkalemi açısından tehlikeli olabilir.",
+    "en": "In burns, denervation, immobilization, and neuromuscular disease, succinylcholine may be dangerous because of hyperkalemia.",
+    "clinicalUse": "Relaxant dosing",
+    "importance": "high",
+    "tags": [
+      "succinylcholine",
+      "rocuronium",
+      "hyperkalemia",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_117",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Blockers",
+    "tr": "Roküronyum yüksek dozda hızlı entübasyon koşulları sağlayabilir ancak etki süresi uzayabilir.",
+    "en": "High-dose rocuronium may provide rapid intubating conditions, but duration may be prolonged.",
+    "clinicalUse": "Relaxant dosing",
+    "importance": "medium",
+    "tags": [
+      "succinylcholine",
+      "rocuronium",
+      "hyperkalemia",
+      "induction"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_118",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Sugammadeks rokuronyum ve vekuronyumu geri döndürür; benzil izokinolinyum ajanlara etkili değildir.",
+    "en": "Sugammadex reverses rocuronium and vecuronium; it is not effective for benzylisoquinolinium agents.",
+    "clinicalUse": "Reversal safety",
+    "importance": "high",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_119",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Sugammadeks sonrası klinik hareket yeterli gibi görünse bile kantitatif TOF değerlendirmesi güvenliği artırır.",
+    "en": "Even if clinical movement appears adequate after sugammadex, quantitative TOF assessment improves safety.",
+    "clinicalUse": "Reversal safety",
+    "importance": "high",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_120",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Neostigmin derin blokta etkili değildir; geri dönüş için yeterli spontan toparlanma olmalıdır.",
+    "en": "Neostigmine is ineffective in deep block; adequate spontaneous recovery must be present.",
+    "clinicalUse": "Reversal safety",
+    "importance": "high",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_121",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Neostigmin muskarinik yan etkiler nedeniyle antikolinerjik ajanla birlikte verilmelidir.",
+    "en": "Neostigmine should be given with an anticholinergic agent because of muscarinic adverse effects.",
+    "clinicalUse": "Reversal safety",
+    "importance": "medium",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_122",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Hipotermi, aminoglikozidler ve magnezyum nöromüsküler blok süresini uzatabilir.",
+    "en": "Hypothermia, aminoglycosides, and magnesium may prolong neuromuscular blockade.",
+    "clinicalUse": "Reversal safety",
+    "importance": "medium",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_123",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Neuromuscular Reversals",
+    "tr": "Rezidüel nöromüsküler blok postoperatif hipoksemi, aspirasyon ve havayolu obstrüksiyonu riskini artırır.",
+    "en": "Residual neuromuscular block increases the risk of postoperative hypoxemia, aspiration, and airway obstruction.",
+    "clinicalUse": "Reversal safety",
+    "importance": "high",
+    "tags": [
+      "sugammadex",
+      "neostigmine",
+      "tof",
+      "residual_block"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_124",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Vazopressör seçimi hastanın kalp hızı, ritmi, kontraktilitesi ve vazodilatasyon derecesine göre yapılmalıdır.",
+    "en": "Vasopressor choice should be based on heart rate, rhythm, contractility, and degree of vasodilation.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_125",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Fenilefrin saf vazokonstriksiyon sağlar ancak kardiyak debiyi düşürebilir.",
+    "en": "Phenylephrine provides pure vasoconstriction but may reduce cardiac output.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_126",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Efedrin taşikardi eğilimi olan hastada dikkatli kullanılmalıdır.",
+    "en": "Ephedrine should be used cautiously in patients prone to tachycardia.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_127",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Noradrenalin vazoplejik şokta filtre edilebilir ve güçlü bir ilk seçenek olabilir.",
+    "en": "Norepinephrine is a titratable and powerful first option in vasoplegic shock.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "high",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_128",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Adrenalin anafilaksi ve kardiyak arrestte hayat kurtarıcıdır; gecikme mortaliteyi artırabilir.",
+    "en": "Epinephrine is life-saving in anaphylaxis and cardiac arrest; delay may increase mortality.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "high",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_129",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Vasoactive Dosing",
+    "tr": "Dobutamin düşük kardiyak debi ve bozulmuş kontraktilitede vazopressörlerden daha uygun olabilir.",
+    "en": "Dobutamine may be more appropriate than vasopressors in low cardiac output and impaired contractility.",
+    "clinicalUse": "Vasoactive drug selection",
+    "importance": "medium",
+    "tags": [
+      "norepinephrine",
+      "epinephrine",
+      "phenylephrine",
+      "dobutamine",
+      "anaphylaxis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_130",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Lokal anestezik dozu hesaplanırken hastanın kilosu, blok tipi, eklenen adrenalin ve toplam uygulanan doz birlikte düşünülmelidir.",
+    "en": "When calculating local anesthetic dose, consider weight, block type, added epinephrine, and total administered dose.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_131",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Lokal anestezik enjeksiyonunda aspirasyon ve fraksiyone uygulama LAST riskini azaltır.",
+    "en": "Aspiration and incremental injection reduce the risk of LAST during local anesthetic administration.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_132",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Ultrason rehberliği damar ponksiyonu riskini azaltabilir ancak sistemik toksisite riskini tamamen ortadan kaldırmaz.",
+    "en": "Ultrasound guidance may reduce vascular puncture but does not eliminate systemic toxicity risk.",
+    "clinicalUse": "Toxicity management",
+    "importance": "medium",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_133",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Bupivakain kardiyotoksisite açısından özellikle dikkat gerektirir.",
+    "en": "Bupivacaine requires particular caution because of cardiotoxicity.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_134",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Ropivakain bupivakaine göre daha az kardiyotoksik kabul edilir ancak toksisite yine mümkündür.",
+    "en": "Ropivacaine is considered less cardiotoxic than bupivacaine, but toxicity is still possible.",
+    "clinicalUse": "Toxicity management",
+    "importance": "medium",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_135",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST erken dönemde tinnitus, metalik tat, ağız çevresi uyuşma veya ajitasyonla başlayabilir.",
+    "en": "LAST may begin with tinnitus, metallic taste, circumoral numbness, or agitation.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_136",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST tedavisinde lokal anestezik uygulamasını durdurmak, yardım çağırmak, havayolu-dolaşımı desteklemek ve lipid emülsiyon vermek esastır.",
+    "en": "LAST treatment is based on stopping local anesthetic administration, calling for help, supporting airway and circulation, and giving lipid emulsion.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_137",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST sırasında aritmilerde standart kardiyak arrest algoritması modifiye edilmeli ve yüksek doz lokal anestetik/propofol dikkatle kullanılmalıdır.",
+    "en": "During LAST-related arrhythmias, standard cardiac arrest algorithms should be modified, and high-dose local anesthetic or propofol should be used cautiously.",
+    "clinicalUse": "Toxicity management",
+    "importance": "medium",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine",
+      "seizure"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_138",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Inhalational Agents",
+    "tr": "İnhalasyon ajanlarında düşük kan/gaz çözünürlüğü hızlı indüksiyon ve hızlı derlenme sağlar.",
+    "en": "Low blood/gas solubility of inhaled agents provides faster induction and recovery.",
+    "clinicalUse": "Inhalation selection",
+    "importance": "high",
+    "tags": [
+      "sevoflurane",
+      "desflurane",
+      "nitrous_oxide",
+      "solubility"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_139",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Inhalational Agents",
+    "tr": "Desfluran hızlı derlenme sağlar ancak havayolu irritasyonu ve sempatik uyarı yapabilir.",
+    "en": "Desflurane provides rapid recovery but may cause airway irritation and sympathetic stimulation.",
+    "clinicalUse": "Inhalation selection",
+    "importance": "medium",
+    "tags": [
+      "sevoflurane",
+      "desflurane",
+      "nitrous_oxide",
+      "solubility"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_140",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Inhalational Agents",
+    "tr": "Sevofluran düşük havayolu irritasyonu nedeniyle inhalasyon indüksiyonunda avantajlıdır.",
+    "en": "Sevoflurane is advantageous for inhalational induction because of low airway irritation.",
+    "clinicalUse": "Inhalation selection",
+    "importance": "high",
+    "tags": [
+      "sevoflurane",
+      "desflurane",
+      "nitrous_oxide",
+      "solubility"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_141",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Inhalational Agents",
+    "tr": "Azot protoksit kapalı hava boşluklarının hacmini veya basıncını artırabilir.",
+    "en": "Nitrous oxide can increase the volume or pressure of closed air spaces.",
+    "clinicalUse": "Inhalation selection",
+    "importance": "high",
+    "tags": [
+      "sevoflurane",
+      "desflurane",
+      "nitrous_oxide",
+      "solubility"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_142",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Inhalational Agents",
+    "tr": "Azot protoksit pnömotoraks, barsak obstrüksiyonu ve intrakraniyal hava gibi durumlarda dikkatle değerlendirilmelidir.",
+    "en": "Nitrous oxide should be carefully considered in pneumothorax, bowel obstruction, and intracranial air.",
+    "clinicalUse": "Inhalation selection",
+    "importance": "medium",
+    "tags": [
+      "sevoflurane",
+      "desflurane",
+      "nitrous_oxide",
+      "solubility"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_143",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Adjuvant Pharmacology",
+    "tr": "Deksametazon PONV profilaksisinde yararlıdır ancak diyabetik hastada hiperglisemi riski düşünülmelidir.",
+    "en": "Dexamethasone is useful for PONV prophylaxis, but hyperglycemia risk should be considered in diabetic patients.",
+    "clinicalUse": "Adjuvant therapy",
+    "importance": "medium",
+    "tags": [
+      "dexamethasone",
+      "ondansetron",
+      "nsaid",
+      "paracetamol",
+      "antibiotic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_144",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Adjuvant Pharmacology",
+    "tr": "Ondansetron QT uzaması riski olan hastalarda dikkatli kullanılmalıdır.",
+    "en": "Ondansetron should be used cautiously in patients at risk of QT prolongation.",
+    "clinicalUse": "Adjuvant therapy",
+    "importance": "high",
+    "tags": [
+      "dexamethasone",
+      "ondansetron",
+      "nsaid",
+      "paracetamol",
+      "antibiotic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_145",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Adjuvant Pharmacology",
+    "tr": "NSAİİ kullanımı böbrek fonksiyonu, kanama riski ve gastrointestinal yan etkiler açısından değerlendirilmelidir.",
+    "en": "NSAID use should be assessed for renal function, bleeding risk, and gastrointestinal adverse effects.",
+    "clinicalUse": "Adjuvant therapy",
+    "importance": "medium",
+    "tags": [
+      "dexamethasone",
+      "ondansetron",
+      "nsaid",
+      "paracetamol",
+      "antibiotic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_146",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Adjuvant Pharmacology",
+    "tr": "Parasetamol opioid gereksinimini azaltabilir ancak karaciğer hastalığında toplam doz dikkatle hesaplanmalıdır.",
+    "en": "Paracetamol may reduce opioid requirement, but total dose should be carefully calculated in liver disease.",
+    "clinicalUse": "Adjuvant therapy",
+    "importance": "medium",
+    "tags": [
+      "dexamethasone",
+      "ondansetron",
+      "nsaid",
+      "paracetamol",
+      "antibiotic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_147",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Adjuvant Pharmacology",
+    "tr": "Antibiyotik profilaksisi doğru ilaç, doğru doz ve insizyondan önce uygun zamanlama ile verilmelidir.",
+    "en": "Antibiotic prophylaxis should use the correct drug, correct dose, and appropriate timing before incision.",
+    "clinicalUse": "Adjuvant therapy",
+    "importance": "medium",
+    "tags": [
+      "dexamethasone",
+      "ondansetron",
+      "nsaid",
+      "paracetamol",
+      "antibiotic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_148",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Medication Safety",
+    "tr": "Yüksek riskli ilaçlarda konsantrasyon ve doz karışıklığı ciddi hasta güvenliği sorunudur.",
+    "en": "Concentration and dose confusion with high-risk drugs is a major patient safety issue.",
+    "clinicalUse": "Drug safety",
+    "importance": "high",
+    "tags": [
+      "medication_error",
+      "verification",
+      "safety",
+      "look_alike"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_149",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Medication Safety",
+    "tr": "Benzer isimli veya benzer ambalajlı ilaçlar ameliyathanede ilaç hatasına yol açabilir.",
+    "en": "Look-alike or sound-alike medications may cause medication errors in the operating room.",
+    "clinicalUse": "Drug safety",
+    "importance": "high",
+    "tags": [
+      "medication_error",
+      "verification",
+      "safety",
+      "look_alike"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_150",
+    "category": "DRUGS_PHARMACOLOGY",
+    "subcategory": "Medication Safety",
+    "tr": "Her ilaç uygulamasında hasta, ilaç, doz, yol ve zaman doğrulaması güvenliğin temelidir.",
+    "en": "For every drug administration, confirming patient, drug, dose, route, and time is fundamental to safety.",
+    "clinicalUse": "Drug safety",
+    "importance": "high",
+    "tags": [
+      "medication_error",
+      "verification",
+      "safety",
+      "look_alike"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_151",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Regional Anesthesia Safety",
+    "tr": "Rejyonal anestezide başarı kadar komplikasyonları erken fark etmek de güvenliğin parçasıdır.",
+    "en": "In regional anesthesia, early recognition of complications is as important as block success.",
+    "clinicalUse": "Coagulation check",
+    "importance": "high",
+    "tags": [
+      "asra",
+      "coagulation",
+      "regional",
+      "anticoagulants"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_152",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Regional Anesthesia Safety",
+    "tr": "Blok öncesi antikoagülan kullanımı ilaç tipi, son doz zamanı, renal fonksiyon ve işlem riskiyle birlikte değerlendirilmelidir.",
+    "en": "Before regional anesthesia, anticoagulant use should be assessed with drug type, last dose timing, renal function, and procedural risk.",
+    "clinicalUse": "Coagulation check",
+    "importance": "high",
+    "tags": [
+      "asra",
+      "coagulation",
+      "regional",
+      "anticoagulants"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_153",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Regional Anesthesia Safety",
+    "tr": "Nöroaksiyel blok öncesi trombosit sayısı kadar kanama öyküsü ve trombosit trendi de önemlidir.",
+    "en": "Before neuraxial block, bleeding history and platelet trend are as important as the platelet count.",
+    "clinicalUse": "Coagulation check",
+    "importance": "high",
+    "tags": [
+      "asra",
+      "coagulation",
+      "regional",
+      "anticoagulants"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_154",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Blocks",
+    "tr": "Spinal anestezi hızlı, yoğun ve öngörülebilir blok sağlar ancak hipotansiyon riski belirgindir.",
+    "en": "Spinal anesthesia provides rapid, dense, and predictable block, but the risk of hypotension is significant.",
+    "clinicalUse": "Epidural/Spinal technique",
+    "importance": "high",
+    "tags": [
+      "spinal",
+      "epidural",
+      "hypotension",
+      "total_spinal"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_155",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Blocks",
+    "tr": "Epidural anestezide titrasyon avantajı vardır ancak başlangıç spinal anesteziye göre daha yavaştır.",
+    "en": "Epidural anesthesia offers titration, but its onset is slower than spinal anesthesia.",
+    "clinicalUse": "Epidural/Spinal technique",
+    "importance": "medium",
+    "tags": [
+      "spinal",
+      "epidural",
+      "hypotension",
+      "total_spinal"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_156",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Blocks",
+    "tr": "Spinal hipotansiyon sempatik blok, venöz dönüş azalması ve göreceli hipovolemiyle ilişkilidir.",
+    "en": "Spinal hypotension is related to sympathetic block, reduced venous return, and relative hypovolemia.",
+    "clinicalUse": "Epidural/Spinal technique",
+    "importance": "medium",
+    "tags": [
+      "spinal",
+      "epidural",
+      "hypotension",
+      "total_spinal"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_157",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Blocks",
+    "tr": "Yüksek spinal blokta hipotansiyon, bradikardi, solunum güçlüğü ve bilinç değişikliği gelişebilir.",
+    "en": "High spinal block may cause hypotension, bradycardia, respiratory difficulty, and altered consciousness.",
+    "clinicalUse": "Epidural/Spinal technique",
+    "importance": "high",
+    "tags": [
+      "spinal",
+      "epidural",
+      "hypotension",
+      "total_spinal"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_158",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Blocks",
+    "tr": "Total spinal anestezide hızlı havayolu, ventilasyon ve dolaşım desteği sağlanmalıdır.",
+    "en": "In total spinal anesthesia, rapid airway, ventilation, and circulatory support must be provided.",
+    "clinicalUse": "Epidural/Spinal technique",
+    "importance": "high",
+    "tags": [
+      "spinal",
+      "epidural",
+      "hypotension",
+      "total_spinal"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_159",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Nöroaksiyel blok sonrası yeni motor defisit epidural hematom açısından acil değerlendirme gerektirir.",
+    "en": "New motor deficit after neuraxial block requires urgent evaluation for epidural hematoma.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "high",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_160",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Epidural hematomda nörolojik sonuç için erken tanı ve cerrahi dekompresyon kritik önemdedir.",
+    "en": "In epidural hematoma, early diagnosis and surgical decompression are critical for neurological outcome.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "high",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_161",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Postdural ponksiyon baş ağrısı tipik olarak ortostatik karakterlidir.",
+    "en": "Postdural puncture headache typically has an orthostatic character.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "medium",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_162",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Dirençli postdural ponksiyon baş ağrısında epidural kan yaması etkili bir tedavi seçeneğidir.",
+    "en": "Epidural blood patch is an effective treatment option for persistent postdural puncture headache.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "high",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_163",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Epidural test dozu intravasküler veya intratekal yerleşimi fark etmeye yardımcı olabilir ancak kusursuz değildir.",
+    "en": "An epidural test dose may help detect intravascular or intrathecal placement, but it is not perfect.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "medium",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_164",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Neuraxial Complications",
+    "tr": "Epidural kateterde aspirasyon negatif olsa bile intravasküler yerleşim tamamen dışlanamaz.",
+    "en": "Negative aspiration from an epidural catheter does not completely exclude intravascular placement.",
+    "clinicalUse": "Neuraxial safety",
+    "importance": "medium",
+    "tags": [
+      "hematoma",
+      "headache",
+      "test_dose",
+      "postdural_puncture"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_165",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Peripheral Nerve Blocks",
+    "tr": "Periferik sinir bloğunda ultrason rehberliği başarıyı artırabilir ancak sinir hasarı riskini tamamen ortadan kaldırmaz.",
+    "en": "Ultrasound guidance may improve peripheral nerve block success but does not eliminate nerve injury risk.",
+    "clinicalUse": "USG block technique",
+    "importance": "high",
+    "tags": [
+      "peripheral",
+      "block",
+      "ultrasound",
+      "intraneural"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_166",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Peripheral Nerve Blocks",
+    "tr": "Blok sırasında şiddetli ağrı veya yüksek enjeksiyon basıncı intranöral enjeksiyon uyarısı olabilir.",
+    "en": "Severe pain or high injection pressure during block may warn of intraneural injection.",
+    "clinicalUse": "USG block technique",
+    "importance": "high",
+    "tags": [
+      "peripheral",
+      "block",
+      "ultrasound",
+      "intraneural"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_167",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Peripheral Nerve Blocks",
+    "tr": "İntranöral enjeksiyon şüphesinde enjeksiyon durdurulmalı ve iğne pozisyonu yeniden değerlendirilmelidir.",
+    "en": "If intraneural injection is suspected, injection should be stopped and needle position reassessed.",
+    "clinicalUse": "USG block technique",
+    "importance": "medium",
+    "tags": [
+      "peripheral",
+      "block",
+      "ultrasound",
+      "intraneural"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_168",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Peripheral Nerve Blocks",
+    "tr": "Lokal anestezik toplam dozu tüm yapılan bloklar ve infiltrasyonlar birlikte düşünülerek hesaplanmalıdır.",
+    "en": "The total local anesthetic dose should be calculated considering all blocks and infiltrations together.",
+    "clinicalUse": "USG block technique",
+    "importance": "high",
+    "tags": [
+      "peripheral",
+      "block",
+      "ultrasound",
+      "intraneural"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_169",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Peripheral Nerve Blocks",
+    "tr": "Adrenalin eklenmesi sistemik emilimi azaltabilir ancak uç arter bölgelerinde dikkatle değerlendirilmelidir.",
+    "en": "Adding epinephrine may reduce systemic absorption, but it should be carefully considered in end-artery areas.",
+    "clinicalUse": "USG block technique",
+    "importance": "medium",
+    "tags": [
+      "peripheral",
+      "block",
+      "ultrasound",
+      "intraneural"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_170",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST erken bulguları tinnitus, metalik tat, ağız çevresi uyuşma, ajitasyon veya konfüzyon olabilir.",
+    "en": "Early signs of LAST may include tinnitus, metallic taste, circumoral numbness, agitation, or confusion.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_171",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST şüphesinde lokal anestezik uygulaması durdurulmalı, yardım çağrılmalı ve lipid emülsiyon hazırlanmalıdır.",
+    "en": "If LAST is suspected, stop local anesthetic administration, call for help, and prepare lipid emulsion.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_172",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST tedavisinde havayolu kontrolü ve nöbetlerin hızlı yönetimi hipoksi ve asidozu önlemek için kritiktir.",
+    "en": "In LAST treatment, airway control and rapid seizure management are critical to prevent hypoxia and acidosis.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_173",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "LAST sırasında kardiyak arrest gelişirse uzun süreli resüsitasyon gerekebilir.",
+    "en": "If cardiac arrest occurs during LAST, prolonged resuscitation may be required.",
+    "clinicalUse": "Toxicity management",
+    "importance": "medium",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_174",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Bupivakain kardiyotoksisite açısından en dikkat edilmesi gereken lokal anesteziklerden biridir.",
+    "en": "Bupivacaine is one of the local anesthetics requiring the most caution for cardiotoxicity.",
+    "clinicalUse": "Toxicity management",
+    "importance": "high",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_175",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Local Anesthetic Toxicity (LAST)",
+    "tr": "Ropivakain daha güvenli kabul edilse de yüksek doz veya intravasküler enjeksiyonda toksisite oluşturabilir.",
+    "en": "Although ropivacaine is considered safer, toxicity can still occur with high dose or intravascular injection.",
+    "clinicalUse": "Toxicity management",
+    "importance": "medium",
+    "tags": [
+      "last",
+      "lipidrescue",
+      "bupivacaine",
+      "ropivacaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_176",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Multimodal Analgesia",
+    "tr": "Multimodal analjezi farklı mekanizmaları hedefleyerek opioid gereksinimini azaltır.",
+    "en": "Multimodal analgesia reduces opioid requirements by targeting different mechanisms.",
+    "clinicalUse": "Pain therapy options",
+    "importance": "high",
+    "tags": [
+      "multimodal",
+      "analgesia",
+      "acute_pain"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_177",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Multimodal Analgesia",
+    "tr": "Akut ağrı tedavisi yalnızca konfor değil, mobilizasyon ve solunum fonksiyonu için de önemlidir.",
+    "en": "Acute pain treatment is important not only for comfort but also for mobilization and respiratory function.",
+    "clinicalUse": "Pain therapy options",
+    "importance": "high",
+    "tags": [
+      "multimodal",
+      "analgesia",
+      "acute_pain"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_178",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Multimodal Analgesia",
+    "tr": "Yetersiz analjezi taşikardi, hipertansiyon, hipoventilasyon ve deliryuma katkı sağlayabilir.",
+    "en": "Inadequate analgesia may contribute to tachycardia, hypertension, hypoventilation, and delirium.",
+    "clinicalUse": "Pain therapy options",
+    "importance": "medium",
+    "tags": [
+      "multimodal",
+      "analgesia",
+      "acute_pain"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_179",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "Opioid tedavisinde sedasyon düzeyi solunum depresyonunun erken uyarısı olabilir.",
+    "en": "During opioid therapy, sedation level may be an early warning sign of respiratory depression.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "high",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_180",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "OSA, yaşlılık, benzodiazepin kullanımı ve renal yetmezlik opioid kaynaklı solunum depresyonu riskini artırır.",
+    "en": "OSA, advanced age, benzodiazepine use, and renal failure increase the risk of opioid-induced respiratory depression.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "high",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_181",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "PCA kullanımında hasta eğitimi, kilit süresi ve solunum takibi güvenliğin temelidir.",
+    "en": "During PCA use, patient education, lockout interval, and respiratory monitoring are fundamental for safety.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "high",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_182",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "PCA cihazını hasta dışında birinin kullanması ciddi aşırı doz riskine yol açabilir.",
+    "en": "Use of a PCA device by anyone other than the patient may cause serious overdose risk.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "high",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_183",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "Kronik opioid kullanan hastada tolerans nedeniyle postoperatif analjezi ihtiyacı artabilir.",
+    "en": "Patients on chronic opioids may require more postoperative analgesia because of tolerance.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "medium",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_184",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Opioid Safety & PCA",
+    "tr": "Opioid toleransı olan hastada ani opioid kesilmesi yoksunluk ve ciddi ağrıya neden olabilir.",
+    "en": "Abrupt opioid discontinuation in opioid-tolerant patients may cause withdrawal and severe pain.",
+    "clinicalUse": "Patient-Controlled Analgesia",
+    "importance": "medium",
+    "tags": [
+      "pca",
+      "opioid",
+      "respiratory_depression",
+      "tolerance"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_185",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Non-opioid Analgesia",
+    "tr": "NSAİİ kullanımı böbrek fonksiyonu, kanama riski, mide koruması ve cerrahi tipe göre değerlendirilmelidir.",
+    "en": "NSAID use should be assessed according to renal function, bleeding risk, gastric protection, and surgical type.",
+    "clinicalUse": "Non-opioid therapy",
+    "importance": "high",
+    "tags": [
+      "nsaid",
+      "paracetamol",
+      "gabapentinoids",
+      "ketamine",
+      "lidocaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_186",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Non-opioid Analgesia",
+    "tr": "Parasetamol opioid ihtiyacını azaltabilir ancak toplam günlük doz ve karaciğer fonksiyonu dikkate alınmalıdır.",
+    "en": "Paracetamol may reduce opioid requirement, but total daily dose and liver function must be considered.",
+    "clinicalUse": "Non-opioid therapy",
+    "importance": "medium",
+    "tags": [
+      "nsaid",
+      "paracetamol",
+      "gabapentinoids",
+      "ketamine",
+      "lidocaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_187",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Non-opioid Analgesia",
+    "tr": "Gabapentinoidler sedasyon ve solunum depresyonu riskini artırabileceği için özellikle yaşlılarda dikkatli kullanılmalıdır.",
+    "en": "Gabapentinoids may increase sedation and respiratory depression risk, especially in elderly patients.",
+    "clinicalUse": "Non-opioid therapy",
+    "importance": "medium",
+    "tags": [
+      "nsaid",
+      "paracetamol",
+      "gabapentinoids",
+      "ketamine",
+      "lidocaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_188",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Non-opioid Analgesia",
+    "tr": "Ketamin düşük dozda opioid azaltıcı analjezik etki sağlayabilir.",
+    "en": "Low-dose ketamine may provide opioid-sparing analgesia.",
+    "clinicalUse": "Non-opioid therapy",
+    "importance": "medium",
+    "tags": [
+      "nsaid",
+      "paracetamol",
+      "gabapentinoids",
+      "ketamine",
+      "lidocaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_189",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Non-opioid Analgesia",
+    "tr": "Lidokain infüzyonu bazı cerrahilerde opioid ihtiyacını azaltabilir ancak toksisite ve kontrendikasyonlar değerlendirilmelidir.",
+    "en": "Lidocaine infusion may reduce opioid requirement in some surgeries, but toxicity and contraindications must be assessed.",
+    "clinicalUse": "Non-opioid therapy",
+    "importance": "medium",
+    "tags": [
+      "nsaid",
+      "paracetamol",
+      "gabapentinoids",
+      "ketamine",
+      "lidocaine"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_190",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "PONV riskini değerlendirirken kadın cinsiyet, sigara içmeme, PONV/taşıt tutması öyküsü ve opioid kullanımı sorgulanmalıdır.",
+    "en": "When assessing PONV risk, ask about female sex, nonsmoking status, history of PONV or motion sickness, and opioid use.",
+    "clinicalUse": "PONV prevention",
+    "importance": "high",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_191",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "Yüksek PONV riskinde farklı mekanizmalardan etki eden antiemetikler birlikte kullanılmalıdır.",
+    "en": "In high PONV risk, antiemetics with different mechanisms should be combined.",
+    "clinicalUse": "PONV prevention",
+    "importance": "high",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_192",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "TIVA ve opioid azaltıcı stratejiler PONV riskini azaltabilir.",
+    "en": "TIVA and opioid-sparing strategies may reduce PONV risk.",
+    "clinicalUse": "PONV prevention",
+    "importance": "high",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_193",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "Deksametazon PONV profilaksisinde etkilidir ancak diyabetik hastada hiperglisemi riski düşünülmelidir.",
+    "en": "Dexamethasone is effective for PONV prophylaxis, but hyperglycemia risk should be considered in diabetic patients.",
+    "clinicalUse": "PONV prevention",
+    "importance": "high",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_194",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "Ondansetron QT uzaması riski olan hastalarda dikkatle kullanılmalıdır.",
+    "en": "Ondansetron should be used carefully in patients at risk of QT prolongation.",
+    "clinicalUse": "PONV prevention",
+    "importance": "medium",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_195",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "PONV tedavisinde profilakside kullanılan aynı sınıftan ilacı kısa sürede tekrarlamak yerine farklı sınıf tercih edilebilir.",
+    "en": "For PONV treatment, choosing a different drug class may be preferable to repeating the same prophylactic class too soon.",
+    "clinicalUse": "PONV prevention",
+    "importance": "medium",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_196",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "PONV Management",
+    "tr": "PONV aspirasyon, yara ayrılması, dehidratasyon ve taburculuk gecikmesine neden olabilir.",
+    "en": "PONV may cause aspiration, wound dehiscence, dehydration, and delayed discharge.",
+    "clinicalUse": "PONV prevention",
+    "importance": "high",
+    "tags": [
+      "ponv",
+      "prophylaxis",
+      "ondansetron",
+      "dexamethasone",
+      "tiva"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_197",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Post-block Care",
+    "tr": "Rejyonal teknikler iyi seçildiğinde hem analjeziyi iyileştirir hem de opioid yan etkilerini azaltır.",
+    "en": "When well selected, regional techniques improve analgesia and reduce opioid adverse effects.",
+    "clinicalUse": "Discharge instructions",
+    "importance": "medium",
+    "tags": [
+      "rebound_pain",
+      "discharge",
+      "patient_safety"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_198",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Post-block Care",
+    "tr": "Blok sonrası taburculukta hasta düşme, uyuşuk ekstremite ve geç başlayan ağrı konusunda bilgilendirilmelidir.",
+    "en": "At discharge after a block, patients should be informed about falls, numb limbs, and delayed rebound pain.",
+    "clinicalUse": "Discharge instructions",
+    "importance": "medium",
+    "tags": [
+      "rebound_pain",
+      "discharge",
+      "patient_safety"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_199",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Post-block Care",
+    "tr": "Tek doz periferik blok sonrası rebound ağrı için düzenli analjezi planı önceden yapılmalıdır.",
+    "en": "A regular analgesic plan should be made in advance for rebound pain after a single-shot peripheral block.",
+    "clinicalUse": "Discharge instructions",
+    "importance": "high",
+    "tags": [
+      "rebound_pain",
+      "discharge",
+      "patient_safety"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_200",
+    "category": "REGIONAL_PAIN_PONV",
+    "subcategory": "Post-block Care",
+    "tr": "İyi ağrı yönetimi; etkili analjezi, düşük yan etki ve güvenli takip dengesidir.",
+    "en": "Good pain management balances effective analgesia, low adverse effects, and safe follow-up.",
+    "clinicalUse": "Discharge instructions",
+    "importance": "high",
+    "tags": [
+      "rebound_pain",
+      "discharge",
+      "patient_safety"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_201",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Gebede FRC azalır ve oksijen tüketimi artar; bu nedenle desatürasyon beklenenden hızlı gelişebilir.",
+    "en": "In pregnancy, FRC decreases and oxygen consumption increases; desaturation may occur faster than expected.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "high",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_202",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Gebede preoksijenasyon indüksiyonun opsiyonel değil, kritik bir güvenlik basamağıdır.",
+    "en": "In pregnancy, preoxygenation is not optional; it is a critical safety step before induction.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "high",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_203",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Sezaryende sol uterin yer değiştirme aortokaval basıyı azaltmaya yardımcı olur.",
+    "en": "Left uterine displacement during cesarean delivery helps reduce aortocaval compression.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "high",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_204",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Spinal anestezi sonrası obstetrik hipotansiyon uteroplasental perfüzyonu azaltabileceği için hızlı tedavi edilmelidir.",
+    "en": "Obstetric hypotension after spinal anesthesia should be treated rapidly because it may reduce uteroplacental perfusion.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "high",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_205",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Obstetrik spinal hipotansiyonda fenilefrin sık tercih edilir; bradikardi varsa ajan seçimi yeniden değerlendirilmelidir.",
+    "en": "Phenylephrine is often preferred for obstetric spinal hypotension; if bradycardia is present, agent choice should be reassessed.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "medium",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_206",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Gebede zor havayolu riski ödem, kilo alımı ve hızlı desatürasyon nedeniyle daha ciddidir.",
+    "en": "Difficult airway risk in pregnancy is more serious because of edema, weight gain, and rapid desaturation.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "high",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_207",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Anesthesia",
+    "tr": "Gebede aspirasyon riski yüksekse indüksiyon öncesi kurtarma havayolu planı net olmalıdır.",
+    "en": "If aspiration risk is high in pregnancy, the rescue airway plan should be clear before induction.",
+    "clinicalUse": "Physiology & Airway safety",
+    "importance": "medium",
+    "tags": [
+      "pregnancy",
+      "frc",
+      "preoxygenation",
+      "LUD",
+      "spinal_hypotension"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_208",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Preeclampsia & HELLP",
+    "tr": "Preeklampside havayolu ödemi ve abartılı laringoskopi yanıtı beklenmelidir.",
+    "en": "In preeclampsia, airway edema and exaggerated laryngoscopic response should be anticipated.",
+    "clinicalUse": "High-risk obstetrics",
+    "importance": "high",
+    "tags": [
+      "preeclampsia",
+      "magnesium_sulfate",
+      "hellp",
+      "platelets"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_209",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Preeclampsia & HELLP",
+    "tr": "Preeklamptik hastada magnezyum sülfat nöromüsküler blok etkisini uzatabilir.",
+    "en": "Magnesium sulfate in preeclamptic patients may prolong neuromuscular blockade.",
+    "clinicalUse": "High-risk obstetrics",
+    "importance": "high",
+    "tags": [
+      "preeclampsia",
+      "magnesium_sulfate",
+      "hellp",
+      "platelets"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_210",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Preeclampsia & HELLP",
+    "tr": "HELLP sendromunda nöroaksiyel karar yalnızca tek trombosit değerine değil, trend ve klinik tabloya göre verilmelidir.",
+    "en": "In HELLP syndrome, neuraxial decisions should be based not only on a single platelet value but also on trend and clinical picture.",
+    "clinicalUse": "High-risk obstetrics",
+    "importance": "high",
+    "tags": [
+      "preeclampsia",
+      "magnesium_sulfate",
+      "hellp",
+      "platelets"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_211",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Emergencies",
+    "tr": "Postpartum kanamada uterin atoni en sık nedenlerden biridir ve uterotonikler erken düşünülmelidir.",
+    "en": "Uterine atony is one of the most common causes of postpartum hemorrhage, and uterotonics should be considered early.",
+    "clinicalUse": "Bleeding & Embolism rescue",
+    "importance": "high",
+    "tags": [
+      "atony",
+      "oxytocin",
+      "placenta_accreta",
+      "amniotic_embolism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_212",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Emergencies",
+    "tr": "Oksitosin hızlı bolus verildiğinde hipotansiyon ve taşikardi yapabilir.",
+    "en": "Rapid bolus oxytocin may cause hypotension and tachycardia.",
+    "clinicalUse": "Bleeding & Embolism rescue",
+    "importance": "medium",
+    "tags": [
+      "atony",
+      "oxytocin",
+      "placenta_accreta",
+      "amniotic_embolism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_213",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Emergencies",
+    "tr": "Plasenta akreta şüphesinde masif kanama hazırlığı ve multidisipliner planlama gerekir.",
+    "en": "When placenta accreta is suspected, massive bleeding preparation and multidisciplinary planning are required.",
+    "clinicalUse": "Bleeding & Embolism rescue",
+    "importance": "medium",
+    "tags": [
+      "atony",
+      "oxytocin",
+      "placenta_accreta",
+      "amniotic_embolism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_214",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obstetric Emergencies",
+    "tr": "Amniyotik sıvı embolisi ani hipoksemi, hipotansiyon ve koagülopati ile akla gelmelidir.",
+    "en": "Amniotic fluid embolism should be considered with sudden hypoxemia, hypotension, and coagulopathy.",
+    "clinicalUse": "Bleeding & Embolism rescue",
+    "importance": "high",
+    "tags": [
+      "atony",
+      "oxytocin",
+      "placenta_accreta",
+      "amniotic_embolism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_215",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Pediatrik hastalarda ilaç dozları kilogram başına hesaplanmalı ve maksimum dozlar kontrol edilmelidir.",
+    "en": "In pediatric patients, drug doses should be calculated per kilogram and maximum doses checked.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "high",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_216",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Çocuklarda düşük FRC ve yüksek oksijen tüketimi hızlı desatürasyona neden olur.",
+    "en": "In children, low FRC and high oxygen consumption cause rapid desaturation.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "high",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_217",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Pediatrik bradikardi çoğu zaman hipoksinin ciddi bir bulgusudur.",
+    "en": "Pediatric bradycardia is often a serious sign of hypoxia.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "high",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_218",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Çocukta laringospazm hızlı desatürasyon ve bradikardiye ilerleyebilir.",
+    "en": "Laryngospasm in children may rapidly progress to desaturation and bradycardia.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "high",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_219",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Pediatrik havayolu girişiminden önce uygun boy maske, tüp, laringoskop ve ilaçlar hazır olmalıdır.",
+    "en": "Before pediatric airway intervention, appropriate-size mask, tube, laryngoscope, and drugs should be ready.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_220",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Üst solunum yolu enfeksiyonu olan çocukta bronkospazm, laringospazm ve desatürasyon riski artar.",
+    "en": "Children with upper respiratory infection have increased risk of bronchospasm, laryngospasm, and desaturation.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_221",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Prematüre bebeklerde postoperatif apne riski nedeniyle izlem planı önceden yapılmalıdır.",
+    "en": "In premature infants, postoperative apnea risk requires a monitoring plan in advance.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_222",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Neonatal resüsitasyonda kalp hızının düzelmesi etkili ventilasyonun en önemli göstergesidir.",
+    "en": "In neonatal resuscitation, improvement in heart rate is the most important indicator of effective ventilation.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "high",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_223",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Çocuklarda hipotansiyon geç bulgu olabilir; perfüzyon, kapiller dolum ve kalp hızı erken uyarı sağlar.",
+    "en": "Hypotension can be a late sign in children; perfusion, capillary refill, and heart rate provide earlier warning.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_224",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Pediatric Anesthesia",
+    "tr": "Pediatrik sıvı tedavisinde hipotonik solüsyonlar hiponatremi riskini artırabilir.",
+    "en": "Hypotonic solutions in pediatric fluid therapy may increase the risk of hyonatremi.",
+    "clinicalUse": "Pediatric safety",
+    "importance": "medium",
+    "tags": [
+      "pediatric",
+      "frc",
+      "bradycardia",
+      "laryngospasm",
+      "resuscitation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_225",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Geriatric Anesthesia",
+    "tr": "Yaşlı hastalarda farmakodinamik duyarlılık artar; ilaçlar düşük dozla ve titre edilerek verilmelidir.",
+    "en": "Elderly patients have increased pharmacodynamic sensitivity; drugs should be started low and titrated.",
+    "clinicalUse": "Geriatric optimization",
+    "importance": "high",
+    "tags": [
+      "geriatric",
+      "frailty",
+      "delirium",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_226",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Geriatric Anesthesia",
+    "tr": "Frailty, yaşlı hastada komplikasyon ve fonksiyon kaybı riskini yaşın kendisinden daha iyi gösterebilir.",
+    "en": "Frailty may predict complications and functional decline better than age alone in elderly patients.",
+    "clinicalUse": "Geriatric optimization",
+    "importance": "high",
+    "tags": [
+      "geriatric",
+      "frailty",
+      "delirium",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_227",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Geriatric Anesthesia",
+    "tr": "Yaşlı hastada deliryum riskini azaltmak için benzodiazepinlerden kaçınmak ve ağrıyı iyi kontrol etmek önemlidir.",
+    "en": "Avoiding benzodiazepines and controlling pain well are important to reduce delirium risk in elderly patients.",
+    "clinicalUse": "Geriatric optimization",
+    "importance": "high",
+    "tags": [
+      "geriatric",
+      "frailty",
+      "delirium",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_228",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Geriatric Anesthesia",
+    "tr": "Yaşlı hastada hipotermi daha kolay gelişebilir ve derlenmeyi uzatabilir.",
+    "en": "Hypothermia may develop more easily in elderly patients and may prolong recovery.",
+    "clinicalUse": "Geriatric optimization",
+    "importance": "medium",
+    "tags": [
+      "geriatric",
+      "frailty",
+      "delirium",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_229",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obesity & OSA",
+    "tr": "Obez hastada ramped pozisyon preoksijenasyon, maske ventilasyonu ve laringoskopiyi kolaylaştırabilir.",
+    "en": "In obese patients, ramped positioning may improve preoxygenation, mask ventilation, and laryngoscopy.",
+    "clinicalUse": "Airway & Postop planning",
+    "importance": "high",
+    "tags": [
+      "obesity",
+      "osa",
+      "ramped",
+      "opioid_sparing"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_230",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obesity & OSA",
+    "tr": "Obezite postoperatif hipoventilasyon, atelektazi ve OSA ile ilişkili riskleri artırır.",
+    "en": "Obesity increases risks related to postoperative hypoventilation, atelectasis, and OSA.",
+    "clinicalUse": "Airway & Postop planning",
+    "importance": "medium",
+    "tags": [
+      "obesity",
+      "osa",
+      "ramped",
+      "opioid_sparing"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_231",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obesity & OSA",
+    "tr": "OSA hastasında opioid azaltıcı analjezi ve postoperatif solunum monitörizasyonu planlanmalıdır.",
+    "en": "In OSA patients, opioid-sparing analgesia and postoperative respiratory monitoring should be planned.",
+    "clinicalUse": "Airway & Postop planning",
+    "importance": "high",
+    "tags": [
+      "obesity",
+      "osa",
+      "ramped",
+      "opioid_sparing"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_232",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Obesity & OSA",
+    "tr": "OSA hastasında sedatif premedikasyon dikkatle değerlendirilmelidir.",
+    "en": "Sedative premedication should be carefully considered in patients with OSA.",
+    "clinicalUse": "Airway & Postop planning",
+    "importance": "medium",
+    "tags": [
+      "obesity",
+      "osa",
+      "ramped",
+      "opioid_sparing"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_233",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Renal Insufficiency",
+    "tr": "Renal yetmezlikte potasyum, volüm durumu ve ilaç eliminasyonu preoperatif olarak kontrol edilmelidir.",
+    "en": "In renal failure, potassium, volume status, and drug elimination should be checked preoperatively.",
+    "clinicalUse": "Renal considerations",
+    "importance": "high",
+    "tags": [
+      "renal",
+      "dialysis",
+      "potassium",
+      "uremic_bleeding"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_234",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Renal Insufficiency",
+    "tr": "Diyaliz hastasında son diyaliz zamanı ve damar yolu erişimi anestezi planını etkiler.",
+    "en": "In dialysis patients, timing of last dialysis and vascular access affect the anesthetic plan.",
+    "clinicalUse": "Renal considerations",
+    "importance": "medium",
+    "tags": [
+      "renal",
+      "dialysis",
+      "potassium",
+      "uremic_bleeding"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_235",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Renal Insufficiency",
+    "tr": "Üremi trombosit fonksiyon bozukluğu yaparak kanama riskini artırabilir.",
+    "en": "Uremia may cause platelet dysfunction and increase bleeding risk.",
+    "clinicalUse": "Renal considerations",
+    "importance": "high",
+    "tags": [
+      "renal",
+      "dialysis",
+      "potassium",
+      "uremic_bleeding"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_236",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Hepatic Insufficiency",
+    "tr": "Karaciğer yetmezliğinde koagülopati, hipoglisemi ve ilaç metabolizmasında gecikme beklenmelidir.",
+    "en": "In liver failure, coagulopathy, hypoglycemia, and delayed drug metabolism should be expected.",
+    "clinicalUse": "Hepatic considerations",
+    "importance": "high",
+    "tags": [
+      "hepatic",
+      "liver_failure",
+      "cirrhosis",
+      "ascites"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_237",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Hepatic Insufficiency",
+    "tr": "Sirozda düşük albümin protein bağlı ilaçların serbest fraksiyonunu artırabilir.",
+    "en": "In cirrhosis, low albumin may increase the free fraction of protein-bound drugs.",
+    "clinicalUse": "Hepatic considerations",
+    "importance": "medium",
+    "tags": [
+      "hepatic",
+      "liver_failure",
+      "cirrhosis",
+      "ascites"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_238",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Hepatic Insufficiency",
+    "tr": "Asit ve portal hipertansiyon solunum mekaniği ve aspirasyon riskini etkileyebilir.",
+    "en": "Ascites and portal hypertension may affect respiratory mechanics and aspiration risk.",
+    "clinicalUse": "Hepatic considerations",
+    "importance": "medium",
+    "tags": [
+      "hepatic",
+      "liver_failure",
+      "cirrhosis",
+      "ascites"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_239",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Diabetes & Adrenal Special Populations",
+    "tr": "Diyabetik hastada perioperatif hipoglisemi anestezi altında maskelenebilir.",
+    "en": "In diabetic patients, perioperative hypoglycemia may be masked under anesthesia.",
+    "clinicalUse": "Metabolic optimization",
+    "importance": "high",
+    "tags": [
+      "diabetes",
+      "hyperglycemia",
+      "steroids",
+      "adrenal_insufficiency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_240",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Diabetes & Adrenal Special Populations",
+    "tr": "Perioperatif hiperglisemi enfeksiyon ve yara iyileşme sorunları ile ilişkilidir.",
+    "en": "Perioperative hyperglycemia is associated with infection and impaired wound healing.",
+    "clinicalUse": "Metabolic optimization",
+    "importance": "medium",
+    "tags": [
+      "diabetes",
+      "hyperglycemia",
+      "steroids",
+      "adrenal_insufficiency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_241",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Diabetes & Adrenal Special Populations",
+    "tr": "DKA şüphesinde sıvı, insülin ve potasyum yönetimi birlikte planlanmalıdır.",
+    "en": "If DKA is suspected, fluid, insulin, and potassium management should be planned together.",
+    "clinicalUse": "Metabolic optimization",
+    "importance": "medium",
+    "tags": [
+      "diabetes",
+      "hyperglycemia",
+      "steroids",
+      "adrenal_insufficiency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_242",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Diabetes & Adrenal Special Populations",
+    "tr": "Uzun süre steroid kullanan hastada adrenal supresyon ve stres doz steroid ihtiyacı değerlendirilmelidir.",
+    "en": "In patients on long-term steroids, adrenal suppression and stress-dose steroid need should be assessed.",
+    "clinicalUse": "Metabolic optimization",
+    "importance": "high",
+    "tags": [
+      "diabetes",
+      "hyperglycemia",
+      "steroids",
+      "adrenal_insufficiency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_243",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Diabetes & Adrenal Special Populations",
+    "tr": "Adrenal yetmezlik perioperatif refrakter hipotansiyonla kendini gösterebilir.",
+    "en": "Adrenal insufficiency may present as perioperative refractory hypotension.",
+    "clinicalUse": "Metabolic optimization",
+    "importance": "high",
+    "tags": [
+      "diabetes",
+      "hyperglycemia",
+      "steroids",
+      "adrenal_insufficiency"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_244",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Thyroid Special Populations",
+    "tr": "Hipertiroidi taşikardi, hipertansiyon ve artmış oksijen tüketimi ile perioperatif riski artırır.",
+    "en": "Hyperthyroidism increases perioperative risk through tachycardia, hypertension, and increased oxygen consumption.",
+    "clinicalUse": "Endocrine safety",
+    "importance": "medium",
+    "tags": [
+      "hyperthyroidism",
+      "thyroid_storm",
+      "hypothyroidism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_245",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Thyroid Special Populations",
+    "tr": "Tiroid fırtınası hipertermi, taşikardi, hipertansiyon ve bilinç değişikliği ile acil tanınmalıdır.",
+    "en": "Thyroid storm must be recognized urgently with hyperthermia, tachycardia, hypertension, and altered mental status.",
+    "clinicalUse": "Endocrine safety",
+    "importance": "high",
+    "tags": [
+      "hyperthyroidism",
+      "thyroid_storm",
+      "hypothyroidism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_246",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Thyroid Special Populations",
+    "tr": "Hipotiroidi ilaçlara duyarlılığı, hipotermi riskini ve ventilasyon depresyonunu artırabilir.",
+    "en": "Hypothyroidism may increase drug sensitivity, hypothermia risk, and ventilatory depression.",
+    "clinicalUse": "Endocrine safety",
+    "importance": "medium",
+    "tags": [
+      "hyperthyroidism",
+      "thyroid_storm",
+      "hypothyroidism"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_247",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Endocrine Crises",
+    "tr": "Feokromositoma cerrahisinde preoperatif alfa blokaj ve volüm optimizasyonu kritik önemdedir.",
+    "en": "In pheochromocytoma surgery, preoperative alpha blockade and volume optimization are critical.",
+    "clinicalUse": "Endocrine emergency",
+    "importance": "high",
+    "tags": [
+      "pheochromocytoma",
+      "carcinoid_syndrome",
+      "alpha_blockade"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_248",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Endocrine Crises",
+    "tr": "Feokromositoma çıkarıldıktan sonra vazodilatasyon ve katekolamin azalmasına bağlı hipotansiyon gelişebilir.",
+    "en": "After pheochromocytoma removal, hypotension may occur due to vasodilation and reduced catecholamines.",
+    "clinicalUse": "Endocrine emergency",
+    "importance": "high",
+    "tags": [
+      "pheochromocytoma",
+      "carcinoid_syndrome",
+      "alpha_blockade"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_249",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Endocrine Crises",
+    "tr": "Karsinoid sendromda tümör manipülasyonu flushing, bronkospazm ve ciddi hipotansiyon tetikleyebilir.",
+    "en": "In carcinoid syndrome, tumor manipulation may trigger flushing, bronchospasm, and severe hypotension.",
+    "clinicalUse": "Endocrine emergency",
+    "importance": "medium",
+    "tags": [
+      "pheochromocytoma",
+      "carcinoid_syndrome",
+      "alpha_blockade"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_250",
+    "category": "OBSTETRIC_PEDIATRIC_SPECIAL",
+    "subcategory": "Special Populations Care",
+    "tr": "Özel popülasyonlarda güvenli anestezi, standart protokolü değil hastaya göre uyarlanmış planı gerektirir.",
+    "en": "Safe anesthesia in special populations requires an individualized plan rather than a standard protocol.",
+    "clinicalUse": "Individualized planning",
+    "importance": "high",
+    "tags": [
+      "special_populations",
+      "safety",
+      "individualized"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_251",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sepsis & Septic Shock",
+    "tr": "Septik şokta erken antibiyotik, kaynak kontrolü, sıvı yanıtı değerlendirmesi ve vazopressör desteği birlikte düşünülmelidir.",
+    "en": "In septic shock, early antibiotics, source control, fluid responsiveness assessment, and vasopressor support should be considered together.",
+    "clinicalUse": "Septic shock management",
+    "importance": "high",
+    "tags": [
+      "sepsis",
+      "shock",
+      "norepinephrine",
+      "lactate",
+      "fluids"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_252",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sepsis & Septic Shock",
+    "tr": "Septik şokta noradrenalin çoğu durumda ilk tercih vazopressördür.",
+    "en": "In septic shock, norepinephrine is the first-choice vasopressor in most cases.",
+    "clinicalUse": "Septic shock management",
+    "importance": "high",
+    "tags": [
+      "sepsis",
+      "shock",
+      "norepinephrine",
+      "lactate",
+      "fluids"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_253",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sepsis & Septic Shock",
+    "tr": "Laktat yüksekliği hipoperfüzyonu gösterebilir ancak tek başına karar verdirici olmamalıdır.",
+    "en": "Elevated lactate may indicate hypoperfusion but should not be used as the sole decision-maker.",
+    "clinicalUse": "Septic shock management",
+    "importance": "medium",
+    "tags": [
+      "sepsis",
+      "shock",
+      "norepinephrine",
+      "lactate",
+      "fluids"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_254",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sepsis & Septic Shock",
+    "tr": "Sepsiste sıvı yüklemesi sonrası yanıt perfüzyon, kan basıncı, idrar çıkışı ve akciğer ödemi açısından izlenmelidir.",
+    "en": "After fluid loading in sepsis, response should be monitored using perfusion, blood pressure, urine output, and pulmonary edema.",
+    "clinicalUse": "Fluid resuscitation",
+    "importance": "high",
+    "tags": [
+      "sepsis",
+      "shock",
+      "norepinephrine",
+      "lactate",
+      "fluids"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_255",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ICU Monitoring",
+    "tr": "Vazopressör ihtiyacı olan instabil hastada invaziv arteriyel monitörizasyon erken düşünülmelidir.",
+    "en": "In unstable patients requiring vasopressors, invasive arterial monitoring should be considered early.",
+    "clinicalUse": "Hemodynamic monitoring",
+    "importance": "medium",
+    "tags": [
+      "monitoring",
+      "arterial_line",
+      "vasopressors"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_256",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ARDS & Ventilation",
+    "tr": "ARDS’de düşük tidal volüm ve sınırlı plateau basıncı akciğer koruyucu ventilasyonun temelidir.",
+    "en": "In ARDS, low tidal volume and limited plateau pressure are the basis of lung-protective ventilation.",
+    "clinicalUse": "Lung-protective ventilation",
+    "importance": "high",
+    "tags": [
+      "ards",
+      "ventilation",
+      "peep",
+      "hypoxemia",
+      "prone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_257",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ARDS & Ventilation",
+    "tr": "ARDS’de aşırı plateau basıncı ventilatör ilişkili akciğer hasarını artırabilir.",
+    "en": "Excessive plateau pressure in ARDS may increase ventilator-induced lung injury.",
+    "clinicalUse": "Lung-protective ventilation",
+    "importance": "medium",
+    "tags": [
+      "ards",
+      "ventilation",
+      "peep",
+      "hypoxemia",
+      "prone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_258",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ARDS & Ventilation",
+    "tr": "Ağır ARDS’de prone pozisyon oksijenasyonu iyileştirebilir ve mortaliteyi azaltabilir.",
+    "en": "In severe ARDS, prone positioning may improve oxygenation and reduce mortality.",
+    "clinicalUse": "Lung-protective ventilation",
+    "importance": "high",
+    "tags": [
+      "ards",
+      "ventilation",
+      "peep",
+      "hypoxemia",
+      "prone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_259",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ARDS & Ventilation",
+    "tr": "PEEP seçimi oksijenasyon faydası ile hemodinamik yan etkiler dengelenerek yapılmalıdır.",
+    "en": "PEEP should be selected by balancing oxygenation benefit against hemodynamic adverse effects.",
+    "clinicalUse": "Lung-protective ventilation",
+    "importance": "medium",
+    "tags": [
+      "ards",
+      "ventilation",
+      "peep",
+      "hypoxemia",
+      "prone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_260",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "ARDS & Ventilation",
+    "tr": "Refrakter hipoksemide tüp pozisyonu, sekresyon, pnömotoraks, devre ve ventilatör ayarları hızla kontrol edilmelidir.",
+    "en": "In refractory hypoxemia, tube position, secretions, pneumothorax, circuit, and ventilator settings should be checked rapidly.",
+    "clinicalUse": "Refractory hypoxemia rescue",
+    "importance": "high",
+    "tags": [
+      "ards",
+      "ventilation",
+      "peep",
+      "hypoxemia",
+      "prone"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_261",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sedation & Delirium",
+    "tr": "Yoğun bakımda gereksiz derin sedasyon ventilatör süresini, deliryumu ve zayıflığı artırabilir.",
+    "en": "Unnecessary deep sedation in ICU may increase ventilator duration, delirium, and weakness.",
+    "clinicalUse": "ICU Sedation",
+    "importance": "medium",
+    "tags": [
+      "sedation",
+      "delirium",
+      "analgosedation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_262",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sedation & Delirium",
+    "tr": "Sedasyon hedefi günlük olarak değerlendirilmelidir.",
+    "en": "Sedation targets should be reassessed daily.",
+    "clinicalUse": "ICU Sedation",
+    "importance": "medium",
+    "tags": [
+      "sedation",
+      "delirium",
+      "analgosedation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_263",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sedation & Delirium",
+    "tr": "Deliryum önlenmesinde ağrı kontrolü, uyku düzeni, erken mobilizasyon ve benzodiazepinden kaçınma önemlidir.",
+    "en": "Pain control, sleep optimization, early mobilization, and avoiding benzodiazepines are important for delirium prevention.",
+    "clinicalUse": "Delirium management",
+    "importance": "high",
+    "tags": [
+      "sedation",
+      "delirium",
+      "analgosedation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_264",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Sedation & Delirium",
+    "tr": "Yoğun bakım hastasında analjezi, sedasyondan önce değerlendirilmelidir.",
+    "en": "In ICU patients, analgesia should be assessed before sedation.",
+    "clinicalUse": "Delirium management",
+    "importance": "medium",
+    "tags": [
+      "sedation",
+      "delirium",
+      "analgosedation"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_265",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Organ Dysfunctions",
+    "tr": "Akut böbrek hasarında renal perfüzyonu korumak ve nefrotoksinlerden kaçınmak temel yaklaşımdır.",
+    "en": "In acute kidney injury, maintaining renal perfusion and avoiding nephrotoxins are core strategies.",
+    "clinicalUse": "Kidney protection",
+    "importance": "high",
+    "tags": [
+      "renal",
+      "hyperkalemia",
+      "hypoglycemia",
+      "hepatic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_266",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Organ Dysfunctions",
+    "tr": "Hiperkalemi EKG değişikliği yapıyorsa kalsiyum tedavisi geciktirilmemelidir.",
+    "en": "If hyperkalemia causes ECG changes, calcium therapy should not be delayed.",
+    "clinicalUse": "Hyperkalemia management",
+    "importance": "high",
+    "tags": [
+      "renal",
+      "hyperkalemia",
+      "hypoglycemia",
+      "hepatic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_267",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Organ Dysfunctions",
+    "tr": "Hipoglisemi yoğun bakımda ve anestezi altında kolayca gözden kaçabilir.",
+    "en": "Hypoglycemia can be easily missed in ICU and under anesthesia.",
+    "clinicalUse": "Hypoglycemia safety",
+    "importance": "high",
+    "tags": [
+      "renal",
+      "hyperkalemia",
+      "hypoglycemia",
+      "hepatic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_268",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Organ Dysfunctions",
+    "tr": "Karaciğer yetmezliğinde hipoglisemi, koagülopati ve ilaç birikimi aktif olarak izlenmelidir.",
+    "en": "In liver failure, hypoglycemia, coagulopathy, and drug accumulation should be actively monitored.",
+    "clinicalUse": "Liver failure monitoring",
+    "importance": "medium",
+    "tags": [
+      "renal",
+      "hyperkalemia",
+      "hypoglycemia",
+      "hepatic"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_269",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "Masif kanamada hipotermi, asidoz ve koagülopati birbirini kötüleştirir.",
+    "en": "In massive bleeding, hypothermia, acidosis, and coagulopathy worsen each other.",
+    "clinicalUse": "Lethal triad prevention",
+    "importance": "high",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_270",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "Masif transfüzyonda kalsiyum, fibrinojen, pH ve sıcaklık erken takip edilmelidir.",
+    "en": "During massive transfusion, calcium, fibrinogen, pH, and temperature should be monitored early.",
+    "clinicalUse": "Massive transfusion protocol",
+    "importance": "high",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_271",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "Traneksamik asit uygun kanamalı hastada erken dönemde daha faydalıdır.",
+    "en": "Tranexamic acid is more beneficial early in appropriate bleeding patients.",
+    "clinicalUse": "Hemostasis optimization",
+    "importance": "medium",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_272",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "TRALI transfüzyon sonrası akut hipoksemi ve nonkardiyojenik pulmoner ödemle düşünülmelidir.",
+    "en": "TRALI should be suspected with acute hypoxemia and noncardiogenic pulmonary edema after transfusion.",
+    "clinicalUse": "Transfusion complication rescue",
+    "importance": "high",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_273",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "TACO’da volüm yüklenmesi bulguları ve kardiyak yatkınlık ön plandadır.",
+    "en": "In TACO, signs of volume overload and cardiac predisposition are prominent.",
+    "clinicalUse": "Transfusion complication rescue",
+    "importance": "medium",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_274",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Massive Bleeding & Transfusion",
+    "tr": "Transfüzyon reaksiyonu şüphesinde transfüzyon durdurulmalı ve kan bankası bilgilendirilmelidir.",
+    "en": "If a transfusion reaction is suspected, the transfusion should be stopped and the blood bank notified.",
+    "clinicalUse": "Transfusion complication rescue",
+    "importance": "high",
+    "tags": [
+      "bleeding",
+      "transfusion",
+      "trali",
+      "taco",
+      "hemostasis"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_275",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "Malign hipertermide açıklanamayan ETCO₂ artışı hipertermiden önce ortaya çıkabilir.",
+    "en": "In malignant hyperthermia, unexplained ETCO₂ rise may occur before hyperthermia.",
+    "clinicalUse": "Malignant hyperthermia rescue",
+    "importance": "high",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_276",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "Malign hipertermi şüphesinde volatil ajanlar ve süksinilkolin hemen kesilmelidir.",
+    "en": "If malignant hyperthermia is suspected, volatile agents and succinylcholine must be stopped immediately.",
+    "clinicalUse": "Malignant hyperthermia rescue",
+    "importance": "high",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_277",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "Malign hipertermi tedavisinde dantrolen, aktif soğutma ve metabolik bozuklukların düzeltilmesi temel basamaklardır.",
+    "en": "Dantrolene, active cooling, and correction of metabolic abnormalities are key steps in malignant hyperthermia treatment.",
+    "clinicalUse": "Malignant hyperthermia rescue",
+    "importance": "high",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_278",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "Anafilakside adrenalin geciktirilmemelidir; antihistaminik ve steroidler yardımcı tedavidir.",
+    "en": "Epinephrine should not be delayed in anaphylaxis; antihistamines and steroids are adjunctive treatments.",
+    "clinicalUse": "Anaphylaxis rescue",
+    "importance": "high",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_279",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "Perioperatif anafilakside deri bulgulan olmayabilir.",
+    "en": "Skin signs may be absent in perioperative anaphylaxis.",
+    "clinicalUse": "Anaphylaxis rescue",
+    "importance": "medium",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_280",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Crisis Management",
+    "tr": "LAST, malign hipertermi, anafilaksi ve yüksek spinal gibi krizler için hazır algoritma ve ilaç erişimi olmalıdır.",
+    "en": "Ready algorithms and drug access should exist for crises such as LAST, malignant hyperthermia, anaphylaxis, and high spinal block.",
+    "clinicalUse": "Crisis preparedness",
+    "importance": "high",
+    "tags": [
+      "malignant_hyperthermia",
+      "anaphylaxis",
+      "crisis",
+      "dantrolene",
+      "adrenaline"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_281",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif hipoksemi gelişirse atelektazi, opioid etkisi, rezidüel blok, aspirasyon ve pulmoner emboli düşünülmelidir.",
+    "en": "If postoperative hypoxemia occurs, consider atelectasis, opioid effect, residual block, aspiration, and pulmonary embolism.",
+    "clinicalUse": "Postop hypoxemia rescue",
+    "importance": "high",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_282",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif solunum depresyonunda sedasyon düzeyi genellikle erken uyarı verir.",
+    "en": "In postoperative respiratory depression, sedation level often gives an early warning.",
+    "clinicalUse": "Postop monitoring",
+    "importance": "medium",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_283",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif göğüs ağrısında miyokard iskemisi, pulmoner emboli, pnömotoraks ve aort patolojisi dışlanmalıdır.",
+    "en": "In postoperative chest pain, myocardial ischemia, pulmonary embolism, pneumothorax, and aortic pathology should be excluded.",
+    "clinicalUse": "Postop chest pain triage",
+    "importance": "high",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_284",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif deliryum yaşlı hastada mortalite, morbidite ve hastanede kalış süresini artırır.",
+    "en": "Postoperative delirium increases mortality, morbidity, and hospital length of stay in elderly patients.",
+    "clinicalUse": "Postop delirium prevention",
+    "importance": "medium",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_285",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif ajitasyonda önce hipoksi, hipoglisemi, ağrı ve mesane distansiyonu gibi düzeltilebilir nedenler aranmalıdır.",
+    "en": "In postoperative agitation, first look for reversible causes such as hypoxia, hypoglycemia, pain, and bladder distension.",
+    "clinicalUse": "Postop agitation rescue",
+    "importance": "high",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_286",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Postoperatif titreme oksijen tüketimini ve kardiyak yükü artırabilir.",
+    "en": "Postoperative shivering may increase oxygen consumption and cardiac workload.",
+    "clinicalUse": "Postop shivering management",
+    "importance": "medium",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_287",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Postoperative Complications",
+    "tr": "Hipotermi koagülopati, enfeksiyon ve uzamış ilaç etkisiyle ilişkilidir.",
+    "en": "Hypothermia is associated with coagulopathy, infection, and prolonged drug effects.",
+    "clinicalUse": "Postop hypothermia management",
+    "importance": "medium",
+    "tags": [
+      "postoperative",
+      "hypoxemia",
+      "delirium",
+      "shivering",
+      "hypothermia"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_288",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Patient Handover & Safety",
+    "tr": "Güvenli devir teslim hava yolu, solunum, dolaşım, analjezi, kanama ve özel riskleri açıkça içermelidir.",
+    "en": "Safe handover should clearly include airway, breathing, circulation, analgesia, bleeding, and special risks.",
+    "clinicalUse": "Handover standardization",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "handover",
+      "communication",
+      "checklist"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_289",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Patient Handover & Safety",
+    "tr": "Transport öncesi oksijen, monitör, ilaçlar, damar yolu ve acil ekipman kontrol edilmelidir.",
+    "en": "Before transport, oxygen, monitor, drugs, IV access, and emergency equipment should be checked.",
+    "clinicalUse": "Transport preparation",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "handover",
+      "communication",
+      "checklist"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_290",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Patient Handover & Safety",
+    "tr": "Kritik olaylarda kapalı döngü iletişim yanlış anlaşılmayı azaltır.",
+    "en": "Closed-loop communication reduces misunderstanding during critical events.",
+    "clinicalUse": "Crisis communication",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "handover",
+      "communication",
+      "checklist"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_291",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Patient Handover & Safety",
+    "tr": "Kriz anında lider görev dağıtmalı, zamanı izlemeli ve genel resmi korumalıdır.",
+    "en": "During a crisis, the leader should allocate tasks, track time, and maintain the overall picture.",
+    "clinicalUse": "Crisis leadership",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "handover",
+      "communication",
+      "checklist"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_292",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Patient Handover & Safety",
+    "tr": "Cerrahi güvenlik kontrol listesi doğru hasta, doğru işlem, doğru taraf ve ekip hazırlığını destekler.",
+    "en": "The surgical safety checklist supports correct patient, correct procedure, correct side, and team readiness.",
+    "clinicalUse": "Surgical checklist usage",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "handover",
+      "communication",
+      "checklist"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_293",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Medication & Patient Safety",
+    "tr": "İlaç hatalarını azaltmak için etiketleme, standart konsantrasyon ve çift kontrol kullanılmalıdır.",
+    "en": "Labeling, standard concentration, and double checking should be used to reduce medication errors.",
+    "clinicalUse": "Medication error prevention",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "medication_error",
+      "verification"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_294",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Medication & Patient Safety",
+    "tr": "Benzer isimli veya benzer ambalajlı ilaçlar ameliyathanede ciddi hata kaynağıdır.",
+    "en": "Look-alike or sound-alike medications are serious sources of error in the operating room.",
+    "clinicalUse": "Medication error prevention",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "medication_error",
+      "verification"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_295",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Medication & Patient Safety",
+    "tr": "Kan ürünü uygulamasında hasta kimliği ve ürün uygunluğu yatak başında doğrulanmalıdır.",
+    "en": "During blood product administration, patient identity and product compatibility must be verified at the bedside.",
+    "clinicalUse": "Blood product verification",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "medication_error",
+      "verification"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_296",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Emergency & Clinical Safety",
+    "tr": "Acil durumda monitör hatası kontrol edilmeli ancak gerçek hasta bozulması varsayımıyla tedavi geciktirilmemelidir.",
+    "en": "In an emergency, monitor error should be checked, but treatment should not be delayed while assuming true patient deterioration.",
+    "clinicalUse": "Emergency troubleshooting",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "emergency",
+      "error"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_297",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Emergency & Clinical Safety",
+    "tr": "Kritik olay sonrası dokümantasyon, ekip bilgilendirmesi ve kalite değerlendirmesi yapılmalıdır.",
+    "en": "After a critical event, documentation, team debriefing, and quality review should be performed.",
+    "clinicalUse": "Post-event analysis",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "emergency",
+      "error"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_298",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Emergency & Clinical Safety",
+    "tr": "Tıbbi hatada açık iletişim ve hasta güvenliği yaklaşımı savunmacı tutumdan daha değerlidir.",
+    "en": "In medical error, open communication and a patient-safety approach are more valuable than a defensive attitude.",
+    "clinicalUse": "Medical error transparency",
+    "importance": "medium",
+    "tags": [
+      "safety",
+      "emergency",
+      "error"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_299",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Emergency & Clinical Safety",
+    "tr": "İyi kriz yönetimi teknik bilgi kadar iletişim, ekip çalışması ve önceliklendirme gerektirir.",
+    "en": "Good crisis management requires communication, teamwork, and prioritization as much as technical knowledge.",
+    "clinicalUse": "Crisis resource management",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "emergency",
+      "error"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": "daily_pearl_300",
+    "category": "ICU_CRISIS_SAFETY_POSTOP",
+    "subcategory": "Emergency & Clinical Safety",
+    "tr": "Günlük klinik pratikte en güvenli yaklaşım, beklenmeyen kötüleşmeye karşı önceden hazırlanmış olmaktır.",
+    "en": "In daily clinical practice, the safest approach is to be prepared in advance for unexpected deterioration.",
+    "clinicalUse": "Clinical preparedness",
+    "importance": "high",
+    "tags": [
+      "safety",
+      "emergency",
+      "error"
+    ],
+    "sourceType": "clinical_review",
+    "lastReviewed": "2026-05-30"
+  }
+]

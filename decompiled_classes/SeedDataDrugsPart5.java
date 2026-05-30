@@ -1,0 +1,272 @@
+package com.anesthesiaclinic.anesthesiabriefs.data.repository;
+
+import androidx.compose.runtime.internal.StabilityInferred;
+import com.anesthesiaclinic.anesthesiabriefs.data.model.DoseInfo;
+import com.anesthesiaclinic.anesthesiabriefs.data.model.Drug;
+import com.anesthesiaclinic.anesthesiabriefs.data.model.PharmacokineticsInfo;
+import java.util.List;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.Pair;
+import kotlin.TuplesKt;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.MapsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(
+   mv = {2, 2, 0},
+   k = 1,
+   xi = 48,
+   d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\t"},
+   d2 = {"Lcom/anesthesiaclinic/anesthesiabriefs/data/repository/SeedDataDrugsPart5;", "", "<init>", "()V", "drugsList", "", "Lcom/anesthesiaclinic/anesthesiabriefs/data/model/Drug;", "getDrugsList", "()Ljava/util/List;", "app_debug"}
+)
+@StabilityInferred(
+   parameters = 0
+)
+public final class SeedDataDrugsPart5 {
+   @NotNull
+   public static final SeedDataDrugsPart5 INSTANCE = new SeedDataDrugsPart5();
+   @NotNull
+   private static final List drugsList;
+   public static final int $stable;
+
+   private SeedDataDrugsPart5() {
+   }
+
+   @NotNull
+   public final List getDrugsList() {
+      return drugsList;
+   }
+
+   static {
+      Drug[] var0 = new Drug[21];
+      String[] var1 = new String[]{"DЕΡО-Мedrol;", "Меdrоl;", "ЅОԼU-Μеdrοl"};
+      List var10008 = CollectionsKt.listOf(var1);
+      Map var10013 = MapsKt.mapOf(TuplesKt.to("inflamasyon", new DoseInfo("40 - 125 mg IV", "Bronkospazm, astım krizleri ve alerjik reaksiyonların tedavisinde yavaş bolus enjeksiyon.")));
+      Map var10014 = MapsKt.mapOf(TuplesKt.to("inflamasyon", new DoseInfo("1.0 - 2.0 mg/kg IV", "Pediatrik krup veya astım alevlenmesi tedavisinde.")));
+      Pair[] var2 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Ağır karaciğer yetmezliğinde eliminasyonu yavaşlayabilir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Osteoporoz ve hiperglisemi riski yaşlılarda daha yüksektir.")};
+      Map var10015 = MapsKt.mapOf(var2);
+      String[] var3 = new String[]{"Sistemik mantar enfeksiyonları", "Bileşenlerine karşı bilinen aşırı duyarlılık"};
+      List var10017 = CollectionsKt.listOf(var3);
+      var3 = new String[]{"Kan şekeri (glukoz) kontrolünü zorlaştırabilir.", "Uzun süreli infüzyonlarda enfeksiyon riskini artırır."};
+      List var10018 = CollectionsKt.listOf(var3);
+      var3 = new String[]{"Anafilaksi, bronkospazm ve laringeal ödem profilaksisinde sıklıkla tercih edilir.", "Glukoz seviyesini yükseltebilir."};
+      var0[0] = new Drug("methylprednisolone", "Metilprednizolon", "Methylprednisolone", "Methylprednisolone", var10008, "allergy", (String)null, "Orta Etkili Glukokortikoid (Kortikosteroid)", "Güçlü anti-inflamatuar etki gösterir.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var3), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var3 = new String[]{"Dеxabliss [DSC];", "ԁехΑМЕΤΗаsοnе Intensol;", "DоսblеDеx;", "Dxevo 11-Day [DSC];", "Ηemaԁу;"};
+      var10008 = CollectionsKt.listOf(var3);
+      Pair[] var7 = new Pair[]{TuplesKt.to("antiemetik", new DoseInfo("4.0 - 8.0 mg IV", "Anestezi indüksiyonu sırasında PONV (bulantı kusma) profilaksisi amacıyla uygulanır.")), TuplesKt.to("antiinflamatuar", new DoseInfo("4.0 - 10.0 mg IV", "Astım, bronkospazm ve serebral ödem tedavisinde."))};
+      var10013 = MapsKt.mapOf(var7);
+      var7 = new Pair[]{TuplesKt.to("antiemetik", new DoseInfo("0.15 mg/kg IV", "Maksimum 8.0 mg, indüksiyon sırasında.")), TuplesKt.to("krup", new DoseInfo("0.6 mg/kg IV/IM", "Maksimum 16.0 mg, tek doz."))};
+      var10014 = MapsKt.mapOf(var7);
+      var7 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Bilişsel değişiklikler ve hiperglisemi riski yaşlılarda yüksektir.")};
+      var10015 = MapsKt.mapOf(var7);
+      String[] var10 = new String[]{"Sistemik viral veya mantar enfeksiyonları", "Bileşenlerine karşı bilinen aşırı duyarlılık"};
+      var10017 = CollectionsKt.listOf(var10);
+      var10 = new String[]{"İndüksiyonda hızlı IV uygulanması perineal bölgede yanma hissi yapabilir (yavaş enjekte edilmelidir).", "Yarı ömrü çok uzundur (36-72 saat)."};
+      var0[1] = new Drug("dexamethasone_systemic", "Dexamethasone", "Dexamethasone", "Dexamethasone (systemic)", var10008, "icu_metabolic", (String)null, "Uzun Etkili Güçlü Glukokortikoid (Kortikosteroid)", "Klinik monograf bilgileri için kaynak dokümana başvurunuz.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, CollectionsKt.listOf(var10), (List)null, (List)null, CollectionsKt.listOf("UpToDate klinik monografından alınmıştır."), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10 = new String[]{"Allеr-Chlor [OTC];", "Allergy Relief [OTC];", "Allergy [OTC];", "Chlor-Trimeton Allergy [OTC];", "Сhlоrphеո [OTC];"};
+      var10008 = CollectionsKt.listOf(var10);
+      var10013 = MapsKt.mapOf(TuplesKt.to("alerji", new DoseInfo("10 mg IV veya IM", "Akut alerjik reaksiyonlar ve anafilaksi tedavisinde yavaş bolus enjeksiyon (Maks 40 mg/gün).")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("alerji", new DoseInfo("0.2 mg/kg IV veya IM", "Maksimum 10 mg bolus.")));
+      Pair[] var13 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde metabolizması gecikebilir, dikkatli olunmalıdır."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Güçlü antikolinerjik yan etkileri (deliryum, idrar retansiyonu) nedeniyle yaşlılarda kaçınılmalıdır.")};
+      var10015 = MapsKt.mapOf(var13);
+      String[] var14 = new String[]{"Dar açılı glokom", "Semptomatik prostat hipertrofisi", "Yeni doğanlar"};
+      var10017 = CollectionsKt.listOf(var14);
+      var14 = new String[]{"Belirgin sedasyon ve uyku hali yapar, motor becerileri bozar.", "Opioid ve benzodiazepinler ile sinerjistik MSS depresyonu yapar."};
+      var10018 = CollectionsKt.listOf(var14);
+      var14 = new String[]{"Sedatif etkisi belirgindir.", "Anafilakside adrenalin ve steroidlerin yanında tamamlayıcı tedavi olarak uygulanır."};
+      var0[2] = new Drug("chlorpheniramine", "Klorfeniramin", "Chlorpheniramine", "Chlorpheniramine", var10008, "allergy", (String)null, "Birinci Kuşak Antihistaminik (H1 Reseptör Antagonisti)", "Periferik H1 reseptörlerini bloke ederek alerjik reaksiyonları ve kaşıntıyı önler.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var14), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var14 = new String[]{"Gimoti;", "Rеglan"};
+      var10008 = CollectionsKt.listOf(var14);
+      var10013 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("10 mg IV yavaş", "Operasyon sonunda yavaş bolus (en az 2 dakikada) şeklinde uygulanır.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("0.1 - 0.15 mg/kg IV", "Çocuklarda ekstrapiramidal yan etkiler (akut distoni) riski nedeniyle dikkatli olunmalıdır (Maks 10 mg).")));
+      Pair[] var18 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde (eGFR < 40) birikim riski nedeniyle doz %50 oranında azaltılmalıdır."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Ekstrapiramidal reaksiyonlar ve tardif diskinezi riski yaşlılarda belirgin düzeyde yüksektir.")};
+      var10015 = MapsKt.mapOf(var18);
+      String[] var19 = new String[]{"Feokromositoma (hipertansif kriz riski)", "Gastrointestinal tıkanıklık veya perforasyon", "Epilepsi"};
+      var10017 = CollectionsKt.listOf(var19);
+      var19 = new String[]{"Akut Distonik Reaksiyonlar: Genç hastalar ve çocuklarda yüz/boyun kaslarında kasılmalar yapabilir (tedavide biperiden kullanılır).", "Hızlı IV enjeksiyonlarda geçici huzursuzluk ve ajitasyon yapabilir."};
+      var10018 = CollectionsKt.listOf(var19);
+      var19 = new String[]{"Ekstrapiramidal yan etkiler (akut distoni) yapabilir. Genç kadınlarda ve çocuklarda risk daha yüksektir.", "Bağırsak obstrüksiyonu varlığında prokinetik etkisi nedeniyle kontrendikedir!"};
+      var0[3] = new Drug("metoclopramide", "Metoklopramid", "Metoclopramide", "Metoclopramide", var10008, "antiemetic", (String)null, "Dopamin Reseptör Antagonisti (Prokinetik ve Antiemetik)", "MSS'de D2 reseptörlerini bloke eder, mide boşalımını hızlandırır.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var19), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var19 = new String[]{"Graոisol;", "Ѕаոсսѕο;", "Ѕuѕtоl"};
+      var10008 = CollectionsKt.listOf(var19);
+      var10013 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("1.0 mg IV yavaş", "İndüksiyon sırasında veya operasyon sonunda yavaş bolus enjeksiyon.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("10 - 40 mcg/kg IV", "Maksimum tek doz 1.0 mg.")));
+      Pair[] var23 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde klirensi hafif azalabilir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Genellikle güvenle tolere edilir, QT takibi önerilebilir.")};
+      var10015 = MapsKt.mapOf(var23);
+      var10017 = CollectionsKt.listOf("5-HT3 antagonistlerine karşı bilinen aşırı duyarlılık");
+      String[] var24 = new String[]{"QT aralığında hafif uzama yapabilir.", "Hafif baş ağrısı ve kabızlık en sık görülen yan etkilerdir."};
+      var10018 = CollectionsKt.listOf(var24);
+      var24 = new String[]{"Bulantı kusmada ondansetron gibi oldukça etkilidir, etki süresi daha uzundur (24 saat).", "Baş ağrısı ve geçici kabızlık yapabilir, QT aralığını hafif uzatabilir."};
+      var0[4] = new Drug("granisetron", "Granisetron", "Granisetron", "Granisetron", var10008, "antiemetic", (String)null, "Seçici 5-HT3 Reseptör Antagonisti (Antiemetik)", "Kemoreseptör tetikleme bölgesindeki 5-HT3 reseptörlerini selektif bloke eder.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var24), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      var10013 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("0.625 - 1.25 mg IV yavaş", "İndüksiyonda veya cerrahi sonunda, çok düşük dozlarda dahi etkilidir.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("10 - 50 mcg/kg IV", "Maksimum tek doz 1.25 mg.")));
+      Pair[] var26 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Eliminasyonu yavaşlayabilir, dikkatli olunmalıdır."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Yaşlılarda hipotansiyon ve ekstrapiramidal yan etki sıklığı artar, en düşük doz tercih edilmelidir.")};
+      var10015 = MapsKt.mapOf(var26);
+      String[] var27 = new String[]{"Bilinen QT uzaması veya aritmi öyküsü", "Parkinson hastalığı (dopamin blokajı nedeniyle)"};
+      var10017 = CollectionsKt.listOf(var27);
+      var27 = new String[]{"QTc Uzaması ve Torsades de Pointes: EKG takibi önerilir, QT aralığı >440 ms olanlarda kaçınılmalıdır (Black Box uyarısı).", "Hafif sedasyon ve disfori yapabilir."};
+      var10018 = CollectionsKt.listOf(var27);
+      var27 = new String[]{"Çok düşük dozlarda (0.625 - 1.25 mg IV) dahi PONV profilaksisinde son derece etkilidir.", "QT mesafesini uzatabilir; EKG takibi önerilir, QT > 450 ms ise kaçınılmalıdır."};
+      var0[5] = new Drug("droperidol", "Droperidol", "Droperidol", "Droperidol", var10008, "antiemetic", (String)null, "Butirofenon grubu Antidopaminerjik (Antiemetik ve Nöroleptik)", "MSS'de D2 reseptörlerini bloke ederek güçlü antiemetik etki sağlar.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var27), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var27 = new String[]{"Dramamiոе [OTC];", "Drimiոаte [OTC];", "GoodSense Motion Sickness [OTC]"};
+      var10008 = CollectionsKt.listOf(var27);
+      var10013 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("25 - 50 mg IV yavaş", "Her 4-6 saatte bir yavaş bolus enjeksiyon (Maks 400 mg/gün).")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("ponv", new DoseInfo("1.0 - 1.25 mg/kg IV", "Maksimum 50 mg bolus, yavaş enjekte edilmelidir.")));
+      Pair[] var31 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Ağır karaciğer yetmezliğinde yarı ömrü uzayabilir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Antikolinerjik yan etkiler (deliryum, konfüzyon, idrar retansiyonu) yaşlılarda sıktır.")};
+      var10015 = MapsKt.mapOf(var31);
+      String[] var32 = new String[]{"Dar açılı glokom", "Prostat hipertrofisi", "2 yaş altı çocuklar"};
+      var10017 = CollectionsKt.listOf(var32);
+      var32 = new String[]{"Belirgin sedasyon, uykululuk ve ağız kuruluğu yapabilir.", "IV enjeksiyonlar çok yavaş yapılmalıdır, lokal iritasyon yapabilir."};
+      var10018 = CollectionsKt.listOf(var32);
+      var32 = new String[]{"Belirgin sedasyon ve ağız kuruluğu yapabilir.", "Hareketle tetiklenen (vestibüler kökenli) bulantılarda çok etkilidir."};
+      var0[6] = new Drug("dimenhydrinate", "Dimenhidrinat (Dramamine)", "Dimenhydrinate", "Dimenhydrinate", var10008, "antiemetic", (String)null, "H1 Antihistaminik ve Antikolinerjik (Antiemetik)", "Vestibüler uyarımı baskılar, taşıt tutması ve postoperatif bulantıda etkilidir.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var32), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var32 = new String[]{"Transderm Scop;", "Τrаոѕԁеrm-Ѕϲор [DSC]"};
+      var10008 = CollectionsKt.listOf(var32);
+      var10013 = MapsKt.mapOf(TuplesKt.to("dosing", new DoseInfo("Dozaj bilgisi belirtilmemiştir.", "")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var36 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması için yeterli veri bulunmamaktadır."), TuplesKt.to("geriatri", "Özel bir doz ayarlaması belirtilmemiştir.")};
+      var10015 = MapsKt.mapOf(var36);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      var10018 = CollectionsKt.listOf("Klinik takip ve hastanın yakın izlemi önerilir.");
+      String[] var37 = new String[]{"Transdermal yama formu PONV profilaksisinde ameliyattan önceki gece uygulanır.", "Yaşlılarda konfüzyon, halüsinasyon ve idrar retansiyonu yapabilir!"};
+      var0[7] = new Drug("scopolamine", "Skopolamin (Hiyosin)", "Scopolamine (Hyoscine)", "Scopolamine (hyoscine)", var10008, "antiemetic", (String)null, "Antikolinerjik / Antiemetik", "Merkezi ve periferik muskarinik reseptörleri bloke eder, sekresyonları azaltır.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var37), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, true, false, 201162816, (DefaultConstructorMarker)null);
+      var37 = new String[]{"Fеѕiltу;", "Fibrygа;", "RiаЅΤAP"};
+      var10008 = CollectionsKt.listOf(var37);
+      var10013 = MapsKt.mapOf(TuplesKt.to("dosing", new DoseInfo("Dozaj bilgisi belirtilmemiştir.", "")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var39 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması için yeterli veri bulunmamaktadır."), TuplesKt.to("geriatri", "Özel bir doz ayarlaması belirtilmemiştir.")};
+      var10015 = MapsKt.mapOf(var39);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      var10018 = CollectionsKt.listOf("Klinik takip ve hastanın yakın izlemi önerilir.");
+      String[] var40 = new String[]{"Kriyo-presipitata kıyasla daha az hacimde daha yüksek konsantrasyonda fibrinojen sağlar ve enfeksiyon riski düşüktür.", "Hedef fibrinojen seviyesi >150-200 mg/dL olmalıdır."};
+      var0[8] = new Drug("fibrinogen_concentrate", "Fibrinojen Konsantresi", "Fibrinogen Concentrate", "Fibrinogen, concentrate from human plasma", var10008, "coagulation", (String)null, "Kan Ürünü Derivesi (Faktör I)", "Fibrin pıhtı oluşumunu destekleyerek masif kanamalarda hemostaz sağlar.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var40), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, true, false, 201162816, (DefaultConstructorMarker)null);
+      var40 = new String[]{"Βаlfахаr;", "Κсеntrа"};
+      var10008 = CollectionsKt.listOf(var40);
+      var10013 = MapsKt.mapOf(TuplesKt.to("dosing", new DoseInfo("Dozaj bilgisi belirtilmemiştir.", "")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var42 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması için yeterli veri bulunmamaktadır."), TuplesKt.to("geriatri", "Özel bir doz ayarlaması belirtilmemiştir.")};
+      var10015 = MapsKt.mapOf(var42);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      var10018 = CollectionsKt.listOf("Klinik takip ve hastanın yakın izlemi önerilir.");
+      String[] var43 = new String[]{"Taze donmuş plazmaya (TDP) kıyasla hacim yüklenmesi yapmadan INR'yi dakikalar içinde düşürür.", "Kullanımında tromboemboli riski yakından izlenmelidir."};
+      var0[9] = new Drug("prothrombin_complex_concentrate", "Protrombin Kompleks Konsantresi (PCC)", "Prothrombin Complex Concentrate", "Prothrombin complex concentrate, 4-factor, unactivated, from human plasma", var10008, "coagulation", (String)null, "4 Faktörlü Koagülasyon Konsantresi", "Faktör II, VII, IX, X ve Protein C/S içerir. Warfarin etkisini hızla geri çevirir.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var43), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, true, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      var10013 = MapsKt.mapOf(TuplesKt.to("heparin_antagonizmasi", new DoseInfo("1.0 mg protamin / 100 Unite heparin", "Verilecek protamin dozu heparin uygulamasından sonra geçen süreye göre azaltılır (Maks 50 mg tek doz).")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("heparin_antagonizmasi", new DoseInfo("1.0 mg protamin / 100 Unite heparin", "Yakın hemodinamik takip altında yavaş bolus.")));
+      Pair[] var44 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Dozaj nötralize edilecek son aktif heparin miktarına göre titre edilir."), TuplesKt.to("geriatri", "Yaşlılarda anafilaktik reaksiyon ve hipotansiyon riski daha yüksektir.")};
+      var10015 = MapsKt.mapOf(var44);
+      var10017 = CollectionsKt.listOf("Protamine karşı bilinen aşırı duyarlılık");
+      String[] var45 = new String[]{"Hipotansiyon ve Bradikardi: Hızlı IV enjeksiyonlarda masif histamin salınımına ve anafilaktik şoka yol açar (en az 10 dakikada verilmelidir).", "Balık alerjisi veya vazektomi öyküsü olanlarda anafilaksi riski yüksektir."};
+      var10018 = CollectionsKt.listOf(var45);
+      var45 = new String[]{"Kardiyopulmoner bypass (açık kalp cerrahisi) sonrası heparini geri çevirmek için kullanılır.", "Hızlı IV enjeksiyon masif pulmoner hipertansiyon, bradikardi ve anafilaktoid reaksiyon yapabilir!"};
+      var0[10] = new Drug("protamine", "Protamin Sülfat", "Protamine Sulfate", "Protamine sulfate", var10008, "coagulation", (String)null, "Heparin Antagonisti (Reversal)", "Pozitif yüklü protamin molekülü, negatif yüklü heparin ile iyonik olarak birleşerek heparini nötralize eder.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var45), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      Pair[] var47 = new Pair[]{TuplesKt.to("antikoagulasyon", new DoseInfo("300 - 400 Unite/kg IV", "Kardiyopulmoner baypas cerrahisinde (ACT hedefi >480 sn).")), TuplesKt.to("profilaksi", new DoseInfo("5000 Unite SC", "DVT profilaksisinde ameliyat öncesi ve sonrası her 8-12 saatte bir."))};
+      var10013 = MapsKt.mapOf(var47);
+      var10014 = MapsKt.mapOf(TuplesKt.to("antikoagulasyon", new DoseInfo("50 - 75 Unite/kg IV bolus", "Ardından 20 Unite/kg/saat infüzyon şeklinde aPTT takibi ile uygulanır.")));
+      var47 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez, ancak kanama riski yakından izlenmelidir."), TuplesKt.to("karaciger_yetmezligi", "Metabolizması yavaşlayabilir, ACT veya aPTT takibi önemlidir."), TuplesKt.to("obezite", "Terapötik dozajda ideal/düzeltilmiş ağırlığa göre başlanmalıdır."), TuplesKt.to("geriatri", "Kanama riski yaşlılarda belirgin şekilde artar, doz dikkatle titre edilmelidir.")};
+      var10015 = MapsKt.mapOf(var47);
+      String[] var49 = new String[]{"Aktif ciddi kanama", "Şiddetli trombositopeni (HIT öyküsü)", "Kontrolsüz ağır hipertansiyon"};
+      var10017 = CollectionsKt.listOf(var49);
+      var49 = new String[]{"Heparine Bağlı Trombositopeni (HIT): Trombosit sayıları yakından takip edilmelidir.", "Ciddi kanama riski vardır, etkisi protamin sülfat ile nötralize edilebilir."};
+      var10018 = CollectionsKt.listOf(var49);
+      var49 = new String[]{"Kardiyovasküler cerrahide antikoagülasyon için temel ilaçtır. Etkisi ACT (Aktif Koagülasyon Zamanı) ile izlenir.", "Etkisi protamin sülfat ile tamamen geri çevrilebilir."};
+      var0[11] = new Drug("heparin", "Heparin (Fraksiyone Olmayan)", "Heparin (Unfractionated)", "Heparin (unfractionated)", var10008, "coagulation", (String)null, "Antikoagülan (Glukozaminoglikan)", "Antitrombin III'ü aktive ederek Faktör IIa (trombin) ve Xa'yı inhibe eder.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var49), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Меphytοո");
+      var10013 = MapsKt.mapOf(TuplesKt.to("kanama", new DoseInfo("2.5 - 10.0 mg IV yavaş", "Warfarin etkisini geri çevirmek için 20-30 dakikalık yavaş infüzyon şeklinde.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("yenidogan_profilaksisi", new DoseInfo("0.5 - 1.0 mg IM", "Yenidoğanın hemorajik hastalığını önlemek amacıyla doğumdan hemen sonra uygulanır.")));
+      Pair[] var52 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Şiddetli karaciğer yetmezliğinde pıhtılaşma faktörü sentezi yetersiz olduğu için vitamin K etkisiz kalabilir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Aşırı dozda warfarin direncine yol açabilir, yavaş titre edilmelidir.")};
+      var10015 = MapsKt.mapOf(var52);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      String[] var53 = new String[]{"Hızlı IV enjeksiyonlarda anafilaksi ve kızarıklık riski vardır (mutlaka seyreltilerek yavaş verilmelidir).", "Etkisi 6-12 saat içinde başlar, acil kanamalarda taze donmuş plazma veya PCC eklenmelidir."};
+      var10018 = CollectionsKt.listOf(var53);
+      var53 = new String[]{"Warfarin aşırı dozunda veya INR yüksekliğinde etkiyi geri çevirmek için verilir.", "IV olarak çok yavaş (flebit ve anafilaksi riski) veya oral/SC uygulanmalıdır."};
+      var0[12] = new Drug("vitamin_k", "K Vitamini (Fitonadion)", "Vitamin K1 (Phytonadione)", "Vitamin K1 (phytonadione, phytomenadione)", var10008, "coagulation", (String)null, "Pıhtılaşma Faktörü Kofaktörü (Vitamin K1)", "Faktör II, VII, IX ve X'un karaciğerde sentezlenmesi için gereklidir.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var53), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Рitοϲin");
+      var10013 = MapsKt.mapOf(TuplesKt.to("postpartum_kanama", new DoseInfo("3.0 - 5.0 Unite IV yavaş bolus", "1 dakikada yavaşça enjekte edilir. Ardından 10-40 Unite serum içinde infüzyon başlatılır.")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var55 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Uygulanmaz.")};
+      var10015 = MapsKt.mapOf(var55);
+      String[] var56 = new String[]{"Uterus rüptürü riski, sefalopelvik disproporsiyon", "Şiddetli preeklampsi"};
+      var10017 = CollectionsKt.listOf(var56);
+      var56 = new String[]{"Hızlı IV boluslarda masif hipotansiyon, koroner iskemi ve refleks taşikardi yapabilir.", "Su intoksikasyonu riski vardır (antidiüretik etkisi nedeniyle yüksek dozlarda)."};
+      var10018 = CollectionsKt.listOf(var56);
+      var56 = new String[]{"Sezaryen operasyonlarında plasenta ayrıldıktan hemen sonra başlanır.", "Hızlı bolus IV enjeksiyon masif hipotansiyon, refleks taşikardi ve koroner iskemi yapabilir! Yavaş infüzyon tercih edilmelidir."};
+      var0[13] = new Drug("oxytocin", "Oksitosin", "Oxytocin", "Oxytocin", var10008, "obstetric", (String)null, "Uterotonik (Oksitosin Hormon Analoğu)", "Uterus düz kaslarındaki oksitosin reseptörlerini uyararak ritmik kasılmalar sağlar (postpartum kanamayı önler).", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var56), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Меthergine");
+      var10013 = MapsKt.mapOf(TuplesKt.to("dosing", new DoseInfo("Dozaj bilgisi belirtilmemiştir.", "")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var59 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması için yeterli veri bulunmamaktadır."), TuplesKt.to("geriatri", "Özel bir doz ayarlaması belirtilmemiştir.")};
+      var10015 = MapsKt.mapOf(var59);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      var10018 = CollectionsKt.listOf("Klinik takip ve hastanın yakın izlemi önerilir.");
+      String[] var60 = new String[]{"Oksitosine yanıt alınamayan postpartum atoni kanamalarında 2. tercih olarak uygulanır.", "Şiddetli vazokonstrüksiyon ve tansiyon yükselmesi yapabilir; preeklampsi ve hipertansiyon hastalarında kontrendikedir!"};
+      var0[14] = new Drug("methylergometrine", "Metilergometrin (Metilergonovin)", "Methylergonovine (Methylergometrine)", "Methylergonovine (methylergometrine)", var10008, "obstetric", (String)null, "Ergot Alkaloidi Uterotonik", "Uterus düz kasını doğrudan uyararak sürekli tonik kasılma sağlar.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var60), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, true, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Ηеmаbate");
+      var10013 = MapsKt.mapOf(TuplesKt.to("dosing", new DoseInfo("Dozaj bilgisi belirtilmemiştir.", "")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var61 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekebilir."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması için yeterli veri bulunmamaktadır."), TuplesKt.to("geriatri", "Özel bir doz ayarlaması belirtilmemiştir.")};
+      var10015 = MapsKt.mapOf(var61);
+      var10017 = CollectionsKt.listOf("Bileşenlerine karşı bilinen aşırı duyarlılık");
+      var10018 = CollectionsKt.listOf("Klinik takip ve hastanın yakın izlemi önerilir.");
+      String[] var62 = new String[]{"Şiddetli bronkospazm yapma riski nedeniyle astımlı hastalarda kesinlikle kontrendikedir!", "Gastrointestinal düz kasları uyararak şiddetli ishal ve bulantı yapabilir."};
+      var0[15] = new Drug("carboprost", "Karboprost", "Carboprost Tromethamine", "Carboprost tromethamine", var10008, "obstetric", (String)null, "Prostaglandin F2-Alfa Analoğu Uterotonik", "Uterus miyometriyumunu uyararak güçlü kasılmalar sağlar. Dirençli postpartum kanamada kullanılır.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var62), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, true, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Суtoteс");
+      var10013 = MapsKt.mapOf(TuplesKt.to("postpartum_kanama", new DoseInfo("600 - 800 mcg Rektal/Sublingual", "Postpartum kanama tedavisinde veya profilaksisinde tek doz olarak uygulanır.")));
+      var10014 = MapsKt.emptyMap();
+      Pair[] var63 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Uygulanmaz.")};
+      var10015 = MapsKt.mapOf(var63);
+      var10017 = CollectionsKt.listOf("Prostaglandinlere karşı bilinen aşırı duyarlılık");
+      String[] var64 = new String[]{"Ateş, titreme, ishal ve karın ağrısı sıklığı yüksektir.", "Uterusun aşırı uyarılmasına ve rüptüre yol açabilir."};
+      var10018 = CollectionsKt.listOf(var64);
+      var64 = new String[]{"Postpartum kanamada sıklıkla rektal veya sublingual yolla 800-1000 mcg dozunda uygulanır.", "Ateş yüksekliği ve titreme yan etkileri belirgindir."};
+      var0[16] = new Drug("misoprostol", "Misoprostol", "Misoprostol", "Misoprostol", var10008, "obstetric", (String)null, "Sentetik Prostaglandin E1 Analoğu (Uterotonik)", "Miyometriyal kasılmaları uyarır, servikal olgunlaşmayı kolaylaştırır.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var64), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.listOf("Ρrοсаrԁia XL");
+      var10013 = MapsKt.mapOf(TuplesKt.to("hipertansiyon", new DoseInfo("10 - 20 mg Oral", "Hipertansif acillerde veya tokolizde uygulanır. Sublingual kullanımı ani hipotansiyon riski nedeniyle kontrendikedir.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("hipertansiyon", new DoseInfo("0.25 - 0.5 mg/kg Oral", "Pediatrik hipertansiyon tedavisinde (Maks 20 mg).")));
+      Pair[] var66 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekmez."), TuplesKt.to("karaciger_yetmezligi", "Metabolizması yavaşlayabilir, doz yavaş titre edilmelidir."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Yaşlılarda ani tansiyon düşüşü ve serebral iskemi riski çok yüksektir, kısa etkili formlardan kaçınılmalıdır.")};
+      var10015 = MapsKt.mapOf(var66);
+      String[] var67 = new String[]{"Kardiyojenik şok, ciddi aort darlığı", "Akut miyokard enfarktüsü"};
+      var10017 = CollectionsKt.listOf(var67);
+      var67 = new String[]{"Refleks taşikardi ve periferik ödeme yol açabilir.", "Miyokard depresan etkileri izlenmelidir."};
+      var10018 = CollectionsKt.listOf(var67);
+      var67 = new String[]{"Erken doğum tehdidinde (tokoliz amacıyla) ve preeklampsi tansiyon kontrolünde yaygın kullanılır.", "Magnezyum sülfat ile birlikte kullanıldığında sinerjistik hipotansiyon ve nöromüsküler blok derinleşmesi yapabilir."};
+      var0[17] = new Drug("nifedipine", "Nifedipin", "Nifedipine", "Nifedipine", var10008, "obstetric", (String)null, "Kalsiyum Kanal Blokörü (Dihidropiridin)", "Düz kaslarda kalsiyum girişini engelleyerek uterus kasılmalarını gevşetir (tokolitik etki).", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var67), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      var10013 = MapsKt.mapOf(TuplesKt.to("bronkospazm", new DoseInfo("0.25 mg SC", "Uyluk veya deltoid bölgesinden SC olarak uygulanır, gerekirse 15-30 dk sonra tekrarlanabilir (Maks 4 saatte 0.5 mg).")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("bronkospazm", new DoseInfo("0.01 mg/kg SC", "Maksimum tek doz 0.25 mg, pediatrik akut astım krizlerinde.")));
+      Pair[] var70 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Doz ayarlaması gerekebilir, aktif metabolit birikimi izlenmelidir."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Doz ayarlaması gerekmez."), TuplesKt.to("geriatri", "Yaşlılarda kardiyak aritmi ve iskemi riski artar.")};
+      var10015 = MapsKt.mapOf(var70);
+      String[] var71 = new String[]{"Taşiaritmiler", "Bileşenlerine karşı bilinen aşırı duyarlılık"};
+      var10017 = CollectionsKt.listOf(var71);
+      var71 = new String[]{"Taşikardi, çarpıntı, tremor ve hipokalemi yapabilir.", "Sürekli EKG ve potasyum takibi önerilir."};
+      var10018 = CollectionsKt.listOf(var71);
+      var71 = new String[]{"Akut uterin hipertonus veya fetal distress durumunda uterus gevşetmek için hızlıca SC veya IV verilebilir.", "Maternal taşikardi, çarpıntı, hiperglisemi ve hipokalemi yapabilir."};
+      var0[18] = new Drug("terbutaline", "Terbutalin", "Terbutaline", "Terbutaline", var10008, "obstetric", (String)null, "Beta-2 Selektif Agonist (Bronkodilatör ve Tokolitik)", "Miyometriyumdaki Beta-2 reseptörlerini uyararak intrasellüler cAMP'yi artırır ve uterus gevşemesini (tokoliz) sağlar.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var71), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      var10013 = MapsKt.mapOf(TuplesKt.to("cerrahi_profilaksi", new DoseInfo("1.0 - 2.0 g IV", "Cerrahi insizyondan 30-60 dakika önce uygulanmalıdır (Hasta ağırlığı >120 kg ise 3.0 g önerilir).")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("cerrahi_profilaksi", new DoseInfo("30 mg/kg IV", "İnsizyondan 30-60 dakika önce yavaş bolus enjeksiyon.")));
+      Pair[] var74 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde (eGFR < 30) profilaksi sonrası ek doz aralıkları uzatılmalıdır."), TuplesKt.to("karaciger_yetmezligi", "Doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Obez hastalarda doku konsantrasyonunu sağlamak için 3.0 g doz tercih edilmelidir."), TuplesKt.to("geriatri", "Genellikle iyi tolere edilir, böbrek fonksiyonları izlenmelidir.")};
+      var10015 = MapsKt.mapOf(var74);
+      var10017 = CollectionsKt.listOf("Sefalosporin grubu antibiyotiklere karşı bilinen aşırı duyarlılık");
+      String[] var75 = new String[]{"Penisilin alerjisi olan hastalarda çapraz duyarlılık riski (%1-10) göz önünde bulundurulmalıdır.", "Hızlı IV bolus uygulamalarında bulantı ve kusma yapabilir."};
+      var10018 = CollectionsKt.listOf(var75);
+      var75 = new String[]{"Cerrahi kesiden 30-60 dakika önce verilmelidir.", "Cerrahi 4 saati aşarsa veya masif kanama (>1500 mL) varsa intraoperatif doz tekrarlanmalıdır."};
+      var0[19] = new Drug("cefazolin", "Sefazolin", "Cefazolin", "Cefazolin", var10008, "antibiotic", (String)null, "Birinci Kuşak Sefalosporin (Antibiyotik)", "Bakteri hücre duvarı sentezini inhibe eder, cerrahi profilaksinin temel ilacıdır.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var75), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      var10008 = CollectionsKt.emptyList();
+      var10013 = MapsKt.mapOf(TuplesKt.to("cerrahi_profilaksi", new DoseInfo("1.5 g IV", "Cerrahi insizyondan 30-60 dakika önce yavaş infüzyon şeklinde uygulanır.")));
+      var10014 = MapsKt.mapOf(TuplesKt.to("cerrahi_profilaksi", new DoseInfo("30 mg/kg IV", "İnsizyondan 30-60 dakika önce yavaş bolus enjeksiyon.")));
+      Pair[] var77 = new Pair[]{TuplesKt.to("renal_yetmezlik", "Böbrek yetmezliğinde (eGFR < 30) doz sıklığı azaltılmalıdır."), TuplesKt.to("karaciger_yetmezligi", "Karaciğer yetmezliğinde doz ayarlaması gerekmez."), TuplesKt.to("obezite", "Obezite hastalarında dozaj ayarlaması gerekmez."), TuplesKt.to("geriatri", "Yaşlılarda böbrek fonksiyonları izlenmelidir.")};
+      var10015 = MapsKt.mapOf(var77);
+      var10017 = CollectionsKt.listOf("Sefalosporin grubu antibiyotiklere karşı bilinen aşırı duyarlılık");
+      String[] var78 = new String[]{"Penisilin alerjisi olan hastalarda çapraz duyarlılık riski (%1-10) göz önünde bulundurulmalıdır.", "Hızlı IV bolus uygulamalarında bulantı ve kusma yapabilir."};
+      var10018 = CollectionsKt.listOf(var78);
+      var78 = new String[]{"Gram negatif spektrumu sefazolinden biraz daha geniştir.", "Aşırı duyarlılık öyküsü kontrol edilmelidir."};
+      var0[20] = new Drug("cefuroxime", "Sefuroksim", "Cefuroxime", "Cefuroxime", var10008, "antibiotic", (String)null, "İkinci Kuşak Sefalosporin (Antibiyotik)", "Bakteri hücre duvarı sentezini inhibe eder.", var10013, var10014, var10015, (PharmacokineticsInfo)null, var10017, var10018, (List)null, (List)null, CollectionsKt.listOf(var78), (String)null, (String)null, (Double)null, (Double)null, (Double)null, (List)null, (String)null, (String)null, false, false, 201162816, (DefaultConstructorMarker)null);
+      drugsList = CollectionsKt.listOf(var0);
+      $stable = 8;
+   }
+}

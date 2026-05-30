@@ -1,0 +1,469 @@
+Total base items: 468
+ID: asa | TR: Asa sınıf | EN: Physical status
+ID: npo | TR: Açlık | EN: Preoperative Fasting Guidelines (NPO)
+ID: rsi | TR: Rsi | EN: Rapid Sequence Induction (RSI)
+ID: difficult_airway | TR: Zor havayolu | EN: Difficult airway
+ID: failed_intubation | TR: Başarısız entübasyon | EN: Mask ventilation possible
+ID: cico | TR: Cico | EN: Ventile edemiyorum
+ID: desaturation | TR: Satürasyon düş | EN: Falling spo2
+ID: high_pressure | TR: Yüksek havayolu | EN: Peak airway
+ID: bronchospasm | TR: Bronkospazm | EN: Wheezing
+ID: laryngospasm | TR: Laringospazm | EN: Laryngospasm
+ID: hypotension | TR: Hipotansiyon | EN: Tansiyon düştü
+ID: anaphylaxis | TR: Anafilaksi | EN: Allergy
+ID: malignant_hyperthermia | TR: Malign hipertermi | EN: Malignant hyperthermia
+ID: last | TR: Last | EN: Lokal anestezik
+ID: cardiac_arrest | TR: Kardiyak arrest | EN: Cardiac arrest
+ID: bradycardia | TR: Bradikardi | EN: Nabız düşük
+ID: tachycardia | TR: Taşikardi | EN: Nabız yüksek
+ID: aspiration | TR: Aspirasyon | EN: Akciğere kaç
+ID: massive_bleeding | TR: Masif kanama | EN: Kanama
+ID: rotem | TR: Rotem | EN: Tromboelastometri
+ID: warfarin | TR: Warfarin | EN: Epidural
+ID: clopidogrel | TR: Klopidogrel | EN: Plavix
+ID: epidural_hematoma | TR: Epidural hematom | EN: Motor defisit
+ID: ponv | TR: Ponv | EN: Vomiting
+ID: opioid_respiratory | TR: Solunum depresyonu | EN: Naloxone
+ID: sugammadex | TR: Sugammadeks | EN: Bridion
+ID: la_max_dose | TR: Maksimum doz | EN: Lokal anestezik limit
+ID: dantrolene_vials | TR: Kaç flakon | EN: Dantrolene vials
+ID: lipid | TR: Lipid | EN: Intralipid
+ID: ards | TR: Koruyucu ventilasyon | EN: Ards
+ID: sepsis | TR: Sepsis | EN: Septic shock
+ID: hyperkalemia | TR: Hiperkalemi | EN: Potasyum
+ID: pediatric_tube | TR: Pediatrik tüp | EN: Pediatric tube
+ID: abl | TR: Izin verilebilir kan | EN: Abl
+ID: maintenance_fluid | TR: Maintenance fluid | EN: Maintenance fluid
+ID: perioperative_hypertension | TR: Perioperatif hipertansiyon | EN: Kan basıncı yüksek
+ID: hypertension_postponement | TR: Ameliyat ertelenmeli mi | EN: Tansiyon yüksek ertele
+ID: diabetes_glucose | TR: Diyabetik | EN: Diyabet
+ID: hypoglycemia | TR: Hipoglisemi | EN: Şeker düştü
+ID: sglt2_inhibitors | TR: Sglt2 | EN: Ketoacidosis
+ID: pacemaker_prep | TR: Pacemaker | EN: Cihaz kontrolü
+ID: electrocautery_interference | TR: Koter | EN: Girişim
+ID: preeclampsia_anesthesia | TR: Preeklampsi | EN: Pregnancy tansiyonu
+ID: eclampsia_seizure | TR: Eklampsi nöbeti | EN: Nöbet
+ID: postpartum_hemorrhage | TR: Postpartum hemoraji | EN: Uterotonik
+ID: maternal_arrest | TR: Gebede arrest | EN: Perimortem sezaryen
+ID: pediatric_bradycardia | TR: Pediatrik bradikardi | EN: Vagal bradikardi
+ID: pediatric_uri | TR: Üsye | EN: Runny nose child
+ID: pediatric_laryngospasm | TR: Pediatrik laringospazm | EN: Pediatric laryngospasm
+ID: preterm_apnea | TR: Prematüre | EN: Postkonseptüel
+ID: olv_hypoxemia | TR: Tek akciğer | EN: Torasik
+ID: laparoscopy_hypercapnia | TR: Laparoskopide etco2 | EN: Etco2 yükseldi
+ID: co2_embolism | TR: Co2 embolisi | EN: Karbondioksit emboli
+ID: tension_pneumothorax | TR: Tansiyon pnömotoraks | EN: Iğne dekompresyon
+ID: postoperative_delirium | TR: Postoperatif deliryum | EN: Pacu delirium
+ID: delayed_emergence | TR: Gecikmiş uyanma | EN: Not waking
+ID: postoperative_shivering | TR: Postoperatif titreme | EN: Meperidin
+ID: perioperative_hypothermia | TR: Perioperatif hipotermi | EN: Hypothermia perioperative
+ID: myocardial_ischemia | TR: Miyokard iskemisi | EN: St depresyonu
+ID: pulmonary_hypertension_crisis | TR: Pulmoner hipertansiyon krizi | EN: Sağ ventrikül yetmezliği
+ID: aortic_stenosis | TR: Aort darlığı | EN: As anestezi
+ID: mitral_stenosis | TR: Mitral darlığı | EN: Ms anestezi
+ID: turp_syndrome | TR: Turp sendromu | EN: Turp hiponatremi
+ID: hyponatremia | TR: Hiponatremi | EN: Hipertonik salin
+ID: equipment_failure | TR: Ekipman arızası | EN: Equipment failure
+ID: osas_anesthesia | TR: Osas hastasında | EN: Sleep apnea
+ID: osas_ambulatory | TR: Osas günübirlik | EN: Ambulatory osa
+ID: obese_induction | TR: Obez hastada indüksiyon | EN: Obese airway
+ID: bariatric_anesthesia | TR: Bariatrik cerrahi | EN: Bariatric anesthesia
+ID: ambulatory_discharge | TR: Günübirlik taburculuk | EN: Aldrete taburcu
+ID: chronic_opioid_pain | TR: Kronik opioid | EN: Opioid tolerans
+ID: alcohol_benzodiazepine_dep | TR: Alkol bağımlılığı | EN: Benzodiazepine withdrawal
+ID: renal_failure_anesthesia | TR: Böbrek yetmezliği | EN: Renal failure
+ID: dialysis_timing | TR: Diyaliz hastası | EN: Dialysis timing
+ID: liver_failure_anesthesia | TR: Karaciğer yetmezliği | EN: Liver failure
+ID: cirrhosis_regional | TR: Sirozda rejyonal | EN: Cirrhosis spinal
+ID: steroid_stress_dose | TR: Kronik steroid | EN: Adrenal supresyon
+ID: adrenal_crisis | TR: Adrenal kriz | EN: Akut adrenal
+ID: hyperthyroidism_anesthesia | TR: Hipertiroidi | EN: Thyrotoxicosis
+ID: thyroid_storm | TR: Tiroid fırtınası | EN: Fırtınası
+ID: hypothyroidism_postponement | TR: Hipotiroidi | EN: Myxedema
+ID: pheochromocytoma_anesthesia | TR: Feokromositoma | EN: Kriz feo
+ID: raised_icp_anesthesia | TR: Kafa içi basıncı | EN: Serebral perfüzyon
+ID: tbi_anesthesia | TR: Travmatik beyin | EN: Beyin hasarı
+ID: prone_position_anesthesia | TR: Prone pozisyon | EN: Yüz üstü
+ID: beach_chair_map | TR: Oturur pozisyon | EN: Hydrostatic correction
+ID: lithotomy_complications | TR: Litotomi pozisyon | EN: Litotomi komplikasyon
+ID: burn_fluid_parkland | TR: Yanık hastasında sıvı | EN: Parkland formula
+ID: burn_succinylcholine | TR: Yanıkta süksinilkolin | EN: Extrajunctional
+ID: trauma_induction | TR: Travma hastasında indüksiyon | EN: Cervical spine injury
+ID: shock_index_interpretation | TR: Şok indeksi | EN: Şok index
+ID: preop_ace_arb_morning | TR: Ace inhibitörü | EN: Antihipertansif sabah
+ID: preop_beta_blockers | TR: Beta bloker perioperatif | EN: Beta bloker kullanan
+ID: preop_antidepressants | TR: Antidepresan kullanan | EN: Antidepressant morning
+ID: preop_herbal_supplements | TR: Bitkisel ürün | EN: Ginseng
+ID: myasthenia_gravis_anesthesia | TR: Myastenia | EN: Myastenik kriz
+ID: myasthenic_vs_cholinergic_crisis | TR: Kolinerjik kriz | EN: Kolinerjik kriz
+ID: muscular_dystrophy_anesthesia | TR: Musküler distrofi | EN: Kas hastalığı
+ID: parkinsons_anesthesia | TR: Parkinson | EN: Dopamin agonisti
+ID: epilepsy_anesthesia | TR: Epilepsi | EN: Antiepileptik
+ID: dementia_delirium_anesthesia | TR: Demans | EN: Deliryum riski
+ID: non_obstetric_pregnancy_surgery | TR: Gebede non obstetrik | EN: Pregnant surgery
+ID: neonatal_anesthesia_risks | TR: Yenidoğan | EN: Neonate
+ID: difficult_extubation_plan | TR: Zor ekstübasyon | EN: Airway exchange catheter
+ID: post_extubation_stridor | TR: Upper airway obstruction | EN: Upper airway obstruction
+ID: tracheostomy_emergency | TR: Trakeostomi | EN: Dislodged tracheostomy
+ID: laryngectomy_stoma_management | TR: Larenjektomi | EN: Neck breather
+ID: airway_fire_response | TR: Hava yolu yangını | EN: Airway fire
+ID: mri_anesthesia_safety | TR: Mri anestezi | EN: Mri anesthesia
+ID: ect_anesthesia_management | TR: Ekt | EN: Electroconvulsive therapy
+ID: oculocardiac_reflex_emergency | TR: Okülokardiyak | EN: Eye bradycardia
+ID: post_tonsillectomy_hemorrhage | TR: Tonsillectomy bleeding | EN: Tonsillectomy bleeding
+ID: robotic_steep_trendelenburg | TR: Robotik cerrahi | EN: Docking
+ID: turbt_obturator_reflex | TR: Turbi | EN: Obturator refleks
+ID: bladder_perforation_management | TR: Mesane perforasyonu | EN: Bladder perforation
+ID: malignant_hyperthermia_safe_anesthesia | TR: Malign hipertermi öyküsü | EN: Mh susceptible
+ID: latex_allergy_management | TR: Lateks | EN: Latex allergy
+ID: liver_transplantation_anesthesia | TR: Karaciğer transplant | EN: Reperfusion syndrome
+ID: renal_transplantation_anesthesia | TR: Renal transplant | EN: Graft perfusion
+ID: immunosuppressed_patient_management | TR: Immünsüpresyon | EN: Cyclosporine
+ID: chemotherapy_preop_assessment | TR: Kemoterapi | EN: Kanser ilacı
+ID: radiotherapy_head_neck_airway | TR: Radyoterapi | EN: Difficult airway radiotherapy
+ID: sickle_cell_anesthesia | TR: Orak hücre | EN: Acute chest syndrome
+ID: porphyria_safe_anesthesia | TR: Porfiri | EN: Porphyria
+ID: methemoglobinemia_treatment | TR: Methemoglobinemi | EN: Prilocaine cyanosis
+ID: beta_blocker_toxicity | TR: Beta bloker toksisitesi | EN: Beta bloker zehirlenmesi
+ID: calcium_channel_blocker_toxicity | TR: Kalsiyum kanal bloker toksisitesi | EN: Kalsiyum zehirlenmesi
+ID: non_last_lipid_emulsion | TR: Non last lipid emulsion | EN: Non last lipid emulsion
+ID: hypocalcemia_massive_transfusion | TR: Hipokalsemi | EN: Massive transfusion calcium
+ID: hypomagnesemia_torsades | TR: Torsades | EN: Hypomagnesemia
+ID: shock_differential_diagnosis | TR: Şok tipi | EN: Shock differentiation
+ID: septic_shock_management | TR: Septik şok | EN: Vasopressor choice
+ID: ecmo_anesthesia_management | TR: Ecmo | EN: Vv ecmo
+ID: transplant_recipient_non_transplant_surgery | TR: Organ nakilli | EN: Transplant recipient
+ID: pediatric_emergency_drug_dosing | TR: Pediatrik acil doz | EN: Pediatric drug dose
+ID: endocarditis_prophylaxis | TR: Endokardit profilaksisi | EN: Kapak protezi
+ID: antibiotic_prophylaxis_timing | TR: Antibiyotik profilaksisi | EN: Sefazolin zamanı
+ID: dental_procedural_sedation | TR: Dental sedasyon | EN: Diş sedasyonu
+ID: shared_airway_ent | TR: Ent cerrahisi | EN: Lazer havayolu
+ID: awake_craniotomy_sedation | TR: Awake craniotomy | EN: Scalp block
+ID: neuromonitoring_anesthesia | TR: Nöromonitörizasyon | EN: Somatosensory
+ID: electrophysiology_ablation_sedation | TR: Elektrofizyoloji | EN: Ep ablasyon
+ID: cardioversion_sedation | TR: Kardiyoversiyon sedasyon | EN: Kardiyoversiyon sedasyon
+ID: epidural_test_dose | TR: Epidural test doz | EN: Epidural test doz
+ID: failed_epidural_troubleshooting | TR: Epidural çalışmıyor | EN: Patchy blok
+ID: intrathecal_opioid_monitoring | TR: Intratekal morfin | EN: Geç solunum depresyonu
+ID: morbid_obese_extubation | TR: Morbid obez ekstübasyon | EN: Zor ekstübasyon obez
+ID: postop_icu_admission_criteria | TR: Postop yoğun bakım | EN: Icu kabul
+ID: difficult_iv_access | TR: Zor damar yolu | EN: Intraosseöz
+ID: central_line_ultrasound | TR: Santral kateter | EN: Santral venöz
+ID: central_line_arterial_puncture | TR: Arter ponksiyonu | EN: Kateter arterde
+ID: central_line_pneumothorax | TR: Santral sonrası pnömotoraks | EN: Santral sonrası pnömotoraks
+ID: arterial_line_complications | TR: Arter hattı | EN: Distal iskemi
+ID: venous_air_embolism_management | TR: Venöz hava embolisi | EN: Etco2 düştü
+ID: hfnc_perioperative_use | TR: Hfnc | EN: Yüksek akım oksijen
+ID: niv_cpap_postoperative | TR: Niv | EN: Noninvaziv ventilasyon
+ID: nora_safety_protocols | TR: Nora | EN: Mri sedasyon
+ID: sedation_capnography_need | TR: Sedasyon derinleşti | EN: Capnography sedasyon
+ID: sedation_overdeepening_emergency | TR: Anestezi derinleşti | EN: Beklenmeyen derinleşme
+ID: contrast_media_reaction | TR: Kontrast reaksiyonu | EN: Radyoloji sedasyonu
+ID: coronary_stent_timing | TR: Koroner stent | EN: Coronary stent
+ID: dapt_management | TR: Dual antiplatelet | EN: Plavix kullanan
+ID: mechanical_valve_bridging | TR: Mekanik kapak | EN: Kapak protezi
+ID: doac_emergency_surgery | TR: Doac acil | EN: Doac
+ID: obstetric_thrombocytopenia_neuraxial | TR: Gebede trombosit | EN: Neuraxial thrombocytopenia
+ID: hellp_anesthesia | TR: Hellp | EN: Hellp anestezi
+ID: amniotic_fluid_embolism_suspected | TR: Amniyotik sıvı embolisi | EN: Amniotic fluid embolism
+ID: jehovah_blood_refusal | TR: Jehovah | EN: Refuses blood
+ID: preoperative_anemia_management | TR: Preoperatif anemi | EN: Preoperative anemia
+ID: thrombocytopenia_surgery_block | TR: Trombositopeni cerrahi | EN: Thrombocytopenia block
+ID: local_anesthetic_allergy_history | TR: Lokal anestezik alerji | EN: Local anesthetic allergy
+ID: antibiotic_allergy_cefazolin | TR: Antibiyotik alerji | EN: Cephalosporin allergy
+ID: perioperative_urticaria | TR: Ürtiker | EN: Perioperative rash
+ID: bronchoscopy_sedation_safety | TR: Bronkoskopi sedasyon | EN: Bronchoscopy sedation
+ID: gi_endoscopy_sedation_safety | TR: Endoskopi sedasyon | EN: Gastroscopy sedation
+ID: ercp_prone_sedation_safety | TR: Ercp sedasyon | EN: Ercp prone
+ID: ebus_rigid_bronchoscopy | TR: Ebus | EN: Ebus anestezi
+ID: tracheal_stent_anesthesia | TR: Trakeal stent | EN: Stent migrasyon
+ID: mediastinal_mass_collapse_risk | TR: Mediastinal kitle | EN: Ortopne kitle
+ID: anticoagulated_peripheral_block | TR: Antikoagülan periferik | EN: Anticoagulated peripheral
+ID: pyloric_stenosis_anesthesia | TR: Pilor stenozu | EN: Hipertrofik pilor
+ID: neonatal_resuscitation_2025 | TR: Neonatal resüsitasyon | EN: Canlandırma
+ID: neonatal_hypoglycemia_management | TR: Neonatal hipoglisemi | EN: Gir
+ID: neonatal_hypothermia_prevention | TR: Neonatal hipotermi | EN: Prematüre sargı
+ID: congenital_heart_disease_noncardiac | TR: Doğumsal kalp | EN: Şant
+ID: down_syndrome_anesthesia | TR: Down sendromu | EN: Makroglossi
+ID: cerebral_palsy_anesthesia | TR: Serebral palsi | EN: Baclofen
+ID: autism_spectrum_anesthesia | TR: Otizm | EN: Premedikasyon
+ID: malignant_hyperthermia_differential | TR: Malign hipertermi ayırıcı | EN: Mh benzeri
+ID: perioperative_fever_management | TR: Perioperatif ateş | EN: Ateşlendi
+ID: smoke_inhalation_injury | TR: Duman inhalasyonu | EN: Solunum yanığı
+ID: carbon_monoxide_poisoning | TR: Karbonmonoksit | EN: Cohb
+ID: cyanide_poisoning | TR: Siyanür | EN: Hidroksokobalamin
+ID: local_anesthetic_max_dose_details | TR: Lokal anestezik maksimum | EN: Local anesthetic max dose
+ID: regional_nerve_injury | TR: Rejyonal sinir hasarı | EN: Nerve injury block
+ID: compartment_syndrome_emergency | TR: Kompartman sendromu | EN: 5p
+ID: frequent_block_complications | TR: Sık blok komplikasyon | EN: Frequent block complication
+ID: pediatric_tef_anesthesia | TR: Trakeoözofageal | EN: Vacterl
+ID: pediatric_cdh_anesthesia | TR: Diyafram hernisi | EN: Pip limiti
+ID: cauda_equina_syndrome_regional | TR: Kauda eki | EN: Saddle anesthesia
+ID: advanced_heart_failure_anesthesia | TR: Ileri kalp yetmezliği | EN: Advanced heart failure
+ID: right_ventricular_failure_anesthesia | TR: Sağ ventrikül yetmezliği | EN: Rv failure
+ID: lvad_patient_anesthesia | TR: Lvad hastası | EN: Vad
+ID: lvad_low_flow_alarm | TR: Düşük akım alarmı | EN: Lvad alarm
+ID: iabp_anesthesia | TR: Iabp anesthesia | EN: Iabp anesthesia
+ID: impella_anesthesia | TR: Impella | EN: Mechanical circulatory support
+ID: fontan_physiology_anesthesia | TR: Fontan | EN: Single ventricle
+ID: pulmonary_embolism_suspicion | TR: Pulmoner emboli şüphesi | EN: Etco2 ani düştü
+ID: massive_pe_arrest_acls | TR: Masif pulmoner emboli | EN: Massive pulmonary embolism
+ID: cardiac_tamponade_anesthesia | TR: Kardiyak tamponad | EN: Cardiac tamponade
+ID: status_asthmaticus_ventilation | TR: Status astmatikus | EN: Air trapping
+ID: copd_exacerbation_anesthesia | TR: Koah alevlenme | EN: Co2 retention
+ID: interstitial_lung_disease | TR: Interstisyel akciğer | EN: Pulmonary fibrosis
+ID: postoperative_pulmonary_edema | TR: Postoperatif pulmoner ödem | EN: Pulmonary edema
+ID: negative_pressure_pulmonary_edema | TR: Negatif basınçlı pulmoner ödem | EN: Pink frothy
+ID: reexpansion_pulmonary_edema | TR: Pulmonary edema after pleural drainage | EN: Pulmonary edema after pleural drainage
+ID: tracheomalacia_anesthesia | TR: Trakeomalazi | EN: Dynamic airway collapse
+ID: vocal_cord_paralysis | TR: Vokal kord paralizisi | EN: Stridor
+ID: difficult_mask_ventilation | TR: Zor maske ventilasyonu | EN: Difficult mask ventilation
+ID: supraglottic_airway_failure | TR: Lma başarısız | EN: Supraglottik airway başarısız
+ID: abg_interpretation | TR: Kan gazı | EN: Kan gazı yorumlama
+ID: metabolic_acidosis | TR: Metabolik asidoz | EN: Metabolic acidosis
+ID: anion_gap | TR: Anion gap | EN: Anyon acigi
+ID: lactate_elevation | TR: Laktat yüksekliği | EN: Lactic acidosis
+ID: respiratory_acidosis | TR: Respiratuvar asidoz | EN: Hypercapnia
+ID: respiratory_alkalosis | TR: Respiratuvar alkaloz | EN: Hiperventilasyon
+ID: metabolic_alkalosis | TR: Metabolik alkaloz | EN: Metabolic alkalosis
+ID: hypoxemia_aa_gradient | TR: Aa gradient | EN: Oksijen gradyanı
+ID: oliguria | TR: Oligüri | EN: Idrar cikisi dusuk
+ID: aki_prevention | TR: Aki önleme | EN: Akut bobrek hasari onleme
+ID: contrast_nephropathy | TR: Kontrast nefropatisi | EN: Kontrast bobrek
+ID: rhabdomyolysis | TR: Rabdomiyoliz | EN: Myoglobinuri
+ID: ponv_rescue | TR: Ponv rescue | EN: Bulanti kusma kurtarici
+ID: postop_pain_ladder | TR: Postoperatif ağrı | EN: Postoperative pain
+ID: pca_settings | TR: Pca morfin | EN: Pca
+ID: epidural_motor_block | TR: Epidural motor blok | EN: Epidural motor block
+ID: epidural_inadequacy | TR: Epidural yetersizlik | EN: Epidural inadequacy
+ID: ketamine_infusion | TR: Ketamin infüzyonu | EN: Ketamine infusion
+ID: lidocaine_infusion | TR: Iv lidokain | EN: Lidocaine infusion
+ID: dexmedetomidine_infusion | TR: Deksmedetomidin infüzyonu | EN: Deksmedetomidin
+ID: medication_dose_error | TR: Ilaç doz hatası | EN: Wrong dose
+ID: wrong_drug_administration | TR: Yanlış ilaç | EN: Drug error
+ID: extravasation | TR: Ekstravazasyon | EN: Extravasation
+ID: vasopressor_extravasation | TR: Vazopressör ekstravazasyonu | EN: Norepinephrine extravasation
+ID: propofol_infusion_syndrome | TR: Propofol infüzyon sendromu | EN: Propofol rhabdomyolysis
+ID: opioid_rotation | TR: Opioid rotasyonu | EN: Opioid conversion
+ID: nsaid_contraindications | TR: Nsaid kontrendikasyon | EN: Ibuprofen renal
+ID: paracetamol_toxicity | TR: Parasetamol toksisitesi | EN: N acetylcysteine
+ID: tramadol_seizure_serotonin_risk | TR: Tramadol nöbet | EN: Serotonin syndrome
+ID: steroid_hyperglycemia | TR: Steroid hiperglisemi | EN: Dexamethasone hyperglycemia
+ID: renally_adjusted_antibiotic_dosing | TR: Antibiyotik doz ayarı | EN: Vancomycin level
+ID: vancomycin_infusion_reaction | TR: Vankomisin reaksiyonu | EN: Vancomycin hypotension
+ID: anaphylaxis_allergy_workup | TR: Perioperatif anafilaksi sonrası | EN: Anesthesia allergy testing
+ID: intraoperative_awareness_prevention | TR: Intraoperatif farkındalık | EN: Awareness
+ID: awareness_suspicion_followup | TR: Awareness suspicion followup | EN: Awareness suspicion followup
+ID: bis_processed_eeg_use | TR: Bis | EN: Depth of anesthesia
+ID: burst_suppression_deep_anesthesia | TR: Burst suppression | EN: Deep anesthesia
+ID: postoperative_cognitive_dysfunction | TR: Postoperatif kognitif | EN: Postoperative neurocognitive disorder
+ID: frailty_geriatric_anesthesia | TR: Frailty | EN: Frail patient
+ID: geriatric_anesthetic_dosing | TR: Geriyatrik anestezi | EN: Geriatric anesthesia
+ID: functional_capacity_mets | TR: Fonksiyonel kapasite | EN: Exercise capacity
+ID: dasi_score | TR: Dasi | EN: Climb stairs
+ID: rcri_practical_use | TR: Rcri | EN: Cardiac risk
+ID: bnp_nt_probnp_use | TR: Bnp nt probnp use | EN: Bnp nt probnp use
+ID: postoperative_troponin_mins | TR: Postop troponin | EN: Troponin
+ID: active_cardiac_conditions | TR: Aktif kardiyak durum | EN: Active cardiac condition
+ID: smoking_cessation | TR: Sigara bırakma | EN: Preoperative smoking
+ID: preoperative_anemia_optimization | TR: Preoperatif anemi | EN: Iv iron
+ID: glp1_agonist_management | TR: Semaglutid | EN: Mounjaro
+ID: gastric_emptying_full_stomach | TR: Mide boşalması | EN: Gastric ultrasound
+ID: sglt2_inhibitor_stopping | TR: Sglt2 | EN: Euglycemic dka
+ID: chronic_steroid_stress_dose | TR: Kronik steroid | EN: Hydrocortisone coverage
+ID: antikoagülan_interruption_general | TR: Antikoagülan interruption general | EN: Antikoagülan interruption general
+ID: warfarin_bridging_approach | TR: Bridging | EN: Vte bridging
+ID: ambulatory_surgery_red_flags | TR: Günübirlik red flag | EN: Ambulatory surgery risk
+ID: prehabilitation | TR: Prehabilitasyon | EN: Prehabilitation
+ID: eras_basic_approach | TR: Eras | EN: Early recovery
+ID: eras_fluid_management | TR: Eras fluid management | EN: Eras fluid management
+ID: eras_opioid_sparing_analgesia | TR: Eras analjezi | EN: Opioid sparing
+ID: surgery_postponement_optimization | TR: Erteleme | EN: Optimization postponement
+ID: preoperative_airway_evaluation | TR: Havayolu değerlendirme | EN: Airway assessment
+ID: mallampati_limitations | TR: Mallampati | EN: Upper lip bite
+ID: mouth_opening_thyromental | TR: Thyromental | EN: Mouth opening
+ID: awake_intubation_indications | TR: Uyanık entübasyon | EN: Awake intubation
+ID: awake_fiberoptic_preparation | TR: Awake fiberoptik | EN: Topical lidocaine
+ID: awake_intubation_sedation_complication | TR: Uyanık entübasyonda sedasyon | EN: Sedation during awake intubation
+ID: videolaringoskop_failure | TR: Videolaringoskop başarısız | EN: Videolaryngoscope failure
+ID: intubation_attempt_limit | TR: Entübasyon deneme sayısı | EN: Number of attempts
+ID: intubation_confirmation | TR: Entübasyon doğrulama | EN: No etco2
+ID: esophageal_intubation_suspicion | TR: Özofageal entübasyon | EN: Esophageal intubation
+ID: endobronchial_intubation | TR: Endobronşiyal entübasyon | EN: Right main bronchus
+ID: ett_depth | TR: Tüp derinliği | EN: Tube depth
+ID: pediatric_tube_size | TR: Pediatrik tüp boyutu | EN: Pediatric tube size
+ID: cuff_pressure_safety | TR: Cuff basıncı | EN: 20 30 cmh2o
+ID: cuff_leak_test | TR: Cuff leak test | EN: Kaçak testi
+ID: extubation_checklist | TR: Ekstübasyon checklist | EN: Before extubation
+ID: post_extubation_monitoring | TR: Ekstübasyon sonrası takip | EN: Post extubation monitoring
+ID: aspiration_prophylaxis | TR: Aspirasyon profilaksisi | EN: Metoclopramide
+ID: rapid_sequence_induction | TR: Hızlı seri indüksiyon | EN: Rapid sequence induction
+ID: modified_rsi | TR: Modifiye rsi | EN: Modified rsi
+ID: cricoid_pressure | TR: Krikoid bası | EN: Cricoid pressure
+ID: regurgitation_during_induction | TR: Regürjitasyon | EN: Vomiting during induction
+ID: post_aspiration_management | TR: Aspirasyon oldu | EN: After aspiration
+ID: nasal_intubation | TR: Nazal entübasyon | EN: Magill forceps
+ID: surgical_airway_preparation | TR: Cerrahi havayolu hazırlığı | EN: Surgical airway preparation
+ID: lung_protective_ventilation | TR: Akciğer koruyucu ventilasyon | EN: Mechanical ventilation
+ID: predicted_body_weight_tidal_volume | TR: Predicted body weight | EN: Ideal body weight
+ID: plateau_pressure | TR: Plato basıncı | EN: Plateau pressure
+ID: peak_pressure_high_plateau_normal | TR: Peak basınç | EN: Plato basıncı normal
+ID: peak_plateau_both_high | TR: Peak ve plato | EN: Both peak and plateau
+ID: driving_pressure | TR: Driving pressure | EN: Sürüş basıncı
+ID: peep_titration | TR: Peep titrasyonu | EN: Peep setting
+ID: recruitment_maneuver | TR: Recruitment manevrası | EN: Alveolar recruitment
+ID: auto_peep | TR: Hava hapsi | EN: Air trapping
+ID: ventilator_waveform_analysis | TR: Flow time | EN: Ventilator waveform
+ID: vcv_vs_pcv_modes | TR: Volüm kontrollü | EN: Volume control
+ID: prone_position_ventilation | TR: Prone ventilasyon | EN: Prone ventilation
+ID: one_lung_ventilation_basics | TR: Tek akciğer ventilasyonu temel | EN: One lung ventilation basics
+ID: olv_hypoxemia | TR: Tek akciğer | EN: Torasik
+ID: double_lumen_tube_selection | TR: Çift lümen tüp seçimi | EN: Double lumen tube selection
+ID: dlt_position_confirmation | TR: Çift lümen tüp yerleşim | EN: Dlt yer tespiti
+ID: bronchial_blocker_use | TR: Bronşiyal bloker | EN: Bronchial blocker
+ID: bronchial_blocker_malposition | TR: Bronşiyal bloker malpozisyon | EN: Blocker malposition
+ID: postoperative_ventilator_weaning | TR: Postop ventilatörden ayırma | EN: Ventilator weaning
+ID: spontaneous_breathing_trial | TR: Spontan solunum denemesi | EN: Spontaneous breathing trial
+ID: extubation_failure_management | TR: Ekstübasyon başarısızlığı | EN: Extubation failure
+ID: postoperative_hypercapnia | TR: Postop hiperkapni | EN: Karbondioksit yüksekliği
+ID: patient_ventilator_asynchrony | TR: Hasta ventilatör uyumsuzluğu | EN: Asenkroni
+ID: ventilator_alarm_failure | TR: Ventilatör alarmı | EN: Loss of ventilation
+ID: post_extubation_hfnc_niv | TR: Ekstübasyon sonrası hfnc | EN: Post extubation cpap
+ID: regional_anesthesia_safety | TR: Periferik sinir bloğu | EN: Peripheral nerve block
+ID: ultrasound_guided_block | TR: Ultrason eşliğinde blok | EN: Ultrasound guided block
+ID: interscalene_block | TR: Interskalen blok | EN: Interscalene block
+ID: supraclavicular_block | TR: Supraklaviküler blok | EN: Supraclavicular block
+ID: infraclavicular_block | TR: Infraklaviküler blok | EN: Infraclavicular block
+ID: axillary_block | TR: Aksiller blok | EN: Axillary block
+ID: pecs_serratus_block | TR: Pecs blok | EN: Pecs block
+ID: tap_block | TR: Tap blok | EN: Tap block
+ID: rectus_sheath_block | TR: Rektus kılıf bloğu | EN: Rectus sheath block
+ID: esp_block | TR: Esp blok | EN: Esp block
+ID: paravertebral_block | TR: Paravertebral blok | EN: Paravertebral block
+ID: ql_block | TR: Ql blok | EN: Ql block
+ID: fascia_iliaca_block | TR: Fasya iliaka | EN: Hip fracture block
+ID: femoral_block | TR: Femoral blok | EN: Femoral block
+ID: adductor_canal_block | TR: Adduktor kanal bloğu | EN: Adductor canal block
+ID: popliteal_sciatic_block | TR: Siyatik popliteal | EN: Popliteal block
+ID: ankle_block | TR: Ayak bileği bloğu | EN: Ankle block
+ID: spinal_anesthesia_approach | TR: Spinal anestezi yapmadan | EN: Spinal anesthesia prep
+ID: epidural_anesthesia_approach | TR: Epidural anestezi yaparken | EN: Epidural catheter
+ID: spinal_hypotension | TR: Spinal hipotansiyon | EN: Spinal hypotension
+ID: high_spinal_total_spinal | TR: Yüksek spinal | EN: High spinal
+ID: regional_block_failure | TR: Blok tutmadı | EN: Failed block
+ID: rebound_pain | TR: Rebound ağrı | EN: Rebound pain
+ID: peripheral_nerve_catheter | TR: Periferik sinir kateteri | EN: Local anesthetic infusion
+ID: anticoagulant_regional_block | TR: Antikoagülan blok | EN: Anticoagulant block
+ID: drug_dose_propofol | TR: Propofol dozu nedir? | EN: What is the dose of Propofol?
+ID: drug_dose_ketamine | TR: Ketamin dozu nedir? | EN: What is the dose of Ketamine?
+ID: drug_dose_etomidate | TR: Etomidat dozu nedir? | EN: What is the dose of Etomidate?
+ID: drug_dose_midazolam | TR: Midazolam dozu nedir? | EN: What is the dose of Midazolam?
+ID: drug_dose_fentanyl | TR: Fentanil dozu nedir? | EN: What is the dose of Fentanyl?
+ID: drug_dose_remifentanil | TR: Remifentanil dozu nedir? | EN: What is the dose of Remifentanil?
+ID: drug_dose_morphine | TR: Morfin dozu nedir? | EN: What is the dose of Morphine?
+ID: drug_dose_succinylcholine | TR: Süksinilkolin dozu nedir? | EN: What is the dose of Succinylcholine?
+ID: drug_dose_rocuronium | TR: Roküronyum dozu nedir? | EN: What is the dose of Rocuronium?
+ID: drug_dose_cisatracurium | TR: Sisatrakuryum dozu nedir? | EN: What is the dose of Cisatracurium?
+ID: drug_dose_ephedrine | TR: Efedrin dozu nedir? | EN: What is the dose of Ephedrine?
+ID: drug_dose_phenylephrine | TR: Fenilefrin dozu nedir? | EN: What is the dose of Phenylephrine?
+ID: drug_dose_norepinephrine | TR: Noradrenalin dozu nedir? | EN: What is the dose of Norepinephrine?
+ID: drug_dose_adrenaline | TR: Adrenalin dozu nedir? | EN: What is the dose of Epinephrine?
+ID: drug_dose_sugammadex | TR: Sugammadeks dozu nedir? | EN: What is the dose of Sugammadex?
+ID: drug_dose_neostigmine | TR: Neostigmin dozu nedir? | EN: What is the dose of Neostigmine?
+ID: drug_dose_atropine | TR: Atropin dozu nedir? | EN: What is the dose of Atropine?
+ID: drug_dose_glycopyrrolate | TR: Glikopirolat dozu nedir? | EN: What is the dose of Glycopyrrolate?
+ID: drug_dose_dexmedetomidine | TR: Deksmedetomidin dozu nedir? | EN: What is the dose of Dexmedetomidine?
+ID: drug_dose_sevoflurane | TR: Sevofluran dozu nedir? | EN: What is the dose of Sevoflurane?
+ID: drug_dose_lidocaine | TR: Lidokain dozu nedir? | EN: What is the dose of Lidocaine?
+ID: drug_dose_bupivacaine | TR: Bupivakain dozu nedir? | EN: What is the dose of Bupivacaine?
+ID: drug_dose_ropivacaine | TR: Ropivakain dozu nedir? | EN: What is the dose of Ropivacaine?
+ID: drug_dose_dantrolene | TR: Dantrolen dozu nedir? | EN: What is the dose of Dantrolene?
+ID: drug_dose_lipid_emulsion | TR: %20 Lipid Emülsiyonu dozu nedir? | EN: What is the dose of 20% Lipid Emulsion?
+ID: drug_dose_ondansetron | TR: Ondansetron dozu nedir? | EN: What is the dose of Ondansetron?
+ID: drug_dose_dexamethasone | TR: Deksametazon dozu nedir? | EN: What is the dose of Dexamethasone?
+ID: drug_dose_salbutamol | TR: Salbutamol dozu nedir? | EN: What is the dose of Albuterol / Salbutamol?
+ID: drug_dose_magnesium_sulfate | TR: Magnezyum Sülfat dozu nedir? | EN: What is the dose of Magnesium Sulfate?
+ID: drug_dose_tranexamic_acid | TR: Traneksamik Asit dozu nedir? | EN: What is the dose of Tranexamic Acid?
+ID: drug_dose_calcium_gluconate | TR: Kalsiyum Glukonat / Kalsiyum Klorür dozu nedir? | EN: What is the dose of Calcium Gluconate / Calcium Chloride?
+ID: drug_dose_sodium_bicarbonate | TR: Sodyum Bikarbonat dozu nedir? | EN: What is the dose of Sodium Bicarbonate?
+ID: drug_dose_naloxone | TR: Nalokson dozu nedir? | EN: What is the dose of Naloxone?
+ID: drug_dose_mivacurium | TR: Mivakuryum dozu nedir? | EN: What is the dose of Mivacurium?
+ID: drug_dose_pancuronium | TR: Pankuronyum dozu nedir? | EN: What is the dose of Pancuronium?
+ID: drug_dose_urapidil | TR: Urapidil dozu nedir? | EN: What is the dose of Urapidil?
+ID: drug_dose_dextrose | TR: Dekstroz (Glukoz) dozu nedir? | EN: What is the dose of Dextrose (Glucose)?
+ID: drug_dose_ampicillin_sulbactam | TR: Ampisilin-Sulbaktam dozu nedir? | EN: What is the dose of Ampicillin-Sulbactam?
+ID: drug_dose_vancomycin | TR: Vankomisin dozu nedir? | EN: What is the dose of Vancomycin?
+ID: drug_dose_clindamycin | TR: Klindamisin dozu nedir? | EN: What is the dose of Clindamycin?
+ID: drug_dose_gentamicin | TR: Gentamisin dozu nedir? | EN: What is the dose of Gentamicin?
+ID: drug_dose_metronidazole | TR: Metronidazol dozu nedir? | EN: What is the dose of Metronidazole?
+ID: drug_dose_furosemide | TR: Furosemid dozu nedir? | EN: What is the dose of Furosemide?
+ID: drug_dose_mannitol | TR: Mannitol dozu nedir? | EN: What is the dose of Mannitol?
+ID: drug_dose_hypertonic_saline | TR: Hipertonik Salin dozu nedir? | EN: What is the dose of Hypertonic Saline (3% NaCl)?
+ID: drug_dose_albumin | TR: Albumin (İnsan) dozu nedir? | EN: What is the dose of Albumin (Human)?
+ID: drug_dose_thiopental | TR: Tiyopental dozu nedir? | EN: What is the dose of Thiopental?
+ID: drug_dose_diazepam | TR: Diazepam dozu nedir? | EN: What is the dose of Diazepam?
+ID: drug_dose_lorazepam | TR: Lorazepam dozu nedir? | EN: What is the dose of Lorazepam?
+ID: drug_dose_desflurane | TR: Desfluran dozu nedir? | EN: What is the dose of Desflurane?
+ID: drug_dose_isoflurane | TR: İzofluran dozu nedir? | EN: What is the dose of Isoflurane?
+ID: drug_dose_nitrous_oxide | TR: Nitröz Oksit dozu nedir? | EN: What is the dose of Nitrous Oxide?
+ID: drug_dose_alfentanil | TR: Alfentanil dozu nedir? | EN: What is the dose of Alfentanil?
+ID: drug_dose_sufentanil | TR: Sufentanil dozu nedir? | EN: What is the dose of Sufentanil?
+ID: drug_dose_tramadol | TR: Tramadol dozu nedir? | EN: What is the dose of Tramadol?
+ID: drug_dose_meperidine | TR: Petidin (Meperidin) dozu nedir? | EN: What is the dose of Meperidine (Pethidine)?
+ID: drug_dose_paracetamol | TR: Parasetamol dozu nedir? | EN: What is the dose of Paracetamol (Acetaminophen)?
+ID: drug_dose_metamizole | TR: Metamizol (Novalgin) dozu nedir? | EN: What is the dose of Metamizole (Dipyrone)?
+ID: drug_dose_dexketoprofen | TR: Deksketoprofen dozu nedir? | EN: What is the dose of Dexketoprofen?
+ID: drug_dose_diclofenac | TR: Diklofenak dozu nedir? | EN: What is the dose of Diclofenac?
+ID: drug_dose_ibuprofen | TR: İbuprofen dozu nedir? | EN: What is the dose of Ibuprofen?
+ID: drug_dose_ketorolac | TR: Ketorolak dozu nedir? | EN: What is the dose of Ketorolac?
+ID: drug_dose_vecuronium | TR: Veküronyum dozu nedir? | EN: What is the dose of Vecuronium?
+ID: drug_dose_atracurium | TR: Atrakuryum dozu nedir? | EN: What is the dose of Atracurium?
+ID: drug_dose_flumazenil | TR: Flumazenil dozu nedir? | EN: What is the dose of Flumazenil?
+ID: drug_dose_ephedrine_systemic | TR: Ephedrine dozu nedir? | EN: What is the dose of Ephedrine?
+ID: drug_dose_phenylephrine_systemic | TR: Phenylephrine dozu nedir? | EN: What is the dose of Phenylephrine?
+ID: drug_dose_norepinephrine_noradrenaline | TR: Norepinephrine dozu nedir? | EN: What is the dose of Norepinephrine?
+ID: drug_dose_epinephrine_adrenaline_systemic | TR: Epinephrine dozu nedir? | EN: What is the dose of Epinephrine?
+ID: drug_dose_dobutamine | TR: Dobutamin dozu nedir? | EN: What is the dose of Dobutamine?
+ID: drug_dose_dopamine | TR: Dopamin dozu nedir? | EN: What is the dose of Dopamine?
+ID: drug_dose_vasopressin | TR: Vazopressin (Antidiüretik Hormon) dozu nedir? | EN: What is the dose of Vasopressin?
+ID: drug_dose_nitroglycerin_glyceryl_trinitrate | TR: Nitroglycerin dozu nedir? | EN: What is the dose of Nitroglycerin?
+ID: drug_dose_nitroprusside | TR: Sodyum Nitroprussid dozu nedir? | EN: What is the dose of Sodium Nitroprusside?
+ID: drug_dose_amiodarone | TR: Amiodarone dozu nedir? | EN: What is the dose of Amiodarone?
+ID: drug_dose_adenosine | TR: Adenozin dozu nedir? | EN: What is the dose of Adenosine?
+ID: drug_dose_esmolol | TR: Esmolol dozu nedir? | EN: What is the dose of Esmolol?
+ID: drug_dose_labetalol | TR: Labetalol dozu nedir? | EN: What is the dose of Labetalol?
+ID: drug_dose_metoprolol | TR: Metoprolol dozu nedir? | EN: What is the dose of Metoprolol?
+ID: drug_dose_hydralazine | TR: Hidralazin dozu nedir? | EN: What is the dose of Hydralazine?
+ID: drug_dose_lidocaine_local_and_regional_anesthetic_and_systemic | TR: Lidocaine dozu nedir? | EN: What is the dose of Lidocaine?
+ID: drug_dose_levobupivacaine | TR: Levobupivakain dozu nedir? | EN: What is the dose of Levobupivacaine?
+ID: drug_dose_prilocaine | TR: Prilokain dozu nedir? | EN: What is the dose of Prilocaine?
+ID: drug_dose_mepivacaine | TR: Mepivakain dozu nedir? | EN: What is the dose of Mepivacaine?
+ID: drug_dose_chloroprocaine | TR: Kloroprokain dozu nedir? | EN: What is the dose of Chloroprocaine?
+ID: drug_dose_articaine | TR: Artikain dozu nedir? | EN: What is the dose of Articaine?
+ID: drug_dose_albuterol_salbutamol | TR: Albuterol dozu nedir? | EN: What is the dose of Albuterol?
+ID: drug_dose_ipratropium | TR: İpratropiyum Bromür dozu nedir? | EN: What is the dose of Ipratropium Bromide?
+ID: drug_dose_calcium_chloride | TR: Kalsiyum Klorür dozu nedir? | EN: What is the dose of Calcium Chloride?
+ID: drug_dose_insulin_regular | TR: Regüler İnsülin (Kristalize) dozu nedir? | EN: What is the dose of Regular Insulin?
+ID: drug_dose_glucagon | TR: Glukagon dozu nedir? | EN: What is the dose of Glucagon?
+ID: drug_dose_hydrocortisone | TR: Hidrokortizon dozu nedir? | EN: What is the dose of Hydrocortisone?
+ID: drug_dose_methylprednisolone | TR: Metilprednizolon dozu nedir? | EN: What is the dose of Methylprednisolone?
+ID: drug_dose_dexamethasone_systemic | TR: Dexamethasone dozu nedir? | EN: What is the dose of Dexamethasone?
+ID: drug_dose_chlorpheniramine | TR: Klorfeniramin dozu nedir? | EN: What is the dose of Chlorpheniramine?
+ID: drug_dose_metoclopramide | TR: Metoklopramid dozu nedir? | EN: What is the dose of Metoclopramide?
+ID: drug_dose_granisetron | TR: Granisetron dozu nedir? | EN: What is the dose of Granisetron?
+ID: drug_dose_droperidol | TR: Droperidol dozu nedir? | EN: What is the dose of Droperidol?
+ID: drug_dose_dimenhydrinate | TR: Dimenhidrinat (Dramamine) dozu nedir? | EN: What is the dose of Dimenhydrinate?
+ID: drug_dose_scopolamine | TR: Skopolamin (Hiyosin) dozu nedir? | EN: What is the dose of Scopolamine (Hyoscine)?
+ID: drug_dose_fibrinogen_concentrate | TR: Fibrinojen Konsantresi dozu nedir? | EN: What is the dose of Fibrinogen Concentrate?
+ID: drug_dose_prothrombin_complex_concentrate | TR: Protrombin Kompleks Konsantresi (PCC) dozu nedir? | EN: What is the dose of Prothrombin Complex Concentrate?
+ID: drug_dose_protamine | TR: Protamin Sülfat dozu nedir? | EN: What is the dose of Protamine Sulfate?
+ID: drug_dose_heparin | TR: Heparin (Fraksiyone Olmayan) dozu nedir? | EN: What is the dose of Heparin (Unfractionated)?
+ID: drug_dose_vitamin_k | TR: K Vitamini (Fitonadion) dozu nedir? | EN: What is the dose of Vitamin K1 (Phytonadione)?
+ID: drug_dose_oxytocin | TR: Oksitosin dozu nedir? | EN: What is the dose of Oxytocin?
+ID: drug_dose_methylergometrine | TR: Metilergometrin (Metilergonovin) dozu nedir? | EN: What is the dose of Methylergonovine (Methylergometrine)?
+ID: drug_dose_carboprost | TR: Karboprost dozu nedir? | EN: What is the dose of Carboprost Tromethamine?
+ID: drug_dose_misoprostol | TR: Misoprostol dozu nedir? | EN: What is the dose of Misoprostol?
+ID: drug_dose_nifedipine | TR: Nifedipin dozu nedir? | EN: What is the dose of Nifedipine?
+ID: drug_dose_terbutaline | TR: Terbutalin dozu nedir? | EN: What is the dose of Terbutaline?
+ID: drug_dose_cefazolin | TR: Sefazolin dozu nedir? | EN: What is the dose of Cefazolin?
+ID: drug_dose_cefuroxime | TR: Sefuroksim dozu nedir? | EN: What is the dose of Cefuroxime?

@@ -1,0 +1,194 @@
+{
+  "packId": "edaic_part_i",
+  "version": 1,
+  "boardType": "EDAIC_PART_I",
+  "languages": ["en", "tr"],
+  "edaicMtfQuestions": [
+    {
+      "id": "edaic_mtf_001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Coronary Circulation",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Regarding coronary blood flow and myocardial oxygen consumption:",
+        "tr": "Koroner kan akımı ve miyokardiyal oksijen tüketimi ile ilgili olarak:"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Coronary perfusion pressure is determined by the difference between aortic diastolic pressure and left ventricular end-diastolic pressure (LVEDP).",
+            "tr": "Koroner perfüzyon basıncı, aort diyastolik basıncı ile sol ventrikül diyastol sonu basıncı (LVEDP) arasındaki fark ile belirlenir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Left ventricular coronary perfusion pressure (CPP) is aortic diastolic pressure minus LVEDP, whereas right ventricular CPP is aortic diastolic pressure minus right ventricular end-diastolic pressure.",
+            "tr": "Doğru. Sol ventrikül koroner perfüzyon basıncı (CPP) aort diyastolik basıncından LVEDP çıkarılarak hesaplanır; sağ ventrikül CPP ise aort diyastolik basıncından sağ ventrikül diyastol sonu basıncı çıkarılarak hesaplanır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Left ventricular coronary perfusion occurs primarily during systole due to high intramyocardial pressure.",
+            "tr": "Sol ventrikül koroner perfüzyonu, yüksek intramiyokardiyal basınç nedeniyle birincil olarak sistol sırasında gerçekleşir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. High intramyocardial pressure during left ventricular contraction compresses subendocardial blood vessels, reducing coronary blood flow to near zero in systole. Thus, left ventricular coronary perfusion occurs almost entirely during diastole.",
+            "tr": "Yanlış. Sol ventrikül kasılması sırasındaki yüksek intramiyokardiyal basınç, subendokardiyal damarları sıkıştırarak koroner akımı sistolde sıfıra yakın bir seviyeye indirir. Bu nedenle, sol ventrikül koroner perfüzyonu neredeyse tamamen diyastol sırasında gerçekleşir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Myocardial oxygen extraction ratio is high (approximately 70-80%) even at rest, leaving little reserve for increased extraction.",
+            "tr": "Miyokardiyal oksijen ekstraksiyon oranı istirahatte bile yüksektir (yaklaşık %70-80), bu durum ekstraksiyonu artırmak için çok az rezerv bırakır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. The heart extracts maximal oxygen at rest. To meet increased metabolic demands (e.g., during exercise or tachycardia), the heart must increase coronary blood flow rather than extraction.",
+            "tr": "Doğru. Kalp istirahat halindeyken bile maksimum oksijeni ekstrakte eder. Artan metabolik talepleri karşılamak için (örneğin egzersiz veya taşikardi sırasında), kalbin oksijen ekstraksiyonunu artırması mümkün olmadığından koroner kan akımını artırması gerekir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Adenosine is a potent endogenous vasoconstrictor in the coronary microcirculation.",
+            "tr": "Adenozin, koroner mikrosirkülasyonda güçlü bir endojen vazokonstriktördür."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Adenosine is a potent endogenous vasodilator. When myocardial oxygen demand exceeds supply, adenosine is released from cardiac myocytes to dilate coronary arterioles and increase coronary blood flow.",
+            "tr": "Yanlış. Adenozin, güçlü bir endojen vazodilatördür. Miyokardiyal oksijen talebi arzı aştığında, kardiyak miyositlerden adenozin salınır ve koroner arteriyolleri genişleterek koroner kan akımını artırır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Mild hypoxemia triggers immediate coronary vasoconstriction to divert flow to the cerebral circulation.",
+            "tr": "Hafif hipoksemi, akımı serebral sirkülasyona yönlendirmek için ani koroner vazokonstriksiyona yol açar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Hypoxemia triggers direct coronary vasodilation to maintain oxygen delivery to the myocardium despite reduced oxygen content.",
+            "tr": "Yanlış. Hipoksemi, düşük oksijen içeriğine rağmen miyokardın oksijen sunumunu korumak amacıyla doğrudan koroner vazodilatasyona yol açar."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Coronary circulation physiology is a high-yield topic for the EDAIC Part I exam. The left ventricle is perfused almost entirely during diastole due to severe subendocardial compression during systole. The myocardium has a baseline oxygen extraction ratio of 70-80%, so any increase in cardiac oxygen demand must be met by active coronary metabolic vasodilation (principally mediated by adenosine, nitric oxide, and local metabolic factors).",
+        "tr": "Koroner dolaşım fizyolojisi, EDAIC Part I sınavı için son derece önemli bir konudur. Sol ventrikül, sistol sırasındaki şiddetli subendokardiyal sıkışma nedeniyle neredeyse tamamen diyastolde perfüze olur. Miyokardın bazal oksijen ekstraksiyon oranı %70-80 arasındadır; bu nedenle kardiyak oksijen talebindeki herhangi bir artış, aktif koroner metabolik vazodilatasyonla (başlıca adenozin, nitrik oksit ve lokal metabolik faktörler aracılığıyla) karşılanmalıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Because baseline myocardial oxygen extraction is near-maximal (70-80%), the heart cannot significantly increase extraction to meet higher demands; it must increase coronary blood flow via vasodilation.",
+        "tr": "Bazal miyokardiyal oksijen ekstraksiyonu maksimuma yakın (%70-80) olduğundan, kalp daha yüksek talepleri karşılamak için ekstraksiyonu anlamlı şekilde artıramaz; vazodilatasyon yoluyla koroner kan akımını artırmak zorundadır."
+      },
+      "commonTrap": {
+        "en": "Do not confuse left and right ventricular perfusion; the right ventricle has lower intramyocardial pressure, allowing significant perfusion to continue during systole.",
+        "tr": "Sol ve sağ ventrikül perfüzyonunu karıştırmayın; sağ ventrikülün intramiyokardiyal basıncı daha düşüktür, bu da sistol sırasında da belirgin perfüzyonun devam etmesine olanak tanır."
+      },
+      "tags": ["Cardiovascular", "Physiology", "Coronary Circulation"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Miller's Anesthesia, Chapter on Cardiac Physiology", "Barash Clinical Anesthesia, Coronary Blood Flow Section"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    },
+    {
+      "id": "edaic_mtf_002",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_B",
+      "category": "Pharmacology",
+      "topic": "Neuromuscular Blocking Agents",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Regarding neuromuscular blocking agents (NMBAs) and their reversal:",
+        "tr": "Nöromusküler bloke edici ajanlar (NMBA'lar) ve geri döndürülmeleri ile ilgili olarak:"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Sugammadex reverses neuromuscular blockade by acetylcholinesterase inhibition in the synaptic cleft.",
+            "tr": "Sugammadeks, sinaptik aralıktaki asetilkolinesteraz inhibisyonu yoluyla nöromusküler blokajı geri döndürür."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Sugammadex is a selective relaxant binding agent. It encapsulates rocuronium or vecuronium in a 1:1 molecular ratio in the plasma, rendering them inactive. Neostigmine is the agent that acts via acetylcholinesterase inhibition.",
+            "tr": "Yanlış. Sugammadeks, seçici bir gevşetici bağlayıcı ajandır. Plazmadaki roküronyum veya veküronyumu 1:1 moleküler oranda kapsülleyerek onları inaktif hale getirir. Asetilkolinesteraz inhibisyonu yoluyla etki eden ajan neostigmindir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Neostigmine-induced reversal of neuromuscular blockade should only be attempted after a minimum of one or two twitches are detected on a train-of-four (TOF) monitor.",
+            "tr": "Neostigmin ile nöromusküler blokajın geri döndürülmesi, ancak train-of-four (TOF) monitöründe en az bir veya iki yanıt alındıktan sonra denenmelidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Attempting neostigmine reversal during profound block (0 twitches, post-tetanic count 0) is ineffective and can prolong recovery by causing an open-channel block at the receptor level.",
+            "tr": "Doğru. Derin blokaj sırasında (0 yanıt, post-tetanik yanıt 0) neostigmin ile geri döndürme girişiminde bulunmak etkisizdir ve reseptör düzeyinde açık kanal blokajına neden olarak derlenmeyi uzatabilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Succinylcholine is rapidly hydrolyzed by pseudocholinesterase (butyrylcholinesterase) in the plasma.",
+            "tr": "Süksinilkolin, plazmada psödokolinesteraz (bütirilkolinesteraz) tarafından hızlıca hidroliz edilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Succinylcholine has a rapid onset and short duration because it is rapidly metabolized by pseudocholinesterase in plasma. Only a small fraction reaches the neuromuscular junction.",
+            "tr": "Doğru. Süksinilkolin, plazmada psödokolinesteraz tarafından hızlı bir şekilde metabolize edildiği için hızlı etki başlar ve kısa etki sürelidir. Sadece küçük bir kısmı nöromusküler kavşağa ulaşır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "The diaphragm is more sensitive to non-depolarizing neuromuscular blockers than peripheral muscles like the adductor pollicis.",
+            "tr": "Diyafram, non-depolarizan nöromusküler blokerlere karşı adduktor pollicis gibi periferik kaslardan daha duyarlıdır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. The diaphragm is more resistant to non-depolarizing NMBAs than peripheral muscles. It requires approximately twice the dose of NMBA to achieve the same level of blockade as the adductor pollicis.",
+            "tr": "Yanlış. Diyafram, non-depolarizan NMBA'lara periferik kaslara göre daha dirençlidir. Diyaframda adduktor pollicis ile aynı düzeyde blokaj elde etmek için yaklaşık iki katı dozda NMBA gerekir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Quantitative neuromuscular monitoring showing a TOF ratio greater than 0.9 is the gold standard to exclude residual paralysis.",
+            "tr": "Kantitatif nöromusküler izlemde TOF oranının 0.9'dan büyük olması, rezidüel paraliziyi dışlamak için altın standarttır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Subjective assessment of fade (e.g., visual or tactile) is unreliable for detecting mild residual blockade (TOF ratio 0.6 to 0.9), which is associated with increased risk of aspiration and respiratory complications.",
+            "tr": "Doğru. Soluklaşmanın (fade) subjektif olarak değerlendirilmesi (örneğin görsel veya dokunsal), aspirasyon ve solunumsal komplikasyon riskini artıran hafif rezidüel blokajı (TOF oranı 0.6 ila 0.9 arası) tespit etmekte yetersizdir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Understanding NMBA pharmacology and monitoring is critical for board prep. Non-depolarizing agents are reversed either by acetylcholinesterase inhibitors (e.g., neostigmine, which must be paired with an anticholinergic like glycopyrrolate or atropine to prevent systemic muscarinic side effects) or encapsulation (sugammadex). Diaphragm and laryngeal muscles are more resistant to blockade but recover faster than peripheral muscles.",
+        "tr": "NMBA farmakolojisini ve izlemini anlamak, kurul hazırlığı için kritik önem taşır. Non-depolarizan ajanlar, asetilkolinesteraz inhibitörleri (sistemik muskarinik yan etkileri önlemek için glikopirolat veya atropin gibi bir antikolinerjikle eşleştirilmesi gereken neostigmin) veya kapsülleme (sugammadeks) yoluyla geri döndürülür. Diyafram ve laringeal kaslar blokaja karşı daha dirençlidir ancak periferik kaslara göre daha hızlı derlenir."
+      },
+      "keyLearningPoint": {
+        "en": "Quantitative neuromuscular monitoring (TOF ratio > 0.9) is required to ensure safe recovery and avoid postoperative residual curarization (PORC).",
+        "tr": "Güvenli bir derlenme sağlamak ve postoperative rezidüel kürarizasyonu (PORC) önlemek için kantitatif nöromusküler izlem (TOF oranı > 0.9) şarttır."
+      },
+      "commonTrap": {
+        "en": "Do not assume visual/tactile checks can exclude residual block. TOF ratios between 0.4 and 0.9 cannot be reliably distinguished by manual feel alone.",
+        "tr": "Görsel/dokunsal kontrollerin rezidüel blokajı dışlayabileceğini varsaymayın. 0.4 ile 0.9 arasındaki TOF oranları, yalnızca manuel hissetme ile güvenilir bir şekilde ayırt edilemez."
+      },
+      "tags": ["Pharmacology", "NMBAs", "Monitoring"],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": ["Miller's Anesthesia, Chapter on Neuromuscular Blocking Drugs", "ESAIC Guidelines on Neuromuscular Monitoring 2023"],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false
+    }
+  ]
+}

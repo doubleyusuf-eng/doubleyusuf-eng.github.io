@@ -1,0 +1,2051 @@
+{
+  "packId": "edaic_paper_a_pack_1",
+  "version": 2,
+  "boardType": "EDAIC_PART_I",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "edaicMtfQuestions": [
+    {
+      "id": "edaic_a_phys_cv_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Cardiovascular physiology",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning coronary blood flow, which of the following statements are true?",
+        "tr": "Koroner kan akımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Left coronary artery flow occurs predominantly during systole.",
+            "tr": "Sol koroner arter akımı ağırlıklı olarak sistol sırasında gerçekleşir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Left ventricular systolic pressure compresses intramyocardial vessels, so left coronary flow occurs mainly during diastole.",
+            "tr": "Yanlıştır. Sol ventrikül sistolik basıncı intramiyokardiyal damarları komprese eder; bu nedenle sol koroner akım esas olarak diyastolde gerçekleşir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Tachycardia may reduce left ventricular coronary perfusion by shortening diastole.",
+            "tr": "Taşikardi diyastol süresini kısaltarak sol ventrikül koroner perfüzyonunu azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Diastole is the main period for left coronary perfusion; tachycardia shortens it disproportionately and may precipitate ischemia.",
+            "tr": "Doğrudur. Sol koroner perfüzyonun ana dönemi diyastoldür; taşikardi bu süreyi orantısız kısaltır ve iskemiye zemin hazırlayabilir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Coronary perfusion pressure is approximated by aortic diastolic pressure minus left ventricular end-diastolic pressure.",
+            "tr": "Koroner perfüzyon basıncı yaklaşık olarak aort diyastolik basıncı eksi sol ventrikül diyastol sonu basıncıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. The effective left coronary gradient is largely aortic diastolic pressure minus LVEDP.",
+            "tr": "Doğrudur. Sol koroner akım için etkili gradyan büyük ölçüde aort diyastolik basıncı eksi LVEDP'dir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Severe aortic regurgitation can impair coronary perfusion by lowering aortic diastolic pressure.",
+            "tr": "Ciddi aort yetersizliği aort diyastolik basıncını düşürerek koroner perfüzyonu bozabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Aortic regurgitation lowers diastolic aortic pressure and may increase LVEDP, reducing the gradient.",
+            "tr": "Doğrudur. Aort yetersizliği diyastolik aort basıncını düşürür ve LVEDP'yi artırabilir; gradyan azalır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "The right coronary artery is compressed as much as the left coronary artery during systole.",
+            "tr": "Sağ koroner arter sistolde sol koroner arter kadar komprese olur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Right ventricular systolic pressure is lower, so right coronary flow is less restricted in systole.",
+            "tr": "Yanlıştır. Sağ ventrikül sistolik basıncı daha düşüktür; sağ koroner akım sistolde daha az kısıtlanır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Coronary perfusion depends on pressure gradients and phasic compression of intramyocardial vessels.",
+        "tr": "Koroner perfüzyon basınç gradyanlarına ve intramiyokardiyal damarların fazik kompresyonuna bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Left coronary flow is mainly diastolic; tachycardia, low diastolic pressure, and high LVEDP reduce perfusion.",
+        "tr": "Sol koroner akım esas olarak diyastoliktir; taşikardi, düşük diyastolik basınç ve yüksek LVEDP perfüzyonu azaltır."
+      },
+      "commonTrap": {
+        "en": "Do not equate MAP with coronary perfusion pressure in all patients; aortic diastolic pressure and LVEDP matter.",
+        "tr": "Her hastada OAB'yi koroner perfüzyon basıncı gibi düşünmeyin; aort diyastolik basıncı ve LVEDP önemlidir."
+      },
+      "tags": [
+        "physiology",
+        "cardiovascular",
+        "coronary_flow",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_resp_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Oxygen transport",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning arterial oxygen content, which of the following statements are true?",
+        "tr": "Arteriyel oksijen içeriği ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Most oxygen in arterial blood is transported dissolved in plasma.",
+            "tr": "Arteriyel kandaki oksijenin büyük kısmı plazmada çözünmüş halde taşınır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Most oxygen is bound to hemoglobin; dissolved oxygen contributes only a small fraction.",
+            "tr": "Yanlıştır. Oksijenin büyük kısmı hemoglobine bağlıdır; çözünmüş oksijen küçük katkı sağlar."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "A fall in hemoglobin concentration may markedly reduce arterial oxygen content despite a normal PaO2.",
+            "tr": "Hemoglobin konsantrasyonundaki düşüş, PaO2 normal olsa bile arteriyel oksijen içeriğini belirgin azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. PaO2 reflects dissolved oxygen tension, whereas content depends mainly on hemoglobin and saturation.",
+            "tr": "Doğrudur. PaO2 çözünmüş oksijen basıncını yansıtır; içerik esas olarak hemoglobin ve satürasyona bağlıdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Arterial oxygen content can be estimated using hemoglobin concentration, oxygen saturation, and PaO2.",
+            "tr": "Arteriyel oksijen içeriği hemoglobin konsantrasyonu, oksijen satürasyonu ve PaO2 kullanılarak tahmin edilebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CaO2 = 1.34 × Hb × SaO2 + 0.003 × PaO2.",
+            "tr": "Doğrudur. CaO2 = 1.34 × Hb × SaO2 + 0.003 × PaO2."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Increasing PaO2 from 100 to 500 mmHg greatly increases total arterial oxygen content in a patient with normal hemoglobin.",
+            "tr": "Hemoglobini normal bir hastada PaO2’nin 100’den 500 mmHg’ye yükseltilmesi total arteriyel oksijen içeriğini çok büyük ölçüde artırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. After near-complete Hb saturation, further PaO2 increases add little dissolved oxygen.",
+            "tr": "Yanlıştır. Hemoglobin neredeyse tam satüre olduktan sonra PaO2 artışı az miktarda çözünmüş oksijen ekler."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Carbon monoxide poisoning may produce a falsely reassuring pulse oximetry reading.",
+            "tr": "Karbonmonoksit zehirlenmesinde pulse oksimetre yanıltıcı şekilde güven verici değer gösterebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Standard pulse oximetry cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin.",
+            "tr": "Doğrudur. Standart pulse oksimetre oksihemoglobin ile karboksihemoglobini güvenilir ayırt edemez."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Oxygen delivery depends on arterial oxygen content and cardiac output; hemoglobin concentration is often critical.",
+        "tr": "Oksijen sunumu arteriyel oksijen içeriği ve kardiyak outputa bağlıdır; hemoglobin konsantrasyonu kritik önemdedir."
+      },
+      "keyLearningPoint": {
+        "en": "A normal PaO2 does not guarantee adequate oxygen content if hemoglobin is low or dysfunctional.",
+        "tr": "Hemoglobin düşük veya işlevsizse normal PaO2 yeterli oksijen içeriğini garanti etmez."
+      },
+      "commonTrap": {
+        "en": "Do not confuse oxygen tension with oxygen content: PaO2 is not CaO2.",
+        "tr": "Oksijen basıncı ile oksijen içeriğini karıştırmayın: PaO2, CaO2 değildir."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "oxygen_content",
+        "pulse_oximetry",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_volatiles_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Minimum alveolar concentration",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning minimum alveolar concentration (MAC), which of the following statements are true?",
+        "tr": "Minimum alveoler konsantrasyon (MAC) ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "MAC is the alveolar concentration preventing movement in response to surgical incision in 50% of subjects.",
+            "tr": "MAC, cerrahi insizyona yanıt olarak hareketi deneklerin %50’sinde önleyen alveoler konsantrasyondur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. MAC is an ED50-like measure of volatile anesthetic potency.",
+            "tr": "Doğrudur. MAC, volatil anestezik potensi için ED50 benzeri bir ölçüdür."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "MAC increases with increasing age.",
+            "tr": "MAC yaş ilerledikçe artar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. MAC decreases with age; older patients need lower concentrations.",
+            "tr": "Yanlıştır. MAC yaşla azalır; yaşlı hastalar daha düşük konsantrasyon gerektirir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Pregnancy decreases MAC.",
+            "tr": "Gebelik MAC değerini azaltır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Pregnancy decreases volatile anesthetic requirements.",
+            "tr": "Doğrudur. Gebelik volatil anestezik gereksinimini azaltır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Hyperthermia tends to increase MAC.",
+            "tr": "Hipertermi MAC değerini artırma eğilimindedir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Increased temperature tends to increase anesthetic requirement; hypothermia decreases MAC.",
+            "tr": "Doğrudur. Sıcaklık artışı anestezik gereksinimi artırma eğilimindedir; hipotermi MAC'i azaltır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Opioids and benzodiazepines generally increase the MAC of volatile anesthetics.",
+            "tr": "Opioidler ve benzodiyazepinler genellikle volatil anesteziklerin MAC değerini artırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Opioids, benzodiazepines and sedative-hypnotics generally reduce volatile requirement.",
+            "tr": "Yanlıştır. Opioidler, benzodiyazepinler ve sedatif-hipnotikler genellikle volatil gereksinimi azaltır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "MAC is a population-based potency measure modified by age, temperature, pregnancy, drugs, and physiology.",
+        "tr": "MAC yaş, sıcaklık, gebelik, ilaçlar ve fizyolojiden etkilenen popülasyon temelli potens ölçüsüdür."
+      },
+      "keyLearningPoint": {
+        "en": "Older age, pregnancy, hypothermia, and sedative co-administration reduce MAC.",
+        "tr": "İleri yaş, gebelik, hipotermi ve sedatif eş kullanımı MAC'i azaltır."
+      },
+      "commonTrap": {
+        "en": "MAC is not fixed for every patient; it changes with clinical context.",
+        "tr": "MAC her hasta için sabit değildir; klinik bağlama göre değişir."
+      },
+      "tags": [
+        "pharmacology",
+        "volatile_anesthetics",
+        "mac",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_monitor_capno_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Monitoring",
+      "topic": "Capnography",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning capnography during general anesthesia, which of the following statements are true?",
+        "tr": "Genel anestezi sırasında kapnografi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Persistent waveform capnography is a key method for confirming tracheal intubation.",
+            "tr": "Sürekli dalga formu kapnografi trakeal entübasyonun doğrulanmasında temel yöntemlerden biridir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Sustained capnographic waveforms after ventilation strongly support tracheal tube placement.",
+            "tr": "Doğrudur. Ventilasyon sonrası devamlı kapnografi dalgaları trakeal tüp yerleşimini güçlü şekilde destekler."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "A sudden fall in end-tidal CO2 may occur with pulmonary embolism or severe reduction in cardiac output.",
+            "tr": "End-tidal CO2’de ani düşüş pulmoner emboli veya kardiyak outputun ciddi azalmasıyla görülebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Reduced pulmonary blood flow decreases CO2 delivery to lungs, lowering ETCO2.",
+            "tr": "Doğrudur. Pulmoner kan akımının azalması akciğere CO2 taşınmasını azaltır ve ETCO2 düşer."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "A progressively rising baseline on the capnogram suggests rebreathing.",
+            "tr": "Kapnogramda bazal çizginin giderek yükselmesi rebreathing düşündürür."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Failure of the inspiratory baseline to return to zero suggests inspired CO2.",
+            "tr": "Doğrudur. İnspiratuvar bazalin sıfıra dönmemesi inhale CO2 varlığını düşündürür."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "A normal capnogram excludes bronchospasm.",
+            "tr": "Normal bir kapnogram bronkospazmı dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Bronchospasm may show an upsloping phase III, but mild or early bronchospasm may be subtle.",
+            "tr": "Yanlıştır. Bronkospazm faz III eğimini artırabilir; hafif veya erken bronkospazm silik olabilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "In cardiac arrest, ETCO2 can provide information about chest compression quality and return of spontaneous circulation.",
+            "tr": "Kardiyak arrestte ETCO2 göğüs kompresyon kalitesi ve spontan dolaşımın geri dönüşü hakkında bilgi verebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. ETCO2 reflects pulmonary blood flow during CPR; sudden rise may suggest ROSC.",
+            "tr": "Doğrudur. ETCO2 CPR sırasında pulmoner kan akımını yansıtır; ani yükselme ROSC düşündürebilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Capnography provides continuous information about ventilation, circulation, metabolism, airway patency, and circuit integrity.",
+        "tr": "Kapnografi ventilasyon, dolaşım, metabolizma, hava yolu açıklığı ve devre bütünlüğü hakkında sürekli bilgi sağlar."
+      },
+      "keyLearningPoint": {
+        "en": "Capnography is not only a ventilation monitor; sudden ETCO2 changes may reflect circulatory catastrophes.",
+        "tr": "Kapnografi yalnızca ventilasyon monitörü değildir; ani ETCO2 değişiklikleri dolaşımsal katastrofileri yansıtabilir."
+      },
+      "commonTrap": {
+        "en": "Do not interpret ETCO2 without clinical context; low ETCO2 may reflect hyperventilation, low output, embolism, or disconnection.",
+        "tr": "ETCO2'yi klinik bağlam olmadan yorumlamayın; düşük ETCO2 hiperventilasyon, düşük output, emboli veya ayrılma olabilir."
+      },
+      "tags": [
+        "monitoring",
+        "capnography",
+        "etco2",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_equipment_vaporizers_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Equipment",
+      "topic": "Vaporizers",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning variable-bypass vaporizers, which of the following statements are true?",
+        "tr": "Variable-bypass vaporizatörler ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They split fresh gas flow into a bypass stream and a vaporizing chamber stream.",
+            "tr": "Taze gaz akımını bypass akımı ve vaporizasyon odası akımı olarak ikiye ayırırlar."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Output is controlled by splitting flow between bypass and agent-saturated chamber pathways.",
+            "tr": "Doğrudur. Çıkış, bypass yolu ile ajanla doymuş odadan geçen akım arasında akım bölünerek kontrol edilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Temperature compensation is needed because saturated vapor pressure changes with temperature.",
+            "tr": "Sıcaklık kompanzasyonu gereklidir çünkü doymuş buhar basıncı sıcaklıkla değişir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Falling temperature during vaporization can reduce vapor pressure and output unless compensated.",
+            "tr": "Doğrudur. Vaporizasyonla sıcaklık düşerse buhar basıncı ve çıkış azalabilir; kompanzasyon gerekir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Desflurane can be delivered accurately using a conventional unheated variable-bypass vaporizer.",
+            "tr": "Desfluran klasik ısıtılmamış variable-bypass vaporizatör ile doğru şekilde verilebilir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Desflurane requires a specialized heated, pressurized vaporizer.",
+            "tr": "Yanlıştır. Desfluran özel ısıtılmış ve basınçlandırılmış vaporizatör gerektirir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "A vaporizer filled with the wrong volatile agent may deliver an inaccurate anesthetic concentration.",
+            "tr": "Yanlış volatil ajanla doldurulan vaporizatör hatalı anestezik konsantrasyon verebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Agent-specific vaporizers can underdose or overdose if filled with the wrong agent.",
+            "tr": "Doğrudur. Ajana özgü vaporizatör yanlış ajanla düşük doz veya aşırı doz verebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Variable-bypass vaporizers are designed so that all fresh gas passes through the liquid anesthetic chamber.",
+            "tr": "Variable-bypass vaporizatörlerde tüm taze gaz akımı sıvı anestezik odasından geçecek şekilde tasarlanmıştır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Only part of the gas passes through the vaporizing chamber; the rest bypasses it.",
+            "tr": "Yanlıştır. Gazın yalnızca bir kısmı vaporizasyon odasından geçer; kalan kısmı bypass eder."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Variable-bypass vaporizers are calibrated agent-specific devices that control output by flow splitting and temperature compensation.",
+        "tr": "Variable-bypass vaporizatörler akım bölünmesi ve sıcaklık kompanzasyonu ile çıkışı kontrol eden ajana özgü cihazlardır."
+      },
+      "keyLearningPoint": {
+        "en": "Vaporizer output depends on vapor pressure, temperature compensation, flow splitting, and correct filling.",
+        "tr": "Vaporizatör çıkışı buhar basıncı, sıcaklık kompanzasyonu, akım bölünmesi ve doğru doldurmaya bağlıdır."
+      },
+      "commonTrap": {
+        "en": "Desflurane is the major exception: it requires a specialized heated vaporizer because of its physical properties.",
+        "tr": "Desfluran önemli istisnadır; fiziksel özellikleri nedeniyle özel ısıtılmış vaporizatör gerektirir."
+      },
+      "tags": [
+        "equipment",
+        "vaporizers",
+        "volatile_anesthetics",
+        "physics",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_cv_0002",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Cardiac output",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning cardiac output and its determinants, which of the following statements are true?",
+        "tr": "Kardiyak output ve belirleyicileri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Cardiac output is the product of heart rate and stroke volume.",
+            "tr": "Kardiyak output, kalp hızı ile atım hacminin çarpımıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CO = HR × SV; either variable can change oxygen delivery.",
+            "tr": "Doğrudur. KO = KH × AH; iki değişken de oksijen sunumunu etkileyebilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Stroke volume is independent of preload, afterload, and contractility.",
+            "tr": "Atım hacmi preload, afterload ve kontraktiliteden bağımsızdır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Stroke volume is determined by preload, afterload, contractility, and compliance.",
+            "tr": "Yanlıştır. Atım hacmi preload, afterload, kontraktilite ve kompliyansa bağlıdır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Increasing afterload may reduce stroke volume in a failing ventricle.",
+            "tr": "Afterload artışı, yetmezlikteki ventrikülde atım hacmini azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. A failing ventricle is afterload sensitive; increased SVR may reduce forward flow.",
+            "tr": "Doğrudur. Yetmezlikteki ventrikül afterloada duyarlıdır; SVR artışı ileri akımı azaltabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Frank-Starling physiology describes increased stroke volume with increased end-diastolic fiber length within physiologic limits.",
+            "tr": "Frank-Starling fizyolojisi, fizyolojik sınırlar içinde diyastol sonu lif uzunluğu arttıkça atım hacminin artmasını açıklar."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Preload can augment stroke volume by optimizing sarcomere length, up to a limit.",
+            "tr": "Doğrudur. Preload, sarkomer uzunluğunu optimize ederek bir sınıra kadar atım hacmini artırabilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Very severe tachycardia always increases cardiac output because heart rate is higher.",
+            "tr": "Çok ciddi taşikardi, kalp hızı yüksek olduğu için kardiyak outputu her zaman artırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Severe tachycardia shortens filling time and may reduce stroke volume and coronary perfusion.",
+            "tr": "Yanlıştır. Ciddi taşikardi dolum süresini kısaltır; atım hacmi ve koroner perfüzyon azalabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Cardiac output reflects the interaction between heart rate, loading conditions, rhythm, and ventricular function.",
+        "tr": "Kardiyak output kalp hızı, yüklenme koşulları, ritim ve ventrikül fonksiyonunun etkileşimini yansıtır."
+      },
+      "keyLearningPoint": {
+        "en": "Cardiac output cannot be interpreted from heart rate alone.",
+        "tr": "Kardiyak output yalnızca kalp hızından yorumlanamaz."
+      },
+      "commonTrap": {
+        "en": "Do not assume tachycardia is always helpful; in ischemia or diastolic dysfunction it may be harmful.",
+        "tr": "Taşikardinin her zaman faydalı olduğunu varsaymayın; iskemi veya diyastolik disfonksiyonda zararlı olabilir."
+      },
+      "tags": [
+        "physiology",
+        "cardiovascular",
+        "cardiac_output",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_resp_0002",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Oxyhemoglobin dissociation curve",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning the oxyhemoglobin dissociation curve, which of the following statements are true?",
+        "tr": "Oksihemoglobin disosiyasyon eğrisi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "A rightward shift reduces hemoglobin affinity for oxygen and facilitates tissue unloading.",
+            "tr": "Sağa kayma hemoglobinin oksijene afinitesini azaltır ve dokulara oksijen bırakılmasını kolaylaştırır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Right shift increases P50 and promotes oxygen release at tissue level.",
+            "tr": "Doğrudur. Sağa kayma P50'yi artırır ve doku düzeyinde oksijen salımını kolaylaştırır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Acidosis, hypercapnia, and increased temperature shift the curve to the left.",
+            "tr": "Asidoz, hiperkapni ve sıcaklık artışı eğriyi sola kaydırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. These shift the curve to the right via reduced hemoglobin affinity.",
+            "tr": "Yanlıştır. Bu faktörler hemoglobin afinitesini azaltarak eğriyi sağa kaydırır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Fetal hemoglobin is left-shifted compared with adult hemoglobin.",
+            "tr": "Fetal hemoglobin erişkin hemoglobine göre sola kaymıştır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Higher fetal oxygen affinity facilitates placental oxygen transfer.",
+            "tr": "Doğrudur. Fetal hemoglobinin yüksek oksijen afinitesi plasental oksijen transferini kolaylaştırır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Carbon monoxide causes a leftward shift of the remaining oxyhemoglobin dissociation curve.",
+            "tr": "Karbonmonoksit kalan oksihemoglobin disosiyasyon eğrisini sola kaydırır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CO occupies binding sites and increases affinity at remaining sites, impairing unloading.",
+            "tr": "Doğrudur. CO bağlanma bölgelerini işgal eder ve kalan bölgelerde afinitenin artmasına yol açarak salımı bozar."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "A leftward shift always improves tissue oxygen delivery.",
+            "tr": "Sola kayma doku oksijen sunumunu her zaman artırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. It may improve loading but can impair tissue unloading.",
+            "tr": "Yanlıştır. Yüklenmeyi artırabilir ama dokuda oksijen salımını bozabilir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "The curve links oxygen tension to saturation, but tissue delivery also depends on hemoglobin, cardiac output, and affinity.",
+        "tr": "Eğri oksijen basıncı ile satürasyonu ilişkilendirir; doku sunumu hemoglobin, kardiyak output ve afiniteye de bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Right shift aids unloading; left shift aids loading but may impair release.",
+        "tr": "Sağa kayma salımı kolaylaştırır; sola kayma yüklenmeyi kolaylaştırır ama salımı bozabilir."
+      },
+      "commonTrap": {
+        "en": "Do not interpret SpO2 alone as tissue oxygen delivery.",
+        "tr": "SpO2’yi tek başına doku oksijen sunumu olarak yorumlamayın."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "oxygen_dissociation_curve",
+        "hemoglobin",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_resp_0003",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Shunt and dead space",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning shunt and dead space, which of the following statements are true?",
+        "tr": "Şant ve ölü boşluk ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "An anatomic right-to-left shunt is usually corrected completely by increasing inspired oxygen concentration.",
+            "tr": "Anatomik sağdan sola şant genellikle inspiratuvar oksijen konsantrasyonu artırılarak tamamen düzeltilir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. True shunt responds poorly to oxygen because blood bypasses ventilated alveoli.",
+            "tr": "Yanlıştır. Gerçek şant oksijene zayıf yanıt verir çünkü kan ventile alveolleri bypass eder."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Dead space ventilation refers to ventilation of lung units with little or no perfusion.",
+            "tr": "Ölü boşluk ventilasyonu, perfüzyonu az veya olmayan akciğer ünitelerinin ventilasyonudur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Dead space is ventilation without effective perfusion.",
+            "tr": "Doğrudur. Ölü boşluk etkin perfüzyon olmadan ventilasyondur."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Pulmonary embolism can increase physiologic dead space.",
+            "tr": "Pulmoner emboli fizyolojik ölü boşluğu artırabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Embolism blocks perfusion to ventilated alveoli.",
+            "tr": "Doğrudur. Emboli ventile alveollere perfüzyonu engeller."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Atelectasis produces low V/Q or shunt-like physiology.",
+            "tr": "Atelektazi düşük V/Q veya şant benzeri fizyoloji oluşturur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Collapsed alveoli may be perfused but not ventilated.",
+            "tr": "Doğrudur. Kollabe alveoller perfüze olabilir ancak ventile olmaz."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Alveolar dead space decreases when pulmonary blood flow falls.",
+            "tr": "Pulmoner kan akımı düştüğünde alveoler ölü boşluk azalır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Reduced pulmonary perfusion increases alveolar dead space.",
+            "tr": "Yanlıştır. Pulmoner perfüzyon azalması alveoler ölü boşluğu artırır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Shunt is perfusion without ventilation; dead space is ventilation without perfusion.",
+        "tr": "Şant ventilasyonsuz perfüzyon; ölü boşluk perfüzyonsuz ventilasyondur."
+      },
+      "keyLearningPoint": {
+        "en": "Shunt responds poorly to oxygen; dead space increases ventilatory requirement.",
+        "tr": "Şant oksijene zayıf yanıt verir; ölü boşluk ventilasyon gereksinimini artırır."
+      },
+      "commonTrap": {
+        "en": "Do not call all hypoxemia shunt; V/Q mismatch, hypoventilation, diffusion limitation, and low FiO2 differ.",
+        "tr": "Tüm hipoksemiyi şant olarak adlandırmayın; V/Q uyumsuzluğu, hipoventilasyon, difüzyon kısıtı ve düşük FiO2 farklıdır."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "shunt",
+        "dead_space",
+        "vq_mismatch",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_resp_0004",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Compliance and airway resistance",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning respiratory mechanics, which of the following statements are true?",
+        "tr": "Solunum mekaniği ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Compliance is defined as the change in volume per unit change in pressure.",
+            "tr": "Kompliyans, basınç değişimi başına hacim değişimi olarak tanımlanır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Compliance = ΔV/ΔP and reflects distensibility.",
+            "tr": "Doğrudur. Kompliyans = ΔV/ΔP olup genişleyebilirliği yansıtır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Reduced lung compliance increases the pressure required to deliver a given tidal volume.",
+            "tr": "Azalmış akciğer kompliyansı, belirli bir tidal volümü vermek için gereken basıncı artırır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Stiffer lungs require higher distending pressures.",
+            "tr": "Doğrudur. Daha sert akciğer için daha yüksek basınç gerekir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Airway resistance is directly proportional to the fourth power of airway radius.",
+            "tr": "Hava yolu direnci hava yolu yarıçapının dördüncü kuvvetiyle doğru orantılıdır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Resistance varies inversely with the fourth power of radius.",
+            "tr": "Yanlıştır. Direnç yarıçapın dördüncü kuvvetiyle ters orantılıdır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Bronchospasm typically increases airway resistance and may increase peak airway pressure.",
+            "tr": "Bronkospazm hava yolu direncini artırır ve pik hava yolu basıncını yükseltebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Narrowed airways mainly increase resistive pressure.",
+            "tr": "Doğrudur. Daralmış hava yolları esas olarak direnç basıncını artırır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "In pure increased airway resistance, plateau pressure is expected to rise more than peak pressure.",
+            "tr": "Saf hava yolu direnci artışında plato basıncının pik basınçtan daha fazla yükselmesi beklenir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Resistance mainly raises peak pressure; plateau reflects static/alveolar pressure.",
+            "tr": "Yanlıştır. Direnç daha çok pik basıncı artırır; plato statik/alveoler basıncı yansıtır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Peak and plateau pressures help separate resistive from elastic problems.",
+        "tr": "Pik ve plato basınçları direnç ve elastik problemleri ayırmaya yardım eder."
+      },
+      "keyLearningPoint": {
+        "en": "High peak with normal plateau suggests resistance; high peak with high plateau suggests low compliance or overdistension.",
+        "tr": "Yüksek pik-normal plato direnç artışını; yüksek pik-yüksek plato düşük kompliyans veya aşırı distansiyonu düşündürür."
+      },
+      "commonTrap": {
+        "en": "Do not treat every high airway pressure as bronchospasm; consider tube obstruction, pneumothorax, low compliance, and circuit problems.",
+        "tr": "Her yüksek hava yolu basıncını bronkospazm sanmayın; tüp tıkanması, pnömotoraks, düşük kompliyans ve devre sorunlarını düşünün."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "compliance",
+        "resistance",
+        "ventilation",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_volatiles_0002",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Volatile anesthetic uptake",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning uptake of inhaled volatile anesthetics, which of the following statements are true?",
+        "tr": "İnhale volatil anesteziklerin uptake'i ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "A low blood-gas partition coefficient is associated with a faster rise in alveolar concentration.",
+            "tr": "Düşük kan-gaz partisyon katsayısı alveoler konsantrasyonun daha hızlı yükselmesiyle ilişkilidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Less soluble agents are taken up less into blood, so FA/FI rises faster.",
+            "tr": "Doğrudur. Daha az çözünen ajanlar kana daha az alınır; FA/FI daha hızlı yükselir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Increasing alveolar ventilation speeds induction with volatile anesthetics.",
+            "tr": "Alveoler ventilasyonun artırılması volatil anesteziklerle indüksiyonu hızlandırır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Higher ventilation delivers more anesthetic to alveoli.",
+            "tr": "Doğrudur. Daha yüksek ventilasyon alveollere daha fazla anestezik taşır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Increasing cardiac output speeds the rise of alveolar concentration for soluble agents.",
+            "tr": "Kardiyak output artışı, çözünebilir ajanlarda alveoler konsantrasyonun yükselmesini hızlandırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Higher cardiac output removes more agent from alveoli and slows FA/FI rise, especially soluble agents.",
+            "tr": "Yanlıştır. Kardiyak output artışı ajanı alveolden uzaklaştırır ve özellikle çözünen ajanlarda FA/FI yükselişini yavaşlatır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Nitrous oxide can accelerate the uptake of a second volatile agent by the second gas effect.",
+            "tr": "Nitröz oksit ikinci gaz etkisiyle başka bir volatil ajanın uptake'ini hızlandırabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Rapid nitrous oxide uptake can concentrate co-administered gases.",
+            "tr": "Doğrudur. Hızlı nitröz oksit uptake'i birlikte verilen gazları konsantre edebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Desflurane has slow induction because it is highly blood soluble.",
+            "tr": "Desfluran yüksek kan çözünürlüğü nedeniyle yavaş indüksiyon sağlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Desflurane has low blood solubility and rapid wash-in/wash-out.",
+            "tr": "Yanlıştır. Desfluran düşük kan çözünürlüğüne sahiptir ve wash-in/wash-out hızlıdır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Induction speed is driven by solubility, ventilation, cardiac output, concentration effect, and tissue uptake.",
+        "tr": "İndüksiyon hızı çözünürlük, ventilasyon, kardiyak output, konsantrasyon etkisi ve doku uptake'i ile belirlenir."
+      },
+      "keyLearningPoint": {
+        "en": "Low blood-gas solubility means faster alveolar rise and faster clinical response.",
+        "tr": "Düşük kan-gaz çözünürlüğü daha hızlı alveoler yükseliş ve daha hızlı klinik yanıt demektir."
+      },
+      "commonTrap": {
+        "en": "Do not assume higher cardiac output always speeds induction; for inhaled agents it can slow alveolar rise.",
+        "tr": "Kardiyak output artışının indüksiyonu her zaman hızlandırdığını varsaymayın; inhale ajanlarda alveoler yükselişi yavaşlatabilir."
+      },
+      "tags": [
+        "pharmacology",
+        "volatile_anesthetics",
+        "uptake",
+        "fa_fi",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_nmj_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Neuromuscular junction",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning the neuromuscular junction, which of the following statements are true?",
+        "tr": "Nöromüsküler kavşak ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Acetylcholine is released after calcium influx into the presynaptic nerve terminal.",
+            "tr": "Asetilkolin presinaptik sinir terminaline kalsiyum girişi sonrası salınır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Depolarization opens calcium channels and triggers vesicle fusion.",
+            "tr": "Doğrudur. Depolarizasyon kalsiyum kanallarını açar ve vezikül füzyonunu tetikler."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "The adult nicotinic receptor is a ligand-gated ion channel.",
+            "tr": "Erişkin nikotinik reseptör ligand kapılı iyon kanalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Acetylcholine binding opens a cation channel and depolarizes the end plate.",
+            "tr": "Doğrudur. Asetilkolin bağlanması katyon kanalını açar ve uç plağı depolarize eder."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Acetylcholinesterase terminates transmission by reuptake of acetylcholine into the presynaptic terminal.",
+            "tr": "Asetilkolinesteraz iletimi asetilkolini presinaptik terminale geri alarak sonlandırır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. It hydrolyzes acetylcholine in the synaptic cleft; choline is recycled.",
+            "tr": "Yanlıştır. Asetilkolini sinaptik aralıkta hidrolize eder; kolin geri dönüştürülür."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Non-depolarizing blockers are competitive antagonists at nicotinic receptors.",
+            "tr": "Nondepolarizan blokerler nikotinik reseptörlerde kompetitif antagonisttir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. They compete with acetylcholine and prevent end-plate depolarization.",
+            "tr": "Doğrudur. Asetilkolinle yarışır ve uç plak depolarizasyonunu önler."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Succinylcholine produces phase I block by competitive antagonism without receptor activation.",
+            "tr": "Süksinilkolin faz I bloğu reseptör aktivasyonu olmadan kompetitif antagonizma ile oluşturur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Succinylcholine is a depolarizing agonist causing persistent depolarization.",
+            "tr": "Yanlıştır. Süksinilkolin kalıcı depolarizasyon yapan depolarizan agonisttir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Neuromuscular transmission depends on calcium-triggered acetylcholine release, nicotinic activation, and hydrolysis.",
+        "tr": "Nöromüsküler iletim kalsiyum aracılı asetilkolin salımı, nikotinik aktivasyon ve hidrolize bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Depolarizing and non-depolarizing blockers differ fundamentally: agonist depolarization versus competitive antagonism.",
+        "tr": "Depolarizan ve nondepolarizan blokerler temelde farklıdır: agonist depolarizasyon ve kompetitif antagonizma."
+      },
+      "commonTrap": {
+        "en": "Do not confuse acetylcholine hydrolysis with reuptake.",
+        "tr": "Asetilkolin hidrolizini geri alımla karıştırmayın."
+      },
+      "tags": [
+        "pharmacology",
+        "neuromuscular",
+        "nmj",
+        "muscle_relaxants",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_nmba_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Non-depolarizing neuromuscular blockers",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning non-depolarizing neuromuscular blocking drugs, which of the following statements are true?",
+        "tr": "Nondepolarizan nöromüsküler bloker ilaçlar ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They reduce the response to train-of-four stimulation and often produce fade.",
+            "tr": "Train-of-four uyarıya yanıtı azaltırlar ve sıklıkla fade oluştururlar."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Fade reflects impaired presynaptic facilitation during repeated stimulation.",
+            "tr": "Doğrudur. Fade, tekrarlayan uyarılarda presinaptik kolaylaştırmanın bozulmasını yansıtır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "A TOF ratio above 0.9 is commonly used as a marker of adequate recovery.",
+            "tr": "TOF oranının 0.9 üzerinde olması yeterli derlenmenin göstergesi olarak kullanılır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. TOF ratio ≥0.9 is a common threshold to reduce residual paralysis risk.",
+            "tr": "Doğrudur. TOF ≥0.9 rezidüel paralizi riskini azaltmak için kullanılan yaygın eşiktir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Aminosteroid agents such as rocuronium can be reversed by sugammadex.",
+            "tr": "Roküronyum gibi aminosteroid ajanlar sugammadeks ile antagonize edilebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Sugammadex encapsulates rocuronium and vecuronium.",
+            "tr": "Doğrudur. Sugammadeks roküronyum ve veküronyumu enkapsüle eder."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Neostigmine is most effective for profound block with no TOF response and no post-tetanic count.",
+            "tr": "Neostigmin, TOF yanıtı ve post-tetanik sayımı olmayan derin blokta en etkilidir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Neostigmine is ineffective in profound block; some spontaneous recovery is needed.",
+            "tr": "Yanlıştır. Neostigmin derin blokta etkisizdir; spontan derlenme başlamış olmalıdır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Hypothermia may prolong the duration of neuromuscular blockade.",
+            "tr": "Hipotermi nöromüsküler bloğun süresini uzatabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Hypothermia slows metabolism, clearance, and neuromuscular recovery.",
+            "tr": "Doğrudur. Hipotermi metabolizma, klirens ve nöromüsküler derlenmeyi yavaşlatır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Residual neuromuscular blockade can impair airway protection and ventilation if not quantitatively monitored.",
+        "tr": "Kantitatif izlenmezse rezidüel nöromüsküler blok hava yolu koruması ve ventilasyonu bozabilir."
+      },
+      "keyLearningPoint": {
+        "en": "Quantitative TOF monitoring and appropriate reversal are central to safe recovery.",
+        "tr": "Kantitatif TOF monitörizasyonu ve uygun reversal güvenli derlenmenin temelidir."
+      },
+      "commonTrap": {
+        "en": "Do not rely only on head lift or grip strength to exclude residual block.",
+        "tr": "Rezidüel bloğu dışlamak için yalnızca baş kaldırma veya el sıkma gücüne güvenmeyin."
+      },
+      "tags": [
+        "pharmacology",
+        "neuromuscular_block",
+        "tof",
+        "reversal",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_opioids_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Opioid pharmacology",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning opioid pharmacology, which of the following statements are true?",
+        "tr": "Opioid farmakolojisi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Mu-opioid receptor activation can cause analgesia, respiratory depression, and miosis.",
+            "tr": "Mu-opioid reseptör aktivasyonu analjezi, solunum depresyonu ve miyozise neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Mu effects include analgesia, respiratory depression, euphoria, miosis, nausea, and ileus.",
+            "tr": "Doğrudur. Mu etkileri analjezi, solunum depresyonu, öfori, miyozis, bulantı ve ileusu içerir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Remifentanil is mainly metabolized by plasma and tissue esterases.",
+            "tr": "Remifentanil esas olarak plazma ve doku esterazları tarafından metabolize edilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Esterase metabolism gives remifentanil a short context-sensitive half-time.",
+            "tr": "Doğrudur. Esteraz metabolizması remifentanile kısa context-sensitive half-time sağlar."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Naloxone may reverse opioid analgesia as well as respiratory depression.",
+            "tr": "Nalokson opioid analjezisini solunum depresyonuyla birlikte geri çevirebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Naloxone reverses opioid effects and can precipitate pain or withdrawal.",
+            "tr": "Doğrudur. Nalokson opioid etkilerini geri çevirir ve ağrı veya yoksunluğu tetikleyebilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Morphine has no active metabolites and is preferred in severe renal failure.",
+            "tr": "Morfinin aktif metaboliti yoktur ve ciddi böbrek yetmezliğinde tercih edilir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Active morphine metabolites can accumulate in renal impairment.",
+            "tr": "Yanlıştır. Morfinin aktif metabolitleri böbrek yetmezliğinde birikebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "All opioids produce the same degree of histamine release.",
+            "tr": "Tüm opioidler aynı derecede histamin salınımı yapar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Histamine release varies; morphine is more associated with it than fentanyl/remifentanil.",
+            "tr": "Yanlıştır. Histamin salınımı değişir; morfin fentanyl/remifentanilden daha fazla ilişkilidir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Opioids differ in metabolism, duration, histamine release, and suitability for organ dysfunction.",
+        "tr": "Opioidler metabolizma, süre, histamin salınımı ve organ disfonksiyonunda uygunluk açısından farklıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Reversal of respiratory depression with naloxone can also remove analgesia.",
+        "tr": "Naloksonla solunum depresyonunu geri çevirmek analjeziyi de ortadan kaldırabilir."
+      },
+      "commonTrap": {
+        "en": "Do not choose an opioid only by potency; consider metabolism and patient organ function.",
+        "tr": "Opioid seçimini yalnızca potense göre yapmayın; metabolizma ve organ fonksiyonunu dikkate alın."
+      },
+      "tags": [
+        "pharmacology",
+        "opioids",
+        "remifentanil",
+        "naloxone",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_pharm_local_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Pharmacology",
+      "topic": "Local anesthetics",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning local anesthetic pharmacology, which of the following statements are true?",
+        "tr": "Lokal anestezik farmakolojisi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Local anesthetics block voltage-gated sodium channels and inhibit action potential propagation.",
+            "tr": "Lokal anestezikler voltaj bağımlı sodyum kanallarını bloke eder ve aksiyon potansiyeli iletimini engeller."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Sodium channel blockade prevents depolarization and impulse propagation.",
+            "tr": "Doğrudur. Sodyum kanal blokajı depolarizasyonu ve impuls iletimini engeller."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "The non-ionized form is more important for crossing the nerve membrane.",
+            "tr": "İyonize olmayan form sinir membranını geçmek için daha önemlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Non-ionized drug crosses membranes; ionized drug blocks the channel from inside.",
+            "tr": "Doğrudur. İyonize olmayan form membranı geçer; iyonize form kanalı içeriden bloke eder."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Infected acidic tissue usually accelerates local anesthetic onset.",
+            "tr": "Enfekte asidik dokuda lokal anestezik başlangıcı genellikle hızlanır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Acidosis increases ionization outside the nerve and slows onset.",
+            "tr": "Yanlıştır. Asidoz sinir dışında iyonizasyonu artırır ve başlangıcı yavaşlatır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Bupivacaine is more cardiotoxic than ropivacaine at equivalent clinical exposure.",
+            "tr": "Bupivakain eşdeğer klinik maruziyette ropivakainden daha kardiyotoksiktir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Bupivacaine has greater cardiotoxic potential, especially with intravascular injection.",
+            "tr": "Doğrudur. Bupivakain özellikle intravasküler enjeksiyonda daha kardiyotoksiktir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Adding adrenaline to every local anesthetic solution is always safe and always indicated.",
+            "tr": "Her lokal anestezik solüsyona adrenalin eklemek her zaman güvenlidir ve her zaman endikedir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Adrenaline is useful in selected settings but not universally appropriate.",
+            "tr": "Yanlıştır. Adrenalin seçilmiş durumlarda yararlıdır ancak her zaman uygun değildir."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Local anesthetic effect depends on pKa, lipid solubility, protein binding, tissue pH, absorption, and dose.",
+        "tr": "Lokal anestezik etkisi pKa, lipid çözünürlük, protein bağlanması, doku pH’ı, emilim ve doza bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Non-ionized drug crosses the membrane; ionized drug blocks the sodium channel.",
+        "tr": "İyonize olmayan ilaç membranı geçer; iyonize ilaç sodyum kanalını bloke eder."
+      },
+      "commonTrap": {
+        "en": "Do not assume local anesthetic failure in infection is purely technical; acidic pH reduces efficacy.",
+        "tr": "Enfeksiyonda lokal anestezik başarısızlığını sadece teknik hata sanmayın; asidik pH etkinliği azaltır."
+      },
+      "tags": [
+        "pharmacology",
+        "local_anesthetics",
+        "toxicity",
+        "sodium_channels",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_phys_acidbase_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physiology",
+      "topic": "Acid-base interpretation",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning acid-base physiology, which of the following statements are true?",
+        "tr": "Asit-baz fizyolojisi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Metabolic acidosis is characterized by a primary decrease in bicarbonate concentration.",
+            "tr": "Metabolik asidoz primer bikarbonat konsantrasyonu düşüşü ile karakterizedir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Low bicarbonate is primary; respiratory compensation lowers PaCO2.",
+            "tr": "Doğrudur. Primer bozukluk düşük bikarbonattır; solunumsal kompansasyon PaCO2’yi düşürür."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Respiratory acidosis is caused by primary alveolar hyperventilation.",
+            "tr": "Respiratuvar asidoz primer alveoler hiperventilasyondan kaynaklanır."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Respiratory acidosis results from hypoventilation and CO2 retention.",
+            "tr": "Yanlıştır. Respiratuvar asidoz hipoventilasyon ve CO2 retansiyonundan kaynaklanır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "An increased anion gap metabolic acidosis may occur with lactic acidosis or ketoacidosis.",
+            "tr": "Artmış anyon açıklı metabolik asidoz laktik asidoz veya ketoasidoz ile görülebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Lactate and ketones are unmeasured anions that increase the gap.",
+            "tr": "Doğrudur. Laktat ve ketonlar anyon açığını artıran ölçülmeyen anyonlardır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "A normal pH excludes a mixed acid-base disorder.",
+            "tr": "Normal pH mikst asit-baz bozukluğunu dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Opposing disorders can normalize pH while PaCO2 and bicarbonate are abnormal.",
+            "tr": "Yanlıştır. Zıt bozukluklar PaCO2 ve bikarbonat anormalken pH’yı normale getirebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Base excess reflects the metabolic component of acid-base status.",
+            "tr": "Baz fazlalığı asit-baz durumunun metabolik bileşenini yansıtır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Base excess estimates the non-respiratory component under standardized conditions.",
+            "tr": "Doğrudur. Baz fazlalığı standart koşullarda respiratuvar olmayan bileşeni tahmin eder."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Acid-base interpretation requires pH, PaCO2, bicarbonate, base excess, anion gap, and expected compensation.",
+        "tr": "Asit-baz yorumu pH, PaCO2, bikarbonat, baz fazlalığı, anyon açığı ve beklenen kompansasyonu gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "A normal pH can be misleading when mixed disorders coexist.",
+        "tr": "Mikst bozukluklar birlikteyse normal pH yanıltıcı olabilir."
+      },
+      "commonTrap": {
+        "en": "Do not stop at pH; check whether PaCO2 and bicarbonate fit the expected compensation.",
+        "tr": "pH’da durmayın; PaCO2 ve bikarbonatın beklenen kompansasyona uyup uymadığını kontrol edin."
+      },
+      "tags": [
+        "physiology",
+        "acid_base",
+        "blood_gas",
+        "anion_gap",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_monitor_pulseox_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Monitoring",
+      "topic": "Pulse oximetry",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning pulse oximetry, which of the following statements are true?",
+        "tr": "Pulse oksimetri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Conventional pulse oximetry estimates arterial oxygen saturation using two wavelengths of light.",
+            "tr": "Konvansiyonel pulse oksimetri arteriyel oksijen satürasyonunu iki ışık dalga boyu kullanarak tahmin eder."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Standard pulse oximeters use red and infrared light absorption.",
+            "tr": "Doğrudur. Standart pulse oksimetreler kırmızı ve kızılötesi ışık absorbsiyonunu kullanır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Pulse oximetry directly measures PaO2.",
+            "tr": "Pulse oksimetri PaO2’yi doğrudan ölçer."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. It estimates saturation, not oxygen tension.",
+            "tr": "Yanlıştır. Satürasyonu tahmin eder; oksijen basıncını ölçmez."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Methemoglobinemia may cause SpO2 values to trend toward approximately 85%.",
+            "tr": "Methemoglobinemi SpO2 değerlerinin yaklaşık %85’e yaklaşmasına neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Methemoglobin absorbs both wavelengths and can drive readings toward the mid-80s.",
+            "tr": "Doğrudur. Methemoglobin iki dalga boyunu da absorbe eder ve ölçümü 80’lerin ortasına çekebilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Motion artifact and poor peripheral perfusion can impair pulse oximeter accuracy.",
+            "tr": "Hareket artefaktı ve zayıf periferik perfüzyon pulse oksimetre doğruluğunu bozabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. A reliable pulsatile signal is required; shock, vasoconstriction, and movement can interfere.",
+            "tr": "Doğrudur. Güvenilir pulsatil sinyal gerekir; şok, vazokonstriksiyon ve hareket bozabilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "A normal SpO2 excludes anemia-related inadequate oxygen delivery.",
+            "tr": "Normal SpO2 anemiye bağlı yetersiz oksijen sunumunu dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. SpO2 may be normal in anemia while oxygen content and delivery are reduced.",
+            "tr": "Yanlıştır. Anemide SpO2 normal olabilir; oksijen içeriği ve sunumu azalmıştır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pulse oximetry estimates saturation, not oxygen content, oxygen tension, ventilation, or tissue delivery.",
+        "tr": "Pulse oksimetri satürasyonu tahmin eder; oksijen içeriğini, basıncını, ventilasyonu veya doku sunumunu ölçmez."
+      },
+      "keyLearningPoint": {
+        "en": "SpO2 can be normal even when oxygen delivery is inadequate.",
+        "tr": "Oksijen sunumu yetersizken SpO2 normal olabilir."
+      },
+      "commonTrap": {
+        "en": "Do not confuse saturation with oxygen delivery; hemoglobin and cardiac output are essential.",
+        "tr": "Satürasyonu oksijen sunumuyla karıştırmayın; hemoglobin ve kardiyak output esastır."
+      },
+      "tags": [
+        "monitoring",
+        "pulse_oximetry",
+        "oxygenation",
+        "co_oximetry",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_monitor_artline_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Monitoring",
+      "topic": "Invasive arterial pressure monitoring",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning invasive arterial pressure monitoring, which of the following statements are true?",
+        "tr": "İnvaziv arter basıncı monitörizasyonu ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "The pressure transducer should be zeroed to atmospheric pressure before use.",
+            "tr": "Basınç transdüseri kullanılmadan önce atmosfer basıncına sıfırlanmalıdır."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Zeroing sets atmospheric pressure as the reference point.",
+            "tr": "Doğrudur. Sıfırlama atmosfer basıncını referans alır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "The transducer is commonly leveled at the phlebostatic axis for systemic arterial pressure measurement.",
+            "tr": "Sistemik arter basıncı ölçümü için transdüser genellikle flebostatik aks seviyesine getirilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Leveling at the right atrial axis minimizes hydrostatic error.",
+            "tr": "Doğrudur. Sağ atriyum aksına seviyelendirme hidrostatik hatayı azaltır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "An underdamped arterial trace may exaggerate systolic pressure and underestimate diastolic pressure.",
+            "tr": "Underdamped arter trasesi sistolik basıncı abartabilir ve diyastolik basıncı düşük gösterebilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Underdamping causes overshoot and ringing, widening pulse pressure.",
+            "tr": "Doğrudur. Underdamping overshoot ve ringing oluşturup nabız basıncını genişletir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "An overdamped trace usually produces a falsely high systolic pressure.",
+            "tr": "Overdamped trase genellikle yalancı yüksek sistolik basınç oluşturur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Overdamping blunts systolic peaks and may raise displayed diastolic pressure.",
+            "tr": "Yanlıştır. Overdamping sistolik pikleri küntleştirir ve diyastoliği yüksek gösterebilir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Mean arterial pressure is usually less affected by damping than systolic pressure.",
+            "tr": "Ortalama arter basıncı dampingden sistolik basınca göre genellikle daha az etkilenir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. MAP is often more robust than systolic and diastolic extremes.",
+            "tr": "Doğrudur. MAP sistolik/diyastolik uç değerlere göre genellikle daha dayanıklıdır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Arterial pressure monitoring requires correct zeroing, leveling, waveform interpretation, and damping recognition.",
+        "tr": "Arter basıncı monitörizasyonu doğru sıfırlama, seviyelendirme, dalga formu yorumu ve damping tanımayı gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Damping artifacts distort systolic and diastolic values more than MAP.",
+        "tr": "Damping artefaktları sistolik ve diyastolik değerleri MAP'ten daha fazla bozar."
+      },
+      "commonTrap": {
+        "en": "Do not treat displayed systolic pressure without inspecting the waveform.",
+        "tr": "Dalga formunu incelemeden ekrandaki sistolik basınca göre tedavi etmeyin."
+      },
+      "tags": [
+        "monitoring",
+        "arterial_line",
+        "blood_pressure",
+        "damping",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_equipment_circle_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Equipment",
+      "topic": "Circle breathing system",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning the circle breathing system, which of the following statements are true?",
+        "tr": "Circle solunum sistemi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Unidirectional valves help ensure gas flows in one direction around the circle system.",
+            "tr": "Tek yönlü valfler gazın circle sistem içinde tek yönde akmasına yardımcı olur."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Inspiratory and expiratory valves direct gas flow and reduce CO2 rebreathing.",
+            "tr": "Doğrudur. İnspiratuvar ve ekspiratuvar valfler akımı yönlendirir ve CO2 rebreathingini azaltır."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "CO2 absorbent allows rebreathing of exhaled gases after carbon dioxide removal.",
+            "tr": "CO2 absorbanı, karbondioksit uzaklaştırıldıktan sonra ekshale gazların tekrar solunmasına izin verir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. CO2 absorption enables low-flow anesthesia in a circle system.",
+            "tr": "Doğrudur. CO2 absorbsiyonu circle sistemde düşük akımlı anesteziyi mümkün kılar."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Failure of the expiratory valve can cause rebreathing and abnormal capnography.",
+            "tr": "Ekspiratuvar valf arızası rebreathing ve anormal kapnografiye neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Valve incompetence may permit inspired CO2 and a raised capnographic baseline.",
+            "tr": "Doğrudur. Valf yetersizliği inhale CO2 ve yükselmiş kapnografi bazaline yol açabilir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "The adjustable pressure-limiting valve is irrelevant during manual ventilation.",
+            "tr": "Ayarlanabilir basınç sınırlayıcı valfin manuel ventilasyon sırasında önemi yoktur."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. The APL valve controls circuit pressure and gas escape during manual ventilation.",
+            "tr": "Yanlıştır. APL valfi manuel ventilasyonda devre basıncını ve gaz çıkışını kontrol eder."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Low-flow anesthesia can reduce volatile anesthetic consumption.",
+            "tr": "Düşük akımlı anestezi volatil anestezik tüketimini azaltabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Lower fresh gas flows reduce waste gas and volatile agent consumption.",
+            "tr": "Doğrudur. Düşük taze gaz akımları atık gazı ve volatil ajan tüketimini azaltır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "The circle system uses valves and CO2 absorption to allow efficient rebreathing and low-flow anesthesia.",
+        "tr": "Circle sistem valfler ve CO2 absorbsiyonu ile verimli rebreathing ve düşük akımlı anestezi sağlar."
+      },
+      "keyLearningPoint": {
+        "en": "Valve function and absorbent integrity are essential to prevent CO2 rebreathing.",
+        "tr": "CO2 rebreathingini önlemek için valf fonksiyonu ve absorban bütünlüğü esastır."
+      },
+      "commonTrap": {
+        "en": "Do not ignore a rising inspired CO2 baseline; check absorbent, valves, fresh gas flow, and circuit setup.",
+        "tr": "Yükselen inspire CO2 bazalini görmezden gelmeyin; absorban, valfler, taze gaz akımı ve devreyi kontrol edin."
+      },
+      "tags": [
+        "equipment",
+        "circle_system",
+        "co2_absorbent",
+        "low_flow",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_equipment_fgf_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Equipment",
+      "topic": "Fresh gas flow and rebreathing",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Concerning fresh gas flow and rebreathing, which of the following statements are true?",
+        "tr": "Taze gaz akımı ve rebreathing ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "In a Mapleson A system, spontaneous ventilation is more efficient than controlled ventilation for preventing rebreathing.",
+            "tr": "Mapleson A sisteminde spontan ventilasyon rebreathing'i önlemede kontrollü ventilasyondan daha verimlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Mapleson A is efficient during spontaneous ventilation but inefficient during controlled ventilation.",
+            "tr": "Doğrudur. Mapleson A spontan ventilasyonda verimli, kontrollü ventilasyonda verimsizdir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Mapleson D systems are efficient for controlled ventilation when fresh gas flow is adequate.",
+            "tr": "Mapleson D sistemleri taze gaz akımı yeterliyse kontrollü ventilasyonda verimlidir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Mapleson D/Bain systems are efficient for controlled ventilation with sufficient FGF.",
+            "tr": "Doğrudur. Mapleson D/Bain sistemleri yeterli FGF ile kontrollü ventilasyonda verimlidir."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Rebreathing is always desirable because it conserves heat and humidity.",
+            "tr": "Rebreathing ısı ve nemi koruduğu için her zaman istenir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. CO2 rebreathing is harmful; only CO2-free rebreathing is desirable in a functioning circle system.",
+            "tr": "Yanlıştır. CO2 rebreathingi zararlıdır; yalnızca çalışan circle sistemde CO2'siz rebreathing istenir."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Insufficient fresh gas flow in a non-rebreathing circuit may lead to CO2 rebreathing.",
+            "tr": "Non-rebreathing devrede yetersiz taze gaz akımı CO2 rebreathingine yol açabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Many non-circle systems require adequate FGF to flush exhaled CO2.",
+            "tr": "Doğrudur. Birçok non-circle sistem ekshale CO2’yi uzaklaştırmak için yeterli FGF gerektirir."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "A normal inspiratory CO2 baseline on capnography excludes all breathing circuit problems.",
+            "tr": "Kapnografide normal inspiratuvar CO2 bazali tüm solunum devresi problemlerini dışlar."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. It helps exclude CO2 rebreathing but not every leak, obstruction, valve problem, or misconnection.",
+            "tr": "Yanlıştır. CO2 rebreathingini dışlamaya yardım eder ama her kaçak, tıkanma, valf sorunu veya yanlış bağlantıyı dışlamaz."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Fresh gas flow requirements depend on breathing system design and ventilation mode.",
+        "tr": "Taze gaz akımı gereksinimi solunum sistemi tasarımı ve ventilasyon moduna bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Know which breathing systems are efficient for spontaneous versus controlled ventilation.",
+        "tr": "Hangi sistemlerin spontan veya kontrollü ventilasyonda verimli olduğunu bilin."
+      },
+      "commonTrap": {
+        "en": "Do not generalize fresh gas flow rules across different breathing systems.",
+        "tr": "Taze gaz akımı kurallarını farklı solunum sistemlerine genellemeyin."
+      },
+      "tags": [
+        "equipment",
+        "fresh_gas_flow",
+        "rebreathing",
+        "mapleson",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "edaic_a_physics_electrical_0001",
+      "boardType": "EDAIC_PART_I",
+      "paper": "PAPER_A",
+      "category": "Physics",
+      "topic": "Electrical safety and diathermy",
+      "difficulty": "hard",
+      "stem": {
+        "en": "Concerning electrical safety and surgical diathermy, which of the following statements are true?",
+        "tr": "Elektrik güvenliği ve cerrahi diyatermi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?"
+      },
+      "statements": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Alternating current at mains frequency can cause ventricular fibrillation if it passes through the heart.",
+            "tr": "Şebeke frekansındaki alternatif akım kalpten geçerse ventriküler fibrilasyona neden olabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Low-frequency current can depolarize excitable tissue and trigger ventricular fibrillation.",
+            "tr": "Doğrudur. Düşük frekanslı akım uyarılabilir dokuyu depolarize edip VF tetikleyebilir."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "High-frequency surgical diathermy cuts tissue mainly by neuromuscular stimulation.",
+            "tr": "Yüksek frekanslı cerrahi diyatermi dokuyu esas olarak nöromüsküler stimülasyonla keser."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Diathermy uses high-frequency current to generate tissue heat; high frequency reduces stimulation.",
+            "tr": "Yanlıştır. Diyatermi yüksek frekanslı akımla doku ısısı oluşturur; yüksek frekans stimülasyonu azaltır."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "A poorly applied dispersive electrode may increase the risk of patient burns.",
+            "tr": "Kötü yerleştirilmiş dispersif elektrot hasta yanığı riskini artırabilir."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Poor contact increases current density and heat at the return electrode site.",
+            "tr": "Doğrudur. Kötü temas dönüş elektrodunda akım yoğunluğu ve ısıyı artırır."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Bipolar diathermy usually confines current flow more locally than monopolar diathermy.",
+            "tr": "Bipolar diyatermi genellikle akım akışını monopolar diyatermiye göre daha lokal sınırlar."
+          },
+          "correctAnswer": true,
+          "explanation": {
+            "en": "True. Current passes between the two instrument tips, reducing distant pathways.",
+            "tr": "Doğrudur. Akım aletin iki ucu arasında geçer ve uzak akım yollarını azaltır."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Alcohol-based skin preparation is safe to ignite immediately before diathermy without drying time.",
+            "tr": "Alkol bazlı cilt hazırlığı kuruma süresi beklenmeden diyatermi öncesi güvenle kullanılabilir."
+          },
+          "correctAnswer": false,
+          "explanation": {
+            "en": "False. Alcohol prep must dry fully before using ignition sources to reduce fire risk.",
+            "tr": "Yanlıştır. Yangın riskini azaltmak için ateşleme kaynakları öncesi alkol tamamen kurumalıdır."
+          }
+        }
+      ],
+      "overallExplanation": {
+        "en": "Electrical injury risk depends on pathway, frequency, current density, and contact quality; diathermy adds thermal and fire hazards.",
+        "tr": "Elektrik yaralanması riski yol, frekans, akım yoğunluğu ve temas kalitesine bağlıdır; diyatermi termal ve yangın riskleri ekler."
+      },
+      "keyLearningPoint": {
+        "en": "High-frequency diathermy heats tissue; low-frequency current stimulates nerve and muscle more readily.",
+        "tr": "Yüksek frekanslı diyatermi dokuyu ısıtır; düşük frekanslı akım sinir ve kası daha kolay uyarır."
+      },
+      "commonTrap": {
+        "en": "Do not forget fire prevention: oxygen concentration, alcohol drying, drapes, and ignition sources matter.",
+        "tr": "Yangın önlemini unutmayın: oksijen konsantrasyonu, alkolün kuruması, örtüler ve ateşleme kaynakları önemlidir."
+      },
+      "tags": [
+        "physics",
+        "electrical_safety",
+        "diathermy",
+        "fire",
+        "paper_a"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia basic science concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    }
+  ],
+  "sbaQuestions": [],
+  "vivaQuestions": []
+}

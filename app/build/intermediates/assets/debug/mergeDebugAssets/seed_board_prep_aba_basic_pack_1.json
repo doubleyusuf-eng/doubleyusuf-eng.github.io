@@ -1,0 +1,2353 @@
+{
+  "packId": "aba_basic_pack_1",
+  "version": 1,
+  "boardType": "ABA_BASIC",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "edaicMtfQuestions": [],
+  "sbaQuestions": [
+    {
+      "id": "aba_basic_pharm_volatile_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Volatile anesthetics and MAC",
+      "difficulty": "easy",
+      "stem": {
+        "en": "A 72-year-old patient is receiving sevoflurane for maintenance of anesthesia. Compared with a healthy 25-year-old adult, which statement best describes the expected MAC requirement?",
+        "tr": "Yetmiş iki yaşındaki bir hastada anestezi idamesi için sevofluran kullanılmaktadır. Sağlıklı 25 yaşındaki bir erişkine kıyasla beklenen MAC gereksinimi için en doğru ifade hangisidir?"
+      },
+      "options": [
+        {
+          "en": "MAC is increased because of advanced age",
+          "tr": "İleri yaş nedeniyle MAC artmıştır"
+        },
+        {
+          "en": "MAC is decreased because of advanced age",
+          "tr": "İleri yaş nedeniyle MAC azalmıştır"
+        },
+        {
+          "en": "MAC is unchanged because MAC is independent of age",
+          "tr": "MAC yaştan bağımsız olduğu için değişmemiştir"
+        },
+        {
+          "en": "MAC is increased only if nitrous oxide is added",
+          "tr": "MAC yalnızca nitröz oksit eklenirse artar"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. MAC generally decreases with advancing age.",
+          "tr": "Yanlış. MAC genellikle yaş ilerledikçe azalır."
+        },
+        {
+          "en": "Correct. Older adults typically require lower volatile anesthetic concentrations.",
+          "tr": "Doğru. Yaşlı erişkinler genellikle daha düşük volatil anestezik konsantrasyonlarına ihtiyaç duyar."
+        },
+        {
+          "en": "Incorrect. Age is one of the classic modifiers of MAC.",
+          "tr": "Yanlış. Yaş MAC’i değiştiren klasik faktörlerden biridir."
+        },
+        {
+          "en": "Incorrect. Nitrous oxide decreases the required MAC of other volatile agents.",
+          "tr": "Yanlış. Nitröz oksit diğer volatil ajanların gereken MAC değerini azaltır."
+        }
+      ],
+      "overallExplanation": {
+        "en": "MAC is a population measure of volatile anesthetic potency and is reduced by aging, pregnancy, hypothermia, opioids, benzodiazepines, and many sedatives.",
+        "tr": "MAC volatil anestezik potensi için popülasyon temelli bir ölçüdür ve yaşlanma, gebelik, hipotermi, opioidler, benzodiyazepinler ve birçok sedatifle azalır."
+      },
+      "keyLearningPoint": {
+        "en": "Advanced age decreases MAC.",
+        "tr": "İleri yaş MAC’i azaltır."
+      },
+      "commonTrap": {
+        "en": "Do not dose volatile anesthetics only by vaporizer number; interpret end-tidal concentration in clinical context.",
+        "tr": "Volatil anestezikleri yalnızca vaporizatör sayısına göre dozlamayın; end-tidal konsantrasyonu klinik bağlamda yorumlayın."
+      },
+      "tags": [
+        "pharmacology",
+        "volatile",
+        "mac",
+        "sevoflurane",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_pharm_iv_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Etomidate",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which induction agent is most associated with adrenal steroid synthesis inhibition after a single induction dose?",
+        "tr": "Tek indüksiyon dozundan sonra adrenal steroid sentez inhibisyonu ile en çok ilişkilendirilen indüksiyon ajanı hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Propofol",
+          "tr": "Propofol"
+        },
+        {
+          "en": "Ketamine",
+          "tr": "Ketamin"
+        },
+        {
+          "en": "Etomidate",
+          "tr": "Etomidat"
+        },
+        {
+          "en": "Thiopental",
+          "tr": "Tiyopental"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Propofol commonly causes vasodilation and hypotension but is not the classic agent for adrenal suppression.",
+          "tr": "Yanlış. Propofol vazodilatasyon ve hipotansiyon yapabilir ancak adrenal supresyon için klasik ajan değildir."
+        },
+        {
+          "en": "Incorrect. Ketamine is sympathomimetic and is not classically associated with adrenal enzyme inhibition.",
+          "tr": "Yanlış. Ketamin sempatomimetiktir ve klasik olarak adrenal enzim inhibisyonu ile ilişkilendirilmez."
+        },
+        {
+          "en": "Correct. Etomidate inhibits 11-beta-hydroxylase and can suppress cortisol synthesis.",
+          "tr": "Doğru. Etomidat 11-beta-hidroksilazı inhibe ederek kortizol sentezini baskılayabilir."
+        },
+        {
+          "en": "Incorrect. Thiopental is a barbiturate induction agent but not the classic cause of adrenal steroid synthesis inhibition.",
+          "tr": "Yanlış. Tiyopental bir barbitürat indüksiyon ajanıdır ancak adrenal steroid sentez inhibisyonunun klasik nedeni değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Etomidate is hemodynamically stable but may inhibit adrenal steroid synthesis by blocking 11-beta-hydroxylase.",
+        "tr": "Etomidat hemodinamik olarak stabil olabilir ancak 11-beta-hidroksilazı bloke ederek adrenal steroid sentezini inhibe edebilir."
+      },
+      "keyLearningPoint": {
+        "en": "Etomidate: stable induction, adrenal suppression concern.",
+        "tr": "Etomidat: stabil indüksiyon, adrenal supresyon kaygısı."
+      },
+      "commonTrap": {
+        "en": "Do not confuse hemodynamic stability with absence of endocrine effects.",
+        "tr": "Hemodinamik stabiliteyi endokrin etkilerin yokluğu ile karıştırmayın."
+      },
+      "tags": [
+        "pharmacology",
+        "etomidate",
+        "induction",
+        "adrenal",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_pharm_iv_0002",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Ketamine",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which induction agent is most likely to increase heart rate and blood pressure through sympathetic stimulation?",
+        "tr": "Sempatik stimülasyon yoluyla kalp hızı ve kan basıncını artırma olasılığı en yüksek indüksiyon ajanı hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Ketamine",
+          "tr": "Ketamin"
+        },
+        {
+          "en": "Propofol",
+          "tr": "Propofol"
+        },
+        {
+          "en": "Midazolam",
+          "tr": "Midazolam"
+        },
+        {
+          "en": "Dexmedetomidine",
+          "tr": "Deksmedetomidin"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Ketamine commonly increases sympathetic tone, heart rate, and blood pressure.",
+          "tr": "Doğru. Ketamin sıklıkla sempatik tonu, kalp hızını ve kan basıncını artırır."
+        },
+        {
+          "en": "Incorrect. Propofol typically causes vasodilation and hypotension.",
+          "tr": "Yanlış. Propofol tipik olarak vazodilatasyon ve hipotansiyon yapar."
+        },
+        {
+          "en": "Incorrect. Midazolam is generally sedative with modest cardiovascular depression.",
+          "tr": "Yanlış. Midazolam sedatif olup genellikle hafif kardiyovasküler depresyon yapar."
+        },
+        {
+          "en": "Incorrect. Dexmedetomidine often causes bradycardia and hypotension.",
+          "tr": "Yanlış. Deksmedetomidin sıklıkla bradikardi ve hipotansiyon yapar."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Ketamine is a dissociative anesthetic with sympathomimetic effects, though direct myocardial depression may appear in catecholamine-depleted patients.",
+        "tr": "Ketamin sempatomimetik etkileri olan dissosiyatif anesteziktir; ancak katekolamin depoları tükenmiş hastalarda doğrudan miyokard depresyonu görülebilir."
+      },
+      "keyLearningPoint": {
+        "en": "Ketamine often supports blood pressure but is not universally cardiostimulatory.",
+        "tr": "Ketamin sıklıkla kan basıncını destekler ancak her zaman kardiyostimülan değildir."
+      },
+      "commonTrap": {
+        "en": "Do not assume ketamine will always increase blood pressure in shock states with depleted catecholamines.",
+        "tr": "Katekolaminleri tükenmiş şok hastasında ketaminin her zaman basıncı artıracağını varsaymayın."
+      },
+      "tags": [
+        "pharmacology",
+        "ketamine",
+        "induction",
+        "hemodynamics",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_pharm_opioid_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Remifentanil",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which opioid is metabolized primarily by nonspecific plasma and tissue esterases?",
+        "tr": "Hangi opioid esas olarak nonspesifik plazma ve doku esterazları tarafından metabolize edilir?"
+      },
+      "options": [
+        {
+          "en": "Morphine",
+          "tr": "Morfin"
+        },
+        {
+          "en": "Fentanyl",
+          "tr": "Fentanil"
+        },
+        {
+          "en": "Hydromorphone",
+          "tr": "Hidromorfon"
+        },
+        {
+          "en": "Remifentanil",
+          "tr": "Remifentanil"
+        }
+      ],
+      "correctAnswerIndex": 3,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Morphine undergoes hepatic glucuronidation and has active metabolites.",
+          "tr": "Yanlış. Morfin hepatik glukuronidasyona uğrar ve aktif metabolitleri vardır."
+        },
+        {
+          "en": "Incorrect. Fentanyl is primarily hepatically metabolized.",
+          "tr": "Yanlış. Fentanil esas olarak hepatik metabolizmaya uğrar."
+        },
+        {
+          "en": "Incorrect. Hydromorphone is not primarily metabolized by nonspecific esterases.",
+          "tr": "Yanlış. Hidromorfon esas olarak nonspesifik esterazlarla metabolize edilmez."
+        },
+        {
+          "en": "Correct. Remifentanil has rapid esterase metabolism, leading to context-insensitive offset.",
+          "tr": "Doğru. Remifentanil hızlı esteraz metabolizmasına sahiptir ve bağlamdan büyük ölçüde bağımsız hızlı etki sonlanması sağlar."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Remifentanil has an ester linkage and is rapidly metabolized by nonspecific esterases, making its duration very short even after prolonged infusion.",
+        "tr": "Remifentanil ester bağı içerir ve nonspesifik esterazlarla hızla metabolize olur; bu nedenle uzun infüzyondan sonra bile etki süresi çok kısadır."
+      },
+      "keyLearningPoint": {
+        "en": "Remifentanil wears off quickly; plan postoperative analgesia.",
+        "tr": "Remifentanilin etkisi hızlı biter; postoperatif analjezi planlayın."
+      },
+      "commonTrap": {
+        "en": "Do not forget transition analgesia after remifentanil infusion.",
+        "tr": "Remifentanil infüzyonu sonrası geçiş analjezisini unutmayın."
+      },
+      "tags": [
+        "pharmacology",
+        "opioids",
+        "remifentanil",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_nmba_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Neuromuscular blockers",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A patient has no train-of-four twitches after rocuronium. Which reversal strategy is most appropriate if immediate reversal is required?",
+        "tr": "Roküronyum sonrası hastada train-of-four yanıtı yoktur. Acil reversiyon gerekiyorsa en uygun yaklaşım hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Neostigmine alone",
+          "tr": "Tek başına neostigmin"
+        },
+        {
+          "en": "Sugammadex at an appropriate dose for deep block",
+          "tr": "Derin blok için uygun dozda sugammadeks"
+        },
+        {
+          "en": "Atropine alone",
+          "tr": "Tek başına atropin"
+        },
+        {
+          "en": "Wait 2 minutes and extubate if tidal volume is adequate",
+          "tr": "İki dakika bekleyip tidal volüm yeterliyse ekstübe etmek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Neostigmine requires some spontaneous recovery and is unreliable for profound block.",
+          "tr": "Yanlış. Neostigmin için bir miktar spontan derlenme gerekir ve derin blokta güvenilir değildir."
+        },
+        {
+          "en": "Correct. Sugammadex can reverse deep rocuronium blockade when dosed appropriately.",
+          "tr": "Doğru. Sugammadeks uygun dozda verildiğinde derin roküronyum blokajını geri döndürebilir."
+        },
+        {
+          "en": "Incorrect. Atropine treats muscarinic effects but does not reverse neuromuscular blockade.",
+          "tr": "Yanlış. Atropin muskarinik etkileri tedavi eder ancak nöromüsküler blokajı geri döndürmez."
+        },
+        {
+          "en": "Incorrect. Clinical tidal volume is not a reliable marker of full neuromuscular recovery.",
+          "tr": "Yanlış. Klinik tidal volüm tam nöromüsküler derlenmenin güvenilir göstergesi değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Reversal choice depends on the blocking drug and depth of blockade. Sugammadex is specifically useful for rocuronium and vecuronium.",
+        "tr": "Reversiyon seçimi kullanılan bloker ilaca ve blok derinliğine bağlıdır. Sugammadeks özellikle roküronyum ve veküronyum için yararlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Neostigmine is not reliable when there is no TOF response.",
+        "tr": "TOF yanıtı yokken neostigmin güvenilir değildir."
+      },
+      "commonTrap": {
+        "en": "Do not extubate based on clinical signs alone after profound blockade.",
+        "tr": "Derin blok sonrası yalnızca klinik bulgulara dayanarak ekstübasyon yapmayın."
+      },
+      "tags": [
+        "pharmacology",
+        "neuromuscular_block",
+        "rocuronium",
+        "sugammadex",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_local_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Pharmacology",
+      "topic": "Local anesthetic toxicity",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which local anesthetic is classically associated with the greatest risk of severe treatment-resistant cardiotoxicity?",
+        "tr": "Şiddetli ve tedaviye dirençli kardiyotoksisite riskiyle klasik olarak en çok ilişkilendirilen lokal anestezik hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Lidocaine",
+          "tr": "Lidokain"
+        },
+        {
+          "en": "Chloroprocaine",
+          "tr": "Kloroprokain"
+        },
+        {
+          "en": "Bupivacaine",
+          "tr": "Bupivakain"
+        },
+        {
+          "en": "Prilocaine",
+          "tr": "Prilokain"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Lidocaine can cause toxicity but is generally less cardiotoxic than bupivacaine.",
+          "tr": "Yanlış. Lidokain toksisite yapabilir ancak genellikle bupivakainden daha az kardiyotoksiktir."
+        },
+        {
+          "en": "Incorrect. Chloroprocaine is an ester local anesthetic with rapid metabolism.",
+          "tr": "Yanlış. Kloroprokain hızlı metabolize olan ester lokal anesteziktir."
+        },
+        {
+          "en": "Correct. Bupivacaine binds strongly to cardiac sodium channels and dissociates slowly, causing refractory arrhythmias.",
+          "tr": "Doğru. Bupivakain kardiyak sodyum kanallarına güçlü bağlanır ve yavaş ayrılır; dirençli aritmilere neden olabilir."
+        },
+        {
+          "en": "Incorrect. Prilocaine is more classically associated with methemoglobinemia than severe refractory cardiotoxicity.",
+          "tr": "Yanlış. Prilokain şiddetli dirençli kardiyotoksisiteden çok methemoglobinemi ile ilişkilidir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Bupivacaine is highly cardiotoxic compared with many other local anesthetics, especially after accidental intravascular injection.",
+        "tr": "Bupivakain birçok lokal anesteziğe göre özellikle kazara intravasküler enjeksiyon sonrası yüksek kardiyotoksiktir."
+      },
+      "keyLearningPoint": {
+        "en": "Early LAST recognition and lipid rescue are lifesaving.",
+        "tr": "LAST’in erken tanınması ve lipid tedavisi hayat kurtarıcıdır."
+      },
+      "commonTrap": {
+        "en": "Do not treat local anesthetic-induced arrhythmias with more local anesthetic antiarrhythmic.",
+        "tr": "Lokal anestezik kaynaklı aritmileri daha fazla lokal anestezik antiaritmikle tedavi etmeyin."
+      },
+      "tags": [
+        "pharmacology",
+        "local_anesthetic",
+        "last",
+        "bupivacaine",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_resp_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Alveolar gas equation",
+      "difficulty": "medium",
+      "stem": {
+        "en": "At sea level, a patient breathing room air has PaCO2 80 mmHg. Assuming respiratory quotient 0.8, what is the approximate expected alveolar oxygen tension before considering A–a gradient?",
+        "tr": "Deniz seviyesinde oda havası soluyan bir hastada PaCO2 80 mmHg’dir. Respiratuvar katsayı 0.8 kabul edilirse, A–a gradyanı dikkate alınmadan beklenen alveoler oksijen basıncı yaklaşık kaçtır?"
+      },
+      "options": [
+        {
+          "en": "50 mmHg",
+          "tr": "50 mmHg"
+        },
+        {
+          "en": "100 mmHg",
+          "tr": "100 mmHg"
+        },
+        {
+          "en": "150 mmHg",
+          "tr": "150 mmHg"
+        },
+        {
+          "en": "200 mmHg",
+          "tr": "200 mmHg"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. PAO2 ≈ 150 − PaCO2/0.8 = 150 − 100 = 50 mmHg.",
+          "tr": "Doğru. PAO2 ≈ 150 − PaCO2/0.8 = 150 − 100 = 50 mmHg."
+        },
+        {
+          "en": "Incorrect. This would underestimate the effect of severe hypercapnia.",
+          "tr": "Yanlış. Bu seçenek ciddi hiperkapninin etkisini azımsar."
+        },
+        {
+          "en": "Incorrect. 150 mmHg is the approximate inspired oxygen tension on room air before subtracting CO2 effect.",
+          "tr": "Yanlış. 150 mmHg, CO2 etkisi çıkarılmadan önce oda havasında yaklaşık inspire oksijen basıncıdır."
+        },
+        {
+          "en": "Incorrect. This is too high for room air at sea level.",
+          "tr": "Yanlış. Bu değer deniz seviyesinde oda havası için çok yüksektir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "The simplified alveolar gas equation is PAO2 = PIO2 − PaCO2/R. Hypercapnia reduces alveolar oxygen tension.",
+        "tr": "Basitleştirilmiş alveoler gaz denklemi PAO2 = PIO2 − PaCO2/R şeklindedir. Hiperkapni alveoler oksijen basıncını azaltır."
+      },
+      "keyLearningPoint": {
+        "en": "Hypercapnia causes hypoxemia by lowering alveolar oxygen tension.",
+        "tr": "Hiperkapni alveoler oksijen basıncını düşürerek hipoksemi yapar."
+      },
+      "commonTrap": {
+        "en": "Do not interpret hypoxemia without checking PaCO2.",
+        "tr": "PaCO2’ye bakmadan hipoksemiyi yorumlamayın."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "alveolar_gas_equation",
+        "hypercapnia",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_resp_0002",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Closing capacity",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which condition most predisposes to airway closure during normal tidal breathing by increasing closing capacity relative to FRC?",
+        "tr": "Closing capacity’nin FRC’ye göre artması yoluyla normal tidal solunum sırasında hava yolu kapanmasına en çok hangi durum yatkınlık oluşturur?"
+      },
+      "options": [
+        {
+          "en": "Young age and standing position",
+          "tr": "Genç yaş ve ayakta pozisyon"
+        },
+        {
+          "en": "Advanced age and supine position",
+          "tr": "İleri yaş ve supin pozisyon"
+        },
+        {
+          "en": "Hyperventilation and hypocapnia",
+          "tr": "Hiperventilasyon ve hipokapni"
+        },
+        {
+          "en": "High inspired oxygen alone",
+          "tr": "Tek başına yüksek inspire oksijen"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Young healthy patients upright generally have a larger margin between FRC and closing capacity.",
+          "tr": "Yanlış. Genç sağlıklı hastalarda ayakta FRC ile closing capacity arasında genellikle daha geniş marj vardır."
+        },
+        {
+          "en": "Correct. Aging increases closing capacity, and supine position/anesthesia reduces FRC, promoting airway closure.",
+          "tr": "Doğru. Yaşlanma closing capacity’yi artırır; supin pozisyon/anestezi FRC’yi azaltır ve hava yolu kapanmasını kolaylaştırır."
+        },
+        {
+          "en": "Incorrect. Ventilation pattern does not classically increase closing capacity relative to FRC in this way.",
+          "tr": "Yanlış. Ventilasyon paterni klasik olarak bu şekilde closing capacity’yi FRC’ye göre artırmaz."
+        },
+        {
+          "en": "Incorrect. High inspired oxygen may promote absorption atelectasis but is not the primary determinant of closing capacity.",
+          "tr": "Yanlış. Yüksek inspire oksijen absorbsiyon atelektazisine katkı sağlayabilir ancak closing capacity’nin primer belirleyicisi değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Airway closure occurs when closing capacity exceeds FRC. Aging, supine position, obesity, pregnancy, and anesthesia reduce safety margins.",
+        "tr": "Closing capacity FRC’yi aştığında hava yolu kapanması olur. Yaşlanma, supin pozisyon, obezite, gebelik ve anestezi güvenlik marjını azaltır."
+      },
+      "keyLearningPoint": {
+        "en": "FRC falls under anesthesia; closing capacity rises with age.",
+        "tr": "Anestezi altında FRC azalır; closing capacity yaşla artar."
+      },
+      "commonTrap": {
+        "en": "Do not confuse FRC with closing capacity; their relationship predicts airway closure.",
+        "tr": "FRC ile closing capacity’yi karıştırmayın; aralarındaki ilişki hava yolu kapanmasını öngörür."
+      },
+      "tags": [
+        "physiology",
+        "respiratory",
+        "frc",
+        "closing_capacity",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_cv_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Coronary perfusion",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which change most directly decreases left ventricular coronary perfusion pressure?",
+        "tr": "Hangi değişiklik sol ventrikül koroner perfüzyon basıncını en doğrudan azaltır?"
+      },
+      "options": [
+        {
+          "en": "Increased aortic diastolic pressure",
+          "tr": "Aort diyastolik basıncının artması"
+        },
+        {
+          "en": "Decreased left ventricular end-diastolic pressure",
+          "tr": "Sol ventrikül diyastol sonu basıncının azalması"
+        },
+        {
+          "en": "Decreased aortic diastolic pressure",
+          "tr": "Aort diyastolik basıncının azalması"
+        },
+        {
+          "en": "Sinus bradycardia with adequate blood pressure",
+          "tr": "Yeterli kan basıncıyla sinüs bradikardisi"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Higher aortic diastolic pressure tends to improve coronary perfusion gradient.",
+          "tr": "Yanlış. Daha yüksek aort diyastolik basıncı koroner perfüzyon gradyanını artırma eğilimindedir."
+        },
+        {
+          "en": "Incorrect. Lower LVEDP reduces the opposing pressure and tends to improve perfusion gradient.",
+          "tr": "Yanlış. Daha düşük LVEDP karşı basıncı azaltır ve perfüzyon gradyanını artırma eğilimindedir."
+        },
+        {
+          "en": "Correct. Left coronary perfusion pressure is approximated by aortic diastolic pressure minus LVEDP.",
+          "tr": "Doğru. Sol koroner perfüzyon basıncı yaklaşık olarak aort diyastolik basıncı eksi LVEDP’dir."
+        },
+        {
+          "en": "Incorrect. Bradycardia may prolong diastole and can improve coronary filling if blood pressure is adequate.",
+          "tr": "Yanlış. Bradikardi kan basıncı yeterliyse diyastolü uzatarak koroner doluşu iyileştirebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Left ventricular coronary perfusion occurs mainly in diastole and depends on aortic diastolic pressure and LVEDP.",
+        "tr": "Sol ventrikül koroner perfüzyonu esas olarak diyastolde olur ve aort diyastolik basıncı ile LVEDP’ye bağlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Low diastolic pressure and high LVEDP threaten coronary perfusion.",
+        "tr": "Düşük diyastolik basınç ve yüksek LVEDP koroner perfüzyonu tehdit eder."
+      },
+      "commonTrap": {
+        "en": "Do not use MAP alone as the complete coronary perfusion story.",
+        "tr": "Koroner perfüzyonu yalnızca OAB ile açıklamayın."
+      },
+      "tags": [
+        "physiology",
+        "cardiovascular",
+        "coronary_perfusion",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_cv_0002",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Aortic stenosis hemodynamics",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which hemodynamic goal is most appropriate for severe aortic stenosis?",
+        "tr": "Ciddi aort stenozunda en uygun hemodinamik hedef hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Maintain preload, sinus rhythm, and systemic vascular resistance",
+          "tr": "Preload, sinüs ritmi ve sistemik vasküler direnci korumak"
+        },
+        {
+          "en": "Aggressive reduction of afterload with deep vasodilation",
+          "tr": "Derin vazodilatasyonla afterload’u agresif azaltmak"
+        },
+        {
+          "en": "Allow persistent tachycardia to increase cardiac output",
+          "tr": "Kardiyak outputu artırmak için kalıcı taşikardiye izin vermek"
+        },
+        {
+          "en": "Avoid vasopressors at all times",
+          "tr": "Vazopressörlerden her zaman kaçınmak"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Severe AS patients depend on preload, sinus rhythm, and coronary perfusion pressure.",
+          "tr": "Doğru. Ciddi AS hastaları preload, sinüs ritmi ve koroner perfüzyon basıncına bağımlıdır."
+        },
+        {
+          "en": "Incorrect. Abrupt vasodilation may cause severe hypotension and ischemia.",
+          "tr": "Yanlış. Ani vazodilatasyon ciddi hipotansiyon ve iskemiye neden olabilir."
+        },
+        {
+          "en": "Incorrect. Tachycardia reduces filling time and coronary perfusion.",
+          "tr": "Yanlış. Taşikardi doluş zamanını ve koroner perfüzyonu azaltır."
+        },
+        {
+          "en": "Incorrect. Vasopressors may be needed to maintain coronary perfusion pressure.",
+          "tr": "Yanlış. Koroner perfüzyon basıncını korumak için vazopressör gerekebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Severe aortic stenosis is a fixed outflow obstruction. Avoid hypotension, tachycardia, and loss of sinus rhythm.",
+        "tr": "Ciddi aort stenozu sabit çıkış obstrüksiyonudur. Hipotansiyon, taşikardi ve sinüs ritmi kaybından kaçının."
+      },
+      "keyLearningPoint": {
+        "en": "Maintain coronary perfusion pressure in severe AS.",
+        "tr": "Ciddi AS’de koroner perfüzyon basıncını koruyun."
+      },
+      "commonTrap": {
+        "en": "Do not treat severe AS like ordinary hypertension requiring vasodilation.",
+        "tr": "Ciddi AS’yi vazodilatasyon gerektiren sıradan hipertansiyon gibi yönetmeyin."
+      },
+      "tags": [
+        "physiology",
+        "cardiovascular",
+        "aortic_stenosis",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_acidbase_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Anion gap",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Using Na 140 mEq/L, Cl 104 mEq/L, and HCO3 12 mEq/L, what is the anion gap?",
+        "tr": "Na 140 mEq/L, Cl 104 mEq/L ve HCO3 12 mEq/L ise anyon açığı kaçtır?"
+      },
+      "options": [
+        {
+          "en": "12 mEq/L",
+          "tr": "12 mEq/L"
+        },
+        {
+          "en": "24 mEq/L",
+          "tr": "24 mEq/L"
+        },
+        {
+          "en": "36 mEq/L",
+          "tr": "36 mEq/L"
+        },
+        {
+          "en": "152 mEq/L",
+          "tr": "152 mEq/L"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. This is close to normal but does not match the calculation.",
+          "tr": "Yanlış. Bu normale yakın bir değerdir ancak hesaplama sonucu değildir."
+        },
+        {
+          "en": "Correct. Anion gap = Na − (Cl + HCO3) = 140 − (104 + 12) = 24.",
+          "tr": "Doğru. Anyon açığı = Na − (Cl + HCO3) = 140 − (104 + 12) = 24."
+        },
+        {
+          "en": "Incorrect. This double-counts part of the calculation.",
+          "tr": "Yanlış. Hesaplamanın bir bölümünü iki kez sayar."
+        },
+        {
+          "en": "Incorrect. This is not the anion gap formula.",
+          "tr": "Yanlış. Bu anyon açığı formülü değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "The anion gap helps classify metabolic acidosis into high-gap and normal-gap causes.",
+        "tr": "Anyon açığı metabolik asidozu yüksek anyon açıklı ve normal anyon açıklı nedenler olarak sınıflandırmaya yardımcı olur."
+      },
+      "keyLearningPoint": {
+        "en": "Anion gap = Na − (Cl + HCO3).",
+        "tr": "Anyon açığı = Na − (Cl + HCO3)."
+      },
+      "commonTrap": {
+        "en": "Do not forget to interpret the anion gap in clinical context and albumin level.",
+        "tr": "Anyon açığını klinik bağlam ve albümin düzeyiyle birlikte yorumlamayı unutmayın."
+      },
+      "tags": [
+        "physiology",
+        "acid_base",
+        "anion_gap",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_monitor_capno_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Monitoring",
+      "topic": "Capnography",
+      "difficulty": "easy",
+      "stem": {
+        "en": "During general anesthesia, a sudden decrease in end-tidal CO2 from 35 to 10 mmHg with hypotension most strongly suggests which process?",
+        "tr": "Genel anestezi sırasında end-tidal CO2’nin 35’ten 10 mmHg’ye ani düşmesi ve hipotansiyon en çok hangi süreci düşündürür?"
+      },
+      "options": [
+        {
+          "en": "Increased cardiac output",
+          "tr": "Artmış kardiyak output"
+        },
+        {
+          "en": "Reduced pulmonary blood flow",
+          "tr": "Azalmış pulmoner kan akımı"
+        },
+        {
+          "en": "Exhausted CO2 absorbent",
+          "tr": "Tükenmiş CO2 absorbanı"
+        },
+        {
+          "en": "Malignant hyperthermia",
+          "tr": "Malign hipertermi"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Increased cardiac output usually increases CO2 delivery to the lungs.",
+          "tr": "Yanlış. Artmış kardiyak output genellikle akciğere CO2 taşınmasını artırır."
+        },
+        {
+          "en": "Correct. Low cardiac output, pulmonary embolism, or arrest can reduce pulmonary CO2 delivery and lower ETCO2.",
+          "tr": "Doğru. Düşük kardiyak output, pulmoner emboli veya arrest akciğere CO2 taşınmasını azaltarak ETCO2’yi düşürebilir."
+        },
+        {
+          "en": "Incorrect. Exhausted absorbent causes inspired CO2 and elevated baseline, not sudden low ETCO2 with hypotension.",
+          "tr": "Yanlış. Tükenmiş absorban inhale CO2 ve yükselmiş bazal çizgi yapar; hipotansiyonla ani düşük ETCO2 tipik değildir."
+        },
+        {
+          "en": "Incorrect. Malignant hyperthermia typically causes rising ETCO2 despite ventilation.",
+          "tr": "Yanlış. Malign hipertermi genellikle ventilasyona rağmen ETCO2 yükselmesi yapar."
+        }
+      ],
+      "overallExplanation": {
+        "en": "ETCO2 reflects ventilation, metabolism, and pulmonary blood flow. Sudden severe decrease with hypotension suggests reduced circulation.",
+        "tr": "ETCO2 ventilasyon, metabolizma ve pulmoner kan akımını yansıtır. Hipotansiyonla ani ciddi düşüş dolaşım azalmasını düşündürür."
+      },
+      "keyLearningPoint": {
+        "en": "ETCO2 is a circulation monitor during shock and CPR.",
+        "tr": "ETCO2 şok ve CPR sırasında dolaşım monitörüdür."
+      },
+      "commonTrap": {
+        "en": "Do not interpret ETCO2 as only ventilation.",
+        "tr": "ETCO2’yi yalnızca ventilasyon göstergesi olarak yorumlamayın."
+      },
+      "tags": [
+        "monitoring",
+        "capnography",
+        "etco2",
+        "shock",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_monitor_pulseox_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Monitoring",
+      "topic": "Pulse oximetry",
+      "difficulty": "easy",
+      "stem": {
+        "en": "In carbon monoxide poisoning, why may standard pulse oximetry appear falsely normal?",
+        "tr": "Karbonmonoksit zehirlenmesinde standart pulse oksimetre neden yalancı normal görünebilir?"
+      },
+      "options": [
+        {
+          "en": "It measures PaO2 directly",
+          "tr": "PaO2’yi doğrudan ölçtüğü için"
+        },
+        {
+          "en": "It cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin",
+          "tr": "Oksihemoglobini karboksihemoglobinden güvenilir şekilde ayırt edemediği için"
+        },
+        {
+          "en": "It measures only venous oxygen saturation",
+          "tr": "Yalnızca venöz oksijen satürasyonunu ölçtüğü için"
+        },
+        {
+          "en": "It automatically corrects for dyshemoglobins",
+          "tr": "Dishemoglobinler için otomatik düzeltme yaptığı için"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Pulse oximetry estimates saturation, not PaO2.",
+          "tr": "Yanlış. Pulse oksimetre PaO2’yi değil, satürasyonu tahmin eder."
+        },
+        {
+          "en": "Correct. Carboxyhemoglobin absorbs light similarly enough to cause falsely reassuring SpO2 readings.",
+          "tr": "Doğru. Karboksihemoglobin ışığı yanıltıcı şekilde absorbe ederek güven verici SpO2 değerlerine neden olabilir."
+        },
+        {
+          "en": "Incorrect. Pulse oximetry uses pulsatile arterial signal.",
+          "tr": "Yanlış. Pulse oksimetre pulsatil arteriyel sinyali kullanır."
+        },
+        {
+          "en": "Incorrect. Standard pulse oximetry does not correct for dyshemoglobins reliably.",
+          "tr": "Yanlış. Standart pulse oksimetre dishemoglobinler için güvenilir otomatik düzeltme yapmaz."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Standard pulse oximetry has important limitations in dyshemoglobinemia, especially carbon monoxide poisoning.",
+        "tr": "Standart pulse oksimetrenin dishemoglobinemide, özellikle karbonmonoksit zehirlenmesinde önemli sınırlılıkları vardır."
+      },
+      "keyLearningPoint": {
+        "en": "Normal SpO2 does not exclude carbon monoxide poisoning.",
+        "tr": "Normal SpO2 karbonmonoksit zehirlenmesini dışlamaz."
+      },
+      "commonTrap": {
+        "en": "Do not confuse oxygen saturation display with oxygen content or hemoglobin function.",
+        "tr": "Satürasyon göstergesini oksijen içeriği veya hemoglobin fonksiyonu ile karıştırmayın."
+      },
+      "tags": [
+        "monitoring",
+        "pulse_oximetry",
+        "carbon_monoxide",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_equipment_vaporizer_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Equipment",
+      "topic": "Vaporizers",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Why does desflurane require a specialized heated, pressurized vaporizer?",
+        "tr": "Desfluran neden özel ısıtılmış ve basınçlandırılmış vaporizatör gerektirir?"
+      },
+      "options": [
+        {
+          "en": "It is nonvolatile at room temperature",
+          "tr": "Oda sıcaklığında volatil olmadığı için"
+        },
+        {
+          "en": "It has very high blood-gas solubility",
+          "tr": "Çok yüksek kan-gaz çözünürlüğüne sahip olduğu için"
+        },
+        {
+          "en": "It has high saturated vapor pressure and low boiling point",
+          "tr": "Yüksek doymuş buhar basıncı ve düşük kaynama noktasına sahip olduğu için"
+        },
+        {
+          "en": "It cannot be measured by gas analyzers",
+          "tr": "Gaz analizörleriyle ölçülemediği için"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Desflurane is highly volatile.",
+          "tr": "Yanlış. Desfluran oldukça volatildir."
+        },
+        {
+          "en": "Incorrect. Desflurane has low blood-gas solubility.",
+          "tr": "Yanlış. Desfluran düşük kan-gaz çözünürlüğüne sahiptir."
+        },
+        {
+          "en": "Correct. Its physical properties make conventional variable-bypass vaporization inaccurate.",
+          "tr": "Doğru. Fiziksel özellikleri klasik variable-bypass vaporizasyonu güvenilmez kılar."
+        },
+        {
+          "en": "Incorrect. Desflurane can be measured by anesthetic gas analyzers.",
+          "tr": "Yanlış. Desfluran anestezik gaz analizörleriyle ölçülebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Desflurane differs from other common volatiles because its saturated vapor pressure is very high and boiling point is near room temperature.",
+        "tr": "Desfluran diğer yaygın volatil ajanlardan ayrılır çünkü doymuş buhar basıncı çok yüksektir ve kaynama noktası oda sıcaklığına yakındır."
+      },
+      "keyLearningPoint": {
+        "en": "Desflurane vaporization is equipment-specific.",
+        "tr": "Desfluran vaporizasyonu cihaza özgüdür."
+      },
+      "commonTrap": {
+        "en": "Do not put desflurane into a conventional variable-bypass vaporizer.",
+        "tr": "Desfluranı klasik variable-bypass vaporizatöre koymayın."
+      },
+      "tags": [
+        "equipment",
+        "vaporizers",
+        "desflurane",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_equipment_circle_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Equipment",
+      "topic": "Circle system",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A rising inspired CO2 baseline on the capnogram during circle system anesthesia most likely suggests which problem?",
+        "tr": "Circle sistem anestezisinde kapnogramda inspire CO2 bazal çizgisinin yükselmesi en olası hangi problemi düşündürür?"
+      },
+      "options": [
+        {
+          "en": "Esophageal intubation",
+          "tr": "Özofageal entübasyon"
+        },
+        {
+          "en": "CO2 rebreathing from exhausted absorbent or valve malfunction",
+          "tr": "Tükenmiş absorban veya valf arızasına bağlı CO2 rebreathing"
+        },
+        {
+          "en": "Increased anesthetic depth",
+          "tr": "Artmış anestezi derinliği"
+        },
+        {
+          "en": "Hypothermia",
+          "tr": "Hipotermi"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Esophageal intubation usually produces absent or rapidly disappearing CO2 waveform after a few breaths.",
+          "tr": "Yanlış. Özofageal entübasyon genellikle birkaç nefesten sonra CO2 dalga formunun kaybolmasıyla seyreder."
+        },
+        {
+          "en": "Correct. Inspired CO2 indicates rebreathing, often from exhausted absorbent or unidirectional valve malfunction.",
+          "tr": "Doğru. İnspire CO2 rebreathing gösterir; sık nedenler tükenmiş absorban veya tek yönlü valf arızasıdır."
+        },
+        {
+          "en": "Incorrect. Increased anesthetic depth does not raise the inspired CO2 baseline.",
+          "tr": "Yanlış. Artmış anestezi derinliği inspire CO2 bazal çizgisini yükseltmez."
+        },
+        {
+          "en": "Incorrect. Hypothermia reduces CO2 production rather than raising inspired CO2 baseline.",
+          "tr": "Yanlış. Hipotermi CO2 üretimini azaltır; inspire CO2 bazal çizgisini yükseltmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Circle system rebreathing is detected by inspired CO2 on the capnogram.",
+        "tr": "Circle sistem rebreathing’i kapnogramda inspire CO2 görülmesiyle anlaşılır."
+      },
+      "keyLearningPoint": {
+        "en": "Inspired CO2 should normally return near zero.",
+        "tr": "İnspire CO2 normalde sıfıra yakın dönmelidir."
+      },
+      "commonTrap": {
+        "en": "Do not ignore a rising capnogram baseline.",
+        "tr": "Kapnogram bazal çizgisinin yükselmesini ihmal etmeyin."
+      },
+      "tags": [
+        "equipment",
+        "circle_system",
+        "co2_absorbent",
+        "capnography",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_peds_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Pediatric oxygen reserve",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Why do infants desaturate faster than adults during apnea?",
+        "tr": "İnfantlar apne sırasında neden erişkinlerden daha hızlı desatüre olur?"
+      },
+      "options": [
+        {
+          "en": "Lower oxygen consumption and larger FRC",
+          "tr": "Daha düşük oksijen tüketimi ve daha büyük FRC"
+        },
+        {
+          "en": "Higher oxygen consumption and lower FRC",
+          "tr": "Daha yüksek oksijen tüketimi ve daha düşük FRC"
+        },
+        {
+          "en": "Absence of hemoglobin",
+          "tr": "Hemoglobinin olmaması"
+        },
+        {
+          "en": "Complete absence of closing capacity",
+          "tr": "Closing capacity’nin tamamen olmaması"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Infants have higher oxygen consumption and lower functional reserve.",
+          "tr": "Yanlış. İnfantlarda oksijen tüketimi daha yüksek ve fonksiyonel rezerv daha düşüktür."
+        },
+        {
+          "en": "Correct. Higher metabolic rate and reduced FRC shorten safe apnea time.",
+          "tr": "Doğru. Daha yüksek metabolik hız ve düşük FRC güvenli apne süresini kısaltır."
+        },
+        {
+          "en": "Incorrect. Infants have hemoglobin; the issue is oxygen reserve and consumption.",
+          "tr": "Yanlış. İnfantlarda hemoglobin vardır; sorun oksijen rezervi ve tüketimdir."
+        },
+        {
+          "en": "Incorrect. Closing capacity is not absent; airway closure can be clinically relevant.",
+          "tr": "Yanlış. Closing capacity yok değildir; hava yolu kapanması klinik olarak önemli olabilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Infants have limited oxygen reserve and high oxygen consumption, so airway delays rapidly cause hypoxemia.",
+        "tr": "İnfantlarda oksijen rezervi sınırlı ve oksijen tüketimi yüksektir; bu nedenle hava yolu gecikmeleri hızla hipoksemiye yol açar."
+      },
+      "keyLearningPoint": {
+        "en": "Preoxygenation and rapid rescue oxygenation are crucial in infants.",
+        "tr": "İnfantlarda preoksijenasyon ve hızlı kurtarma oksijenasyonu kritiktir."
+      },
+      "commonTrap": {
+        "en": "Do not expect adult safe apnea times in infants.",
+        "tr": "İnfantlarda erişkin güvenli apne sürelerini beklemeyin."
+      },
+      "tags": [
+        "paediatric",
+        "oxygenation",
+        "apnea",
+        "frc",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_peds_0002",
+      "boardType": "ABA_BASIC",
+      "category": "Paediatric Anaesthesia",
+      "topic": "Pediatric bradycardia",
+      "difficulty": "easy",
+      "stem": {
+        "en": "In a child under anesthesia, severe bradycardia is most commonly treated first by addressing which cause?",
+        "tr": "Anestezi altındaki bir çocukta ciddi bradikardi tedavisinde öncelikle hangi neden ele alınmalıdır?"
+      },
+      "options": [
+        {
+          "en": "Hypertension",
+          "tr": "Hipertansiyon"
+        },
+        {
+          "en": "Hypoxemia",
+          "tr": "Hipoksemi"
+        },
+        {
+          "en": "Hyperglycemia",
+          "tr": "Hiperglisemi"
+        },
+        {
+          "en": "Increased MAC requirement",
+          "tr": "Artmış MAC gereksinimi"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Hypertension is not the most common immediate driver of pediatric anesthetic bradycardia.",
+          "tr": "Yanlış. Hipertansiyon pediatrik anestezik bradikardinin en sık akut nedeni değildir."
+        },
+        {
+          "en": "Correct. In children, bradycardia is often a sign of hypoxemia and must prompt oxygenation/ventilation assessment.",
+          "tr": "Doğru. Çocuklarda bradikardi sıklıkla hipoksemi belirtisidir ve oksijenasyon/ventilasyon değerlendirmesini gerektirir."
+        },
+        {
+          "en": "Incorrect. Hyperglycemia does not usually cause sudden severe bradycardia.",
+          "tr": "Yanlış. Hiperglisemi genellikle ani ciddi bradikardi yapmaz."
+        },
+        {
+          "en": "Incorrect. MAC requirement is not the key immediate cause.",
+          "tr": "Yanlış. MAC gereksinimi temel akut neden değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pediatric cardiac output is heart-rate dependent, and hypoxemia commonly produces bradycardia.",
+        "tr": "Pediatrik kardiyak output kalp hızına bağımlıdır ve hipoksemi sıklıkla bradikardi yapar."
+      },
+      "keyLearningPoint": {
+        "en": "In pediatric bradycardia, think oxygenation first.",
+        "tr": "Pediatrik bradikardide önce oksijenasyonu düşünün."
+      },
+      "commonTrap": {
+        "en": "Do not treat the monitor number without checking ventilation and oxygenation.",
+        "tr": "Ventilasyon ve oksijenasyonu kontrol etmeden yalnızca monitör değerini tedavi etmeyin."
+      },
+      "tags": [
+        "paediatric",
+        "bradycardia",
+        "hypoxemia",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_ob_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Obstetric Anaesthesia",
+      "topic": "Aspiration risk in pregnancy",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which pregnancy-related change increases aspiration risk during general anesthesia?",
+        "tr": "Hangi gebelikle ilişkili değişiklik genel anestezi sırasında aspirasyon riskini artırır?"
+      },
+      "options": [
+        {
+          "en": "Increased lower esophageal sphincter tone",
+          "tr": "Alt özofagus sfinkter tonusunda artış"
+        },
+        {
+          "en": "Reduced gastric acidity",
+          "tr": "Mide asiditesinde azalma"
+        },
+        {
+          "en": "Decreased lower esophageal sphincter tone and increased intra-abdominal pressure",
+          "tr": "Alt özofagus sfinkter tonusunda azalma ve intraabdominal basınçta artış"
+        },
+        {
+          "en": "Markedly reduced gastric volume in labor",
+          "tr": "Doğum eyleminde mide hacminde belirgin azalma"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Lower esophageal sphincter tone tends to decrease.",
+          "tr": "Yanlış. Alt özofagus sfinkter tonusu azalma eğilimindedir."
+        },
+        {
+          "en": "Incorrect. Gastric contents may remain acidic and clinically important.",
+          "tr": "Yanlış. Mide içeriği asidik ve klinik olarak önemli kalabilir."
+        },
+        {
+          "en": "Correct. Progesterone-related sphincter relaxation and uterine pressure increase reflux/aspiration risk.",
+          "tr": "Doğru. Progesteron ilişkili sfinkter gevşemesi ve uterus basısı reflü/aspirasyon riskini artırır."
+        },
+        {
+          "en": "Incorrect. Labor may delay gastric emptying and does not guarantee low gastric volume.",
+          "tr": "Yanlış. Doğum eylemi mide boşalmasını geciktirebilir ve düşük mide hacmini garanti etmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Pregnancy increases aspiration risk through physiologic and mechanical factors.",
+        "tr": "Gebelik fizyolojik ve mekanik faktörlerle aspirasyon riskini artırır."
+      },
+      "keyLearningPoint": {
+        "en": "Pregnant patients may require aspiration-risk precautions for general anesthesia.",
+        "tr": "Gebelerde genel anestezi için aspirasyon riski önlemleri gerekebilir."
+      },
+      "commonTrap": {
+        "en": "Do not assume fasting completely removes aspiration risk in obstetrics.",
+        "tr": "Obstetride açlığın aspirasyon riskini tamamen ortadan kaldırdığını varsaymayın."
+      },
+      "tags": [
+        "obstetric",
+        "aspiration",
+        "pregnancy",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_regional_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Regional Anaesthesia",
+      "topic": "Spinal anesthesia hypotension",
+      "difficulty": "easy",
+      "stem": {
+        "en": "What is the primary mechanism of hypotension after spinal anesthesia?",
+        "tr": "Spinal anestezi sonrası hipotansiyonun temel mekanizması nedir?"
+      },
+      "options": [
+        {
+          "en": "Histamine release from morphine",
+          "tr": "Morfinden histamin salınımı"
+        },
+        {
+          "en": "Sympathetic blockade causing vasodilation and reduced venous return",
+          "tr": "Sempatik blokaja bağlı vazodilatasyon ve azalmış venöz dönüş"
+        },
+        {
+          "en": "Direct myocardial necrosis",
+          "tr": "Doğrudan miyokard nekrozu"
+        },
+        {
+          "en": "Pulmonary vasoconstriction",
+          "tr": "Pulmoner vazokonstriksiyon"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Histamine release is not the main mechanism of spinal hypotension.",
+          "tr": "Yanlış. Histamin salınımı spinal hipotansiyonun ana mekanizması değildir."
+        },
+        {
+          "en": "Correct. Neuraxial sympathetic blockade decreases systemic vascular resistance and venous return.",
+          "tr": "Doğru. Nöroaksiyel sempatik blok sistemik vasküler direnci ve venöz dönüşü azaltır."
+        },
+        {
+          "en": "Incorrect. Spinal hypotension does not primarily result from myocardial necrosis.",
+          "tr": "Yanlış. Spinal hipotansiyon esas olarak miyokard nekrozundan kaynaklanmaz."
+        },
+        {
+          "en": "Incorrect. Pulmonary vasoconstriction is not the primary mechanism.",
+          "tr": "Yanlış. Pulmoner vazokonstriksiyon temel mekanizma değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Spinal anesthesia blocks sympathetic tone, producing vasodilation, venous pooling, and sometimes bradycardia.",
+        "tr": "Spinal anestezi sempatik tonu bloke ederek vazodilatasyon, venöz göllenme ve bazen bradikardi oluşturur."
+      },
+      "keyLearningPoint": {
+        "en": "Treat spinal hypotension with positioning, vasopressors, and fluids as appropriate.",
+        "tr": "Spinal hipotansiyonu uygun şekilde pozisyon, vazopressör ve sıvıyla tedavi edin."
+      },
+      "commonTrap": {
+        "en": "Do not overlook high spinal if hypotension is accompanied by dyspnea or arm weakness.",
+        "tr": "Hipotansiyona dispne veya kol güçsüzlüğü eşlik ediyorsa yüksek spinali gözden kaçırmayın."
+      },
+      "tags": [
+        "regional",
+        "spinal",
+        "hypotension",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_regional_0002",
+      "boardType": "ABA_BASIC",
+      "category": "Regional Anaesthesia",
+      "topic": "Epidural test dose",
+      "difficulty": "medium",
+      "stem": {
+        "en": "What is the main purpose of adding epinephrine to an epidural test dose?",
+        "tr": "Epidural test doza epinefrin eklenmesinin temel amacı nedir?"
+      },
+      "options": [
+        {
+          "en": "To guarantee surgical anesthesia",
+          "tr": "Cerrahi anesteziyi garanti etmek"
+        },
+        {
+          "en": "To detect possible intravascular catheter placement by hemodynamic response",
+          "tr": "Hemodinamik yanıtla olası intravasküler kateter yerleşimini saptamak"
+        },
+        {
+          "en": "To reverse local anesthetic toxicity",
+          "tr": "Lokal anestezik toksisitesini geri döndürmek"
+        },
+        {
+          "en": "To prevent all hypotension from epidural anesthesia",
+          "tr": "Epidural anesteziye bağlı tüm hipotansiyonu önlemek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. A test dose does not guarantee surgical anesthesia.",
+          "tr": "Yanlış. Test doz cerrahi anesteziyi garanti etmez."
+        },
+        {
+          "en": "Correct. Epinephrine may produce a transient heart rate/blood pressure response if injected intravascularly.",
+          "tr": "Doğru. Epinefrin intravasküler verilirse geçici kalp hızı/kan basıncı yanıtı oluşturabilir."
+        },
+        {
+          "en": "Incorrect. Epinephrine does not reverse local anesthetic systemic toxicity.",
+          "tr": "Yanlış. Epinefrin lokal anestezik sistemik toksisitesini geri döndürmez."
+        },
+        {
+          "en": "Incorrect. Epidural hypotension can still occur.",
+          "tr": "Yanlış. Epidural hipotansiyon yine gelişebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Epidural test dosing attempts to detect intrathecal or intravascular catheter placement, but it is not perfectly sensitive.",
+        "tr": "Epidural test doz intratekal veya intravasküler kateter yerleşimini saptamaya çalışır; ancak kusursuz duyarlı değildir."
+      },
+      "keyLearningPoint": {
+        "en": "Always aspirate and dose epidurals incrementally.",
+        "tr": "Her zaman aspirasyon yapın ve epidural dozları fraksiyone verin."
+      },
+      "commonTrap": {
+        "en": "Do not rely on a negative test dose as absolute proof of correct catheter location.",
+        "tr": "Negatif test dozu kateter yerinin kesin doğru kanıtı olarak görmeyin."
+      },
+      "tags": [
+        "regional",
+        "epidural",
+        "test_dose",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_airway_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Airway",
+      "topic": "Cannot intubate cannot oxygenate",
+      "difficulty": "medium",
+      "stem": {
+        "en": "In a cannot intubate, cannot oxygenate situation after failed attempts at ventilation and supraglottic airway rescue, what is the definitive next step?",
+        "tr": "Ventilasyon ve supraglottik hava yolu kurtarma girişimleri başarısız olduktan sonra entübe edememe/oksijenize edememe durumunda kesin sonraki adım nedir?"
+      },
+      "options": [
+        {
+          "en": "Continue repeated direct laryngoscopy attempts",
+          "tr": "Tekrarlayan direkt laringoskopi denemelerine devam etmek"
+        },
+        {
+          "en": "Emergency front-of-neck airway access",
+          "tr": "Acil ön boyun hava yolu erişimi"
+        },
+        {
+          "en": "Wait for spontaneous breathing without intervention",
+          "tr": "Müdahale etmeden spontan solunumu beklemek"
+        },
+        {
+          "en": "Give additional long-acting opioid",
+          "tr": "Ek uzun etkili opioid vermek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Repeated attempts worsen trauma and delay oxygenation.",
+          "tr": "Yanlış. Tekrarlayan denemeler travmayı artırır ve oksijenasyonu geciktirir."
+        },
+        {
+          "en": "Correct. When oxygenation cannot be achieved, emergency front-of-neck access is required.",
+          "tr": "Doğru. Oksijenasyon sağlanamıyorsa acil ön boyun erişimi gerekir."
+        },
+        {
+          "en": "Incorrect. Waiting risks hypoxic injury.",
+          "tr": "Yanlış. Beklemek hipoksik hasar riski taşır."
+        },
+        {
+          "en": "Incorrect. Opioid does not solve airway obstruction and may worsen ventilation.",
+          "tr": "Yanlış. Opioid hava yolu obstrüksiyonunu çözmez ve ventilasyonu kötüleştirebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "CICO is an oxygenation emergency. The endpoint is oxygen delivery, not another intubation attempt.",
+        "tr": "CICO bir oksijenasyon acilidir. Hedef başka bir entübasyon denemesi değil, oksijen sağlamaktır."
+      },
+      "keyLearningPoint": {
+        "en": "Declare CICO early and move to emergency front-of-neck access.",
+        "tr": "CICO’yu erken ilan edin ve acil ön boyun erişimine geçin."
+      },
+      "commonTrap": {
+        "en": "Do not let repeated laryngoscopy attempts delay oxygenation.",
+        "tr": "Tekrarlayan laringoskopi denemelerinin oksijenasyonu geciktirmesine izin vermeyin."
+      },
+      "tags": [
+        "airway",
+        "cico",
+        "front_of_neck_access",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_crisis_anaphylaxis_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Clinical Emergencies",
+      "topic": "Anaphylaxis",
+      "difficulty": "medium",
+      "stem": {
+        "en": "During anesthesia, a patient develops severe hypotension, bronchospasm, and generalized erythema shortly after antibiotic administration. What is the most important first-line drug?",
+        "tr": "Anestezi sırasında antibiyotik uygulamasından kısa süre sonra hastada ciddi hipotansiyon, bronkospazm ve yaygın eritem gelişiyor. En önemli ilk basamak ilaç hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Diphenhydramine",
+          "tr": "Difenhidramin"
+        },
+        {
+          "en": "Hydrocortisone",
+          "tr": "Hidrokortizon"
+        },
+        {
+          "en": "Epinephrine",
+          "tr": "Epinefrin"
+        },
+        {
+          "en": "Furosemide",
+          "tr": "Furosemid"
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Antihistamines are adjuncts and too slow for cardiovascular collapse.",
+          "tr": "Yanlış. Antihistaminikler yardımcıdır ve kardiyovasküler kollaps için çok yavaştır."
+        },
+        {
+          "en": "Incorrect. Steroids are adjuncts and do not replace epinephrine.",
+          "tr": "Yanlış. Steroidler yardımcıdır ve epinefrinin yerini almaz."
+        },
+        {
+          "en": "Correct. Epinephrine treats vasodilation, capillary leak, and bronchospasm in severe anaphylaxis.",
+          "tr": "Doğru. Epinefrin şiddetli anafilakside vazodilatasyon, kapiller kaçak ve bronkospazmı tedavi eder."
+        },
+        {
+          "en": "Incorrect. Furosemide may worsen hypotension and does not treat anaphylaxis.",
+          "tr": "Yanlış. Furosemid hipotansiyonu kötüleştirebilir ve anafilaksiyi tedavi etmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Severe perioperative anaphylaxis requires immediate epinephrine, oxygenation, intravenous fluids, and stopping the trigger.",
+        "tr": "Şiddetli perioperatif anafilaksi acil epinefrin, oksijenasyon, intravenöz sıvı ve tetikleyicinin kesilmesini gerektirir."
+      },
+      "keyLearningPoint": {
+        "en": "Epinephrine is first-line in life-threatening anaphylaxis.",
+        "tr": "Yaşamı tehdit eden anafilakside epinefrin ilk basamaktır."
+      },
+      "commonTrap": {
+        "en": "Do not delay epinephrine while giving antihistamines or steroids.",
+        "tr": "Antihistaminik veya steroid verirken epinefrini geciktirmeyin."
+      },
+      "tags": [
+        "emergency",
+        "anaphylaxis",
+        "epinephrine",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_crisis_mh_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Clinical Emergencies",
+      "topic": "Malignant hyperthermia",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which finding is often an early sign of malignant hyperthermia during general anesthesia?",
+        "tr": "Genel anestezi sırasında malign hiperterminin sık erken bulgularından biri hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Unexplained rising end-tidal CO2 despite increased ventilation",
+          "tr": "Ventilasyon artırılmasına rağmen açıklanamayan end-tidal CO2 yükselmesi"
+        },
+        {
+          "en": "Immediate profound hypothermia",
+          "tr": "Ani derin hipotermi"
+        },
+        {
+          "en": "Absent capnogram with normal circulation",
+          "tr": "Normal dolaşımla kapnogramın kaybolması"
+        },
+        {
+          "en": "Isolated low blood glucose",
+          "tr": "İzole düşük kan glukozu"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Hypermetabolism increases CO2 production early.",
+          "tr": "Doğru. Hipermetabolizma erken dönemde CO2 üretimini artırır."
+        },
+        {
+          "en": "Incorrect. MH causes hypermetabolism and later hyperthermia, not hypothermia.",
+          "tr": "Yanlış. MH hipermetabolizma ve geç dönemde hipertermi yapar; hipotermi yapmaz."
+        },
+        {
+          "en": "Incorrect. Absent capnogram suggests disconnection, esophageal intubation, or absent circulation rather than typical MH.",
+          "tr": "Yanlış. Kapnogram yokluğu tipik MH’den çok ayrılma, özofageal entübasyon veya dolaşım yokluğunu düşündürür."
+        },
+        {
+          "en": "Incorrect. Hypoglycemia is not a classic early MH sign.",
+          "tr": "Yanlış. Hipoglisemi klasik erken MH bulgusu değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Malignant hyperthermia often presents first with rising CO2, tachycardia, acidosis, rigidity, and later hyperthermia.",
+        "tr": "Malign hipertermi sıklıkla önce CO2 yükselmesi, taşikardi, asidoz, rijidite ve daha geç hipertermiyle ortaya çıkar."
+      },
+      "keyLearningPoint": {
+        "en": "Do not wait for fever to treat suspected MH.",
+        "tr": "Şüpheli MH’de tedavi için ateşi beklemeyin."
+      },
+      "commonTrap": {
+        "en": "Temperature rise may be late.",
+        "tr": "Isı artışı geç olabilir."
+      },
+      "tags": [
+        "emergency",
+        "malignant_hyperthermia",
+        "dantrolene",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_periop_diabetes_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Perioperative Medicine",
+      "topic": "SGLT2 inhibitors",
+      "difficulty": "medium",
+      "stem": {
+        "en": "Which perioperative complication is particularly associated with SGLT2 inhibitors?",
+        "tr": "SGLT2 inhibitörleriyle özellikle ilişkili perioperatif komplikasyon hangisidir?"
+      },
+      "options": [
+        {
+          "en": "Malignant hyperthermia",
+          "tr": "Malign hipertermi"
+        },
+        {
+          "en": "Euglycemic ketoacidosis",
+          "tr": "Öglisemik ketoasidoz"
+        },
+        {
+          "en": "Serotonin syndrome",
+          "tr": "Serotonin sendromu"
+        },
+        {
+          "en": "Pseudocholinesterase deficiency",
+          "tr": "Psödokolinesteraz eksikliği"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. SGLT2 inhibitors do not trigger malignant hyperthermia.",
+          "tr": "Yanlış. SGLT2 inhibitörleri malign hipertermiyi tetiklemez."
+        },
+        {
+          "en": "Correct. SGLT2 inhibitors can be associated with ketoacidosis despite only modest glucose elevation.",
+          "tr": "Doğru. SGLT2 inhibitörleri yalnızca hafif glukoz yüksekliğiyle ketoasidozla ilişkili olabilir."
+        },
+        {
+          "en": "Incorrect. Serotonin syndrome is related to serotonergic drugs.",
+          "tr": "Yanlış. Serotonin sendromu serotonerjik ilaçlarla ilişkilidir."
+        },
+        {
+          "en": "Incorrect. Pseudocholinesterase deficiency affects succinylcholine/mivacurium metabolism.",
+          "tr": "Yanlış. Psödokolinesteraz eksikliği süksinilkolin/mivakuryum metabolizmasını etkiler."
+        }
+      ],
+      "overallExplanation": {
+        "en": "SGLT2 inhibitors may predispose to perioperative euglycemic ketoacidosis, so ketones and acid-base status matter.",
+        "tr": "SGLT2 inhibitörleri perioperatif öglisemik ketoasidoza yatkınlık oluşturabilir; bu nedenle ketonlar ve asit-baz durumu önemlidir."
+      },
+      "keyLearningPoint": {
+        "en": "Normal or mildly elevated glucose does not exclude ketoacidosis in SGLT2 inhibitor users.",
+        "tr": "SGLT2 inhibitörü kullananlarda normal veya hafif yüksek glukoz ketoasidozu dışlamaz."
+      },
+      "commonTrap": {
+        "en": "Do not screen only with glucose when symptoms or acidosis suggest ketoacidosis.",
+        "tr": "Semptomlar veya asidoz ketoasidozu düşündürüyorsa yalnızca glukozla tarama yapmayın."
+      },
+      "tags": [
+        "perioperative",
+        "diabetes",
+        "sglt2",
+        "ketoacidosis",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_preop_osa_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Perioperative Medicine",
+      "topic": "Obstructive sleep apnea",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which postoperative risk is most increased in a patient with untreated obstructive sleep apnea receiving opioids?",
+        "tr": "Tedavi edilmemiş obstrüktif uyku apnesi olan ve opioid alan hastada hangi postoperatif risk en çok artar?"
+      },
+      "options": [
+        {
+          "en": "Respiratory depression and airway obstruction",
+          "tr": "Solunum depresyonu ve hava yolu obstrüksiyonu"
+        },
+        {
+          "en": "Malignant hyperthermia",
+          "tr": "Malign hipertermi"
+        },
+        {
+          "en": "Local anesthetic allergy",
+          "tr": "Lokal anestezik alerjisi"
+        },
+        {
+          "en": "Hypernatremia",
+          "tr": "Hipernatremi"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. OSA and opioids both increase the risk of airway obstruction and hypoventilation.",
+          "tr": "Doğru. OSA ve opioidler hava yolu obstrüksiyonu ve hipoventilasyon riskini artırır."
+        },
+        {
+          "en": "Incorrect. OSA does not specifically increase MH susceptibility.",
+          "tr": "Yanlış. OSA MH duyarlılığını özgül olarak artırmaz."
+        },
+        {
+          "en": "Incorrect. OSA is unrelated to local anesthetic allergy.",
+          "tr": "Yanlış. OSA lokal anestezik alerjisiyle ilişkili değildir."
+        },
+        {
+          "en": "Incorrect. Hypernatremia is not the classic opioid/OSA postoperative risk.",
+          "tr": "Yanlış. Hipernatremi opioid/OSA için klasik postoperatif risk değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "OSA patients are vulnerable to sedatives and opioids, especially in the postoperative period.",
+        "tr": "OSA hastaları özellikle postoperatif dönemde sedatif ve opioidlere duyarlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "Use opioid-sparing analgesia and appropriate monitoring in OSA.",
+        "tr": "OSA’da opioid azaltıcı analjezi ve uygun monitörizasyon kullanın."
+      },
+      "commonTrap": {
+        "en": "Do not assume normal PACU saturation guarantees safety after discharge from monitoring.",
+        "tr": "PACU’da normal satürasyonun monitörizasyondan çıktıktan sonra güvenliği garanti ettiğini varsaymayın."
+      },
+      "tags": [
+        "perioperative",
+        "osa",
+        "opioids",
+        "respiratory_depression",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_positioning_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Clinical Anaesthesia",
+      "topic": "Positioning injury",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which nerve injury is classically associated with compression at the fibular head during positioning?",
+        "tr": "Pozisyon sırasında fibula başında kompresyonla klasik olarak hangi sinir hasarı ilişkilidir?"
+      },
+      "options": [
+        {
+          "en": "Median nerve",
+          "tr": "Median sinir"
+        },
+        {
+          "en": "Common peroneal nerve",
+          "tr": "Ortak peroneal sinir"
+        },
+        {
+          "en": "Phrenic nerve",
+          "tr": "Frenik sinir"
+        },
+        {
+          "en": "Recurrent laryngeal nerve",
+          "tr": "Rekürren laringeal sinir"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Median nerve injury is associated with upper extremity issues, not fibular head compression.",
+          "tr": "Yanlış. Median sinir hasarı üst ekstremiteyle ilişkilidir; fibula başı kompresyonu ile değil."
+        },
+        {
+          "en": "Correct. The common peroneal nerve is superficial at the fibular head and vulnerable to compression.",
+          "tr": "Doğru. Ortak peroneal sinir fibula başında yüzeyeldir ve kompresyona duyarlıdır."
+        },
+        {
+          "en": "Incorrect. Phrenic nerve affects diaphragm function.",
+          "tr": "Yanlış. Frenik sinir diyafram fonksiyonunu etkiler."
+        },
+        {
+          "en": "Incorrect. Recurrent laryngeal nerve affects vocal cord function.",
+          "tr": "Yanlış. Rekürren laringeal sinir vokal kord fonksiyonunu etkiler."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Positioning injuries occur at predictable superficial nerve sites and should be prevented with padding and alignment.",
+        "tr": "Pozisyon yaralanmaları öngörülebilir yüzeyel sinir bölgelerinde olur ve pedleme/hizalama ile önlenmelidir."
+      },
+      "keyLearningPoint": {
+        "en": "Pad the fibular head to protect the common peroneal nerve.",
+        "tr": "Ortak peroneal siniri korumak için fibula başını pedleyin."
+      },
+      "commonTrap": {
+        "en": "Do not focus only on airway and monitors; positioning is also anesthesia safety.",
+        "tr": "Yalnızca hava yolu ve monitörlere odaklanmayın; pozisyon da anestezi güvenliğidir."
+      },
+      "tags": [
+        "positioning",
+        "nerve_injury",
+        "peroneal_nerve",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_temp_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Clinical Anaesthesia",
+      "topic": "Perioperative hypothermia",
+      "difficulty": "easy",
+      "stem": {
+        "en": "Which effect is associated with perioperative hypothermia?",
+        "tr": "Perioperatif hipotermi hangi etkiyle ilişkilidir?"
+      },
+      "options": [
+        {
+          "en": "Shortened neuromuscular blockade",
+          "tr": "Nöromüsküler blokajın kısalması"
+        },
+        {
+          "en": "Increased wound infection risk and impaired coagulation",
+          "tr": "Yara enfeksiyonu riskinde artış ve koagülasyon bozukluğu"
+        },
+        {
+          "en": "Decreased oxygen consumption during shivering",
+          "tr": "Titreme sırasında oksijen tüketiminde azalma"
+        },
+        {
+          "en": "Guaranteed protection from myocardial ischemia",
+          "tr": "Miyokard iskemisine karşı garantili koruma"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Hypothermia can prolong neuromuscular blockade.",
+          "tr": "Yanlış. Hipotermi nöromüsküler blokajı uzatabilir."
+        },
+        {
+          "en": "Correct. Hypothermia impairs coagulation and is associated with wound complications.",
+          "tr": "Doğru. Hipotermi koagülasyonu bozar ve yara komplikasyonlarıyla ilişkilidir."
+        },
+        {
+          "en": "Incorrect. Shivering increases oxygen consumption.",
+          "tr": "Yanlış. Titreme oksijen tüketimini artırır."
+        },
+        {
+          "en": "Incorrect. Hypothermia is not guaranteed cardioprotection in routine perioperative care.",
+          "tr": "Yanlış. Hipotermi rutin perioperatif bakımda garantili kardiyoproteksiyon değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Perioperative hypothermia increases complications including coagulopathy, shivering, discomfort, and drug prolongation.",
+        "tr": "Perioperatif hipotermi koagülopati, titreme, rahatsızlık ve ilaç etkilerinin uzaması gibi komplikasyonları artırır."
+      },
+      "keyLearningPoint": {
+        "en": "Temperature is a vital sign in anesthesia.",
+        "tr": "Sıcaklık anestezide vital bulgudur."
+      },
+      "commonTrap": {
+        "en": "Do not treat mild hypothermia as harmless.",
+        "tr": "Hafif hipotermiyi zararsız görmeyin."
+      },
+      "tags": [
+        "temperature",
+        "hypothermia",
+        "coagulation",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_fluids_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Physiology",
+      "topic": "Crystalloids",
+      "difficulty": "easy",
+      "stem": {
+        "en": "After rapid infusion of 1 liter of isotonic crystalloid, approximately how much remains intravascular after redistribution in an average adult?",
+        "tr": "Bir erişkinde 1 litre izotonik kristalloid hızlı infüzyonundan sonra redistribüsyon sonrası yaklaşık ne kadarı intravasküler alanda kalır?"
+      },
+      "options": [
+        {
+          "en": "About 250 mL",
+          "tr": "Yaklaşık 250 mL"
+        },
+        {
+          "en": "About 750 mL",
+          "tr": "Yaklaşık 750 mL"
+        },
+        {
+          "en": "Exactly 1 liter",
+          "tr": "Tam 1 litre"
+        },
+        {
+          "en": "None, it all enters cells",
+          "tr": "Hiçbiri, tamamı hücre içine girer"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. Isotonic crystalloid distributes mainly in extracellular fluid; roughly one quarter remains intravascular.",
+          "tr": "Doğru. İzotonik kristalloid esas olarak ekstrasellüler sıvıya dağılır; yaklaşık dörtte biri intravasküler kalır."
+        },
+        {
+          "en": "Incorrect. Most crystalloid leaves the intravascular space after redistribution.",
+          "tr": "Yanlış. Kristalloidin büyük kısmı redistribüsyon sonrası intravasküler alandan çıkar."
+        },
+        {
+          "en": "Incorrect. It does not remain entirely intravascular.",
+          "tr": "Yanlış. Tamamı intravasküler kalmaz."
+        },
+        {
+          "en": "Incorrect. Isotonic crystalloid does not all enter cells.",
+          "tr": "Yanlış. İzotonik kristalloidin tamamı hücre içine girmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Isotonic crystalloids distribute throughout extracellular fluid, not just plasma.",
+        "tr": "İzotonik kristalloidler yalnızca plazmaya değil ekstrasellüler sıvının tamamına dağılır."
+      },
+      "keyLearningPoint": {
+        "en": "Crystalloid is not equivalent volume-for-volume to blood loss intravascularly.",
+        "tr": "Kristalloid intravasküler olarak kan kaybına hacim-hacim eşdeğer değildir."
+      },
+      "commonTrap": {
+        "en": "Do not expect 1 liter crystalloid to expand plasma volume by 1 liter after redistribution.",
+        "tr": "Redistribüsyon sonrası 1 litre kristalloidin plazma hacmini 1 litre artırmasını beklemeyin."
+      },
+      "tags": [
+        "fluids",
+        "crystalloid",
+        "physiology",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_transfusion_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Perioperative Medicine",
+      "topic": "Citrate hypocalcemia",
+      "difficulty": "medium",
+      "stem": {
+        "en": "During massive transfusion, which electrolyte abnormality is particularly caused by citrate in blood products?",
+        "tr": "Masif transfüzyon sırasında kan ürünlerindeki sitrata bağlı özellikle hangi elektrolit bozukluğu gelişir?"
+      },
+      "options": [
+        {
+          "en": "Hypercalcemia",
+          "tr": "Hiperkalsemi"
+        },
+        {
+          "en": "Hypocalcemia",
+          "tr": "Hipokalsemi"
+        },
+        {
+          "en": "Hypernatremia only",
+          "tr": "Yalnızca hipernatremi"
+        },
+        {
+          "en": "Severe hypermagnesemia",
+          "tr": "Ciddi hipermagnezemi"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Citrate binds calcium and tends to lower ionized calcium.",
+          "tr": "Yanlış. Sitrat kalsiyumu bağlar ve iyonize kalsiyumu düşürme eğilimindedir."
+        },
+        {
+          "en": "Correct. Citrate chelates calcium, causing hypocalcemia, especially during rapid transfusion.",
+          "tr": "Doğru. Sitrat kalsiyumu şelatlayarak özellikle hızlı transfüzyonda hipokalsemi yapar."
+        },
+        {
+          "en": "Incorrect. Sodium changes may occur but citrate classically affects calcium.",
+          "tr": "Yanlış. Sodyum değişiklikleri olabilir ancak sitrat klasik olarak kalsiyumu etkiler."
+        },
+        {
+          "en": "Incorrect. Hypermagnesemia is not the classic citrate effect.",
+          "tr": "Yanlış. Hipermagnezemi klasik sitrat etkisi değildir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Citrate toxicity during massive transfusion can reduce ionized calcium, impairing coagulation and myocardial contractility.",
+        "tr": "Masif transfüzyonda sitrat toksisitesi iyonize kalsiyumu düşürerek koagülasyonu ve miyokard kontraktilitesini bozabilir."
+      },
+      "keyLearningPoint": {
+        "en": "Monitor and replace ionized calcium during massive transfusion.",
+        "tr": "Masif transfüzyonda iyonize kalsiyumu izle ve replase et."
+      },
+      "commonTrap": {
+        "en": "Do not forget calcium when treating hemorrhagic shock with blood products.",
+        "tr": "Kan ürünleriyle hemorajik şok tedavisinde kalsiyumu unutmayın."
+      },
+      "tags": [
+        "transfusion",
+        "massive_transfusion",
+        "calcium",
+        "citrate",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_postop_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Postoperative Care",
+      "topic": "Opioid respiratory depression",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A postoperative patient receiving opioids is difficult to arouse with slow respirations. What is the most appropriate immediate priority?",
+        "tr": "Opioid alan postoperatif hasta zor uyandırılıyor ve solunumu yavaş. En uygun acil öncelik nedir?"
+      },
+      "options": [
+        {
+          "en": "Give more opioid for possible pain",
+          "tr": "Olası ağrı için daha fazla opioid vermek"
+        },
+        {
+          "en": "Assess airway/ventilation, provide oxygen and ventilatory support, and titrate naloxone if needed",
+          "tr": "Hava yolu/ventilasyonu değerlendirmek, oksijen ve ventilatuvar destek sağlamak, gerekirse naloksonu titre etmek"
+        },
+        {
+          "en": "Discharge if SpO2 is normal once",
+          "tr": "SpO2 bir kez normalse taburcu etmek"
+        },
+        {
+          "en": "Give a long-acting benzodiazepine",
+          "tr": "Uzun etkili benzodiyazepin vermek"
+        }
+      ],
+      "correctAnswerIndex": 1,
+      "optionExplanations": [
+        {
+          "en": "Incorrect. Additional opioid may worsen respiratory depression.",
+          "tr": "Yanlış. Ek opioid solunum depresyonunu kötüleştirebilir."
+        },
+        {
+          "en": "Correct. Airway and ventilation come first; naloxone may be titrated to restore ventilation while avoiding abrupt severe pain.",
+          "tr": "Doğru. Öncelik hava yolu ve ventilasyondur; nalokson ventilasyonu düzeltmek için titre edilebilir."
+        },
+        {
+          "en": "Incorrect. A single normal SpO2 does not ensure safety, especially with supplemental oxygen.",
+          "tr": "Yanlış. Tek bir normal SpO2, özellikle ek oksijen altında güvenliği garanti etmez."
+        },
+        {
+          "en": "Incorrect. Benzodiazepines can worsen sedation and respiratory depression.",
+          "tr": "Yanlış. Benzodiyazepinler sedasyon ve solunum depresyonunu kötüleştirebilir."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Opioid respiratory depression is managed by supporting ventilation and titrating reversal when needed.",
+        "tr": "Opioid solunum depresyonu ventilasyon desteği ve gerektiğinde titre edilmiş reversiyonla yönetilir."
+      },
+      "keyLearningPoint": {
+        "en": "Ventilation is more important than the pain score in opioid-induced respiratory depression.",
+        "tr": "Opioid kaynaklı solunum depresyonunda ventilasyon ağrı skorundan daha önemlidir."
+      },
+      "commonTrap": {
+        "en": "Do not rely on SpO2 alone to detect hypoventilation.",
+        "tr": "Hipoventilasyonu saptamak için yalnızca SpO2’ye güvenmeyin."
+      },
+      "tags": [
+        "postoperative",
+        "opioids",
+        "respiratory_depression",
+        "naloxone",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    },
+    {
+      "id": "aba_basic_statistics_0001",
+      "boardType": "ABA_BASIC",
+      "category": "Basic Sciences",
+      "topic": "Sensitivity and specificity",
+      "difficulty": "medium",
+      "stem": {
+        "en": "A screening test with very high sensitivity is most useful for which purpose?",
+        "tr": "Çok yüksek sensitiviteye sahip bir tarama testi en çok hangi amaç için kullanışlıdır?"
+      },
+      "options": [
+        {
+          "en": "Ruling out disease when the test is negative",
+          "tr": "Test negatif olduğunda hastalığı dışlamak"
+        },
+        {
+          "en": "Proving disease when the test is positive",
+          "tr": "Test pozitif olduğunda hastalığı kesin kanıtlamak"
+        },
+        {
+          "en": "Replacing clinical judgment entirely",
+          "tr": "Klinik yargının tamamen yerini almak"
+        },
+        {
+          "en": "Measuring treatment effect size directly",
+          "tr": "Tedavi etki büyüklüğünü doğrudan ölçmek"
+        }
+      ],
+      "correctAnswerIndex": 0,
+      "optionExplanations": [
+        {
+          "en": "Correct. High sensitivity makes false negatives less likely; a negative result helps rule out disease.",
+          "tr": "Doğru. Yüksek sensitivite yalancı negatifleri azaltır; negatif sonuç hastalığı dışlamaya yardımcı olur."
+        },
+        {
+          "en": "Incorrect. High specificity is more useful for ruling in disease with a positive test.",
+          "tr": "Yanlış. Pozitif testle hastalığı içeri almak için yüksek spesifite daha yararlıdır."
+        },
+        {
+          "en": "Incorrect. No test replaces clinical judgment entirely.",
+          "tr": "Yanlış. Hiçbir test klinik yargının tamamen yerini almaz."
+        },
+        {
+          "en": "Incorrect. Sensitivity/specificity do not directly measure treatment effect size.",
+          "tr": "Yanlış. Sensitivite/spesifite tedavi etki büyüklüğünü doğrudan ölçmez."
+        }
+      ],
+      "overallExplanation": {
+        "en": "Sensitive tests are useful for screening and ruling out disease when negative.",
+        "tr": "Sensitive testler tarama ve negatif olduğunda hastalığı dışlama için yararlıdır."
+      },
+      "keyLearningPoint": {
+        "en": "SnNout: sensitive test, negative result rules out.",
+        "tr": "SnNout: sensitive test, negatif sonuç hastalığı dışlar."
+      },
+      "commonTrap": {
+        "en": "Do not confuse sensitivity with positive predictive value.",
+        "tr": "Sensitivite ile pozitif prediktif değeri karıştırmayın."
+      },
+      "tags": [
+        "statistics",
+        "sensitivity",
+        "specificity",
+        "screening",
+        "aba_basic"
+      ],
+      "sourceType": "ORIGINAL_BOARD_STYLE",
+      "referenceNotes": [
+        "Original board-style educational content based on standard anesthesia BASIC examination concepts."
+      ],
+      "officialEndorsement": false,
+      "version": 1,
+      "isActive": true,
+      "isDeprecated": false,
+      "isBookmarked": false
+    }
+  ],
+  "vivaQuestions": []
+}
