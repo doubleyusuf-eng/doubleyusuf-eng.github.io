@@ -611,8 +611,7 @@ fun AiClinicalAssistantScreen(
     var activeCategory by remember { mutableStateOf("Preop AI") }
 
     // Gemini API settings
-
-    val apiKey = "AIzaSyAeD84-0Gq8LGBVuqX621Cz7X_jRHQ6U2Y"
+    val apiKey = com.anesthesiaclinic.anesthesiabriefs.utils.ApiKeyConfig.GEMINI_API_KEY
     var lastApiErrorDetail by remember { mutableStateOf<String?>(null) }
 
     suspend fun callGeminiApi(history: List<Message>, key: String, isQueryEnglish: Boolean): AiStructuredResponse? {

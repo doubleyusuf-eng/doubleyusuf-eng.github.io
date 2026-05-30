@@ -832,7 +832,7 @@ fun LiteratureListScreen(
             if (pmid.isNotEmpty() && !monographCache.containsKey(pmid) && article.keyMessageTr == "Monograf yükleniyor...") {
                 coroutineScope.launch {
                     loadingMonographId = pmid
-                    val apiKey = "AIzaSyAeD84-0Gq8LGBVuqX621Cz7X_jRHQ6U2Y"
+                    val apiKey = com.anesthesiaclinic.anesthesiabriefs.utils.ApiKeyConfig.GEMINI_API_KEY
                     val generated = generateMonographFromGemini(article, apiKey, currentLanguage)
                     if (generated != null) {
                         monographCache = monographCache + (pmid to generated)

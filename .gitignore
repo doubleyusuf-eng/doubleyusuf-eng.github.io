@@ -5,6 +5,9 @@ test_gemini_v2.py
 CONVERSATION_HISTORY.md
 CLINICAL_BRAIN_BLUEPRINT.md
 
+# Secure API Configurations
+ApiKeyConfig.kt
+
 # Android / Gradle ignores
 .gradle/
 .idea/

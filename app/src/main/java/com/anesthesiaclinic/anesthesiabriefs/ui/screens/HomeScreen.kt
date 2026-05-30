@@ -86,7 +86,7 @@ fun HomeScreen(
     fun refreshSpotTip() {
         coroutineScope.launch {
             isRefreshingTip = true
-            val apiKey = "AIzaSyAeD84-0Gq8LGBVuqX621Cz7X_jRHQ6U2Y"
+            val apiKey = com.anesthesiaclinic.anesthesiabriefs.utils.ApiKeyConfig.GEMINI_API_KEY
             var fetchedFromGemini = false
             
             if (apiKey.isNotEmpty()) {
