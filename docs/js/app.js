@@ -170,7 +170,6 @@ document.addEventListener("DOMContentLoaded", function() {
     initLanguage();
     initMobileMenu();
     initPreloader();
-    loadInstagramFeed();
 });
 
 // Premium 3D Preloader Screen Handler
@@ -254,8 +253,6 @@ function changeLanguage(lang) {
         // Trigger showcase update to sync with language
         updateDemoScreenshot(activeDemoTab);
         
-        renderInstagramFeed();
-        
         document.body.style.opacity = '1';
     }, 150);
 }
@@ -319,67 +316,4 @@ function updateDemoScreenshot(screenKey) {
         }
         imgEl.style.opacity = '1';
     }, 150);
-}
-
-// Yöntem 3: Semi-Dynamic Instagram Feed Loader
-let instagramPosts = [];
-
-function loadInstagramFeed() {
-    fetch('data/instagram.json')
-        .then(res => {
-            if (!res.ok) throw new Error("Network response was not ok");
-            return res.json();
-        })
-        .then(data => {
-            instagramPosts = data;
-            renderInstagramFeed();
-        })
-        .catch(err => {
-            console.warn("Dynamic Instagram feed could not be loaded, using HTML fallbacks.", err);
-        });
-}
-
-function renderInstagramFeed() {
-    const grid = document.querySelector('.instagram-grid');
-    if (!grid || !instagramPosts || instagramPosts.length === 0) return;
-    
-    grid.innerHTML = '';
-    instagramPosts.forEach(post => {
-        const card = document.createElement('div');
-        card.className = 'insta-card';
-        
-        let visualHTML = '';
-        if (post.image && post.image.trim() !== '') {
-            visualHTML = `
-                <div class="insta-img-placeholder" style="padding: 0; background: none;">
-                    <img src="${post.image}" alt="Instagram Post" class="insta-img">
-                    <span class="insta-card-tag ${post.tagColor || 'bg-red'}">${currentLang === 'tr' ? post.tag_tr : post.tag_en}</span>
-                </div>
-            `;
-        } else {
-            const iconClass = post.icon || 'fa-solid fa-triangle-exclamation';
-            const iconColor = post.tagColor === 'bg-teal' ? 'text-teal' : (post.tagColor === 'bg-gold' ? 'text-gold' : 'text-red');
-            visualHTML = `
-                <div class="insta-img-placeholder">
-                    <i class="${iconClass} ${iconColor}"></i>
-                    <span class="insta-card-tag ${post.tagColor || 'bg-red'}">${currentLang === 'tr' ? post.tag_tr : post.tag_en}</span>
-                </div>
-            `;
-        }
-        
-        const caption = currentLang === 'tr' ? post.caption_tr : post.caption_en;
-        const link = post.link || 'https://instagram.com/anesthesiabriefs';
-        const likes = post.likes || '500';
-        
-        card.innerHTML = `
-            <a href="${link}" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                ${visualHTML}
-                <div class="insta-info">
-                    <p class="insta-caption">${caption}</p>
-                    <span class="insta-likes"><i class="fa-solid fa-heart"></i> ${likes} likes</span>
-                </div>
-            </a>
-        `;
-        grid.appendChild(card);
-    });
 }
