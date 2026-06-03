@@ -12,6 +12,7 @@ const translations = {
         'nav-preview': 'Ekranlar',
         'nav-instagram': 'Instagram',
         'nav-download-soon': 'Çok Yakında',
+        'nav-game-play': '<i class="fa-solid fa-gamepad"></i> Laringoskop Fırlat!',
         
         // Hero
         'hero-badge': 'Anestezi Profesyonelleri İçin',
@@ -88,6 +89,7 @@ const translations = {
         'nav-preview': 'Screens',
         'nav-instagram': 'Instagram',
         'nav-download-soon': 'Coming Soon',
+        'nav-game-play': '<i class="fa-solid fa-gamepad"></i> Laryngoscope Throw!',
         
         // Hero
         'hero-badge': 'For Anesthesia Professionals',

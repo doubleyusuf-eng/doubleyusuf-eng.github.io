@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesthesia Briefs - Laringoskop Fırlatma Oyunu</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Anesthesia Briefs laringoskop fırlatma mini-oyunu. Ameliyathanede cerraha laringoskop fırlatarak stres atın, komik isteklerine cevap verin!">
+    <meta name="keywords" content="anestezi oyunu, laringoskop oyunu, anestezi, cerrah, ameliyathane oyunu, tıp oyunu, browser game">
+    <meta name="author" content="Anesthesia Briefs">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS (Reusing landing page styles, overriding with game styles) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
+                <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#features" data-i18n="nav-features">Özellikler</a>
+                <a href="index.html#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
+                <a href="index.html#demo" data-i18n="nav-preview">Ekranlar</a>
+                <a href="index.html#instagram" data-i18n="nav-instagram">Instagram</a>
+                <a href="index.html" class="btn-download-sm"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Language Toggle Switch -->
+                <div class="lang-switch-container">
+                    <button class="lang-btn active" id="btn-tr" onclick="changeGameLanguage('tr')">TR</button>
+                    <button class="lang-btn" id="btn-en" onclick="changeGameLanguage('en')">EN</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menüyü Aç">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game Section -->
+    <section class="game-section">
+        <div class="container">
+            <div class="game-card-wrapper">
+                
+                <!-- Game Header HUD -->
+                <div class="game-header">
+                    <h2 class="game-title" id="game-title-text">Laringoskop<span>Fırlat!</span></h2>
+                    
+                    <div class="game-actions-hud">
+                        <!-- Score / Level HUD -->
+                        <span class="badge-new" id="lbl-score" style="margin-bottom:0; font-weight:700;">Skor: 0</span>
+                        <span class="badge-new" id="lbl-level" style="margin-color:var(--accent-teal); margin-bottom:0; font-weight:700;">Seviye: 1</span>
+                        <span class="badge-new" id="lbl-lives" style="margin-color:var(--accent-red); margin-bottom:0; font-weight:700;">Hak: 5</span>
+                        <span class="badge-new" id="lbl-wind" style="margin-color:var(--accent-gold); margin-bottom:0; font-weight:600;">Laminer Akış: 0</span>
+                        
+                        <!-- 2D/3D Mode Toggle -->
+                        <button class="hud-btn" id="btn-mode-toggle" onclick="toggleGameMode()" title="2D/3D Değiştir" style="font-weight: 800; font-size: 13px;">
+                            3D
+                        </button>
+                        
+                        <!-- Sound Toggle -->
+                        <button class="hud-btn" id="btn-audio" onclick="toggleAudio()" title="Sesi Aç/Kapat">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        
+                        <!-- Back to Home -->
+                        <a href="index.html" class="hud-btn" title="Ana Sayfaya Dön">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Canvas Container with Glass Overlay Screens -->
+                <div class="canvas-container">
+                    <!-- Dual canvases to allow switching graphics contexts -->
+                    <canvas id="gameCanvas2D" style="cursor: crosshair;"></canvas>
+                    <canvas id="gameCanvas3D" class="d-none" style="cursor: crosshair;"></canvas>
+                    
+                    <!-- WebGL/Three.js Load Failure Toast -->
+                    <div id="threejs-warning-toast" class="d-none" style="position: absolute; bottom: 15px; left: 15px; background: rgba(220, 38, 38, 0.95); color: white; padding: 10px 18px; border-radius: 8px; font-size: 12px; z-index: 100; pointer-events: none; transition: opacity 0.5s ease; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-weight:600;">
+                        WebGL/Three.js yüklenemedi. 2D moduna dönüldü.
+                    </div>
+                    
+                    <!-- Game Overlay Modal Screen -->
+                    <div class="game-overlay" id="gameOverlayScreen">
+                        <div class="overlay-panel">
+                            <h3 class="overlay-title" id="overlay-title">Laringoskop Fırlatma Savaşı</h3>
+                            <p class="overlay-subtitle" id="overlay-subtitle">Cerraha laringoskop fırlatıp vaka hakkındaki komik isteklerine cevap ver! Ekrandaki laringoskobu geri çek ve nişan alıp fırlat.</p>
+                            
+                            <!-- Game Instructions list -->
+                            <ul class="instructions-list" id="instructions-list">
+                                <!-- Populated dynamically by script -->
+                            </ul>
+                            
+                            <!-- Nickname & Country Input Container -->
+                            <div id="nick-input-container" style="margin-bottom: 12px; display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%;">
+                                <label for="player-nick" style="color: rgba(255,255,255,0.85); font-size: 12.5px; font-weight: 600;" id="lbl-nick-prompt">Oyuncu Adı (Nick):</label>
+                                <div style="display: flex; gap: 8px; justify-content: center; align-items: center;">
+                                    <input type="text" id="player-nick" maxlength="12" placeholder="Anestezist">
+                                    <select id="player-country">
+                                        <option value="TR">🇹🇷 TR</option>
+                                        <option value="US">🇺🇸 US</option>
+                                        <option value="GB">🇬🇧 GB</option>
+                                        <option value="DE">🇩🇪 DE</option>
+                                        <option value="FR">🇫🇷 FR</option>
+                                        <option value="IT">🇮🇹 IT</option>
+                                        <option value="ES">🇪🇸 ES</option>
+                                        <option value="CA">🇨🇦 CA</option>
+                                        <option value="AU">🇦🇺 AU</option>
+                                        <option value="OTH">🏳️ OTH</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Score statistics shown only at game over / level up -->
+                            <div class="overlay-stats d-none" id="stats-grid">
+                                <div class="stat-box">
+                                    <div class="stat-label">SKOR</div>
+                                    <div class="stat-val" id="stat-box-score">0</div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-label">EN YÜKSEK SKOR</div>
+                                    <div class="stat-val" id="stat-box-highscore">0</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Top 10 Leaderboard Container -->
+                            <div id="leaderboard-container" class="d-none" style="margin-top: 10px; margin-bottom: 15px; background: rgba(0,0,0,0.3); border-radius: var(--border-radius-md); padding: 8px 10px; width: 100%; border: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;">
+                                <h4 style="font-size: 11.5px; color: var(--accent-gold); margin-bottom: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;" id="lbl-leaderboard-title">Liderlik Tablosu (En İyi 10)</h4>
+                                <div id="leaderboard-list" style="display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: rgba(255,255,255,0.9); text-align: left; max-height: 110px; overflow-y: auto;">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+                            
+                            <button class="btn-game-primary" id="btn-overlay-action" onclick="handleOverlayAction()">
+                                <i class="fa-solid fa-play"></i> <span id="btn-start-text">Savaşı Başlat</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- UI Sliders and Action controls beneath the canvas -->
+                <div class="game-controls-panel">
+                    <div class="controls-sliders">
+                        
+                        <!-- Pitch Angle Slider -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span id="slider-pitch-label">Dikey Açı</span>
+                                <span id="val-pitch">40°</span>
+                            </div>
+                            <input type="range" min="5" max="85" value="40" class="game-range" id="slider-pitch" oninput="syncSliderValues()">
+                        </div>
+
+                        <!-- Yaw Angle Slider -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span id="slider-yaw-label">Yatay Yön</span>
+                                <span id="val-yaw">0°</span>
+                            </div>
+                            <input type="range" min="-45" max="45" value="0" class="game-range" id="slider-yaw" oninput="syncSliderValues()">
+                        </div>
+                        
+                        <!-- Power Slider -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span id="slider-power-label">Fırlatma Gücü</span>
+                                <span id="val-power">60%</span>
+                            </div>
+                            <input type="range" min="10" max="100" value="60" class="game-range" id="slider-power" oninput="syncSliderValues()">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="fire-btn-area">
+                        <button class="btn-fire" id="btn-fire" onclick="fireFromSliders()">
+                            <i class="fa-solid fa-meteor"></i> <span id="btn-fire-text">Fırlat!</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
+                    <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
+                </a>
+                <p class="footer-moto" data-i18n="footer-moto">Klinik kararlarınızda güvence altındasınız.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 data-i18n="footer-links-title">Hızlı Linkler</h4>
+                <a href="index.html#features" data-i18n="nav-features">Özellikler</a>
+                <a href="index.html#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
+                <a href="index.html#demo" data-i18n="nav-preview">Ekran Görüntüleri</a>
+                <a href="https://instagram.com/anesthesiabriefs" target="_blank">Instagram</a>
+            </div>
+
+            <div class="footer-legal">
+                <h4 data-i18n="footer-legal-title">Yasal</h4>
+                <a href="#" data-i18n="footer-privacy">Gizlilik Politikası</a>
+                <a href="#" data-i18n="footer-terms">Kullanım Şartları</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 Anesthesia Briefs. All Rights Reserved. Designed by Antigravity AI.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/anesthesiabriefs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js 3D WebGL Library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom Game JS -->
+    <script src="js/game.js"></script>
+    <script>
+        // Sync range slider texts in DOM for 3D
+        function syncSliderValues() {
+            const pitch = document.getElementById('slider-pitch').value;
+            const yaw = document.getElementById('slider-yaw').value;
+            const power = document.getElementById('slider-power').value;
+            
+            document.getElementById('val-pitch').innerText = pitch + "°";
+            document.getElementById('val-yaw').innerText = (yaw >= 0 ? "+" : "") + yaw + "°";
+            document.getElementById('val-power').innerText = power + "%";
+        }
+        
+        // Handle Start / Restart / Next Level button inside the modal overlay
+        function handleOverlayAction() {
+            if (gameState === 'menu') {
+                startNewGame();
+            } else if (gameState === 'gameover') {
+                startNewGame();
+            } else if (gameState === 'levelup') {
+                nextLevel();
+            }
+        }
+    </script>
+</body>
+</html>
