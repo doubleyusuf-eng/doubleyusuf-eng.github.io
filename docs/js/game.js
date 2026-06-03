@@ -538,6 +538,19 @@ function showHTMLSpeechBubble(text) {
 
 // UI Localization Updates
 function updateLocalization() {
+    // Sync TR/EN button active classes
+    const btnTr = document.getElementById('btn-tr');
+    const btnEn = document.getElementById('btn-en');
+    if (btnTr && btnEn) {
+        if (language === 'tr') {
+            btnTr.classList.add('active');
+            btnEn.classList.remove('active');
+        } else {
+            btnEn.classList.add('active');
+            btnTr.classList.remove('active');
+        }
+    }
+
     const textDict = translations[language];
     document.getElementById('game-title-text').innerHTML = textDict.title;
     

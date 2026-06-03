@@ -88,15 +88,18 @@
                     </div>
                 </div>
                 
-                <!-- Canvas Container with Glass Overlay Screens -->
-                <div class="canvas-container">
-                    <!-- Dual canvases to allow switching graphics contexts -->
-                    <canvas id="gameCanvas2D" style="cursor: crosshair;"></canvas>
-                    <canvas id="gameCanvas3D" class="d-none" style="cursor: crosshair;"></canvas>
-                    
-                    <!-- WebGL/Three.js Load Failure Toast -->
-                    <div id="threejs-warning-toast" class="d-none" style="position: absolute; bottom: 15px; left: 15px; background: rgba(220, 38, 38, 0.95); color: white; padding: 10px 18px; border-radius: 8px; font-size: 12px; z-index: 100; pointer-events: none; transition: opacity 0.5s ease; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-weight:600;">
-                        WebGL/Three.js yüklenemedi. 2D moduna dönüldü.
+                <!-- Game Viewport Wrapper (relative block, lets siblings overlap without canvas clipping) -->
+                <div class="game-viewport-wrapper">
+                    <!-- Canvas Container -->
+                    <div class="canvas-container">
+                        <!-- Dual canvases to allow switching graphics contexts -->
+                        <canvas id="gameCanvas2D" style="cursor: crosshair;"></canvas>
+                        <canvas id="gameCanvas3D" class="d-none" style="cursor: crosshair;"></canvas>
+                        
+                        <!-- WebGL/Three.js Load Failure Toast -->
+                        <div id="threejs-warning-toast" class="d-none" style="position: absolute; bottom: 15px; left: 15px; background: rgba(220, 38, 38, 0.95); color: white; padding: 10px 18px; border-radius: 8px; font-size: 12px; z-index: 100; pointer-events: none; transition: opacity 0.5s ease; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-weight:600;">
+                            WebGL/Three.js yüklenemedi. 2D moduna dönüldü.
+                        </div>
                     </div>
                     
                     <!-- Game Overlay Modal Screen -->
