@@ -1018,6 +1018,13 @@ a {
     color: var(--primary-color);
 }
 
+.insta-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .insta-img-placeholder i {
     font-size: 54px;
     opacity: 0.85;
