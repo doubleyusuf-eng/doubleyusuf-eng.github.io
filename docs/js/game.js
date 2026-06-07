@@ -58,6 +58,7 @@ class GameVector2 {
 let gameMode = '2d'; // '2d' or '3d'
 let is3DAvailable = false;
 let canvas2D = null, ctx2d = null;
+let bgCanvas = null; // Offscreen canvas for static background caching
 let scene = null, camera = null, renderer = null;
 let gameState = 'menu'; // 'menu', 'playing', 'gameover', 'levelup'
 let language = 'tr';
@@ -81,16 +82,105 @@ let leaderboard = [];
 // New key to force a clean local storage reset for the user (cache-bust previous mocks)
 const LEADERBOARD_STORAGE_KEY = 'anesthesia_briefs_leaderboard_v1';
 
+// Cookie Helpers for Redundancy Score Saving (Wipes out iOS/Instagram WebView daily purges)
+function saveLeaderboardToCookie(list) {
+    try {
+        const data = JSON.stringify(list);
+        const b64 = btoa(unescape(encodeURIComponent(data)));
+        const expiry = new Date();
+        expiry.setFullYear(expiry.getFullYear() + 5);
+        document.cookie = `ab_leaderboard=${b64}; expires=${expiry.toUTCString()}; path=/; SameSite=Strict`;
+    } catch(e) {
+        console.error("Cookie save failed", e);
+    }
+}
+
+function loadLeaderboardFromCookie() {
+    try {
+        const name = "ab_leaderboard=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                const b64 = c.substring(name.length, c.length);
+                const data = decodeURIComponent(escape(atob(b64)));
+                return JSON.parse(data);
+            }
+        }
+    } catch (e) {
+        console.error("Cookie load failed", e);
+    }
+    return null;
+}
+
+function saveValueToCookie(key, value) {
+    try {
+        const expiry = new Date();
+        expiry.setFullYear(expiry.getFullYear() + 5);
+        document.cookie = `${key}=${encodeURIComponent(value)}; expires=${expiry.toUTCString()}; path=/; SameSite=Strict`;
+    } catch(e) {
+        console.error("Cookie value save failed", e);
+    }
+}
+
+function getValueFromCookie(key) {
+    try {
+        const name = key + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return decodeURIComponent(c.substring(name.length, c.length));
+            }
+        }
+    } catch(e) {
+        console.error("Cookie value load failed", e);
+    }
+    return null;
+}
+
 function initLeaderboard() {
     const stored = localStorage.getItem(LEADERBOARD_STORAGE_KEY);
+    const cookieStored = loadLeaderboardFromCookie();
+    
     if (stored) {
         try {
             leaderboard = JSON.parse(stored);
         } catch (e) {
             leaderboard = [];
         }
-    } else {
-        leaderboard = [];
+    }
+    
+    // Sync logic: if localStorage is empty but cookie has scores, restore!
+    if ((!leaderboard || leaderboard.length === 0) && cookieStored && cookieStored.length > 0) {
+        leaderboard = cookieStored;
+        localStorage.setItem(LEADERBOARD_STORAGE_KEY, JSON.stringify(leaderboard));
+    }
+    // If cookie is empty but localStorage has scores, sync to cookie!
+    else if (leaderboard && leaderboard.length > 0 && (!cookieStored || cookieStored.length === 0)) {
+        saveLeaderboardToCookie(leaderboard);
+    }
+    // If both have scores, merge them and keep the unique top 10
+    else if (leaderboard && leaderboard.length > 0 && cookieStored && cookieStored.length > 0) {
+        const merged = [...leaderboard, ...cookieStored];
+        const unique = {};
+        merged.forEach(item => {
+            const key = `${item.name}_${item.country}_${item.score}`;
+            unique[key] = item;
+        });
+        leaderboard = Object.values(unique);
+        leaderboard.sort((a, b) => b.score - a.score);
+        leaderboard = leaderboard.slice(0, 10);
+        localStorage.setItem(LEADERBOARD_STORAGE_KEY, JSON.stringify(leaderboard));
+        saveLeaderboardToCookie(leaderboard);
     }
 }
 
@@ -98,6 +188,7 @@ function saveLeaderboard() {
     leaderboard.sort((a, b) => b.score - a.score);
     leaderboard = leaderboard.slice(0, 10);
     localStorage.setItem(LEADERBOARD_STORAGE_KEY, JSON.stringify(leaderboard));
+    saveLeaderboardToCookie(leaderboard);
 }
 
 function addScoreToLeaderboard(name, country, newScore) {
@@ -998,53 +1089,261 @@ function updateTrajectoryLine() {
     trajectoryLine.computeLineDistances();
 }
 
-// 2D Draw Scene Function (Canvas drawing)
-function draw2DScene() {
-    if (!ctx2d) return;
+function drawStaticBackground(ctx) {
+    if (!ctx) return;
     
     // 1. Clear background
-    const grad = ctx2d.createRadialGradient(640, 200, 50, 640, 360, 600);
+    const grad = ctx.createRadialGradient(640, 200, 50, 640, 360, 600);
     grad.addColorStop(0, '#1E293B');
     grad.addColorStop(1, '#090F1E');
-    ctx2d.fillStyle = grad;
-    ctx2d.fillRect(0, 0, 1280, 720);
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 1280, 720);
     
     // 2. Draw Floor tiles
-    ctx2d.strokeStyle = 'rgba(255, 255, 255, 0.03)';
-    ctx2d.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
+    ctx.lineWidth = 1;
     for (let i = 600; i <= 720; i += 20) {
-        ctx2d.beginPath();
-        ctx2d.moveTo(0, i);
-        ctx2d.lineTo(1280, i);
-        ctx2d.stroke();
+        ctx.beginPath();
+        ctx.moveTo(0, i);
+        ctx.lineTo(1280, i);
+        ctx.stroke();
     }
     
     // Draw depth lines on the floor
     for (let gx = -10; gx <= 10; gx += 2) {
         const p1 = project3DTo2D(gx, 0, -2.0);
         const p2 = project3DTo2D(gx, 0, 2.0);
-        ctx2d.beginPath();
-        ctx2d.moveTo(p1.x, p1.y);
-        ctx2d.lineTo(p2.x, p2.y);
-        ctx2d.stroke();
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.stroke();
     }
     
-    // 3. Patient Monitor (Background depth z = -0.8) - Bizden tarafta
+    // 3. Patient Monitor Casing (Background depth z = -0.8)
     const monPos = project3DTo2D(-6.0, 2.7, -0.8);
-    ctx2d.strokeStyle = '#475569';
-    ctx2d.lineWidth = 6;
-    ctx2d.beginPath();
-    ctx2d.moveTo(monPos.x, monPos.y);
-    ctx2d.lineTo(0, monPos.y); // Wall mount extending to left edge
-    ctx2d.stroke();
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 6;
+    ctx.beginPath();
+    ctx.moveTo(monPos.x, monPos.y);
+    ctx.lineTo(0, monPos.y); // Wall mount extending to left edge
+    ctx.stroke();
     
-    ctx2d.fillStyle = '#334155';
-    ctx2d.fillRect(monPos.x - 50, monPos.y - 35, 100, 70);
-    ctx2d.strokeStyle = '#64748b';
-    ctx2d.lineWidth = 2;
-    ctx2d.strokeRect(monPos.x - 50, monPos.y - 35, 100, 70);
+    ctx.fillStyle = '#334155';
+    ctx.fillRect(monPos.x - 50, monPos.y - 35, 100, 70);
+    ctx.strokeStyle = '#64748b';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(monPos.x - 50, monPos.y - 35, 100, 70);
     
+    // 3.5. Anesthesia Machine (placed at x = -5.0, y = 0, z = -1.2)
+    const amPos = project3DTo2D(-5.0, 0, -1.2);
+    ctx.save();
+    ctx.translate(amPos.x, amPos.y);
+    
+    // Main cabinet body
+    ctx.fillStyle = '#334155';
+    ctx.fillRect(-30, -95, 60, 95);
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(-30, -95, 60, 95);
+    
+    // Drawers and lines
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth = 1;
+    for (let dy = -70; dy <= -20; dy += 20) {
+        ctx.beginPath();
+        ctx.moveTo(-30, dy);
+        ctx.lineTo(30, dy);
+        ctx.stroke();
+        
+        // Handle (silver/metal)
+        ctx.fillStyle = '#94a3b8';
+        ctx.fillRect(-14, dy + 8, 28, 4);
+    }
+    
+    // Vaporizers shelf on top
+    ctx.fillStyle = '#64748b';
+    ctx.fillRect(-32, -98, 64, 4);
+    
+    // Yellow Vaporizer (Sevoflurane)
+    ctx.fillStyle = '#f59e0b';
+    ctx.fillRect(-20, -118, 12, 20);
+    ctx.fillStyle = '#cbd5e1';
+    ctx.fillRect(-17, -122, 6, 4);
+    
+    // Purple Vaporizer (Isoflurane)
+    ctx.fillStyle = '#7c3aed';
+    ctx.fillRect(-4, -118, 12, 20);
+    ctx.fillStyle = '#cbd5e1';
+    ctx.fillRect(-1, -122, 6, 4);
+    
+    // Soda Lime canister on the side
+    ctx.fillStyle = '#f1f5f9';
+    ctx.fillRect(22, -65, 16, 28);
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(22, -65, 16, 28);
+    ctx.fillStyle = '#f472b6';
+    ctx.fillRect(24, -53, 12, 5);
+    
+    // Mount bracket for ventilator screen
+    ctx.strokeStyle = '#64748b';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(-20, -98);
+    ctx.lineTo(-20, -130);
+    ctx.stroke();
+    
+    // Ventilator Screen casing
+    ctx.fillStyle = '#1e293b';
+    ctx.fillRect(-32, -150, 24, 20);
+    ctx.strokeStyle = '#475569';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(-32, -150, 24, 20);
+    
+    // Ventilator LCD Screen (cyan)
+    ctx.fillStyle = '#0284c7';
+    ctx.fillRect(-30, -148, 20, 16);
+    
+    // Ventilator trace
+    ctx.strokeStyle = '#ffffff';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-29, -140);
+    ctx.lineTo(-26, -140);
+    ctx.lineTo(-24, -145);
+    ctx.lineTo(-22, -135);
+    ctx.lineTo(-20, -140);
+    ctx.lineTo(-11, -140);
+    ctx.stroke();
+    
+    // Curved blue breathing tubes hanging
+    ctx.strokeStyle = '#60a5fa';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(15, -48, 14, 0, Math.PI, false);
+    ctx.stroke();
+    
+    ctx.restore();
+    
+    // 4. Operating Table (Middle depth z = 0)
+    const tBase = project3DTo2D(3.0, 0, 0);
+    const tPad = project3DTo2D(3.0, 1.2, 0);
+    
+    ctx.fillStyle = '#475569'; // Pillar
+    ctx.fillRect(tBase.x - 24, tPad.y, 48, tBase.y - tPad.y);
+    
+    ctx.fillStyle = '#1E293B'; // Pad
+    ctx.fillRect(tPad.x - 160, tPad.y - 12, 320, 24);
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(tPad.x - 160, tPad.y - 12, 320, 24);
+    
+    // 5. Drape / Ether Screen (Middle depth z = 0)
+    const dBase = project3DTo2D(0.5, 0, 0);
+    const dTop = project3DTo2D(0.5, 2.0, 0);
+    
+    ctx.strokeStyle = '#64748b';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(dBase.x, dBase.y);
+    ctx.lineTo(dBase.x, dTop.y);
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.moveTo(dBase.x - 40, dTop.y);
+    ctx.lineTo(dBase.x + 40, dTop.y);
+    ctx.stroke();
+    
+    ctx.fillStyle = 'rgba(59, 130, 246, 0.65)'; // transparent drape blue
+    ctx.fillRect(dBase.x - 36, dTop.y, 72, 120);
+    
+    // 6. Sitting Anesthesiologist stool, scrubs, face, cap, mask (without arm)
+    const pBase = project3DTo2D(-7.5, 0, 0.3);
+    
+    // Rolling stool
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(pBase.x - 22, pBase.y - 70, 44, 10); // seat
+    ctx.fillStyle = '#475569';
+    ctx.fillRect(pBase.x - 3, pBase.y - 60, 6, 56); // post
+    ctx.fillStyle = '#334155';
+    ctx.fillRect(pBase.x - 18, pBase.y - 4, 36, 4); // base legs
+    
+    // Green Scrubs body
+    ctx.fillStyle = '#065f46';
+    ctx.beginPath();
+    ctx.arc(pBase.x, pBase.y - 100, 24, 0, Math.PI, true);
+    ctx.fill();
+    ctx.fillRect(pBase.x - 24, pBase.y - 100, 48, 36);
+    
+    // Knees/Legs
+    ctx.strokeStyle = '#065f46';
+    ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(pBase.x - 10, pBase.y - 70);
+    ctx.lineTo(pBase.x - 26, pBase.y - 45);
+    ctx.lineTo(pBase.x - 26, pBase.y);
+    ctx.moveTo(pBase.x + 10, pBase.y - 70);
+    ctx.lineTo(pBase.x + 26, pBase.y - 45);
+    ctx.lineTo(pBase.x + 26, pBase.y);
+    ctx.stroke();
+    
+    // Face skin
+    ctx.fillStyle = '#fbcfe8';
+    ctx.beginPath();
+    ctx.arc(pBase.x, pBase.y - 138, 18, 0, Math.PI*2);
+    ctx.fill();
+    
+    // Blue surgical cap
+    ctx.fillStyle = '#2563eb';
+    ctx.beginPath();
+    ctx.arc(pBase.x, pBase.y - 143, 19, Math.PI, 0);
+    ctx.fill();
+    
+    // Mask
+    ctx.fillStyle = '#60a5fa';
+    ctx.fillRect(pBase.x - 5, pBase.y - 138, 14, 10);
+    
+    // 8. IV Pole (Foreground layer, z = 1.4)
+    const ivBase = project3DTo2D(1.5, 0, 1.4);
+    const ivTop = project3DTo2D(1.5, 3.2, 1.4);
+    
+    ctx.strokeStyle = '#cbd5e1';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(ivBase.x, ivBase.y);
+    ctx.lineTo(ivBase.x, ivTop.y);
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.moveTo(ivBase.x - 18, ivTop.y + 10);
+    ctx.lineTo(ivBase.x + 18, ivTop.y + 10);
+    ctx.stroke();
+    
+    ctx.fillStyle = 'rgba(255,255,255,0.45)';
+    ctx.fillRect(ivBase.x - 24, ivTop.y + 16, 10, 22);
+    ctx.fillRect(ivBase.x + 14, ivTop.y + 16, 10, 22);
+}
+
+// 2D Draw Scene Function (Canvas drawing)
+function draw2DScene() {
+    if (!ctx2d) return;
+    
+    // 1. Draw cached static background
+    if (!bgCanvas) {
+        bgCanvas = document.createElement('canvas');
+        bgCanvas.width = 1280;
+        bgCanvas.height = 720;
+        const bgCtx = bgCanvas.getContext('2d');
+        drawStaticBackground(bgCtx);
+    }
+    ctx2d.drawImage(bgCanvas, 0, 0);
+    
+    // 2. Draw flashing/monitor state on top
+    const monPos = project3DTo2D(-6.0, 2.7, -0.8);
     const isFlashing = monitorFlashTimer > 0;
+    
+    // Overwrite the LCD screen rectangle with current state
     ctx2d.fillStyle = isFlashing ? '#D97706' : '#0F172A';
     ctx2d.fillRect(monPos.x - 44, monPos.y - 29, 88, 58);
     
@@ -1064,178 +1363,8 @@ function draw2DScene() {
     ctx2d.lineTo(monPos.x + 40, monPos.y);
     ctx2d.stroke();
     
-    // 3.5. Anesthesia Machine (placed at x = -5.0, y = 0, z = -1.2) - Bizden tarafta
-    const amPos = project3DTo2D(-5.0, 0, -1.2);
-    ctx2d.save();
-    ctx2d.translate(amPos.x, amPos.y);
-    
-    // Main cabinet body (dark slate blue)
-    ctx2d.fillStyle = '#334155';
-    ctx2d.fillRect(-30, -95, 60, 95);
-    ctx2d.strokeStyle = '#475569';
-    ctx2d.lineWidth = 2;
-    ctx2d.strokeRect(-30, -95, 60, 95);
-    
-    // Drawers and lines
-    ctx2d.strokeStyle = '#1e293b';
-    ctx2d.lineWidth = 1;
-    for (let dy = -70; dy <= -20; dy += 20) {
-        ctx2d.beginPath();
-        ctx2d.moveTo(-30, dy);
-        ctx2d.lineTo(30, dy);
-        ctx2d.stroke();
-        
-        // Handle (silver/metal)
-        ctx2d.fillStyle = '#94a3b8';
-        ctx2d.fillRect(-14, dy + 8, 28, 4);
-    }
-    
-    // Vaporizers shelf on top
-    ctx2d.fillStyle = '#64748b';
-    ctx2d.fillRect(-32, -98, 64, 4);
-    
-    // Yellow Vaporizer (Sevoflurane)
-    ctx2d.fillStyle = '#f59e0b';
-    ctx2d.fillRect(-20, -118, 12, 20);
-    ctx2d.fillStyle = '#cbd5e1'; // metal cap
-    ctx2d.fillRect(-17, -122, 6, 4);
-    
-    // Purple Vaporizer (Isoflurane)
-    ctx2d.fillStyle = '#7c3aed';
-    ctx2d.fillRect(-4, -118, 12, 20);
-    ctx2d.fillStyle = '#cbd5e1'; // metal cap
-    ctx2d.fillRect(-1, -122, 6, 4);
-    
-    // Soda Lime canister on the side (white/clear cylinder)
-    ctx2d.fillStyle = '#f1f5f9';
-    ctx2d.fillRect(22, -65, 16, 28);
-    ctx2d.strokeStyle = '#94a3b8';
-    ctx2d.lineWidth = 1;
-    ctx2d.strokeRect(22, -65, 16, 28);
-    // Draw pink/purple lime indicator lines
-    ctx2d.fillStyle = '#f472b6';
-    ctx2d.fillRect(24, -53, 12, 5);
-    
-    // Mount bracket for ventilator screen
-    ctx2d.strokeStyle = '#64748b';
-    ctx2d.lineWidth = 3;
-    ctx2d.beginPath();
-    ctx2d.moveTo(-20, -98);
-    ctx2d.lineTo(-20, -130);
-    ctx2d.stroke();
-    
-    // Ventilator Screen casing
-    ctx2d.fillStyle = '#1e293b';
-    ctx2d.fillRect(-32, -150, 24, 20);
-    ctx2d.strokeStyle = '#475569';
-    ctx2d.lineWidth = 1;
-    ctx2d.strokeRect(-32, -150, 24, 20);
-    
-    // Ventilator LCD Screen (cyan)
-    ctx2d.fillStyle = '#0284c7';
-    ctx2d.fillRect(-30, -148, 20, 16);
-    
-    // Ventilator trace
-    ctx2d.strokeStyle = '#ffffff';
-    ctx2d.lineWidth = 1;
-    ctx2d.beginPath();
-    ctx2d.moveTo(-29, -140);
-    ctx2d.lineTo(-26, -140);
-    ctx2d.lineTo(-24, -145);
-    ctx2d.lineTo(-22, -135);
-    ctx2d.lineTo(-20, -140);
-    ctx2d.lineTo(-11, -140);
-    ctx2d.stroke();
-    
-    // Curved blue breathing tubes hanging
-    ctx2d.strokeStyle = '#60a5fa';
-    ctx2d.lineWidth = 3;
-    ctx2d.beginPath();
-    ctx2d.arc(15, -48, 14, 0, Math.PI, false);
-    ctx2d.stroke();
-    
-    ctx2d.restore();
-    
-    // 4. Operating Table (Middle depth z = 0)
-    const tBase = project3DTo2D(3.0, 0, 0);
-    const tPad = project3DTo2D(3.0, 1.2, 0);
-    
-    ctx2d.fillStyle = '#475569'; // Pillar
-    ctx2d.fillRect(tBase.x - 24, tPad.y, 48, tBase.y - tPad.y);
-    
-    ctx2d.fillStyle = '#1E293B'; // Pad
-    ctx2d.fillRect(tPad.x - 160, tPad.y - 12, 320, 24);
-    ctx2d.strokeStyle = '#334155';
-    ctx2d.lineWidth = 1;
-    ctx2d.strokeRect(tPad.x - 160, tPad.y - 12, 320, 24);
-    
-    // 5. Drape / Ether Screen (Middle depth z = 0)
-    const dBase = project3DTo2D(0.5, 0, 0);
-    const dTop = project3DTo2D(0.5, 2.0, 0);
-    
-    ctx2d.strokeStyle = '#64748b';
-    ctx2d.lineWidth = 4;
-    ctx2d.beginPath();
-    ctx2d.moveTo(dBase.x, dBase.y);
-    ctx2d.lineTo(dBase.x, dTop.y);
-    ctx2d.stroke();
-    
-    ctx2d.beginPath();
-    ctx2d.moveTo(dBase.x - 40, dTop.y);
-    ctx2d.lineTo(dBase.x + 40, dTop.y);
-    ctx2d.stroke();
-    
-    ctx2d.fillStyle = 'rgba(59, 130, 246, 0.65)'; // transparent drape blue
-    ctx2d.fillRect(dBase.x - 36, dTop.y, 72, 120);
-    
-    // 6. Sitting Anesthesiologist (x = -7.5, y = 0, z = 0.3)
+    // 3. Draw player arm & laryngoscope in hand
     const pBase = project3DTo2D(-7.5, 0, 0.3);
-    
-    // Rolling stool
-    ctx2d.fillStyle = '#0f172a';
-    ctx2d.fillRect(pBase.x - 22, pBase.y - 70, 44, 10); // seat
-    ctx2d.fillStyle = '#475569';
-    ctx2d.fillRect(pBase.x - 3, pBase.y - 60, 6, 56); // post
-    ctx2d.fillStyle = '#334155';
-    ctx2d.fillRect(pBase.x - 18, pBase.y - 4, 36, 4); // base legs
-    
-    // Green Scrubs body
-    ctx2d.fillStyle = '#065f46';
-    ctx2d.beginPath();
-    ctx2d.arc(pBase.x, pBase.y - 100, 24, 0, Math.PI, true);
-    ctx2d.fill();
-    ctx2d.fillRect(pBase.x - 24, pBase.y - 100, 48, 36);
-    
-    // Knees/Legs
-    ctx2d.strokeStyle = '#065f46';
-    ctx2d.lineWidth = 10;
-    ctx2d.lineCap = 'round';
-    ctx2d.beginPath();
-    ctx2d.moveTo(pBase.x - 10, pBase.y - 70);
-    ctx2d.lineTo(pBase.x - 26, pBase.y - 45);
-    ctx2d.lineTo(pBase.x - 26, pBase.y);
-    ctx2d.moveTo(pBase.x + 10, pBase.y - 70);
-    ctx2d.lineTo(pBase.x + 26, pBase.y - 45);
-    ctx2d.lineTo(pBase.x + 26, pBase.y);
-    ctx2d.stroke();
-    
-    // Face skin
-    ctx2d.fillStyle = '#fbcfe8';
-    ctx2d.beginPath();
-    ctx2d.arc(pBase.x, pBase.y - 138, 18, 0, Math.PI*2);
-    ctx2d.fill();
-    
-    // Blue surgical cap
-    ctx2d.fillStyle = '#2563eb';
-    ctx2d.beginPath();
-    ctx2d.arc(pBase.x, pBase.y - 143, 19, Math.PI, 0);
-    ctx2d.fill();
-    
-    // Mask
-    ctx2d.fillStyle = '#60a5fa';
-    ctx2d.fillRect(pBase.x - 5, pBase.y - 138, 14, 10);
-    
-    // Arm & Laryngoscope in hand (when not flying)
     if (!project.isFlying) {
         const handPos = project3DTo2D(-7.0, 1.5, 0.3);
         
@@ -1272,7 +1401,7 @@ function draw2DScene() {
         ctx2d.stroke();
     }
     
-    // 7. Standing Surgeon Target (x = 7.5, y = 0, z = surgeonZ)
+    // 4. Standing Surgeon Target (x = 7.5, y = 0, z = surgeonZ)
     const sPos = project3DTo2D(7.5 + surgeonXOffset, 0, surgeonZ);
     const scale = 1.0 + surgeonZ * 0.12;
     
@@ -1316,27 +1445,7 @@ function draw2DScene() {
     
     ctx2d.restore();
     
-    // 8. IV Pole (Foreground layer, z = 1.4)
-    const ivBase = project3DTo2D(1.5, 0, 1.4);
-    const ivTop = project3DTo2D(1.5, 3.2, 1.4);
-    
-    ctx2d.strokeStyle = '#cbd5e1';
-    ctx2d.lineWidth = 4;
-    ctx2d.beginPath();
-    ctx2d.moveTo(ivBase.x, ivBase.y);
-    ctx2d.lineTo(ivBase.x, ivTop.y);
-    ctx2d.stroke();
-    
-    ctx2d.beginPath();
-    ctx2d.moveTo(ivBase.x - 18, ivTop.y + 10);
-    ctx2d.lineTo(ivBase.x + 18, ivTop.y + 10);
-    ctx2d.stroke();
-    
-    ctx2d.fillStyle = 'rgba(255,255,255,0.45)';
-    ctx2d.fillRect(ivBase.x - 24, ivTop.y + 16, 10, 22);
-    ctx2d.fillRect(ivBase.x + 14, ivTop.y + 16, 10, 22);
-    
-    // 9. Dotted Aiming Trajectory (when playing and aiming)
+    // 5. Dotted Aiming Trajectory (when playing and aiming)
     if (!project.isFlying && gameState === 'playing') {
         const pitchRad = aimPitch * (Math.PI / 180);
         const yawRad = aimYaw * (Math.PI / 180);
@@ -1372,7 +1481,7 @@ function draw2DScene() {
         ctx2d.setLineDash([]);
     }
     
-    // 10. Flying Laryngoscope
+    // 6. Flying Laryngoscope
     if (project.isFlying) {
         const projPos = project3DTo2D(project.pos.x, project.pos.y, project.pos.z);
         
@@ -1401,7 +1510,7 @@ function draw2DScene() {
         ctx2d.restore();
     }
     
-    // 11. Flight Smoke Trail Particles
+    // 7. Flying Trail Particles
     for (let i = project.trailParticles.length - 1; i >= 0; i--) {
         const tp = project.trailParticles[i];
         const screenP = project3DTo2D(tp.pos.x, tp.pos.y, tp.pos.z);
@@ -1411,7 +1520,7 @@ function draw2DScene() {
         ctx2d.fill();
     }
     
-    // 12. Burst Sparkle Particles (Hits/Misses)
+    // 8. Burst Sparkle Particles (Hits/Misses)
     for (let i = particles2D.length - 1; i >= 0; i--) {
         const p = particles2D[i];
         ctx2d.fillStyle = p.color;
@@ -2129,6 +2238,7 @@ function onWindowResize() {
 function changeGameLanguage(lang) {
     language = lang;
     localStorage.setItem('anesthesia_pref_lang', lang);
+    saveValueToCookie('anesthesia_pref_lang', lang);
     updateLocalization();
     updateLaminarWindHUD();
 }
@@ -2151,6 +2261,9 @@ function initGame() {
     canvas2D.width = 1280;
     canvas2D.height = 720;
     
+    // Reset background canvas on restart/init to force redraw
+    bgCanvas = null;
+    
     // 2. Perform WebGL & CDN libraries availability checks
     const isThreeLoaded = (typeof THREE !== 'undefined');
     let isWebGLSupported = false;
@@ -2166,12 +2279,33 @@ function initGame() {
     
     is3DAvailable = isThreeLoaded && isWebGLSupported;
     
-    // Load highscore
-    highscore = parseInt(localStorage.getItem('laryngoscope_highscore') || 0);
-    
     // Load language preference
-    const savedLang = localStorage.getItem('anesthesia_pref_lang');
-    if (savedLang) language = savedLang;
+    const savedLang = localStorage.getItem('anesthesia_pref_lang') || getValueFromCookie('anesthesia_pref_lang');
+    if (savedLang) {
+        language = savedLang;
+        localStorage.setItem('anesthesia_pref_lang', savedLang);
+        saveValueToCookie('anesthesia_pref_lang', savedLang);
+    }
+    
+    // Load highscore with cookie fallback & sync
+    const localHighscore = parseInt(localStorage.getItem('laryngoscope_highscore') || 0);
+    const cookieHighscore = parseInt(getValueFromCookie('laryngoscope_highscore') || 0);
+    highscore = Math.max(localHighscore, cookieHighscore);
+    localStorage.setItem('laryngoscope_highscore', highscore);
+    saveValueToCookie('laryngoscope_highscore', highscore);
+    
+    // Load nickname and country with cookie fallback & sync
+    const localNick = localStorage.getItem('laryngoscope_player_nick');
+    const cookieNick = getValueFromCookie('laryngoscope_player_nick');
+    playerNick = localNick || cookieNick || (language === 'tr' ? 'Anestezist' : 'Anesthesiologist');
+    localStorage.setItem('laryngoscope_player_nick', playerNick);
+    saveValueToCookie('laryngoscope_player_nick', playerNick);
+    
+    const localCountry = localStorage.getItem('laryngoscope_player_country');
+    const cookieCountry = getValueFromCookie('laryngoscope_player_country');
+    playerCountry = localCountry || cookieCountry || 'TR';
+    localStorage.setItem('laryngoscope_player_country', playerCountry);
+    saveValueToCookie('laryngoscope_player_country', playerCountry);
     
     // 3. Setup mouse and mobile drag listener binds
     setupViewportAiming();
@@ -2197,10 +2331,6 @@ function initGame() {
     }
     
     gameState = 'menu';
-    
-    // Load last used nickname and country, then initialize leaderboard
-    playerNick = localStorage.getItem('laryngoscope_player_nick') || (language === 'tr' ? 'Anestezist' : 'Anesthesiologist');
-    playerCountry = localStorage.getItem('laryngoscope_player_country') || 'TR';
     
     const nickInput = document.getElementById('player-nick');
     if (nickInput) nickInput.value = playerNick;
