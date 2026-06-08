@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesthesia Briefs - Zor Havayolu Kaçış Oyunu</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Anesthesia Briefs Zor Havayolu Kaçış Oyunu. Tıbbi kriz anlarında kritik klinik kararlar vererek hastanın hayatını kurtarın ve EDAIC/ABA kılavuzlarına ne kadar hakim olduğunuzu test edin!">
+    <meta name="keywords" content="anestezi oyunu, zor havayolu oyunu, entübasyon oyunu, zor havayolu algoritması, cricothyroidotomy, edaic, aba basic, tıbbi simülatör, anestezi">
+    <meta name="author" content="Anesthesia Briefs">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS (Reusing landing page styles, overriding with custom game styles) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/airway_game.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
+                <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#features" data-i18n="nav-features">Özellikler</a>
+                <a href="index.html#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
+                <a href="index.html#demo" data-i18n="nav-preview">Ekranlar</a>
+                <a href="game.html" data-i18n="nav-game-play"><i class="fa-solid fa-gamepad"></i> Laringoskop Fırlat!</a>
+                <a href="index.html" class="btn-download-sm"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Language Toggle Switch -->
+                <div class="lang-switch-container">
+                    <button class="lang-btn active" id="btn-tr" onclick="changeGameLanguage('tr')">TR</button>
+                    <button class="lang-btn" id="btn-en" onclick="changeGameLanguage('en')">EN</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menüyü Aç">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game Section -->
+    <section class="game-section">
+        <div class="container">
+            <div class="game-card-wrapper">
+                
+                <!-- Game Header HUD -->
+                <div class="game-header" style="margin-bottom: 20px;">
+                    <h2 class="game-title" id="game-title-text">Zor Havayolu<span>Kaçış Oyunu</span></h2>
+                    
+                    <div class="game-actions-hud">
+                        <!-- Sound Toggle -->
+                        <button class="hud-btn" id="btn-audio" onclick="toggleAudio()" title="Sesi Aç/Kapat">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        
+                        <!-- Back to Menu -->
+                        <button class="hud-btn" id="btn-menu-back" onclick="returnToMenu()" title="Menüye Dön">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </button>
+                        
+                        <!-- Back to Home -->
+                        <a href="index.html" class="hud-btn" title="Ana Sayfaya Git">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Game Viewport Wrapper with Overlay Support -->
+                <div class="game-viewport-wrapper">
+                    
+                    <!-- Game Overlay Modal Screen (Menu, Victory, Gameover) -->
+                    <div class="game-overlay" id="gameOverlayScreen">
+                        <div class="overlay-panel">
+                            <h3 class="overlay-title" id="overlay-title">Zor Havayolu Kaçış Oyunu</h3>
+                            <p class="overlay-subtitle" id="overlay-subtitle">Klinik kararlarınızla hastanın hayatını kurtarın! Bu oyun, ASA Zor Havayolu Kılavuzu algoritmalarını simüle eder. Doğru kararlar puan kazandırır, hatalar ise hastayı hipoksiye sürükler.</p>
+                            
+                            <!-- Case Selection Area -->
+                            <div id="case-selection-area" style="width: 100%; text-align: left;">
+                                <h4 style="font-size: 13px; color: var(--accent-gold); font-weight: 700; margin-bottom: 10px; text-transform: uppercase;" id="case-selection-title-lbl">Vaka Dosyası Seçin:</h4>
+                                
+                                <div class="case-selector">
+                                    <!-- Case 1 -->
+                                    <div class="case-card active" id="case-1-card" onclick="selectCase(1)">
+                                        <div class="case-hdr">
+                                            <span id="case1-title-lbl">Vaka 1: Beklenen Zor Havayolu</span>
+                                            <span class="case-diff easy" data-i18n="case-diff-easy">Kolay</span>
+                                        </div>
+                                        <p class="case-desc" id="case1-desc-lbl">Retrognatisi ve Mallampati 4 skoru olan elektif cerrahi hastası. Riskleri öngörüp doğru stratejiyi uygulayın.</p>
+                                    </div>
+                                    
+                                    <!-- Case 2 -->
+                                    <div class="case-card" id="case-2-card" onclick="selectCase(2)">
+                                        <div class="case-hdr">
+                                            <span id="case2-title-lbl">Vaka 2: Beklenmedik CVCI Krizi</span>
+                                            <span class="case-diff hard" data-i18n="case-diff-hard">Zor</span>
+                                        </div>
+                                        <p class="case-desc" id="case2-desc-lbl">Genel anestezi sonrası maskeyle havalandırılamayan ve entübe edilemeyen (CVCI) hasta. Saniyeler önemli!</p>
+                                    </div>
+                                    
+                                    <!-- Case 3 -->
+                                    <div class="case-card" id="case-3-card" onclick="selectCase(3)">
+                                        <div class="case-hdr">
+                                            <span id="case3-title-lbl">Vaka 3: Obstetrik RSI Acili</span>
+                                            <span class="case-diff medium" data-i18n="case-diff-medium">Orta</span>
+                                        </div>
+                                        <p class="case-desc" id="case3-desc-lbl">Fetal distres nedeniyle acil sezaryene alınan tok karınlı gebe. Hızlı desatüre olan hassas bir havayolu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Nickname & Country Input Container -->
+                            <div id="nick-input-container" style="margin-bottom: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%;">
+                                <label for="player-nick" style="color: rgba(255,255,255,0.85); font-size: 13px; font-weight: 600;" id="lbl-nick-prompt">Oyuncu Takma Adı (Nick):</label>
+                                <div style="display: flex; gap: 8px; justify-content: center; align-items: center; width: 100%; max-width: 340px;">
+                                    <input type="text" id="player-nick" maxlength="12" placeholder="Anestezist" style="flex: 2; padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15); background: rgba(0,0,0,0.2); color: white;">
+                                    <select id="player-country" style="flex: 1; padding: 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15); background: #1e293b; color: white;">
+                                        <option value="TR">🇹🇷 TR</option>
+                                        <option value="US">🇺🇸 US</option>
+                                        <option value="GB">🇬🇧 GB</option>
+                                        <option value="DE">🇩🇪 DE</option>
+                                        <option value="FR">🇫🇷 FR</option>
+                                        <option value="IT">🇮🇹 IT</option>
+                                        <option value="ES">🇪🇸 ES</option>
+                                        <option value="CA">🇨🇦 CA</option>
+                                        <option value="AU">🇦🇺 AU</option>
+                                        <option value="OTH">🏳️ OTH</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Score statistics shown only at game over / victory -->
+                            <div class="overlay-stats d-none" id="stats-grid" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; width: 100%;">
+                                <div class="stat-box" style="background: rgba(0,0,0,0.3); padding: 12px 20px; border-radius: 8px; min-width: 120px;">
+                                    <div class="stat-label" style="font-size: 10px; color: #94a3b8; font-weight: 700;" data-i18n="hud-score">SKOR</div>
+                                    <div class="stat-val" id="stat-box-score" style="font-size: 24px; font-weight: 800; color: var(--accent-gold); margin-top: 4px;">0</div>
+                                </div>
+                                <div class="stat-box" style="background: rgba(0,0,0,0.3); padding: 12px 20px; border-radius: 8px; min-width: 120px;">
+                                    <div class="stat-label" style="font-size: 10px; color: #94a3b8; font-weight: 700;" data-i18n="overlay-highscore">EN YÜKSEK SKOR</div>
+                                    <div class="stat-val" id="stat-box-highscore" style="font-size: 24px; font-weight: 800; color: #ffffff; margin-top: 4px;">0</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Top 10 Leaderboard Container -->
+                            <div id="leaderboard-container" style="margin-bottom: 20px; background: rgba(0,0,0,0.4); border-radius: 10px; padding: 12px; width: 100%; border: 1px solid rgba(255,255,255,0.06); box-sizing: border-box;">
+                                <h4 style="font-size: 12px; color: var(--accent-gold); margin-bottom: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; text-align: left;" id="lbl-leaderboard-title">Liderlik Tablosu (En İyi 10)</h4>
+                                <div id="leaderboard-list" style="display: flex; flex-direction: column; gap: 5px; font-size: 11.5px; color: rgba(255,255,255,0.9); text-align: left; max-height: 120px; overflow-y: auto;">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+                            
+                            <button class="btn-game-primary" id="btn-overlay-action" onclick="startSimulation()" style="width: 100%; max-width: 340px; padding: 12px 24px; font-size: 15px; font-weight: 700; background: var(--accent-gold); color: var(--primary-color); border: none; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 auto;">
+                                <i class="fa-solid fa-play"></i> <span id="btn-start-text">Simülasyonu Başlat</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Active Gameplay Layout Grid (Visible when playing) -->
+                    <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px;">
+                        
+                        <!-- Left Column: Patient Monitor & Story Console -->
+                        <div class="gameplay-left-pane">
+                            
+                            <!-- OR Monitor Panel -->
+                            <div class="monitor-container" id="monitor-box">
+                                <div class="monitor-header">
+                                    <span class="patient-info">PATIENT: GEBE/MALE ADULT</span>
+                                    <span style="color: var(--vital-red); font-weight: 700;" id="monitor-alarm-banner">MONİTÖR STABİL</span>
+                                    <span>MODE: OR_SIM_V1</span>
+                                </div>
+                                
+                                <div class="vitals-grid">
+                                    <!-- Dynamic Waveforms -->
+                                    <div class="waves-column">
+                                        <!-- EKG wave -->
+                                        <div class="wave-panel green">
+                                            <span class="wave-label">EKG</span>
+                                            <canvas id="ekgCanvas" class="wave-canvas"></canvas>
+                                        </div>
+                                        
+                                        <!-- ETCO2 wave -->
+                                        <div class="wave-panel yellow">
+                                            <span class="wave-label">CO2</span>
+                                            <canvas id="etco2Canvas" class="wave-canvas"></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Numeric Vitals values -->
+                                    <div class="digits-column">
+                                        <div class="vital-box cyan">
+                                            <span class="vital-title" data-i18n="hud-spO2">SpO2 %</span>
+                                            <span class="vital-number" id="num-spO2">99</span>
+                                        </div>
+                                        <div class="vital-box green">
+                                            <span class="vital-title" data-i18n="hud-hr">Nabız</span>
+                                            <span class="vital-number" id="num-hr">75</span>
+                                        </div>
+                                        <div class="vital-box yellow" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                            <div style="display: flex; flex-direction: column;">
+                                                <span class="vital-title" data-i18n="hud-etco2">EtCO2</span>
+                                                <span style="font-size: 20px; font-weight: 800; font-family: monospace;" id="num-etco2">38</span>
+                                            </div>
+                                            <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                                                <span class="vital-title" data-i18n="hud-bp">Tansiyon</span>
+                                                <span style="font-size: 14px; font-weight: 800; font-family: monospace; color:#cbd5e1;" id="num-bp">120/80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Story Narrative Console Log -->
+                            <div class="console-container" id="console-logs">
+                                <!-- Appended dynamically -->
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Right Column: Airway Cart Inventory & Choices -->
+                        <div class="gameplay-right-pane" style="display: flex; flex-direction: column; justify-content: space-between;">
+                            
+                            <div>
+                                <!-- Stat HUD (Score, Trauma) -->
+                                <div class="hud-stats-panel">
+                                    <div class="hud-stat-card">
+                                        <div class="hud-stat-lbl" id="lbl-score-title">SKOR</div>
+                                        <div class="hud-stat-val gold" id="val-score">0</div>
+                                    </div>
+                                    <div class="hud-stat-card">
+                                        <div class="hud-stat-lbl" id="lbl-trauma-title">HAVAYOLU TRAVMASI</div>
+                                        <div class="hud-stat-val red" id="val-trauma">0%</div>
+                                        <div class="hud-progress-bar">
+                                            <div class="hud-progress-fill" id="trauma-progress-fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Airway Cart Drawers -->
+                                <div class="cart-container" style="background: rgba(30,41,59,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 16px;">
+                                    <h3 class="cart-title">
+                                        <i class="fa-solid fa-boxes-stacked text-gold-accent"></i>
+                                        <span id="cart-title-txt">Zor Havayolu Arabası (Envanter)</span>
+                                    </h3>
+                                    
+                                    <!-- Tabs -->
+                                    <div class="cart-tabs">
+                                        <button class="cart-tab-btn active" onclick="switchCartTab('laryngoscopes')">
+                                            <i class="fa-solid fa-wrench"></i> <span id="tab-laryngo-txt">Laringoskoplar</span>
+                                        </button>
+                                        <button class="cart-tab-btn" onclick="switchCartTab('sga')">
+                                            <i class="fa-solid fa-circle"></i> <span id="tab-sga-txt">LMA / SGA</span>
+                                        </button>
+                                        <button class="cart-tab-btn" onclick="switchCartTab('adjuncts')">
+                                            <i class="fa-solid fa-screwdriver-wrench"></i> <span id="tab-adjunct-txt">Ekipman / İlaç</span>
+                                        </button>
+                                        <button class="cart-tab-btn" onclick="switchCartTab('emergency')">
+                                            <i class="fa-solid fa-triangle-exclamation"></i> <span id="tab-emergency-txt">Acil eFONA</span>
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- Selected Device HUD -->
+                                    <div id="selected-tool-status" style="font-size: 11.5px; margin-bottom: 12px; background: rgba(0,0,0,0.2); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.03);">
+                                        Seçili Cihaz: <span style="color:#64748b;">Yok (Elle müdahale)</span>
+                                    </div>
+                                    
+                                    <!-- Tools drawer container -->
+                                    <div class="cart-drawer-content active" id="cart-drawer">
+                                        <!-- Loaded dynamically -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Decision Choices Buttons pane -->
+                            <div class="choices-container" id="choices-pane">
+                                <!-- Loaded dynamically -->
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
+                    <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
+                </a>
+                <p class="footer-moto" data-i18n="footer-moto">Klinik kararlarınızda güvence altındasınız.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 data-i18n="footer-links-title">Hızlı Linkler</h4>
+                <a href="index.html#features" data-i18n="nav-features">Özellikler</a>
+                <a href="index.html#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
+                <a href="index.html#demo" data-i18n="nav-preview">Ekran Görüntüleri</a>
+                <a href="https://instagram.com/anesthesiabriefs" target="_blank">Instagram</a>
+            </div>
+
+            <div class="footer-legal">
+                <h4 data-i18n="footer-legal-title">Yasal</h4>
+                <a href="#" data-i18n="footer-privacy">Gizlilik Politikası</a>
+                <a href="#" data-i18n="footer-terms">Kullanım Şartları</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 Anesthesia Briefs. All Rights Reserved. Designed by Antigravity AI.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/anesthesiabriefs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Drawer Handler -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('mobile-active');
+            const isOpen = navMenu.classList.contains('mobile-active');
+            mobileMenuBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+    </script>
+    
+    <!-- Game Engine Logic -->
+    <script src="js/airway_game.js"></script>
+</body>
+</html>

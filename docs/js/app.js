@@ -13,6 +13,7 @@ const translations = {
         'nav-instagram': 'Instagram',
         'nav-download-soon': 'Çok Yakında',
         'nav-game-play': '<i class="fa-solid fa-gamepad"></i> Laringoskop Fırlat!',
+        'nav-airway-play': '<i class="fa-solid fa-brain"></i> Zor Havayolu',
         
         // Hero
         'hero-badge': 'Anestezi Profesyonelleri İçin',
@@ -90,6 +91,7 @@ const translations = {
         'nav-instagram': 'Instagram',
         'nav-download-soon': 'Coming Soon',
         'nav-game-play': '<i class="fa-solid fa-gamepad"></i> Laryngoscope Throw!',
+        'nav-airway-play': '<i class="fa-solid fa-brain"></i> Difficult Airway',
         
         // Hero
         'hero-badge': 'For Anesthesia Professionals',
