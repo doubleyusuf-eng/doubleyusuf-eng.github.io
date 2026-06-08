@@ -397,8 +397,9 @@
         padding: 16px 8px;
         background: rgba(9, 15, 30, 0.95);
         display: flex;
-        align-items: flex-start; /* Start from top to allow scrolling */
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start; /* Start from top to allow scrolling */
+        align-items: center; /* Center horizontally */
     }
     
     .overlay-panel {
