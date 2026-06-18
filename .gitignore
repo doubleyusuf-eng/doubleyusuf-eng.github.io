@@ -19,3 +19,18 @@ local.properties
 # System files
 .DS_Store
 Thumbs.db
+
+# Root level non-web files (Keep locally, ignore on GitHub)
+/app/
+/decompiled_classes/
+/gradle/
+/gradlew
+/gradlew.bat
+/settings.gradle.kts
+/build.gradle.kts
+/gradle.properties
+/backup_calculator.kt
+/*.py
+/*.json
+/*.png
+/ASA_classification.pdf
