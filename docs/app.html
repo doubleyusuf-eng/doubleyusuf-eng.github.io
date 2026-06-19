@@ -5,12 +5,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Anesthesia Briefs — Mobile App</title>
-<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script src="../_ds_bundle.js"></script>
+<script src="_ds_bundle.js"></script>
 <style>
   html, body { margin: 0; height: 100%; }
   body {
@@ -25,7 +25,6 @@
 <body>
 <div id="root"></div>
 <script type="text/babel" data-presets="react">
-/* PhoneFrame.jsx (inlined for static deploy) */
 // Anesthesia Briefs — iPhone frame for the mobile UI kit.
 // Black bezel, status bar, scrollable screen window. Children render inside.
 function PhoneFrame({ children, statusDark = false }) {
@@ -70,7 +69,6 @@ window.PhoneFrame = PhoneFrame;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* HomeScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Home screen recreation.
 const DS = window.AnesthesiaBriefsDesignSystem_a9434e;
 
@@ -219,7 +217,6 @@ window.HomeScreen = HomeScreen;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* AlgorithmsScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Decision Algorithms list screen.
 const DS_ALGO = window.AnesthesiaBriefsDesignSystem_a9434e;
 
@@ -284,7 +281,6 @@ window.AlgorithmsScreen = AlgorithmsScreen;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* AlgorithmFlowScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Algorithm flow detail (CICO crisis steps).
 const DS_FLOW = window.AnesthesiaBriefsDesignSystem_a9434e;
 
@@ -326,7 +322,6 @@ window.AlgorithmFlowScreen = AlgorithmFlowScreen;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* CalculatorScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Pediatric Dose Calculator detail screen.
 const DS_CALC = window.AnesthesiaBriefsDesignSystem_a9434e;
 
@@ -380,7 +375,6 @@ window.CalculatorScreen = CalculatorScreen;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* DrugsScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Drug Database list screen.
 const DS_DRUG = window.AnesthesiaBriefsDesignSystem_a9434e;
 
@@ -420,7 +414,6 @@ window.DrugsScreen = DrugsScreen;
 
 </script>
 <script type="text/babel" data-presets="react">
-/* RegionalScreen.jsx (inlined for static deploy) */
 // Anesthesia Briefs — Regional Anesthesia atlas (hub + block detail).
 // Hub lists nerve blocks by region; selecting one opens an atlas detail with
 // Anatomy / Sonoanatomy tabs, probe-needle approach, and LA dosing.
@@ -474,7 +467,7 @@ function RegionalScreen({ onBack }) {
               background: "#fff", border: "1px solid var(--border-subtle)",
               boxShadow: "var(--shadow-card)",
             }}>
-              <img src={`../assets/atlas/${b.id}_${tab === "sono" ? "sono" : "anatomy"}.png`}
+              <img src={`assets/atlas/${b.id}_${tab === "sono" ? "sono" : "anatomy"}.png`}
                 alt={`${b.name} ${tab}`} style={{ width: "100%", display: "block" }} />
             </div>
           </div>

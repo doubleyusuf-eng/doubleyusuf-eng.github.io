@@ -1,3 +1,4 @@
+<!-- @dsCard group="Marketing Site" viewport="1240x820" name="Landing page" subtitle="Premium hero, features, interactive demo, games, board prep — geo TR/EN" -->
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -383,7 +384,7 @@
     </div>
     <div class="demo-stage">
       <span class="demo-live" data-i18n="demo-live"><span class="live-dot"></span> Canlı · dokunarak gezin</span>
-      <iframe id="demo-frame" src="mobile_app/index.html" title="Anesthesia Briefs canlı demo" loading="lazy"></iframe>
+      <iframe id="demo-frame" src="app.html" title="Anesthesia Briefs canlı demo" loading="lazy"></iframe>
     </div>
   </div>
   <div class="container">
@@ -418,7 +419,7 @@
             <span><i class="fa-solid fa-ranking-star"></i> <span data-i18n="game-1-f2">Liderlik tablosu</span></span>
             <span><i class="fa-solid fa-layer-group"></i> <span data-i18n="game-1-f3">Seviyeler</span></span>
           </div>
-          <a class="btn-play" href="game-build/game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
+          <a class="btn-play" href="game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
         </div>
       </div>
       <div class="gcard airway">
@@ -436,7 +437,7 @@
             <span><i class="fa-solid fa-brain"></i> <span data-i18n="game-2-f2">Karar eğitimi</span></span>
             <span><i class="fa-solid fa-stopwatch"></i> <span data-i18n="game-2-f3">Süreli</span></span>
           </div>
-          <a class="btn-play" href="game-build/airway_game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
+          <a class="btn-play" href="airway_game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
         </div>
       </div>
     </div>
@@ -675,8 +676,8 @@ function setLang(lang) {
   // hero phones are live app previews — follow language; front=home, back=algorithms
   const _heroLang = lang === "tr" ? "tr" : "en";
   const fa = document.getElementById("hero-frame-a"), fb = document.getElementById("hero-frame-b");
-  const aSrc = "mobile_app/index.html?bare=1&screen=home&lang=" + _heroLang;
-  const bSrc = "mobile_app/index.html?bare=1&screen=algorithms&lang=" + _heroLang;
+  const aSrc = "app.html?bare=1&screen=home&lang=" + _heroLang;
+  const bSrc = "app.html?bare=1&screen=algorithms&lang=" + _heroLang;
   if (fa && fa.getAttribute("data-src") !== aSrc) { fa.setAttribute("data-src", aSrc); fa.src = aSrc; fa.addEventListener("load", () => sizeHeroFrame(fa), { once: true }); }
   if (fb && fb.getAttribute("data-src") !== bSrc) { fb.setAttribute("data-src", bSrc); fb.src = bSrc; fb.addEventListener("load", () => sizeHeroFrame(fb), { once: true }); }
   try { localStorage.setItem("ab_lang", lang); } catch(e) {}
