@@ -1,0 +1,94 @@
+/* ============================================================
+   Anesthesia Briefs — Color tokens
+   Source of truth: app/lib/theme/app_theme.dart (AppColors,
+   DrugCategoryStyle, CalculatorSectionStyle) + docs/css/style.css
+   ============================================================ */
+
+:root {
+  /* ---- Brand palette (light, the canonical mode) ---- */
+  --ab-navy:        #1B365D;  /* deepNavy — primary, headings, text */
+  --ab-navy-deep:   #0D1E36;  /* header gradient start */
+  --ab-navy-light:  #2B4C7E;  /* primary-light */
+  --ab-sand:        #F7F4EB;  /* warmSand — app scaffold background */
+  --ab-cream:       #F8F6F0;  /* accent-cream — marketing body background */
+  --ab-linen:       #EFEBE0;  /* softLinen — card / surface background */
+  --ab-linen-hover: #E4DEC9;  /* card hover */
+  --ab-gold:        #C2A267;  /* gold — premium / AI accent */
+  --ab-teal:        #4A7C8C;  /* slateTeal — secondary / calculators */
+  --ab-red:         #A61A1A;  /* criticalRed — emergency */
+
+  /* ---- Neutral text / lines ---- */
+  --ab-text:        #1B365D;  /* primary text = navy */
+  --ab-text-slate:  #1E293B;  /* marketing body text (text-dark) */
+  --ab-text-muted:  #64748B;  /* textSecondary */
+  --ab-border:      #CBD5E1;  /* borderLight */
+  --ab-white:       #FFFFFF;
+
+  /* ---- Semantic aliases ---- */
+  --color-bg:            var(--ab-sand);
+  --color-bg-marketing:  var(--ab-cream);
+  --surface-card:        var(--ab-linen);
+  --surface-card-bright: #FCFDFE;   /* quick-access cards */
+  --text-heading:        var(--ab-navy);
+  --text-body:           var(--ab-text-slate);
+  --text-secondary:      var(--ab-text-muted);
+  --border-subtle:       var(--ab-border);
+
+  --accent-primary:   var(--ab-navy);
+  --accent-emergency: var(--ab-red);
+  --accent-calc:      var(--ab-teal);
+  --accent-ai:        var(--ab-gold);
+
+  /* ---- Header gradient (navy block, home screen) ---- */
+  --gradient-header: linear-gradient(135deg, #0D1E36 0%, #1B365D 60%, #1B365D 100%); /* @kind color */
+  /* ---- Premium board-prep dark gradient (marketing premium section) ---- */
+  --gradient-premium: linear-gradient(135deg, #0D1B2E 0%, #172B4D 100%); /* @kind color */
+  /* ---- Splash radial ---- */
+  --gradient-splash: radial-gradient(circle at 50% 50%, #1E3A8A 0%, #0B1930 120%); /* @kind color */
+
+  /* ---- Category color system (drugs + calculator sections) ----
+     Each clinical category carries a tinted bg, border and accent text.
+     Mirrors DrugCategoryStyle / CalculatorSectionStyle (light mode). */
+
+  /* Induction / Anesthetic — blue */
+  --cat-induction-bg:     #F0F4F8;
+  --cat-induction-border: #B0C4DE;
+  --cat-induction-text:   #1B365D;
+  --cat-induction-accent: #1D4ED8;
+
+  /* Analgesic / Opioid — amber */
+  --cat-analgesic-bg:     #FAF6EB;
+  --cat-analgesic-border: #E6D5B3;
+  --cat-analgesic-text:   #855D10;
+  --cat-analgesic-accent: #B45309;
+
+  /* Neuromuscular blocker — teal */
+  --cat-nmb-bg:     #E6F4F2;
+  --cat-nmb-border: #99D3CC;
+  --cat-nmb-text:   #115E59;
+  --cat-nmb-accent: #0F766E;
+
+  /* Reversal / Antidote — green */
+  --cat-reversal-bg:     #EFFDF4;
+  --cat-reversal-border: #BBF7D0;
+  --cat-reversal-text:   #166534;
+  --cat-reversal-accent: #047857;
+
+  /* Cardiovascular / Vasopressor / Crisis — red */
+  --cat-cardio-bg:     #FEF2F2;
+  --cat-cardio-border: #FCA5A5;
+  --cat-cardio-text:   #991B1B;
+  --cat-cardio-accent: #B91C1C;
+
+  /* Local anesthetic — violet */
+  --cat-local-bg:     #F5F3FF;
+  --cat-local-border: #DDD6FE;
+  --cat-local-text:   #3730A3;
+  --cat-local-accent: #6D28D9;
+
+  /* Other / default — slate */
+  --cat-other-bg:     #F8FAFC;
+  --cat-other-border: #CBD5E1;
+  --cat-other-text:   #334155;
+  --cat-other-accent: #475569;
+}

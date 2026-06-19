@@ -1,0 +1,44 @@
+/* ============================================================
+   Anesthesia Briefs — Typography tokens
+   Outfit = display / headings / labels (w700–w900, tight tracking)
+   Inter  = body / descriptions / monograph prose
+   Source: app_theme.dart TextTheme + docs/css/style.css
+   ============================================================ */
+
+:root {
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Type scale — app uses compact mobile sizes; marketing scales up.
+     Values are the canonical app sizes from the Flutter TextTheme. */
+  --fs-display-lg: 28px;  /* displayLarge — screen titles, w800, -0.5 tracking */
+  --fs-display-md: 22px;  /* displayMedium — section heads, w700 */
+  --fs-title:      18px;  /* titleLarge / section header, w600–900 */
+  --fs-body-lg:    16px;  /* bodyLarge */
+  --fs-body:       14px;  /* bodyMedium — default body */
+  --fs-body-sm:    13px;  /* card descriptions */
+  --fs-caption:    12px;  /* metadata, footnotes */
+  --fs-micro:      10px;  /* uppercase chip labels */
+
+  /* Marketing display sizes (landing hero / section titles) */
+  --fs-hero:       52px;
+  --fs-section:    38px;
+
+  /* Weights */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+  --fw-extra:   800; /* @kind font */
+  --fw-black:   900; /* @kind font */
+
+  /* Line heights */
+  --lh-tight:   1.15; /* @kind font */
+  --lh-snug:    1.4;  /* @kind font */
+  --lh-body:    1.6;  /* @kind font */
+
+  /* Letter spacing */
+  --ls-display: -0.5px; /* @kind font */
+  --ls-hero:    -1.5px; /* @kind font */
+  --ls-label:   0.5px;  /* @kind font */
+}

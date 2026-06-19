@@ -1,0 +1,41 @@
+/* Shared styles for Anesthesia Briefs legal pages (Privacy / Terms) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--ab-cream); color: var(--ab-text-slate); line-height: 1.72; -webkit-font-smoothing: antialiased; }
+
+/* Header */
+.lh { position: sticky; top: 0; z-index: 50; background: rgba(248,246,240,0.86); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(27,54,93,0.08); }
+.lh-in { max-width: 860px; margin: 0 auto; padding: 13px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.lh-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+.lh-logo img { height: 32px; }
+.lh-brand { font-family: var(--font-display); font-size: 19px; font-weight: 800; color: var(--ab-navy); letter-spacing: -0.4px; }
+.lh-brand em { color: var(--ab-gold); font-style: italic; font-weight: 400; }
+.lh-right { display: flex; align-items: center; gap: 16px; }
+.lh-back { color: var(--ab-text-muted); text-decoration: none; font-size: 14px; font-weight: 600; display: inline-flex; gap: 7px; align-items: center; transition: color .25s ease; }
+.lh-back:hover { color: var(--ab-gold); }
+.lang { display: flex; background: var(--ab-linen); padding: 3px; border-radius: 20px; border: 1px solid rgba(27,54,93,0.08); }
+.lang button { border: none; background: none; cursor: pointer; padding: 5px 12px; border-radius: 16px; font-family: var(--font-display); font-weight: 700; font-size: 13px; color: var(--ab-text-muted); transition: all .2s ease; }
+.lang button.on { background: var(--ab-navy); color: #fff; box-shadow: 0 2px 6px rgba(27,54,93,0.15); }
+
+/* Document */
+main.legal { max-width: 760px; margin: 0 auto; padding: 56px 28px 96px; }
+.legal-eyebrow { font-family: var(--font-display); font-size: 12px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--ab-gold); margin-bottom: 14px; }
+.legal h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 44px); font-weight: 800; color: var(--ab-navy); letter-spacing: -1px; line-height: 1.08; margin-bottom: 20px; }
+.legal-intro { font-size: 17px; color: var(--ab-text-muted); margin-bottom: 26px; }
+.legal-meta { background: var(--ab-linen); border: 1px solid var(--ab-border); border-radius: 12px; padding: 16px 20px; margin-bottom: 38px; font-size: 14px; color: var(--ab-text-muted); display: grid; gap: 6px; }
+.legal-meta strong { color: var(--ab-navy); font-weight: 700; }
+.legal h2 { font-family: var(--font-display); font-size: 21px; font-weight: 700; color: var(--ab-navy); margin: 40px 0 12px; letter-spacing: -0.3px; }
+.legal h3 { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--ab-navy); margin: 24px 0 8px; }
+.legal p { margin-bottom: 14px; color: var(--ab-text-slate); text-wrap: pretty; }
+.legal ul { margin: 0 0 16px; padding-left: 22px; }
+.legal li { margin-bottom: 7px; }
+.legal a { color: var(--ab-navy); text-decoration: underline; text-decoration-color: var(--ab-gold); text-underline-offset: 3px; }
+.legal a:hover { color: var(--ab-gold); }
+.legal-doc { display: none; }
+.legal-doc.show { display: block; }
+
+/* Footer */
+.lf { border-top: 1px solid var(--ab-border); padding: 26px 28px; text-align: center; font-size: 13px; color: var(--ab-text-muted); }
+.lf a { color: var(--ab-text-muted); text-decoration: none; font-weight: 600; }
+.lf a:hover { color: var(--ab-gold); }
+.lf-links { display: flex; gap: 18px; justify-content: center; margin-bottom: 10px; }

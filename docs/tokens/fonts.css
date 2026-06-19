@@ -1,0 +1,7 @@
+/* Anesthesia Briefs — Webfonts
+   The Flutter app and the marketing site both reference 'Outfit' (display)
+   and 'Inter' (body) by family name. No font binaries shipped in the source
+   repo (only Roboto, unused by the live theme), so we load the canonical
+   Google Fonts families — the exact families the product uses. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');

@@ -1,0 +1,656 @@
+<!-- @dsCard group="Mobile App" viewport="470x900" name="Mobile app — interactive" subtitle="Home · Algorithms · Calculator · Drugs, click-through" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anesthesia Briefs — Mobile App</title>
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: radial-gradient(circle at 50% 0%, #ECE9DE 0%, #E2DECF 100%);
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 30px; box-sizing: border-box;
+    font-family: var(--font-body);
+  }
+  input[type=range] { height: 8px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+/* PhoneFrame.jsx (inlined for static deploy) */
+// Anesthesia Briefs — iPhone frame for the mobile UI kit.
+// Black bezel, status bar, scrollable screen window. Children render inside.
+function PhoneFrame({ children, statusDark = false }) {
+  const statusColor = statusDark ? "#fff" : "var(--ab-navy)";
+  return (
+    <div style={{
+      width: 390, height: 844, background: "#0B0B0C", borderRadius: 54, padding: 11,
+      boxShadow: "0 40px 90px rgba(13,30,54,0.34), 0 8px 24px rgba(0,0,0,0.2)",
+      position: "relative", flex: "none",
+    }}>
+      <div style={{
+        width: "100%", height: "100%", background: "var(--ab-sand)", borderRadius: 44,
+        overflow: "hidden", position: "relative", display: "flex", flexDirection: "column",
+      }}>
+        {/* status bar */}
+        <div style={{
+          position: "absolute", top: 0, left: 0, right: 0, height: 44, zIndex: 50,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          padding: "0 28px", pointerEvents: "none",
+        }}>
+          <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, color: statusColor }}>9:41</span>
+          <div style={{ display: "flex", gap: 6, alignItems: "center", color: statusColor, fontSize: 13 }}>
+            <i className="fa-solid fa-signal" />
+            <i className="fa-solid fa-wifi" />
+            <i className="fa-solid fa-battery-full" />
+          </div>
+        </div>
+        {/* dynamic island */}
+        <div style={{
+          position: "absolute", top: 11, left: "50%", transform: "translateX(-50%)",
+          width: 116, height: 32, background: "#0B0B0C", borderRadius: 20, zIndex: 60,
+        }} />
+        {/* screen content */}
+        <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+window.PhoneFrame = PhoneFrame;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* HomeScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Home screen recreation.
+const DS = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+const AB_HOME_I18N = {
+  en: {
+    welcome: "Welcome, Dr. \uD83D\uDC4B", tagline: "Your Safe Harbor in Clinical Decisions",
+    search: "Search drug, formula, or algorithm\u2026",
+    spotTitle: "Cricoid Pressure in RSI",
+    spotBody: "During Rapid Sequence Induction, cricoid pressure should be ~10 N before loss of consciousness, increasing to 30 N after.",
+    q1: "Emergency Algorithms", q1d: "Critical life-saving trees",
+    q2: "Clinical Calculators", q2d: "Pediatric & adult dosing",
+    q3: "Regional Anesthesia", q3d: "US-guided block atlas",
+    q4: "AI Clinical Assistant", q4d: "Decision support chat",
+    crisisTitle: "Emergency Crisis Algorithms", crisisBody: "Step-by-step guidance for MH, LAST, anaphylaxis & CICO.",
+    crisis: ["CICO", "Anaphylaxis", "Malignant Hyperthermia", "Hyperkalemia"],
+    boardTitle: "Anesthesia Board Prep", boardBody: "Bilingual (TR/EN) EDAIC & ABA question banks, viva scenarios and referenced explanations.",
+    preopEyebrow: "Preop", preopTitle: "Preoperative Safety Shortcuts", preopSub: "Commonly used preop scores & guidelines",
+    preopNote: "ASA-PS, NPO fasting timer, difficult-airway screen and the ASRA anticoagulant table \u2014 one tap away.",
+  },
+  tr: {
+    welcome: "Merhaba, Dr. \uD83D\uDC4B", tagline: "Klinik kararlar\u0131n\u0131zda g\u00fcvence alt\u0131ndas\u0131n\u0131z",
+    search: "\u0130la\u00e7, form\u00fcl veya algoritma aray\u0131n\u2026",
+    spotTitle: "RS\u0130'de Krikoid Bas\u0131n\u00e7",
+    spotBody: "H\u0131zl\u0131 seri ind\u00fcksiyonda krikoid bas\u0131n\u00e7 bilin\u00e7 kayb\u0131ndan \u00f6nce ~10 N, sonras\u0131nda 30 N olmal\u0131d\u0131r.",
+    q1: "Acil Algoritmalar", q1d: "Hayat kurtaran karar a\u011fa\u00e7lar\u0131",
+    q2: "Klinik Hesaplay\u0131c\u0131lar", q2d: "Pediatrik & eri\u015fkin doz",
+    q3: "Rejyonel Anestezi", q3d: "USG-rehberli blok atlas\u0131",
+    q4: "AI Klinik Asistan", q4d: "Karar destek sohbeti",
+    crisisTitle: "Acil Kriz Algoritmalar\u0131", crisisBody: "MH, LAST, anafilaksi ve CICO i\u00e7in ad\u0131m ad\u0131m rehberlik.",
+    crisis: ["CICO", "Anafilaksi", "Malign Hipertermi", "Hiperkalemi"],
+    boardTitle: "Anestezi Board Haz\u0131rl\u0131k", boardBody: "\u0130ki dilli (TR/EN) EDAIC & ABA soru bankalar\u0131, viva senaryolar\u0131 ve referansl\u0131 a\u00e7\u0131klamalar.",
+    preopEyebrow: "Preop", preopTitle: "Preoperatif G\u00fcvenlik K\u0131sayollar\u0131", preopSub: "S\u0131k kullan\u0131lan preop skorlar\u0131 & k\u0131lavuzlar",
+    preopNote: "ASA-PS, NPO a\u00e7l\u0131k zamanlay\u0131c\u0131s\u0131, zor hava yolu taramas\u0131 ve ASRA antikoag\u00fclan tablosu \u2014 tek dokunu\u015fla.",
+  },
+};
+
+function HomeScreen({ onTab, onOpenAlgo, onOpenRegional }) {
+  const { PremiumCard, Badge, SearchField, SectionHeader, ClinicalNote, Button } = DS;
+  const _lang = (new URLSearchParams(window.location.search).get("lang") === "tr") ? "tr" : "en";
+  const t = AB_HOME_I18N[_lang];
+
+  const quick = [
+    { title: t.q1, desc: t.q1d, icon: "fa-triangle-exclamation", color: "var(--ab-red)", tab: 2 },
+    { title: t.q2, desc: t.q2d, icon: "fa-calculator", color: "var(--ab-teal)", tab: 1 },
+    { title: t.q3, desc: t.q3d, icon: "fa-layer-group", color: "var(--ab-navy)", action: "regional" },
+    { title: t.q4, desc: t.q4d, icon: "fa-wand-magic-sparkles", color: "var(--ab-gold)", tab: null },
+  ];
+
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)" }}>
+      {/* Navy gradient header block */}
+      <div style={{
+        background: "var(--gradient-header)", borderBottomLeftRadius: 32, borderBottomRightRadius: 32,
+        padding: "58px 20px 26px", color: "#fff", boxShadow: "var(--shadow-header)", position: "relative", overflow: "hidden",
+      }}>
+        <div style={{ position: "absolute", right: -50, top: -50, width: 160, height: 160, borderRadius: "50%", background: "rgba(194,162,103,0.07)" }} />
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <i className="fa-solid fa-gear" style={{ fontSize: 20 }} />
+          <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 17, letterSpacing: "-0.4px" }}>
+            Anesthesia<em style={{ color: "var(--ab-gold)", fontStyle: "italic", fontWeight: 400 }}>Briefs</em>
+          </span>
+          <i className="fa-solid fa-circle-user" style={{ fontSize: 22 }} />
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 22 }}>
+          <span style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 25, letterSpacing: "-0.5px" }}>{t.welcome}</span>
+          <Badge variant="gold">PRO</Badge>
+        </div>
+        <p style={{ margin: "4px 0 20px", fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.75)" }}>
+          {t.tagline}
+        </p>
+        <SearchField onLight={false} placeholder={t.search} />
+      </div>
+
+      <div style={{ padding: "20px 20px 28px", display: "flex", flexDirection: "column", gap: 22 }}>
+        {/* Spot tip */}
+        <PremiumCard accent="var(--ab-gold)">
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+            <i className="fa-solid fa-lightbulb" style={{ color: "var(--ab-gold)", fontSize: 20, marginTop: 2 }} />
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 15, color: "var(--ab-navy)" }}>{t.spotTitle}</div>
+              <p style={{ margin: "6px 0 0", fontFamily: "var(--font-body)", fontSize: 13, lineHeight: 1.45, color: "var(--ab-navy)" }}>
+                {t.spotBody}
+              </p>
+            </div>
+            <div style={{ display: "flex", gap: 8, color: "var(--ab-text-muted)" }}>
+              <i className="fa-solid fa-rotate-right" style={{ color: "var(--ab-teal)" }} />
+              <i className="fa-solid fa-xmark" />
+            </div>
+          </div>
+        </PremiumCard>
+
+        {/* Quick access 2x2 */}
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+          {quick.map((q, i) => (
+            <PremiumCard key={i} accent={q.color} accentStrip baseColor="var(--surface-card-bright)" padding="16px"
+              onClick={() => q.action === "regional" ? onOpenRegional() : (q.tab != null && onTab(q.tab))}>
+              <i className={`fa-solid ${q.icon}`} style={{ color: q.color, fontSize: 26 }} />
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 14, color: "var(--ab-navy)", marginTop: 12 }}>{q.title}</div>
+              <div style={{ fontFamily: "var(--font-body)", fontSize: 11, color: "var(--ab-text-muted)", marginTop: 4 }}>{q.desc}</div>
+            </PremiumCard>
+          ))}
+        </div>
+
+        {/* Critical alert banner */}
+        <PremiumCard accent="var(--ab-red)" accentStrip baseColor="#FFF0F0" padding="16px" onClick={() => onTab(2)}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <i className="fa-solid fa-bolt" style={{ color: "var(--ab-red)", fontSize: 30 }} />
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 14, color: "var(--ab-red)", letterSpacing: "0.3px" }}>{t.crisisTitle}</div>
+              <p style={{ margin: "3px 0 0", fontFamily: "var(--font-body)", fontSize: 11, color: "var(--ab-text-slate)" }}>{t.crisisBody}</p>
+            </div>
+            <i className="fa-solid fa-arrow-right" style={{ color: "var(--ab-red)" }} />
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 14 }}>
+            {t.crisis.map((label) => (
+              <div key={label} onClick={(e) => { e.stopPropagation(); onOpenAlgo(); }} style={{
+                height: 38, display: "flex", alignItems: "center", justifyContent: "center", background: "#fff",
+                border: "1.2px solid rgba(166,26,26,0.25)", borderRadius: 10,
+                fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 12, color: "var(--ab-red)",
+              }}>{label}</div>
+            ))}
+          </div>
+        </PremiumCard>
+
+        {/* Board prep banner (inverted navy) */}
+        <PremiumCard accent="var(--ab-gold)" baseColor="var(--ab-navy)" padding="16px" onClick={() => {}}>
+          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+            <i className="fa-solid fa-graduation-cap" style={{ color: "var(--ab-gold)", fontSize: 24 }} />
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 16, color: "var(--ab-gold)" }}>{t.boardTitle}</div>
+              <p style={{ margin: "5px 0 0", fontFamily: "var(--font-body)", fontSize: 12, lineHeight: 1.4, color: "rgba(255,255,255,0.85)" }}>
+                {t.boardBody}
+              </p>
+            </div>
+            <i className="fa-solid fa-arrow-right" style={{ color: "var(--ab-gold)" }} />
+          </div>
+        </PremiumCard>
+
+        <SectionHeader eyebrow={t.preopEyebrow} title={t.preopTitle} subtitle={t.preopSub} />
+        <ClinicalNote tone="info">{t.preopNote}</ClinicalNote>
+      </div>
+    </div>
+  );
+}
+window.HomeScreen = HomeScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* AlgorithmsScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Decision Algorithms list screen.
+const DS_ALGO = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+function AlgorithmsScreen({ onOpenAlgo }) {
+  const { SearchField, CategoryChip, Badge } = DS_ALGO;
+  const [cat, setCat] = React.useState(0);
+  const [urg, setUrg] = React.useState(0);
+
+  const algos = [
+    { title: "Unexpected Difficult Intubation", cat: "Airway & Respiratory", time: "5 min" },
+    { title: "Cannot Intubate Cannot Oxygenate (CICO)", cat: "Critical Crises", time: "4 min" },
+    { title: "Perioperative Laryngospasm", cat: "Airway & Respiratory", time: "3 min" },
+    { title: "Intraoperative Hypoxemia", cat: "Airway & Respiratory", time: "4 min" },
+    { title: "Local Anesthetic Systemic Toxicity (LAST)", cat: "Critical Crises", time: "4 min" },
+  ];
+
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", padding: "54px 20px 24px" }}>
+      <h1 style={{ margin: 0, fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 28, letterSpacing: "-0.6px", color: "var(--ab-navy)" }}>Decision Algorithms</h1>
+      <p style={{ margin: "6px 0 18px", fontFamily: "var(--font-body)", fontSize: 15, color: "var(--ab-text-muted)" }}>Critical scenarios and complication management trees.</p>
+
+      <SearchField placeholder="Search algorithm or category…" />
+
+      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 13, color: "var(--ab-navy)", margin: "20px 0 10px" }}>Clinical Categories</div>
+      <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4 }}>
+        {["All Categories", "Preop & Scoring", "Airway & Respiratory", "Critical Crises"].map((c, i) => (
+          <CategoryChip key={i} selected={cat === i} onClick={() => setCat(i)}>{c}</CategoryChip>
+        ))}
+      </div>
+
+      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 13, color: "var(--ab-navy)", margin: "16px 0 10px" }}>Clinical Urgency Level</div>
+      <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4 }}>
+        {["All", "Elective", "Urgent", "Emergency"].map((c, i) => (
+          <CategoryChip key={i} selected={urg === i} onClick={() => setUrg(i)}>{c}</CategoryChip>
+        ))}
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 18 }}>
+        {algos.map((a, i) => (
+          <div key={i} onClick={onOpenAlgo} style={{
+            display: "flex", alignItems: "center", gap: 14, cursor: "pointer",
+            background: "var(--cat-cardio-bg)", border: "1px solid var(--cat-cardio-border)",
+            borderRadius: "var(--radius-lg)", padding: "16px 16px",
+          }}>
+            <div style={{ width: 44, height: 44, flex: "none", borderRadius: 12, background: "#FEE2E2", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--ab-red)", fontSize: 18 }}>
+              <i className="fa-solid fa-circle-xmark" />
+            </div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 16, lineHeight: 1.2, color: "var(--ab-navy)" }}>{a.title}</div>
+              <div style={{ fontFamily: "var(--font-body)", fontSize: 12, marginTop: 5, color: "var(--ab-teal)", fontWeight: 600 }}>
+                {a.cat} <span style={{ color: "var(--ab-text-muted)", fontWeight: 400 }}>· Time: {a.time}</span>
+              </div>
+            </div>
+            <Badge variant="emergency" icon={<i className="fa-solid fa-truck-medical" />}>Emergency</Badge>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+window.AlgorithmsScreen = AlgorithmsScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* AlgorithmFlowScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Algorithm flow detail (CICO crisis steps).
+const DS_FLOW = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+function AlgorithmFlowScreen({ onBack }) {
+  const { Badge, ClinicalNote, PremiumCard } = DS_FLOW;
+  const steps = [
+    { n: 1, t: "Declare CICO", d: "Call for help. Announce 'Cannot intubate, cannot oxygenate'. Assign roles." },
+    { n: 2, t: "Optimise oxygenation", d: "100% O₂, two-handed mask, oral/nasal airways, full muscle relaxation." },
+    { n: 3, t: "Final attempt", d: "One best attempt at SGA / single look with optimal conditions." },
+    { n: 4, t: "Front-of-neck access", d: "Scalpel–bougie–tube cricothyroidotomy without delay." },
+  ];
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "linear-gradient(135deg,#7A0F0F,#A61A1A)", padding: "54px 20px 20px", color: "#fff" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <i className="fa-solid fa-arrow-left" style={{ fontSize: 18, cursor: "pointer" }} onClick={onBack} />
+          <Badge variant="solidGold" style={{ background: "rgba(255,255,255,0.18)", color: "#fff", border: "0.8px solid rgba(255,255,255,0.4)" }}>Emergency · 4 min</Badge>
+        </div>
+        <h1 style={{ margin: "14px 0 0", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 26, letterSpacing: "-0.5px" }}>Cannot Intubate Cannot Oxygenate</h1>
+      </div>
+      <div style={{ padding: "18px 20px 28px", display: "flex", flexDirection: "column", gap: 14 }}>
+        <ClinicalNote tone="warning">Time-critical. Move to front-of-neck access early — do not persist with failed laryngoscopy.</ClinicalNote>
+        {steps.map((s) => (
+          <PremiumCard key={s.n} padding="16px">
+            <div style={{ display: "flex", gap: 14 }}>
+              <div style={{ width: 34, height: 34, flex: "none", borderRadius: "50%", background: "var(--ab-red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 15 }}>{s.n}</div>
+              <div>
+                <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 16, color: "var(--ab-navy)" }}>{s.t}</div>
+                <p style={{ margin: "4px 0 0", fontFamily: "var(--font-body)", fontSize: 13, lineHeight: 1.45, color: "var(--ab-text-muted)" }}>{s.d}</p>
+              </div>
+            </div>
+          </PremiumCard>
+        ))}
+      </div>
+    </div>
+  );
+}
+window.AlgorithmFlowScreen = AlgorithmFlowScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* CalculatorScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Pediatric Dose Calculator detail screen.
+const DS_CALC = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+function CalculatorScreen() {
+  const { PremiumCard, DoseRow } = DS_CALC;
+  const [wt, setWt] = React.useState(15);
+
+  const f = (n, d = 2) => n.toFixed(d);
+  const doses = [
+    { label: "Epinephrine (CPR / Resuscitation)", value: `${f(wt * 0.01, 3)} mg`, secondary: `${f(wt * 0.1)} mL`, note: "Dilute 1 mg ampoule with 10 mL saline (1:10,000). Give 0.1 mL/kg." },
+    { label: "Atropine (Bradycardia)", value: `${f(wt * 0.02)} mg`, secondary: `${f(wt * 0.2)} mL`, note: "Dilute 0.5 mg in 5 mL saline (0.1 mg/mL). Min 0.1 mg, max 0.5 mg." },
+    { label: "Propofol 1% (Induction)", value: `${f(wt * 2.5, 1)} mg`, secondary: `${f(wt * 0.25)} mL`, note: "10 mg/mL solution drawn directly at 2.5 mg/kg." },
+    { label: "Ketamine (Induction / Sedation)", value: `${f(wt * 2, 1)} mg`, secondary: `${f(wt * 0.2)} mL`, note: "Dilute 50 mg/mL ampoule in 5 mL saline (10 mg/mL). Draw 2 mg/kg." },
+  ];
+
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "var(--gradient-header)", padding: "54px 20px 18px", color: "#fff", display: "flex", alignItems: "center", gap: 14 }}>
+        <i className="fa-solid fa-arrow-left" style={{ fontSize: 18 }} />
+        <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 19, lineHeight: 1.15 }}>Pediatric Emergency &amp; Induction Dose Calculator</span>
+      </div>
+
+      <div style={{ padding: "18px 20px 28px", display: "flex", flexDirection: "column", gap: 18 }}>
+        <p style={{ margin: 0, fontFamily: "var(--font-body)", fontSize: 15, lineHeight: 1.45, color: "var(--ab-text-muted)" }}>
+          Calculates the mg and diluted mL doses of emergency resuscitation and anesthesia induction drugs by weight.
+        </p>
+
+        <PremiumCard padding="18px">
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+            <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 17, color: "var(--ab-navy)" }}>Child Body Weight</span>
+            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22, color: "var(--ab-navy)" }}>{f(wt, 1)} kg</span>
+          </div>
+          <input type="range" min="3" max="40" step="0.5" value={wt} onChange={(e) => setWt(parseFloat(e.target.value))}
+            style={{ width: "100%", marginTop: 16, accentColor: "var(--ab-teal)" }} />
+        </PremiumCard>
+
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 20, color: "var(--ab-navy)", letterSpacing: "-0.3px" }}>Calculated Doses</div>
+
+        <PremiumCard padding="18px">
+          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            {doses.map((d, i) => (
+              <DoseRow key={i} {...d} divider={i < doses.length - 1} />
+            ))}
+          </div>
+        </PremiumCard>
+      </div>
+    </div>
+  );
+}
+window.CalculatorScreen = CalculatorScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* DrugsScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Drug Database list screen.
+const DS_DRUG = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+function DrugsScreen() {
+  const { SearchField, DrugListItem, CategoryChip } = DS_DRUG;
+  const [cat, setCat] = React.useState(0);
+
+  const cats = ["All", "Induction", "Muscle Relaxants", "Opioids", "Local"];
+  const drugs = [
+    { name: "Propofol", subtitle: "Class: Short-acting general anesthetic (GABA-A Agonist)", category: "induction" },
+    { name: "Ketamine", subtitle: "Dissociative anesthetic (NMDA Receptor Antagonist)", category: "induction" },
+    { name: "Rocuronium", subtitle: "Aminosteroid neuromuscular blocker", category: "neuromuscular", premium: true },
+    { name: "Fentanyl", subtitle: "Synthetic opioid analgesic", category: "analgesic" },
+    { name: "Bupivacaine", subtitle: "Amide local anesthetic", category: "local" },
+    { name: "Sugammadex", subtitle: "Selective relaxant binding agent (reversal)", category: "reversal", premium: true },
+    { name: "Norepinephrine", subtitle: "Vasopressor · α/β adrenergic agonist", category: "cardiovascular" },
+  ];
+
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", padding: "54px 20px 24px" }}>
+      <h1 style={{ margin: 0, fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 28, letterSpacing: "-0.6px", color: "var(--ab-navy)" }}>Drug Database</h1>
+      <p style={{ margin: "6px 0 18px", fontFamily: "var(--font-body)", fontSize: 15, color: "var(--ab-text-muted)" }}>Clinically validated, comprehensive anesthesia drug monographs.</p>
+
+      <SearchField placeholder="Search drug name, generic, or class…" />
+
+      <div style={{ display: "flex", gap: 8, overflowX: "auto", margin: "16px 0 18px", paddingBottom: 4 }}>
+        {cats.map((c, i) => <CategoryChip key={i} selected={cat === i} onClick={() => setCat(i)}>{c}</CategoryChip>)}
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {drugs.map((d, i) => <DrugListItem key={i} {...d} onClick={() => {}} />)}
+      </div>
+    </div>
+  );
+}
+window.DrugsScreen = DrugsScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+/* RegionalScreen.jsx (inlined for static deploy) */
+// Anesthesia Briefs — Regional Anesthesia atlas (hub + block detail).
+// Hub lists nerve blocks by region; selecting one opens an atlas detail with
+// Anatomy / Sonoanatomy tabs, probe-needle approach, and LA dosing.
+const DS_REG = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+const REG_BLOCKS = [
+  { id: "interscalene", name: "Interscalene", region: "upper", target: "C5–C6 roots (brachial plexus)", use: "Shoulder & proximal humerus", la: "15–20 mL · 0.5% bupivacaine", icon: "fa-hand", pearls: "Phrenic nerve palsy in ~100% — avoid in severe respiratory disease." },
+  { id: "supraclavicular", name: "Supraclavicular", region: "upper", target: "Trunks/divisions, lateral to subclavian a.", use: "Elbow, forearm & hand", la: "20–25 mL · 0.5% bupivacaine", icon: "fa-hand", pearls: "“Corner pocket” target; keep needle in-plane, watch the pleura." },
+  { id: "infraclavicular", name: "Infraclavicular", region: "upper", target: "Cords around axillary a., deep to pec. minor", use: "Elbow, forearm & hand", la: "20–30 mL · 0.5% bupivacaine", icon: "fa-hand", pearls: "Aim for a U-shaped spread posterior to the axillary artery." },
+  { id: "femoral", name: "Femoral", region: "lower", target: "Femoral n., lateral to femoral a.", use: "Anterior thigh, knee, femur", la: "15–20 mL · 0.25–0.5% bupivacaine", icon: "fa-person-walking", pearls: "Hyperechoic n. under fascia iliaca, lateral to the artery." },
+  { id: "adductor_canal", name: "Adductor Canal", region: "lower", target: "Saphenous n. in the canal", use: "Knee — motor-sparing analgesia", la: "10–15 mL · 0.25% bupivacaine", icon: "fa-person-walking", pearls: "Preserves quadriceps strength vs femoral — better for ambulation." },
+  { id: "popliteal", name: "Popliteal Sciatic", region: "lower", target: "Sciatic n. above its bifurcation", use: "Foot & ankle", la: "20–30 mL · 0.5% bupivacaine", icon: "fa-person-walking", pearls: "Block above the bifurcation for both tibial & common peroneal." },
+  { id: "esp", name: "Erector Spinae (ESP)", region: "trunk", target: "Fascial plane deep to erector spinae", use: "Thoracic & abdominal wall", la: "20–30 mL · 0.25% bupivacaine", icon: "fa-shield-heart", pearls: "Inject onto the transverse process; craniocaudal spread." },
+  { id: "tap", name: "Transversus Abdominis (TAP)", region: "trunk", target: "Plane between IO & TA muscles", use: "Anterior abdominal wall", la: "15–20 mL per side", icon: "fa-shield-heart", pearls: "Somatic analgesia only — combine with multimodal for visceral pain." },
+];
+
+const REG_REGIONS = { all: "All Blocks", upper: "Upper Limb", lower: "Lower Limb", trunk: "Truncal" };
+const REG_REGIONS_TR = { all: "Tüm Bloklar", upper: "Üst Ekstremite", lower: "Alt Ekstremite", trunk: "Gövde" };
+
+function RegionalScreen({ onBack }) {
+  const { SearchField, CategoryChip, ClinicalNote, PremiumCard, Badge } = DS_REG;
+  const [region, setRegion] = React.useState("all");
+  const [block, setBlock] = React.useState(null);
+  const [tab, setTab] = React.useState("anatomy");
+
+  // ---- Block detail view ----
+  if (block) {
+    const b = REG_BLOCKS.find((x) => x.id === block);
+    return (
+      <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", display: "flex", flexDirection: "column" }}>
+        <div style={{ background: "var(--gradient-header)", padding: "54px 20px 20px", color: "#fff", position: "relative", overflow: "hidden" }}>
+          <div style={{ position: "absolute", right: -50, top: -40, width: 150, height: 150, borderRadius: "50%", background: "rgba(74,124,140,0.18)" }} />
+          <div style={{ display: "flex", alignItems: "center", gap: 14, position: "relative" }}>
+            <i className="fa-solid fa-arrow-left" style={{ fontSize: 18, cursor: "pointer" }} onClick={() => setBlock(null)} />
+            <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, letterSpacing: "0.5px", textTransform: "uppercase", color: "rgba(255,255,255,0.65)" }}>Regional Atlas</span>
+          </div>
+          <h1 style={{ margin: "12px 0 4px", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 25, letterSpacing: "-0.5px", position: "relative" }}>{b.name} Block</h1>
+          <p style={{ margin: 0, fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.78)", position: "relative" }}>{b.use}</p>
+        </div>
+
+        <div style={{ padding: "18px 20px 28px", display: "flex", flexDirection: "column", gap: 16 }}>
+          {/* Atlas image with tabs */}
+          <div>
+            <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+              {[["anatomy", "Anatomy"], ["sono", "Sonoanatomy"]].map(([k, lbl]) => (
+                <CategoryChip key={k} selected={tab === k} onClick={() => setTab(k)}>{lbl}</CategoryChip>
+              ))}
+            </div>
+            <div style={{
+              borderRadius: "var(--radius-lg)", overflow: "hidden", position: "relative",
+              background: "#fff", border: "1px solid var(--border-subtle)",
+              boxShadow: "var(--shadow-card)",
+            }}>
+              <img src={`../assets/atlas/${b.id}_${tab === "sono" ? "sono" : "anatomy"}.png`}
+                alt={`${b.name} ${tab}`} style={{ width: "100%", display: "block" }} />
+            </div>
+          </div>
+
+          {/* Target / landmarks */}
+          <PremiumCard padding="16px">
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              <Row icon="fa-bullseye" color="var(--ab-teal)" label="Target" value={b.target} />
+              <div style={{ height: 1, background: "rgba(27,54,93,0.08)" }} />
+              <Row icon="fa-syringe" color="var(--ab-navy)" label="Local Anesthetic" value={b.la} />
+            </div>
+          </PremiumCard>
+
+          <ClinicalNote tone="info">{b.pearls}</ClinicalNote>
+          <ClinicalNote tone="warning">Aspirate before and during injection. Stop immediately for paresthesia, high resistance, or any sign of LAST.</ClinicalNote>
+        </div>
+      </div>
+    );
+  }
+
+  // ---- Hub view ----
+  const shown = REG_BLOCKS.filter((b) => region === "all" || b.region === region);
+  const accentFor = (r) => r === "upper" ? "var(--ab-teal)" : r === "lower" ? "var(--ab-navy)" : "var(--ab-gold)";
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", display: "flex", flexDirection: "column" }}>
+      <div style={{ background: "var(--gradient-header)", padding: "54px 20px 22px", color: "#fff", borderBottomLeftRadius: 32, borderBottomRightRadius: 32, position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", right: -40, top: -50, width: 160, height: 160, borderRadius: "50%", background: "rgba(74,124,140,0.16)" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 14, position: "relative" }}>
+          <i className="fa-solid fa-arrow-left" style={{ fontSize: 18, cursor: "pointer" }} onClick={onBack} />
+          <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, letterSpacing: "0.5px", textTransform: "uppercase", color: "rgba(255,255,255,0.65)" }}>Visual Atlas</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 14, position: "relative" }}>
+          <div style={{ width: 46, height: 46, borderRadius: 14, background: "rgba(255,255,255,0.12)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, color: "var(--ab-gold)" }}>
+            <i className="fa-solid fa-layer-group" />
+          </div>
+          <div>
+            <h1 style={{ margin: 0, fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 24, letterSpacing: "-0.5px" }}>Regional Anesthesia</h1>
+            <p style={{ margin: "2px 0 0", fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.78)" }}>Ultrasound-guided nerve block atlas</p>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ padding: "18px 20px 28px" }}>
+        <SearchField placeholder="Search a block or nerve…" />
+        <div style={{ display: "flex", gap: 8, overflowX: "auto", margin: "16px 0 18px", paddingBottom: 4 }}>
+          {Object.keys(REG_REGIONS).map((r) => (
+            <CategoryChip key={r} selected={region === r} onClick={() => setRegion(r)}>{REG_REGIONS[r]}</CategoryChip>
+          ))}
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+          {shown.map((b) => {
+            const ac = accentFor(b.region);
+            return (
+              <div key={b.id} onClick={() => { setBlock(b.id); setTab("anatomy"); }} style={{
+                cursor: "pointer", background: "var(--surface-card-bright)", border: "1.2px solid rgba(27,54,93,0.08)",
+                borderRadius: "var(--radius-lg)", padding: 14, position: "relative", overflow: "hidden",
+                boxShadow: "var(--shadow-card)",
+              }}>
+                <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: ac }} />
+                <div style={{ width: 38, height: 38, borderRadius: 11, background: `color-mix(in srgb, ${ac} 14%, transparent)`, display: "flex", alignItems: "center", justifyContent: "center", color: ac, fontSize: 17, marginBottom: 10 }}>
+                  <i className={`fa-solid ${b.icon}`} />
+                </div>
+                <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 14, color: "var(--ab-navy)", lineHeight: 1.2 }}>{b.name}</div>
+                <div style={{ fontFamily: "var(--font-body)", fontSize: 11, color: "var(--ab-text-muted)", marginTop: 4 }}>{b.use}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Row({ icon, color, label, value }) {
+  return (
+    <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+      <span style={{ color, fontSize: 16, marginTop: 1, width: 18, textAlign: "center", flex: "none" }}><i className={`fa-solid ${icon}`} /></span>
+      <div>
+        <div style={{ fontFamily: "var(--font-display)", fontSize: 11, fontWeight: 800, letterSpacing: "0.5px", textTransform: "uppercase", color: "var(--ab-text-muted)" }}>{label}</div>
+        <div style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--ab-navy)", marginTop: 2 }}>{value}</div>
+      </div>
+    </div>
+  );
+}
+
+window.RegionalScreen = RegionalScreen;
+
+</script>
+<script type="text/babel" data-presets="react">
+const { BottomNav } = window.AnesthesiaBriefsDesignSystem_a9434e;
+
+function LiteratureScreen() {
+  return (
+    <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", padding: "54px 20px 24px" }}>
+      <h1 style={{ margin: 0, fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 28, letterSpacing: "-0.6px", color: "var(--ab-navy)" }}>Literature</h1>
+      <p style={{ margin: "6px 0 18px", fontFamily: "var(--font-body)", fontSize: 15, color: "var(--ab-text-muted)" }}>Paper & study synopses, current guidelines.</p>
+      <div style={{ fontFamily: "var(--font-body)", color: "var(--ab-text-muted)", fontSize: 14, marginTop: 40, textAlign: "center" }}>
+        <i className="fa-solid fa-book-open" style={{ fontSize: 30, color: "var(--ab-border)" }} /><br /><br />
+        Synopsis list omitted in this kit.
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const _params = new URLSearchParams(window.location.search);
+  const _bare = _params.get("bare") === "1";
+  const _lang = _params.get("lang") === "tr" ? "tr" : "en";
+  const _nav = _lang === "tr"
+    ? ["Ana Sayfa", "Hesaplar", "Algoritmalar", "\u0130la\u00e7lar", "Literat\u00fcr"]
+    : ["Home", "Calculators", "Algorithms", "Drugs", "Literature"];
+  const _initTab = { home: 0, calculator: 1, calculators: 1, algorithms: 2, drugs: 3, literature: 4 }[_params.get("screen")] ?? (parseInt(_params.get("tab"), 10) || 0);
+  const [tab, setTab] = React.useState(_initTab);
+  const [detail, setDetail] = React.useState(null); // 'algo' | 'regional' | null
+
+  // Allow the marketing page (parent frame) to drive navigation.
+  React.useEffect(() => {
+    function onMsg(e) {
+      const d = e.data || {};
+      if (d.type !== "ab-demo-nav") return;
+      setDetail(d.detail || null);
+      if (typeof d.tab === "number") setTab(d.tab);
+    }
+    window.addEventListener("message", onMsg);
+    return () => window.removeEventListener("message", onMsg);
+  }, []);
+
+  let screen, statusDark = false;
+  if (detail === "algo") { screen = <AlgorithmFlowScreen onBack={() => setDetail(null)} />; statusDark = true; }
+  else if (detail === "regional") { screen = <RegionalScreen onBack={() => setDetail(null)} />; statusDark = true; }
+  else if (tab === 0) { screen = <HomeScreen onTab={setTab} onOpenAlgo={() => setDetail("algo")} onOpenRegional={() => setDetail("regional")} />; statusDark = true; }
+  else if (tab === 1) { screen = <CalculatorScreen />; statusDark = true; }
+  else if (tab === 2) { screen = <AlgorithmsScreen onOpenAlgo={() => setDetail("algo")} />; }
+  else if (tab === 3) { screen = <DrugsScreen />; }
+  else { screen = <LiteratureScreen />; }
+
+  const inner = (
+    <React.Fragment>
+      <div style={{ flex: 1, minHeight: 0, position: "relative", display: "flex", flexDirection: "column" }}>
+        <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>{screen}</div>
+        {/* Gold AI FAB */}
+        <button onClick={() => {}} style={{
+          position: "absolute", right: 16, bottom: 16, width: 56, height: 56, borderRadius: 16,
+          background: "var(--ab-gold)", color: "var(--ab-navy)", border: "none", cursor: "pointer",
+          boxShadow: "0 8px 20px rgba(194,162,103,0.45)", fontSize: 22, zIndex: 40,
+        }}><i className="fa-solid fa-wand-magic-sparkles" /></button>
+      </div>
+      <BottomNav active={detail ? 2 : tab} onSelect={(i) => { setDetail(null); setTab(i); }} items={[
+        { icon: "fa-house", label: _nav[0] },
+        { icon: "fa-calculator", label: _nav[1] },
+        { icon: "fa-sitemap", label: _nav[2] },
+        { icon: "fa-prescription-bottle-medical", label: _nav[3] },
+        { icon: "fa-book-open", label: _nav[4] },
+      ]} />
+    </React.Fragment>
+  );
+
+  if (_bare) {
+    return (
+      <div style={{ width: "100vw", height: "100vh", background: "var(--ab-sand)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+        {inner}
+      </div>
+    );
+  }
+
+  return (
+    <PhoneFrame statusDark={statusDark}>
+      {inner}
+    </PhoneFrame>
+  );
+}
+if (new URLSearchParams(window.location.search).get("bare") === "1") {
+  document.body.style.cssText = "margin:0;padding:0;background:var(--ab-sand);display:block;min-height:0;";
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

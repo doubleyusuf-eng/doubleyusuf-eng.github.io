@@ -1,507 +1,970 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anesthesia Briefs - Klinik Kararlarınızda Güvence Altındasınız</title>
-    
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Anestezi profesyonelleri için geliştirilmiş modern klinik asistan uygulaması. Acil durum algoritmaları, klinik hesaplayıcılar, board sınavı hazırlık soruları ve AI klinik asistanı her an yanınızda.">
-    <meta name="keywords" content="anestezi, anesthesia, klinik hesaplayıcı, acil durum algoritmaları, board hazırlık, edaic, aba basic, yapay zeka, tıp, doktor">
-    <meta name="author" content="Anesthesia Briefs">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anesthesia Briefs — Klinik Kararlarınızda Güvence Altındasınız</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); background: var(--ab-cream); color: var(--ab-text-slate); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  h1,h2,h3,h4 { font-family: var(--font-display); color: var(--ab-navy); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+  .eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; }
+
+  /* ---------- Header ---------- */
+  header { position: sticky; top: 0; z-index: 100; background: rgba(248,246,240,0.82); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(27,54,93,0.06); }
+  .hdr { display: flex; align-items: center; justify-content: space-between; padding: 13px 28px; max-width: 1200px; margin: 0 auto; }
+  .logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+  .logo img { height: 36px; }
+  .brand { font-family: var(--font-display); font-size: 21px; font-weight: 800; letter-spacing: -0.5px; color: var(--ab-navy); }
+  .brand em { color: var(--ab-gold); font-weight: 400; font-style: italic; }
+  nav { display: flex; align-items: center; gap: 28px; }
+  nav a.navlink { color: var(--ab-text-slate); font-size: 15px; font-weight: 500; text-decoration: none; transition: color var(--dur-smooth) var(--ease-out); }
+  nav a.navlink:hover { color: var(--ab-gold); }
+  .cta-sm { background: var(--ab-navy); color: #fff !important; padding: 9px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; box-shadow: 0 4px 12px rgba(27,54,93,0.15); transition: var(--dur-smooth) var(--ease-out); }
+  .cta-sm:hover { background: var(--ab-gold); color: var(--ab-navy) !important; transform: translateY(-2px); }
+  .lang { display: flex; background: var(--ab-linen); padding: 3px; border-radius: 20px; border: 1px solid rgba(27,54,93,0.08); }
+  .lang button { border: none; background: none; padding: 6px 13px; font-size: 12px; font-weight: 700; border-radius: 17px; cursor: pointer; color: var(--ab-text-muted); font-family: var(--font-display); transition: var(--dur-press) var(--ease-out); }
+  .lang button.on { background: var(--ab-navy); color: #fff; box-shadow: 0 2px 6px rgba(27,54,93,0.15); }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; padding: 76px 0 84px; background: radial-gradient(circle at 82% 18%, #ece9de 0%, var(--ab-cream) 58%); overflow: hidden; }
+  .hero-glow { position:absolute; width:620px; height:620px; border-radius:50%; background: radial-gradient(circle, rgba(194,162,103,0.10) 0%, rgba(248,246,240,0) 70%); top:-140px; right:-120px; pointer-events:none; }
+  .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 54px; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(27,54,93,0.06); padding: 7px 15px; border-radius: 100px; font-size: 13px; font-weight: 600; color: var(--ab-navy); margin-bottom: 22px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ab-gold); box-shadow: 0 0 8px var(--ab-gold); animation: pulse 2.2s var(--ease-out) infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:.5;transform:scale(.8);} }
+  .hero h1 { font-size: 52px; line-height: 1.12; letter-spacing: -1.6px; font-weight: 800; margin-bottom: 22px; }
+  .grad { background: linear-gradient(135deg, var(--ab-navy) 0%, var(--ab-gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero .lead { font-size: 18px; color: var(--ab-text-muted); margin-bottom: 32px; max-width: 524px; }
+  .stores { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 36px; }
+  .store { position: relative; display: flex; align-items: center; gap: 12px; background: var(--ab-navy); color: #fff; padding: 12px 22px; border-radius: var(--radius-md); box-shadow: 0 8px 24px rgba(27,54,93,0.12); text-decoration: none; transition: var(--dur-smooth) var(--ease-out); }
+  .store:hover { transform: translateY(-3px); background: #16294a; }
+  .store i { font-size: 25px; }
+  .store .sub { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.7; }
+  .store .main { font-size: 16px; font-weight: 700; font-family: var(--font-display); }
+  .soon { z-index: 5; box-shadow: 0 3px 8px rgba(27,54,93,0.25); position: absolute; top: -10px; right: -8px; background: var(--ab-gold); color: var(--ab-navy); font-size: 9px; font-weight: 800; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; letter-spacing: 0.5px; }
+  .trust { display: flex; gap: 26px; flex-wrap: wrap; }
+  .trust .t { display: flex; flex-direction: column; }
+  .trust .tn { font-family: var(--font-display); font-weight: 900; font-size: 22px; color: var(--ab-navy); letter-spacing: -0.5px; }
+  .trust .tl { font-size: 12px; color: var(--ab-text-muted); margin-top: 2px; }
+
+  /* Content band — what's inside the app */
+  .band { background: var(--ab-navy); padding: 26px 0; }
+  .band-inner { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+  .bitem { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 9px; padding: 6px 8px; position: relative; }
+  .bitem:not(:last-child)::after { content: ""; position: absolute; right: -4px; top: 18%; height: 64%; width: 1px; background: rgba(255,255,255,0.12); }
+  .bitem i { font-size: 24px; color: var(--ab-gold); }
+  .bitem .bt { font-family: var(--font-display); font-weight: 800; font-size: 14px; color: #fff; line-height: 1.2; }
+  .bitem .bd { font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.3; }
+  @media (max-width: 760px) { .band-inner { grid-template-columns: repeat(3, 1fr); gap: 18px 8px; } .bitem:not(:last-child)::after { display: none; } }
+
+  .phones { position: relative; height: 580px; }
+  .phone { position: absolute; width: 248px; aspect-ratio: 1080/2372; border-radius: 40px; background: #0B0B0C; padding: 9px; border: 3px solid #1E293B; box-shadow: 0 26px 60px rgba(27,54,93,0.22); overflow: hidden; }
+  .phone img, .phone .screen { width: 100%; height: 100%; border-radius: 31px; object-fit: cover; display: block; }
+  .phone .screen { position: relative; overflow: hidden; background: var(--ab-sand); }
+  .phone .screen iframe { position: absolute; top: 0; left: 0; width: 390px; border: 0; transform-origin: top left; pointer-events: none; background: var(--ab-sand); }
+  .phone.a { left: 24px; top: 0; z-index: 3; animation: floatA 6s ease-in-out infinite; }
+  .phone.b { right: -6px; top: 84px; z-index: 2; transform: scale(0.9); opacity: 0.94; animation: floatB 6s ease-in-out infinite; }
+  @keyframes floatA { 0%,100%{transform:translateY(0) rotate(0);} 50%{transform:translateY(-16px) rotate(1deg);} }
+  @keyframes floatB { 0%,100%{transform:translateY(0) scale(.9) rotate(0);} 50%{transform:translateY(13px) scale(.9) rotate(-1.6deg);} }
+
+  /* ---------- Section shells ---------- */
+  section.block { padding: 92px 0; }
+  .sec-head { text-align: center; max-width: 660px; margin: 0 auto 52px; }
+  .sec-head .eyebrow { color: var(--ab-teal); margin-bottom: 14px; }
+  .sec-head h2 { font-size: 38px; letter-spacing: -0.6px; margin-bottom: 14px; }
+  .sec-head p { font-size: 16px; color: var(--ab-text-muted); }
+
+  /* Features */
+  .fgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  .fcard { background: var(--ab-linen); padding: 34px 26px; border-radius: var(--radius-2xl); box-shadow: var(--shadow-soft); border: 1px solid rgba(27,54,93,0.04); transition: var(--dur-smooth) var(--ease-out); position: relative; overflow: hidden; }
+  .fcard:hover { transform: translateY(-8px); background: #fff; box-shadow: var(--shadow-hover); }
+  .ficon { width: 58px; height: 58px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 23px; margin-bottom: 22px; transition: var(--dur-smooth) var(--ease-out); }
+  .fcard:hover .ficon { transform: scale(1.1); }
+  .fcard h3 { font-size: 19px; margin-bottom: 10px; }
+  .fcard p { font-size: 14px; color: var(--ab-text-muted); }
+  .red .ficon { color: var(--ab-red); background: rgba(166,26,26,0.08); }
+  .teal .ficon { color: var(--ab-teal); background: rgba(74,124,140,0.08); }
+  .gold .ficon { color: var(--ab-gold); background: rgba(194,162,103,0.1); }
+  .navy .ficon { color: var(--ab-navy); background: rgba(27,54,93,0.08); }
+
+  /* ---------- Interactive demo ---------- */
+  .demo { background: #F0EDE4; }
+  .demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+  .demo h2 { font-size: 36px; letter-spacing: -0.6px; margin-bottom: 16px; }
+  .demo .lead { font-size: 16px; color: var(--ab-text-muted); margin-bottom: 32px; }
+  .steps { display: flex; flex-direction: column; gap: 12px; }
+  .step { display: flex; gap: 18px; padding: 15px 18px; border-radius: var(--radius-md); cursor: pointer; background: rgba(27,54,93,0.02); border: 1px solid rgba(27,54,93,0.04); transition: var(--dur-smooth) var(--ease-out); }
+  .step:hover { background: rgba(255,255,255,0.6); }
+  .step.on { background: #fff; border-color: rgba(27,54,93,0.08); box-shadow: 0 8px 24px rgba(27,54,93,0.06); }
+  .step-n { width: 36px; height: 36px; flex: none; border-radius: 50%; background: var(--ab-linen); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 15px; color: var(--ab-navy); transition: var(--dur-press) var(--ease-out); }
+  .step.on .step-n { background: var(--ab-navy); color: #fff; }
+  .step h4 { font-size: 16px; margin-bottom: 3px; transition: color var(--dur-press) var(--ease-out); }
+  .step.on h4 { color: var(--ab-gold); }
+  .step p { font-size: 13px; color: var(--ab-text-muted); }
+  .demo-stage { position: relative; justify-self: center; width: 100%; max-width: 460px; }
+  .demo-stage iframe { width: 100%; height: 900px; border: 0; border-radius: 28px; display: block; background: transparent; }
+  .demo-live { position: absolute; top: 6px; left: 50%; transform: translateX(-50%); z-index: 5; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 12px; font-weight: 700; color: #fff; background: rgba(13,30,54,0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 100px; box-shadow: 0 6px 18px rgba(13,30,54,0.25); }
+  .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #34D399; box-shadow: 0 0 8px #34D399; animation: pulse 1.8s var(--ease-out) infinite; }
+  .demo-note { display: flex; align-items: flex-start; gap: 14px; max-width: 900px; margin: 44px auto 0; padding: 20px 24px; background: rgba(74,124,140,0.07); border: 1px solid rgba(74,124,140,0.18); border-left: 4px solid var(--ab-teal); border-radius: var(--radius-md); }
+  .demo-note i { color: var(--ab-teal); font-size: 20px; margin-top: 2px; flex: none; }
+  .demo-note p { font-size: 14.5px; color: var(--ab-text-slate); margin: 0; line-height: 1.55; }
+
+  /* ---------- Games (NEW) ---------- */
+  .games { background: var(--gradient-premium); position: relative; overflow: hidden; }
+  .games-decor { position:absolute; width:680px; height:680px; border-radius:50%; background: radial-gradient(circle, rgba(194,162,103,0.07) 0%, rgba(13,27,46,0) 70%); top:-220px; right:-220px; pointer-events:none; }
+  .games .sec-head h2 { color: #fff; }
+  .games .sec-head .eyebrow { color: var(--ab-gold); }
+  .games .sec-head p { color: rgba(255,255,255,0.7); }
+  .ggrid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; position: relative; z-index: 2; }
+  .gcard { display: flex; flex-direction: column; border-radius: var(--radius-2xl); overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); transition: var(--dur-smooth) var(--ease-out); }
+  .gcard:hover { transform: translateY(-8px); border-color: rgba(194,162,103,0.35); box-shadow: 0 24px 50px rgba(0,0,0,0.3); }
+  .gstage { position: relative; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .gstage.toss { background: radial-gradient(circle at 50% 40%, #1d3a5f 0%, #090F1E 100%); }
+  .gstage.airway { background: radial-gradient(circle at 50% 40%, #1c3b38 0%, #0c1a1d 100%); }
+  .gstage .grid-lines { position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 28px 28px; }
+  .gstage .blob { position:absolute; width:200px; height:200px; border-radius:50%; filter: blur(40px); opacity:.5; }
+  .gstage.toss .blob { background:#C2A267; right:-40px; top:-40px; }
+  .gstage.airway .blob { background:#4DEEEA; left:-40px; bottom:-40px; }
+  .gstage i.gmark { font-size: 78px; color: rgba(255,255,255,0.92); position: relative; z-index: 2; filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4)); }
+  .gstage.toss i.gmark { color: var(--ab-gold); }
+  .gstage.airway i.gmark { color: #4DEEEA; }
+  .ghud { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; z-index: 3; }
+  .ghud span { font-family: var(--font-display); font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.92); background: rgba(0,0,0,0.32); border: 1px solid rgba(255,255,255,0.12); padding: 4px 9px; border-radius: 7px; }
+  .gtag { position:absolute; top:14px; right:14px; z-index:3; font-family:var(--font-display); font-size:10px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:var(--ab-navy); background:var(--ab-gold); padding:4px 10px; border-radius:100px; }
+  .gbody { padding: 26px 26px 28px; }
+  .gbody h3 { color: #fff; font-size: 21px; margin-bottom: 10px; }
+  .gbody p { color: rgba(255,255,255,0.68); font-size: 14px; margin-bottom: 18px; }
+  .gfeat { display: flex; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+  .gfeat span { font-size: 12px; color: rgba(255,255,255,0.6); display: inline-flex; align-items: center; gap: 6px; }
+  .gfeat i { color: var(--ab-gold); }
+  .btn-play { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; background: var(--ab-gold); color: var(--ab-navy); font-family: var(--font-display); font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: var(--radius-md); text-decoration: none; box-shadow: 0 4px 14px rgba(194,162,103,0.3); transition: var(--dur-smooth) var(--ease-out); }
+  .btn-play:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(194,162,103,0.4); }
+  .gcard.airway .btn-play { background: #4DEEEA; color: #062b29; box-shadow: 0 4px 14px rgba(77,238,234,0.28); }
+  .gcard.airway .gtag { background: #4DEEEA; color: #062b29; }
+
+  /* ---------- Premium board ---------- */
+  .premium { background: linear-gradient(135deg,#0D1B2E 0%,#172B4D 100%); position: relative; overflow: hidden; }
+  .pbadge { display: inline-flex; align-items: center; gap: 8px; background: rgba(194,162,103,0.15); border: 1px solid rgba(194,162,103,0.3); color: var(--ab-gold); padding: 6px 16px; border-radius: 100px; font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 18px; }
+  .premium .sec-head h2 { color: #fff; }
+  .premium .sec-head p { color: rgba(255,255,255,0.7); }
+  .pgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  .pcard { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-2xl); padding: 34px 26px; transition: var(--dur-smooth) var(--ease-out); }
+  .pcard:hover { transform: translateY(-8px); background: rgba(255,255,255,0.06); border-color: rgba(194,162,103,0.3); }
+  .picon { width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(194,162,103,0.1); color: var(--ab-gold); display: flex; align-items: center; justify-content: center; font-size: 21px; margin-bottom: 22px; }
+  .pcard h3 { color: #fff; font-size: 18px; margin-bottom: 10px; }
+  .pcard p { color: rgba(255,255,255,0.65); font-size: 13.5px; }
+  .teal2 { color: #4DEEEA !important; background: rgba(77,238,234,0.1) !important; }
+  .purp { color: #C394FF !important; background: rgba(195,148,255,0.1) !important; }
+
+  /* ---------- Premium content (what's inside) ---------- */
+  .premc { background: var(--ab-cream); }
+  .premc .sec-head .eyebrow { color: var(--ab-gold); }
+  .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .pillar { display: flex; flex-direction: column; background: var(--ab-linen); border: 1px solid rgba(27,54,93,0.05); border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--dur-smooth) var(--ease-out); }
+  .pillar:hover { transform: translateY(-8px); background: #fff; box-shadow: var(--shadow-hover); }
+  .pillar-media { position: relative; height: 188px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .pillar-media.regional { background: radial-gradient(circle at 50% 38%, #1c3b38 0%, #0c1a1d 100%); }
+  .pillar-media.board { background: radial-gradient(circle at 50% 38%, #1d3a5f 0%, #090F1E 100%); }
+  .pillar-media .grid-lines { position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 28px 28px; }
+  .pillar-media .blob { position:absolute; width:200px; height:200px; border-radius:50%; filter: blur(42px); opacity:.5; }
+  .pillar-media.regional .blob { background:#4DEEEA; left:-40px; bottom:-50px; }
+  .pillar-media.board .blob { background:#C2A267; right:-40px; top:-50px; }
+  .pillar-media i.pmark { position: relative; z-index: 2; font-size: 70px; filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4)); }
+  .pillar-media.regional i.pmark { color: #4DEEEA; }
+  .pillar-media.board i.pmark { color: var(--ab-gold); }
+  .prem-tag { position: absolute; top: 14px; left: 14px; z-index: 3; display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-display); font-size: 10px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ab-navy); background: var(--ab-gold); padding: 5px 11px; border-radius: 100px; }
+  .pillar-body { padding: 28px 28px 30px; }
+  .pillar-body h3 { font-size: 22px; margin-bottom: 10px; }
+  .pillar-body .pdesc { font-size: 14.5px; color: var(--ab-text-muted); margin-bottom: 20px; }
+  .pluses { list-style: none; display: grid; gap: 11px; }
+  .pluses li { display: flex; align-items: flex-start; gap: 11px; font-size: 14px; color: var(--ab-text-slate); }
+  .pluses li i { margin-top: 3px; font-size: 13px; flex: none; color: var(--ab-teal); }
+  .pillar.board .pluses li i { color: var(--ab-gold); }
+  .adv-head { text-align: center; margin: 60px 0 30px; }
+  .adv-head h3 { font-size: 25px; letter-spacing: -0.4px; }
+  .advs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .adv { padding: 26px 22px; background: #fff; border: 1px solid rgba(27,54,93,0.05); border-radius: var(--radius-xl); box-shadow: var(--shadow-soft); transition: var(--dur-smooth) var(--ease-out); }
+  .adv:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+  .adv .ai { width: 46px; height: 46px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 19px; margin-bottom: 16px; background: rgba(194,162,103,0.12); color: var(--ab-gold); }
+  .adv h4 { font-size: 15.5px; margin-bottom: 7px; }
+  .adv p { font-size: 13px; color: var(--ab-text-muted); }
+
+  /* ---------- Download ---------- */
+  .download { background: var(--ab-cream); text-align: center; }
+  .download h2 { font-size: 38px; letter-spacing: -0.6px; margin-bottom: 14px; }
+  .download p { font-size: 17px; color: var(--ab-text-muted); margin-bottom: 32px; }
+  .download .stores { justify-content: center; }
+
+  footer { background: var(--ab-navy); color: rgba(255,255,255,0.8); padding: 44px 0 26px; }
+  .foot { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; flex-wrap: wrap; padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot .brand { color: #fff; }
+  .foot .moto { font-size: 13px; margin-top: 10px; max-width: 260px; }
+  .foot .col h4 { color: #fff; font-size: 14px; margin-bottom: 12px; }
+  .foot .col a { display: block; color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none; margin-bottom: 7px; transition: color var(--dur-press) var(--ease-out); }
+  .foot .col a:hover { color: var(--ab-gold); }
+  .foot-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; flex-wrap: wrap; gap: 12px; }
+  .foot-bottom p { font-size: 12.5px; color: rgba(255,255,255,0.55); }
+  .foot-bottom .social { display: flex; gap: 16px; font-size: 17px; }
+  .foot-bottom .social a { color: rgba(255,255,255,0.7); transition: color var(--dur-press) var(--ease-out); }
+  .foot-bottom .social a:hover { color: var(--ab-gold); }
+
+  @media (max-width: 980px) {
+    .hero-grid, .demo-grid { grid-template-columns: 1fr; }
+    .fgrid, .pgrid { grid-template-columns: 1fr 1fr; }
+    .ggrid, .pillars { grid-template-columns: 1fr; }
+    .advs { grid-template-columns: 1fr 1fr; }
+    .phones { display: none; }
+    nav .navlink { display: none; }
+  }
+
+  /* ---------- 3D Laryngoscope Preloader ---------- */
+  #preloader { position: fixed; inset: 0; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 38%, #16335c 0%, #0d1e36 46%, #081427 100%); transition: opacity 0.8s var(--ease-out), visibility 0.8s var(--ease-out); }
+  #preloader.done { opacity: 0; visibility: hidden; pointer-events: none; }
+  #preloader::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(194,162,103,0.12) 0%, rgba(13,30,54,0) 60%); pointer-events: none; }
+  #larynx-canvas { width: 240px; height: 240px; max-width: 56vw; max-height: 36vh; position: relative; z-index: 2; }
+  .pl-brand { position: relative; z-index: 2; margin-top: 4px; font-family: var(--font-display); font-size: 27px; font-weight: 800; letter-spacing: -0.6px; color: #fff; }
+  .pl-brand em { color: var(--ab-gold); font-weight: 400; font-style: italic; }
+  .pl-sub { position: relative; z-index: 2; margin-top: 9px; font-size: 12.5px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.42); }
+  .pl-bar { position: relative; z-index: 2; margin-top: 26px; width: 200px; height: 3px; border-radius: 100px; background: rgba(255,255,255,0.10); overflow: hidden; }
+  .pl-bar > i { display: block; height: 100%; width: 0%; border-radius: 100px; background: linear-gradient(90deg, var(--ab-gold), #e6c98a); box-shadow: 0 0 12px rgba(194,162,103,0.7); transition: width 0.25s var(--ease-out); }
+  @media (prefers-reduced-motion: reduce) { #larynx-canvas { display: none; } }
+
+  /* ---------- Cinematic video intro ---------- */
+  .intro { position: relative; height: 100vh; min-height: 560px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .intro-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+  .intro-overlay { position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(9,18,39,0.66) 0%, rgba(13,30,54,0.40) 38%, rgba(9,18,39,0.55) 70%, rgba(9,18,39,0.92) 100%); }
+  .intro-content { position: relative; z-index: 3; text-align: center; padding: 0 24px; }
+  .intro-eyebrow { display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-display); font-size: 13px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ab-gold); margin-bottom: 22px; }
+  .intro-eyebrow::before, .intro-eyebrow::after { content: ""; width: 26px; height: 1px; background: linear-gradient(90deg, transparent, var(--ab-gold)); }
+  .intro-eyebrow::after { background: linear-gradient(90deg, var(--ab-gold), transparent); }
+  .intro-wordmark { font-family: var(--font-display); font-weight: 800; color: #fff; font-size: clamp(46px, 9.5vw, 132px); letter-spacing: -2.5px; line-height: 0.98; text-shadow: 0 6px 44px rgba(0,0,0,0.5); }
+  .intro-wordmark em { color: var(--ab-gold); font-style: italic; font-weight: 400; }
+  .intro-tag { color: rgba(255,255,255,0.88); font-size: clamp(15px, 2vw, 21px); font-weight: 500; margin-top: 22px; max-width: 620px; margin-left: auto; margin-right: auto; text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
+  .intro-scroll { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: color var(--dur-smooth) var(--ease-out); }
+  .intro-scroll:hover { color: #fff; }
+  .intro-scroll i { font-size: 16px; animation: scrollbob 1.8s var(--ease-out) infinite; }
+  @keyframes scrollbob { 0%,100% { transform: translateY(0); opacity: .6; } 50% { transform: translateY(6px); opacity: 1; } }
+
+  /* Transparent header (with a soft top scrim for legibility) while it floats over the video intro */
+  header.over-intro { background: linear-gradient(180deg, rgba(9,18,39,0.62) 0%, rgba(9,18,39,0.28) 60%, rgba(9,18,39,0) 100%); backdrop-filter: none; -webkit-backdrop-filter: none; border-bottom-color: transparent; }
+  header.over-intro .brand { color: #fff; text-shadow: 0 1px 12px rgba(0,0,0,0.6); }
+  header.over-intro .brand em { color: var(--ab-gold); }
+  header.over-intro .navlink { color: #fff; text-shadow: 0 1px 10px rgba(0,0,0,0.55); }
+  header.over-intro .navlink:hover { color: var(--ab-gold); }
+  header.over-intro .cta-sm { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.45); box-shadow: none; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+  header.over-intro .cta-sm:hover { background: var(--ab-gold); color: var(--ab-navy) !important; border-color: var(--ab-gold); text-shadow: none; }
+  header.over-intro .lang { background: rgba(9,18,39,0.45); border-color: rgba(255,255,255,0.4); }
+  header.over-intro .lang button { color: #fff; }
+  header.over-intro .lang button.on { background: #fff; color: var(--ab-navy); }
+
+  /* ---------- Instagram feed ---------- */
+  #instagram .insta-feed { width: 100%; margin: 6px 0 30px; min-height: 120px; }
+  .insta-cta { display: flex; justify-content: center; }
+  .btn-instagram { display: inline-flex; align-items: center; gap: 10px; background: var(--ab-navy); color: #fff !important; font-family: var(--font-display); font-weight: 700; font-size: 15px; padding: 13px 26px; border-radius: 10px; text-decoration: none; box-shadow: 0 8px 24px rgba(27,54,93,0.18); transition: var(--dur-smooth) var(--ease-out); }
+  .btn-instagram i { font-size: 18px; }
+  .btn-instagram:hover { background: var(--ab-gold); color: var(--ab-navy) !important; transform: translateY(-2px); }
+</style>
 </head>
 <body>
+<div id="preloader">
+  <canvas id="larynx-canvas"></canvas>
+  <div class="pl-brand">Anesthesia<em>Briefs</em></div>
+  <div class="pl-sub" data-i18n="pl-sub">Klinik Kararlarınızda Güvende</div>
+  <div class="pl-bar"><i id="pl-bar-fill"></i></div>
+</div>
 
-    <!-- Premium 3D Rotating Laryngoscope Preloader -->
-    <div id="preloader">
-        <div class="preloader-bg-overlay"></div>
-        <div class="preloader-content">
-            <div class="laryngoscope-3d-wrapper">
-                <div class="laryngoscope-3d">
-                    <svg viewBox="-40 0 200 180" class="laryngoscope-svg">
-                        <!-- Definitions for Gradients, Patterns, and Filters -->
-                        <defs>
-                            <!-- Cross-knurled non-slip grip texture for handle -->
-                            <pattern id="knurling-pattern" width="6" height="6" patternUnits="userSpaceOnUse">
-                                <path d="M 0 0 L 6 6 M 6 0 L 0 6" stroke="rgba(15, 23, 42, 0.55)" stroke-width="0.6" />
-                            </pattern>
-                            
-                            <!-- Premium Polished Metallic Chrome Handle Gradient -->
-                            <linearGradient id="metallic-handle" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#334155" />
-                                <stop offset="15%" stop-color="#64748B" />
-                                <stop offset="35%" stop-color="#E2E8F0" />
-                                <stop offset="42%" stop-color="#FFFFFF" />
-                                <stop offset="58%" stop-color="#CBD5E1" />
-                                <stop offset="85%" stop-color="#94A3B8" />
-                                <stop offset="100%" stop-color="#1E293B" />
-                            </linearGradient>
-
-                            <!-- Metallic Blade Gradient mimicking medical brushed steel -->
-                            <linearGradient id="metallic-blade" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#F1F5F9" />
-                                <stop offset="40%" stop-color="#CBD5E1" />
-                                <stop offset="70%" stop-color="#94A3B8" />
-                                <stop offset="100%" stop-color="#475569" />
-                            </linearGradient>
-
-                            <!-- Metallic Flange (Guide Wall) Gradient -->
-                            <linearGradient id="metallic-flange" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
-                                <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.8" />
-                                <stop offset="100%" stop-color="#1E293B" stop-opacity="0.9" />
-                            </linearGradient>
-
-                            <!-- Gold glowing path for fiber optic bundle -->
-                            <linearGradient id="fiberoptic-guide" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#FCD34D" />
-                                <stop offset="100%" stop-color="#F59E0B" />
-                            </linearGradient>
-                            
-                            <!-- Multi-stage drop shadow for realistic 3D depth -->
-                            <filter id="premium-shadow" x="-30%" y="-30%" width="160%" height="160%">
-                                <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#020617" flood-opacity="0.7"/>
-                            </filter>
-                        </defs>
-
-                        <g filter="url(#premium-shadow)">
-                            <!-- 1. Connection Heel (Interlocking mechanism block) -->
-                            <path d="M 44,48 L 76,48 L 70,58 L 50,58 Z" fill="url(#metallic-handle)" />
-                            <!-- Small snap-on lever/joint -->
-                            <rect x="52" y="44" width="16" height="4" rx="1" fill="#475569" />
-                            <circle cx="60" cy="53" r="2.5" fill="#94A3B8" />
-
-                            <!-- 2. Laryngoscope Main Handle (Brushed cylindrical body) -->
-                            <!-- Base handle -->
-                            <rect x="48" y="58" width="24" height="88" rx="2" fill="url(#metallic-handle)" />
-                            <!-- Overlay gripping knurled pattern -->
-                            <rect x="48" y="64" width="24" height="76" rx="0" fill="url(#knurling-pattern)" style="mix-blend-mode: multiply; opacity: 0.85;" />
-                            
-                            <!-- Handle ring accents (Visual design ridges) -->
-                            <rect x="47" y="62" width="26" height="3" rx="0.5" fill="#475569" />
-                            <rect x="47" y="137" width="26" height="3" rx="0.5" fill="#475569" />
-
-                            <!-- 3. Base Cap of the Handle (Screw thread for battery compartment) -->
-                            <rect x="50" y="146" width="20" height="7" rx="1" fill="url(#metallic-handle)" />
-                            <rect x="52" y="153" width="16" height="4" rx="1.5" fill="#1E293B" />
-
-                            <!-- 4. Macintosh curved blade (Accurate anatomical geometry with Elongated Stylized Tip matching the logo) -->
-                            <!-- Blade Heel, curves elegantly to the highly elongated curved pointer tip -->
-                            <path d="M 52,48
-                                     C 52,48 45,34 32,20
-                                     C 16,6 -10,12 -26,16
-                                     C -30,17 -34,20 -34,23
-                                     C -34,26 -26,27 -16,29
-                                     C 10,34 35,43 44,48
-                                     Z" fill="url(#metallic-blade)" />
-                            
-                            <!-- Anatomical Tongue Flange (Guide channel) -->
-                            <path d="M 46,45
-                                     C 40,38 31,31 16,30
-                                     C 10,30 5,31 -2,33
-                                     C 5,34 12,34 20,36
-                                     C 28,38 39,43 41,45
-                                     Z" fill="url(#metallic-flange)" />
-
-                            <!-- 5. Integrated Fiber Optic Bundle (Gold light guide) -->
-                            <path d="M 46,47 C 36,39 28,32 6,31" stroke="url(#fiberoptic-guide)" stroke-width="2.5" fill="none" stroke-linecap="round" />
-
-                            <!-- 6. Glowing LED Light Port -->
-                            <!-- Lens cap -->
-                            <circle cx="6" cy="31" r="2" fill="#FFFFFF" />
-                            <!-- Light emission/lens flares -->
-                            <circle cx="6" cy="31" r="3.5" fill="#FFF59D" class="led-glow" />
-                            <circle cx="6" cy="31" r="7.5" fill="#FFFDE7" class="led-glow" opacity="0.6" style="mix-blend-mode: screen;" />
-                            <circle cx="6" cy="31" r="15" fill="#F59E0B" class="led-glow" opacity="0.25" style="mix-blend-mode: screen;" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <h2 class="preloader-title">Anesthesia<span class="gold-text">Briefs</span></h2>
-            <div class="preloader-bar">
-                <div class="preloader-bar-fill"></div>
-            </div>
-        </div>
+<header>
+  <div class="hdr">
+    <a class="logo" href="#top"><img src="assets/logo.png" alt="Anesthesia Briefs" /><span class="brand">Anesthesia<em>Briefs</em></span></a>
+    <nav>
+      <a class="navlink" href="#features" data-i18n="nav-features">Özellikler</a>
+      <a class="navlink" href="#demo" data-i18n="nav-screens">Ekranlar</a>
+      <a class="navlink" href="#games" data-i18n="nav-games">Oyunlar</a>
+      <a class="navlink" href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+      <a class="cta-sm" href="#download" data-i18n="nav-download">Çok Yakında</a>
+    </nav>
+    <div class="lang">
+      <button id="lang-tr" onclick="setLang('tr')">TR</button>
+      <button id="lang-en" onclick="setLang('en')">EN</button>
     </div>
+  </div>
+</header>
 
-    <!-- Sticky Navigation -->
-    <header class="main-header">
-        <div class="header-container">
-            <a href="#" class="logo-area">
-                <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
-                <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
-            </a>
-            
-            <nav class="nav-menu" id="navMenu">
-                <a href="#features" data-i18n="nav-features">Özellikler</a>
-                <a href="#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
-                <a href="#demo" data-i18n="nav-preview">Ekranlar</a>
-                <a href="#instagram" data-i18n="nav-instagram">Instagram</a>
-                <a href="game.html" class="btn-download-sm" style="background:var(--accent-gold); color:var(--primary-color) !important;" data-i18n="nav-game-play"><i class="fa-solid fa-gamepad"></i> Laringoskop Fırlat!</a>
-                <a href="airway_game.html" class="btn-download-sm" style="background:var(--accent-teal); color:var(--primary-color) !important;" data-i18n="nav-airway-play"><i class="fa-solid fa-brain"></i> Zor Havayolu</a>
-                <a href="#download" class="btn-download-sm inactive-link" data-i18n="nav-download-soon">Çok Yakında</a>
-            </nav>
+<section class="intro" id="intro">
+  <video class="intro-video" autoplay muted loop playsinline preload="auto" poster="assets/intro-poster.jpg">
+    <source src="assets/intro.mp4" type="video/mp4" />
+  </video>
+  <div class="intro-overlay"></div>
+  <div class="intro-content">
+    <span class="intro-eyebrow" data-i18n="intro-eyebrow">Anestezi Profesyonelleri İçin</span>
+    <h1 class="intro-wordmark">Anesthesia<em>Briefs</em></h1>
+    <p class="intro-tag" data-i18n="intro-tag">Klinik kararlarınızda güç ve güven — ameliyathanede, tek dokunuşla.</p>
+  </div>
+  <a class="intro-scroll" href="#top">
+    <span data-i18n="intro-scroll">Keşfet</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
 
-            <div class="header-actions">
-                <!-- Language Toggle Switch -->
-                <div class="lang-switch-container">
-                    <button class="lang-btn active" id="btn-tr" onclick="changeLanguage('tr')">TR</button>
-                    <button class="lang-btn" id="btn-en" onclick="changeLanguage('en')">EN</button>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menüyü Aç">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
+<span id="top"></span>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="pill"><span class="dot"></span> <span data-i18n="hero-badge">Anestezi Profesyonelleri İçin</span></span>
+      <h1><span data-i18n="hero-title-1">Klinik Kararlarınızda</span> <span class="grad" data-i18n="hero-title-2">Güvence Altındasınız</span></h1>
+      <p class="lead" data-i18n="hero-lead">Acil algoritmalara, gelişmiş ilaç doz hesaplayıcılarına, literatür özetlerine ve yapay zekâ destekli klinik asistana tek bir çevrimdışı, iki dilli uygulamadan anında erişin.</p>
+      <div class="stores">
+        <div style="position:relative"><span class="soon" data-i18n="soon">Çok Yakında</span>
+          <a class="store" href="#download"><i class="fa-brands fa-apple"></i><span><span class="sub" data-i18n="store-apple-sub">İndir</span><br /><span class="main">App Store</span></span></a></div>
+        <div style="position:relative"><span class="soon" data-i18n="soon">Çok Yakında</span>
+          <a class="store" href="#download"><i class="fa-brands fa-google-play"></i><span><span class="sub" data-i18n="store-google-sub">İndir</span><br /><span class="main">Google Play</span></span></a></div>
+      </div>
+      <div class="trust">
+        <div class="t"><span class="tn">1000+</span><span class="tl" data-i18n="trust-spot">Spot bilgi</span></div>
+        <div class="t"><span class="tn">EDAIC · ABA</span><span class="tl" data-i18n="trust-exam">Sınav hazırlığı</span></div>
+        <div class="t"><span class="tn">TR / EN</span><span class="tl" data-i18n="trust-lang">İki dilli içerik</span></div>
+        <div class="t"><span class="tn"><i class="fa-solid fa-wifi" style="font-size:18px"></i></span><span class="tl" data-i18n="trust-offline">Çevrimdışı çalışır</span></div>
+      </div>
+    </div>
+    <div class="phones">
+      <div class="phone a"><div class="screen"><iframe id="hero-frame-a" title="Anesthesia Briefs — ana ekran" scrolling="no" loading="eager"></iframe></div></div>
+      <div class="phone b"><div class="screen"><iframe id="hero-frame-b" title="Anesthesia Briefs — algoritmalar" scrolling="no" loading="eager"></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container band-inner">
+    <div class="bitem"><i class="fa-solid fa-triangle-exclamation"></i><span class="bt" data-i18n="band-1-t">Acil Algoritmalar</span><span class="bd" data-i18n="band-1-d">Kriz yönetim ağaçları</span></div>
+    <div class="bitem"><i class="fa-solid fa-calculator"></i><span class="bt" data-i18n="band-2-t">Klinik Hesaplayıcılar</span><span class="bd" data-i18n="band-2-d">Doz & skorlar</span></div>
+    <div class="bitem"><i class="fa-solid fa-prescription-bottle-medical"></i><span class="bt" data-i18n="band-3-t">İlaç Monografları</span><span class="bd" data-i18n="band-3-d">Endikasyon & doz</span></div>
+    <div class="bitem"><i class="fa-solid fa-layer-group"></i><span class="bt" data-i18n="band-4-t">Bölgesel Atlas</span><span class="bd" data-i18n="band-4-d">US-rehberli bloklar</span></div>
+    <div class="bitem"><i class="fa-solid fa-graduation-cap"></i><span class="bt" data-i18n="band-5-t">Board Prep</span><span class="bd" data-i18n="band-5-d">EDAIC · ABA</span></div>
+    <div class="bitem"><i class="fa-solid fa-bolt"></i><span class="bt" data-i18n="band-6-t">1000+ Spot Bilgi</span><span class="bd" data-i18n="band-6-d">Hızlı tekrar</span></div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="feat-eyebrow">Uygulama</span>
+      <h2 data-i18n="feat-title">Uygulama Özellikleri</h2>
+      <p data-i18n="feat-sub">Klinik güvenliği ve doğruluğu en üst düzeye çıkarmak için tasarlanmış dört ana sütun.</p>
+    </div>
+    <div class="fgrid">
+      <div class="fcard red"><div class="ficon"><i class="fa-solid fa-triangle-exclamation"></i></div><h3 data-i18n="feat-1-t">Acil Algoritmalar</h3><p data-i18n="feat-1-d">Hayatı tehdit eden anestezi krizlerine hızlı erişim. Her saniyenin önemli olduğu anlarda adım adım rehberlik.</p></div>
+      <div class="fcard teal"><div class="ficon"><i class="fa-solid fa-calculator"></i></div><h3 data-i18n="feat-2-t">Klinik Hesaplayıcılar</h3><p data-i18n="feat-2-d">Yetişkin, pediatrik ve obstetrik hastalar için hassas doz hesaplamaları ve skorlama sistemleri.</p></div>
+      <div class="fcard gold"><div class="ficon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3 data-i18n="feat-3-t">AI Klinik Asistan</h3><p data-i18n="feat-3-d">Uluslararası kılavuzlarla eğitilmiş, klinik sorularınızı anında yanıtlayan gelişmiş yapay zekâ asistanı.</p></div>
+      <div class="fcard navy"><div class="ficon"><i class="fa-solid fa-book-open"></i></div><h3 data-i18n="feat-4-t">Son Literatür</h3><p data-i18n="feat-4-d">Anestezideki en son klinik yayınların, güncel kılavuzların ve bilimsel makalelerin özetleri.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block demo" id="demo">
+  <div class="container demo-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--ab-teal)" data-i18n="demo-eyebrow">Canlı Demo</span>
+      <h2 data-i18n="demo-title">Uygulamayı Şimdi Deneyin</h2>
+      <p class="lead" data-i18n="demo-lead">Bu gerçek, çalışan bir önizleme. Sağdaki telefona dokunun — alt menüde gezinin, hesaplayıcıda kiloyu kaydırın, algoritmaları ve blokları açın.</p>
+      <div class="steps" id="steps">
+        <div class="step on" data-nav='{"tab":0}'><div class="step-n">1</div><div><h4 data-i18n="demo-s1-t">Kişiselleştirilmiş Karşılama</h4><p data-i18n="demo-s1-d">Her gün güncellenen klinik ipuçları ve hızlı erişim kartları.</p></div></div>
+        <div class="step" data-nav='{"tab":1}'><div class="step-n">2</div><div><h4 data-i18n="demo-s2-t">Klinik Hesaplayıcılar</h4><p data-i18n="demo-s2-d">Kilo kaydırıcısını oynatın; mg ve mL dozları anında güncellensin.</p></div></div>
+        <div class="step" data-nav='{"tab":2}'><div class="step-n">3</div><div><h4 data-i18n="demo-s3-t">Acil Algoritmalar</h4><p data-i18n="demo-s3-d">Bir krize dokunun; adım adım protokolü görün.</p></div></div>
+        <div class="step" data-nav='{"tab":3}'><div class="step-n">4</div><div><h4 data-i18n="demo-s4-t">İlaç Kılavuzu</h4><p data-i18n="demo-s4-d">Kategoriye göre renk-kodlu ilaç monografları.</p></div></div>
+        <div class="step" data-nav='{"detail":"regional"}'><div class="step-n">5</div><div><h4 data-i18n="demo-s5-t">Bölgesel Anestezi Atlası</h4><p data-i18n="demo-s5-d">USG eşliğinde blok atlası — anatomi & sonoanatomi.</p></div></div>
+      </div>
+    </div>
+    <div class="demo-stage">
+      <span class="demo-live" data-i18n="demo-live"><span class="live-dot"></span> Canlı · dokunarak gezin</span>
+      <iframe id="demo-frame" src="mobile_app/index.html" title="Anesthesia Briefs canlı demo" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div class="container">
+    <div class="demo-note">
+      <i class="fa-solid fa-circle-info"></i>
+      <p data-i18n="demo-note">Bu yalnızca kısa bir önizlemedir. Gerçek uygulamada çok daha geniş bir içerik sizi bekliyor — yüzlerce algoritma ve ilaç monografı, kapsamlı hesaplayıcılar, bölgesel anestezi atlası, 1000+ spot bilgi ve sürekli güncellenen literatür.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block games" id="games">
+  <div class="games-decor"></div>
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="games-eyebrow">Mola Verin</span>
+      <h2 data-i18n="games-title">İnteraktif Mini-Oyunlar</h2>
+      <p data-i18n="games-sub">Tarayıcıdan oynanan, anesteziye özgü iki mini-oyunla stres atın ve refleksinizi tazeleyin.</p>
+    </div>
+    <div class="ggrid">
+      <div class="gcard toss">
+        <div class="gstage toss">
+          <div class="grid-lines"></div><div class="blob"></div>
+          <div class="ghud"><span>SKOR 1240</span><span>SEVİYE 3</span></div>
+          <span class="gtag">3D · WebGL</span>
+          <i class="gmark fa-solid fa-wand-sparkles"></i>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-section" id="hero">
-        <div class="hero-bg-glow"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="badge-new animate-fade-in">
-                    <span class="badge-dot"></span>
-                    <span data-i18n="hero-badge">Anestezi Profesyonelleri İçin</span>
-                </div>
-                <h1 class="hero-title animate-slide-up" data-i18n="hero-title">
-                    Klinik Kararlarınızda <br><span class="gradient-text">Güvence Altındasınız</span>
-                </h1>
-                <p class="hero-description animate-slide-up" data-i18n="hero-desc">
-                    Acil durum algoritmalarına, gelişmiş ilaç doz hesaplayıcılarına, tıbbi literatür özetlerine ve yapay zeka destekli klinik asistanınıza tek bir uygulamadan anında erişin.
-                </p>
-                
-                <div class="download-badges animate-slide-up">
-                    <div class="store-badge-wrapper">
-                        <span class="badge-soon" data-i18n="coming-soon">Çok Yakında</span>
-                        <a href="javascript:void(0)" class="store-btn inactive-btn" aria-label="Download on App Store">
-                            <i class="fa-brands fa-apple"></i>
-                            <div class="btn-text">
-                                <span class="btn-subtext">Download on the</span>
-                                <span class="btn-maintext">App Store</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="store-badge-wrapper">
-                        <span class="badge-soon" data-i18n="coming-soon">Çok Yakında</span>
-                        <a href="javascript:void(0)" class="store-btn inactive-btn" aria-label="Get it on Google Play">
-                            <i class="fa-brands fa-google-play"></i>
-                            <div class="btn-text">
-                                <span class="btn-subtext">GET IT ON</span>
-                                <span class="btn-maintext">Google Play</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="phone-mockup-wrapper">
-                    <div class="phone-glow"></div>
-                    <div class="phone-mockup main-phone">
-                        <img src="assets/screenshots/welcome_tr.jpg" alt="Anesthesia Briefs Türkçe Arayüzü" class="app-screenshot" id="screen-main">
-                    </div>
-                    <div class="phone-mockup secondary-phone">
-                        <img src="assets/screenshots/welcome_en.jpg" alt="Anesthesia Briefs İngilizce Arayüzü" class="app-screenshot" id="screen-secondary">
-                    </div>
-                </div>
-            </div>
+        <div class="gbody">
+          <h3 data-i18n="game-1-t">Laringoskop Fırlat!</h3>
+          <p data-i18n="game-1-d">Cerraha laringoskop fırlatıp vakayla ilgili komik isteklerine cevap ver. Açıyı, yönü ve gücü ayarla, laminer akışa karşı nişan al.</p>
+          <div class="gfeat">
+            <span><i class="fa-solid fa-cube"></i> <span data-i18n="game-1-f1">2D / 3D mod</span></span>
+            <span><i class="fa-solid fa-ranking-star"></i> <span data-i18n="game-1-f2">Liderlik tablosu</span></span>
+            <span><i class="fa-solid fa-layer-group"></i> <span data-i18n="game-1-f3">Seviyeler</span></span>
+          </div>
+          <a class="btn-play" href="game-build/game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
         </div>
-    </section>
-
-    <!-- Key App Features Section -->
-    <section class="features-section" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="features-section-title">Uygulama Özellikleri</h2>
-                <p class="section-subtitle" data-i18n="features-section-subtitle">Klinik güvenliği ve doğruluğu en üst düzeye çıkarmak için tasarlanan 4 ana sütun.</p>
-            </div>
-            
-            <div class="features-grid">
-                <!-- Feature 1: Emergency Algorithms -->
-                <div class="feature-card card-red">
-                    <div class="feature-icon-wrapper">
-                        <i class="fa-solid fa-triangle-exclamation"></i>
-                    </div>
-                    <h3 class="feature-card-title" data-i18n="feature-1-title">Acil Algoritmalar</h3>
-                    <p class="feature-card-desc" data-i18n="feature-1-desc">
-                        Hayatı tehdit eden anestezi krizlerine hızlı erişim. Her saniyenin önemli olduğu durumlarda adım adım acil durum kılavuzları.
-                    </p>
-                    <div class="card-footer-glow"></div>
-                </div>
-
-                <!-- Feature 2: Calculators -->
-                <div class="feature-card card-teal">
-                    <div class="feature-icon-wrapper">
-                        <i class="fa-solid fa-calculator"></i>
-                    </div>
-                    <h3 class="feature-card-title" data-i18n="feature-2-title">Klinik Hesaplayıcılar</h3>
-                    <p class="feature-card-desc" data-i18n="feature-2-desc">
-                        Yetişkin, pediatrik ve obstetrik hastalar için hassas doz hesaplamaları ve anestezi puanlama sistemleri.
-                    </p>
-                    <div class="card-footer-glow"></div>
-                </div>
-
-                <!-- Feature 3: AI Assistant -->
-                <div class="feature-card card-gold">
-                    <div class="feature-icon-wrapper">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="feature-card-title" data-i18n="feature-3-title">AI Klinik Asistan</h3>
-                    <p class="feature-card-desc" data-i18n="feature-3-desc">
-                        Klinik sorularınızı anında yanıtlayan, uluslararası kılavuzlarla eğitilmiş gelişmiş yapay zeka asistanı.
-                    </p>
-                    <div class="card-footer-glow"></div>
-                </div>
-
-                <!-- Feature 4: Literature -->
-                <div class="feature-card card-navy">
-                    <div class="feature-icon-wrapper">
-                        <i class="fa-solid fa-book-open"></i>
-                    </div>
-                    <h3 class="feature-card-title" data-i18n="feature-4-title">Son Literatür</h3>
-                    <p class="feature-card-desc" data-i18n="feature-4-desc">
-                        Anestezi alanındaki en son klinik yayınların, güncel kılavuzların ve bilimsel makalelerin özetleri.
-                    </p>
-                    <div class="card-footer-glow"></div>
-                </div>
-            </div>
+      </div>
+      <div class="gcard airway">
+        <div class="gstage airway">
+          <div class="grid-lines"></div><div class="blob"></div>
+          <div class="ghud"><span data-i18n="game-2-hud">VAKA 7</span><span>00:45</span></div>
+          <span class="gtag" data-i18n="game-2-tag">Bulmaca</span>
+          <i class="gmark fa-solid fa-lungs"></i>
         </div>
-    </section>
-
-    <!-- PREMIUM FEATURE SECTION: Board Prep Hub & Spot Notes -->
-    <section class="premium-hub-section" id="premium-hub">
-        <div class="premium-bg-decor"></div>
-        <div class="container">
-            <div class="section-header">
-                <div class="premium-badge"><i class="fa-solid fa-crown"></i> Premium Feature</div>
-                <h2 class="section-title text-white" data-i18n="premium-title">Board Prep: Sınav Hazırlık Merkezi</h2>
-                <p class="section-subtitle text-white-muted" data-i18n="premium-subtitle">EDAIC (Avrupa Anesteziyoloji Kurulu) ve ABA (Amerikan Anesteziyoloji Kurulu) sınavlarına hazırlıkta en büyük asistanınız. Bilgilerinizi tazeleyin, eksiklerinizi tamamlayın.</p>
-            </div>
-
-            <div class="premium-grid">
-                <!-- Premium Card 1: Board Questions -->
-                <div class="premium-card">
-                    <div class="premium-card-icon-area">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 data-i18n="board-questions-title">Board Soruları & Açıklamalı Çözümler</h3>
-                    <p data-i18n="board-questions-desc">EDAIC Part I, ABA BASIC ve EDAIC Viva sınav standartlarına tam uyumlu, geniş kapsamlı SBA ve MTF soru bankası. Her sorunun altında ayrıntılı, referanslı akademik klinik çözümler.</p>
-                </div>
-
-                <!-- Premium Card 2: Spot Notes -->
-                <div class="premium-card">
-                    <div class="premium-card-icon-area text-gold-accent">
-                        <i class="fa-solid fa-bolt-lightning"></i>
-                    </div>
-                    <h3 data-i18n="spot-notes-title">Spot Bilgiler & Hızlı Tekrar</h3>
-                    <p data-i18n="spot-notes-desc">Sınavlar için özenle derlenmiş, nokta atışı kilit bilgiler. Kapsamlı farmakolojik özet tablolar, havayolu yönetim tipleri, kritik fizyoloji noktaları ve mutlaka bilinmesi gereken 1000+ spot bilgi.</p>
-                </div>
-
-                <!-- Premium Card 3: Strict Simulator -->
-                <div class="premium-card">
-                    <div class="premium-card-icon-area text-teal-accent">
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                    </div>
-                    <h3 data-i18n="exam-simulator-title">Gerçekçi Sınav Simülatörü</h3>
-                    <p data-i18n="exam-simulator-desc">Açıklamaların gizlendiği, katı bir zamanlayıcının çalıştığı ve sınav stresini önceden yönetebilmeniz için tasarlanmış gerçek kurul formatında özel sınav simülatörü.</p>
-                </div>
-
-                <!-- Premium Card 4: Progress Analytics -->
-                <div class="premium-card">
-                    <div class="premium-card-icon-area text-purple-accent">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 data-i18n="analytics-title">Konu Odaklı Gelişim Analizi</h3>
-                    <p data-i18n="analytics-desc">Hatalı çözdüğünüz soruları analiz ederek hangi fizyoloji veya farmakoloji başlığında zayıf olduğunuzu tespit eden ve nokta atışı gelişim gösteren dinamik grafik kartları.</p>
-                </div>
-            </div>
+        <div class="gbody">
+          <h3 data-i18n="game-2-t">Zor Havayolu</h3>
+          <p data-i18n="game-2-d">Zor havayolu senaryolarında doğru adımları sırayla seç. Karar ağacını hızlı ve doğru ilerlet, hastayı güvenle yönet.</p>
+          <div class="gfeat">
+            <span><i class="fa-solid fa-stethoscope"></i> <span data-i18n="game-2-f1">Klinik senaryolar</span></span>
+            <span><i class="fa-solid fa-brain"></i> <span data-i18n="game-2-f2">Karar eğitimi</span></span>
+            <span><i class="fa-solid fa-stopwatch"></i> <span data-i18n="game-2-f3">Süreli</span></span>
+          </div>
+          <a class="btn-play" href="game-build/airway_game.html"><i class="fa-solid fa-play"></i> <span data-i18n="game-play">Oyna</span></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Interactive App Demo / Switcher Section -->
-    <section class="demo-section" id="demo">
-        <div class="container demo-container-inner">
-            <div class="demo-text">
-                <h2 class="section-title text-left" data-i18n="demo-title">Modern ve Hızlı Arayüzü Deneyimleyin</h2>
-                <p class="section-desc" data-i18n="demo-desc">
-                    Anesthesia Briefs, en stresli klinik anlarda bile ihtiyacınız olan bilgiye en fazla iki dokunuşla ulaşmanızı sağlayacak sezgisel bir arayüze sahiptir. Sade kart tasarımı ve kategorize edilmiş menüleriyle dikkatinizi dağıtmaz.
-                </p>
-                
-                <div class="interactive-steps">
-                    <!-- Step 1: Welcome -->
-                    <div class="step-item active" onclick="showDemoScreen('screen-home')">
-                        <div class="step-num">1</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-step1-title">Kişiselleştirilmiş Karşılama</h4>
-                            <p data-i18n="demo-step1-desc">Güne güvenli ve hazırlıklı başlamanız için her sabah güncellenen klinik ipuçları.</p>
-                        </div>
-                    </div>
-                    <!-- Step 2: Algorithms -->
-                    <div class="step-item" onclick="showDemoScreen('screen-algorithms')">
-                        <div class="step-num">2</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-algorithms-title">Acil Algoritmalar</h4>
-                            <p data-i18n="demo-algorithms-desc">Kritik durumlara özel geliştirilmiş interaktif ve adım adım acil durum protokolleri.</p>
-                        </div>
-                    </div>
-                    <!-- Step 3: Calculators -->
-                    <div class="step-item" onclick="showDemoScreen('screen-calc')">
-                        <div class="step-num">3</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-step2-title">Klinik Hesaplayıcılar</h4>
-                            <p data-i18n="demo-step2-desc">Saniyeler içinde hassas dozajları/\ score'ları hesaplayan klinik araçlar.</p>
-                        </div>
-                    </div>
-                    <!-- Step 4: Drugs -->
-                    <div class="step-item" onclick="showDemoScreen('screen-drugs')">
-                        <div class="step-num">4</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-drugs-title">İlaç Kılavuzu & Bilgileri</h4>
-                            <p data-i18n="demo-drugs-desc">Anestezide kullanılan tüm ilaçların endikasyonları, infüzyon dozajları ve kritik uyarıları.</p>
-                        </div>
-                    </div>
-                    <!-- Step 5: Board Prep -->
-                    <div class="step-item" onclick="showDemoScreen('screen-board')">
-                        <div class="step-num">5</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-board-title">Board Sınavı Hazırlık</h4>
-                            <p data-i18n="demo-board-desc">Sınav tiplerine, soru istatistiklerine ve eksiklerinize göre özelleştirilmiş Board Prep paneli.</p>
-                        </div>
-                    </div>
-                    <!-- Step 6: Spot Notes -->
-                    <div class="step-item" onclick="showDemoScreen('screen-spot')">
-                        <div class="step-num">6</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-spot-title">Spot Bilgiler & Özetler</h4>
-                            <p data-i18n="demo-spot-desc">Konulara göre sınıflandırılmış, hızlı tekrarlar yapabileceğiniz interaktif spot bilgi kartları.</p>
-                        </div>
-                    </div>
-                    <!-- Step 7: AI Assistant -->
-                    <div class="step-item" onclick="showDemoScreen('screen-ai')">
-                        <div class="step-num">7</div>
-                        <div class="step-details">
-                            <h4 data-i18n="demo-step3-title">Yapay Zeka Klinik Asistanı</h4>
-                            <p data-i18n="demo-step3-desc">Gelişmiş klinik aramalar yapabileceğiniz ve tıbbi rehberleri sorgulayabileceğiniz yapay zeka.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="demo-visual-wrapper">
-                <div class="phone-frame-showcase">
-                    <img src="assets/screenshots/welcome_tr.jpg" alt="App Screen Demo" class="demo-img" id="interactive-demo-img">
-                </div>
-            </div>
+<section class="block premc" id="premium-content">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="premc-eyebrow">Premium Üyelik</span>
+      <h2 data-i18n="premc-title">Premium'da Neler Var?</h2>
+      <p data-i18n="premc-sub">İki güçlü modül tek üyelikte birleşiyor: ileri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar regional">
+        <div class="pillar-media regional">
+          <div class="grid-lines"></div><div class="blob"></div>
+          <span class="prem-tag"><i class="fa-solid fa-crown"></i> <span data-i18n="premc-tag">Premium</span></span>
+          <i class="pmark fa-solid fa-wave-square"></i>
         </div>
-    </section>
-
-    <!-- Instagram Section with Profile Preview -->
-    <section class="instagram-section" id="instagram">
-        <div class="instagram-glow"></div>
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="insta-title">Instagram'da Bizi Takip Edin</h2>
-                <p class="section-subtitle" data-i18n="insta-subtitle">Her gün paylaşılan yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.</p>
-            </div>
-            
-            <!-- Elfsight Instagram Feed Widget Integration -->
-            <div class="insta-feed-widget-container" style="width: 100%; margin-bottom: 30px;">
-                <script src="https://elfsightcdn.com/platform.js" async></script>
-                <div class="elfsight-app-3d253880-f055-4892-9c89-3b4b8c3e9543" data-elfsight-app-lazy></div>
-            </div>
-            
-            <div class="insta-cta">
-                <a href="https://instagram.com/anesthesiabriefs" class="btn-instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> @anesthesiabriefs <span data-i18n="insta-btn-follow">Takip Et</span>
-                </a>
-            </div>
+        <div class="pillar-body">
+          <h3 data-i18n="premc-r-t">Rejyonel Anestezi Atlası</h3>
+          <p class="pdesc" data-i18n="premc-r-d">Ultrason eşliğinde uygulanan periferik ve nöroaksiyel blokların tam atlası — anatomiden iğne tekniğine kadar tek akışta.</p>
+          <ul class="pluses">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-r-1">USG-rehberli blok atlası & prob konumlandırma</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-r-2">Anatomi & sonoanatomi görselleri yan yana</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-r-3">Adım adım iğne tekniği ve yaklaşım</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-r-4">Lokal anestezik doz, hacim & komplikasyon notları</span></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Download Block -->
-    <section class="download-section" id="download">
-        <div class="container download-inner">
-            <h2 class="download-title" data-i18n="download-title">Güvenli Kararlar Cebinizde</h2>
-            <p class="download-desc" data-i18n="download-desc">Anestezi uygulamalarında hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs'i hemen ücretsiz indirin.</p>
-            
-            <div class="download-badges justify-center">
-                <div class="store-badge-wrapper">
-                    <span class="badge-soon" data-i18n="coming-soon">Çok Yakında</span>
-                    <a href="javascript:void(0)" class="store-btn dark-btn inactive-btn" aria-label="Download on App Store">
-                        <i class="fa-brands fa-apple"></i>
-                        <div class="btn-text">
-                            <span class="btn-subtext">Download on the</span>
-                            <span class="btn-maintext">App Store</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="store-badge-wrapper">
-                    <span class="badge-soon" data-i18n="coming-soon">Çok Yakında</span>
-                    <a href="javascript:void(0)" class="store-btn dark-btn inactive-btn" aria-label="Get it on Google Play">
-                        <i class="fa-brands fa-google-play"></i>
-                        <div class="btn-text">
-                            <span class="btn-subtext">GET IT ON</span>
-                            <span class="btn-maintext">Google Play</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+      </div>
+      <div class="pillar board">
+        <div class="pillar-media board">
+          <div class="grid-lines"></div><div class="blob"></div>
+          <span class="prem-tag"><i class="fa-solid fa-crown"></i> <span data-i18n="premc-tag">Premium</span></span>
+          <i class="pmark fa-solid fa-graduation-cap"></i>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <a href="#" class="logo-area">
-                    <img src="assets/logo.png" alt="Anesthesia Briefs Logo" class="brand-logo">
-                    <span class="brand-text">Anesthesia<span class="accent-text">Briefs</span></span>
-                </a>
-                <p class="footer-moto" data-i18n="footer-moto">Klinik kararlarınızda güvence altındasınız.</p>
-            </div>
-            
-            <div class="footer-links">
-                <h4 data-i18n="footer-links-title">Hızlı Linkler</h4>
-                <a href="#features" data-i18n="nav-features">Özellikler</a>
-                <a href="#premium-hub" data-i18n="nav-board-prep">Board Hazırlık</a>
-                <a href="#demo" data-i18n="nav-preview">Ekran Görüntüleri</a>
-                <a href="https://instagram.com/anesthesiabriefs" target="_blank">Instagram</a>
-            </div>
-
-            <div class="footer-legal">
-                <h4 data-i18n="footer-legal-title">Yasal</h4>
-                <a href="#" data-i18n="footer-privacy">Gizlilik Politikası</a>
-                <a href="#" data-i18n="footer-terms">Kullanım Şartları</a>
-            </div>
+        <div class="pillar-body">
+          <h3 data-i18n="premc-b-t">EDAIC · ABA Board Hazırlık</h3>
+          <p class="pdesc" data-i18n="premc-b-d">Avrupa (EDAIC) ve Amerika (ABA) board standartlarına göre hazırlanmış kapsamlı sınav merkezi — soru çöz, simüle et, eksiğini gör.</p>
+          <ul class="pluses">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-b-1">EDAIC Part I, ABA BASIC & Viva soru bankası</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-b-2">Gerçekçi, zamanlayıcılı sınav simülatörü</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-b-3">1000+ spot bilgi ile hızlı tekrar</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="premc-b-4">Konu odaklı gelişim analizi & zayıf nokta tespiti</span></li>
+          </ul>
         </div>
-        
-        <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
-                <p>&copy; 2026 Anesthesia Briefs. All Rights Reserved. Designed by Antigravity AI.</p>
-                <div class="social-icons">
-                    <a href="https://instagram.com/anesthesiabriefs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="adv-head">
+      <h3 data-i18n="premc-adv-title">Premium Neden Avantajlı?</h3>
+    </div>
+    <div class="advs">
+      <div class="adv"><div class="ai"><i class="fa-solid fa-layer-group"></i></div><h4 data-i18n="premc-a1-t">Tek Üyelik, İki Uzmanlık</h4><p data-i18n="premc-a1-d">Rejyonel ustalık ve board başarısı tek abonelikte — ayrı kaynak aramaya son.</p></div>
+      <div class="adv"><div class="ai"><i class="fa-solid fa-rotate"></i></div><h4 data-i18n="premc-a2-t">Sürekli Güncellenen İçerik</h4><p data-i18n="premc-a2-d">Yeni sorular ve güncel kılavuzlar otomatik gelir; içerik hiç eskimez.</p></div>
+      <div class="adv"><div class="ai"><i class="fa-solid fa-wifi"></i></div><h4 data-i18n="premc-a3-t">Tamamen Çevrimdışı</h4><p data-i18n="premc-a3-d">Ameliyathanede ve sınav öncesi internetsiz tam erişim — her yerde yanınızda.</p></div>
+      <div class="adv"><div class="ai"><i class="fa-solid fa-book-medical"></i></div><h4 data-i18n="premc-a4-t">Kanıta Dayalı</h4><p data-i18n="premc-a4-d">Referanslı açıklamalar ve güncel literatüre dayalı, güvenilir içerik.</p></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Custom JS -->
-    <script src="js/app.js"></script>
+<section class="block premium" id="premium">
+  <div class="container">
+    <div class="sec-head"><span class="pbadge"><i class="fa-solid fa-crown"></i> <span data-i18n="prem-badge">Premium Özellik</span></span>
+      <h2 data-i18n="prem-title">Board Prep: Sınav Hazırlık Merkezi</h2>
+      <p data-i18n="prem-sub">EDAIC ve ABA sınavlarına hazırlıkta en büyük yardımcınız — bilginizi tazeleyin, eksiklerinizi kapatın.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pcard"><div class="picon"><i class="fa-solid fa-graduation-cap"></i></div><h3 data-i18n="prem-1-t">Board Soruları & Çözümler</h3><p data-i18n="prem-1-d">EDAIC Part I, ABA BASIC ve EDAIC Viva standartlarına uygun geniş SBA/MTF bankası, referanslı klinik açıklamalar.</p></div>
+      <div class="pcard"><div class="picon"><i class="fa-solid fa-bolt-lightning"></i></div><h3 data-i18n="prem-2-t">Spot Bilgiler & Hızlı Tekrar</h3><p data-i18n="prem-2-d">Özenle derlenmiş nokta atışı bilgiler — farmakoloji tabloları, havayolu tipleri, kritik fizyoloji ve 1000+ spot bilgi.</p></div>
+      <div class="pcard"><div class="picon teal2"><i class="fa-solid fa-clock-rotate-left"></i></div><h3 data-i18n="prem-3-t">Gerçekçi Sınav Simülatörü</h3><p data-i18n="prem-3-d">Açıklamaların gizlendiği, katı zamanlayıcılı gerçek kurul formatında sınav simülatörü.</p></div>
+      <div class="pcard"><div class="picon purp"><i class="fa-solid fa-chart-line"></i></div><h3 data-i18n="prem-4-t">Konu Odaklı Gelişim Analizi</h3><p data-i18n="prem-4-d">Hatalı cevaplarınızı analiz ederek zayıf fizyoloji/farmakoloji başlıklarınızı tespit eden dinamik grafikler.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block insta" id="instagram">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow" data-i18n="insta-eyebrow">Topluluk</span>
+      <h2 data-i18n="insta-title">Instagram'da Bizi Takip Edin</h2>
+      <p data-i18n="insta-sub">Her gün yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.</p>
+    </div>
+    <div class="insta-feed">
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-3d253880-f055-4892-9c89-3b4b8c3e9543" data-elfsight-app-lazy></div>
+    </div>
+    <div class="insta-cta">
+      <a href="https://instagram.com/anesthesiabriefs" class="btn-instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @anesthesiabriefs <span data-i18n="insta-follow">Takip Et</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block download" id="download">
+  <div class="container">
+    <h2 data-i18n="dl-title">Güvenli Kararlar Cebinizde</h2>
+    <p data-i18n="dl-sub">Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs çok yakında.</p>
+    <div class="stores">
+      <div style="position:relative"><span class="soon" data-i18n="soon">Çok Yakında</span>
+        <a class="store" href="#"><i class="fa-brands fa-apple"></i><span><span class="sub" data-i18n="store-apple-sub">İndir</span><br /><span class="main">App Store</span></span></a></div>
+      <div style="position:relative"><span class="soon" data-i18n="soon">Çok Yakında</span>
+        <a class="store" href="#"><i class="fa-brands fa-google-play"></i><span><span class="sub" data-i18n="store-google-sub">İndir</span><br /><span class="main">Google Play</span></span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <span class="brand">Anesthesia<em>Briefs</em></span>
+        <p class="moto" data-i18n="footer-moto">Klinik kararlarınızda güvence altındasınız.</p>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer-links">Hızlı Linkler</h4>
+        <a href="#features" data-i18n="nav-features">Özellikler</a>
+        <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
+        <a href="#games" data-i18n="nav-games">Oyunlar</a>
+        <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer-legal">Yasal</h4>
+        <a href="privacy.html" data-i18n="footer-privacy">Gizlilik Politikası</a>
+        <a href="terms.html" data-i18n="footer-terms">Kullanım Şartları</a>
+        <a href="https://instagram.com/anesthesiabriefs" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Anesthesia Briefs. <span data-i18n="footer-rights">Tüm hakları saklıdır.</span></p>
+      <div class="social">
+        <a href="https://instagram.com/anesthesiabriefs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yusuf-y%C4%B1lmaz-a08647202/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const I18N = {
+  tr: {
+    "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-download":"Çok Yakında",
+    "pl-sub":"Klinik Kararlarınızda Güvende",
+    "insta-eyebrow":"Topluluk","insta-title":"Instagram'da Bizi Takip Edin","insta-sub":"Her gün yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.","insta-follow":"Takip Et",
+    "intro-eyebrow":"Anestezi Profesyonelleri İçin","intro-tag":"Klinik kararlarınızda güç ve güven — ameliyathanede, tek dokunuşla.","intro-scroll":"Keşfet",
+    "hero-badge":"Anestezi Profesyonelleri İçin","hero-title-1":"Klinik Kararlarınızda","hero-title-2":"Güvence Altındasınız",
+    "hero-lead":"Acil algoritmalara, gelişmiş ilaç doz hesaplayıcılarına, literatür özetlerine ve yapay zekâ destekli klinik asistana tek bir çevrimdışı, iki dilli uygulamadan anında erişin.",
+    "soon":"Çok Yakında","store-apple-sub":"İndir","store-google-sub":"İndir",
+    "trust-spot":"Spot bilgi","trust-exam":"Sınav hazırlığı","trust-lang":"İki dilli içerik","trust-offline":"Çevrimdışı çalışır",
+    "band-1-t":"Acil Algoritmalar","band-1-d":"Kriz yönetim ağaçları","band-2-t":"Klinik Hesaplayıcılar","band-2-d":"Doz & skorlar","band-3-t":"İlaç Monografları","band-3-d":"Endikasyon & doz","band-4-t":"Bölgesel Atlas","band-4-d":"US-rehberli bloklar","band-5-t":"Board Prep","band-5-d":"EDAIC · ABA","band-6-t":"1000+ Spot Bilgi","band-6-d":"Hızlı tekrar",
+    "demo-s7-t":"Spot Bilgiler","demo-s7-d":"1000+ nokta atışı bilgiyle sınav öncesi hızlı tekrar.",
+    "feat-eyebrow":"Uygulama","feat-title":"Uygulama Özellikleri","feat-sub":"Klinik güvenliği ve doğruluğu en üst düzeye çıkarmak için tasarlanmış dört ana sütun.",
+    "feat-1-t":"Acil Algoritmalar","feat-1-d":"Hayatı tehdit eden anestezi krizlerine hızlı erişim. Her saniyenin önemli olduğu anlarda adım adım rehberlik.",
+    "feat-2-t":"Klinik Hesaplayıcılar","feat-2-d":"Yetişkin, pediatrik ve obstetrik hastalar için hassas doz hesaplamaları ve skorlama sistemleri.",
+    "feat-3-t":"AI Klinik Asistan","feat-3-d":"Uluslararası kılavuzlarla eğitilmiş, klinik sorularınızı anında yanıtlayan gelişmiş yapay zekâ asistanı.",
+    "feat-4-t":"Son Literatür","feat-4-d":"Anestezideki en son klinik yayınların, güncel kılavuzların ve bilimsel makalelerin özetleri.",
+    "demo-eyebrow":"Canlı Demo","demo-title":"Uygulamayı Şimdi Deneyin","demo-lead":"Bu gerçek, çalışan bir önizleme. Sağdaki telefona dokunun — alt menüde gezinin, hesaplayıcıda kiloyu kaydırın, algoritmaları ve blokları açın.",
+    "demo-live":"Canlı · dokunarak gezin",
+    "demo-s1-t":"Kişiselleştirilmiş Karşılama","demo-s1-d":"Her gün güncellenen klinik ipuçları ve hızlı erişim kartları.",
+    "demo-s2-t":"Klinik Hesaplayıcılar","demo-s2-d":"Kilo kaydırıcısını oynatın; mg ve mL dozları anında güncellensin.",
+    "demo-s3-t":"Acil Algoritmalar","demo-s3-d":"Bir krize dokunun; adım adım protokolü görün.",
+    "demo-s4-t":"İlaç Kılavuzu","demo-s4-d":"Kategoriye göre renk-kodlu ilaç monografları.",
+    "demo-s5-t":"Bölgesel Anestezi Atlası","demo-s5-d":"USG eşliğinde blok atlası — anatomi & sonoanatomi.",
+    "demo-note":"Bu yalnızca kısa bir önizlemedir. Gerçek uygulamada çok daha geniş bir içerik sizi bekliyor — yüzlerce algoritma ve ilaç monografı, kapsamlı hesaplayıcılar, bölgesel anestezi atlası, 1000+ spot bilgi ve sürekli güncellenen literatür.",
+    "demo-tap":"Sonraki ekran için dokun",
+    "games-eyebrow":"Mola Verin","games-title":"İnteraktif Mini-Oyunlar","games-sub":"Tarayıcıdan oynanan, anesteziye özgü iki mini-oyunla stres atın ve refleksinizi tazeleyin.",
+    "game-1-t":"Laringoskop Fırlat!","game-1-d":"Cerraha laringoskop fırlatıp vakayla ilgili komik isteklerine cevap ver. Açıyı, yönü ve gücü ayarla, laminer akışa karşı nişan al.",
+    "game-1-f1":"2D / 3D mod","game-1-f2":"Liderlik tablosu","game-1-f3":"Seviyeler","game-play":"Oyna",
+    "game-2-t":"Zor Havayolu","game-2-d":"Zor havayolu senaryolarında doğru adımları sırayla seç. Karar ağacını hızlı ve doğru ilerlet, hastayı güvenle yönet.",
+    "game-2-hud":"VAKA 7","game-2-tag":"Bulmaca","game-2-f1":"Klinik senaryolar","game-2-f2":"Karar eğitimi","game-2-f3":"Süreli",
+    "prem-badge":"Premium Özellik","prem-title":"Board Prep: Sınav Hazırlık Merkezi","prem-sub":"EDAIC ve ABA sınavlarına hazırlıkta en büyük yardımcınız — bilginizi tazeleyin, eksiklerinizi kapatın.",
+    "prem-1-t":"Board Soruları & Çözümler","prem-1-d":"EDAIC Part I, ABA BASIC ve EDAIC Viva standartlarına uygun geniş SBA/MTF bankası, referanslı klinik açıklamalar.",
+    "prem-2-t":"Spot Bilgiler & Hızlı Tekrar","prem-2-d":"Özenle derlenmiş nokta atışı bilgiler — farmakoloji tabloları, havayolu tipleri, kritik fizyoloji ve 1000+ spot bilgi.",
+    "prem-3-t":"Gerçekçi Sınav Simülatörü","prem-3-d":"Açıklamaların gizlendiği, katı zamanlayıcılı gerçek kurul formatında sınav simülatörü.",
+    "prem-4-t":"Konu Odaklı Gelişim Analizi","prem-4-d":"Hatalı cevaplarınızı analiz ederek zayıf fizyoloji/farmakoloji başlıklarınızı tespit eden dinamik grafikler.",
+    "premc-eyebrow":"Premium Üyelik","premc-title":"Premium'da Neler Var?","premc-sub":"İki güçlü modül tek üyelikte birleşiyor: ileri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi.","premc-tag":"Premium",
+    "premc-r-t":"Rejyonel Anestezi Atlası","premc-r-d":"Ultrason eşliğinde uygulanan periferik ve nöroaksiyel blokların tam atlası — anatomiden iğne tekniğine kadar tek akışta.","premc-r-1":"USG-rehberli blok atlası & prob konumlandırma","premc-r-2":"Anatomi & sonoanatomi görselleri yan yana","premc-r-3":"Adım adım iğne tekniği ve yaklaşım","premc-r-4":"Lokal anestezik doz, hacim & komplikasyon notları",
+    "premc-b-t":"EDAIC · ABA Board Hazırlık","premc-b-d":"Avrupa (EDAIC) ve Amerika (ABA) board standartlarına göre hazırlanmış kapsamlı sınav merkezi — soru çöz, simüle et, eksiğini gör.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva soru bankası","premc-b-2":"Gerçekçi, zamanlayıcılı sınav simülatörü","premc-b-3":"1000+ spot bilgi ile hızlı tekrar","premc-b-4":"Konu odaklı gelişim analizi & zayıf nokta tespiti",
+    "premc-adv-title":"Premium Neden Avantajlı?","premc-a1-t":"Tek Üyelik, İki Uzmanlık","premc-a1-d":"Rejyonel ustalık ve board başarısı tek abonelikte — ayrı kaynak aramaya son.","premc-a2-t":"Sürekli Güncellenen İçerik","premc-a2-d":"Yeni sorular ve güncel kılavuzlar otomatik gelir; içerik hiç eskimez.","premc-a3-t":"Tamamen Çevrimdışı","premc-a3-d":"Ameliyathanede ve sınav öncesi internetsiz tam erişim — her yerde yanınızda.","premc-a4-t":"Kanıta Dayalı","premc-a4-d":"Referanslı açıklamalar ve güncel literatüre dayalı, güvenilir içerik.",
+    "dl-title":"Güvenli Kararlar Cebinizde","dl-sub":"Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs çok yakında.",
+    "footer-moto":"Klinik kararlarınızda güvence altındasınız.","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
+  },
+  en: {
+    "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-download":"Coming Soon",
+    "pl-sub":"Confidence in Every Clinical Decision",
+    "insta-eyebrow":"Community","insta-title":"Follow Us on Instagram","insta-sub":"Refresh your knowledge with new case presentations, anesthesia tips and educational content shared every day.","insta-follow":"Follow",
+    "intro-eyebrow":"For Anesthesia Professionals","intro-tag":"Power and confidence in your clinical decisions — one tap away in the OR.","intro-scroll":"Explore",
+    "hero-badge":"For Anesthesia Professionals","hero-title-1":"You're Safe in Your","hero-title-2":"Clinical Decisions",
+    "hero-lead":"Instant access to emergency algorithms, advanced drug-dose calculators, literature synopses and an AI clinical assistant — all in one offline-first, bilingual app.",
+    "soon":"Coming Soon","store-apple-sub":"Download on the","store-google-sub":"Get it on",
+    "trust-spot":"Spot notes","trust-exam":"Exam prep","trust-lang":"Bilingual content","trust-offline":"Works offline",
+    "band-1-t":"Emergency Algorithms","band-1-d":"Crisis decision trees","band-2-t":"Clinical Calculators","band-2-d":"Doses & scores","band-3-t":"Drug Monographs","band-3-d":"Indications & dosing","band-4-t":"Regional Atlas","band-4-d":"US-guided blocks","band-5-t":"Board Prep","band-5-d":"EDAIC · ABA","band-6-t":"1000+ Spot Notes","band-6-d":"Rapid review",
+    "demo-s7-t":"Spot Notes","demo-s7-d":"Rapid pre-exam review with 1000+ pinpoint facts.",
+    "feat-eyebrow":"The App","feat-title":"App Features","feat-sub":"Four pillars built to maximise clinical safety and accuracy.",
+    "feat-1-t":"Emergency Algorithms","feat-1-d":"Rapid access to life-threatening anesthesia crises. Step-by-step guidance when every second counts.",
+    "feat-2-t":"Clinical Calculators","feat-2-d":"Precise dose calculations and scoring systems for adult, pediatric and obstetric patients.",
+    "feat-3-t":"AI Clinical Assistant","feat-3-d":"An advanced assistant trained on international guidelines, answering clinical questions instantly.",
+    "feat-4-t":"Latest Literature","feat-4-d":"Synopses of the latest clinical publications, current guidelines and scientific papers in anesthesia.",
+    "demo-eyebrow":"Live Demo","demo-title":"Try the App Right Now","demo-lead":"This is a real, working preview. Tap the phone on the right — use the bottom nav, drag the weight slider in the calculator, open algorithms and blocks.",
+    "demo-live":"Live · tap to explore",
+    "demo-s1-t":"Personalized Welcome","demo-s1-d":"Daily clinical pearls and quick-access cards.",
+    "demo-s2-t":"Clinical Calculators","demo-s2-d":"Drag the weight slider; mg and mL doses update instantly.",
+    "demo-s3-t":"Emergency Algorithms","demo-s3-d":"Tap a crisis to see the step-by-step protocol.",
+    "demo-s4-t":"Drug Guide","demo-s4-d":"Category color-coded drug monographs.",
+    "demo-s5-t":"Regional Anesthesia Atlas","demo-s5-d":"US-guided block atlas — anatomy & sonoanatomy.",
+    "demo-s6-t":"Board Exam Prep","demo-s6-d":"A Board Prep panel tailored to your exam type and weak spots.",
+    "demo-note":"This is just a short preview. The real app holds far more — hundreds of algorithms and drug monographs, comprehensive calculators, a regional anesthesia atlas, 1000+ spot notes and continuously updated literature.",
+    "demo-tap":"Tap for the next screen",
+    "games-eyebrow":"Take a Break","games-title":"Interactive Mini-Games","games-sub":"Blow off steam and sharpen your reflexes with two anesthesia-themed mini-games, right in your browser.",
+    "game-1-t":"Toss the Laryngoscope!","game-1-d":"Throw a laryngoscope at the surgeon and answer their funny case requests. Set the angle, direction and power, and aim against the laminar flow.",
+    "game-1-f1":"2D / 3D mode","game-1-f2":"Leaderboard","game-1-f3":"Levels","game-play":"Play",
+    "game-2-t":"Difficult Airway","game-2-d":"Pick the correct steps in order through difficult-airway scenarios. Move down the decision tree fast and accurately to keep the patient safe.",
+    "game-2-hud":"CASE 7","game-2-tag":"Puzzle","game-2-f1":"Clinical scenarios","game-2-f2":"Decision training","game-2-f3":"Timed",
+    "prem-badge":"Premium Feature","prem-title":"Board Prep: Exam Preparation Hub","prem-sub":"Your biggest ally for the EDAIC and ABA exams — refresh your knowledge and close your gaps.",
+    "prem-1-t":"Board Questions & Answers","prem-1-d":"Extensive SBA/MTF banks aligned with EDAIC Part I, ABA BASIC and EDAIC Viva standards, with referenced explanations.",
+    "prem-2-t":"Spot Notes & Rapid Review","prem-2-d":"Carefully curated pinpoint facts — pharmacology tables, airway types, critical physiology and 1000+ spot notes.",
+    "prem-3-t":"Realistic Exam Simulator","prem-3-d":"A true board-format simulator with hidden explanations and a strict timer.",
+    "prem-4-t":"Topic-Focused Analytics","prem-4-d":"Dynamic charts that analyse your incorrect answers to pinpoint weak physiology or pharmacology topics.",
+    "premc-eyebrow":"Premium Membership","premc-title":"What's Inside Premium?","premc-sub":"Two powerful modules in a single membership: an advanced regional anesthesia atlas and an EDAIC · ABA board prep hub.","premc-tag":"Premium",
+    "premc-r-t":"Regional Anesthesia Atlas","premc-r-d":"A full atlas of ultrasound-guided peripheral and neuraxial blocks — from anatomy to needle technique in one flow.","premc-r-1":"US-guided block atlas & probe positioning","premc-r-2":"Anatomy & sonoanatomy side by side","premc-r-3":"Step-by-step needle technique and approach","premc-r-4":"Local anesthetic dose, volume & complication notes",
+    "premc-b-t":"EDAIC · ABA Board Prep","premc-b-d":"A comprehensive exam hub built to European (EDAIC) and American (ABA) board standards — practice, simulate, find your gaps.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva question bank","premc-b-2":"Realistic, timed exam simulator","premc-b-3":"Rapid review with 1000+ spot notes","premc-b-4":"Topic-focused analytics & weak-spot detection",
+    "premc-adv-title":"Why Premium Is Worth It","premc-a1-t":"One Membership, Two Specialties","premc-a1-d":"Regional mastery and board success in a single subscription — no more chasing separate resources.","premc-a2-t":"Continuously Updated","premc-a2-d":"New questions and current guidelines arrive automatically; content never goes stale.","premc-a3-t":"Fully Offline","premc-a3-d":"Full access in the OR and before the exam without internet — with you everywhere.","premc-a4-t":"Evidence-Based","premc-a4-d":"Referenced explanations grounded in current literature you can trust.",
+    "dl-title":"Safe Decisions in Your Pocket","dl-sub":"Anesthesia Briefs — built to improve speed, safety and scientific rigor in anesthesia practice — is coming soon.",
+    "footer-moto":"You're safe in your clinical decisions.","footer-links":"Quick Links","footer-legal":"Legal","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-rights":"All rights reserved."
+  }
+};
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  const dict = I18N[lang];
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const k = el.getAttribute("data-i18n");
+    if (dict[k] != null) el.textContent = dict[k];
+  });
+  document.getElementById("lang-tr").classList.toggle("on", lang === "tr");
+  document.getElementById("lang-en").classList.toggle("on", lang === "en");
+  // hero phones are live app previews — follow language; front=home, back=algorithms
+  const _heroLang = lang === "tr" ? "tr" : "en";
+  const fa = document.getElementById("hero-frame-a"), fb = document.getElementById("hero-frame-b");
+  const aSrc = "mobile_app/index.html?bare=1&screen=home&lang=" + _heroLang;
+  const bSrc = "mobile_app/index.html?bare=1&screen=algorithms&lang=" + _heroLang;
+  if (fa && fa.getAttribute("data-src") !== aSrc) { fa.setAttribute("data-src", aSrc); fa.src = aSrc; fa.addEventListener("load", () => sizeHeroFrame(fa), { once: true }); }
+  if (fb && fb.getAttribute("data-src") !== bSrc) { fb.setAttribute("data-src", bSrc); fb.src = bSrc; fb.addEventListener("load", () => sizeHeroFrame(fb), { once: true }); }
+  try { localStorage.setItem("ab_lang", lang); } catch(e) {}
+}
+
+// Geo / locale based default: Turkey → TR, elsewhere → EN. Manual choice persists.
+function detectLang() {
+  try { const saved = localStorage.getItem("ab_lang"); if (saved) return saved; } catch(e) {}
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul") return "tr";
+  } catch(e) {}
+  const langs = (navigator.languages || [navigator.language || "en"]).join(",").toLowerCase();
+  if (langs.includes("tr")) return "tr";
+  return "en";
+}
+
+// Interactive demo — steps drive the live app iframe via postMessage
+function navDemo(step) {
+  if (!step) return;
+  document.querySelectorAll(".step").forEach(s => s.classList.remove("on"));
+  step.classList.add("on");
+  let msg = {};
+  try { msg = JSON.parse(step.getAttribute("data-nav") || "{}"); } catch (e) {}
+  const frame = document.getElementById("demo-frame");
+  if (frame && frame.contentWindow) {
+    frame.contentWindow.postMessage(Object.assign({ type: "ab-demo-nav", tab: null, detail: null }, msg), "*");
+  }
+}
+document.getElementById("steps").addEventListener("click", (e) => {
+  navDemo(e.target.closest(".step"));
+});
+
+// Scale a hero iframe (logical 390px wide app) to exactly fill its phone screen.
+function sizeHeroFrame(frame) {
+  const screen = frame.parentElement;
+  const w = screen.clientWidth, h = screen.clientHeight;
+  if (!w || !h) return;
+  const scale = w / 390;
+  frame.style.transform = "scale(" + scale + ")";
+  frame.style.height = (h / scale) + "px";
+}
+// Observe each phone screen so we size the iframe whenever it gains/changes dimensions
+// (e.g. when the .phones block switches from display:none to visible at wider viewports).
+["hero-frame-a", "hero-frame-b"].forEach((id) => {
+  const f = document.getElementById(id);
+  if (!f) return;
+  const ro = new ResizeObserver(() => sizeHeroFrame(f));
+  ro.observe(f.parentElement);
+});
+
+// Header turns transparent while it floats over the video intro, solid once you scroll past it
+(function () {
+  const header = document.querySelector("header");
+  const intro = document.getElementById("intro");
+  if (!header || !intro) return;
+  function update() {
+    const threshold = intro.offsetHeight - header.offsetHeight - 12;
+    header.classList.toggle("over-intro", window.scrollY < threshold);
+  }
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+})();
+
+// Reliable video playback: this host doesn't support HTTP range requests, which can
+// stall <video> streaming, so fetch the clip fully and play it from a blob URL.
+(function () {
+  const v = document.querySelector(".intro-video");
+  const source = v && v.querySelector("source");
+  if (!v || !source) return;
+  fetch(source.src)
+    .then((r) => (r.ok ? r.blob() : Promise.reject()))
+    .then((blob) => {
+      source.remove();
+      v.src = URL.createObjectURL(blob);
+      v.load();
+      const tryPlay = () => v.play().catch(() => {});
+      v.addEventListener("canplay", tryPlay, { once: true });
+      tryPlay();
+    })
+    .catch(() => {/* poster image stays as fallback */});
+})();
+
+setLang(detectLang());
+</script>
+
+<script>
+/* ---------- Realistic 3D Laryngoscope Preloader ---------- */
+(function () {
+  const pre = document.getElementById("preloader");
+  const barFill = document.getElementById("pl-bar-fill");
+  const canvas = document.getElementById("larynx-canvas");
+  if (!pre) return;
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let dismissed = false;
+  function dismiss() {
+    if (dismissed) return;
+    dismissed = true;
+    pre.classList.add("done");
+    setTimeout(() => { pre.style.display = "none"; }, 850);
+  }
+
+  // Progress bar: ease to ~90% then complete on window load
+  let prog = 0;
+  const barTimer = setInterval(() => {
+    prog = Math.min(90, prog + (90 - prog) * 0.06 + 0.6);
+    barFill.style.width = prog.toFixed(1) + "%";
+  }, 90);
+  function finishBar() {
+    clearInterval(barTimer);
+    barFill.style.width = "100%";
+    setTimeout(dismiss, 520);
+  }
+
+  const started = Date.now();
+  const keepOpen = /[?&]preloader=keep/.test(location.search);
+  function onReady() {
+    if (keepOpen) return;
+    const wait = Math.max(0, 1700 - (Date.now() - started));
+    setTimeout(finishBar, wait);
+  }
+  if (document.readyState === "complete") onReady();
+  else window.addEventListener("load", onReady);
+  // Safety: never trap the user
+  if (!keepOpen) setTimeout(dismiss, 6000);
+
+  if (reduce || typeof THREE === "undefined" || !canvas) {
+    if (canvas) canvas.style.display = "none";
+    return;
+  }
+
+  // ---- Three.js scene ----
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
+  camera.position.set(0, 0.1, 6.8);
+  camera.lookAt(0, 0, 0);
+
+  function resize() {
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+
+  // ---- Studio environment for realistic metal reflections ----
+  const envCanvas = document.createElement("canvas");
+  envCanvas.width = 512; envCanvas.height = 256;
+  const ectx = envCanvas.getContext("2d");
+  const grad = ectx.createLinearGradient(0, 0, 0, 256);
+  grad.addColorStop(0.00, "#dfe7f2");
+  grad.addColorStop(0.42, "#9fb0c8");
+  grad.addColorStop(0.55, "#4a5a72");
+  grad.addColorStop(1.00, "#0b1726");
+  ectx.fillStyle = grad; ectx.fillRect(0, 0, 512, 256);
+  // soft key highlight + warm rim
+  const hi = ectx.createRadialGradient(150, 70, 8, 150, 70, 150);
+  hi.addColorStop(0, "rgba(255,255,255,0.95)"); hi.addColorStop(1, "rgba(255,255,255,0)");
+  ectx.fillStyle = hi; ectx.fillRect(0, 0, 512, 256);
+  const warm = ectx.createRadialGradient(390, 120, 6, 390, 120, 130);
+  warm.addColorStop(0, "rgba(230,201,138,0.8)"); warm.addColorStop(1, "rgba(230,201,138,0)");
+  ectx.fillStyle = warm; ectx.fillRect(0, 0, 512, 256);
+  const envTex = new THREE.CanvasTexture(envCanvas);
+  envTex.mapping = THREE.EquirectangularReflectionMapping;
+  envTex.colorSpace = THREE.SRGBColorSpace;
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromEquirectangular(envTex).texture;
+  envTex.dispose(); pmrem.dispose();
+
+  // ---- Lights ----
+  scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+  const key = new THREE.DirectionalLight(0xffffff, 2.0); key.position.set(3, 4, 5); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xc2a267, 1.4); rim.position.set(-4, 1, -3); scene.add(rim);
+  const fill = new THREE.DirectionalLight(0x9fb0c8, 0.7); fill.position.set(-2, -3, 4); scene.add(fill);
+
+  // ---- Materials ----
+  const steel = new THREE.MeshStandardMaterial({ color: 0xd7dde6, metalness: 1.0, roughness: 0.22 });
+  const steelDark = new THREE.MeshStandardMaterial({ color: 0x8b97a6, metalness: 1.0, roughness: 0.34 });
+  const blackGrip = new THREE.MeshStandardMaterial({ color: 0x1b2330, metalness: 0.6, roughness: 0.5 });
+  const glassLens = new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xfff4cf, emissiveIntensity: 2.4, metalness: 0, roughness: 0.15 });
+  const fiberMat = new THREE.MeshStandardMaterial({ color: 0xffe9a8, emissive: 0xf0c24a, emissiveIntensity: 1.0, metalness: 0.3, roughness: 0.4 });
+
+  const scope = new THREE.Group();
+
+  // Handle (vertical, ribbed grip)
+  const handle = new THREE.Mesh(new THREE.CylinderGeometry(0.30, 0.30, 2.0, 48), steel);
+  handle.position.y = -0.55; scope.add(handle);
+  // Knurled grip rings
+  for (let i = 0; i < 11; i++) {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(0.305, 0.022, 8, 40), blackGrip);
+    ring.rotation.x = Math.PI / 2;
+    ring.position.y = -1.25 + i * 0.13;
+    scope.add(ring);
+  }
+  // Top accent ring & bottom battery cap
+  const collar = new THREE.Mesh(new THREE.CylinderGeometry(0.33, 0.33, 0.12, 48), steelDark);
+  collar.position.y = 0.5; scope.add(collar);
+  const cap = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.30, 0.24, 48), steelDark);
+  cap.position.y = -1.66; scope.add(cap);
+  const capTip = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.1, 32), blackGrip);
+  capTip.position.y = -1.82; scope.add(capTip);
+
+  // Hinge / connection block between handle and blade
+  const hinge = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.42, 0.5), steelDark);
+  hinge.position.set(0, 0.74, 0); scope.add(hinge);
+  const pivot = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.62, 24), steel);
+  pivot.rotation.z = Math.PI / 2; pivot.position.set(0, 0.74, 0); scope.add(pivot);
+
+  // ---- Macintosh curved blade ----
+  const blade = new THREE.Group();
+  blade.position.set(0, 0.95, 0);
+
+  // Curved spine path of the blade
+  const curve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(0, 0, 0),
+    new THREE.Vector3(0.55, 0.05, 0),
+    new THREE.Vector3(1.15, -0.02, 0),
+    new THREE.Vector3(1.78, -0.28, 0),
+    new THREE.Vector3(2.18, -0.78, 0),
+  ]);
+  // Tongue plate (flat base of the blade) built by sweeping a thin box along samples
+  const pts = curve.getPoints(60);
+  for (let i = 0; i < pts.length - 1; i++) {
+    const a = pts[i], b = pts[i + 1];
+    const seg = new THREE.Vector3().subVectors(b, a);
+    const len = seg.length();
+    const plate = new THREE.Mesh(new THREE.BoxGeometry(len * 1.06, 0.05, 0.62), steel);
+    plate.position.copy(a).add(b).multiplyScalar(0.5);
+    plate.rotation.z = Math.atan2(seg.y, seg.x);
+    blade.add(plate);
+    // Vertical guide flange along one edge
+    const flange = new THREE.Mesh(new THREE.BoxGeometry(len * 1.06, 0.34, 0.05), steel);
+    flange.position.copy(plate.position);
+    flange.position.z = 0.30;
+    flange.position.y += 0.15;
+    flange.rotation.z = plate.rotation.z;
+    blade.add(flange);
+  }
+  // Fiber-optic light tube running along the flange
+  const tube = new THREE.Mesh(new THREE.TubeGeometry(curve, 60, 0.035, 10, false), fiberMat);
+  tube.position.set(0, 0.16, 0.28);
+  blade.add(tube);
+  // Glowing LED at the tip
+  const tip = curve.getPoint(1);
+  const led = new THREE.Mesh(new THREE.SphereGeometry(0.085, 24, 24), glassLens);
+  led.position.copy(tip); led.position.z = 0.28; led.position.y += 0.16;
+  blade.add(led);
+  const ledLight = new THREE.PointLight(0xffe6a0, 6, 4, 2);
+  ledLight.position.copy(led.position);
+  blade.add(ledLight);
+
+  scope.add(blade);
+
+  // Shift the model so the blade's horizontal midpoint sits ON the spin axis,
+  // then rotate the OUTER group — so the instrument spins about its own centre
+  // and never swings outside the frame.
+  scope.position.x = -1.09;
+  const spinner = new THREE.Group();
+  spinner.add(scope);
+  spinner.rotation.z = 0.30;
+  spinner.position.set(0, 0.12, 0);
+  spinner.scale.setScalar(0.66);
+  scene.add(spinner);
+
+  resize();
+  window.addEventListener("resize", resize);
+
+  let t = 0;
+  function animate() {
+    if (dismissed) { renderer.dispose && renderer.dispose(); return; }
+    requestAnimationFrame(animate);
+    t += 0.016;
+    spinner.rotation.y += 0.03;
+    spinner.position.y = 0.12 + Math.sin(t * 1.1) * 0.07;
+    ledLight.intensity = 5 + Math.sin(t * 5) * 1.6;
+    glassLens.emissiveIntensity = 2.2 + Math.sin(t * 5) * 0.7;
+    renderer.render(scene, camera);
+  }
+  animate();
+})();
+</script>
 </body>
 </html>

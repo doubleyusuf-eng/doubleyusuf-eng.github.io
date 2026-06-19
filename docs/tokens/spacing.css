@@ -1,0 +1,55 @@
+/* ============================================================
+   Anesthesia Briefs — Spacing, radius, shadow, motion tokens
+   Source: app_theme.dart (radii 8–32, premium card shadows,
+   SubtlePageRoute easing) + docs/css/style.css
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (px) — app uses 4/8/12/16/20/24 rhythm ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* ---- Corner radii ---- */
+  --radius-sm:  8px;    /* chips, small buttons, inner pills */
+  --radius-md:  12px;   /* inputs, note boxes, list rows */
+  --radius-lg:  16px;   /* cards, banners (marketing md) */
+  --radius-xl:  20px;   /* premium 3D cards (app default) */
+  --radius-2xl: 24px;   /* marketing feature cards */
+  --radius-block: 32px; /* navy header block bottom corners */
+  --radius-pill: 100px; /* search bar, badges, lang switch */
+
+  /* ---- Borders ---- */
+  --border-w:      1px;
+  --border-w-card: 1.2px;   /* premium card outline */
+  --border-accent: 4px;     /* left accent strip on note boxes */
+  --border-accent-lg: 5.5px;/* left accent on quick-access cards */
+
+  /* ---- Shadows ----
+     Premium 3D card = ambient soft drop + faint directional accent.
+     Light mode values from PremiumTheme.premiumCardDecoration. */
+  --shadow-card:
+      0 8px 16px -2px rgba(0, 0, 0, 0.06),
+      0 3px 6px rgba(27, 54, 93, 0.04);
+  --shadow-card-press:
+      0 2px 4px rgba(0, 0, 0, 0.03);
+  --shadow-soft:  0 10px 30px rgba(27, 54, 93, 0.04);   /* marketing default */
+  --shadow-hover: 0 20px 40px rgba(27, 54, 93, 0.08);   /* marketing hover */
+  --shadow-header: 0 4px 16px rgba(0, 0, 0, 0.08);      /* navy block */
+  --shadow-nav: 0 -3px 12px rgba(0, 0, 0, 0.06);        /* bottom nav */
+
+  /* ---- Motion ----
+     SubtlePageRoute: 220ms easeOutCubic slide+fade.
+     Card press: 100ms scale to 0.98. Marketing: 0.4s expo-out. */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-cubic:  cubic-bezier(0.215, 0.61, 0.355, 1); /* @kind other */
+  --dur-press:   100ms; /* @kind other */
+  --dur-page:    220ms; /* @kind other */
+  --dur-smooth:  400ms; /* @kind other */
+  --press-scale: 0.98;  /* @kind other */
+}
