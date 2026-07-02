@@ -285,8 +285,6 @@
   <div class="lf-links">
     <a href="privacy.html" data-i18n-priv>Gizlilik Politikası</a>
     <a href="terms.html" data-i18n-terms>Kullanım Şartları</a>
-    <a href="app-privacy.html" data-i18n-app-priv>Uygulama Gizlilik Politikası</a>
-    <a href="app-terms.html" data-i18n-app-terms>Uygulama Kullanım Şartları</a>
     <a href="index.html" data-i18n-home>Ana Sayfa</a>
   </div>
   <p>© 2026 Anesthesia Briefs. <span data-i18n-rights>Tüm hakları saklıdır.</span></p>
@@ -301,13 +299,11 @@ function setLegalLang(lang) {
   if (tr) tr.classList.toggle("on", lang === "tr");
   if (en) en.classList.toggle("on", lang === "en");
   // Chrome-friendly small bits
-  var t = { tr: { back: "Ana Sayfa", priv: "Gizlilik Politikası", terms: "Kullanım Şartları", appPriv: "Uygulama Gizlilik Politikası", appTerms: "Uygulama Kullanım Şartları", home: "Ana Sayfa", rights: "Tüm hakları saklıdır.", title: "Gizlilik Politikası — Anesthesia Briefs" },
-            en: { back: "Home", priv: "Privacy Policy", terms: "Terms of Use", appPriv: "App Privacy Policy", appTerms: "App Terms of Use", home: "Home", rights: "All rights reserved.", title: "Privacy Policy — Anesthesia Briefs" } }[lang];
+  var t = { tr: { back: "Ana Sayfa", priv: "Gizlilik Politikası", terms: "Kullanım Şartları", home: "Ana Sayfa", rights: "Tüm hakları saklıdır.", title: "Gizlilik Politikası — Anesthesia Briefs" },
+            en: { back: "Home", priv: "Privacy Policy", terms: "Terms of Use", home: "Home", rights: "All rights reserved.", title: "Privacy Policy — Anesthesia Briefs" } }[lang];
   document.querySelectorAll("[data-i18n-back]").forEach((e) => (e.textContent = t.back));
   document.querySelectorAll("[data-i18n-priv]").forEach((e) => (e.textContent = t.priv));
   document.querySelectorAll("[data-i18n-terms]").forEach((e) => (e.textContent = t.terms));
-  document.querySelectorAll("[data-i18n-app-priv]").forEach((e) => (e.textContent = t.appPriv));
-  document.querySelectorAll("[data-i18n-app-terms]").forEach((e) => (e.textContent = t.appTerms));
   document.querySelectorAll("[data-i18n-home]").forEach((e) => (e.textContent = t.home));
   document.querySelectorAll("[data-i18n-rights]").forEach((e) => (e.textContent = t.rights));
   document.title = t.title;
