@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Listeye Eklendiniz — Anesthesia Briefs</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 32px 20px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at 50% 38%, #16335c 0%, #0d1e36 46%, #081427 100%);
+    color: #fff;
+  }
+  .brand { font-family: "Outfit", "Inter", sans-serif; font-weight: 800; font-size: 22px; margin-bottom: 38px; letter-spacing: -0.5px; }
+  .brand em { color: #C2A267; font-weight: 400; font-style: italic; }
+  .mark { width: 108px; height: 108px; }
+  .mark circle { fill: none; stroke: rgba(194,162,103,0.35); stroke-width: 3; }
+  .mark .ring { stroke: #C2A267; stroke-dasharray: 302; stroke-dashoffset: 302; stroke-linecap: round; animation: draw 0.9s cubic-bezier(0.22,0.61,0.36,1) 0.15s forwards; }
+  .mark .tick { fill: none; stroke: #C2A267; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 60; stroke-dashoffset: 60; animation: draw 0.5s cubic-bezier(0.22,0.61,0.36,1) 0.85s forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .rule { width: 64px; height: 2px; margin: 30px auto 26px; background: linear-gradient(90deg, transparent, #C2A267, transparent); }
+  h1 { font-family: "Outfit", "Inter", sans-serif; font-size: clamp(24px, 4vw, 34px); font-weight: 800; letter-spacing: -0.5px; margin-top: 26px; }
+  h1 em { color: #C2A267; font-style: normal; }
+  p { color: rgba(255,255,255,0.75); font-size: 15.5px; max-width: 480px; line-height: 1.65; }
+  p.en { margin-top: 8px; font-size: 13.5px; color: rgba(255,255,255,0.5); }
+  a.home {
+    display: inline-block; margin-top: 34px; padding: 13px 30px; border-radius: 10px;
+    background: #C2A267; color: #0D1E36; font-family: "Outfit", "Inter", sans-serif; font-weight: 700;
+    font-size: 15px; text-decoration: none; box-shadow: 0 8px 26px rgba(194,162,103,0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  a.home:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(194,162,103,0.45); }
+  @media (prefers-reduced-motion: reduce) {
+    .mark .ring, .mark .tick { animation: none; stroke-dashoffset: 0; }
+    a.home:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="brand">Anesthesia<em>Briefs</em></div>
+  <svg class="mark" viewBox="0 0 108 108" aria-hidden="true">
+    <circle cx="54" cy="54" r="48" />
+    <circle class="ring" cx="54" cy="54" r="48" transform="rotate(-90 54 54)" />
+    <path class="tick" d="M34 55 L48 69 L75 41" />
+  </svg>
+  <h1 id="t-title">Listeye eklendiniz — <em>teşekkürler!</em></h1>
+  <div class="rule"></div>
+  <p id="t-body">E-posta adresiniz doğrulandı. Anesthesia Briefs yayınlandığında ilk haber alanlardan biri olacaksınız. O güne dek sitedeki canlı demoyu deneyebilir, mini-oyunlara göz atabilirsiniz.</p>
+  <a class="home" id="t-home" href="/">Ana Sayfa</a>
+<script>
+// Same language pick as the main site: saved choice → Turkish timezone → browser language → EN.
+(function () {
+  var lang = "en";
+  try {
+    var s = localStorage.getItem("ab_lang");
+    if (s) lang = s;
+    else {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul") lang = "tr";
+      else if ((navigator.languages || [navigator.language || ""]).join(",").toLowerCase().includes("tr")) lang = "tr";
+    }
+  } catch (e) {}
+  if (lang !== "tr") {
+    document.documentElement.lang = "en";
+    document.title = "You're on the List — Anesthesia Briefs";
+    document.getElementById("t-title").innerHTML = "You're on the list — <em>thank you!</em>";
+    document.getElementById("t-body").textContent = "Your e-mail address has been confirmed. You'll be among the first to know when Anesthesia Briefs launches. Until then, feel free to try the live demo and the mini-games on the site.";
+    document.getElementById("t-home").textContent = "Home";
+  }
+})();
+</script>
+</body>
+</html>

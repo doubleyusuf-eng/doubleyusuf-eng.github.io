@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sayfa Bulunamadı — Anesthesia Briefs</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 32px 20px;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at 50% 38%, #16335c 0%, #0d1e36 46%, #081427 100%);
+    color: #fff;
+  }
+  .code {
+    font-family: "Outfit", "Inter", -apple-system, sans-serif; font-weight: 800;
+    font-size: clamp(88px, 18vw, 160px); line-height: 1; letter-spacing: -4px;
+    background: linear-gradient(135deg, #ffffff 20%, #C2A267 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .brand { font-family: "Outfit", "Inter", sans-serif; font-weight: 800; font-size: 22px; margin-bottom: 34px; letter-spacing: -0.5px; }
+  .brand em { color: #C2A267; font-weight: 400; font-style: italic; }
+  .rule { width: 64px; height: 2px; margin: 26px auto; background: linear-gradient(90deg, transparent, #C2A267, transparent); }
+  h1 { font-family: "Outfit", "Inter", sans-serif; font-size: clamp(20px, 3.4vw, 28px); font-weight: 700; margin-bottom: 10px; }
+  p { color: rgba(255,255,255,0.72); font-size: 15.5px; max-width: 460px; line-height: 1.6; }
+  p.en { margin-top: 6px; font-size: 13.5px; color: rgba(255,255,255,0.5); }
+  a.home {
+    display: inline-block; margin-top: 34px; padding: 13px 30px; border-radius: 10px;
+    background: #C2A267; color: #0D1E36; font-family: "Outfit", "Inter", sans-serif; font-weight: 700;
+    font-size: 15px; text-decoration: none; box-shadow: 0 8px 26px rgba(194,162,103,0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  a.home:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(194,162,103,0.45); }
+</style>
+</head>
+<body>
+  <div class="brand">Anesthesia<em>Briefs</em></div>
+  <div class="code">404</div>
+  <div class="rule"></div>
+  <h1 id="t-title">Aradığınız sayfa bulunamadı</h1>
+  <p id="t-body">Sayfa taşınmış, adı değişmiş ya da hiç var olmamış olabilir. Ana sayfadan devam edebilirsiniz.</p>
+  <a class="home" id="t-home" href="/">Ana Sayfa</a>
+<script>
+// Same language pick as the main site: saved choice → Turkish timezone → browser language → EN.
+(function () {
+  var lang = "en";
+  try {
+    var s = localStorage.getItem("ab_lang");
+    if (s) lang = s;
+    else {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul") lang = "tr";
+      else if ((navigator.languages || [navigator.language || ""]).join(",").toLowerCase().includes("tr")) lang = "tr";
+    }
+  } catch (e) {}
+  if (lang !== "tr") {
+    document.documentElement.lang = "en";
+    document.title = "Page Not Found — Anesthesia Briefs";
+    document.getElementById("t-title").textContent = "The page you are looking for could not be found";
+    document.getElementById("t-body").textContent = "The page may have been moved, renamed, or may never have existed. You can continue from the home page.";
+    document.getElementById("t-home").textContent = "Home";
+  }
+})();
+</script>
+</body>
+</html>

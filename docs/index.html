@@ -5,15 +5,50 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Anesthesia Briefs — Klinik Kararlarınızda Güvence Altındasınız</title>
+<meta name="description" content="Anestezi profesyonelleri için çevrimdışı, iki dilli mobil uygulama: acil algoritmalar, ilaç doz hesaplayıcıları, rejyonel anestezi atlası, EDAIC · ABA board hazırlığı ve 1000+ spot bilgi." />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="canonical" href="https://www.anesthesiabriefs.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Anesthesia Briefs" />
+<meta property="og:title" content="Anesthesia Briefs — Klinik Kararlarınızda Güvence Altındasınız" />
+<meta property="og:description" content="Acil algoritmalar, doz hesaplayıcıları, rejyonel anestezi atlası ve EDAIC · ABA board hazırlığı — tek çevrimdışı, iki dilli uygulamada." />
+<meta property="og:url" content="https://www.anesthesiabriefs.com/" />
+<meta property="og:image" content="https://www.anesthesiabriefs.com/assets/intro-poster.jpg" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="preload" href="https://unpkg.com/three@0.160.0/build/three.min.js" as="script" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Anesthesia Briefs",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "MedicalApplication",
+  "url": "https://www.anesthesiabriefs.com/",
+  "inLanguage": ["tr", "en"],
+  "description": "Anestezi profesyonelleri için çevrimdışı, iki dilli mobil uygulama: acil algoritmalar, ilaç doz hesaplayıcıları, rejyonel anestezi atlası ve EDAIC · ABA board hazırlığı."
+}
+</script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
   body { font-family: var(--font-body); background: var(--ab-cream); color: var(--ab-text-slate); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-  h1,h2,h3,h4 { font-family: var(--font-display); color: var(--ab-navy); }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+  h1,h2,h3,h4 { font-family: var(--font-display); color: var(--ab-navy); text-wrap: balance; }
+  ::selection { background: rgba(194,162,103,0.35); }
+  :focus-visible { outline: 2px solid var(--ab-gold); outline-offset: 3px; border-radius: 4px; }
+  .skip-link { position: fixed; top: 10px; left: 10px; z-index: 999; background: var(--ab-navy); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 14px; padding: 10px 18px; border-radius: 10px; text-decoration: none; transform: translateY(-200%); transition: transform 0.25s var(--ease-out); }
+  .skip-link:focus-visible { transform: none; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 28px); }
   .eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; }
 
   /* ---------- Header ---------- */
@@ -32,14 +67,28 @@
   .lang button { border: none; background: none; padding: 6px 13px; font-size: 12px; font-weight: 700; border-radius: 17px; cursor: pointer; color: var(--ab-text-muted); font-family: var(--font-display); transition: var(--dur-press) var(--ease-out); }
   .lang button.on { background: var(--ab-navy); color: #fff; box-shadow: 0 2px 6px rgba(27,54,93,0.15); }
 
+  /* ---------- Mobile menu ---------- */
+  .menu-btn { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 42px; height: 42px; padding: 10px; border: 1px solid rgba(27,54,93,0.12); border-radius: 10px; background: rgba(255,255,255,0.5); cursor: pointer; }
+  .menu-btn span { display: block; height: 2px; border-radius: 2px; background: var(--ab-navy); transition: transform 0.3s var(--ease-out), opacity 0.2s var(--ease-out); }
+  .menu-btn.x span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-btn.x span:nth-child(2) { opacity: 0; }
+  .menu-btn.x span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  header.over-intro .menu-btn { background: rgba(9,18,39,0.45); border-color: rgba(255,255,255,0.4); }
+  header.over-intro .menu-btn span { background: #fff; }
+  .mobile-nav { position: absolute; top: 100%; left: 0; right: 0; display: flex; flex-direction: column; gap: 2px; padding: 14px clamp(18px, 4vw, 28px) 20px; background: rgba(13,30,54,0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); opacity: 0; transform: translateY(-8px); visibility: hidden; pointer-events: none; transition: opacity 0.28s var(--ease-out), transform 0.28s var(--ease-out), visibility 0.28s; }
+  .mobile-nav.open { opacity: 1; transform: none; visibility: visible; pointer-events: auto; }
+  .mobile-nav a { color: #fff; text-decoration: none; font-family: var(--font-display); font-weight: 600; font-size: 17px; padding: 13px 6px; border-bottom: 1px solid rgba(255,255,255,0.07); transition: color var(--dur-press) var(--ease-out); }
+  .mobile-nav a:hover { color: var(--ab-gold); }
+  .mobile-nav a.m-cta { margin-top: 12px; border: none; text-align: center; background: var(--ab-gold); color: var(--ab-navy); border-radius: 10px; padding: 13px; font-weight: 800; }
+
   /* ---------- Hero ---------- */
-  .hero { position: relative; padding: 76px 0 84px; background: radial-gradient(circle at 82% 18%, #ece9de 0%, var(--ab-cream) 58%); overflow: hidden; }
+  .hero { position: relative; padding: clamp(52px, 7vw, 76px) 0 clamp(56px, 8vw, 84px); background: radial-gradient(circle at 82% 18%, #ece9de 0%, var(--ab-cream) 58%); overflow: hidden; }
   .hero-glow { position:absolute; width:620px; height:620px; border-radius:50%; background: radial-gradient(circle, rgba(194,162,103,0.10) 0%, rgba(248,246,240,0) 70%); top:-140px; right:-120px; pointer-events:none; }
   .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 54px; align-items: center; }
   .pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(27,54,93,0.06); padding: 7px 15px; border-radius: 100px; font-size: 13px; font-weight: 600; color: var(--ab-navy); margin-bottom: 22px; }
   .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ab-gold); box-shadow: 0 0 8px var(--ab-gold); animation: pulse 2.2s var(--ease-out) infinite; }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:.5;transform:scale(.8);} }
-  .hero h1 { font-size: 52px; line-height: 1.12; letter-spacing: -1.6px; font-weight: 800; margin-bottom: 22px; }
+  .hero h1 { font-size: clamp(34px, 4.6vw, 52px); line-height: 1.12; letter-spacing: -1.6px; font-weight: 800; margin-bottom: 22px; }
   .grad { background: linear-gradient(135deg, var(--ab-navy) 0%, var(--ab-gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .hero .lead { font-size: 18px; color: var(--ab-text-muted); margin-bottom: 32px; max-width: 524px; }
   .stores { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 36px; }
@@ -75,10 +124,10 @@
   @keyframes floatB { 0%,100%{transform:translateY(0) scale(.9) rotate(0);} 50%{transform:translateY(13px) scale(.9) rotate(-1.6deg);} }
 
   /* ---------- Section shells ---------- */
-  section.block { padding: 92px 0; }
+  section.block { padding: clamp(64px, 9vw, 92px) 0; }
   .sec-head { text-align: center; max-width: 660px; margin: 0 auto 52px; }
   .sec-head .eyebrow { color: var(--ab-teal); margin-bottom: 14px; }
-  .sec-head h2 { font-size: 38px; letter-spacing: -0.6px; margin-bottom: 14px; }
+  .sec-head h2 { font-size: clamp(28px, 3.6vw, 38px); letter-spacing: -0.6px; margin-bottom: 14px; }
   .sec-head p { font-size: 16px; color: var(--ab-text-muted); }
 
   /* Features */
@@ -97,7 +146,7 @@
   /* ---------- Interactive demo ---------- */
   .demo { background: #F0EDE4; }
   .demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-  .demo h2 { font-size: 36px; letter-spacing: -0.6px; margin-bottom: 16px; }
+  .demo h2 { font-size: clamp(27px, 3.4vw, 36px); letter-spacing: -0.6px; margin-bottom: 16px; }
   .demo .lead { font-size: 16px; color: var(--ab-text-muted); margin-bottom: 32px; }
   .steps { display: flex; flex-direction: column; gap: 12px; }
   .step { display: flex; gap: 18px; padding: 15px 18px; border-radius: var(--radius-md); cursor: pointer; background: rgba(27,54,93,0.02); border: 1px solid rgba(27,54,93,0.04); transition: var(--dur-smooth) var(--ease-out); }
@@ -196,11 +245,36 @@
   .adv h4 { font-size: 15.5px; margin-bottom: 7px; }
   .adv p { font-size: 13px; color: var(--ab-text-muted); }
 
-  /* ---------- Download ---------- */
-  .download { background: var(--ab-cream); text-align: center; }
-  .download h2 { font-size: 38px; letter-spacing: -0.6px; margin-bottom: 14px; }
-  .download p { font-size: 17px; color: var(--ab-text-muted); margin-bottom: 32px; }
+  /* ---------- Download (cinematic video banner) ---------- */
+  .download { position: relative; overflow: hidden; background: #0D1E36 url("assets/banner-poster.jpg") center / cover no-repeat; text-align: center; }
+  .dl-video { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; }
+  .dl-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(9,18,39,0.78) 0%, rgba(13,30,54,0.62) 45%, rgba(9,18,39,0.82) 100%); }
+  .download .container { position: relative; z-index: 2; }
+  .download h2 { font-size: clamp(28px, 3.6vw, 38px); letter-spacing: -0.6px; margin-bottom: 14px; color: #fff; text-shadow: 0 4px 30px rgba(0,0,0,0.45); }
+  .download p { font-size: 17px; color: rgba(255,255,255,0.82); margin-bottom: 32px; text-shadow: 0 2px 14px rgba(0,0,0,0.4); }
   .download .stores { justify-content: center; }
+  .download .store { background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.32); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+  .download .store:hover { background: rgba(255,255,255,0.2); }
+  @media (prefers-reduced-motion: reduce) { .dl-video { display: none; } }
+
+  /* Launch waitlist form (inside the download banner) */
+  .wl { max-width: 560px; margin: 34px auto 0; text-align: left; }
+  .wl-title { color: rgba(255,255,255,0.92); font-family: var(--font-display); font-weight: 700; font-size: 16px; text-align: center; margin-bottom: 14px; text-shadow: 0 2px 12px rgba(0,0,0,0.4); }
+  .wl-row { display: flex; gap: 10px; }
+  .wl-row input[type="email"] { flex: 1; min-width: 0; padding: 13px 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.12); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #fff; font-size: 15px; font-family: var(--font-body); outline: none; transition: border-color 0.3s var(--ease-out), background 0.3s var(--ease-out); }
+  .wl-row input[type="email"]::placeholder { color: rgba(255,255,255,0.55); }
+  .wl-row input[type="email"]:focus { border-color: var(--ab-gold); background: rgba(255,255,255,0.18); }
+  .wl-btn { flex: none; background: var(--ab-gold); color: var(--ab-navy); border: 0; border-radius: 10px; padding: 13px 24px; font-family: var(--font-display); font-weight: 800; font-size: 15px; cursor: pointer; box-shadow: 0 8px 26px rgba(194,162,103,0.35); transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out); }
+  .wl-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(194,162,103,0.45); }
+  .wl-btn[disabled] { opacity: 0.6; cursor: default; transform: none; }
+  .wl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .wl-consent { display: flex; gap: 9px; align-items: flex-start; margin-top: 12px; font-size: 12.5px; color: rgba(255,255,255,0.72); line-height: 1.5; cursor: pointer; }
+  .wl-consent input { margin-top: 2px; accent-color: var(--ab-gold); flex: none; }
+  .wl-consent a { color: var(--ab-gold); }
+  .wl-status { margin-top: 10px; font-size: 13.5px; font-weight: 600; text-align: center; min-height: 20px; }
+  .wl-status.ok { color: #7BE3A5; }
+  .wl-status.err { color: #FFAFA5; }
+  @media (max-width: 480px) { .wl-row { flex-direction: column; } }
 
   footer { background: var(--ab-navy); color: rgba(255,255,255,0.8); padding: 44px 0 26px; }
   .foot { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; flex-wrap: wrap; padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,0.1); }
@@ -221,7 +295,88 @@
     .ggrid, .pillars { grid-template-columns: 1fr; }
     .advs { grid-template-columns: 1fr 1fr; }
     .phones { display: none; }
-    nav .navlink { display: none; }
+    nav { display: none; }
+    .menu-btn { display: flex; }
+  }
+  @media (max-width: 620px) {
+    .fgrid, .pgrid, .advs { grid-template-columns: 1fr; }
+    .demo-grid { gap: 44px; }
+  }
+  @media (max-width: 430px) {
+    .hdr { padding-left: 14px; padding-right: 14px; gap: 8px; }
+    .brand { font-size: 17px; }
+    .logo img { height: 30px; }
+    .lang button { padding: 6px 10px; }
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal { opacity: 0; }
+  .reveal.in { opacity: 1; animation: rise 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) both; animation-delay: var(--rd, 0ms); }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(30px) scale(0.985); filter: blur(5px); }
+    62%  { filter: blur(0); }
+    to   { opacity: 1; transform: none; filter: none; }
+  }
+
+  /* ---------- Motion polish ---------- */
+  /* Living gradient on the hero highlight text */
+  .grad { background-size: 220% 220%; animation: gradShift 8s ease-in-out infinite; }
+  @keyframes gradShift { 0%,100% { background-position: 0% 30%; } 50% { background-position: 100% 70%; } }
+
+  /* Ambient drift on decorative glows and blobs */
+  .hero-glow { animation: glowDrift 13s ease-in-out infinite; }
+  .games-decor { animation: glowDrift 17s ease-in-out infinite; }
+  @keyframes glowDrift { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-28px,22px) scale(1.07); } }
+  .gstage .blob, .pillar-media .blob { animation: blobDrift 12s ease-in-out infinite alternate; }
+  @keyframes blobDrift { from { transform: translate(0,0) scale(1); } to { transform: translate(24px,-16px) scale(1.14); } }
+  .gstage i.gmark, .pillar-media i.pmark { animation: markBreathe 4.6s ease-in-out infinite; }
+  @keyframes markBreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.055); } }
+
+  /* Cursor spotlight on cards (gold radial that follows the pointer) */
+  .pcard, .gcard, .pillar, .adv { position: relative; }
+  .fcard::after, .pcard::after, .gcard::after, .pillar::after, .adv::after {
+    content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none;
+    opacity: 0; transition: opacity 0.45s var(--ease-out);
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(194,162,103,0.13), transparent 65%);
+  }
+  .fcard:hover::after, .pcard:hover::after, .gcard:hover::after, .pillar:hover::after, .adv:hover::after { opacity: 1; }
+
+  /* Sheen sweep across primary buttons on hover */
+  .cta-sm, .store, .btn-play, .btn-instagram { position: relative; overflow: hidden; }
+  .cta-sm::after, .store::after, .btn-play::after, .btn-instagram::after {
+    content: ""; position: absolute; top: 0; bottom: 0; left: -80%; width: 46%; opacity: 0; pointer-events: none;
+    background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.38) 50%, transparent 100%);
+    transform: skewX(-20deg);
+  }
+  .cta-sm:hover::after, .store:hover::after, .btn-play:hover::after, .btn-instagram:hover::after { animation: sheen 0.8s var(--ease-out); }
+  @keyframes sheen { from { left: -80%; opacity: 0; } 30% { opacity: 1; } to { left: 135%; opacity: 0; } }
+
+  /* Section eyebrows grow gold rules once revealed (echoes the intro motif) */
+  .sec-head .eyebrow::before, .sec-head .eyebrow::after { content: ""; width: 26px; height: 1px; }
+  .sec-head .eyebrow::before { background: linear-gradient(90deg, transparent, currentColor); transform: scaleX(0); transform-origin: right; transition: transform 0.8s var(--ease-out) 0.2s; }
+  .sec-head .eyebrow::after { background: linear-gradient(90deg, currentColor, transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.8s var(--ease-out) 0.2s; }
+  .sec-head.seen .eyebrow::before, .sec-head.seen .eyebrow::after { transform: scaleX(1); }
+
+  /* Header lifts with a soft shadow once it sits on solid background */
+  header { transition: box-shadow 0.4s var(--ease-out); }
+  header.scrolled { box-shadow: 0 10px 30px rgba(13,30,54,0.08); }
+
+  /* Content band icons nudge on hover */
+  .bitem i { transition: transform 0.35s var(--ease-out); }
+  .bitem:hover i { transform: translateY(-3px) scale(1.12); }
+
+  /* ---------- Reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; }
+    .reveal.in { animation: none; }
+    .phone.a, .phone.b, .dot, .live-dot, .intro-scroll i { animation: none; }
+    .fcard:hover, .pcard:hover, .gcard:hover, .pillar:hover, .adv:hover, .store:hover, .cta-sm:hover, .btn-play:hover, .btn-instagram:hover { transform: none; }
+    .grad, .hero-glow, .games-decor, .gstage .blob, .pillar-media .blob, .gstage i.gmark, .pillar-media i.pmark { animation: none; }
+    .cta-sm::after, .store::after, .btn-play::after, .btn-instagram::after,
+    .fcard::after, .pcard::after, .gcard::after, .pillar::after, .adv::after { display: none; }
+    .sec-head .eyebrow::before, .sec-head .eyebrow::after { transform: scaleX(1); transition: none; }
+    .bitem:hover i { transform: none; }
   }
 
   /* ---------- 3D Laryngoscope Preloader ---------- */
@@ -236,11 +391,28 @@
   .pl-bar > i { display: block; height: 100%; width: 0%; border-radius: 100px; background: linear-gradient(90deg, var(--ab-gold), #e6c98a); box-shadow: 0 0 12px rgba(194,162,103,0.7); transition: width 0.25s var(--ease-out); }
   @media (prefers-reduced-motion: reduce) { #larynx-canvas { display: none; } }
 
-  /* ---------- Cinematic video intro ---------- */
-  .intro { position: relative; height: 100vh; min-height: 560px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-  .intro-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+  /* ---------- Cinematic scroll-scrub intro ----------
+     The section grows tall (.scrolly); the inner layer pins to the viewport while
+     scrolling drives the video timeline (ScrollyVideo). No JS / reduced motion:
+     section stays one viewport tall with the poster + first caption. */
+  .intro { position: relative; height: 100vh; height: 100svh; min-height: 560px; }
+  .intro.scrolly { height: 420vh; min-height: 0; }
+  .intro-sticky { position: sticky; top: 0; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #0B1626 url("assets/intro-poster.jpg") center / cover no-repeat; }
+  #scrolly-video { position: absolute; inset: 0; z-index: 1; }
+  #scrolly-video video, #scrolly-video canvas { width: 100%; height: 100%; object-fit: cover; display: block; }
   .intro-overlay { position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(9,18,39,0.66) 0%, rgba(13,30,54,0.40) 38%, rgba(9,18,39,0.55) 70%, rgba(9,18,39,0.92) 100%); }
-  .intro-content { position: relative; z-index: 3; text-align: center; padding: 0 24px; }
+  .iphase { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; transform: translateY(22px); transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out); pointer-events: none; }
+  .iphase.on { opacity: 1; transform: none; }
+  /* Depth drift: caption layers slide at different rates while their phase scrubs (--ipd set from scroll) */
+  .iphase .intro-eyebrow { transform: translateY(calc(var(--ipd, 0) * 0.55px)); }
+  .iphase .icap-title, .iphase .intro-wordmark { transform: translateY(calc(var(--ipd, 0) * 1px)); }
+  .iphase .intro-tag { transform: translateY(calc(var(--ipd, 0) * 1.55px)); }
+  /* Soft hand-off into the cream hero at the very end of the scrub */
+  .intro-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 36vh; z-index: 3; pointer-events: none; opacity: 0; background: linear-gradient(180deg, rgba(248,246,240,0) 0%, var(--ab-cream) 96%); }
+  .icap-title { font-family: var(--font-display); font-weight: 800; color: #fff; font-size: clamp(30px, 5.4vw, 68px); letter-spacing: -1.6px; line-height: 1.05; text-shadow: 0 6px 44px rgba(0,0,0,0.5); max-width: 900px; text-wrap: balance; margin-top: 20px; }
+  .iphase .intro-tag { margin-top: 18px; }
+  .intro-progress { position: absolute; left: 0; bottom: 0; z-index: 4; height: 3px; width: 0%; background: linear-gradient(90deg, var(--ab-gold), #e6c98a); box-shadow: 0 0 12px rgba(194,162,103,0.6); }
+  @media (prefers-reduced-motion: reduce) { .iphase { transition: none; } }
   .intro-eyebrow { display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-display); font-size: 13px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ab-gold); margin-bottom: 22px; }
   .intro-eyebrow::before, .intro-eyebrow::after { content: ""; width: 26px; height: 1px; background: linear-gradient(90deg, transparent, var(--ab-gold)); }
   .intro-eyebrow::after { background: linear-gradient(90deg, var(--ab-gold), transparent); }
@@ -273,6 +445,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
 <div id="preloader">
   <canvas id="larynx-canvas"></canvas>
   <div class="pl-brand">Anesthesia<em>Briefs</em></div>
@@ -294,23 +467,46 @@
       <button id="lang-tr" onclick="setLang('tr')">TR</button>
       <button id="lang-en" onclick="setLang('en')">EN</button>
     </div>
+    <button class="menu-btn" id="menu-btn" aria-label="Menü" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#features" data-i18n="nav-features">Özellikler</a>
+    <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
+    <a href="#games" data-i18n="nav-games">Oyunlar</a>
+    <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+    <a class="m-cta" href="#download" data-i18n="nav-download">Çok Yakında</a>
   </div>
 </header>
+<main id="main">
 
 <section class="intro" id="intro">
-  <video class="intro-video" autoplay muted loop playsinline preload="auto" poster="assets/intro-poster.jpg">
-    <source src="assets/intro.mp4" type="video/mp4" />
-  </video>
-  <div class="intro-overlay"></div>
-  <div class="intro-content">
-    <span class="intro-eyebrow" data-i18n="intro-eyebrow">Anestezi Profesyonelleri İçin</span>
-    <h1 class="intro-wordmark">Anesthesia<em>Briefs</em></h1>
-    <p class="intro-tag" data-i18n="intro-tag">Klinik kararlarınızda güç ve güven — ameliyathanede, tek dokunuşla.</p>
+  <div class="intro-sticky">
+    <div id="scrolly-video"></div>
+    <div class="intro-overlay"></div>
+    <div class="iphase iphase-0 on">
+      <span class="intro-eyebrow" data-i18n="intro-eyebrow">Anestezi Profesyonelleri İçin</span>
+      <p class="intro-wordmark">Anesthesia<em>Briefs</em></p>
+      <p class="intro-tag" data-i18n="intro-tag">Klinik kararlarınızda güç ve güven — ameliyathanede, tek dokunuşla.</p>
+    </div>
+    <div class="iphase">
+      <span class="intro-eyebrow" data-i18n="intro-c1-eyebrow">Kriz Anında</span>
+      <p class="icap-title" data-i18n="intro-c1">Her saniyenin önemli olduğu yerde</p>
+      <p class="intro-tag" data-i18n="intro-c1-d">Acil algoritmalar ve doz hesaplayıcıları — çevrimdışı, saniyeler içinde.</p>
+    </div>
+    <div class="iphase">
+      <span class="intro-eyebrow" data-i18n="intro-c2-eyebrow">Ustalığa Giden Yol</span>
+      <p class="icap-title" data-i18n="intro-c2">Atlastan board sınavına</p>
+      <p class="intro-tag" data-i18n="intro-c2-d">Rejyonel anestezi atlası, EDAIC · ABA hazırlığı ve 1000+ spot bilgi.</p>
+    </div>
+    <a class="intro-scroll" href="#top">
+      <span data-i18n="intro-scroll">Keşfet</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+    <div class="intro-fade"></div>
+    <div class="intro-progress"></div>
   </div>
-  <a class="intro-scroll" href="#top">
-    <span data-i18n="intro-scroll">Keşfet</span>
-    <i class="fa-solid fa-chevron-down"></i>
-  </a>
 </section>
 
 <span id="top"></span>
@@ -532,6 +728,8 @@
 </section>
 
 <section class="block download" id="download">
+  <video class="dl-video" src="assets/banner.mp4" poster="assets/banner-poster.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+  <div class="dl-overlay"></div>
   <div class="container">
     <h2 data-i18n="dl-title">Güvenli Kararlar Cebinizde</h2>
     <p data-i18n="dl-sub">Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs çok yakında.</p>
@@ -541,8 +739,22 @@
       <div style="position:relative"><span class="soon" data-i18n="soon">Çok Yakında</span>
         <a class="store" href="#"><i class="fa-brands fa-google-play"></i><span><span class="sub" data-i18n="store-google-sub">İndir</span><br /><span class="main">Google Play</span></span></a></div>
     </div>
+    <form id="waitlist" class="wl" hidden novalidate>
+      <p class="wl-title" data-i18n="wl-title">Uygulama yayınlandığında ilk siz haberdar olun</p>
+      <div class="wl-row">
+        <input type="email" name="EMAIL" id="wl-email" required autocomplete="email" placeholder="E-posta adresiniz" data-i18n-ph="wl-ph" />
+        <button type="submit" class="wl-btn" data-i18n="wl-btn">Haber Ver</button>
+      </div>
+      <input type="text" name="website" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <label class="wl-consent">
+        <input type="checkbox" id="wl-consent" />
+        <span><span data-i18n="wl-consent-1">E-posta adresimin, uygulama lansman duyurusu ve önemli bilgilendirmeler için AB'de sunucuları bulunan hizmet sağlayıcımız Brevo üzerinden işlenmesine açık rıza veriyorum.</span> <a href="privacy.html" target="_blank" rel="noopener" data-i18n="wl-consent-2">Gizlilik Politikası</a></span>
+      </label>
+      <p class="wl-status" id="wl-status" role="status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="container">
@@ -562,7 +774,9 @@
         <h4 data-i18n="footer-legal">Yasal</h4>
         <a href="privacy.html" data-i18n="footer-privacy">Gizlilik Politikası</a>
         <a href="terms.html" data-i18n="footer-terms">Kullanım Şartları</a>
-        <a href="https://instagram.com/anesthesiabriefs" target="_blank">Instagram</a>
+        <a href="app-privacy.html" data-i18n="footer-app-privacy">Uygulama Gizlilik Politikası</a>
+        <a href="app-terms.html" data-i18n="footer-app-terms">Uygulama Kullanım Şartları</a>
+        <a href="https://instagram.com/anesthesiabriefs" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -575,13 +789,17 @@
   </div>
 </footer>
 
+<script src="js/vendor/scrolly-video.js"></script>
 <script>
 const I18N = {
   tr: {
     "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-download":"Çok Yakında",
+    "skip":"İçeriğe geç",
     "pl-sub":"Klinik Kararlarınızda Güvende",
     "insta-eyebrow":"Topluluk","insta-title":"Instagram'da Bizi Takip Edin","insta-sub":"Her gün yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.","insta-follow":"Takip Et",
     "intro-eyebrow":"Anestezi Profesyonelleri İçin","intro-tag":"Klinik kararlarınızda güç ve güven — ameliyathanede, tek dokunuşla.","intro-scroll":"Keşfet",
+    "intro-c1-eyebrow":"Kriz Anında","intro-c1":"Her saniyenin önemli olduğu yerde","intro-c1-d":"Acil algoritmalar ve doz hesaplayıcıları — çevrimdışı, saniyeler içinde.",
+    "intro-c2-eyebrow":"Ustalığa Giden Yol","intro-c2":"Atlastan board sınavına","intro-c2-d":"Rejyonel anestezi atlası, EDAIC · ABA hazırlığı ve 1000+ spot bilgi.",
     "hero-badge":"Anestezi Profesyonelleri İçin","hero-title-1":"Klinik Kararlarınızda","hero-title-2":"Güvence Altındasınız",
     "hero-lead":"Acil algoritmalara, gelişmiş ilaç doz hesaplayıcılarına, literatür özetlerine ve yapay zekâ destekli klinik asistana tek bir çevrimdışı, iki dilli uygulamadan anında erişin.",
     "soon":"Çok Yakında","store-apple-sub":"İndir","store-google-sub":"İndir",
@@ -617,13 +835,18 @@ const I18N = {
     "premc-b-t":"EDAIC · ABA Board Hazırlık","premc-b-d":"Avrupa (EDAIC) ve Amerika (ABA) board standartlarına göre hazırlanmış kapsamlı sınav merkezi — soru çöz, simüle et, eksiğini gör.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva soru bankası","premc-b-2":"Gerçekçi, zamanlayıcılı sınav simülatörü","premc-b-3":"1000+ spot bilgi ile hızlı tekrar","premc-b-4":"Konu odaklı gelişim analizi & zayıf nokta tespiti",
     "premc-adv-title":"Premium Neden Avantajlı?","premc-a1-t":"Tek Üyelik, İki Uzmanlık","premc-a1-d":"Rejyonel ustalık ve board başarısı tek abonelikte — ayrı kaynak aramaya son.","premc-a2-t":"Sürekli Güncellenen İçerik","premc-a2-d":"Yeni sorular ve güncel kılavuzlar otomatik gelir; içerik hiç eskimez.","premc-a3-t":"Tamamen Çevrimdışı","premc-a3-d":"Ameliyathanede ve sınav öncesi internetsiz tam erişim — her yerde yanınızda.","premc-a4-t":"Kanıta Dayalı","premc-a4-d":"Referanslı açıklamalar ve güncel literatüre dayalı, güvenilir içerik.",
     "dl-title":"Güvenli Kararlar Cebinizde","dl-sub":"Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs çok yakında.",
-    "footer-moto":"Klinik kararlarınızda güvence altındasınız.","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
+    "wl-title":"Uygulama yayınlandığında ilk siz haberdar olun","wl-ph":"E-posta adresiniz","wl-btn":"Haber Ver",
+    "wl-consent-1":"E-posta adresimin, uygulama lansman duyurusu ve önemli bilgilendirmeler için AB'de sunucuları bulunan hizmet sağlayıcımız Brevo üzerinden işlenmesine açık rıza veriyorum.","wl-consent-2":"Gizlilik Politikası",
+    "footer-moto":"Klinik kararlarınızda güvence altındasınız.","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
   },
   en: {
     "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-download":"Coming Soon",
+    "skip":"Skip to content",
     "pl-sub":"Confidence in Every Clinical Decision",
     "insta-eyebrow":"Community","insta-title":"Follow Us on Instagram","insta-sub":"Refresh your knowledge with new case presentations, anesthesia tips and educational content shared every day.","insta-follow":"Follow",
     "intro-eyebrow":"For Anesthesia Professionals","intro-tag":"Power and confidence in your clinical decisions — one tap away in the OR.","intro-scroll":"Explore",
+    "intro-c1-eyebrow":"In the Moment of Crisis","intro-c1":"Where every second counts","intro-c1-d":"Emergency algorithms and dose calculators — offline, in seconds.",
+    "intro-c2-eyebrow":"The Path to Mastery","intro-c2":"From the atlas to the board exam","intro-c2-d":"Regional anesthesia atlas, EDAIC · ABA prep and 1000+ spot notes.",
     "hero-badge":"For Anesthesia Professionals","hero-title-1":"You're Safe in Your","hero-title-2":"Clinical Decisions",
     "hero-lead":"Instant access to emergency algorithms, advanced drug-dose calculators, literature synopses and an AI clinical assistant — all in one offline-first, bilingual app.",
     "soon":"Coming Soon","store-apple-sub":"Download on the","store-google-sub":"Get it on",
@@ -660,7 +883,9 @@ const I18N = {
     "premc-b-t":"EDAIC · ABA Board Prep","premc-b-d":"A comprehensive exam hub built to European (EDAIC) and American (ABA) board standards — practice, simulate, find your gaps.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva question bank","premc-b-2":"Realistic, timed exam simulator","premc-b-3":"Rapid review with 1000+ spot notes","premc-b-4":"Topic-focused analytics & weak-spot detection",
     "premc-adv-title":"Why Premium Is Worth It","premc-a1-t":"One Membership, Two Specialties","premc-a1-d":"Regional mastery and board success in a single subscription — no more chasing separate resources.","premc-a2-t":"Continuously Updated","premc-a2-d":"New questions and current guidelines arrive automatically; content never goes stale.","premc-a3-t":"Fully Offline","premc-a3-d":"Full access in the OR and before the exam without internet — with you everywhere.","premc-a4-t":"Evidence-Based","premc-a4-d":"Referenced explanations grounded in current literature you can trust.",
     "dl-title":"Safe Decisions in Your Pocket","dl-sub":"Anesthesia Briefs — built to improve speed, safety and scientific rigor in anesthesia practice — is coming soon.",
-    "footer-moto":"You're safe in your clinical decisions.","footer-links":"Quick Links","footer-legal":"Legal","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-rights":"All rights reserved."
+    "wl-title":"Be the first to know when the app launches","wl-ph":"Your e-mail address","wl-btn":"Notify Me",
+    "wl-consent-1":"I give my explicit consent to the processing of my e-mail address for the app launch announcement and important updates via our EU-based provider Brevo.","wl-consent-2":"Privacy Policy",
+    "footer-moto":"You're safe in your clinical decisions.","footer-links":"Quick Links","footer-legal":"Legal","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-app-privacy":"App Privacy Policy","footer-app-terms":"App Terms of Use","footer-rights":"All rights reserved."
   }
 };
 
@@ -671,8 +896,13 @@ function setLang(lang) {
     const k = el.getAttribute("data-i18n");
     if (dict[k] != null) el.textContent = dict[k];
   });
-  document.getElementById("lang-tr").classList.toggle("on", lang === "tr");
-  document.getElementById("lang-en").classList.toggle("on", lang === "en");
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const k = el.getAttribute("data-i18n-ph");
+    if (dict[k] != null) el.placeholder = dict[k];
+  });
+  const bTr = document.getElementById("lang-tr"), bEn = document.getElementById("lang-en");
+  bTr.classList.toggle("on", lang === "tr"); bTr.setAttribute("aria-pressed", lang === "tr");
+  bEn.classList.toggle("on", lang === "en"); bEn.setAttribute("aria-pressed", lang === "en");
   // hero phones are live app previews — follow language; front=home, back=algorithms
   const _heroLang = lang === "tr" ? "tr" : "en";
   const fa = document.getElementById("hero-frame-a"), fb = document.getElementById("hero-frame-b");
@@ -710,6 +940,87 @@ function navDemo(step) {
 document.getElementById("steps").addEventListener("click", (e) => {
   navDemo(e.target.closest(".step"));
 });
+// Keyboard support for the demo steps
+document.querySelectorAll(".step").forEach((s) => {
+  s.setAttribute("role", "button");
+  s.setAttribute("tabindex", "0");
+});
+document.getElementById("steps").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    const step = e.target.closest(".step");
+    if (step) { e.preventDefault(); navDemo(step); }
+  }
+});
+
+// Mobile menu
+(function () {
+  const btn = document.getElementById("menu-btn");
+  const panel = document.getElementById("mobile-nav");
+  if (!btn || !panel) return;
+  function close() {
+    panel.classList.remove("open");
+    btn.classList.remove("x");
+    btn.setAttribute("aria-expanded", "false");
+  }
+  btn.addEventListener("click", () => {
+    const open = panel.classList.toggle("open");
+    btn.classList.toggle("x", open);
+    btn.setAttribute("aria-expanded", String(open));
+  });
+  panel.addEventListener("click", (e) => { if (e.target.closest("a")) close(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 980) close(); });
+})();
+
+// Scroll-reveal: fade-up sections & cards as they enter the viewport, staggered per row.
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const els = document.querySelectorAll(".sec-head, .fcard, .pcard, .gcard, .pillar, .adv, .step, .bitem, .demo-stage, .demo-note, .insta-feed, .insta-cta, .download h2, .download p, .download .stores, .hero .pill, .hero h1, .hero .lead, .hero .stores, .hero .trust, .phones");
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add("in", "seen");
+      // strip reveal classes once done so card hover transitions behave normally again
+      el.addEventListener("animationend", () => {
+        el.classList.remove("reveal", "in");
+        el.style.removeProperty("--rd");
+      }, { once: true });
+      io.unobserve(el);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -7% 0px" });
+  els.forEach((el) => {
+    el.classList.add("reveal");
+    const siblings = Array.from(el.parentElement.children).filter((c) => c.classList.contains("reveal"));
+    const idx = siblings.indexOf(el);
+    if (idx > 0) el.style.setProperty("--rd", Math.min(idx * 70, 420) + "ms");
+    io.observe(el);
+  });
+})();
+
+// Scale the live-demo iframe (460px logical) down on narrow screens so the phone never clips.
+(function () {
+  const frame = document.getElementById("demo-frame");
+  const stage = frame && frame.parentElement;
+  if (!frame || !stage) return;
+  function size() {
+    const w = stage.clientWidth;
+    if (!w) return;
+    const scale = Math.min(1, w / 460);
+    if (scale < 1) {
+      frame.style.width = "460px";
+      frame.style.transformOrigin = "top left";
+      frame.style.transform = "scale(" + scale + ")";
+      stage.style.height = Math.round(900 * scale) + "px";
+      stage.style.overflow = "hidden";
+    } else {
+      frame.style.width = ""; frame.style.transform = "";
+      stage.style.height = ""; stage.style.overflow = "";
+    }
+  }
+  new ResizeObserver(size).observe(stage);
+  size();
+})();
 
 // Scale a hero iframe (logical 390px wide app) to exactly fill its phone screen.
 function sizeHeroFrame(frame) {
@@ -736,35 +1047,197 @@ function sizeHeroFrame(frame) {
   if (!header || !intro) return;
   function update() {
     const threshold = intro.offsetHeight - header.offsetHeight - 12;
-    header.classList.toggle("over-intro", window.scrollY < threshold);
+    const over = window.scrollY < threshold;
+    header.classList.toggle("over-intro", over);
+    header.classList.toggle("scrolled", !over);
   }
   update();
   window.addEventListener("scroll", update, { passive: true });
   window.addEventListener("resize", update);
 })();
 
-// Reliable video playback: this host doesn't support HTTP range requests, which can
-// stall <video> streaming, so fetch the clip fully and play it from a blob URL.
+// Cinematic scroll-scrub intro: scrolling through #intro drives the video timeline
+// (same technique as high-end campaign sites — ScrollyVideo + WebCodecs).
+// The host doesn't support HTTP range requests, so the clip is fetched fully first.
 (function () {
-  const v = document.querySelector(".intro-video");
-  const source = v && v.querySelector("source");
-  if (!v || !source) return;
-  fetch(source.src)
+  const intro = document.getElementById("intro");
+  const mount = document.getElementById("scrolly-video");
+  if (!intro || !mount) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (typeof ScrollyVideo === "undefined") return; // poster + first caption fallback
+  // phones get the 1.3MB 720p encode (smaller download + less decode memory); desktop the 3MB 1080p
+  const introSrc = window.matchMedia("(max-width: 740px)").matches ? "assets/intro-720.mp4" : "assets/intro.mp4";
+  fetch(introSrc)
     .then((r) => (r.ok ? r.blob() : Promise.reject()))
     .then((blob) => {
-      source.remove();
-      v.src = URL.createObjectURL(blob);
-      v.load();
-      const tryPlay = () => v.play().catch(() => {});
-      v.addEventListener("canplay", tryPlay, { once: true });
-      tryPlay();
+      intro.classList.add("scrolly");
+      const phases = intro.querySelectorAll(".iphase");
+      const progress = intro.querySelector(".intro-progress");
+      const sticky = intro.querySelector(".intro-sticky");
+      const fade = intro.querySelector(".intro-fade");
+      let current = 0, ticking = false;
+      const sv = new ScrollyVideo({
+        scrollyVideoContainer: mount,
+        src: URL.createObjectURL(blob),
+        sticky: false,
+        trackScroll: false,
+        // default 8 leaves a ~1.2s exponential crawl after the wheel stops (visible frame-by-frame
+        // judder near standstill); 22 keeps the floaty glide but settles in ~0.4s
+        transitionSpeed: 22,
+        onReady: () => update()
+      });
+      function update() {
+        ticking = false;
+        const r = intro.getBoundingClientRect();
+        const total = r.height - window.innerHeight;
+        if (total <= 0) return;
+        const p = Math.min(1, Math.max(0, -r.top / total));
+        sv.setVideoPercentage(p);
+        if (progress) progress.style.width = (p * 100).toFixed(2) + "%";
+        const idx = Math.min(phases.length - 1, Math.floor(p * phases.length));
+        if (idx !== current) {
+          current = idx;
+          phases.forEach((ph, i) => ph.classList.toggle("on", i === idx));
+        }
+        // depth drift within the active phase, and the cream hand-off near the end
+        if (sticky) {
+          const pp = Math.min(1, Math.max(0, p * phases.length - idx));
+          sticky.style.setProperty("--ipd", ((pp - 0.5) * -26).toFixed(2));
+        }
+        if (fade) fade.style.opacity = Math.min(1, Math.max(0, (p - 0.88) / 0.1)).toFixed(3);
+      }
+      function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll);
+      update();
     })
     .catch(() => {/* poster image stays as fallback */});
+})();
+
+// Count-up on numeric trust stats (e.g. "1000+") the first time they scroll into view
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const targets = Array.from(document.querySelectorAll(".trust .tn")).filter((el) => /^\d/.test(el.textContent.trim()));
+  if (!targets.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      io.unobserve(el);
+      const m = el.textContent.trim().match(/^(\d+)(.*)$/);
+      if (!m) return;
+      const end = +m[1], suffix = m[2], t0 = performance.now(), dur = 1400;
+      (function tick(t) {
+        const p = Math.min(1, (t - t0) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(end * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
+  }, { threshold: 0.6 });
+  targets.forEach((el) => io.observe(el));
+})();
+
+// Cursor spotlight: cards track the pointer so their gold radial highlight follows it
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  let raf = 0, lastEvent = null;
+  document.addEventListener("pointermove", (e) => {
+    lastEvent = e;
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      const card = lastEvent.target.closest(".fcard, .pcard, .gcard, .pillar, .adv");
+      if (!card) return;
+      const r = card.getBoundingClientRect();
+      card.style.setProperty("--mx", (lastEvent.clientX - r.left).toFixed(1) + "px");
+      card.style.setProperty("--my", (lastEvent.clientY - r.top).toFixed(1) + "px");
+    });
+  }, { passive: true });
+})();
+
+// Launch waitlist: posts to Brevo's public form endpoint (sibforms) — the API key never ships
+// to the client. Until SIBFORMS_URL is filled in, the form stays hidden.
+(function () {
+  const SIBFORMS_URL = "https://7ab611ad.sibforms.com/serve/MUIFAKzhC4DfDRBohEcfKw8xRl3iQYTlUvGj5ta_x4wSMaLYCtNNOYTYWkn4hyNEV4vMxb6ucbKRFaNOaEp0Ps2OmawGYFU9E6Lcz0YkKwMBQSecwKG3XjdP98hNIpJ7g9iLwcKAJJw0dmYscYu6bA5-tdYXD85HiFeBwCccWguRG8ZkDiYx-Y3SmLswDi5MzjJ5rz-P627TUmWaqQ==";
+  const form = document.getElementById("waitlist");
+  if (!form || !SIBFORMS_URL) return;
+  form.hidden = false;
+  const status = document.getElementById("wl-status");
+  const btn = form.querySelector(".wl-btn");
+  const dict = () => (document.documentElement.lang === "en"
+    ? { ok: "Almost done! Check your inbox to confirm your address.", err: "Something went wrong — please try again.", invalid: "Enter a valid e-mail and tick the consent box." }
+    : { ok: "Neredeyse tamam! Adresinizi doğrulamak için gelen kutunuzu kontrol edin.", err: "Bir şeyler ters gitti — lütfen tekrar deneyin.", invalid: "Geçerli bir e-posta girin ve onay kutusunu işaretleyin." });
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const t = dict();
+    const email = document.getElementById("wl-email");
+    const consent = document.getElementById("wl-consent");
+    if (form.querySelector(".wl-hp").value) return; // honeypot: silently drop bots
+    if (!email.checkValidity() || !consent.checked) { status.textContent = t.invalid; status.className = "wl-status err"; return; }
+    btn.disabled = true;
+    status.textContent = "…"; status.className = "wl-status";
+    try {
+      const fd = new FormData();
+      fd.append("EMAIL", email.value.trim());
+      fd.append("locale", document.documentElement.lang === "en" ? "en" : "tr");
+      const r = await fetch(SIBFORMS_URL + (SIBFORMS_URL.includes("?") ? "&" : "?") + "isAjax=1", { method: "POST", body: fd });
+      if (!r.ok) throw 0;
+      status.textContent = t.ok; status.className = "wl-status ok";
+      form.reset();
+    } catch {
+      status.textContent = t.err; status.className = "wl-status err";
+    }
+    btn.disabled = false;
+  });
+})();
+
+// Download banner video: play only while on screen (saves battery, defers the download)
+(function () {
+  const video = document.querySelector(".dl-video");
+  if (!video) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) { video.play().catch(() => {}); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) video.play().catch(() => {});
+      else video.pause();
+    });
+  }, { rootMargin: "160px 0px" });
+  io.observe(video);
+})();
+
+// Hero phones tilt gently toward the cursor (desktop only)
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  const hero = document.querySelector(".hero");
+  const wrap = document.querySelector(".phones");
+  if (!hero || !wrap) return;
+  wrap.style.perspective = "1200px";
+  wrap.style.transition = "transform 0.4s var(--ease-out)";
+  let raf = 0, lastEvent = null;
+  hero.addEventListener("pointermove", (e) => {
+    lastEvent = e;
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      const r = wrap.getBoundingClientRect();
+      if (!r.width) return;
+      const dx = (lastEvent.clientX - (r.left + r.width / 2)) / r.width;
+      const dy = (lastEvent.clientY - (r.top + r.height / 2)) / r.height;
+      wrap.style.transform = "rotateY(" + (dx * 5).toFixed(2) + "deg) rotateX(" + (dy * -4).toFixed(2) + "deg)";
+    });
+  }, { passive: true });
+  hero.addEventListener("pointerleave", () => { wrap.style.transform = ""; });
 })();
 
 setLang(detectLang());
 </script>
 
+<!-- three.js loads here (not in <head>) so it never blocks first paint; a preload hint in <head> warms the fetch -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 <script>
 /* ---------- Realistic 3D Laryngoscope Preloader ---------- */
 (function () {
@@ -798,13 +1271,13 @@ setLang(detectLang());
   const keepOpen = /[?&]preloader=keep/.test(location.search);
   function onReady() {
     if (keepOpen) return;
-    const wait = Math.max(0, 1700 - (Date.now() - started));
+    const wait = Math.max(0, 1000 - (Date.now() - started));
     setTimeout(finishBar, wait);
   }
   if (document.readyState === "complete") onReady();
   else window.addEventListener("load", onReady);
   // Safety: never trap the user
-  if (!keepOpen) setTimeout(dismiss, 6000);
+  if (!keepOpen) setTimeout(dismiss, 4500);
 
   if (reduce || typeof THREE === "undefined" || !canvas) {
     if (canvas) canvas.style.display = "none";
@@ -812,7 +1285,14 @@ setLang(detectLang());
   }
 
   // ---- Three.js scene ----
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  // WebGL can be unavailable (old device, disabled acceleration) — fall back to the plain branded loader
+  let renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  } catch (e) {
+    canvas.style.display = "none";
+    return;
+  }
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;

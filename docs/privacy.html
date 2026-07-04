@@ -5,6 +5,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gizlilik Politikası — Anesthesia Briefs</title>
+<meta name="description" content="Anesthesia Briefs gizlilik politikası: kişisel verilerinizin nasıl işlendiği ve korunduğu hakkında bilgi (TR/EN)." />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="stylesheet" href="legal.css" />
@@ -63,6 +66,8 @@
     </ul>
     <h3>2.3. Çerez ve Benzeri Teknolojiler</h3>
     <p>Web sitesinde zorunlu çerezler, performans/analitik çerezleri veya tercih çerezleri kullanılabilir. Zorunlu olmayan çerezler için, yürürlükteki mevzuatın gerektirdiği hallerde açık rızanız alınır.</p>
+    <h3>2.4. Lansman Duyuru Listesi (E-Bülten)</h3>
+    <p>Web sitesindeki duyuru formuna e-posta adresinizi bırakmanız hâlinde, e-posta adresiniz yalnızca <strong>açık rızanıza</strong> dayanarak; uygulamanın yayınlandığını duyurmak ve Anesthesia Briefs hizmetlerine ilişkin önemli bilgilendirmeleri iletmek amacıyla işlenir. Kayıt, çift onay (double opt-in) yöntemiyle yapılır: adresinize gönderilen doğrulama bağlantısını onaylamadıkça listeye eklenmezsiniz. E-posta adresiniz, bu hizmet için veri işleyen sıfatıyla kullandığımız ve sunucuları Avrupa Birliği'nde bulunan Brevo'ya (Sendinblue GmbH, Almanya) aktarılır; yurt dışına aktarım hakkında ayrıntılar için Bölüm 7'ye bakınız. Her e-postada yer alan bağlantı üzerinden veya <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a> adresine yazarak dilediğiniz zaman listeden ayrılabilir ve verilerinizin silinmesini talep edebilirsiniz.</p>
 
     <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
     <p>Kişisel verileriniz şu amaçlarla işlenebilir:</p>
@@ -190,6 +195,8 @@
     </ul>
     <h3>2.3. Cookies and Similar Technologies</h3>
     <p>The website may use strictly necessary cookies, performance/analytics cookies or preference cookies. For non-essential cookies, your explicit consent is obtained where required by applicable law.</p>
+    <h3>2.4. Launch Announcement List (Newsletter)</h3>
+    <p>If you leave your e-mail address in the announcement form on the website, it is processed solely on the basis of your <strong>explicit consent</strong>, for the purposes of announcing the release of the app and sending important updates about Anesthesia Briefs services. Sign-up uses a double opt-in method: you are not added to the list until you confirm the verification link sent to your address. Your e-mail address is transferred to Brevo (Sendinblue GmbH, Germany), which we use as a data processor for this service and whose servers are located in the European Union; see Section 7 for details on international transfers. You may leave the list and request deletion of your data at any time via the link included in every e-mail or by writing to <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>.</p>
 
     <h2>3. Purposes of Processing</h2>
     <p>Your personal data may be processed for the following purposes:</p>
@@ -285,6 +292,8 @@
   <div class="lf-links">
     <a href="privacy.html" data-i18n-priv>Gizlilik Politikası</a>
     <a href="terms.html" data-i18n-terms>Kullanım Şartları</a>
+    <a href="app-privacy.html" data-i18n-app-priv>Uygulama Gizlilik Politikası</a>
+    <a href="app-terms.html" data-i18n-app-terms>Uygulama Kullanım Şartları</a>
     <a href="index.html" data-i18n-home>Ana Sayfa</a>
   </div>
   <p>© 2026 Anesthesia Briefs. <span data-i18n-rights>Tüm hakları saklıdır.</span></p>
@@ -299,11 +308,13 @@ function setLegalLang(lang) {
   if (tr) tr.classList.toggle("on", lang === "tr");
   if (en) en.classList.toggle("on", lang === "en");
   // Chrome-friendly small bits
-  var t = { tr: { back: "Ana Sayfa", priv: "Gizlilik Politikası", terms: "Kullanım Şartları", home: "Ana Sayfa", rights: "Tüm hakları saklıdır.", title: "Gizlilik Politikası — Anesthesia Briefs" },
-            en: { back: "Home", priv: "Privacy Policy", terms: "Terms of Use", home: "Home", rights: "All rights reserved.", title: "Privacy Policy — Anesthesia Briefs" } }[lang];
+  var t = { tr: { back: "Ana Sayfa", priv: "Gizlilik Politikası", terms: "Kullanım Şartları", appPriv: "Uygulama Gizlilik Politikası", appTerms: "Uygulama Kullanım Şartları", home: "Ana Sayfa", rights: "Tüm hakları saklıdır.", title: "Gizlilik Politikası — Anesthesia Briefs" },
+            en: { back: "Home", priv: "Privacy Policy", terms: "Terms of Use", appPriv: "App Privacy Policy", appTerms: "App Terms of Use", home: "Home", rights: "All rights reserved.", title: "Privacy Policy — Anesthesia Briefs" } }[lang];
   document.querySelectorAll("[data-i18n-back]").forEach((e) => (e.textContent = t.back));
   document.querySelectorAll("[data-i18n-priv]").forEach((e) => (e.textContent = t.priv));
   document.querySelectorAll("[data-i18n-terms]").forEach((e) => (e.textContent = t.terms));
+  document.querySelectorAll("[data-i18n-app-priv]").forEach((e) => (e.textContent = t.appPriv));
+  document.querySelectorAll("[data-i18n-app-terms]").forEach((e) => (e.textContent = t.appTerms));
   document.querySelectorAll("[data-i18n-home]").forEach((e) => (e.textContent = t.home));
   document.querySelectorAll("[data-i18n-rights]").forEach((e) => (e.textContent = t.rights));
   document.title = t.title;
