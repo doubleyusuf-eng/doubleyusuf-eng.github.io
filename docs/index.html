@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 <title>Anesthesia Briefs — Klinik Kararlarınızda Güvence Altındasınız</title>
 <meta name="description" content="Anestezi profesyonelleri için çevrimdışı, iki dilli mobil uygulama: acil algoritmalar, ilaç doz hesaplayıcıları, rejyonel anestezi atlası, EDAIC · ABA board hazırlığı ve 1000+ spot bilgi." />
 <meta name="theme-color" content="#0D1E36" />
@@ -23,10 +24,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-<link rel="preload" href="https://unpkg.com/three@0.160.0/build/three.min.js" as="script" />
+<link rel="preload" href="js/vendor/three-0.160.0.min.js" as="script" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous" /></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -782,7 +783,7 @@
     <div class="foot-bottom">
       <p>© 2026 Anesthesia Briefs. <span data-i18n="footer-rights">Tüm hakları saklıdır.</span></p>
       <div class="social">
-        <a href="https://instagram.com/anesthesiabriefs" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://instagram.com/anesthesiabriefs" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/yusuf-y%C4%B1lmaz-a08647202/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
@@ -934,7 +935,7 @@ function navDemo(step) {
   try { msg = JSON.parse(step.getAttribute("data-nav") || "{}"); } catch (e) {}
   const frame = document.getElementById("demo-frame");
   if (frame && frame.contentWindow) {
-    frame.contentWindow.postMessage(Object.assign({ type: "ab-demo-nav", tab: null, detail: null }, msg), "*");
+    frame.contentWindow.postMessage(Object.assign({ type: "ab-demo-nav", tab: null, detail: null }, msg), window.location.origin);
   }
 }
 document.getElementById("steps").addEventListener("click", (e) => {
@@ -1236,8 +1237,9 @@ function sizeHeroFrame(frame) {
 setLang(detectLang());
 </script>
 
-<!-- three.js loads here (not in <head>) so it never blocks first paint; a preload hint in <head> warms the fetch -->
-<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<!-- three.js loads here (not in <head>) so it never blocks first paint; a preload hint in <head> warms the fetch.
+     Self-hosted (js/vendor/) so no third-party CDN can inject script into this page. -->
+<script src="js/vendor/three-0.160.0.min.js"></script>
 <script>
 /* ---------- Realistic 3D Laryngoscope Preloader ---------- */
 (function () {

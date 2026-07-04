@@ -2596,23 +2596,14 @@ function initLanguage() {
   if (savedLang) {
     changeLanguage(savedLang);
   } else {
-    // Run light, fast IP geolocation lookup
-    fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
-      const country = data.country_code;
-      if (country === 'TR') {
-        changeLanguage('tr');
-      } else {
-        changeLanguage('en');
-      }
-    }).catch(() => {
-      // Fallback to browser language
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.startsWith('tr')) {
-        changeLanguage('tr');
-      } else {
-        changeLanguage('en');
-      }
-    });
+    // Privacy-safe detection: timezone + browser language only (no third-party IP lookup)
+    const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+    const userLang = (navigator.language || navigator.userLanguage || "");
+    if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul" || userLang.toLowerCase().startsWith("tr")) {
+      changeLanguage('tr');
+    } else {
+      changeLanguage('en');
+    }
   }
 }
 
@@ -8221,23 +8212,14 @@ function initLanguage() {
   if (savedLang) {
     changeLanguage(savedLang);
   } else {
-    // Run light, fast IP geolocation lookup
-    fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
-      const country = data.country_code;
-      if (country === 'TR') {
-        changeLanguage('tr');
-      } else {
-        changeLanguage('en');
-      }
-    }).catch(() => {
-      // Fallback to browser language
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.startsWith('tr')) {
-        changeLanguage('tr');
-      } else {
-        changeLanguage('en');
-      }
-    });
+    // Privacy-safe detection: timezone + browser language only (no third-party IP lookup)
+    const tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+    const userLang = (navigator.language || navigator.userLanguage || "");
+    if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul" || userLang.toLowerCase().startsWith("tr")) {
+      changeLanguage('tr');
+    } else {
+      changeLanguage('en');
+    }
   }
 }
 
