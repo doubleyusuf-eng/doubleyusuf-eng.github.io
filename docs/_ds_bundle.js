@@ -2434,7 +2434,7 @@ const translations = {
     'nav-airway-play': '<i class="fa-solid fa-brain"></i> Zor Havayolu',
     // Hero
     'hero-badge': 'Anestezi Profesyonelleri İçin',
-    'hero-title': 'Klinik Kararlarınızda <br><span class="gradient-text">Güvence Altındasınız</span>',
+    'hero-title': 'Anestezi ve Yoğun Bakım için <br><span class="gradient-text">Klinik Referans</span>',
     'hero-desc': 'Acil durum algoritmalarına, gelişmiş ilaç doz hesaplayıcılarına, tıbbi literatür özetlerine ve yapay zeka destekli klinik asistanınıza tek bir uygulamadan anında erişin.',
     'coming-soon': 'Çok Yakında',
     // Features
@@ -2444,8 +2444,8 @@ const translations = {
     'feature-1-desc': 'Hayatı tehdit eden anestezi krizlerine hızlı erişim. Her saniyenin önemli olduğu durumlarda adım adım acil durum kılavuzları.',
     'feature-2-title': 'Klinik Hesaplayıcılar',
     'feature-2-desc': 'Yetişkin, pediatrik ve obstetrik hastalar için hassas doz hesaplamaları ve anestezi puanlama sistemleri.',
-    'feature-3-title': 'AI Klinik Asistan',
-    'feature-3-desc': 'Klinik sorularınızı anında yanıtlayan, uluslararası kılavuzlarla eğitilmiş gelişmiş yapay zeka asistanı.',
+    'feature-3-title': 'Bölgesel Anestezi Atlası',
+    'feature-3-desc': 'Ultrason eşliğinde periferik ve nöroaksiyel bloklar için anatomi, sonoanatomi ve iğne tekniği görselleri.',
     'feature-4-title': 'Son Literatür',
     'feature-4-desc': 'Anestezi alanındaki en son klinik yayınların, güncel kılavuzların ve bilimsel makalelerin özetleri.',
     // Premium Hub (Board Prep)
@@ -2474,8 +2474,8 @@ const translations = {
     'demo-board-desc': 'Sınav tiplerine, soru istatistiklerine ve eksiklerinize göre özelleştirilmiş Board Prep paneli.',
     'demo-spot-title': 'Spot Bilgiler & Özetler',
     'demo-spot-desc': 'Konulara göre sınıflandırılmış, hızlı tekrarlar yapabileceğiniz interaktif spot bilgi kartları.',
-    'demo-step3-title': 'Yapay Zeka Klinik Asistanı',
-    'demo-step3-desc': 'Gelişmiş klinik aramalar yapabileceğiniz ve tıbbi rehberleri sorgulayabileceğiniz yapay zeka.',
+    'demo-step3-title': 'Bölgesel Anestezi Atlası',
+    'demo-step3-desc': 'Ultrason eşliğinde blok atlası — anatomi, sonoanatomi ve iğne tekniği.',
     // Instagram
     'insta-title': 'Instagram\'da Bizi Takip Edin',
     'insta-subtitle': 'Her gün paylaşılan yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.',
@@ -2489,7 +2489,7 @@ const translations = {
     // Download & Footer
     'download-title': 'Güvenli Kararlar Cebinizde',
     'download-desc': 'Anestezi uygulamalarında hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs\'i hemen ücretsiz indirin.',
-    'footer-moto': 'Klinik kararlarınızda güvence altındasınız.',
+    'footer-moto': 'Anestezi ve yoğun bakım için klinik referans.',
     'footer-links-title': 'Hızlı Linkler',
     'footer-legal-title': 'Yasal',
     'footer-privacy': 'Gizlilik Politikası',
@@ -2506,7 +2506,7 @@ const translations = {
     'nav-airway-play': '<i class="fa-solid fa-brain"></i> Difficult Airway',
     // Hero
     'hero-badge': 'For Anesthesia Professionals',
-    'hero-title': 'You are safe in <br><span class="gradient-text">Your Clinical Decisions</span>',
+    'hero-title': 'Clinical Reference for <br><span class="gradient-text">Anaesthesia & Critical Care</span>',
     'hero-desc': 'Instantly access emergency algorithms, advanced drug dosage calculators, medical literature summaries, and your AI-powered clinical assistant from a single application.',
     'coming-soon': 'Coming Soon',
     // Features
@@ -2516,8 +2516,8 @@ const translations = {
     'feature-1-desc': 'Rapid access to life-threatening anesthesia crises. Step-by-step emergency guidance when every single second counts.',
     'feature-2-title': 'Clinical Calculators',
     'feature-2-desc': 'Precise dosage calculations and anesthesia scoring systems for adult, pediatric, and obstetric patients.',
-    'feature-3-title': 'AI Clinical Assistant',
-    'feature-3-desc': 'Advanced medically-tuned AI assistant that answers clinical queries and verifies medical guidelines in real time.',
+    'feature-3-title': 'Regional Anesthesia Atlas',
+    'feature-3-desc': 'Ultrasound-guided anatomy, sonoanatomy and needle-technique visuals for peripheral and neuraxial blocks.',
     'feature-4-title': 'Latest Literature',
     'feature-4-desc': 'Stay ahead with clean summaries of the latest clinical publications, guidelines, and anesthesia briefs.',
     // Premium Hub (Board Prep)
@@ -2546,8 +2546,8 @@ const translations = {
     'demo-board-desc': 'Customized Board Prep portal based on exam boards, questions statistics, and your weak areas.',
     'demo-spot-title': 'Spot Notes & Bulletproof Tips',
     'demo-spot-desc': 'Interactive quick facts categorized by tags, engineered for rapid review sessions before exams.',
-    'demo-step3-title': 'AI Clinical Assistant',
-    'demo-step3-desc': 'Advanced search bar and guide queries powered by our medically fine-tuned AI model.',
+    'demo-step3-title': 'Regional Anesthesia Atlas',
+    'demo-step3-desc': 'Ultrasound-guided block atlas — anatomy, sonoanatomy and needle technique.',
     // Instagram
     'insta-title': 'Follow Us on Instagram',
     'insta-subtitle': 'Refresh your knowledge with daily clinical cases, quick anesthesia tips, and educational visual guides.',
@@ -2561,7 +2561,7 @@ const translations = {
     // Download & Footer
     'download-title': 'Safe Decisions in Your Pocket',
     'download-desc': 'Download Anesthesia Briefs for free now, engineered to increase speed, safety, and scientific precision in anesthesia.',
-    'footer-moto': 'You are safe in your clinical decisions.',
+    'footer-moto': 'Clinical reference for anaesthesia & critical care.',
     'footer-links-title': 'Quick Links',
     'footer-legal-title': 'Legal',
     'footer-privacy': 'Privacy Policy',
@@ -8050,7 +8050,7 @@ const translations = {
     'nav-airway-play': '<i class="fa-solid fa-brain"></i> Zor Havayolu',
     // Hero
     'hero-badge': 'Anestezi Profesyonelleri İçin',
-    'hero-title': 'Klinik Kararlarınızda <br><span class="gradient-text">Güvence Altındasınız</span>',
+    'hero-title': 'Anestezi ve Yoğun Bakım için <br><span class="gradient-text">Klinik Referans</span>',
     'hero-desc': 'Acil durum algoritmalarına, gelişmiş ilaç doz hesaplayıcılarına, tıbbi literatür özetlerine ve yapay zeka destekli klinik asistanınıza tek bir uygulamadan anında erişin.',
     'coming-soon': 'Çok Yakında',
     // Features
@@ -8060,8 +8060,8 @@ const translations = {
     'feature-1-desc': 'Hayatı tehdit eden anestezi krizlerine hızlı erişim. Her saniyenin önemli olduğu durumlarda adım adım acil durum kılavuzları.',
     'feature-2-title': 'Klinik Hesaplayıcılar',
     'feature-2-desc': 'Yetişkin, pediatrik ve obstetrik hastalar için hassas doz hesaplamaları ve anestezi puanlama sistemleri.',
-    'feature-3-title': 'AI Klinik Asistan',
-    'feature-3-desc': 'Klinik sorularınızı anında yanıtlayan, uluslararası kılavuzlarla eğitilmiş gelişmiş yapay zeka asistanı.',
+    'feature-3-title': 'Bölgesel Anestezi Atlası',
+    'feature-3-desc': 'Ultrason eşliğinde periferik ve nöroaksiyel bloklar için anatomi, sonoanatomi ve iğne tekniği görselleri.',
     'feature-4-title': 'Son Literatür',
     'feature-4-desc': 'Anestezi alanındaki en son klinik yayınların, güncel kılavuzların ve bilimsel makalelerin özetleri.',
     // Premium Hub (Board Prep)
@@ -8090,8 +8090,8 @@ const translations = {
     'demo-board-desc': 'Sınav tiplerine, soru istatistiklerine ve eksiklerinize göre özelleştirilmiş Board Prep paneli.',
     'demo-spot-title': 'Spot Bilgiler & Özetler',
     'demo-spot-desc': 'Konulara göre sınıflandırılmış, hızlı tekrarlar yapabileceğiniz interaktif spot bilgi kartları.',
-    'demo-step3-title': 'Yapay Zeka Klinik Asistanı',
-    'demo-step3-desc': 'Gelişmiş klinik aramalar yapabileceğiniz ve tıbbi rehberleri sorgulayabileceğiniz yapay zeka.',
+    'demo-step3-title': 'Bölgesel Anestezi Atlası',
+    'demo-step3-desc': 'Ultrason eşliğinde blok atlası — anatomi, sonoanatomi ve iğne tekniği.',
     // Instagram
     'insta-title': 'Instagram\'da Bizi Takip Edin',
     'insta-subtitle': 'Her gün paylaşılan yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.',
@@ -8105,7 +8105,7 @@ const translations = {
     // Download & Footer
     'download-title': 'Güvenli Kararlar Cebinizde',
     'download-desc': 'Anestezi uygulamalarında hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs\'i hemen ücretsiz indirin.',
-    'footer-moto': 'Klinik kararlarınızda güvence altındasınız.',
+    'footer-moto': 'Anestezi ve yoğun bakım için klinik referans.',
     'footer-links-title': 'Hızlı Linkler',
     'footer-legal-title': 'Yasal',
     'footer-privacy': 'Gizlilik Politikası',
@@ -8122,7 +8122,7 @@ const translations = {
     'nav-airway-play': '<i class="fa-solid fa-brain"></i> Difficult Airway',
     // Hero
     'hero-badge': 'For Anesthesia Professionals',
-    'hero-title': 'You are safe in <br><span class="gradient-text">Your Clinical Decisions</span>',
+    'hero-title': 'Clinical Reference for <br><span class="gradient-text">Anaesthesia & Critical Care</span>',
     'hero-desc': 'Instantly access emergency algorithms, advanced drug dosage calculators, medical literature summaries, and your AI-powered clinical assistant from a single application.',
     'coming-soon': 'Coming Soon',
     // Features
@@ -8132,8 +8132,8 @@ const translations = {
     'feature-1-desc': 'Rapid access to life-threatening anesthesia crises. Step-by-step emergency guidance when every single second counts.',
     'feature-2-title': 'Clinical Calculators',
     'feature-2-desc': 'Precise dosage calculations and anesthesia scoring systems for adult, pediatric, and obstetric patients.',
-    'feature-3-title': 'AI Clinical Assistant',
-    'feature-3-desc': 'Advanced medically-tuned AI assistant that answers clinical queries and verifies medical guidelines in real time.',
+    'feature-3-title': 'Regional Anesthesia Atlas',
+    'feature-3-desc': 'Ultrasound-guided anatomy, sonoanatomy and needle-technique visuals for peripheral and neuraxial blocks.',
     'feature-4-title': 'Latest Literature',
     'feature-4-desc': 'Stay ahead with clean summaries of the latest clinical publications, guidelines, and anesthesia briefs.',
     // Premium Hub (Board Prep)
@@ -8162,8 +8162,8 @@ const translations = {
     'demo-board-desc': 'Customized Board Prep portal based on exam boards, questions statistics, and your weak areas.',
     'demo-spot-title': 'Spot Notes & Bulletproof Tips',
     'demo-spot-desc': 'Interactive quick facts categorized by tags, engineered for rapid review sessions before exams.',
-    'demo-step3-title': 'AI Clinical Assistant',
-    'demo-step3-desc': 'Advanced search bar and guide queries powered by our medically fine-tuned AI model.',
+    'demo-step3-title': 'Regional Anesthesia Atlas',
+    'demo-step3-desc': 'Ultrasound-guided block atlas — anatomy, sonoanatomy and needle technique.',
     // Instagram
     'insta-title': 'Follow Us on Instagram',
     'insta-subtitle': 'Refresh your knowledge with daily clinical cases, quick anesthesia tips, and educational visual guides.',
@@ -8177,7 +8177,7 @@ const translations = {
     // Download & Footer
     'download-title': 'Safe Decisions in Your Pocket',
     'download-desc': 'Download Anesthesia Briefs for free now, engineered to increase speed, safety, and scientific precision in anesthesia.',
-    'footer-moto': 'You are safe in your clinical decisions.',
+    'footer-moto': 'Clinical reference for anaesthesia & critical care.',
     'footer-links-title': 'Quick Links',
     'footer-legal-title': 'Legal',
     'footer-privacy': 'Privacy Policy',
@@ -11014,7 +11014,7 @@ function DrugsScreen() {
       fontSize: 15,
       color: "var(--ab-text-muted)"
     }
-  }, "Clinically validated, comprehensive anesthesia drug monographs."), /*#__PURE__*/React.createElement(SearchField, {
+  }, "Source-cited, comprehensive anesthesia drug monographs."), /*#__PURE__*/React.createElement(SearchField, {
     placeholder: "Search drug name, generic, or class\u2026"
   }), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -11060,8 +11060,8 @@ const AB_HOME_I18N = {
     q2d: "Pediatric & adult dosing",
     q3: "Regional Anesthesia",
     q3d: "US-guided block atlas",
-    q4: "AI Clinical Assistant",
-    q4d: "Decision support chat",
+    q4: "Regional Atlas",
+    q4d: "US-guided block atlas",
     crisisTitle: "Emergency Crisis Algorithms",
     crisisBody: "Step-by-step guidance for MH, LAST, anaphylaxis & CICO.",
     crisis: ["CICO", "Anaphylaxis", "Malignant Hyperthermia", "Hyperkalemia"],
@@ -11084,8 +11084,8 @@ const AB_HOME_I18N = {
     q2d: "Pediatrik & eri\u015fkin doz",
     q3: "Rejyonel Anestezi",
     q3d: "USG-rehberli blok atlas\u0131",
-    q4: "AI Klinik Asistan",
-    q4d: "Karar destek sohbeti",
+    q4: "Bölgesel Atlas",
+    q4d: "USG blok atlası",
     crisisTitle: "Acil Kriz Algoritmalar\u0131",
     crisisBody: "MH, LAST, anafilaksi ve CICO i\u00e7in ad\u0131m ad\u0131m rehberlik.",
     crisis: ["CICO", "Anafilaksi", "Malign Hipertermi", "Hiperkalemi"],
