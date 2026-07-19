@@ -82,7 +82,7 @@ const AB_HOME_I18N = {
     q1: "Emergency Algorithms", q1d: "Critical life-saving trees",
     q2: "Clinical Calculators", q2d: "Pediatric & adult dosing",
     q3: "Regional Anesthesia", q3d: "US-guided block atlas",
-    q4: "AI Clinical Assistant", q4d: "Decision support chat",
+    q4: "Regional Atlas", q4d: "US-guided block atlas",
     crisisTitle: "Emergency Crisis Algorithms", crisisBody: "Step-by-step guidance for MH, LAST, anaphylaxis & CICO.",
     crisis: ["CICO", "Anaphylaxis", "Malignant Hyperthermia", "Hyperkalemia"],
     boardTitle: "Anesthesia Board Prep", boardBody: "Bilingual (TR/EN) EDAIC & ABA question banks, viva scenarios and referenced explanations.",
@@ -97,7 +97,7 @@ const AB_HOME_I18N = {
     q1: "Acil Algoritmalar", q1d: "Hayat kurtaran karar a\u011fa\u00e7lar\u0131",
     q2: "Klinik Hesaplay\u0131c\u0131lar", q2d: "Pediatrik & eri\u015fkin doz",
     q3: "Rejyonel Anestezi", q3d: "USG-rehberli blok atlas\u0131",
-    q4: "AI Klinik Asistan", q4d: "Karar destek sohbeti",
+    q4: "Bölgesel Atlas", q4d: "USG blok atlası",
     crisisTitle: "Acil Kriz Algoritmalar\u0131", crisisBody: "MH, LAST, anafilaksi ve CICO i\u00e7in ad\u0131m ad\u0131m rehberlik.",
     crisis: ["CICO", "Anafilaksi", "Malign Hipertermi", "Hiperkalemi"],
     boardTitle: "Anestezi Board Haz\u0131rl\u0131k", boardBody: "\u0130ki dilli (TR/EN) EDAIC & ABA soru bankalar\u0131, viva senaryolar\u0131 ve referansl\u0131 a\u00e7\u0131klamalar.",
@@ -397,7 +397,7 @@ function DrugsScreen() {
   return (
     <div style={{ flex: 1, overflowY: "auto", background: "var(--ab-sand)", padding: "54px 20px 24px" }}>
       <h1 style={{ margin: 0, fontFamily: "var(--font-display)", fontWeight: 900, fontSize: 28, letterSpacing: "-0.6px", color: "var(--ab-navy)" }}>Drug Database</h1>
-      <p style={{ margin: "6px 0 18px", fontFamily: "var(--font-body)", fontSize: 15, color: "var(--ab-text-muted)" }}>Clinically validated, comprehensive anesthesia drug monographs.</p>
+      <p style={{ margin: "6px 0 18px", fontFamily: "var(--font-body)", fontSize: 15, color: "var(--ab-text-muted)" }}>Source-cited, comprehensive anesthesia drug monographs.</p>
 
       <SearchField placeholder="Search drug name, generic, or class…" />
 
