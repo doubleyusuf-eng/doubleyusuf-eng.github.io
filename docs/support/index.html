@@ -1,0 +1,788 @@
+<!-- @dsCard group="Marketing Site" viewport="1240x900" name="Support Center" subtitle="Bilingual TR/EN support portal — App Store Support URL" -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>Destek Merkezi — Anesthesia Briefs</title>
+<meta name="description" content="Anesthesia Briefs destek merkezi: Premium erişim, abonelik ve satın alma geri yükleme, teknik sorunlar, hata bildirimi ve uygulama kullanımı hakkında yardım." />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="../assets/logo.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="manifest" href="../site.webmanifest" />
+<link rel="canonical" href="https://www.anesthesiabriefs.com/support" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Anesthesia Briefs" />
+<meta property="og:title" content="Anesthesia Briefs Destek Merkezi" />
+<meta property="og:description" content="Premium erişim, abonelik, satın alma geri yükleme, teknik sorunlar ve uygulama kullanımı hakkında yardım." />
+<meta property="og:url" content="https://www.anesthesiabriefs.com/support" />
+<meta property="og:image" content="https://www.anesthesiabriefs.com/assets/intro-poster.jpg" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="../styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I activate Premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium features become available after a successful purchase or subscription through the Apple App Store. Access can be restored using the Restore Purchases option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I restore my Premium purchase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the application and use the Restore Purchases option. Restoration depends on the Apple account used for the original purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I manage my subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subscriptions are managed through Apple's subscription management system. Use the Manage Subscription option inside the application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are Premium products not visible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If Premium access is already active, purchase options may not be displayed. Your current Premium status can be checked inside the application."
+      }
+    }
+  ]
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--ab-cream);
+  color: var(--ab-text-slate);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--ab-teal); }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--ab-navy); color: #fff; padding: 12px 18px; border-radius: 0 0 8px 0;
+}
+.skip:focus { left: 0; }
+
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--ab-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Header ---------- */
+.sc-head {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(13, 30, 54, 0.97);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: saturate(140%) blur(8px);
+}
+.sc-head-in {
+  max-width: 1100px; margin: 0 auto; padding: 12px 22px;
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.sc-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.sc-logo img { width: 34px; height: 34px; object-fit: contain; }
+.sc-brand {
+  font-family: var(--font-display); font-weight: 700; font-size: 17px;
+  color: #fff; letter-spacing: -0.3px;
+}
+.sc-brand em { font-style: normal; color: var(--ab-gold); }
+.sc-nav { display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; }
+.sc-nav a {
+  color: #D5DEEA; text-decoration: none; font-size: 14px; font-weight: 500;
+  padding: 7px 11px; border-radius: 7px;
+}
+.sc-nav a:hover { background: rgba(255, 255, 255, 0.09); color: #fff; }
+.sc-nav a[aria-current="page"] { background: rgba(194, 162, 103, 0.18); color: var(--ab-gold); }
+.lang { display: flex; gap: 4px; }
+.lang button {
+  background: transparent; border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #D5DEEA; font: 600 12px/1 var(--font-body);
+  padding: 7px 10px; border-radius: 7px; cursor: pointer;
+}
+.lang button.on { background: var(--ab-gold); border-color: var(--ab-gold); color: #2A2110; }
+
+/* ---------- Layout ---------- */
+main { max-width: 1000px; margin: 0 auto; padding: 0 22px 80px; }
+.sc-doc { display: none; }
+.sc-doc.show { display: block; }
+section { margin-top: 62px; scroll-margin-top: 80px; }
+h2 {
+  font-family: var(--font-display); font-size: 27px; font-weight: 700;
+  color: var(--ab-navy); letter-spacing: -0.5px; margin-bottom: 8px;
+}
+h3 { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--ab-navy); }
+.lede { color: var(--ab-text-muted); margin-bottom: 24px; max-width: 68ch; }
+p { text-wrap: pretty; }
+
+/* ---------- Hero ---------- */
+.hero {
+  margin-top: 40px; padding: 52px 42px;
+  background: linear-gradient(135deg, var(--ab-navy-deep), var(--ab-navy-light));
+  border-radius: 20px; color: #fff;
+}
+.hero .eyebrow {
+  display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--ab-gold); margin-bottom: 14px;
+}
+.hero h1 {
+  font-family: var(--font-display); font-size: clamp(28px, 5vw, 41px); font-weight: 700;
+  letter-spacing: -1px; line-height: 1.15; margin-bottom: 14px;
+}
+.hero .sub { font-size: 18px; color: #DCE5F0; max-width: 60ch; margin-bottom: 10px; }
+.hero .desc { font-size: 15px; color: #AFC0D5; max-width: 62ch; margin-bottom: 28px; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: 13px 24px; border-radius: 10px;
+  font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid transparent;
+  cursor: pointer; font-family: var(--font-body);
+}
+.btn-primary { background: var(--ab-gold); color: #2A2110; }
+.btn-primary:hover { background: #D0B47D; }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.4); }
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.1); }
+
+/* ---------- Cards ---------- */
+.grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+.card {
+  background: #FCFDFE; border: 1px solid var(--ab-border);
+  border-radius: 14px; padding: 24px;
+}
+.card .ic {
+  width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
+  font-size: 18px; margin-bottom: 14px;
+}
+.ic-teal { background: rgba(74, 124, 140, 0.14); }
+.ic-gold { background: rgba(194, 162, 103, 0.18); }
+.ic-navy { background: rgba(27, 54, 93, 0.10); }
+.ic-red  { background: rgba(166, 26, 26, 0.10); }
+.card h3 { margin-bottom: 7px; }
+.card p { font-size: 14.5px; color: var(--ab-text-muted); }
+
+.panel {
+  background: var(--ab-linen); border: 1px solid var(--ab-border);
+  border-radius: 14px; padding: 28px;
+}
+.panel.accent { border-left: 4px solid var(--ab-gold); }
+.panel.warn { border-left: 4px solid var(--ab-red); background: #FBF3F3; border-color: #E8CFCF; }
+
+/* ---------- Contact ---------- */
+.contact-wrap { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 860px) { .contact-wrap { grid-template-columns: 320px minmax(0, 1fr); } }
+.mail-big {
+  font-family: var(--font-display); font-size: clamp(13.5px, 4.2vw, 16.5px); font-weight: 700;
+  color: var(--ab-navy); overflow-wrap: anywhere; text-decoration: none; display: inline-block;
+}
+.copy-btn {
+  margin-top: 12px; background: var(--ab-navy); color: #fff; border: none;
+  padding: 9px 15px; border-radius: 8px; font: 600 13px var(--font-body); cursor: pointer;
+}
+.copy-btn:hover { background: var(--ab-navy-light); }
+form .row { margin-bottom: 15px; }
+label { display: block; font-size: 13.5px; font-weight: 600; color: var(--ab-navy); margin-bottom: 5px; }
+input, select, textarea {
+  width: 100%; padding: 11px 13px; border: 1px solid var(--ab-border);
+  border-radius: 9px; font: 15px var(--font-body); background: #fff; color: var(--ab-text-slate);
+}
+textarea { min-height: 128px; resize: vertical; }
+.hint { font-size: 13px; color: var(--ab-text-muted); margin-top: 10px; }
+
+/* ---------- FAQ ---------- */
+details {
+  background: #FCFDFE; border: 1px solid var(--ab-border);
+  border-radius: 11px; padding: 0; margin-bottom: 10px;
+}
+summary {
+  cursor: pointer; padding: 17px 20px; font-weight: 600; color: var(--ab-navy);
+  font-size: 15.5px; list-style: none; display: flex; justify-content: space-between; gap: 14px;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--ab-teal); font-size: 21px; line-height: 1; flex: none; }
+details[open] summary::after { content: "\2212"; }
+details .body { padding: 0 20px 18px; color: var(--ab-text-muted); font-size: 15px; }
+
+/* ---------- Premium status mock ---------- */
+.mock {
+  background: var(--ab-navy-deep); border-radius: 14px; padding: 22px; color: #fff; max-width: 380px;
+}
+.mock .badge {
+  display: inline-flex; align-items: center; gap: 7px; background: rgba(74, 124, 140, 0.28);
+  color: #9EDBE8; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 700;
+  margin-bottom: 16px;
+}
+.mock .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 1.1px; color: #8FA3BC; }
+.mock .plan { font-family: var(--font-display); font-size: 19px; font-weight: 700; margin: 3px 0 16px; }
+.mock .manage { color: var(--ab-gold); font-weight: 600; font-size: 14.5px; text-decoration: none; }
+
+/* ---------- Lists / tables ---------- */
+ul.checks { list-style: none; display: grid; gap: 9px; }
+ul.checks li { padding-left: 26px; position: relative; font-size: 15px; }
+ul.checks li::before {
+  content: ""; position: absolute; left: 0; top: 9px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--ab-teal);
+}
+ol.steps { padding-left: 20px; display: grid; gap: 8px; font-size: 15px; }
+dl.info { display: grid; gap: 0; }
+dl.info > div {
+  display: flex; justify-content: space-between; gap: 18px;
+  padding: 12px 0; border-bottom: 1px solid var(--ab-border);
+}
+dl.info > div:last-child { border-bottom: none; }
+dl.info dt { font-size: 14px; color: var(--ab-text-muted); }
+dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-size: 14.5px; }
+
+.status-group { margin-bottom: 22px; }
+.status-group:last-child { margin-bottom: 0; }
+.status-group h3 { margin-bottom: 9px; }
+.empty { color: var(--ab-text-muted); font-size: 14.5px; font-style: italic; }
+
+/* ---------- Footer ---------- */
+.sc-foot { background: var(--ab-navy-deep); color: #AFC0D5; padding: 40px 22px; margin-top: 70px; }
+.sc-foot-in { max-width: 1000px; margin: 0 auto; display: grid; gap: 14px; }
+.sc-foot a { color: #DCE5F0; text-decoration: none; font-size: 14.5px; }
+.sc-foot a:hover { color: var(--ab-gold); }
+.foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.foot-small { font-size: 13.5px; color: #8FA3BC; }
+
+@media (max-width: 640px) {
+  .hero { padding: 38px 24px; }
+  .panel { padding: 22px; }
+  section { margin-top: 48px; }
+  dl.info > div { flex-direction: column; gap: 2px; }
+  dl.info dd { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main" data-i18n-skip>İçeriğe geç</a>
+
+<header class="sc-head">
+  <div class="sc-head-in">
+    <a class="sc-logo" href="../index.html">
+      <img src="../assets/logo.png" alt="" />
+      <span class="sc-brand">Anesthesia<em>Briefs</em></span>
+    </a>
+    <nav class="sc-nav" aria-label="Support">
+      <a href="../index.html" data-i18n-nhome>Ana Sayfa</a>
+      <a href="./" aria-current="page" data-i18n-nsupport>Destek</a>
+      <a href="../privacy.html" data-i18n-npriv>Gizlilik</a>
+      <a href="../terms.html" data-i18n-nterms>Kullanım Şartları</a>
+      <a href="#contact" data-i18n-ncontact>İletişim</a>
+    </nav>
+    <div class="lang">
+      <button id="l-tr" type="button" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
+      <button id="l-en" type="button" onclick="setLang('en')" aria-label="English">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================== TÜRKÇE ============================== -->
+<div class="sc-doc" data-lang="tr">
+
+  <div class="hero">
+    <span class="eyebrow">Destek</span>
+    <h1>Anesthesia Briefs Destek Merkezi</h1>
+    <p class="sub">Anestezi ve yoğun bakım profesyonelleri için yardım, sorun giderme ve destek.</p>
+    <p class="desc">Premium erişim, abonelikler, satın alımlar, uygulama özellikleri ve teknik sorunlar hakkındaki sorularınızın yanıtlarını burada bulabilirsiniz.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact">Destek ile İletişime Geç</a>
+      <a class="btn btn-ghost" href="../privacy.html">Gizlilik Politikası</a>
+    </div>
+  </div>
+
+  <section aria-labelledby="tr-quick">
+    <h2 id="tr-quick">Hızlı Destek</h2>
+    <p class="lede">Konunuza en yakın başlığı seçin; aşağıdaki bölümlerde ayrıntılı yanıtları bulacaksınız.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic ic-gold" aria-hidden="true">★</div>
+        <h3>Premium ve Abonelik Desteği</h3>
+        <p>Premium erişim, abonelikler, satın alma geri yükleme ve faturalandırma soruları hakkında yardım.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-teal" aria-hidden="true">⚙</div>
+        <h3>Teknik Destek</h3>
+        <p>Hataları, çökmeleri, yüklenme sorunlarını veya beklenmeyen uygulama davranışlarını bildirin.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-navy" aria-hidden="true">✎</div>
+        <h3>İçerik Geri Bildirimi</h3>
+        <p>Klinik içerik ve eğitim kaynakları hakkındaki önerilerinizi ve geri bildirimlerinizi paylaşın.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-red" aria-hidden="true">?</div>
+        <h3>Uygulama Kullanım Yardımı</h3>
+        <p>Algoritmaların, hesaplayıcıların, literatürün ve referans araçlarının nasıl kullanılacağını öğrenin.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="tr-contact">
+    <h2 id="tr-contact">Destek ile İletişim</h2>
+    <p class="lede">Anesthesia Briefs ile ilgili teknik sorunlar, abonelik problemleri, satın alma soruları veya geri bildirimleriniz için destek ekibimizle iletişime geçin.</p>
+    <div class="contact-wrap">
+      <div class="panel accent">
+        <div class="lbl" style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">E-posta</div>
+        <a class="mail-big" href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>
+        <br />
+        <button class="copy-btn" type="button" onclick="copyMail(this)" data-copied="Kopyalandı ✓">Adresi kopyala</button>
+        <p class="hint">Yanıt süresi genellikle birkaç iş günüdür.</p>
+      </div>
+      <div class="panel">
+        <form onsubmit="return sendMail(event, 'tr')">
+          <div class="row">
+            <label for="tr-name">Ad Soyad</label>
+            <input id="tr-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="row">
+            <label for="tr-email">E-posta</label>
+            <input id="tr-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="row">
+            <label for="tr-cat">Kategori</label>
+            <select id="tr-cat" name="category">
+              <option>Teknik Sorun</option>
+              <option>Premium / Abonelik</option>
+              <option>Satın Alma Geri Yükleme</option>
+              <option>İçerik Geri Bildirimi</option>
+              <option>Diğer</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="tr-msg">Mesaj</label>
+            <textarea id="tr-msg" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Mesajı Hazırla</button>
+          <p class="hint">Bu form bir sunucuya veri göndermez. Gönder'e bastığınızda, girdiğiniz bilgilerle hazırlanmış bir e-posta taslağı kendi e-posta uygulamanızda açılır; göndermeden önce içeriği görebilir ve düzenleyebilirsiniz.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tr-faq">
+    <h2 id="tr-faq">Sıkça Sorulan Sorular</h2>
+    <p class="lede">Premium ve abonelik</p>
+    <details>
+      <summary>Premium'u nasıl etkinleştiririm?</summary>
+      <div class="body">Premium özellikler, Apple App Store üzerinden başarılı bir satın alma veya abonelik sonrasında kullanıma açılır. Erişim, <strong>Satın Alımları Geri Yükle</strong> seçeneğiyle geri yüklenebilir.</div>
+    </details>
+    <details>
+      <summary>Premium satın alımımı nasıl geri yüklerim?</summary>
+      <div class="body">Uygulamayı açın ve <strong>Satın Alımları Geri Yükle</strong> seçeneğini kullanın. Geri yükleme, ilk satın alma için kullanılan Apple hesabına bağlıdır.</div>
+    </details>
+    <details>
+      <summary>Aboneliğimi nasıl yönetirim?</summary>
+      <div class="body">Abonelikler Apple'ın abonelik yönetim sistemi üzerinden yönetilir. Uygulama içindeki <strong>Aboneliği yönet</strong> seçeneğini kullanın.</div>
+    </details>
+    <details>
+      <summary>Premium ürünler neden görünmüyor?</summary>
+      <div class="body">Premium erişiminiz halihazırda etkinse satın alma seçenekleri gösterilmeyebilir. Mevcut Premium durumunuzu uygulama içinden kontrol edebilirsiniz.</div>
+    </details>
+  </section>
+
+  <section aria-labelledby="tr-status">
+    <h2 id="tr-status">Premium Durumunuzu Kontrol Etme</h2>
+    <p class="lede">Premium erişim etkin olduğunda, uygulama zaten geçerli bir hak tespit ettiği için satın alma seçeneklerini gizleyebilir. Bu beklenen bir davranıştır; eksik bir özellik değildir.</p>
+    <div class="mock">
+      <span class="badge">Premium etkin ✓</span>
+      <div class="lbl">Mevcut plan</div>
+      <div class="plan">Aylık abonelik</div>
+      <span class="manage">Aboneliği yönet →</span>
+    </div>
+    <p class="hint" style="margin-top:14px">Yukarıdaki görsel, Premium etkinken uygulamanın gösterdiği bilgileri örnekler: geçerli plan (aylık abonelik, yıllık abonelik veya ömür boyu erişim) ve aboneliği yönetme bağlantısı.</p>
+  </section>
+
+  <section aria-labelledby="tr-beta">
+    <h2 id="tr-beta">Beta Test Desteği</h2>
+    <p class="lede">TestFlight testleri sırasında Apple sandbox satın alımları, üretim ortamındaki satın alımlardan farklı davranabilir. Abonelik yönetimi ve yenileme zamanlaması, App Store üretim ortamıyla birebir aynı olmayabilir.</p>
+    <div class="panel">
+      <h3>TestFlight geri bildirimi</h3>
+      <ol class="steps" style="margin-top:10px">
+        <li>TestFlight uygulamasını açın ve Anesthesia Briefs'i seçin.</li>
+        <li><strong>Geri Bildirim Gönder</strong> seçeneğini kullanın veya beta sürümdeyken ekran görüntüsü alıp paylaşım menüsünden geri bildirim gönderin.</li>
+        <li>Ayrıntılı bir inceleme gerekiyorsa aynı bilgileri <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a> adresine iletin.</li>
+      </ol>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3>Hata bildirimi kontrol listesi</h3>
+      <p class="hint" style="margin:6px 0 12px">Sorunu hızlı tekrarlayabilmemiz için lütfen şunları ekleyin:</p>
+      <ul class="checks">
+        <li>Cihaz modeli</li>
+        <li>iOS sürümü</li>
+        <li>Uygulama sürümü</li>
+        <li>Uygulama dili</li>
+        <li>Sorunu yeniden oluşturma adımları</li>
+        <li>Varsa ekran görüntüsü</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="tr-known">
+    <h2 id="tr-known">Bilinen Sorunlar ve Güncellemeler</h2>
+    <p class="lede">İlk sürüm döneminde şeffaflık için bu bölümü güncel tutuyoruz.</p>
+    <div class="panel">
+      <div class="status-group">
+        <h3>Güncel bilinen sorunlar</h3>
+        <ul class="checks">
+          <li>Premium erişim etkinken satın alma seçenekleri gizlenir. Bu beklenen davranıştır; ayrıntı için <em>Premium Durumunuzu Kontrol Etme</em> bölümüne bakın.</li>
+          <li>TestFlight sandbox ortamında abonelik yenileme süreleri hızlandırılmıştır ve üretim ortamını yansıtmaz.</li>
+        </ul>
+      </div>
+      <div class="status-group">
+        <h3>Yakın zamanda giderilenler</h3>
+        <p class="empty">Bu sürüm için henüz kayıt yok.</p>
+      </div>
+      <div class="status-group">
+        <h3>Planlanan iyileştirmeler</h3>
+        <p class="empty">Planlanan iyileştirmeler yayınlandıkça burada duyurulacaktır.</p>
+      </div>
+      <!-- Yeni kayıt eklemek için ilgili <ul class="checks"> içine <li> ekleyin;
+           liste boşsa <p class="empty"> satırını listeyle değiştirin. -->
+    </div>
+  </section>
+
+  <section aria-labelledby="tr-disc">
+    <h2 id="tr-disc">Tıbbi Sorumluluk Reddi</h2>
+    <div class="panel warn">
+      <p>Anesthesia Briefs, sağlık profesyonellerine ve tıp eğitimi amaçlarına yönelik olarak tasarlanmıştır. Uygulamada sunulan bilgiler klinik muhakemenin, kurum protokollerinin veya güncel tıbbi kılavuzların yerine geçmez.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="tr-priv">
+    <h2 id="tr-priv">Gizlilik ve Veri</h2>
+    <div class="panel">
+      <ul class="checks">
+        <li>Hastayı tanımlayabilecek hiçbir bilgi toplanmaz.</li>
+        <li>Uygulama, öncelikli olarak çevrimdışı çalışan bir klinik referans aracı olarak tasarlanmıştır.</li>
+        <li>Kullanıcılar uygulamaya hastayı tanımlayabilecek bilgi girmemelidir.</li>
+      </ul>
+      <p style="margin-top:16px"><a href="../privacy.html">Gizlilik Politikası'nı okuyun →</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="tr-app">
+    <h2 id="tr-app">Uygulama Bilgileri</h2>
+    <div class="panel">
+      <dl class="info">
+        <div><dt>Uygulama</dt><dd>Anesthesia Briefs</dd></div>
+        <div><dt>Platform</dt><dd>iOS</dd></div>
+        <div><dt>Diller</dt><dd>İngilizce / Türkçe</dd></div>
+        <div><dt>Kategori</dt><dd>Tıp Eğitimi ve Klinik Referans</dd></div>
+        <div><dt>Sürüm</dt><dd>1.0.0</dd></div>
+      </dl>
+      <p class="hint" style="margin-top:14px">Uygulama; klinik karar algoritmaları, acil durum referansları (CICO, anafilaksi, malign hipertermi, LAST), erişkin ve pediatrik hesaplayıcılar, ilaç kütüphanesi, rejyonel anestezi referansı, literatür özetleri ve board sınavı (ABA · EDAIC) çalışma kaynakları içerir. Anesthesia Briefs, ABA veya EDAIC ile bağlantılı değildir ve bu kurumlar tarafından onaylanmamıştır.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============================== ENGLISH ============================== -->
+<div class="sc-doc" data-lang="en">
+
+  <div class="hero">
+    <span class="eyebrow">Support</span>
+    <h1>Anesthesia Briefs Support Center</h1>
+    <p class="sub">Help, troubleshooting, and assistance for anesthesia and critical care professionals.</p>
+    <p class="desc">Find answers about Premium access, subscriptions, purchases, app features, and technical issues.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact">Contact Support</a>
+      <a class="btn btn-ghost" href="../privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <section aria-labelledby="en-quick">
+    <h2 id="en-quick">Quick Support</h2>
+    <p class="lede">Pick the topic closest to your question — detailed answers follow below.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic ic-gold" aria-hidden="true">★</div>
+        <h3>Premium &amp; Subscription Support</h3>
+        <p>Help with Premium access, subscriptions, purchase restoration, and billing questions.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-teal" aria-hidden="true">⚙</div>
+        <h3>Technical Support</h3>
+        <p>Report bugs, crashes, loading issues, or unexpected app behavior.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-navy" aria-hidden="true">✎</div>
+        <h3>Content Feedback</h3>
+        <p>Share suggestions or feedback about clinical content and educational resources.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-red" aria-hidden="true">?</div>
+        <h3>App Usage Help</h3>
+        <p>Learn how to use algorithms, calculators, literature, and reference tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="en-contact">
+    <h2 id="en-contact">Contact Support</h2>
+    <p class="lede">For technical issues, subscription problems, purchase questions, or feedback regarding Anesthesia Briefs, please contact our support team.</p>
+    <div class="contact-wrap">
+      <div class="panel accent">
+        <div style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">Email</div>
+        <a class="mail-big" href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>
+        <br />
+        <button class="copy-btn" type="button" onclick="copyMail(this)" data-copied="Copied ✓">Copy address</button>
+        <p class="hint">We typically reply within a few business days.</p>
+      </div>
+      <div class="panel">
+        <form onsubmit="return sendMail(event, 'en')">
+          <div class="row">
+            <label for="en-name">Name</label>
+            <input id="en-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="row">
+            <label for="en-email">Email</label>
+            <input id="en-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="row">
+            <label for="en-cat">Category</label>
+            <select id="en-cat" name="category">
+              <option>Technical Issue</option>
+              <option>Premium / Subscription</option>
+              <option>Restore Purchase</option>
+              <option>Content Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="en-msg">Message</label>
+            <textarea id="en-msg" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Compose Message</button>
+          <p class="hint">This form does not send data to a server. On submit, a pre-filled draft opens in your own email client, so you can review and edit it before sending.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="en-faq">
+    <h2 id="en-faq">Frequently Asked Questions</h2>
+    <p class="lede">Premium &amp; subscription</p>
+    <details>
+      <summary>How do I activate Premium?</summary>
+      <div class="body">Premium features become available after a successful purchase or subscription through the Apple App Store. Access can be restored using the <strong>Restore Purchases</strong> option.</div>
+    </details>
+    <details>
+      <summary>How do I restore my Premium purchase?</summary>
+      <div class="body">Open the application and use the <strong>Restore Purchases</strong> option. Restoration depends on the Apple account used for the original purchase.</div>
+    </details>
+    <details>
+      <summary>How do I manage my subscription?</summary>
+      <div class="body">Subscriptions are managed through Apple's subscription management system. Use the <strong>Manage subscription</strong> option inside the application.</div>
+    </details>
+    <details>
+      <summary>Why are Premium products not visible?</summary>
+      <div class="body">If Premium access is already active, purchase options may not be displayed. Your current Premium status can be checked inside the application.</div>
+    </details>
+  </section>
+
+  <section aria-labelledby="en-status">
+    <h2 id="en-status">Checking Your Premium Status</h2>
+    <p class="lede">When Premium access is active, the application may hide available purchase options because an active entitlement has already been detected. This is expected behavior, not a missing feature.</p>
+    <div class="mock">
+      <span class="badge">Premium active ✓</span>
+      <div class="lbl">Current plan</div>
+      <div class="plan">Monthly subscription</div>
+      <span class="manage">Manage subscription →</span>
+    </div>
+    <p class="hint" style="margin-top:14px">The illustration above shows what the app displays while Premium is active: your current plan (monthly subscription, yearly subscription, or lifetime access) and a link to manage the subscription.</p>
+  </section>
+
+  <section aria-labelledby="en-beta">
+    <h2 id="en-beta">Beta Testing Support</h2>
+    <p class="lede">During TestFlight testing, Apple sandbox purchases may behave differently from production purchases. Subscription management and renewal timing may not exactly match the App Store production environment.</p>
+    <div class="panel">
+      <h3>TestFlight feedback</h3>
+      <ol class="steps" style="margin-top:10px">
+        <li>Open the TestFlight app and select Anesthesia Briefs.</li>
+        <li>Use <strong>Send Feedback</strong>, or take a screenshot while running the beta and send feedback from the share sheet.</li>
+        <li>If a detailed review is needed, send the same details to <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>.</li>
+      </ol>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3>Bug report checklist</h3>
+      <p class="hint" style="margin:6px 0 12px">So we can reproduce the issue quickly, please include:</p>
+      <ul class="checks">
+        <li>Device model</li>
+        <li>iOS version</li>
+        <li>App version</li>
+        <li>App language</li>
+        <li>Steps to reproduce</li>
+        <li>Screenshot if available</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="en-known">
+    <h2 id="en-known">Known Issues &amp; Updates</h2>
+    <p class="lede">We keep this section current for transparency during early releases.</p>
+    <div class="panel">
+      <div class="status-group">
+        <h3>Current known issues</h3>
+        <ul class="checks">
+          <li>Purchase options are hidden while Premium access is active. This is expected — see <em>Checking Your Premium Status</em>.</li>
+          <li>In the TestFlight sandbox, subscription renewal periods are accelerated and do not reflect the production environment.</li>
+        </ul>
+      </div>
+      <div class="status-group">
+        <h3>Recently fixed</h3>
+        <p class="empty">No entries for this release yet.</p>
+      </div>
+      <div class="status-group">
+        <h3>Upcoming improvements</h3>
+        <p class="empty">Planned improvements will be announced here as they ship.</p>
+      </div>
+      <!-- To add an entry, append an <li> to the relevant <ul class="checks">;
+           if the group is empty, replace the <p class="empty"> line with the list. -->
+    </div>
+  </section>
+
+  <section aria-labelledby="en-disc">
+    <h2 id="en-disc">Medical Disclaimer</h2>
+    <div class="panel warn">
+      <p>Anesthesia Briefs is designed for healthcare professionals and medical education purposes. Information provided in the application does not replace clinical judgment, institutional protocols, or current medical guidelines.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="en-priv">
+    <h2 id="en-priv">Privacy &amp; Data</h2>
+    <div class="panel">
+      <ul class="checks">
+        <li>No patient-identifiable information is collected.</li>
+        <li>The application is designed as an offline-first clinical reference tool.</li>
+        <li>Users should not enter patient-identifiable information into the application.</li>
+      </ul>
+      <p style="margin-top:16px"><a href="../privacy.html">Read the Privacy Policy →</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="en-app">
+    <h2 id="en-app">App Information</h2>
+    <div class="panel">
+      <dl class="info">
+        <div><dt>Application</dt><dd>Anesthesia Briefs</dd></div>
+        <div><dt>Platform</dt><dd>iOS</dd></div>
+        <div><dt>Languages</dt><dd>English / Turkish</dd></div>
+        <div><dt>Category</dt><dd>Medical Education &amp; Clinical Reference</dd></div>
+        <div><dt>Version</dt><dd>1.0.0</dd></div>
+      </dl>
+      <p class="hint" style="margin-top:14px">The app includes clinical decision algorithms, emergency crisis references (CICO, anaphylaxis, malignant hyperthermia, LAST), adult and pediatric calculators, a drug library, a regional anesthesia reference, literature summaries, and board exam (ABA · EDAIC) study resources. Anesthesia Briefs is not affiliated with or endorsed by ABA or EDAIC.</p>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<footer class="sc-foot">
+  <div class="sc-foot-in">
+    <div class="foot-links">
+      <a href="../privacy.html" data-i18n-fpriv>Gizlilik Politikası</a>
+      <a href="../terms.html" data-i18n-fterms>Kullanım Şartları</a>
+      <a href="./" data-i18n-fsupport>Destek</a>
+      <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>
+    </div>
+    <p class="foot-small">© 2026 Anesthesia Briefs. <span data-i18n-rights>Tüm hakları saklıdır.</span></p>
+  </div>
+</footer>
+
+<script>
+var SC_T = {
+  tr: {
+    skip: "İçeriğe geç", nhome: "Ana Sayfa", nsupport: "Destek", npriv: "Gizlilik",
+    nterms: "Kullanım Şartları", ncontact: "İletişim", fpriv: "Gizlilik Politikası",
+    fterms: "Kullanım Şartları", fsupport: "Destek", rights: "Tüm hakları saklıdır.",
+    title: "Destek Merkezi — Anesthesia Briefs"
+  },
+  en: {
+    skip: "Skip to content", nhome: "Home", nsupport: "Support", npriv: "Privacy",
+    nterms: "Terms of Use", ncontact: "Contact", fpriv: "Privacy Policy",
+    fterms: "Terms of Use", fsupport: "Support", rights: "All rights reserved.",
+    title: "Support Center — Anesthesia Briefs"
+  }
+};
+
+function setLang(lang) {
+  lang = lang === "en" ? "en" : "tr";
+  document.documentElement.lang = lang;
+  document.querySelectorAll(".sc-doc").forEach(function (d) {
+    d.classList.toggle("show", d.dataset.lang === lang);
+  });
+  var tr = document.getElementById("l-tr"), en = document.getElementById("l-en");
+  if (tr) tr.classList.toggle("on", lang === "tr");
+  if (en) en.classList.toggle("on", lang === "en");
+
+  var t = SC_T[lang];
+  Object.keys(t).forEach(function (k) {
+    if (k === "title") return;
+    document.querySelectorAll("[data-i18n-" + k + "]").forEach(function (e) { e.textContent = t[k]; });
+  });
+  document.title = t.title;
+  try { localStorage.setItem("ab_lang", lang); } catch (e) {}
+}
+
+function copyMail(btn) {
+  var addr = "support@anesthesiabriefs.com";
+  var done = btn.getAttribute("data-copied");
+  var original = btn.textContent;
+  function flash() {
+    btn.textContent = done;
+    setTimeout(function () { btn.textContent = original; }, 1800);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(addr).then(flash, function () {});
+  }
+}
+
+function sendMail(ev, lang) {
+  ev.preventDefault();
+  var f = ev.target;
+  var cat = f.category.value;
+  var subject = "[" + cat + "] Anesthesia Briefs — " + (lang === "tr" ? "Destek talebi" : "Support request");
+  var lines = lang === "tr"
+    ? ["Ad Soyad: " + f.name.value, "E-posta: " + f.email.value, "Kategori: " + cat, "", f.message.value]
+    : ["Name: " + f.name.value, "Email: " + f.email.value, "Category: " + cat, "", f.message.value];
+  window.location.href = "mailto:support@anesthesiabriefs.com"
+    + "?subject=" + encodeURIComponent(subject)
+    + "&body=" + encodeURIComponent(lines.join("\n"));
+  return false;
+}
+
+(function () {
+  var l = "tr";
+  try { l = localStorage.getItem("ab_lang") || "tr"; } catch (e) {}
+  setLang(l);
+})();
+</script>
+</body>
+</html>
