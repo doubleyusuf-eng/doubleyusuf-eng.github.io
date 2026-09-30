@@ -1,0 +1,259 @@
+<!-- @dsCard group="Marketing Site" viewport="390x844" name="Download" subtitle="Store hand-off page for social links (Instagram Story) — /download" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>Download Anesthesia Briefs</title>
+<meta name="description" content="Get Anesthesia Briefs on Google Play: anesthesia reference, algorithms and board preparation — available offline." />
+<meta name="theme-color" content="#0D1E36" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="canonical" href="https://www.anesthesiabriefs.com/download" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Anesthesia Briefs" />
+<meta property="og:title" content="Download Anesthesia Briefs" />
+<meta property="og:description" content="Anesthesia reference, algorithms and board preparation — available offline." />
+<meta property="og:url" content="https://www.anesthesiabriefs.com/download" />
+<meta property="og:image" content="https://www.anesthesiabriefs.com/assets/icon-512.png" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta property="og:image:alt" content="Anesthesia Briefs app icon" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<!-- Tokens are linked directly rather than through styles.css: its @import
+     chain blocks first paint on the Google Fonts request, and this page has to
+     paint fast inside Instagram's in-app browser. Fonts load without blocking. -->
+<link rel="stylesheet" href="tokens/colors.css" />
+<link rel="stylesheet" href="tokens/typography.css" />
+<link rel="stylesheet" href="tokens/spacing.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" media="print" onload="this.media='all'" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  min-height: 100vh; min-height: 100svh;
+  display: flex; flex-direction: column;
+  font-family: var(--font-body);
+  background: var(--ab-cream);
+  color: var(--ab-text-slate);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+:where(a, button):focus-visible { outline: 3px solid var(--ab-gold); outline-offset: 3px; border-radius: 6px; }
+
+.dl {
+  flex: 1;
+  width: 100%; max-width: 420px; margin: 0 auto;
+  padding: 56px 20px 32px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+}
+.dl-icon {
+  width: 104px; height: 104px; border-radius: 24px;
+  box-shadow: var(--shadow-hover);
+  margin-bottom: var(--space-6);
+}
+.dl h1 {
+  font-family: var(--font-display); font-weight: var(--fw-extra);
+  font-size: 30px; line-height: var(--lh-tight); letter-spacing: var(--ls-display);
+  color: var(--ab-navy);
+  margin-bottom: var(--space-3);
+}
+.dl-tag {
+  font-size: var(--fs-body-lg); color: var(--ab-text-muted);
+  max-width: 32ch; text-wrap: balance;
+  margin-bottom: var(--space-8);
+}
+.dl-note {
+  width: 100%;
+  font-size: var(--fs-body); font-weight: var(--fw-medium); color: var(--ab-navy);
+  background: var(--ab-linen); border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.dl-note[hidden] { display: none; }
+.dl-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; min-height: 56px; padding: 14px 24px;
+  font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 18px;
+  color: #fff; text-decoration: none;
+  background: var(--ab-navy); border-radius: var(--radius-lg);
+  box-shadow: 0 8px 22px rgba(27, 54, 93, 0.22);
+  -webkit-tap-highlight-color: transparent;
+  transition: background var(--dur-page) var(--ease-out), transform var(--dur-press) var(--ease-out);
+}
+.dl-btn:hover { background: var(--ab-navy-light); }
+.dl-btn:active { transform: scale(var(--press-scale)); }
+.dl-btn svg { width: 20px; height: 20px; flex: none; }
+.dl-hint {
+  font-size: var(--fs-body-sm); color: var(--ab-text-muted);
+  max-width: 34ch; margin-top: var(--space-4);
+}
+
+.dl-foot {
+  padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
+  text-align: center; font-size: var(--fs-caption); color: var(--ab-text-muted);
+}
+.dl-foot a { color: var(--ab-text-muted); text-decoration: none; margin: 0 8px; white-space: nowrap; }
+.dl-foot a:hover { color: var(--ab-navy); text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) { .dl-btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<main class="dl">
+  <img class="dl-icon" src="assets/icon-192.png" srcset="assets/icon-192.png 1x, assets/icon-512.png 2x" width="104" height="104" alt="Anesthesia Briefs app icon" />
+  <h1>Anesthesia Briefs</h1>
+  <p class="dl-tag">Anesthesia reference, algorithms and board preparation — available offline.</p>
+
+  <p class="dl-note" id="dl-note" role="status" hidden></p>
+
+  <!-- The href is the no-JavaScript fallback. The script below sets it from
+       STORE_LINKS, so that config is the one place to change store links. -->
+  <a class="dl-btn" id="dl-play" href="https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+    <span>Get it on Google Play</span>
+  </a>
+  <p class="dl-hint">If Google Play doesn't open automatically, tap the button above.</p>
+</main>
+
+<footer class="dl-foot">
+  <a href="./">anesthesiabriefs.com</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="support/">Support</a>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---- Store links: the only place to edit ------------------------------
+  // appStoreUrl stays null until the iOS app has a real, public listing.
+  var STORE_LINKS = {
+    androidPackage: 'com.doubleyusuf.anesthesiabriefs',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs',
+    appStoreUrl: null
+  };
+
+  // Every navigation this page makes must land on one of these hosts.
+  // Nothing from the query string is ever used as a destination.
+  var ALLOWED_STORE_HOSTS = ['play.google.com', 'apps.apple.com'];
+
+  // Campaign parameters forwarded to Google Play as its install referrer.
+  // Allow-listed keys, conservative charset: nothing else passes through.
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var UTM_VALUE = /^[A-Za-z0-9._\-]{1,100}$/;
+
+  var ua = navigator.userAgent || '';
+  var isAndroid = /Android/i.test(ua);
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); // iPadOS reports as Mac
+  // UA sniffing only picks messaging and the Android enhancement below; the
+  // plain HTTPS link works on its own in every browser, known or not.
+  var isMetaInApp = /Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
+  var isAndroidWebView = /; wv\)/.test(ua);
+
+  function isAllowedStoreUrl(url) {
+    try {
+      var u = new URL(url);
+      return u.protocol === 'https:' && ALLOWED_STORE_HOSTS.indexOf(u.hostname) !== -1;
+    } catch (e) { return false; }
+  }
+
+  function readUtm() {
+    var out = {};
+    var params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return out; }
+    UTM_KEYS.forEach(function (k) {
+      var v = params.get(k);
+      if (v && UTM_VALUE.test(v)) out[k] = v;
+    });
+    return out;
+  }
+
+  // The site has no analytics today, so these calls are no-ops. If gtag is
+  // added site-wide later, the page starts reporting without further edits.
+  function track(name, params) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', name, Object.assign({ transport_type: 'beacon' }, params));
+      }
+    } catch (e) { /* analytics must never block the store hand-off */ }
+  }
+
+  var utm = readUtm();
+  var referrer = Object.keys(utm).map(function (k) { return k + '=' + utm[k]; }).join('&');
+  var referrerParam = referrer ? '&referrer=' + encodeURIComponent(referrer) : '';
+
+  var playUrl = STORE_LINKS.googlePlayUrl + referrerParam;
+  if (!isAllowedStoreUrl(playUrl)) return; // leave the static href untouched
+
+  // Android: open the Play Store app directly. Chrome, Samsung Internet and
+  // Firefox honour browser_fallback_url; Instagram/Facebook's in-app browser
+  // hands intent:// to the system. Other WebViews may render an error page
+  // for intent://, so they keep the plain HTTPS link.
+  var useIntent = isAndroid && (!isAndroidWebView || isMetaInApp);
+  var intentUrl = 'intent://details?id=' + STORE_LINKS.androidPackage + referrerParam +
+    '#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' +
+    encodeURIComponent(playUrl) + ';end';
+
+  var btn = document.getElementById('dl-play');
+  var note = document.getElementById('dl-note');
+  var toAppStore = false;
+  btn.href = playUrl;
+
+  if (isIOS) {
+    if (STORE_LINKS.appStoreUrl && isAllowedStoreUrl(STORE_LINKS.appStoreUrl)) {
+      btn.href = STORE_LINKS.appStoreUrl;
+      btn.querySelector('span').textContent = 'Download on the App Store';
+      toAppStore = true;
+      useIntent = false;
+    } else {
+      note.textContent = 'Anesthesia Briefs is on Google Play for Android. The iOS version is coming soon.';
+      note.hidden = false;
+    }
+  } else if (isMetaInApp) {
+    note.textContent = 'Tap below to open Anesthesia Briefs in Google Play.';
+    note.hidden = false;
+  }
+
+  track('download_page_view', Object.assign({
+    platform: isAndroid ? 'android' : isIOS ? 'ios' : 'other',
+    in_app_browser: isMetaInApp
+  }, utm));
+
+  // One fallback timer per tap. It is cancelled as soon as the page is
+  // hidden (the store app took over), and it can only ever go to the HTTPS
+  // store URL — never back to this page — so there is no redirect loop.
+  var fallbackTimer = null;
+  function cancelFallback() {
+    if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
+  }
+  document.addEventListener('visibilitychange', function () { if (document.hidden) cancelFallback(); });
+  window.addEventListener('pagehide', cancelFallback);
+  window.addEventListener('blur', cancelFallback);
+
+  btn.addEventListener('click', function (e) {
+    track(toAppStore ? 'app_store_click' : 'google_play_click', Object.assign({
+      method: useIntent ? 'android_intent' : 'https'
+    }, utm));
+    if (!useIntent) return; // default navigation to the HTTPS store URL
+
+    e.preventDefault();
+    cancelFallback();
+    fallbackTimer = setTimeout(function () {
+      fallbackTimer = null;
+      window.location.href = playUrl;
+    }, 1500);
+    window.location.href = intentUrl;
+  });
+})();
+</script>
+</body>
+</html>
