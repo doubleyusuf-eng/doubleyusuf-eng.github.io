@@ -94,6 +94,24 @@ body {
   max-width: 34ch; margin-top: var(--space-4);
 }
 
+/* Secondary action: outlined, so it reads as the alternative to the filled
+   primary button rather than competing with it. */
+.dl-beta {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; min-height: 52px; padding: 12px 24px;
+  margin-top: var(--space-4);
+  font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 16px;
+  color: var(--ab-navy); text-decoration: none;
+  background: transparent; border: 2px solid var(--ab-navy);
+  border-radius: var(--radius-lg);
+  -webkit-tap-highlight-color: transparent;
+  transition: background var(--dur-page) var(--ease-out), transform var(--dur-press) var(--ease-out);
+}
+.dl-beta:hover { background: var(--ab-linen); }
+.dl-beta:active { transform: scale(var(--press-scale)); }
+.dl-beta[hidden] { display: none; }
+.dl-beta svg { width: 18px; height: 18px; flex: none; }
+
 .dl-foot {
   padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
   text-align: center; font-size: var(--fs-caption); color: var(--ab-text-muted);
@@ -119,7 +137,16 @@ body {
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
     <span>Get it on Google Play</span>
   </a>
-  <p class="dl-hint">If Google Play doesn't open automatically, tap the button above.</p>
+  <p class="dl-hint" id="dl-hint">If Google Play doesn't open automatically, tap the button above.</p>
+
+  <!-- iOS has no public App Store listing yet, so the beta is the only way in.
+       It is a plain anchor rather than something the script creates: the link
+       works with JavaScript disabled, and the script below merely promotes it
+       to the primary action when the visitor is already on an iPhone. -->
+  <a class="dl-beta" id="dl-testflight" href="https://testflight.apple.com/join/GbZer6HR" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="m9 12 2 2 4-4"/></svg>
+    <span id="dl-testflight-label">On iPhone? Join the beta on TestFlight</span>
+  </a>
 </main>
 
 <footer class="dl-foot">
@@ -135,15 +162,23 @@ body {
 
   // ---- Store links: the only place to edit ------------------------------
   // appStoreUrl stays null until the iOS app has a real, public listing.
+  // Until then testFlightUrl is the iOS route: a public TestFlight invitation,
+  // open to anyone with the link, no invite e-mail needed. When the App Store
+  // listing goes live, fill in appStoreUrl — it takes priority automatically and
+  // this link can stay for beta testers.
   var STORE_LINKS = {
     androidPackage: 'com.doubleyusuf.anesthesiabriefs',
     googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs',
-    appStoreUrl: null
+    appStoreUrl: null,
+    testFlightUrl: 'https://testflight.apple.com/join/GbZer6HR'
   };
 
   // Every navigation this page makes must land on one of these hosts.
   // Nothing from the query string is ever used as a destination.
-  var ALLOWED_STORE_HOSTS = ['play.google.com', 'apps.apple.com'];
+  // testflight.apple.com is a SEPARATE host from apps.apple.com; without it
+  // isAllowedStoreUrl() rejects the beta link and the button silently does
+  // nothing.
+  var ALLOWED_STORE_HOSTS = ['play.google.com', 'apps.apple.com', 'testflight.apple.com'];
 
   // Campaign parameters forwarded to Google Play as its install referrer.
   // Allow-listed keys, conservative charset: nothing else passes through.
@@ -205,8 +240,18 @@ body {
 
   var btn = document.getElementById('dl-play');
   var note = document.getElementById('dl-note');
+  var hint = document.getElementById('dl-hint');
+  var beta = document.getElementById('dl-testflight');
   var toAppStore = false;
+  var toTestFlight = false;
   btn.href = playUrl;
+
+  // The beta anchor ships visible so it survives with JavaScript off. Once the
+  // App Store listing exists, an iPhone visitor should be sent there, not to a
+  // beta — so hide it in that one case.
+  if (beta && STORE_LINKS.appStoreUrl && isAllowedStoreUrl(STORE_LINKS.appStoreUrl)) {
+    beta.hidden = true;
+  }
 
   if (isIOS) {
     if (STORE_LINKS.appStoreUrl && isAllowedStoreUrl(STORE_LINKS.appStoreUrl)) {
@@ -214,6 +259,19 @@ body {
       btn.querySelector('span').textContent = 'Download on the App Store';
       toAppStore = true;
       useIntent = false;
+    } else if (STORE_LINKS.testFlightUrl && isAllowedStoreUrl(STORE_LINKS.testFlightUrl)) {
+      // Already on an iPhone: the beta IS the download, so make it the primary
+      // button and retire the duplicate secondary one.
+      btn.href = STORE_LINKS.testFlightUrl;
+      btn.querySelector('span').textContent = 'Join the beta on TestFlight';
+      toTestFlight = true;
+      useIntent = false;
+      if (beta) beta.hidden = true;
+      if (hint) {
+        hint.textContent = 'Opens TestFlight, Apple\u2019s beta app. Install TestFlight first if you don\u2019t have it \u2014 the link will offer it.';
+      }
+      note.textContent = 'The iOS version is in open beta. The Android app is on Google Play.';
+      note.hidden = false;
     } else {
       note.textContent = 'Anesthesia Briefs is on Google Play for Android. The iOS version is coming soon.';
       note.hidden = false;
@@ -239,10 +297,15 @@ body {
   window.addEventListener('pagehide', cancelFallback);
   window.addEventListener('blur', cancelFallback);
 
+  if (beta) {
+    beta.addEventListener('click', function () {
+      track('testflight_click', Object.assign({ method: 'https', placement: 'secondary' }, utm));
+    });
+  }
+
   btn.addEventListener('click', function (e) {
-    track(toAppStore ? 'app_store_click' : 'google_play_click', Object.assign({
-      method: useIntent ? 'android_intent' : 'https'
-    }, utm));
+    track(toAppStore ? 'app_store_click' : toTestFlight ? 'testflight_click' : 'google_play_click',
+      Object.assign({ method: useIntent ? 'android_intent' : 'https' }, utm));
     if (!useIntent) return; // default navigation to the HTTPS store URL
 
     e.preventDefault();
