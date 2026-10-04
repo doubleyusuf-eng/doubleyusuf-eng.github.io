@@ -82,6 +82,9 @@
   .mobile-nav.open { opacity: 1; transform: none; visibility: visible; pointer-events: auto; }
   .mobile-nav a { color: #fff; text-decoration: none; font-family: var(--font-display); font-weight: 600; font-size: 17px; padding: 13px 6px; border-bottom: 1px solid rgba(255,255,255,0.07); transition: color var(--dur-press) var(--ease-out); }
   .mobile-nav a:hover { color: var(--ab-gold); }
+  /* Link to the separate atlas site (atlas.anesthesiabriefs.com) */
+  .nav-atlas { display: inline-flex; align-items: center; gap: 7px; }
+  .new-badge { font-family: var(--font-display); font-size: 9px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: var(--ab-navy); background: var(--ab-gold); border-radius: 100px; padding: 3px 7px; line-height: 1; text-shadow: none; }
   .mobile-nav a.m-cta { margin-top: 12px; border: none; text-align: center; background: var(--ab-gold); color: var(--ab-navy); border-radius: 10px; padding: 13px; font-weight: 800; }
 
   /* ---------- Hero ---------- */
@@ -467,6 +470,7 @@
       <a class="navlink" href="#demo" data-i18n="nav-screens">Ekranlar</a>
       <a class="navlink" href="#games" data-i18n="nav-games">Oyunlar</a>
       <a class="navlink" href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+      <a class="navlink nav-atlas" href="https://atlas.anesthesiabriefs.com/"><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
       <a class="cta-sm" href="#download" data-i18n="nav-download">İndir</a>
     </nav>
     <div class="lang">
@@ -482,6 +486,7 @@
     <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
     <a href="#games" data-i18n="nav-games">Oyunlar</a>
     <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+    <a class="nav-atlas" href="https://atlas.anesthesiabriefs.com/"><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
     <a class="m-cta" href="#download" data-i18n="nav-download">İndir</a>
   </div>
 </header>
@@ -777,6 +782,7 @@
         <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
         <a href="#games" data-i18n="nav-games">Oyunlar</a>
         <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
+        <a href="https://atlas.anesthesiabriefs.com/" data-i18n="nav-atlas-long">Anestezi Makinesi Atlası</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer-legal">Yasal</h4>
@@ -802,7 +808,7 @@
 <script>
 const I18N = {
   tr: {
-    "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-download":"İndir",
+    "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-atlas":"3B Atlas","nav-new":"Yeni","nav-atlas-long":"Anestezi Makinesi Atlası","nav-download":"İndir",
     "skip":"İçeriğe geç",
     "pl-sub":"Anestezi ve yoğun bakım için klinik referans",
     "insta-eyebrow":"Topluluk","insta-title":"Instagram'da Bizi Takip Edin","insta-sub":"Her gün yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.","insta-follow":"Takip Et",
@@ -849,7 +855,7 @@ const I18N = {
     "footer-moto":"Anestezi ve yoğun bakım için klinik referans.","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-support":"Destek","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
   },
   en: {
-    "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-download":"Download",
+    "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-atlas":"3D Atlas","nav-new":"New","nav-atlas-long":"Anaesthesia Machine Atlas","nav-download":"Download",
     "skip":"Skip to content",
     "pl-sub":"Clinical reference for anaesthesia & critical care",
     "insta-eyebrow":"Community","insta-title":"Follow Us on Instagram","insta-sub":"Refresh your knowledge with new case presentations, anesthesia tips and educational content shared every day.","insta-follow":"Follow",
