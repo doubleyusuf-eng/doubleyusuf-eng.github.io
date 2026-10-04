@@ -470,7 +470,7 @@
       <a class="navlink" href="#demo" data-i18n="nav-screens">Ekranlar</a>
       <a class="navlink" href="#games" data-i18n="nav-games">Oyunlar</a>
       <a class="navlink" href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-      <a class="navlink nav-atlas" href="https://atlas.anesthesiabriefs.com/"><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
+      <a class="navlink nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
       <a class="cta-sm" href="#download" data-i18n="nav-download">İndir</a>
     </nav>
     <div class="lang">
@@ -486,7 +486,7 @@
     <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
     <a href="#games" data-i18n="nav-games">Oyunlar</a>
     <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-    <a class="nav-atlas" href="https://atlas.anesthesiabriefs.com/"><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
+    <a class="nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
     <a class="m-cta" href="#download" data-i18n="nav-download">İndir</a>
   </div>
 </header>
@@ -782,7 +782,7 @@
         <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
         <a href="#games" data-i18n="nav-games">Oyunlar</a>
         <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-        <a href="https://atlas.anesthesiabriefs.com/" data-i18n="nav-atlas-long">Anestezi Makinesi Atlası</a>
+        <a href="https://atlas.anesthesiabriefs.com/" data-atlas data-i18n="nav-atlas-long">Anestezi Makinesi Atlası</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer-legal">Yasal</h4>
@@ -925,6 +925,8 @@ function setLang(lang) {
   const bSrc = "app.html?bare=1&screen=algorithms&lang=" + _heroLang;
   if (fa && fa.getAttribute("data-src") !== aSrc) { fa.setAttribute("data-src", aSrc); fa.src = aSrc; fa.addEventListener("load", () => sizeHeroFrame(fa), { once: true }); }
   if (fb && fb.getAttribute("data-src") !== bSrc) { fb.setAttribute("data-src", bSrc); fb.src = bSrc; fb.addEventListener("load", () => sizeHeroFrame(fb), { once: true }); }
+  // Atlas links open the atlas in the same language (it has TR, EN and ES)
+  document.querySelectorAll("[data-atlas]").forEach((a) => { a.href = "https://atlas.anesthesiabriefs.com/" + (lang === "en" ? "en/" : ""); });
   try { localStorage.setItem("ab_lang", lang); } catch(e) {}
 }
 
