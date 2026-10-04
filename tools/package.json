@@ -1,0 +1,8 @@
+{
+  "name": "anesthesia-briefs-site-tools",
+  "private": true,
+  "description": "Build helpers for the static site in docs/. Run: npm --prefix tools ci && node tools/build-app.mjs",
+  "devDependencies": {
+    "@babel/standalone": "7.29.0"
+  }
+}

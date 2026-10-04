@@ -38,3 +38,6 @@ Thumbs.db
 /build/
 /Ek 8 ilaç/
 /Uygulama görüntüleri /
+
+# Site build tooling
+tools/node_modules/
