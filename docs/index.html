@@ -292,6 +292,10 @@
   .foot-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; flex-wrap: wrap; gap: 12px; }
   .foot-bottom p { font-size: 12.5px; color: rgba(255,255,255,0.55); }
   .foot-bottom .social { display: flex; gap: 16px; font-size: 17px; }
+  .visitor-stats { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: rgba(255,255,255,0.6); }
+  .visitor-stats[hidden] { display: none; }
+  .visitor-stats b { color: #fff; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .visitor-stats .live { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: #34D399; box-shadow: 0 0 6px #34D399; vertical-align: 1px; }
   .foot-bottom .social a { color: rgba(255,255,255,0.7); transition: color var(--dur-press) var(--ease-out); }
   .foot-bottom .social a:hover { color: var(--ab-gold); }
 
@@ -796,6 +800,12 @@
     </div>
     <div class="foot-bottom">
       <p>© 2026 Anesthesia Briefs. <span data-i18n="footer-rights">Tüm hakları saklıdır.</span></p>
+      <!-- Anonymous visitor counters (js/visitors.js); stays hidden until the numbers arrive -->
+      <div class="visitor-stats" id="visitor-stats" data-site="www" hidden>
+        <span data-k="active"><i class="live" aria-hidden="true"></i><b class="v">–</b> <span data-i18n="vis-active">şu an aktif</span></span>
+        <span data-k="today"><span data-i18n="vis-today">Bugün</span> <b class="v">–</b></span>
+        <span data-k="month"><span data-i18n="vis-month">Bu ay</span> <b class="v">–</b></span>
+      </div>
       <div class="social">
         <a href="https://instagram.com/anesthesiabriefs" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/yusuf-y%C4%B1lmaz-a08647202/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -804,6 +814,7 @@
   </div>
 </footer>
 
+<script src="js/visitors.js" defer></script>
 <script src="js/vendor/scrolly-video.js"></script>
 <script>
 const I18N = {
@@ -852,7 +863,7 @@ const I18N = {
     "dl-title":"Güvenli Kararlar Cebinizde","dl-sub":"Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs artık Google Play’de. iOS beta sürümü TestFlight’ta.",
     "wl-title":"Uygulama yayınlandığında ilk siz haberdar olun","wl-ph":"E-posta adresiniz","wl-btn":"Haber Ver",
     "wl-consent-1":"E-posta adresimin, uygulama lansman duyurusu ve önemli bilgilendirmeler için AB'de sunucuları bulunan hizmet sağlayıcımız Brevo üzerinden işlenmesine açık rıza veriyorum.","wl-consent-2":"Gizlilik Politikası",
-    "footer-moto":"Anestezi ve yoğun bakım için klinik referans.","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-support":"Destek","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
+    "footer-moto":"Anestezi ve yoğun bakım için klinik referans.","vis-active":"şu an aktif","vis-today":"Bugün","vis-month":"Bu ay","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-support":"Destek","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
   },
   en: {
     "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-atlas":"3D Atlas","nav-new":"New","nav-atlas-long":"Anaesthesia Machine Atlas","nav-download":"Download",
@@ -900,7 +911,7 @@ const I18N = {
     "dl-title":"Safe Decisions in Your Pocket","dl-sub":"Anesthesia Briefs — built to improve speed, safety and scientific rigor in anesthesia practice — is now on Google Play. The iOS beta is on TestFlight.",
     "wl-title":"Be the first to know when the app launches","wl-ph":"Your e-mail address","wl-btn":"Notify Me",
     "wl-consent-1":"I give my explicit consent to the processing of my e-mail address for the app launch announcement and important updates via our EU-based provider Brevo.","wl-consent-2":"Privacy Policy",
-    "footer-moto":"You're safe in your clinical decisions.","footer-links":"Quick Links","footer-legal":"Legal","footer-support":"Support","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-app-privacy":"App Privacy Policy","footer-app-terms":"App Terms of Use","footer-rights":"All rights reserved."
+    "footer-moto":"You're safe in your clinical decisions.","vis-active":"active now","vis-today":"Today","vis-month":"This month","footer-links":"Quick Links","footer-legal":"Legal","footer-support":"Support","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-app-privacy":"App Privacy Policy","footer-app-terms":"App Terms of Use","footer-rights":"All rights reserved."
   }
 };
 
