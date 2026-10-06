@@ -1,4 +1,4 @@
-<!-- @dsCard group="Marketing Site" viewport="1240x900" name="Support Center" subtitle="Bilingual TR/EN support portal — App Store Support URL" -->
+<!-- @dsCard group="Marketing Site" viewport="1240x900" name="Support Center" subtitle="TR/EN/ES support portal — App Store Support URL" -->
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <title>Destek Merkezi — Anesthesia Briefs</title>
-<meta name="description" content="Anesthesia Briefs destek merkezi: Premium erişim, abonelik ve satın alma geri yükleme, teknik sorunlar, hata bildirimi ve uygulama kullanımı hakkında yardım." />
+<meta name="description" content="Anesthesia Briefs destek merkezi: uygulamayı indirme, iOS TestFlight betası, teknik sorunlar, hata bildirimi ve uygulama kullanımı hakkında yardım. Uygulama tamamen ücretsizdir." />
 <meta name="theme-color" content="#0D1E36" />
 <link rel="icon" type="image/png" href="../assets/logo.png" />
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
@@ -15,11 +15,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Anesthesia Briefs" />
 <meta property="og:title" content="Anesthesia Briefs Destek Merkezi" />
-<meta property="og:description" content="Premium erişim, abonelik, satın alma geri yükleme, teknik sorunlar ve uygulama kullanımı hakkında yardım." />
+<meta property="og:description" content="Uygulamayı indirme, iOS betası, teknik sorunlar ve uygulama kullanımı hakkında yardım." />
 <meta property="og:url" content="https://www.anesthesiabriefs.com/support" />
 <meta property="og:image" content="https://www.anesthesiabriefs.com/assets/intro-poster.jpg" />
 <meta property="og:locale" content="tr_TR" />
 <meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,34 +32,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I activate Premium?",
+      "name": "Is Anesthesia Briefs free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Premium features become available after a successful purchase or subscription through the Apple App Store. Access can be restored using the Restore Purchases option."
+        "text": "Yes. The whole app is free: the regional anesthesia atlas, board prep and every other module are open to everyone. There are no subscriptions or in-app purchases."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I restore my Premium purchase?",
+      "name": "How do I download the app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open the application and use the Restore Purchases option. Restoration depends on the Apple account used for the original purchase."
+        "text": "The Android version is on Google Play. The iOS version is currently available as a beta through TestFlight; we will announce the App Store release."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I manage my subscription?",
+      "name": "I started a subscription earlier. What should I do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Subscriptions are managed through Apple's subscription management system. Use the Manage Subscription option inside the application."
+        "text": "The app no longer charges for anything. If your device’s subscription settings still show an active Anesthesia Briefs subscription, you can cancel it there (iPhone: Settings → your name → Subscriptions; Android: Google Play → Profile → Payments & subscriptions). Refund requests go through Apple or Google. Write to us if you need help."
       }
     },
     {
       "@type": "Question",
-      "name": "Why are Premium products not visible?",
+      "name": "Does the app work without internet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If Premium access is already active, purchase options may not be displayed. Your current Premium status can be checked inside the application."
+        "text": "Yes. Algorithms, calculators, drug information and the atlas work offline; published literature updates arrive when you are online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I found an error in the clinical content. How do I report it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose the Content Feedback category in the contact form and mention the screen and, if possible, the source. Reports are reviewed and the content is updated when needed."
       }
     }
   ]
@@ -221,19 +230,6 @@ summary::after { content: "+"; color: var(--ab-teal); font-size: 21px; line-heig
 details[open] summary::after { content: "\2212"; }
 details .body { padding: 0 20px 18px; color: var(--ab-text-muted); font-size: 15px; }
 
-/* ---------- Premium status mock ---------- */
-.mock {
-  background: var(--ab-navy-deep); border-radius: 14px; padding: 22px; color: #fff; max-width: 380px;
-}
-.mock .badge {
-  display: inline-flex; align-items: center; gap: 7px; background: rgba(74, 124, 140, 0.28);
-  color: #9EDBE8; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 700;
-  margin-bottom: 16px;
-}
-.mock .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 1.1px; color: #8FA3BC; }
-.mock .plan { font-family: var(--font-display); font-size: 19px; font-weight: 700; margin: 3px 0 16px; }
-.mock .manage { color: var(--ab-gold); font-weight: 600; font-size: 14.5px; text-decoration: none; }
-
 /* ---------- Lists / tables ---------- */
 ul.checks { list-style: none; display: grid; gap: 9px; }
 ul.checks li { padding-left: 26px; position: relative; font-size: 15px; }
@@ -291,11 +287,12 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
       <a href="./" aria-current="page" data-i18n-nsupport>Destek</a>
       <a href="../privacy.html" data-i18n-npriv>Gizlilik</a>
       <a href="../terms.html" data-i18n-nterms>Kullanım Şartları</a>
-      <a href="#contact" data-i18n-ncontact>İletişim</a>
+      <a href="#contact" id="nav-contact" data-i18n-ncontact>İletişim</a>
     </nav>
     <div class="lang">
       <button id="l-tr" type="button" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
       <button id="l-en" type="button" onclick="setLang('en')" aria-label="English">EN</button>
+      <button id="l-es" type="button" onclick="setLang('es')" aria-label="Español">ES</button>
     </div>
   </div>
 </header>
@@ -309,9 +306,9 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <span class="eyebrow">Destek</span>
     <h1>Anesthesia Briefs Destek Merkezi</h1>
     <p class="sub">Anestezi ve yoğun bakım profesyonelleri için yardım, sorun giderme ve destek.</p>
-    <p class="desc">Premium erişim, abonelikler, satın alımlar, uygulama özellikleri ve teknik sorunlar hakkındaki sorularınızın yanıtlarını burada bulabilirsiniz.</p>
+    <p class="desc">Uygulamayı indirme, iOS beta sürümü, uygulama özellikleri ve teknik sorunlar hakkındaki sorularınızın yanıtlarını burada bulabilirsiniz.</p>
     <div class="hero-btns">
-      <a class="btn btn-primary" href="#contact">Destek ile İletişime Geç</a>
+      <a class="btn btn-primary" href="#contact-tr">Destek ile İletişime Geç</a>
       <a class="btn btn-ghost" href="../privacy.html">Gizlilik Politikası</a>
     </div>
   </div>
@@ -321,9 +318,9 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <p class="lede">Konunuza en yakın başlığı seçin; aşağıdaki bölümlerde ayrıntılı yanıtları bulacaksınız.</p>
     <div class="grid">
       <div class="card">
-        <div class="ic ic-gold" aria-hidden="true">★</div>
-        <h3>Premium ve Abonelik Desteği</h3>
-        <p>Premium erişim, abonelikler, satın alma geri yükleme ve faturalandırma soruları hakkında yardım.</p>
+        <div class="ic ic-gold" aria-hidden="true">↓</div>
+        <h3>Kurulum ve Erişim</h3>
+        <p>Google Play’den indirme, iOS TestFlight betasına katılma ve uygulamaya erişim hakkında yardım.</p>
       </div>
       <div class="card">
         <div class="ic ic-teal" aria-hidden="true">⚙</div>
@@ -343,9 +340,9 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     </div>
   </section>
 
-  <section id="contact" aria-labelledby="tr-contact">
+  <section id="contact-tr" class="contact-sec" aria-labelledby="tr-contact">
     <h2 id="tr-contact">Destek ile İletişim</h2>
-    <p class="lede">Anesthesia Briefs ile ilgili teknik sorunlar, abonelik problemleri, satın alma soruları veya geri bildirimleriniz için destek ekibimizle iletişime geçin.</p>
+    <p class="lede">Anesthesia Briefs ile ilgili teknik sorunlar, kurulum soruları veya geri bildirimleriniz için destek ekibimizle iletişime geçin.</p>
     <div class="contact-wrap">
       <div class="panel accent">
         <div class="lbl" style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">E-posta</div>
@@ -368,8 +365,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
             <label for="tr-cat">Kategori</label>
             <select id="tr-cat" name="category">
               <option>Teknik Sorun</option>
-              <option>Premium / Abonelik</option>
-              <option>Satın Alma Geri Yükleme</option>
+              <option>Kurulum / TestFlight</option>
               <option>İçerik Geri Bildirimi</option>
               <option>Diğer</option>
             </select>
@@ -379,7 +375,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
             <textarea id="tr-msg" name="message" required></textarea>
           </div>
           <button class="btn btn-primary" type="submit">Mesajı Hazırla</button>
-          <p class="hint">Bu form bir sunucuya veri göndermez. Gönder'e bastığınızda, girdiğiniz bilgilerle hazırlanmış bir e-posta taslağı kendi e-posta uygulamanızda açılır; göndermeden önce içeriği görebilir ve düzenleyebilirsiniz.</p>
+          <p class="hint">Bu form bir sunucuya veri göndermez. Gönder’e bastığınızda, girdiğiniz bilgilerle hazırlanmış bir e-posta taslağı kendi e-posta uygulamanızda açılır; göndermeden önce içeriği görebilir ve düzenleyebilirsiniz.</p>
         </form>
       </div>
     </div>
@@ -387,44 +383,36 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
 
   <section aria-labelledby="tr-faq">
     <h2 id="tr-faq">Sıkça Sorulan Sorular</h2>
-    <p class="lede">Premium ve abonelik</p>
     <details>
-      <summary>Premium'u nasıl etkinleştiririm?</summary>
-      <div class="body">Premium özellikler, Apple App Store üzerinden başarılı bir satın alma veya abonelik sonrasında kullanıma açılır. Erişim, <strong>Satın Alımları Geri Yükle</strong> seçeneğiyle geri yüklenebilir.</div>
+      <summary>Anesthesia Briefs ücretli mi?</summary>
+      <div class="body">Hayır. Uygulamanın tamamı ücretsizdir: rejyonel anestezi atlası, board hazırlık ve diğer tüm modüller herkese açıktır. Abonelik veya uygulama içi satın alma yoktur.</div>
     </details>
     <details>
-      <summary>Premium satın alımımı nasıl geri yüklerim?</summary>
-      <div class="body">Uygulamayı açın ve <strong>Satın Alımları Geri Yükle</strong> seçeneğini kullanın. Geri yükleme, ilk satın alma için kullanılan Apple hesabına bağlıdır.</div>
+      <summary>Uygulamayı nasıl indiririm?</summary>
+      <div class="body">Android sürümü <a href="https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs">Google Play</a>’de. iOS sürümü şu an <a href="https://testflight.apple.com/join/GbZer6HR">TestFlight</a> üzerinden beta olarak sunuluyor; App Store sürümü yayınlandığında duyuracağız.</div>
     </details>
     <details>
-      <summary>Aboneliğimi nasıl yönetirim?</summary>
-      <div class="body">Abonelikler Apple'ın abonelik yönetim sistemi üzerinden yönetilir. Uygulama içindeki <strong>Aboneliği yönet</strong> seçeneğini kullanın.</div>
+      <summary>Daha önce bir abonelik başlatmıştım. Ne yapmalıyım?</summary>
+      <div class="body">Uygulama artık hiçbir ücret almaz. Cihazınızın abonelik ayarlarında Anesthesia Briefs için hâlâ etkin bir abonelik görüyorsanız iptali oradan yapabilirsiniz (iPhone: <strong>Ayarlar → adınız → Abonelikler</strong>; Android: <strong>Google Play → Profil → Ödemeler ve abonelikler</strong>). İade talepleri Apple veya Google üzerinden iletilir. Yardıma ihtiyacınız olursa bize yazın.</div>
     </details>
     <details>
-      <summary>Premium ürünler neden görünmüyor?</summary>
-      <div class="body">Premium erişiminiz halihazırda etkinse satın alma seçenekleri gösterilmeyebilir. Mevcut Premium durumunuzu uygulama içinden kontrol edebilirsiniz.</div>
+      <summary>Uygulama internet olmadan çalışır mı?</summary>
+      <div class="body">Evet. Algoritmalar, hesaplayıcılar, ilaç bilgileri ve atlas çevrimdışı kullanılabilir; yayımlanan literatür güncellemeleri internete bağlandığınızda gelir.</div>
     </details>
-  </section>
-
-  <section aria-labelledby="tr-status">
-    <h2 id="tr-status">Premium Durumunuzu Kontrol Etme</h2>
-    <p class="lede">Premium erişim etkin olduğunda, uygulama zaten geçerli bir hak tespit ettiği için satın alma seçeneklerini gizleyebilir. Bu beklenen bir davranıştır; eksik bir özellik değildir.</p>
-    <div class="mock">
-      <span class="badge">Premium etkin ✓</span>
-      <div class="lbl">Mevcut plan</div>
-      <div class="plan">Aylık abonelik</div>
-      <span class="manage">Aboneliği yönet →</span>
-    </div>
-    <p class="hint" style="margin-top:14px">Yukarıdaki görsel, Premium etkinken uygulamanın gösterdiği bilgileri örnekler: geçerli plan (aylık abonelik, yıllık abonelik veya ömür boyu erişim) ve aboneliği yönetme bağlantısı.</p>
+    <details>
+      <summary>Klinik içerikte bir hata gördüm. Nasıl bildiririm?</summary>
+      <div class="body">İletişim formunda <strong>İçerik Geri Bildirimi</strong> kategorisini seçin; ilgili ekranı ve mümkünse kaynağı belirtin. Bildirimler incelenir ve gerekirse içerik güncellenir.</div>
+    </details>
   </section>
 
   <section aria-labelledby="tr-beta">
-    <h2 id="tr-beta">Beta Test Desteği</h2>
-    <p class="lede">TestFlight testleri sırasında Apple sandbox satın alımları, üretim ortamındaki satın alımlardan farklı davranabilir. Abonelik yönetimi ve yenileme zamanlaması, App Store üretim ortamıyla birebir aynı olmayabilir.</p>
+    <h2 id="tr-beta">iOS Beta (TestFlight)</h2>
+    <p class="lede">iOS sürümü şu an TestFlight üzerinden beta olarak sunuluyor. Katılmak için iPhone’unuza TestFlight uygulamasını kurun ve katılım bağlantısını açın.</p>
+    <p style="margin:0 0 18px"><a class="btn btn-primary" href="https://testflight.apple.com/join/GbZer6HR">TestFlight betasına katıl</a></p>
     <div class="panel">
       <h3>TestFlight geri bildirimi</h3>
       <ol class="steps" style="margin-top:10px">
-        <li>TestFlight uygulamasını açın ve Anesthesia Briefs'i seçin.</li>
+        <li>TestFlight uygulamasını açın ve Anesthesia Briefs’i seçin.</li>
         <li><strong>Geri Bildirim Gönder</strong> seçeneğini kullanın veya beta sürümdeyken ekran görüntüsü alıp paylaşım menüsünden geri bildirim gönderin.</li>
         <li>Ayrıntılı bir inceleme gerekiyorsa aynı bilgileri <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a> adresine iletin.</li>
       </ol>
@@ -449,10 +437,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <div class="panel">
       <div class="status-group">
         <h3>Güncel bilinen sorunlar</h3>
-        <ul class="checks">
-          <li>Premium erişim etkinken satın alma seçenekleri gizlenir. Bu beklenen davranıştır; ayrıntı için <em>Premium Durumunuzu Kontrol Etme</em> bölümüne bakın.</li>
-          <li>TestFlight sandbox ortamında abonelik yenileme süreleri hızlandırılmıştır ve üretim ortamını yansıtmaz.</li>
-        </ul>
+        <p class="empty">Şu an bilinen bir sorun yok.</p>
       </div>
       <div class="status-group">
         <h3>Yakın zamanda giderilenler</h3>
@@ -462,8 +447,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
         <h3>Planlanan iyileştirmeler</h3>
         <p class="empty">Planlanan iyileştirmeler yayınlandıkça burada duyurulacaktır.</p>
       </div>
-      <!-- Yeni kayıt eklemek için ilgili <ul class="checks"> içine <li> ekleyin;
-           liste boşsa <p class="empty"> satırını listeyle değiştirin. -->
+      <!-- Yeni kayıt eklemek için ilgili grubun <p class="empty"> satırını <ul class="checks"><li>…</li></ul> ile değiştirin. -->
     </div>
   </section>
 
@@ -482,7 +466,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
         <li>Uygulama, öncelikli olarak çevrimdışı çalışan bir klinik referans aracı olarak tasarlanmıştır.</li>
         <li>Kullanıcılar uygulamaya hastayı tanımlayabilecek bilgi girmemelidir.</li>
       </ul>
-      <p style="margin-top:16px"><a href="../privacy.html">Gizlilik Politikası'nı okuyun →</a></p>
+      <p style="margin-top:16px"><a href="../privacy.html">Gizlilik Politikası’nı okuyun →</a></p>
     </div>
   </section>
 
@@ -492,6 +476,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
       <dl class="info">
         <div><dt>Uygulama</dt><dd>Anesthesia Briefs</dd></div>
         <div><dt>Platform</dt><dd>iOS · Android</dd></div>
+        <div><dt>Fiyat</dt><dd>Ücretsiz</dd></div>
         <div><dt>Diller</dt><dd>İngilizce / Türkçe</dd></div>
         <div><dt>Kategori</dt><dd>Tıp Eğitimi ve Klinik Referans</dd></div>
         <div><dt>Sürüm</dt><dd>1.0.0</dd></div>
@@ -502,6 +487,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
 
 </div>
 
+
 <!-- ============================== ENGLISH ============================== -->
 <div class="sc-doc" data-lang="en">
 
@@ -509,9 +495,9 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <span class="eyebrow">Support</span>
     <h1>Anesthesia Briefs Support Center</h1>
     <p class="sub">Help, troubleshooting, and assistance for anesthesia and critical care professionals.</p>
-    <p class="desc">Find answers about Premium access, subscriptions, purchases, app features, and technical issues.</p>
+    <p class="desc">Find answers about downloading the app, the iOS beta, app features, and technical issues.</p>
     <div class="hero-btns">
-      <a class="btn btn-primary" href="#contact">Contact Support</a>
+      <a class="btn btn-primary" href="#contact-en">Contact Support</a>
       <a class="btn btn-ghost" href="../privacy.html">Privacy Policy</a>
     </div>
   </div>
@@ -521,9 +507,9 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <p class="lede">Pick the topic closest to your question — detailed answers follow below.</p>
     <div class="grid">
       <div class="card">
-        <div class="ic ic-gold" aria-hidden="true">★</div>
-        <h3>Premium &amp; Subscription Support</h3>
-        <p>Help with Premium access, subscriptions, purchase restoration, and billing questions.</p>
+        <div class="ic ic-gold" aria-hidden="true">↓</div>
+        <h3>Installation & Access</h3>
+        <p>Help with downloading from Google Play, joining the iOS TestFlight beta, and getting into the app.</p>
       </div>
       <div class="card">
         <div class="ic ic-teal" aria-hidden="true">⚙</div>
@@ -543,12 +529,12 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     </div>
   </section>
 
-  <section aria-labelledby="en-contact">
+  <section id="contact-en" class="contact-sec" aria-labelledby="en-contact">
     <h2 id="en-contact">Contact Support</h2>
-    <p class="lede">For technical issues, subscription problems, purchase questions, or feedback regarding Anesthesia Briefs, please contact our support team.</p>
+    <p class="lede">For technical issues, installation questions, or feedback regarding Anesthesia Briefs, please contact our support team.</p>
     <div class="contact-wrap">
       <div class="panel accent">
-        <div style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">Email</div>
+        <div class="lbl" style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">Email</div>
         <a class="mail-big" href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>
         <br />
         <button class="copy-btn" type="button" onclick="copyMail(this)" data-copied="Copied ✓">Copy address</button>
@@ -568,8 +554,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
             <label for="en-cat">Category</label>
             <select id="en-cat" name="category">
               <option>Technical Issue</option>
-              <option>Premium / Subscription</option>
-              <option>Restore Purchase</option>
+              <option>Installation / TestFlight</option>
               <option>Content Feedback</option>
               <option>Other</option>
             </select>
@@ -587,40 +572,32 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
 
   <section aria-labelledby="en-faq">
     <h2 id="en-faq">Frequently Asked Questions</h2>
-    <p class="lede">Premium &amp; subscription</p>
     <details>
-      <summary>How do I activate Premium?</summary>
-      <div class="body">Premium features become available after a successful purchase or subscription through the Apple App Store. Access can be restored using the <strong>Restore Purchases</strong> option.</div>
+      <summary>Is Anesthesia Briefs free?</summary>
+      <div class="body">Yes. The whole app is free: the regional anesthesia atlas, board prep and every other module are open to everyone. There are no subscriptions or in-app purchases.</div>
     </details>
     <details>
-      <summary>How do I restore my Premium purchase?</summary>
-      <div class="body">Open the application and use the <strong>Restore Purchases</strong> option. Restoration depends on the Apple account used for the original purchase.</div>
+      <summary>How do I download the app?</summary>
+      <div class="body">The Android version is on <a href="https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs">Google Play</a>. The iOS version is currently available as a beta through <a href="https://testflight.apple.com/join/GbZer6HR">TestFlight</a>; we will announce the App Store release.</div>
     </details>
     <details>
-      <summary>How do I manage my subscription?</summary>
-      <div class="body">Subscriptions are managed through Apple's subscription management system. Use the <strong>Manage subscription</strong> option inside the application.</div>
+      <summary>I started a subscription earlier. What should I do?</summary>
+      <div class="body">The app no longer charges for anything. If your device’s subscription settings still show an active Anesthesia Briefs subscription, you can cancel it there (iPhone: <strong>Settings → your name → Subscriptions</strong>; Android: <strong>Google Play → Profile → Payments &amp; subscriptions</strong>). Refund requests go through Apple or Google. Write to us if you need help.</div>
     </details>
     <details>
-      <summary>Why are Premium products not visible?</summary>
-      <div class="body">If Premium access is already active, purchase options may not be displayed. Your current Premium status can be checked inside the application.</div>
+      <summary>Does the app work without internet?</summary>
+      <div class="body">Yes. Algorithms, calculators, drug information and the atlas work offline; published literature updates arrive when you are online.</div>
     </details>
-  </section>
-
-  <section aria-labelledby="en-status">
-    <h2 id="en-status">Checking Your Premium Status</h2>
-    <p class="lede">When Premium access is active, the application may hide available purchase options because an active entitlement has already been detected. This is expected behavior, not a missing feature.</p>
-    <div class="mock">
-      <span class="badge">Premium active ✓</span>
-      <div class="lbl">Current plan</div>
-      <div class="plan">Monthly subscription</div>
-      <span class="manage">Manage subscription →</span>
-    </div>
-    <p class="hint" style="margin-top:14px">The illustration above shows what the app displays while Premium is active: your current plan (monthly subscription, yearly subscription, or lifetime access) and a link to manage the subscription.</p>
+    <details>
+      <summary>I found an error in the clinical content. How do I report it?</summary>
+      <div class="body">Choose the <strong>Content Feedback</strong> category in the contact form and mention the screen and, if possible, the source. Reports are reviewed and the content is updated when needed.</div>
+    </details>
   </section>
 
   <section aria-labelledby="en-beta">
-    <h2 id="en-beta">Beta Testing Support</h2>
-    <p class="lede">During TestFlight testing, Apple sandbox purchases may behave differently from production purchases. Subscription management and renewal timing may not exactly match the App Store production environment.</p>
+    <h2 id="en-beta">iOS Beta (TestFlight)</h2>
+    <p class="lede">The iOS version is currently available as a beta through TestFlight. To join, install the TestFlight app on your iPhone and open the invitation link.</p>
+    <p style="margin:0 0 18px"><a class="btn btn-primary" href="https://testflight.apple.com/join/GbZer6HR">Join the TestFlight beta</a></p>
     <div class="panel">
       <h3>TestFlight feedback</h3>
       <ol class="steps" style="margin-top:10px">
@@ -649,10 +626,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
     <div class="panel">
       <div class="status-group">
         <h3>Current known issues</h3>
-        <ul class="checks">
-          <li>Purchase options are hidden while Premium access is active. This is expected — see <em>Checking Your Premium Status</em>.</li>
-          <li>In the TestFlight sandbox, subscription renewal periods are accelerated and do not reflect the production environment.</li>
-        </ul>
+        <p class="empty">No known issues at the moment.</p>
       </div>
       <div class="status-group">
         <h3>Recently fixed</h3>
@@ -662,8 +636,7 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
         <h3>Upcoming improvements</h3>
         <p class="empty">Planned improvements will be announced here as they ship.</p>
       </div>
-      <!-- To add an entry, append an <li> to the relevant <ul class="checks">;
-           if the group is empty, replace the <p class="empty"> line with the list. -->
+      <!-- To add an entry, replace the group's <p class="empty"> line with <ul class="checks"><li>…</li></ul>. -->
     </div>
   </section>
 
@@ -692,11 +665,201 @@ dl.info dd { font-weight: 600; color: var(--ab-navy); text-align: right; font-si
       <dl class="info">
         <div><dt>Application</dt><dd>Anesthesia Briefs</dd></div>
         <div><dt>Platform</dt><dd>iOS · Android</dd></div>
+        <div><dt>Price</dt><dd>Free</dd></div>
         <div><dt>Languages</dt><dd>English / Turkish</dd></div>
         <div><dt>Category</dt><dd>Medical Education &amp; Clinical Reference</dd></div>
         <div><dt>Version</dt><dd>1.0.0</dd></div>
       </dl>
       <p class="hint" style="margin-top:14px">The app includes clinical decision algorithms, emergency crisis references (CICO, anaphylaxis, malignant hyperthermia, LAST), adult and pediatric calculators, a drug library, a regional anesthesia reference, literature summaries, and board exam (ABA · EDAIC) study resources. Anesthesia Briefs is not affiliated with or endorsed by ABA or EDAIC.</p>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- ============================== ESPAÑOL ============================== -->
+<div class="sc-doc" data-lang="es">
+
+  <div class="hero">
+    <span class="eyebrow">Soporte</span>
+    <h1>Centro de soporte de Anesthesia Briefs</h1>
+    <p class="sub">Ayuda, resolución de problemas y asistencia para profesionales de la anestesia y los cuidados críticos.</p>
+    <p class="desc">Encuentre respuestas sobre la descarga de la aplicación, la beta de iOS, las funciones de la aplicación y los problemas técnicos.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact-es">Contactar con soporte</a>
+      <a class="btn btn-ghost" href="../privacy.html">Política de privacidad</a>
+    </div>
+  </div>
+
+  <section aria-labelledby="es-quick">
+    <h2 id="es-quick">Soporte rápido</h2>
+    <p class="lede">Elija el tema más cercano a su consulta; encontrará las respuestas detalladas más abajo.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic ic-gold" aria-hidden="true">↓</div>
+        <h3>Instalación y acceso</h3>
+        <p>Ayuda para descargar la aplicación de Google Play, unirse a la beta de iOS en TestFlight y acceder a la aplicación.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-teal" aria-hidden="true">⚙</div>
+        <h3>Soporte técnico</h3>
+        <p>Informe de errores, cierres inesperados, problemas de carga o comportamientos anómalos de la aplicación.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-navy" aria-hidden="true">✎</div>
+        <h3>Comentarios sobre el contenido</h3>
+        <p>Comparta sugerencias o comentarios sobre el contenido clínico y los recursos docentes.</p>
+      </div>
+      <div class="card">
+        <div class="ic ic-red" aria-hidden="true">?</div>
+        <h3>Ayuda de uso</h3>
+        <p>Aprenda a usar los algoritmos, las calculadoras, la bibliografía y las herramientas de referencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-es" class="contact-sec" aria-labelledby="es-contact">
+    <h2 id="es-contact">Contactar con soporte</h2>
+    <p class="lede">Para problemas técnicos, preguntas sobre la instalación o comentarios sobre Anesthesia Briefs, escriba a nuestro equipo de soporte.</p>
+    <div class="contact-wrap">
+      <div class="panel accent">
+        <div class="lbl" style="font-size:12px;letter-spacing:1.1px;text-transform:uppercase;color:var(--ab-text-muted)">Correo electrónico</div>
+        <a class="mail-big" href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>
+        <br />
+        <button class="copy-btn" type="button" onclick="copyMail(this)" data-copied="Copiado ✓">Copiar dirección</button>
+        <p class="hint">Solemos responder en unos pocos días hábiles.</p>
+      </div>
+      <div class="panel">
+        <form onsubmit="return sendMail(event, 'es')">
+          <div class="row">
+            <label for="es-name">Nombre y apellidos</label>
+            <input id="es-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="row">
+            <label for="es-email">Correo electrónico</label>
+            <input id="es-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="row">
+            <label for="es-cat">Categoría</label>
+            <select id="es-cat" name="category">
+              <option>Problema técnico</option>
+              <option>Instalación / TestFlight</option>
+              <option>Comentarios sobre el contenido</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="es-msg">Mensaje</label>
+            <textarea id="es-msg" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Preparar mensaje</button>
+          <p class="hint">Este formulario no envía datos a ningún servidor. Al pulsar el botón se abre en su propio programa de correo un borrador con los datos introducidos, para que pueda revisarlo y editarlo antes de enviarlo.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="es-faq">
+    <h2 id="es-faq">Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Anesthesia Briefs es de pago?</summary>
+      <div class="body">No. Toda la aplicación es gratuita: el atlas de anestesia regional, la preparación de exámenes y todos los demás módulos están abiertos a todos. No hay suscripciones ni compras dentro de la aplicación.</div>
+    </details>
+    <details>
+      <summary>¿Cómo descargo la aplicación?</summary>
+      <div class="body">La versión para Android está en <a href="https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs">Google Play</a>. La versión para iOS se ofrece por ahora como beta a través de <a href="https://testflight.apple.com/join/GbZer6HR">TestFlight</a>; anunciaremos la publicación en App Store.</div>
+    </details>
+    <details>
+      <summary>Inicié una suscripción anteriormente. ¿Qué debo hacer?</summary>
+      <div class="body">La aplicación ya no cobra nada. Si en los ajustes de suscripciones de su dispositivo sigue apareciendo una suscripción activa de Anesthesia Briefs, puede cancelarla allí (iPhone: <strong>Ajustes → su nombre → Suscripciones</strong>; Android: <strong>Google Play → Perfil → Pagos y suscripciones</strong>). Las solicitudes de reembolso se gestionan a través de Apple o Google. Escríbanos si necesita ayuda.</div>
+    </details>
+    <details>
+      <summary>¿La aplicación funciona sin internet?</summary>
+      <div class="body">Sí. Los algoritmos, las calculadoras, la información de fármacos y el atlas funcionan sin conexión; las novedades de la bibliografía publicada llegan cuando hay conexión.</div>
+    </details>
+    <details>
+      <summary>He encontrado un error en el contenido clínico. ¿Cómo lo comunico?</summary>
+      <div class="body">Elija la categoría <strong>Comentarios sobre el contenido</strong> en el formulario de contacto e indique la pantalla y, si es posible, la fuente. Revisamos cada aviso y actualizamos el contenido cuando es necesario.</div>
+    </details>
+  </section>
+
+  <section aria-labelledby="es-beta">
+    <h2 id="es-beta">Beta de iOS (TestFlight)</h2>
+    <p class="lede">La versión para iOS se ofrece por ahora como beta a través de TestFlight. Para unirse, instale la aplicación TestFlight en su iPhone y abra el enlace de invitación.</p>
+    <p style="margin:0 0 18px"><a class="btn btn-primary" href="https://testflight.apple.com/join/GbZer6HR">Unirse a la beta en TestFlight</a></p>
+    <div class="panel">
+      <h3>Comentarios en TestFlight</h3>
+      <ol class="steps" style="margin-top:10px">
+        <li>Abra la aplicación TestFlight y seleccione Anesthesia Briefs.</li>
+        <li>Use <strong>Enviar comentarios</strong> o haga una captura de pantalla mientras usa la beta y envíe sus comentarios desde el menú Compartir.</li>
+        <li>Si hace falta una revisión detallada, envíe los mismos datos a <a href="mailto:support@anesthesiabriefs.com">support@anesthesiabriefs.com</a>.</li>
+      </ol>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3>Lista para informar de un error</h3>
+      <p class="hint" style="margin:6px 0 12px">Para que podamos reproducir el problema rápidamente, incluya:</p>
+      <ul class="checks">
+        <li>Modelo del dispositivo</li>
+        <li>Versión de iOS o Android</li>
+        <li>Versión de la aplicación</li>
+        <li>Idioma de la aplicación</li>
+        <li>Pasos para reproducir el problema</li>
+        <li>Captura de pantalla, si la tiene</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="es-known">
+    <h2 id="es-known">Problemas conocidos y novedades</h2>
+    <p class="lede">Mantenemos esta sección al día por transparencia durante las primeras versiones.</p>
+    <div class="panel">
+      <div class="status-group">
+        <h3>Problemas conocidos actuales</h3>
+        <p class="empty">No hay problemas conocidos por ahora.</p>
+      </div>
+      <div class="status-group">
+        <h3>Corregido recientemente</h3>
+        <p class="empty">Todavía no hay entradas para esta versión.</p>
+      </div>
+      <div class="status-group">
+        <h3>Mejoras previstas</h3>
+        <p class="empty">Las mejoras previstas se anunciarán aquí a medida que se publiquen.</p>
+      </div>
+      <!-- Para añadir una entrada, sustituya la línea <p class="empty"> del grupo por <ul class="checks"><li>…</li></ul>. -->
+    </div>
+  </section>
+
+  <section aria-labelledby="es-disc">
+    <h2 id="es-disc">Aviso médico</h2>
+    <div class="panel warn">
+      <p>Anesthesia Briefs está diseñada para profesionales sanitarios y con fines de formación médica. La información de la aplicación no sustituye el juicio clínico, los protocolos del centro ni las guías médicas vigentes.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="es-priv">
+    <h2 id="es-priv">Privacidad y datos</h2>
+    <div class="panel">
+      <ul class="checks">
+        <li>No se recoge ninguna información que permita identificar a pacientes.</li>
+        <li>La aplicación está diseñada como una herramienta de referencia clínica que funciona principalmente sin conexión.</li>
+        <li>No introduzca en la aplicación información que permita identificar a pacientes.</li>
+      </ul>
+      <p style="margin-top:16px"><a href="../privacy.html">Leer la política de privacidad →</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="es-app">
+    <h2 id="es-app">Información de la aplicación</h2>
+    <div class="panel">
+      <dl class="info">
+        <div><dt>Aplicación</dt><dd>Anesthesia Briefs</dd></div>
+        <div><dt>Plataforma</dt><dd>iOS · Android</dd></div>
+        <div><dt>Precio</dt><dd>Gratis</dd></div>
+        <div><dt>Idiomas</dt><dd>Inglés / Turco</dd></div>
+        <div><dt>Categoría</dt><dd>Formación médica y referencia clínica</dd></div>
+        <div><dt>Versión</dt><dd>1.0.0</dd></div>
+      </dl>
+      <p class="hint" style="margin-top:14px">La aplicación incluye algoritmos de decisión clínica, referencias para crisis de urgencia (CICO, anafilaxia, hipertermia maligna, LAST), calculadoras para adultos y pediatría, una biblioteca de fármacos, una referencia de anestesia regional, resúmenes de la bibliografía y recursos de estudio para los exámenes ABA · EDAIC. Anesthesia Briefs no está afiliada a la ABA ni a la EDAIC ni cuenta con su aval.</p>
     </div>
   </section>
 
@@ -729,20 +892,25 @@ var SC_T = {
     nterms: "Terms of Use", ncontact: "Contact", fpriv: "Privacy Policy",
     fterms: "Terms of Use", fsupport: "Support", rights: "All rights reserved.",
     title: "Support Center — Anesthesia Briefs"
+  },
+  es: {
+    skip: "Saltar al contenido", nhome: "Inicio", nsupport: "Soporte", npriv: "Privacidad",
+    nterms: "Condiciones de uso", ncontact: "Contacto", fpriv: "Política de privacidad",
+    fterms: "Condiciones de uso", fsupport: "Soporte", rights: "Todos los derechos reservados.",
+    title: "Centro de soporte — Anesthesia Briefs"
   }
 };
 
 function setLang(lang) {
-  // These pages exist in TR and EN; a Spanish choice reads the English text and stays saved.
-  var chosen = lang;
-  lang = (lang === "en" || lang === "es") ? "en" : "tr";
+  lang = (lang === "en" || lang === "es") ? lang : "tr";
   document.documentElement.lang = lang;
   document.querySelectorAll(".sc-doc").forEach(function (d) {
     d.classList.toggle("show", d.dataset.lang === lang);
   });
-  var tr = document.getElementById("l-tr"), en = document.getElementById("l-en");
-  if (tr) tr.classList.toggle("on", lang === "tr");
-  if (en) en.classList.toggle("on", lang === "en");
+  ["tr", "en", "es"].forEach(function (l) {
+    var b = document.getElementById("l-" + l);
+    if (b) b.classList.toggle("on", lang === l);
+  });
 
   var t = SC_T[lang];
   Object.keys(t).forEach(function (k) {
@@ -750,7 +918,9 @@ function setLang(lang) {
     document.querySelectorAll("[data-i18n-" + k + "]").forEach(function (e) { e.textContent = t[k]; });
   });
   document.title = t.title;
-  if (chosen !== "es") { try { localStorage.setItem("ab_lang", lang); } catch (e) {} }
+  var nc = document.getElementById("nav-contact");
+  if (nc) nc.setAttribute("href", "#contact-" + lang);
+  try { localStorage.setItem("ab_lang", lang); } catch (e) {}
 }
 
 function copyMail(btn) {
@@ -770,10 +940,13 @@ function sendMail(ev, lang) {
   ev.preventDefault();
   var f = ev.target;
   var cat = f.category.value;
-  var subject = "[" + cat + "] Anesthesia Briefs — " + (lang === "tr" ? "Destek talebi" : "Support request");
-  var lines = lang === "tr"
-    ? ["Ad Soyad: " + f.name.value, "E-posta: " + f.email.value, "Kategori: " + cat, "", f.message.value]
-    : ["Name: " + f.name.value, "Email: " + f.email.value, "Category: " + cat, "", f.message.value];
+  var L = {
+    tr: ["Destek talebi", "Ad Soyad: ", "E-posta: ", "Kategori: "],
+    en: ["Support request", "Name: ", "Email: ", "Category: "],
+    es: ["Solicitud de soporte", "Nombre: ", "Correo electrónico: ", "Categoría: "]
+  }[lang] || ["Support request", "Name: ", "Email: ", "Category: "];
+  var subject = "[" + cat + "] Anesthesia Briefs — " + L[0];
+  var lines = [L[1] + f.name.value, L[2] + f.email.value, L[3] + cat, "", f.message.value];
   window.location.href = "mailto:support@anesthesiabriefs.com"
     + "?subject=" + encodeURIComponent(subject)
     + "&body=" + encodeURIComponent(lines.join("\n"));
@@ -784,6 +957,11 @@ function sendMail(ev, lang) {
   var l = "tr";
   try { l = localStorage.getItem("ab_lang") || "tr"; } catch (e) {}
   setLang(l);
+  // Old links to /support/#contact land on the contact section of the language shown
+  if (location.hash === "#contact") {
+    var sec = document.getElementById("contact-" + document.documentElement.lang);
+    if (sec) sec.scrollIntoView();
+  }
 })();
 </script>
 </body>
