@@ -53,7 +53,7 @@
   <p id="t-body">E-posta adresiniz doğrulandı. Anesthesia Briefs yayınlandığında ilk haber alanlardan biri olacaksınız. O güne dek sitedeki canlı demoyu deneyebilir, mini-oyunlara göz atabilirsiniz.</p>
   <a class="home" id="t-home" href="/">Ana Sayfa</a>
 <script>
-// Same language pick as the main site: saved choice → Turkish timezone → browser language → EN.
+// Same language pick as the main site: saved choice → Turkish timezone → browser language (TR, or ES first) → EN.
 (function () {
   var lang = "en";
   try {
@@ -63,9 +63,16 @@
       var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
       if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul") lang = "tr";
       else if ((navigator.languages || [navigator.language || ""]).join(",").toLowerCase().includes("tr")) lang = "tr";
+      else if (((navigator.languages || [])[0] || navigator.language || "").toLowerCase().startsWith("es")) lang = "es";
     }
   } catch (e) {}
-  if (lang !== "tr") {
+  if (lang === "es") {
+    document.documentElement.lang = "es";
+    document.title = "Ya está en la lista — Anesthesia Briefs";
+    document.getElementById("t-title").innerHTML = "Ya está en la lista: <em>¡gracias!</em>";
+    document.getElementById("t-body").textContent = "Su dirección de correo electrónico se ha confirmado. Será de los primeros en saber cuándo se lanza Anesthesia Briefs. Mientras tanto, puede probar la demo en vivo y los minijuegos del sitio.";
+    document.getElementById("t-home").textContent = "Inicio";
+  } else if (lang !== "tr") {
     document.documentElement.lang = "en";
     document.title = "You're on the List — Anesthesia Briefs";
     document.getElementById("t-title").innerHTML = "You're on the list — <em>thank you!</em>";

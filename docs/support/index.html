@@ -733,7 +733,9 @@ var SC_T = {
 };
 
 function setLang(lang) {
-  lang = lang === "en" ? "en" : "tr";
+  // These pages exist in TR and EN; a Spanish choice reads the English text and stays saved.
+  var chosen = lang;
+  lang = (lang === "en" || lang === "es") ? "en" : "tr";
   document.documentElement.lang = lang;
   document.querySelectorAll(".sc-doc").forEach(function (d) {
     d.classList.toggle("show", d.dataset.lang === lang);
@@ -748,7 +750,7 @@ function setLang(lang) {
     document.querySelectorAll("[data-i18n-" + k + "]").forEach(function (e) { e.textContent = t[k]; });
   });
   document.title = t.title;
-  try { localStorage.setItem("ab_lang", lang); } catch (e) {}
+  if (chosen !== "es") { try { localStorage.setItem("ab_lang", lang); } catch (e) {} }
 }
 
 function copyMail(btn) {

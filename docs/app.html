@@ -161,6 +161,30 @@ const AB_HOME_I18N = {
     preopTitle: "Preoperatif G\u00fcvenlik K\u0131sayollar\u0131",
     preopSub: "S\u0131k kullan\u0131lan preop skorlar\u0131 & k\u0131lavuzlar",
     preopNote: "ASA-PS, NPO a\u00e7l\u0131k zamanlay\u0131c\u0131s\u0131, zor hava yolu taramas\u0131 ve ASRA antikoag\u00fclan tablosu \u2014 tek dokunu\u015fla."
+  },
+  es: {
+    welcome: "Hola, Dr. \uD83D\uDC4B",
+    tagline: "Tome sus decisiones cl\u00ednicas con seguridad",
+    search: "Busque un f\u00e1rmaco, una f\u00f3rmula o un algoritmo\u2026",
+    spotTitle: "Presi\u00f3n cricoidea en la ISR",
+    spotBody: "Durante la inducci\u00f3n de secuencia r\u00e1pida, la presi\u00f3n cricoidea debe ser de ~10 N antes de la p\u00e9rdida de conciencia y aumentar a 30 N despu\u00e9s.",
+    q1: "Algoritmos de urgencia",
+    q1d: "\u00c1rboles cr\u00edticos que salvan vidas",
+    q2: "Calculadoras cl\u00ednicas",
+    q2d: "Dosis pedi\u00e1tricas y de adultos",
+    q3: "Anestesia regional",
+    q3d: "Atlas de bloqueos ecoguiados",
+    q4: "Atlas regional",
+    q4d: "Atlas de bloqueos ecoguiados",
+    crisisTitle: "Algoritmos de crisis",
+    crisisBody: "Gu\u00eda paso a paso para HM, LAST, anafilaxia y CICO.",
+    crisis: ["CICO", "Anafilaxia", "Hipertermia maligna", "Hiperpotasemia"],
+    boardTitle: "Preparaci\u00f3n de ex\u00e1menes de anestesia",
+    boardBody: "Bancos de preguntas biling\u00fces (TR/EN) de EDAIC y ABA, escenarios de viva y explicaciones con referencias.",
+    preopEyebrow: "Preop",
+    preopTitle: "Atajos de seguridad preoperatoria",
+    preopSub: "Escalas y gu\u00edas preoperatorias de uso frecuente",
+    preopNote: "ASA-PS, temporizador de ayuno, cribado de v\u00eda a\u00e9rea dif\u00edcil y la tabla ASRA de anticoagulantes, a un toque."
   }
 };
 function HomeScreen({
@@ -176,7 +200,8 @@ function HomeScreen({
     ClinicalNote,
     Button
   } = DS;
-  const _lang = new URLSearchParams(window.location.search).get("lang") === "tr" ? "tr" : "en";
+  const _q = new URLSearchParams(window.location.search).get("lang");
+  const _lang = AB_HOME_I18N[_q] ? _q : "en";
   const t = AB_HOME_I18N[_lang];
   const quick = [{
     title: t.q1,
@@ -1496,8 +1521,10 @@ function LiteratureScreen() {
 function App() {
   const _params = new URLSearchParams(window.location.search);
   const _bare = _params.get("bare") === "1";
-  const _lang = _params.get("lang") === "tr" ? "tr" : "en";
-  const _nav = _lang === "tr" ? ["Ana Sayfa", "Hesaplar", "Algoritmalar", "\u0130la\u00e7lar", "Literat\u00fcr"] : ["Home", "Calculators", "Algorithms", "Drugs", "Literature"];
+  const _nav = {
+    tr: ["Ana Sayfa", "Hesaplar", "Algoritmalar", "\u0130la\u00e7lar", "Literat\u00fcr"],
+    es: ["Inicio", "Calculadoras", "Algoritmos", "F\u00e1rmacos", "Bibliograf\u00eda"]
+  }[_params.get("lang")] || ["Home", "Calculators", "Algorithms", "Drugs", "Literature"];
   const _initTab = {
     home: 0,
     calculator: 1,

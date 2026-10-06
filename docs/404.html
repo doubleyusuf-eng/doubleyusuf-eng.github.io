@@ -47,7 +47,7 @@
   <p id="t-body">Sayfa taşınmış, adı değişmiş ya da hiç var olmamış olabilir. Ana sayfadan devam edebilirsiniz.</p>
   <a class="home" id="t-home" href="/">Ana Sayfa</a>
 <script>
-// Same language pick as the main site: saved choice → Turkish timezone → browser language → EN.
+// Same language pick as the main site: saved choice → Turkish timezone → browser language (TR, or ES first) → EN.
 (function () {
   var lang = "en";
   try {
@@ -57,9 +57,16 @@
       var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
       if (tz === "Europe/Istanbul" || tz === "Asia/Istanbul") lang = "tr";
       else if ((navigator.languages || [navigator.language || ""]).join(",").toLowerCase().includes("tr")) lang = "tr";
+      else if (((navigator.languages || [])[0] || navigator.language || "").toLowerCase().startsWith("es")) lang = "es";
     }
   } catch (e) {}
-  if (lang !== "tr") {
+  if (lang === "es") {
+    document.documentElement.lang = "es";
+    document.title = "Página no encontrada — Anesthesia Briefs";
+    document.getElementById("t-title").textContent = "No se ha encontrado la página que busca";
+    document.getElementById("t-body").textContent = "Es posible que la página se haya trasladado, haya cambiado de nombre o nunca haya existido. Puede continuar desde la página de inicio.";
+    document.getElementById("t-home").textContent = "Inicio";
+  } else if (lang !== "tr") {
     document.documentElement.lang = "en";
     document.title = "Page Not Found — Anesthesia Briefs";
     document.getElementById("t-title").textContent = "The page you are looking for could not be found";

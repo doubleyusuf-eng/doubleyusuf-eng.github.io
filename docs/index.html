@@ -298,6 +298,14 @@
   .foot-bottom .social a { color: rgba(255,255,255,0.7); transition: color var(--dur-press) var(--ease-out); }
   .foot-bottom .social a:hover { color: var(--ab-gold); }
 
+  /* Narrow desktops: three language buttons and the longer Spanish labels still fit on one row */
+  @media (min-width: 981px) and (max-width: 1120px) {
+    .hdr { padding-left: 20px; padding-right: 20px; gap: 14px; }
+    nav { gap: 16px; }
+    nav a.navlink { font-size: 14px; white-space: nowrap; }
+    .cta-sm { padding: 8px 14px; white-space: nowrap; }
+    .lang button { padding: 6px 9px; }
+  }
   @media (max-width: 980px) {
     .hero-grid, .demo-grid { grid-template-columns: 1fr; }
     .fgrid, .pgrid { grid-template-columns: 1fr 1fr; }
@@ -494,6 +502,7 @@
     <div class="lang">
       <button id="lang-tr" onclick="setLang('tr')">TR</button>
       <button id="lang-en" onclick="setLang('en')">EN</button>
+      <button id="lang-es" onclick="setLang('es')">ES</button>
     </div>
     <button class="menu-btn" id="menu-btn" aria-label="Menü" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
@@ -901,10 +910,152 @@ const I18N = {
     "wl-title":"We'll let you know when the App Store version launches and about important updates","wl-ph":"Your e-mail address","wl-btn":"Notify Me",
     "wl-consent-1":"I give my explicit consent to the processing of my e-mail address for the app launch announcement and important updates via our EU-based provider Brevo.","wl-consent-2":"Privacy Policy",
     "footer-moto":"You're safe in your clinical decisions.","vis-active":"active now","vis-today":"Today","vis-month":"This month","footer-links":"Quick Links","footer-legal":"Legal","footer-support":"Support","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-app-privacy":"App Privacy Policy","footer-app-terms":"App Terms of Use","footer-rights":"All rights reserved."
+  },
+  es: {
+    "nav-features":"Funciones",
+    "nav-screens":"Pantallas",
+    "nav-games":"Juegos",
+    "nav-board":"Exámenes",
+    "nav-atlas":"Atlas de Anestesia",
+    "nav-new":"Nuevo",
+    "nav-atlas-long":"Atlas de la Máquina de Anestesia",
+    "nav-download":"Descargar",
+    "skip":"Saltar al contenido",
+    "pl-sub":"Referencia clínica de anestesia y cuidados críticos",
+    "insta-eyebrow":"Comunidad",
+    "insta-title":"Síganos en Instagram",
+    "insta-sub":"Actualice sus conocimientos con nuevos casos clínicos, consejos de anestesia y contenido docente que compartimos cada día.",
+    "insta-follow":"Seguir",
+    "intro-eyebrow":"Para profesionales de la anestesia",
+    "intro-tag":"Referencia clínica rápida de anestesia y cuidados críticos, a un toque en el quirófano.",
+    "intro-scroll":"Explorar",
+    "intro-c1-eyebrow":"En plena crisis",
+    "intro-c1":"Cuando cada segundo cuenta",
+    "intro-c1-d":"Algoritmos de urgencia y calculadoras de dosis, sin conexión y en segundos.",
+    "intro-c2-eyebrow":"El camino a la excelencia",
+    "intro-c2":"Del atlas al examen de especialidad",
+    "intro-c2-d":"Atlas de anestesia regional, preparación para EDAIC · ABA y más de 1000 notas clave.",
+    "hero-badge":"Para profesionales de la anestesia",
+    "hero-title-1":"Referencia clínica en",
+    "hero-title-2":"Anestesia y Cuidados Críticos",
+    "hero-lead":"Acceso inmediato a algoritmos de urgencia, calculadoras avanzadas de dosis, resúmenes de la bibliografía y contenido clínico de referencia, todo en una aplicación bilingüe que funciona sin conexión.",
+    "soon":"Próximamente",
+    "beta":"Beta",
+    "store-apple-sub":"Descargar en el",
+    "store-tf-sub":"Únase a la beta en",
+    "store-google-sub":"Disponible en",
+    "trust-spot":"Notas clave",
+    "trust-exam":"Preparación de exámenes",
+    "trust-lang":"Contenido bilingüe",
+    "trust-offline":"Funciona sin conexión",
+    "band-1-t":"Algoritmos de urgencia",
+    "band-1-d":"Árboles de decisión en crisis",
+    "band-2-t":"Calculadoras clínicas",
+    "band-2-d":"Dosis y escalas",
+    "band-3-t":"Monografías de fármacos",
+    "band-3-d":"Indicaciones y dosificación",
+    "band-4-t":"Atlas regional",
+    "band-4-d":"Bloqueos ecoguiados",
+    "band-5-t":"Preparación de exámenes",
+    "band-5-d":"EDAIC · ABA",
+    "band-6-t":"Más de 1000 notas clave",
+    "band-6-d":"Repaso rápido",
+    "demo-s7-t":"Notas clave",
+    "demo-s7-d":"Repaso rápido antes del examen con más de 1000 datos concretos.",
+    "feat-eyebrow":"La aplicación",
+    "feat-title":"Funciones de la aplicación",
+    "feat-sub":"Cuatro pilares diseñados para ofrecer una referencia clínica estructurada y una verificación independiente.",
+    "feat-1-t":"Algoritmos de urgencia",
+    "feat-1-d":"Acceso rápido a las crisis anestésicas potencialmente mortales. Guía paso a paso cuando cada segundo cuenta.",
+    "feat-2-t":"Calculadoras clínicas",
+    "feat-2-d":"Cálculos de dosis precisos y escalas para pacientes adultos, pediátricos y obstétricas.",
+    "feat-3-t":"Atlas de anestesia regional",
+    "feat-3-d":"Anatomía, sonoanatomía e imágenes de la técnica de punción para bloqueos periféricos y neuroaxiales ecoguiados.",
+    "feat-4-t":"Bibliografía reciente",
+    "feat-4-d":"Resúmenes de las publicaciones clínicas más recientes, las guías vigentes y los artículos científicos de anestesia.",
+    "demo-eyebrow":"Demo en vivo",
+    "demo-title":"Pruebe la aplicación ahora mismo",
+    "demo-lead":"Es una vista previa real y funcional. Toque el teléfono de la derecha: use la barra de navegación inferior, deslice el control de peso en la calculadora y abra algoritmos y bloqueos.",
+    "demo-live":"En vivo · toque para explorar",
+    "demo-s1-t":"Bienvenida personalizada",
+    "demo-s1-d":"Perlas clínicas diarias y tarjetas de acceso rápido.",
+    "demo-s2-t":"Calculadoras clínicas",
+    "demo-s2-d":"Deslice el control de peso; las dosis en mg y mL se actualizan al instante.",
+    "demo-s3-t":"Algoritmos de urgencia",
+    "demo-s3-d":"Toque una crisis para ver el protocolo paso a paso.",
+    "demo-s4-t":"Guía de fármacos",
+    "demo-s4-d":"Monografías de fármacos con código de color por categoría.",
+    "demo-s5-t":"Atlas de anestesia regional",
+    "demo-s5-d":"Atlas de bloqueos ecoguiados: anatomía y sonoanatomía.",
+    "demo-s6-t":"Preparación de exámenes",
+    "demo-s6-d":"Un panel de preparación adaptado a su tipo de examen y a sus puntos débiles.",
+    "demo-note":"Esto es solo una vista previa breve. La aplicación real contiene mucho más: cientos de algoritmos y monografías de fármacos, calculadoras completas, un atlas de anestesia regional, más de 1000 notas clave y bibliografía que se actualiza continuamente.",
+    "demo-tap":"Toque para ver la siguiente pantalla",
+    "games-eyebrow":"Tómese un descanso",
+    "games-title":"Minijuegos interactivos",
+    "games-sub":"Desconecte y afine sus reflejos con dos minijuegos de temática anestésica, directamente en su navegador.",
+    "game-1-t":"¡Lance el laringoscopio!",
+    "game-1-d":"Lance un laringoscopio al cirujano y responda a sus divertidas peticiones de casos. Ajuste el ángulo, la dirección y la fuerza, y apunte contra el flujo laminar.",
+    "game-1-f1":"Modo 2D / 3D",
+    "game-1-f2":"Clasificación",
+    "game-1-f3":"Niveles",
+    "game-play":"Jugar",
+    "game-2-t":"Vía aérea difícil",
+    "game-2-d":"Elija en orden los pasos correctos en escenarios de vía aérea difícil. Avance por el árbol de decisiones con rapidez y precisión para mantener al paciente seguro.",
+    "game-2-hud":"CASO 7",
+    "game-2-tag":"Rompecabezas",
+    "game-2-f1":"Escenarios clínicos",
+    "game-2-f2":"Entrenamiento en decisiones",
+    "game-2-f3":"Contrarreloj",
+    "premc-eyebrow":"Gratis · Todo desbloqueado",
+    "premc-title":"Atlas regional y preparación de exámenes",
+    "premc-sub":"Un atlas avanzado de anestesia regional y un centro de preparación para los exámenes EDAIC · ABA, ambos gratuitos en la aplicación y sin suscripción.",
+    "premc-tag":"Gratis",
+    "premc-r-t":"Atlas de anestesia regional",
+    "premc-r-d":"Un atlas completo de bloqueos periféricos y neuroaxiales ecoguiados, de la anatomía a la técnica de punción en un solo recorrido.",
+    "premc-r-1":"Atlas de bloqueos ecoguiados y posición de la sonda",
+    "premc-r-2":"Anatomía y sonoanatomía lado a lado",
+    "premc-r-3":"Técnica de punción y abordaje paso a paso",
+    "premc-r-4":"Notas sobre dosis, volumen y complicaciones de los anestésicos locales",
+    "premc-b-t":"Preparación EDAIC · ABA",
+    "premc-b-d":"Un centro de preparación completo, creado según los estándares de los exámenes europeo (EDAIC) y estadounidense (ABA): practique, haga simulacros y detecte sus lagunas.",
+    "premc-b-1":"Banco de preguntas de EDAIC Part I, ABA BASIC y Viva",
+    "premc-b-2":"Simulador de examen realista y cronometrado",
+    "premc-b-3":"Repaso rápido con más de 1000 notas clave",
+    "premc-b-4":"Análisis por temas y detección de puntos débiles",
+    "premc-adv-title":"¿Por qué Anesthesia Briefs?",
+    "premc-a1-t":"Totalmente gratis",
+    "premc-a1-d":"Sin suscripción: el atlas regional, la preparación de exámenes y todos los demás módulos están abiertos a todos.",
+    "premc-a2-t":"Revisión periódica",
+    "premc-a2-d":"El contenido se revisa periódicamente y cuando se identifican actualizaciones relevantes en las fuentes.",
+    "premc-a3-t":"Pensada para usar sin conexión",
+    "premc-a3-d":"Acceso sin conexión en el quirófano y antes del examen; las novedades de la bibliografía publicada llegan cuando hay conexión.",
+    "premc-a4-t":"Con referencias",
+    "premc-a4-d":"Explicaciones con referencias basadas en la bibliografía actual.",
+    "dl-title":"Decisiones seguras en su bolsillo",
+    "dl-sub":"Anesthesia Briefs, creada para mejorar la rapidez, la seguridad y el rigor científico en la práctica anestésica, ya está en Google Play. La beta de iOS está en TestFlight.",
+    "wl-title":"Le avisaremos cuando se publique la versión de App Store y de las actualizaciones importantes",
+    "wl-ph":"Su correo electrónico",
+    "wl-btn":"Avisarme",
+    "wl-consent-1":"Doy mi consentimiento explícito para el tratamiento de mi correo electrónico con el fin de recibir el anuncio del lanzamiento de la aplicación y las actualizaciones importantes a través de Brevo, nuestro proveedor con sede en la UE.",
+    "wl-consent-2":"Política de privacidad",
+    "footer-moto":"Tome sus decisiones clínicas con seguridad.",
+    "vis-active":"activos ahora",
+    "vis-today":"Hoy",
+    "vis-month":"Este mes",
+    "footer-links":"Enlaces rápidos",
+    "footer-legal":"Legal",
+    "footer-support":"Soporte",
+    "footer-privacy":"Política de privacidad",
+    "footer-terms":"Condiciones de uso",
+    "footer-app-privacy":"Política de privacidad de la aplicación",
+    "footer-app-terms":"Condiciones de uso de la aplicación",
+    "footer-rights":"Todos los derechos reservados."
   }
 };
 
 function setLang(lang) {
+  if (!I18N[lang]) lang = "en";
   document.documentElement.lang = lang;
   const dict = I18N[lang];
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -915,22 +1066,23 @@ function setLang(lang) {
     const k = el.getAttribute("data-i18n-ph");
     if (dict[k] != null) el.placeholder = dict[k];
   });
-  const bTr = document.getElementById("lang-tr"), bEn = document.getElementById("lang-en");
-  bTr.classList.toggle("on", lang === "tr"); bTr.setAttribute("aria-pressed", lang === "tr");
-  bEn.classList.toggle("on", lang === "en"); bEn.setAttribute("aria-pressed", lang === "en");
+  ["tr", "en", "es"].forEach((l) => {
+    const b = document.getElementById("lang-" + l);
+    b.classList.toggle("on", lang === l); b.setAttribute("aria-pressed", lang === l);
+  });
   // hero phones are live app previews — follow language; front=home, back=algorithms
-  const _heroLang = lang === "tr" ? "tr" : "en";
+  const _heroLang = lang;
   const fa = document.getElementById("hero-frame-a"), fb = document.getElementById("hero-frame-b");
   const aSrc = "app.html?bare=1&screen=home&lang=" + _heroLang;
   const bSrc = "app.html?bare=1&screen=algorithms&lang=" + _heroLang;
   if (fa && fa.getAttribute("data-src") !== aSrc) { fa.setAttribute("data-src", aSrc); fa.src = aSrc; fa.addEventListener("load", () => sizeHeroFrame(fa), { once: true }); }
   if (fb && fb.getAttribute("data-src") !== bSrc) { fb.setAttribute("data-src", bSrc); fb.src = bSrc; fb.addEventListener("load", () => sizeHeroFrame(fb), { once: true }); }
   // Atlas links open the atlas hub (or the atlas named in data-atlas) in the same language (TR, EN and ES)
-  document.querySelectorAll("[data-atlas]").forEach((a) => { a.href = "https://atlas.anesthesiabriefs.com/" + a.dataset.atlas + (lang === "en" ? "en/" : ""); });
+  document.querySelectorAll("[data-atlas]").forEach((a) => { a.href = "https://atlas.anesthesiabriefs.com/" + a.dataset.atlas + (lang === "tr" ? "" : lang + "/"); });
   try { localStorage.setItem("ab_lang", lang); } catch(e) {}
 }
 
-// Geo / locale based default: Turkey → TR, elsewhere → EN. Manual choice persists.
+// Geo / locale based default: Turkey → TR, a Spanish-first browser → ES, elsewhere → EN. Manual choice persists.
 function detectLang() {
   try { const saved = localStorage.getItem("ab_lang"); if (saved) return saved; } catch(e) {}
   try {
@@ -939,6 +1091,7 @@ function detectLang() {
   } catch(e) {}
   const langs = (navigator.languages || [navigator.language || "en"]).join(",").toLowerCase();
   if (langs.includes("tr")) return "tr";
+  if (langs.split(",")[0].startsWith("es")) return "es";
   return "en";
 }
 
@@ -1198,9 +1351,12 @@ function sizeHeroFrame(frame) {
   form.hidden = false;
   const status = document.getElementById("wl-status");
   const btn = form.querySelector(".wl-btn");
-  const dict = () => (document.documentElement.lang === "en"
-    ? { ok: "Almost done! Check your inbox to confirm your address.", err: "Something went wrong — please try again.", invalid: "Enter a valid e-mail and tick the consent box." }
-    : { ok: "Neredeyse tamam! Adresinizi doğrulamak için gelen kutunuzu kontrol edin.", err: "Bir şeyler ters gitti — lütfen tekrar deneyin.", invalid: "Geçerli bir e-posta girin ve onay kutusunu işaretleyin." });
+  const WL_T = {
+    en: { ok: "Almost done! Check your inbox to confirm your address.", err: "Something went wrong — please try again.", invalid: "Enter a valid e-mail and tick the consent box." },
+    es: { ok: "¡Casi listo! Revise su bandeja de entrada para confirmar su dirección.", err: "Algo salió mal; inténtelo de nuevo.", invalid: "Introduzca un correo electrónico válido y marque la casilla de consentimiento." },
+    tr: { ok: "Neredeyse tamam! Adresinizi doğrulamak için gelen kutunuzu kontrol edin.", err: "Bir şeyler ters gitti — lütfen tekrar deneyin.", invalid: "Geçerli bir e-posta girin ve onay kutusunu işaretleyin." },
+  };
+  const dict = () => WL_T[document.documentElement.lang] || WL_T.en;
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const t = dict();
@@ -1213,7 +1369,7 @@ function sizeHeroFrame(frame) {
     try {
       const fd = new FormData();
       fd.append("EMAIL", email.value.trim());
-      fd.append("locale", document.documentElement.lang === "en" ? "en" : "tr");
+      fd.append("locale", document.documentElement.lang === "tr" ? "tr" : "en"); // Brevo has TR and EN e-mails; Spanish visitors get EN
       const r = await fetch(SIBFORMS_URL + (SIBFORMS_URL.includes("?") ? "&" : "?") + "isAjax=1", { method: "POST", body: fd });
       if (!r.ok) throw 0;
       status.textContent = t.ok; status.className = "wl-status ok";

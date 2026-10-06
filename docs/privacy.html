@@ -377,7 +377,9 @@
 
 <script>
 function setLegalLang(lang) {
-  lang = lang === "en" ? "en" : "tr";
+  // These pages exist in TR and EN; a Spanish choice reads the English text and stays saved.
+  var chosen = lang;
+  lang = (lang === "en" || lang === "es") ? "en" : "tr";
   document.documentElement.lang = lang;
   document.querySelectorAll(".legal-doc").forEach((d) => d.classList.toggle("show", d.dataset.lang === lang));
   var tr = document.getElementById("l-tr"), en = document.getElementById("l-en");
@@ -395,7 +397,7 @@ function setLegalLang(lang) {
   document.querySelectorAll("[data-i18n-home]").forEach((e) => (e.textContent = t.home));
   document.querySelectorAll("[data-i18n-rights]").forEach((e) => (e.textContent = t.rights));
   document.title = t.title;
-  try { localStorage.setItem("ab_lang", lang); } catch (e) {}
+  if (chosen !== "es") { try { localStorage.setItem("ab_lang", lang); } catch (e) {} }
 }
 (function () {
   var l = "tr";
