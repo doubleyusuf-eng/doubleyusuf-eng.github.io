@@ -4,7 +4,7 @@ html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); background: var(--ab-cream); color: var(--ab-text-slate); line-height: 1.72; -webkit-font-smoothing: antialiased; }
 
 /* Header */
-.lh { position: sticky; top: 0; z-index: 50; background: rgba(248,246,240,0.86); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(27,54,93,0.08); }
+.lh { position: sticky; top: 0; z-index: 50; background: rgba(248,246,240,0.97); border-bottom: 1px solid rgba(27,54,93,0.08); }
 .lh-in { max-width: 860px; margin: 0 auto; padding: 13px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .lh-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
 .lh-logo img { height: 32px; }
@@ -38,4 +38,13 @@ main.legal { max-width: 760px; margin: 0 auto; padding: 56px 28px 96px; }
 .lf { border-top: 1px solid var(--ab-border); padding: 26px 28px; text-align: center; font-size: 13px; color: var(--ab-text-muted); }
 .lf a { color: var(--ab-text-muted); text-decoration: none; font-weight: 600; }
 .lf a:hover { color: var(--ab-gold); }
-.lf-links { display: flex; gap: 18px; justify-content: center; margin-bottom: 10px; }
+.lf-links { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: center; margin-bottom: 10px; }
+
+/* Phones: the brand, back link and language switch must fit in one row without sideways scroll */
+@media (max-width: 520px) {
+  .lh-in { padding: 11px 16px; gap: 10px; }
+  .lh-brand { font-size: 17px; }
+  .lh-right { gap: 10px; }
+  .lh-back { width: 36px; height: 36px; justify-content: center; border: 1px solid rgba(27,54,93,0.12); border-radius: 50%; }
+  .lh-back span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}

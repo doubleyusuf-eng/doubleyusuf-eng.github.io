@@ -58,7 +58,6 @@
   header { position: sticky; top: 0; z-index: 100; background: rgba(248,246,240,0.96); border-bottom: 1px solid rgba(27,54,93,0.06); }
   .hdr { display: flex; align-items: center; justify-content: space-between; padding: 13px 28px; max-width: 1200px; margin: 0 auto; }
   .logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-  .logo img { height: 36px; }
   .brand { font-family: var(--font-display); font-size: 21px; font-weight: 800; letter-spacing: -0.5px; color: var(--ab-navy); }
   .brand em { color: var(--ab-gold); font-weight: 400; font-style: italic; }
   nav { display: flex; align-items: center; gap: 28px; }
@@ -309,13 +308,28 @@
     .menu-btn { display: flex; }
   }
   @media (max-width: 620px) {
-    .fgrid, .pgrid, .advs { grid-template-columns: 1fr; }
+    .fgrid, .pgrid { grid-template-columns: 1fr; }
     .demo-grid { gap: 44px; }
+    /* Phones: compact cards so the page is not a column of half-empty boxes */
+    .sec-head { margin-bottom: 32px; }
+    .fgrid { gap: 12px; }
+    .fcard { display: grid; grid-template-columns: 48px 1fr; column-gap: 16px; padding: 18px; align-items: start; }
+    .fcard .ficon { grid-row: span 2; width: 48px; height: 48px; font-size: 19px; margin: 0; }
+    .fcard h3 { font-size: 17px; margin-bottom: 4px; }
+    .fcard p { font-size: 13.5px; }
+    .advs { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .adv { padding: 16px 14px; }
+    .adv .ai { width: 38px; height: 38px; font-size: 16px; margin-bottom: 10px; }
+    .adv h4 { font-size: 14px; }
+    .adv p { font-size: 12.5px; }
+    .pillars { gap: 16px; }
+    .pillar-media { height: 120px; }
+    .pillar-media i.pmark { font-size: 48px; }
+    .pillar-body { padding: 20px 20px 22px; }
   }
   @media (max-width: 430px) {
     .hdr { padding-left: 14px; padding-right: 14px; gap: 8px; }
     .brand { font-size: 17px; }
-    .logo img { height: 30px; }
     .lang button { padding: 6px 10px; }
   }
 
@@ -409,7 +423,7 @@
      scrolling drives the video timeline (ScrollyVideo). No JS / reduced motion:
      section stays one viewport tall with the poster + first caption. */
   .intro { position: relative; height: 100vh; height: 100svh; min-height: 560px; }
-  .intro.scrolly { height: 420vh; min-height: 0; }
+  .intro.scrolly { height: 240vh; min-height: 0; }
   .intro-sticky { position: sticky; top: 0; height: 100vh; height: 100svh; min-height: 560px; overflow: hidden; background: #0B1626 url("assets/intro-poster.jpg") center / cover no-repeat; }
   #scrolly-video { position: absolute; inset: 0; z-index: 1; }
   #scrolly-video video, #scrolly-video canvas { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -468,7 +482,7 @@
 
 <header>
   <div class="hdr">
-    <a class="logo" href="#top"><img src="assets/logo.png" alt="Anesthesia Briefs" /><span class="brand">Anesthesia<em>Briefs</em></span></a>
+    <a class="logo" href="#top" aria-label="Anesthesia Briefs"><span class="brand">Anesthesia<em>Briefs</em></span></a>
     <nav>
       <a class="navlink" href="#features" data-i18n="nav-features">Özellikler</a>
       <a class="navlink" href="#demo" data-i18n="nav-screens">Ekranlar</a>
@@ -658,15 +672,15 @@
 <section class="block premc" id="premium-content">
   <div class="container">
     <div class="sec-head">
-      <span class="eyebrow" data-i18n="premc-eyebrow">Premium Üyelik</span>
-      <h2 data-i18n="premc-title">Premium'da Neler Var?</h2>
-      <p data-i18n="premc-sub">İki güçlü modül tek üyelikte birleşiyor: ileri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi.</p>
+      <span class="eyebrow" data-i18n="premc-eyebrow">Ücretsiz · Tüm içerik açık</span>
+      <h2 data-i18n="premc-title">Rejyonel Atlas ve Board Hazırlık</h2>
+      <p data-i18n="premc-sub">İleri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi. İkisi de uygulamada, abonelik olmadan ücretsiz.</p>
     </div>
     <div class="pillars">
       <div class="pillar regional">
         <div class="pillar-media regional">
           <div class="grid-lines"></div><div class="blob"></div>
-          <span class="prem-tag"><i class="fa-solid fa-crown"></i> <span data-i18n="premc-tag">Premium</span></span>
+          <span class="prem-tag"><i class="fa-solid fa-lock-open"></i> <span data-i18n="premc-tag">Ücretsiz</span></span>
           <i class="pmark fa-solid fa-wave-square"></i>
         </div>
         <div class="pillar-body">
@@ -683,7 +697,7 @@
       <div class="pillar board">
         <div class="pillar-media board">
           <div class="grid-lines"></div><div class="blob"></div>
-          <span class="prem-tag"><i class="fa-solid fa-crown"></i> <span data-i18n="premc-tag">Premium</span></span>
+          <span class="prem-tag"><i class="fa-solid fa-lock-open"></i> <span data-i18n="premc-tag">Ücretsiz</span></span>
           <i class="pmark fa-solid fa-graduation-cap"></i>
         </div>
         <div class="pillar-body">
@@ -699,28 +713,13 @@
       </div>
     </div>
     <div class="adv-head">
-      <h3 data-i18n="premc-adv-title">Premium Neden Avantajlı?</h3>
+      <h3 data-i18n="premc-adv-title">Neden Anesthesia Briefs?</h3>
     </div>
     <div class="advs">
-      <div class="adv"><div class="ai"><i class="fa-solid fa-layer-group"></i></div><h4 data-i18n="premc-a1-t">Tek Üyelik, İki Uzmanlık</h4><p data-i18n="premc-a1-d">Rejyonel ustalık ve board başarısı tek abonelikte — ayrı kaynak aramaya son.</p></div>
+      <div class="adv"><div class="ai"><i class="fa-solid fa-lock-open"></i></div><h4 data-i18n="premc-a1-t">Tamamen Ücretsiz</h4><p data-i18n="premc-a1-d">Abonelik yok; rejyonel atlas, board hazırlık ve bütün modüller herkese açık.</p></div>
       <div class="adv"><div class="ai"><i class="fa-solid fa-rotate"></i></div><h4 data-i18n="premc-a2-t">Düzenli Gözden Geçirilen İçerik</h4><p data-i18n="premc-a2-d">İçerik düzenli olarak ve ilgili kaynak güncellemeleri belirlendiğinde gözden geçirilir.</p></div>
       <div class="adv"><div class="ai"><i class="fa-solid fa-wifi"></i></div><h4 data-i18n="premc-a3-t">Çevrimdışı Öncelikli</h4><p data-i18n="premc-a3-d">Ameliyathanede ve sınav öncesi çevrimdışı erişim; yayımlanmış literatür internet olduğunda güncellenir.</p></div>
       <div class="adv"><div class="ai"><i class="fa-solid fa-book-medical"></i></div><h4 data-i18n="premc-a4-t">Kanıta Dayalı</h4><p data-i18n="premc-a4-d">Referanslı açıklamalar ve güncel literatüre dayalı, güvenilir içerik.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block premium" id="premium">
-  <div class="container">
-    <div class="sec-head"><span class="pbadge"><i class="fa-solid fa-crown"></i> <span data-i18n="prem-badge">Premium Özellik</span></span>
-      <h2 data-i18n="prem-title">Board Prep: Sınav Hazırlık Merkezi</h2>
-      <p data-i18n="prem-sub">EDAIC ve ABA sınavlarına hazırlıkta en büyük yardımcınız — bilginizi tazeleyin, eksiklerinizi kapatın.</p>
-    </div>
-    <div class="pgrid">
-      <div class="pcard"><div class="picon"><i class="fa-solid fa-graduation-cap"></i></div><h3 data-i18n="prem-1-t">Board Soruları & Çözümler</h3><p data-i18n="prem-1-d">EDAIC Part I, ABA BASIC ve EDAIC Viva standartlarına uygun geniş SBA/MTF bankası, referanslı klinik açıklamalar.</p></div>
-      <div class="pcard"><div class="picon"><i class="fa-solid fa-bolt-lightning"></i></div><h3 data-i18n="prem-2-t">Spot Bilgiler & Hızlı Tekrar</h3><p data-i18n="prem-2-d">Özenle derlenmiş nokta atışı bilgiler — farmakoloji tabloları, havayolu tipleri, kritik fizyoloji ve 1000+ spot bilgi.</p></div>
-      <div class="pcard"><div class="picon teal2"><i class="fa-solid fa-clock-rotate-left"></i></div><h3 data-i18n="prem-3-t">Gerçekçi Sınav Simülatörü</h3><p data-i18n="prem-3-d">Açıklamaların gizlendiği, katı zamanlayıcılı gerçek kurul formatında sınav simülatörü.</p></div>
-      <div class="pcard"><div class="picon purp"><i class="fa-solid fa-chart-line"></i></div><h3 data-i18n="prem-4-t">Konu Odaklı Gelişim Analizi</h3><p data-i18n="prem-4-d">Hatalı cevaplarınızı analiz ederek zayıf fizyoloji/farmakoloji başlıklarınızı tespit eden dinamik grafikler.</p></div>
     </div>
   </div>
 </section>
@@ -757,7 +756,7 @@
         <a class="store" href="https://play.google.com/store/apps/details?id=com.doubleyusuf.anesthesiabriefs" target="_blank" rel="noopener"><i class="fa-brands fa-google-play"></i><span><span class="sub" data-i18n="store-google-sub">İndir</span><br /><span class="main">Google Play</span></span></a></div>
     </div>
     <form id="waitlist" class="wl" hidden novalidate>
-      <p class="wl-title" data-i18n="wl-title">Uygulama yayınlandığında ilk siz haberdar olun</p>
+      <p class="wl-title" data-i18n="wl-title">App Store sürümü çıktığında ve önemli güncellemelerde size haber verelim</p>
       <div class="wl-row">
         <input type="email" name="EMAIL" id="wl-email" required autocomplete="email" placeholder="E-posta adresiniz" data-i18n-ph="wl-ph" />
         <button type="submit" class="wl-btn" data-i18n="wl-btn">Haber Ver</button>
@@ -851,17 +850,12 @@ const I18N = {
     "game-1-f1":"2D / 3D mod","game-1-f2":"Liderlik tablosu","game-1-f3":"Seviyeler","game-play":"Oyna",
     "game-2-t":"Zor Havayolu","game-2-d":"Zor havayolu senaryolarında doğru adımları sırayla seç. Karar ağacını hızlı ve doğru ilerlet, hastayı güvenle yönet.",
     "game-2-hud":"VAKA 7","game-2-tag":"Bulmaca","game-2-f1":"Klinik senaryolar","game-2-f2":"Karar eğitimi","game-2-f3":"Süreli",
-    "prem-badge":"Premium Özellik","prem-title":"Board Prep: Sınav Hazırlık Merkezi","prem-sub":"EDAIC ve ABA sınavlarına hazırlıkta en büyük yardımcınız — bilginizi tazeleyin, eksiklerinizi kapatın.",
-    "prem-1-t":"Board Soruları & Çözümler","prem-1-d":"EDAIC Part I, ABA BASIC ve EDAIC Viva standartlarına uygun geniş SBA/MTF bankası, referanslı klinik açıklamalar.",
-    "prem-2-t":"Spot Bilgiler & Hızlı Tekrar","prem-2-d":"Özenle derlenmiş nokta atışı bilgiler — farmakoloji tabloları, havayolu tipleri, kritik fizyoloji ve 1000+ spot bilgi.",
-    "prem-3-t":"Gerçekçi Sınav Simülatörü","prem-3-d":"Açıklamaların gizlendiği, katı zamanlayıcılı gerçek kurul formatında sınav simülatörü.",
-    "prem-4-t":"Konu Odaklı Gelişim Analizi","prem-4-d":"Hatalı cevaplarınızı analiz ederek zayıf fizyoloji/farmakoloji başlıklarınızı tespit eden dinamik grafikler.",
-    "premc-eyebrow":"Premium Üyelik","premc-title":"Premium'da Neler Var?","premc-sub":"İki güçlü modül tek üyelikte birleşiyor: ileri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi.","premc-tag":"Premium",
+    "premc-eyebrow":"Ücretsiz · Tüm içerik açık","premc-title":"Rejyonel Atlas ve Board Hazırlık","premc-sub":"İleri düzey rejyonel anestezi atlası ve EDAIC · ABA board hazırlık merkezi. İkisi de uygulamada, abonelik olmadan ücretsiz.","premc-tag":"Ücretsiz",
     "premc-r-t":"Rejyonel Anestezi Atlası","premc-r-d":"Ultrason eşliğinde uygulanan periferik ve nöroaksiyel blokların tam atlası — anatomiden iğne tekniğine kadar tek akışta.","premc-r-1":"USG-rehberli blok atlası & prob konumlandırma","premc-r-2":"Anatomi & sonoanatomi görselleri yan yana","premc-r-3":"Adım adım iğne tekniği ve yaklaşım","premc-r-4":"Lokal anestezik doz, hacim & komplikasyon notları",
     "premc-b-t":"EDAIC · ABA Board Hazırlık","premc-b-d":"Avrupa (EDAIC) ve Amerika (ABA) board standartlarına göre hazırlanmış kapsamlı sınav merkezi — soru çöz, simüle et, eksiğini gör.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva soru bankası","premc-b-2":"Gerçekçi, zamanlayıcılı sınav simülatörü","premc-b-3":"1000+ spot bilgi ile hızlı tekrar","premc-b-4":"Konu odaklı gelişim analizi & zayıf nokta tespiti",
-    "premc-adv-title":"Premium Neden Avantajlı?","premc-a1-t":"Tek Üyelik, İki Uzmanlık","premc-a1-d":"Rejyonel ustalık ve board başarısı tek abonelikte — ayrı kaynak aramaya son.","premc-a2-t":"Düzenli Gözden Geçirilen İçerik","premc-a2-d":"İçerik düzenli olarak ve ilgili kaynak güncellemeleri belirlendiğinde gözden geçirilir.","premc-a3-t":"Çevrimdışı Öncelikli","premc-a3-d":"Ameliyathanede ve sınav öncesi çevrimdışı erişim; yayımlanmış literatür internet olduğunda güncellenir.","premc-a4-t":"Referanslı","premc-a4-d":"Referanslı açıklamalar ve güncel literatüre dayalı içerik.",
+    "premc-adv-title":"Neden Anesthesia Briefs?","premc-a1-t":"Tamamen Ücretsiz","premc-a1-d":"Abonelik yok; rejyonel atlas, board hazırlık ve bütün modüller herkese açık.","premc-a2-t":"Düzenli Gözden Geçirilen İçerik","premc-a2-d":"İçerik düzenli olarak ve ilgili kaynak güncellemeleri belirlendiğinde gözden geçirilir.","premc-a3-t":"Çevrimdışı Öncelikli","premc-a3-d":"Ameliyathanede ve sınav öncesi çevrimdışı erişim; yayımlanmış literatür internet olduğunda güncellenir.","premc-a4-t":"Referanslı","premc-a4-d":"Referanslı açıklamalar ve güncel literatüre dayalı içerik.",
     "dl-title":"Güvenli Kararlar Cebinizde","dl-sub":"Anestezi pratiğinde hızı, güvenliği ve bilimselliği artırmak için geliştirilen Anesthesia Briefs artık Google Play’de. iOS beta sürümü TestFlight’ta.",
-    "wl-title":"Uygulama yayınlandığında ilk siz haberdar olun","wl-ph":"E-posta adresiniz","wl-btn":"Haber Ver",
+    "wl-title":"App Store sürümü çıktığında ve önemli güncellemelerde size haber verelim","wl-ph":"E-posta adresiniz","wl-btn":"Haber Ver",
     "wl-consent-1":"E-posta adresimin, uygulama lansman duyurusu ve önemli bilgilendirmeler için AB'de sunucuları bulunan hizmet sağlayıcımız Brevo üzerinden işlenmesine açık rıza veriyorum.","wl-consent-2":"Gizlilik Politikası",
     "footer-moto":"Anestezi ve yoğun bakım için klinik referans.","vis-active":"şu an aktif","vis-today":"Bugün","vis-month":"Bu ay","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-support":"Destek","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
   },
@@ -899,17 +893,12 @@ const I18N = {
     "game-1-f1":"2D / 3D mode","game-1-f2":"Leaderboard","game-1-f3":"Levels","game-play":"Play",
     "game-2-t":"Difficult Airway","game-2-d":"Pick the correct steps in order through difficult-airway scenarios. Move down the decision tree fast and accurately to keep the patient safe.",
     "game-2-hud":"CASE 7","game-2-tag":"Puzzle","game-2-f1":"Clinical scenarios","game-2-f2":"Decision training","game-2-f3":"Timed",
-    "prem-badge":"Premium Feature","prem-title":"Board Prep: Exam Preparation Hub","prem-sub":"Your biggest ally for the EDAIC and ABA exams — refresh your knowledge and close your gaps.",
-    "prem-1-t":"Board Questions & Answers","prem-1-d":"Extensive SBA/MTF banks aligned with EDAIC Part I, ABA BASIC and EDAIC Viva standards, with referenced explanations.",
-    "prem-2-t":"Spot Notes & Rapid Review","prem-2-d":"Carefully curated pinpoint facts — pharmacology tables, airway types, critical physiology and 1000+ spot notes.",
-    "prem-3-t":"Realistic Exam Simulator","prem-3-d":"A true board-format simulator with hidden explanations and a strict timer.",
-    "prem-4-t":"Topic-Focused Analytics","prem-4-d":"Dynamic charts that analyse your incorrect answers to pinpoint weak physiology or pharmacology topics.",
-    "premc-eyebrow":"Premium Membership","premc-title":"What's Inside Premium?","premc-sub":"Two powerful modules in a single membership: an advanced regional anesthesia atlas and an EDAIC · ABA board prep hub.","premc-tag":"Premium",
+    "premc-eyebrow":"Free · Everything unlocked","premc-title":"Regional Atlas & Board Prep","premc-sub":"An advanced regional anesthesia atlas and an EDAIC · ABA board prep hub — both free in the app, no subscription.","premc-tag":"Free",
     "premc-r-t":"Regional Anesthesia Atlas","premc-r-d":"A full atlas of ultrasound-guided peripheral and neuraxial blocks — from anatomy to needle technique in one flow.","premc-r-1":"US-guided block atlas & probe positioning","premc-r-2":"Anatomy & sonoanatomy side by side","premc-r-3":"Step-by-step needle technique and approach","premc-r-4":"Local anesthetic dose, volume & complication notes",
     "premc-b-t":"EDAIC · ABA Board Prep","premc-b-d":"A comprehensive exam hub built to European (EDAIC) and American (ABA) board standards — practice, simulate, find your gaps.","premc-b-1":"EDAIC Part I, ABA BASIC & Viva question bank","premc-b-2":"Realistic, timed exam simulator","premc-b-3":"Rapid review with 1000+ spot notes","premc-b-4":"Topic-focused analytics & weak-spot detection",
-    "premc-adv-title":"Why Premium Is Worth It","premc-a1-t":"One Membership, Two Specialties","premc-a1-d":"Regional mastery and board success in a single subscription — no more chasing separate resources.","premc-a2-t":"Periodically Reviewed","premc-a2-d":"Content is reviewed periodically and when relevant source updates are identified.","premc-a3-t":"Offline-First","premc-a3-d":"Offline access in the OR and before the exam; published literature updates when online.","premc-a4-t":"Referenced","premc-a4-d":"Referenced explanations grounded in current literature.",
+    "premc-adv-title":"Why Anesthesia Briefs?","premc-a1-t":"Completely Free","premc-a1-d":"No subscription: the regional atlas, board prep and every other module are open to everyone.","premc-a2-t":"Periodically Reviewed","premc-a2-d":"Content is reviewed periodically and when relevant source updates are identified.","premc-a3-t":"Offline-First","premc-a3-d":"Offline access in the OR and before the exam; published literature updates when online.","premc-a4-t":"Referenced","premc-a4-d":"Referenced explanations grounded in current literature.",
     "dl-title":"Safe Decisions in Your Pocket","dl-sub":"Anesthesia Briefs — built to improve speed, safety and scientific rigor in anesthesia practice — is now on Google Play. The iOS beta is on TestFlight.",
-    "wl-title":"Be the first to know when the app launches","wl-ph":"Your e-mail address","wl-btn":"Notify Me",
+    "wl-title":"We'll let you know when the App Store version launches and about important updates","wl-ph":"Your e-mail address","wl-btn":"Notify Me",
     "wl-consent-1":"I give my explicit consent to the processing of my e-mail address for the app launch announcement and important updates via our EU-based provider Brevo.","wl-consent-2":"Privacy Policy",
     "footer-moto":"You're safe in your clinical decisions.","vis-active":"active now","vis-today":"Today","vis-month":"This month","footer-links":"Quick Links","footer-legal":"Legal","footer-support":"Support","footer-privacy":"Privacy Policy","footer-terms":"Terms of Use","footer-app-privacy":"App Privacy Policy","footer-app-terms":"App Terms of Use","footer-rights":"All rights reserved."
   }
@@ -1086,7 +1075,7 @@ function sizeHeroFrame(frame) {
   measure(); update();
   window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
   window.addEventListener("resize", () => { measure(); update(); });
-  // the intro grows to 420vh once the scroll-scrub video is ready
+  // the intro grows to 240vh once the scroll-scrub video is ready
   new ResizeObserver(() => { measure(); update(); }).observe(intro);
 })();
 
