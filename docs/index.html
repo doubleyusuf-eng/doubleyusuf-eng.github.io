@@ -488,7 +488,7 @@
       <a class="navlink" href="#demo" data-i18n="nav-screens">Ekranlar</a>
       <a class="navlink" href="#games" data-i18n="nav-games">Oyunlar</a>
       <a class="navlink" href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-      <a class="navlink nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
+      <a class="navlink nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">Anestezi Atlası</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
       <a class="cta-sm" href="#download" data-i18n="nav-download">İndir</a>
     </nav>
     <div class="lang">
@@ -504,7 +504,7 @@
     <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
     <a href="#games" data-i18n="nav-games">Oyunlar</a>
     <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-    <a class="nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">3B Atlas</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
+    <a class="nav-atlas" href="https://atlas.anesthesiabriefs.com/" data-atlas><span data-i18n="nav-atlas">Anestezi Atlası</span><span class="new-badge" data-i18n="nav-new">Yeni</span></a>
     <a class="m-cta" href="#download" data-i18n="nav-download">İndir</a>
   </div>
 </header>
@@ -785,7 +785,7 @@
         <a href="#demo" data-i18n="nav-screens">Ekranlar</a>
         <a href="#games" data-i18n="nav-games">Oyunlar</a>
         <a href="#premium-content" data-i18n="nav-board">Board Hazırlık</a>
-        <a href="https://atlas.anesthesiabriefs.com/" data-atlas data-i18n="nav-atlas-long">Anestezi Makinesi Atlası</a>
+        <a href="https://atlas.anesthesiabriefs.com/anesthesia-machine/" data-atlas="anesthesia-machine/" data-i18n="nav-atlas-long">Anestezi Makinesi Atlası</a>
       </div>
       <div class="col">
         <h4 data-i18n="footer-legal">Yasal</h4>
@@ -818,7 +818,7 @@
 <script>
 const I18N = {
   tr: {
-    "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-atlas":"3B Atlas","nav-new":"Yeni","nav-atlas-long":"Anestezi Makinesi Atlası","nav-download":"İndir",
+    "nav-features":"Özellikler","nav-screens":"Ekranlar","nav-games":"Oyunlar","nav-board":"Board Hazırlık","nav-atlas":"Anestezi Atlası","nav-new":"Yeni","nav-atlas-long":"Anestezi Makinesi Atlası","nav-download":"İndir",
     "skip":"İçeriğe geç",
     "pl-sub":"Anestezi ve yoğun bakım için klinik referans",
     "insta-eyebrow":"Topluluk","insta-title":"Instagram'da Bizi Takip Edin","insta-sub":"Her gün yeni vaka sunumları, anestezi ipuçları ve eğitici içeriklerle bilginizi tazeleyin.","insta-follow":"Takip Et",
@@ -860,7 +860,7 @@ const I18N = {
     "footer-moto":"Anestezi ve yoğun bakım için klinik referans.","vis-active":"şu an aktif","vis-today":"Bugün","vis-month":"Bu ay","footer-links":"Hızlı Linkler","footer-legal":"Yasal","footer-support":"Destek","footer-privacy":"Gizlilik Politikası","footer-terms":"Kullanım Şartları","footer-app-privacy":"Uygulama Gizlilik Politikası","footer-app-terms":"Uygulama Kullanım Şartları","footer-rights":"Tüm hakları saklıdır."
   },
   en: {
-    "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-atlas":"3D Atlas","nav-new":"New","nav-atlas-long":"Anaesthesia Machine Atlas","nav-download":"Download",
+    "nav-features":"Features","nav-screens":"Screens","nav-games":"Games","nav-board":"Board Prep","nav-atlas":"Anesthesia Atlas","nav-new":"New","nav-atlas-long":"Anaesthesia Machine Atlas","nav-download":"Download",
     "skip":"Skip to content",
     "pl-sub":"Clinical reference for anaesthesia & critical care",
     "insta-eyebrow":"Community","insta-title":"Follow Us on Instagram","insta-sub":"Refresh your knowledge with new case presentations, anesthesia tips and educational content shared every day.","insta-follow":"Follow",
@@ -925,8 +925,8 @@ function setLang(lang) {
   const bSrc = "app.html?bare=1&screen=algorithms&lang=" + _heroLang;
   if (fa && fa.getAttribute("data-src") !== aSrc) { fa.setAttribute("data-src", aSrc); fa.src = aSrc; fa.addEventListener("load", () => sizeHeroFrame(fa), { once: true }); }
   if (fb && fb.getAttribute("data-src") !== bSrc) { fb.setAttribute("data-src", bSrc); fb.src = bSrc; fb.addEventListener("load", () => sizeHeroFrame(fb), { once: true }); }
-  // Atlas links open the atlas in the same language (it has TR, EN and ES)
-  document.querySelectorAll("[data-atlas]").forEach((a) => { a.href = "https://atlas.anesthesiabriefs.com/" + (lang === "en" ? "en/" : ""); });
+  // Atlas links open the atlas hub (or the atlas named in data-atlas) in the same language (TR, EN and ES)
+  document.querySelectorAll("[data-atlas]").forEach((a) => { a.href = "https://atlas.anesthesiabriefs.com/" + a.dataset.atlas + (lang === "en" ? "en/" : ""); });
   try { localStorage.setItem("ab_lang", lang); } catch(e) {}
 }
 
